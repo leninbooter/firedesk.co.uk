@@ -4,24 +4,24 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css'); ?>">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css'); ?>">				
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css'); ?>">				
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sticky-footer-navbar'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/justified-nav.css'); ?>">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/responsive.css'); ?>">
-		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">		
+		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+		<link href="<?php echo base_url('assets/datepicker/css/datepicker.css'); ?>" rel="stylesheet">
+		<link href="<?php echo base_url('assets/css/firedesk.css'); ?>" rel="stylesheet">		
 		 
 		<title>FireDesk</title>
 	</head>
 	<body>
 	<div class="container">
 		<div class="masthead">
-			<h3 class="text-muted">Firedesk</h3>
+			<h3 class="text-muted">Firedesk <img src="<?php echo base_url('assets/images/shell_logo.jpg');?>" style="width:3%"/></h3>
 			<div role="navigation">
 			  <ul class="nav nav-justified">
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Notes & Contracts</a>
 				<ul class="dropdown-menu" role="menu">
-						<li><a href="#">New contract</a></li>
+						<li><a href="<?php echo base_url('index.php/contracts/new_contract'); ?>">New contract</a></li>
 						<li><a href="#">Cash sale</a></li>
 						<li><a href="#">Existing contract</a></li>
 						<li><a href="#">List:&nbsp;Live contracts</a></li>
@@ -42,8 +42,8 @@
 				</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Customer Details</a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">New/existing customer details</a></li>
-						<li><a href="#">List customer names/addresses</a></li>
+						<li><a href="<?php echo base_url('index.php/customers/new_existing'); ?>">New/existing customer details</a></li>
+						<li><a href="<?php echo base_url('index.php/customers/list_names_address'); ?>">List customer names/addresses</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Hire Fleet</a>
@@ -75,19 +75,3 @@
 			  </ul>
 			</div>
 		  </div>		
-	
-		<div class="big_logo">
-			<img src="<?php echo base_url('assets/images/shell_logo.jpg');?>" style="width:30%"/>
-		</div>
-		<footer class="footer">
-			<p>&copy; Firedesk 2014</p>
-		</footer>
-	</div> <!-- /container -->
-		 
-	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
-	</body>
-</html>

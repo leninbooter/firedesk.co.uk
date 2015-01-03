@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_MOD_BY	Bostjan Mihoric	/ccompletion@gmail.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+Contracts_m	contracts_m.php	3;"	class
+Customers_m	customers_m.php	3;"	class
+addresses	customers_m.php	33;"	variable
+clean_vars	contracts_m.php	20;"	function
+clean_vars	customers_m.php	42;"	function
+customers	contracts_m.php	11;"	variable
+customers	customers_m.php	18;"	variable
+get_accounts_like	contracts_m.php	5;"	function
+get_customers_addresses	customers_m.php	27;"	function
+get_names_address	customers_m.php	5;"	function
+get_names_like	customers_m.php	12;"	function
+query	contracts_m.php	32;"	variable
+query	contracts_m.php	52;"	variable
+query	contracts_m.php	53;"	variable
+query	contracts_m.php	8;"	variable
+query	customers_m.php	15;"	variable
+query	customers_m.php	30;"	variable
+query	customers_m.php	54;"	variable
+query	customers_m.php	74;"	variable
+query	customers_m.php	75;"	variable
+query	customers_m.php	8;"	variable
+result	contracts_m.php	56;"	variable
+result	customers_m.php	78;"	variable
+save_contract	contracts_m.php	28;"	function
+save_customer	customers_m.php	50;"	function
+value	contracts_m.php	24;"	variable
+value	customers_m.php	46;"	variable
