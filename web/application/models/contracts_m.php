@@ -27,28 +27,32 @@ class Contracts_m extends CI_Model
 	
 	public function save_contract( $vars_array )		
 	{		
-		$this->load->database();
+		$this->load->database();		
+		if( $vars_array["saved_addresses"] == "" )
+		{
+				if( $vars_array["new_address"] != "" )
+				{
+					$vars_array["saved_addresses"] = $vars_array["new_address"];
+				}
+		}
 		array_walk($vars_array, "self::clean_vars");
-		$query = "CALL ins_customer(".$this->db->escape_str($vars_array["order_number"]).",
-									'".$this->db->escape_str($vars_array["name"])."', 
-									'".$this->db->escape_str($vars_array["address"])."', 
-									'".$this->db->escape_str($vars_array["telephone"])."', 
-									'".$this->db->escape_str($vars_array["fax"])."', 
-									'".$this->db->escape_str($vars_array["email"])."', 
-									'".$this->db->escape_str($vars_array["contact_name"])."', 
-									'".$this->db->escape_str($vars_array["representative"])."',
-									".$this->db->escape_str($vars_array["vat"]).", 
-									'".date('Y-m-d H:i:s')."',
-									".$this->db->escape_str($vars_array["type"]).", 
-									".$this->db->escape_str($vars_array["invoicing"]).", 
-									'".$this->db->escape_str($vars_array["account_reference"])."',
-									".$this->db->escape_str($vars_array["days_week"]).", 
-									".$this->db->escape_str($vars_array["holiday_credit"]).", 
-									".$this->db->escape_str($vars_array["prices_type"]).", 
-									3,
-									".$this->db->escape_str($vars_array["credit_limit"]).", 
-									'".$this->db->escape_str($vars_array["statement_address"])."', 
-									".$this->db->escape_str($vars_array["parent_account_id"]).");";
+		$query = "CALL ins_contract("
+									.$this->db->escape_str($vars_array["account_reference_id"]).","
+									.$this->db->escape_str($vars_array["contract_type"]).","				
+									.$this->db->escape_str($vars_array["identification_type"]).","	
+									."'".$this->db->escape_str($vars_array["identification"])."',"			
+									.$this->db->escape_str($vars_array["payment_method"]).","
+									.$this->db->escape_str($vars_array["payment_ammount"]).","
+									."'".$this->db->escape_str($vars_array["payment_notes"])."',"
+									."'".$this->db->escape_str($vars_array["saved_addresses"])."',"
+									.$this->db->escape_str($vars_array["delivery_charge"]).","
+									."'".$this->db->escape_str($vars_array["notes"])."',".
+									"'".date('Y-m-d H:i:s')."',"
+									."'".$this->db->escape_str($vars_array["time"])."',"
+									."'".$this->db->escape_str(str_replace("/","-",$vars_array["date"]))."',"
+									."'".$this->db->escape_str(str_replace("/","-",$vars_array["due_back"]))."'"
+									.")";
+		log_message('debug', $query);
 		$query = str_replace("'NULL'", "NULL", $query);
 		$query = $this->db->query($query);
 		if( !empty($query->result()) )

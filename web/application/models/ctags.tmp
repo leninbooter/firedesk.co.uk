@@ -16,9 +16,9 @@ get_accounts_like	contracts_m.php	5;"	function
 get_customers_addresses	customers_m.php	27;"	function
 get_names_address	customers_m.php	5;"	function
 get_names_like	customers_m.php	12;"	function
-query	contracts_m.php	32;"	variable
-query	contracts_m.php	52;"	variable
-query	contracts_m.php	53;"	variable
+query	contracts_m.php	39;"	variable
+query	contracts_m.php	56;"	variable
+query	contracts_m.php	57;"	variable
 query	contracts_m.php	8;"	variable
 query	customers_m.php	15;"	variable
 query	customers_m.php	30;"	variable
@@ -26,7 +26,7 @@ query	customers_m.php	54;"	variable
 query	customers_m.php	74;"	variable
 query	customers_m.php	75;"	variable
 query	customers_m.php	8;"	variable
-result	contracts_m.php	56;"	variable
+result	contracts_m.php	60;"	variable
 result	customers_m.php	78;"	variable
 save_contract	contracts_m.php	28;"	function
 save_customer	customers_m.php	50;"	function

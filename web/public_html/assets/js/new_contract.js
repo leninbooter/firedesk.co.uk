@@ -111,3 +111,9 @@ $('#parent_account').focusout(function() {
 	//$('#dropdown_parents_list').hide();
 });
 
+/* New customer form */
+$( '#new_contract_form' ).submit( function( event ) {
+		$('#payment_ammount').val( parseFloat( $('#payment_ammount').val() ).toFixed(2) );
+		$('#delivery_charge').val( parseFloat( $('#delivery_charge').val() ).toFixed(2) );
+		return true;
+});
