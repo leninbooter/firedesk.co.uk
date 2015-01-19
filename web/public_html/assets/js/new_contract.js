@@ -1,4 +1,69 @@
 var parent_selected = false;
+var items_qty = 0;
+var redirect_to = "";
+
+function abandon( contract_id )
+{	
+	if( confirm('Are you sure you want to abandon this contract? You won\'t be able to activate it or modify it') )
+	{
+		$.ajax({
+			type: "GET",
+			url: "abandon_contract",
+			data: { contract_id: contract_id },
+			dataType: "text"
+			})
+			.done(function( json ) {
+				if( json != 'ko' )
+				{	
+					$('#alerts .modal-content').html( "<div class=\"modal-body\">The contract was abandoned successfully!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );
+					$('#alerts .modal-content').css('background-color','#D6E9C6');
+					redirect_to = "list_all_contracts";
+				}else
+				{
+					$('#alerts .modal-content').html( "<div class=\"modal-body\">There was with the request; please, try again.!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );	
+					$('#alerts .modal-content').css('background-color', '#F2DEDE');
+				}
+			})
+			.fail(function() {
+				$('#alerts .modal-content').html( "<div class=\"modal-body\">There was a problem with the request; please, try again.!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );	
+				$('#alerts .modal-content').css('background-color', '#F2DEDE');
+			});
+	}
+}
+
+function activate( contract_id )
+{
+	if( confirm('Are you sure you want to activate this contract? No further hire items can be added after activation') )
+	{
+		$.ajax({
+			type: "GET",
+			url: "activate_contract",
+			data: { contract_id: contract_id },
+			dataType: "text"
+			})
+			.done(function( json ) {
+				if( json != 'ko' )
+				{	
+					$('#alerts .modal-content').html( "<div class=\"modal-body\">The contract was activated successfully!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );
+					$('#alerts .modal-content').css('background-color','#D6E9C6');
+					redirect_to = "edit?id="+contract_id;
+				}else
+				{
+					$('#alerts .modal-content').html( "<div class=\"modal-body\">There was a problem activating the contract; please, try again.!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );	
+					$('#alerts .modal-content').css('background-color', '#F2DEDE');
+				}
+			})
+			.fail(function() {
+				$('#alerts .modal-content').html( "<div class=\"modal-body\">There was a problem activating the contract; please, try again.!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );	
+				$('#alerts .modal-content').css('background-color', '#F2DEDE');
+			});
+	}
+}
+
+function edit( contract_id )
+{
+	window.location.href = "edit?id="+contract_id;
+}
 
 function show_parents_dropdownlist(parent_input)
 {	
@@ -69,6 +134,7 @@ $( document ).ready(function() {
 		.on('changeDate', function(ev){
 			$(this).datepicker('hide');
 		});
+		
 });
 
 $('#account_reference').keyup(function()
@@ -106,6 +172,10 @@ $('#account_reference').keyup(function()
 	
 });
 
+$('#save_button').click(function()
+{	
+	$('#add_items_form').submit();
+});
 
 $('#parent_account').focusout(function() {
 	//$('#dropdown_parents_list').hide();
@@ -117,3 +187,92 @@ $( '#new_contract_form' ).submit( function( event ) {
 		$('#delivery_charge').val( parseFloat( $('#delivery_charge').val() ).toFixed(2) );
 		return true;
 });
+
+$('#desc_in').on('keyup', function(e) {
+	if( e.which == 13 )
+	{
+		if( $('#qty_in').val() != "" &&  $('#description_in').val() != "" )
+		{				
+			var qty = $('#qty_in').val();
+			var rate = $('#rate_in').val();
+			var disc = $('#desc_in').val() == "" ? 0 : $('#desc_in').val();
+			
+			if( isNaN(qty) )
+			{
+				alert('Quantity must contain only numbers.');
+			}else {			
+			
+				if( isNaN(rate) )
+				{
+					alert('Rate must contain only numbers.');
+				}else 
+				{
+					if( isNaN(disc) )
+					{
+						alert('Discount must contain only numbers.');
+					}else
+					{
+						if( typeof $('input[name=options]:checked' ).val() != 'undefined' )
+						{
+							var value = qty * ( rate - ( (rate * disc) / 100) );
+							items_qty += 1;
+							var item_type = $('input[name=options]:checked' ).val() == "sale" ? "1" : "2";
+							item_type = $('input[name=options]:checked' ).val() == "hire" ? "2" : "1";
+							
+							if( $('input[name=options]:checked' ).val() == "hire" )
+							{
+								if( $('#regularity_in').val() == "" )
+								{
+									alert('Select the regularity');
+								}else {								
+									$('#items tr').last().before(
+									"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ $('#description_in').val() +"\" readonly></td><td><input id=\"no_entries\" name=\"no_entries[]\" type=\"text\" class=\"form-control\" value=\""+ $('#entry_in').val() +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly><input id=\"regularity\" name=\"regularity[]\" type=\"text\" class=\"form-control\" value=\""+ $('#regularity_in option:selected').text() +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(disc).toFixed(2) +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ parseFloat(value).toFixed(2) +"\" readonly></td></tr>"
+									);
+									$('#item_no_in').val("");
+									$('#qty_in').val("");
+									$('#description_in').val("");
+									$('#entry_in').val("");
+									$('#rate_in').val("");
+									$('#regularity_in').val(1);
+									$('#desc_in').val("");
+									$('#item_no_in').focus();
+								}
+							}else
+							{
+								if( $('input[name=options]:checked' ).val() == "sale" )
+								{
+									$('#items tr').last().before(
+									"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ $('#description_in').val() +"\" readonly></td><td><input id=\"no_entries\" name=\"no_entries[]\" type=\"text\" class=\"form-control\" value=\""+ $('#entry_in').val() +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(disc).toFixed(2) +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ parseFloat(value).toFixed(2) +"\" readonly></td></tr>"
+									);
+									$('#item_no_in').val("");
+									$('#qty_in').val("");
+									$('#description_in').val("");
+									$('#entry_in').val("");
+									$('#rate_in').val("");
+									$('#regularity_in').val(1);
+									$('#desc_in').val("");
+									$('#item_no_in').focus();
+								}
+							}
+							
+						}else{
+							alert('Please, select the type of item, Sale or Hire');
+						}
+					}
+				}
+			}
+		}
+	}
+});
+
+$('#alerts ').on('hide.bs.modal', function (e) {
+	if( redirect_to != "" )
+	{
+		window.location.href = redirect_to;
+	}
+})
+
+function contract_details_pdf(contract_id)
+{
+	$('#contract_details_content_iframe').attr("src", 'contract_details_pdf?contract_id=' + contract_id);
+}

@@ -1,0 +1,1 @@
+	<script src="<?php echo base_url('assets/js/edit_contract.js'); ?>"></script>

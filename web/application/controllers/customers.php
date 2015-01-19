@@ -105,7 +105,7 @@ class Customers extends CI_Controller
                array(
                      'field'   => 'account_reference',
                      'label'   => 'Account Reference',
-                     'rules'   => 'trim|xss_clean|max_length[7]|alpha'
+                     'rules'   => 'trim|xss_clean|max_length[7]|alpha_dash'
                   ),
 			   array(
 					'field'		=> 'email',

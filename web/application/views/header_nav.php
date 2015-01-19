@@ -16,16 +16,16 @@
 	<body>
 	<div class="container">
 		<div class="masthead">
-			<h3 class="text-muted">Firedesk <img src="<?php echo base_url('assets/images/shell_logo.jpg');?>" style="width:3%"/></h3>
+			<h3 class="text-muted">Firedesk <img src="<?php echo base_url('assets/images/shell_logo.jpg');?>" style="width:3%"/></h3>		
 			<div role="navigation">
 			  <ul class="nav nav-justified">
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Notes & Contracts</a>
 				<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/contracts/new_contract'); ?>">New contract</a></li>
 						<li><a href="#">Cash sale</a></li>
-						<li><a href="#">Existing contract</a></li>
-						<li><a href="#">List:&nbsp;Live contracts</a></li>
-						<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance orders</a></li>
+						<li><a href="<?php echo base_url('index.php/contracts/list_all_contracts'); ?>">Existing contract</a></li>
+						<li><a href="<?php echo base_url('index.php/contracts/list_live_contracts'); ?>">List:&nbsp;Live contracts</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#balance_orders_submenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance orders</a></li>
 						<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All</a></li>
 						<li><a href="#">Find item</a></li>
 						<li><a href="#">Off hire notes</a></li>						

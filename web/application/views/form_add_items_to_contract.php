@@ -1,18 +1,20 @@
-<form role="form">
+<form role="form" id="add_items_form" method="post" action="<?php echo base_url('index.php/contracts/save_contract_item'); ?>">
 <div class="row">
 	<div class="col-md-5">
 		<h1>Adding items to contract</h1>
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-4">
-		<input type="hiiden" value="<?php echo $contract_id; ?>">
+		<input type="hidden" name="contract_id" id="contract_id" value="<?php echo $contract_id; ?>">
 		<h2>Contract No. <?php echo $contract_id; ?></h2>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-md-4">
+		<input type="hidden" name="customer_name" id="customer_name" value="<?php echo $customer_name; ?>">
 		<h3>Client name <?php echo $customer_name; ?></h3>
+		<input type="hidden" id="contract_type" name="contract_type" value="<?php echo $contract_type; ?>">
 		<h4><?php echo $contract_type; ?></h4>
 		<address>
 			<strong>xxxxxxx xxxxxx</strong><br>
@@ -22,6 +24,7 @@
 	<div class="col-md-4">
 		<div class="row">
 			<div class="col-md-4">
+				<input type="hidden" id="delivery_charge" name="delivery_charge" value="<?php echo $delivery_charge; ?>">
 				<h4>Delivery</h4>
 				<?php echo $delivery_charge; ?>
 			</div>
@@ -42,28 +45,42 @@
 	</div>
 	<div class="col-md-4">
 		<h4>Site Address</h4>
+		<input type="hidden" name="saved_address" id="saved_address" value="<?php echo $address; ?>">
 		<?php echo $address; ?>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-md-12">
-		<table class="table table-hover table-responsive">
+		<table class="table table-hover table-responsive" id="items">
 			<thead>
 				<tr>
 					<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>No entries</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
 				</tr>
 			</thead>
-			<div id="items">
+			<?php foreach($contract_items as $row): ?>
 				<tr>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					<td><?php echo $row->item_no; ?></td>
+					<td><?php echo $row->qty; ?></td>
+					<td><?php echo $row->description; ?></td>
+					<td><?php echo $row->entries_no; ?></td>
+					<td><?php echo $row->rate;
+							echo " ";
+							switch( $row->regularity )
+							{
+								case 1: echo "Year"; break;
+								case 2: echo "Month"; break;
+								case 3: echo "Week"; break;
+								case 4: echo "Day"; break;
+							}
+						?></td>
+					<td><?php echo $row->discount_perc; ?></td>
+					<td><?php echo $row->value; ?></td>
 				</tr>
-			</div>
-			<div>
+			<?php endforeach; ?>
 				<tr>
-					<td><input class="form-control" type="text" id="item_no"/></td><td><input class="form-control" type="text" id="qty"/></td><td><input class="form-control" type="text" id="description"/></td><td><input class="form-control" type="text" id="entry"/></td><td><div class="form-group"><input class="form-control" type="text" id="rate"/><select  class="form-control" id="regularity"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td><td><input class="form-control" type="text" id="desc"/></td><td><input class="form-control" type="text" id="value"/></td>
+					<td><input class="form-control" type="text" id="item_no_in"/></td><td><input class="form-control" type="text" id="qty_in"/></td><td><input class="form-control" type="text" id="description_in"/></td><td><input class="form-control" type="text" id="entry_in"/></td><td><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select  class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td><td><input class="form-control" type="text" id="desc_in"/></td><td></td>
 				</tr>
-			</div>
 		</table>
 	</div>
 </div>
@@ -79,11 +96,11 @@
 			<?php if($contract_status < 5): ?>
 			<div class="btn-group" data-toggle="buttons">		
 					 <label class="btn btn-primary">
-						<input type="radio" name="options" id="sale" autocomplete="off">Sale
+						<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
 					  </label>
 					<!-- <button type="button" class="btn btn-info  btn-block">Sale</button>-->
 					<label class="btn btn-primary">
-						<input type="radio" name="options" id="hire" autocomplete="off">Hire
+						<input type="radio" name="options" id="hire" autocomplete="off" value="hire">Hire
 					  </label>
 					<!-- <button type="button" class="btn btn-info  btn-block">Hire</button>-->
 			</div>
@@ -111,22 +128,32 @@
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status == 3 || $contract_status == 4): ?>
-			<button type="button" class="btn btn-info  btn-block">Invoices</button>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				Invoices <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="<?php echo base_url('index.php/invoices/generate?type=1&contract_id='.$contract_id);?>">New</a></li>
+				<li><a href="#">All</a></li>
+				<li><a href="#">Preview</a></li>
+				<li><a href="#">Past</a></li>				
+			  </ul>
+			</div>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status > 1): ?>
-			<button type="button" class="btn btn-info  btn-block">Print</button>
+			<button id="print_button" type="button" data-toggle="modal" data-target="#contract_details" class="btn btn-info  btn-block" onclick="contract_details_pdf(<?php echo $contract_id; ?>)">Print</button>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status == 2): ?>
-			<button type="button" class="btn btn-info  btn-block">Activate</button>
+			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="activate('<?php echo $contract_id; ?>')">Activate</button>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status == 2): ?>
-			<button type="button" class="btn btn-info  btn-block">Abandom</button>
+			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="abandon('<?php echo $contract_id; ?>')">Abandon</button>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-1">
@@ -141,7 +168,9 @@
 	</div>
 	<div class="col-md-1">
 		<div class="form-group">
-			<a href="<?php echo base_url('index.php/contracts/form_add_items'); ?>"><button type="button" class="btn btn-primary  btn-block">Save</button></a>
+			<?php if($contract_status < 3): ?>
+				<button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button>
+			<?php endif; ?>
 		</div>
 	</div>
 	<div class="col-md-1">
@@ -149,3 +178,75 @@
 	</div>
 </div>
 </form>
+
+<div class="modal fade" id="contract_details" tabindex="-1" role="dialog" aria-labelledby="contract_details_label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			</div>
+			<iframe style="width:100%; height:600px" id="contract_details_content_iframe" src=""></iframe>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="alerts" tabindex="-1" role="dialog" aria-labelledby="alerts_label" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">			
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="outstanding_items" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<form id="items_supplied_form">
+			<input type="hidden" name="contract_id" id="contract_id" value="<?php echo $contract_id; ?>">
+			<div class="modal-header">
+				<h4 class="modal-title">Outstanding items</h4>
+			</div>			
+			<div class="modal-body">			
+			<?php 
+				if(isset($outstanding_items))
+				{					
+					echo "<div class=\"row\">";
+					echo "<div class=\"col-md-2\"><h4>Item No.</h4></div>";
+					echo "<div class=\"col-md-3\"><h4>Description</h4></div>";
+					echo "<div class=\"col-md-1\"><h4>Price</h4></div>";
+					echo "<div class=\"col-md-1\"><h4>Ordered</h4></div>";
+					echo "<div class=\"col-md-1\"><h4>Sent</h4></div>";
+					echo "<div class=\"col-md-1\"><h4>Now?</h4></div>";
+					echo "</div>";
+					foreach($outstanding_items as $i)
+					{
+						if( $i->qty_supplied < $i->qty )
+						{
+							echo "<div class=\"row\">";
+							echo "<input type=\"hidden\" value=\"".$i->pk_id."\" id=\"item_id\" name=\"item_id[]\">";
+							echo "<div class=\"col-md-2\">".$i->item_no."</div>";
+							echo "<div class=\"col-md-3\">".$i->description."</div>";
+							echo "<div class=\"col-md-1\">".$i->rate."</div>";
+							echo "<div class=\"col-md-1\">".$i->qty."</div>";
+							echo "<div class=\"col-md-1\">".$i->qty_supplied."</div>";
+							echo "<div class=\"col-md-1\"><input type=\"text\" id=\"now\" name=\"now[]\" class=\"form-control\" autocomplete=\"off\"></div>";
+							echo "</div>";
+						}
+					}
+					if(count($outstanding_items) == 0)
+					{
+						echo "<div class=\"row\">";
+						echo "<div class=\"col-md-9\"><div class=\"alert alert-warning\" role=\"alert\">This contract does not have outstanding items</div></div>";
+						echo "</div>";
+					}
+				}
+			?>			
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-info" data-dismiss="modal" onclick="location.reload()">Refresh</button>
+				<?php if( count($outstanding_items) > 0 ): ?>
+				<button type="submit" class="btn btn-primary">Save changes</button>
+				<button type="button" class="btn btn-primary">Save changes & print delivery note</button>
+				<?php endif; ?>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>

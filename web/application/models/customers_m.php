@@ -2,6 +2,13 @@
 
 class Customers_m extends CI_Model
 {	
+	public function get_customers()
+	{
+		$this->load->database();
+		$query = $this->db->query("select pk_id, name from customers order by 2");
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
 	public function get_names_address()
 	{	
 		$this->load->database();

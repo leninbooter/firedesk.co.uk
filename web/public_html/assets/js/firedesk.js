@@ -304,3 +304,21 @@ $( '#new_customer_form' ).submit( function( event ) {
 	}
 	
 });
+
+$('#outstanding_items_form_contract_no').submit(function(event) {
+	var value = $('#contract_no_field').val();
+	if(isNaN( value ))
+	{
+		$('#div_group_contract_no').addClass('has-error');
+		$('#contract_no_field').tooltip({
+			html: false,
+			placement: 'top',
+			template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+			title: 'This field just allows numbers in here'
+		});
+		return false;
+	}else
+	{
+		return true;
+	}
+});
