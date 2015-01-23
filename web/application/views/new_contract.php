@@ -36,9 +36,8 @@
 		<div class="form-group">
 			<label for="contract_type">Type</label>
 			<select class="form-control" id="contract_type" name="contract_type">
-				<option value="1">Hire Contract</option>
+				<option value="1">Hires/Sales Contract</option>
 				<option value ="2">Sales Contract</option>
-				<option value ="3">Sales Delivery Notes</option>
 			</select>
 		</div>
 		<div class="row">

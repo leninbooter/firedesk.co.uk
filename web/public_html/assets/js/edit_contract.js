@@ -29,3 +29,22 @@ $( '#items_supplied_form' ).submit(function(event)
 			$('#outstanding_items .modal-body').append("<div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
 	});	
 });
+
+$('#past_invoices').on('shown.bs.modal', function() {
+	$.ajax(
+		{
+			url: "../invoices/past/" + $('#contract_id').val(),
+			dataType: "text"
+		}
+	).done(function(response)
+		{
+			$('#past_invoices .modal-body').html(response);
+		});
+	
+	//$('#past_invoices_iframe').attr("src", '../invoices/past/'+$('#contract_id').val());
+});
+
+$('#invoice_preview_date').on('shown.bs.modal', function() 
+{
+	$('#invoice_date_preview').focus();
+});

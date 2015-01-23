@@ -322,3 +322,15 @@ $('#outstanding_items_form_contract_no').submit(function(event) {
 		return true;
 	}
 });
+
+$('#balance_orders_submenu').on('shown.bs.modal', function()
+{
+	$('#contract_no_field').focus();
+});
+
+$( document ).ready(function() {
+	$('.datepicker').datepicker()
+			.on('changeDate', function(ev){
+				$(this).datepicker('hide');
+			});
+});

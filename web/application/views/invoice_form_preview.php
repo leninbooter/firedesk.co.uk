@@ -1,9 +1,11 @@
-<form role="form" id="generate_invoice_form" method="post" action="<?php echo base_url('index.php/invoices/process'); ?>">
+<form role="form" id="generate_invoice_form_preview" method="post" action="<?php echo base_url(''); ?>">
+	<br/>
 	<div class="row">
-		<div class="col-md-5">
+		<div class="col-md-4">
 			<h1>Invoice</h1>
 		</div>
-		<div class="col-md-3"></div>
+		<div class="col-md-4">		 
+		</div>
 		<div class="col-md-4">
 			<input type="hidden" name="contract_id" id="contract_id" value="<?php echo $contract_id; ?>">
 			<h2>Contract No. <?php echo $contract_id; ?></h2>
@@ -44,9 +46,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<h2>Invoice No. <?php echo $invoice_id; ?></h2>
-			<input type="hidden" name="invoice_id" id="invoice_id" value="<?php echo $invoice_id; ?>">
+		<div class="col-md-2">
+			<div class="alert alert-warning" role="alert"><p class="text-center">Invoice preview</p></div>
 		</div>
 	</div>
 
@@ -60,6 +61,7 @@
 				</thead>
 				<?php $subtotal = 0; ?>
 				<?php foreach($invoice_items as $row): ?>
+					<?php if($row->qty_supplied > 0): ?>					
 					<tr>
 						<input type="hidden" id="item_id" name="item_id[]" value="<?php echo $row->pk_id; ?>">
 						<td><?php echo $row->item_no; ?></td>
@@ -89,6 +91,7 @@
 						<input type="hidden" id="item_type" name="item_type[]" value="<?php echo $row->item_type; ?>">
 						<input type="hidden" id="disc" name="disc[]" value="<?php echo $row->discount_perc; ?>">
 						<?php $subtotal += $row->value; ?>
+						<?php endif;?>
 					</tr>
 				<?php endforeach; ?>
 			</table>
@@ -143,73 +146,8 @@
 	</div>	
 
 	<div class="row">
-		<div class="col-md-8"></div>
-		<div class="col-md-1"><button type="button" class="btn btn-default  btn-block" id="cancel_button">Cancel</button></div>
-		<div class="col-md-1"><button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button></div>
-		<div class="col-md-2"><button type="button" class="btn btn-primary  btn-block" id="save_send_button">Save & Send via e-mail</button></div>
+		<div class="col-md-11"></div>
+		<div class="col-md-1"><button type="button" class="btn btn-default  btn-block" id="cancel_button">Cancel</button></div>		
 	</div>
-	<input type="hidden" id="email_invoice" name="email_invoice" value="0">
-	
-	<div class="modal fade" id="payment_invoice" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Payment</h4>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Date:</label></div>
-						<div class="col-md-6"><input class="form-control" type="text" value="<?php echo date('d/m/Y'); ?>" id="payment_date" name="payment_date" readonly="true"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Reference:</label></div>
-						<div class="col-md-6"><input class="form-control" type="text" id="payment_reference" name="payment_reference"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label type="text" class="control-label">Ammount:</label></div>
-						<div class="col-md-4"><?php echo number_format(($subtotal + ($subtotal*0.15)),2);?></div>	
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Cash:</label></div>
-						<div class="col-md-4"><input type="text" class="form-control" id="cash" name="cash"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Cheque:</label></div>
-						<div class="col-md-4"><input type="text" class="form-control" id="cheque" name="cheque"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Card:</label></div>
-						<div class="col-md-4"><input type="text" class="form-control" id="card" name="card"></div>
-					</div>					
-				</div>
-				<div class="modal-footer">
-						<button type="button" class="btn btn-default  btn-block" id="cancel_button" data-dismiss="modal">Cancel</button>
-						<button type="button" class="btn btn-primary  btn-block" id="ok_button">Ok</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+	<input type="hidden" id="email_invoice" name="email_invoice" value="0">	
 </form>
-
-<div class="modal fade" id="contract_details" tabindex="-1" role="dialog" aria-labelledby="contract_details_label" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-			</div>
-			<iframe style="width:100%; height:600px" id="contract_details_content_iframe" src=""></iframe>
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="alerts" tabindex="-1" role="dialog" aria-labelledby="alerts_label" aria-hidden="true">
-	<div class="modal-dialog modal-sm">
-		<div class="modal-content">			
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="outstanding_items" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">			
-		</div>
-	</div>
-</div>

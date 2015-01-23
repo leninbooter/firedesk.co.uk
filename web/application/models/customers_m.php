@@ -89,5 +89,5 @@ class Customers_m extends CI_Model
 		{
 			return false;
 		}			
-	}
+	}	
 }

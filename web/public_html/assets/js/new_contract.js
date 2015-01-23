@@ -128,13 +128,7 @@ $( document ).ready(function() {
 	$('#dropdown_parents_list').css("left", parent_input.offset().left + "px");
 	$('#dropdown_parents_list').css("min-width", width + "px");
 	$('#account_reference_id').val("");
-	$('#account_reference').val("");
-	
-	$('.datepicker').datepicker()
-		.on('changeDate', function(ev){
-			$(this).datepicker('hide');
-		});
-		
+	$('#account_reference').val("");		
 });
 
 $('#account_reference').keyup(function()

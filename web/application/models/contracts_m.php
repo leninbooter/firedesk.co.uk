@@ -179,7 +179,22 @@ class Contracts_m extends CI_Model
 	public function get_all_items_not_invoiced( $contract_id )
 	{
 		$this->load->database();
-		$query = "select item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and fk_contract_id = ".$this->db->escape_str($contract_id).";";				
+		$query = "select pk_id, item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and qty_supplied > 0 and fk_contract_id = ".$this->db->escape_str($contract_id).";";				
+		$query = $this->db->query($query);
+		$result = $query->result();
+		if( !empty($result) )
+		{
+			$result = $query->result();
+			mysqli_next_result( $this->db->conn_id );
+			return $result;
+		}else
+			return array();
+	}
+	
+	public function get_all_items_not_invoiced_not_supplied( $contract_id )
+	{
+		$this->load->database();
+		$query = "select pk_id, item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and fk_contract_id = ".$this->db->escape_str($contract_id).";";				
 		$query = $this->db->query($query);
 		$result = $query->result();
 		if( !empty($result) )

@@ -23,3 +23,4 @@
     <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/firedesk.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootbox.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/datepicker/js/bootstrap-datepicker.js'); ?>"></script>

@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
 contract_status	form_add_items_to_contract.php	130;"	variable
+contract_type	form_add_items_to_contract.php	98;"	variable
 date	list_all_contracts.php	13;"	variable
 date	list_balance_orders.php	13;"	variable
 date	list_live_contracts.php	21;"	variable
@@ -15,3 +16,5 @@ key	customers_list_selectable_dropdown_accRef_name.php	5;"	variable
 started	customers_address_json.php	1;"	variable
 started	customers_address_json.php	8;"	variable
 subtotal	invoice_form.php	61;"	variable
+subtotal	invoice_form_preview.php	62;"	variable
+subtotal	report_invoice_pdf.php	45;"	variable

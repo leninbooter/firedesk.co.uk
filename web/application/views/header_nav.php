@@ -67,7 +67,13 @@
 					</ul>
 				</li>
 				<li><a href="#">Sales Stock</a></li>
-				<li><a href="#">Purchases & Suppliers</a></li>
+				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases & Suppliers</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="<?php echo base_url('index.php/suppliers/new_existing'); ?>">New/Existing supplier details</a></li>
+						<li><a class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown" href="<?php echo base_url('index.php/purchase_orders/new_existing'); ?>">Purchase orders</a></li>
+						<li><a href="<?php echo base_url('index.php/suppliers/list_names_address'); ?>">List supplier names/addresses</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Servicing<br/>&nbsp;</a></li>
 				<li><a href="#">Ledgers & Cashbook</a></li>
 				<li><a href="#">Diary Messages</a></li>

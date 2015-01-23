@@ -95,14 +95,14 @@
 		<div class="col-md-2">
 			<?php if($contract_status < 5): ?>
 			<div class="btn-group" data-toggle="buttons">		
-					 <label class="btn btn-primary">
+					 <label class="btn btn-primary <?php echo $contract_type == 2 ? "active":"" ?>">
 						<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
 					  </label>
-					<!-- <button type="button" class="btn btn-info  btn-block">Sale</button>-->
-					<label class="btn btn-primary">
-						<input type="radio" name="options" id="hire" autocomplete="off" value="hire">Hire
-					  </label>
-					<!-- <button type="button" class="btn btn-info  btn-block">Hire</button>-->
+					<?php if($contract_type == 1): ?>					  
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
+						</label>
+					<?php endif; ?>
 			</div>
 			<?php endif; ?>
 		</div>
@@ -133,10 +133,9 @@
 				Invoices <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" role="menu">
-				<li><a href="<?php echo base_url('index.php/invoices/generate?type=1&contract_id='.$contract_id);?>">New</a></li>
-				<li><a href="#">All</a></li>
-				<li><a href="#">Preview</a></li>
-				<li><a href="#">Past</a></li>				
+				<li><a href="" data-toggle="modal" data-target="#invoice_options">New</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#invoice_preview_date">Preview</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#past_invoices">Past</a></li>				
 			  </ul>
 			</div>
 		<?php endif; ?>
@@ -247,6 +246,47 @@
 				<?php endif; ?>
 			</div>
 			</form>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="invoice_options" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<a href="<?php echo base_url('index.php/invoices/generate?type=2&contract_id='.$contract_id);?>"><button type="button" class="btn btn-info">All items</button></a>
+				<a href="<?php echo base_url('index.php/invoices/generate?type=1&contract_id='.$contract_id);?>"><button type="button" class="btn btn-info">Off hired & sales</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="invoice_preview_date" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<input type="text" class="form-control datepicker" id="invoice_date_preview" readonly>
+						<button type="button" class="btn btn-info">Ok</button>
+						<button type="button" class="btn btn-defaul" data-dismiss="modal">Close</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="past_invoices" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Past invoices</h4>
+			</div>
+			<div class="modal-body">				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
 		</div>
 	</div>
 </div>
