@@ -66,12 +66,24 @@
 						<li><a href="#">Items on hire to customers</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Sales Stock</a></li>
+				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Sales Stock</a>
+					<ul class="dropdown-menu" role="menu">
+						<!--<li><a href="#">Stock Item</a></li>-->
+						<li><a href="<?php echo base_url('index.php/family_groups/groups'); ?>">Group Changes/order</a></li>
+						<!--<li><a href="#">Discount groups</a></li>
+						<li><a href="#">Add stock quantities</a></li>
+						<li><a href="#">Global</a></li>
+						<li><a href="#">Sold since</a></li>
+						<li><a href="#">Price & stock enquiry</a></li>
+						<li><a href="#">Price list</a></li>
+						<li><a href="#">Reports</a></li>-->
+					</ul>
+				</li>
 				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases & Suppliers</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/suppliers/new_existing'); ?>">New/Existing supplier details</a></li>
 						<li><a class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown" href="<?php echo base_url('index.php/purchase_orders/new_existing'); ?>">Purchase orders</a></li>
-						<li><a href="<?php echo base_url('index.php/suppliers/list_names_address'); ?>">List supplier names/addresses</a></li>
+						<li><a href="<?php echo base_url('index.php/suppliers/list_suppliers_addresses'); ?>">List supplier names/addresses</a></li>
 					</ul>
 				</li>
 				<li><a href="#">Servicing<br/>&nbsp;</a></li>

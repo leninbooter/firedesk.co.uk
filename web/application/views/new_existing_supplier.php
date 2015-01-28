@@ -1,185 +1,270 @@
-<h1>New / Existing Supplier</h1> <!--<button type="button" class="btn btn-info btn-sm">Load client</button>-->
+<div class="row">
+	<div class="col-md-12">&nbsp;</div>
+</div>
+<div class="row">
+	<div class="col-md-6"><h1>New/Existing Supplier</h1></div>
+	<div class="col-md-6">
+	<?php if(isset($editing)): ?>
+		<?php if($editing): ?>
+			<div class="alert alert-warning" role="alert"><b>Editing <?php echo $supplier[0]->name; ?>.</b><p>Unless you change the name of the supplier, all changes made will overwrite existing data.</p></div>
+		<?php endif; ?>
+	<?php endif; ?>
+			
+	</div>
+</div>
 <form role="form" id="new_supplier_form" method="post" action="<?php echo base_url('index.php/suppliers/save_supplier'); ?>">
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-5">
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-8">
 				<div class="form-group">
 					<label for="name">Name</label>
-					<input type="text" class="form-control" id="name" name="name"/>
+					<input type="text" class="form-control" id="name" name="name" value="<?php echo isset($supplier[0]->name) ? $supplier[0]->name:"" ?>"/>
 				</div>
 			</div>
-			<div class="col-md-5">
-				
-			</div>
-			<div class="col-md-5">
+			<div class="col-md-4">
 				<div class="form-group">
-					<label for="address">Address</label>
-					<input type="text" class="form-control" id="address" name="address"/>
+					<label for="email">E-mail</label>
+					<input type="text" class="form-control" id="email" name="email" value="<?php echo isset($supplier[0]->email) ? $supplier[0]->email:"" ?>"/>
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="form-group">
-					<label for="telephone">Telephone</label>
-					<input type="text" class="form-control" id="telephone" name="telephone"/>
+					<label for="name">Telephone 1</label>
+					<input type="text" class="form-control" id="telephone1" name="telephone1" value="<?php echo isset($supplier[0]->telephone1) ? $supplier[0]->telephone1:"" ?>"/>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="email">Telephone 2</label>
+					<input type="text" class="form-control" id="telephone2" name="telephone2" value="<?php echo isset($supplier[0]->telephone2) ? $supplier[0]->telephone2:"" ?>"/>
+				</div>
+			</div>
+			<div class="col-md-4">
 				<div class="form-group">
 					<label for="fax">Fax</label>
-					<input type="tel" class="form-control" id="fax" name="fax"/>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="form-group">		
-					<label for="email">E-mail</label>
-					<input type="email" class="form-control" id="email" name="email"/>
+					<input type="text" class="form-control" id="fax" name="fax" value="<?php echo isset($supplier[0]->fax) ? $supplier[0]->fax:"" ?>"/>
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<div class="form-group">
-					<label for="contact_name">Contact name</label>
-					<input type="text" class="form-control" id="contact_name" name="contact_name"/>
+					<label for="name">Address</label>
+					<input type="text" class="form-control" id="address1" name="address1" value="<?php echo isset($supplier[0]->address1) ? $supplier[0]->address1:"" ?>"/>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="form-group">	
-					<label for="representative">Representative</label>
-					<input type="text" class="form-control" id="representative" name="representative"/>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="name">&nbsp;</label>
+					<input type="text" class="form-control" id="address2" name="address2" value="<?php echo isset($supplier[0]->address2) ? $supplier[0]->address2:"" ?>"/>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="name">&nbsp;</label> 
+					<input type="text" class="form-control" id="address3" name="address3" value="<?php echo isset($supplier[0]->address3) ? $supplier[0]->address3:"" ?>"/>
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-4">
 				<div class="form-group">
-					<label for="type">Type</label>
-					<select class="form-control" id="type" name="type">
-						<option value="1">Credit</option>
-						<option value="0">Cash</option>
-					</select>
+					<label for="name">&nbsp;</label>
+					<input type="text" class="form-control" id="address4" name="address4" value="<?php echo isset($supplier[0]->address4) ? $supplier[0]->address4:"" ?>"/>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-4">
 				<div class="form-group">
-					<label for="credit_limit">Credit limit</label>
-					<input type="text" id="credit_limit" class="form-control" name="credit_limit">
+					<label for="name">&nbsp;</label>
+					<input type="text" class="form-control" id="address5" name="address5" value="<?php echo isset($supplier[0]->address5) ? $supplier[0]->address5:"" ?>"/>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-4">
 				<div class="form-group">
-					<label for="order_number">Order No.</label>
-					<select class="form-control" id="order_number" name="order_number">
-						<option value="1">Required</option>
-						<option value="0">Optional</option>
-					</select>
+					<label for="name">&nbsp;</label>
+					<input type="text" class="form-control" id="address6" name="address6" value="<?php echo isset($supplier[0]->address6) ? $supplier[0]->address6:"" ?>"/>
 				</div>
 			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-3">
 				<div class="form-group">
-					<label for="vat">VAT</label>
-					<select class="form-control" id="vat" name="vat">
-							<option value="1">Not exempt</option>
-							<option value="0">Exempt</option>
-					</select>
+					<label for="name">ZIP Code</label>
+					<input type="text" class="form-control" id="zipcode" name="zipcode" value="<?php echo isset($supplier[0]->zipcode) ? $supplier[0]->zipcode:"" ?>"/>
 				</div>
-			</div>	
-			<div class="col-md-3">
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-8">
 				<div class="form-group">
-					<label for="days_week">Days/week</label>
-					<select class="form-control" id="days_week" name="days_week">
-						<option value="1">7 day</option>
-						<option value="2">6 day</option>
-						<option value="3">5 day</option>
-						<option value="4">Pro rata</option>
-						<option value="5">7 Pro rata</option>
-						<option value="6">6 Pro rata</option>
-						<option value="7">5 Pro rata</option>
-						<option value="8" selected>Standard</option>
-					</select>
+					<label for="name">Contact</label>
+					<input type="text" class="form-control" id="contact" name="contact" value="<?php echo isset($supplier[0]->contact) ? $supplier[0]->contact:"" ?>"/>
 				</div>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<div class="form-group">
-					<label for="invoicing">Invoicing</label>
-					<select class="form-control" id="invoicing" name="invoicing">
-						<option value="1">One per contract</option>
-						<option value="2">Per site: shows date contract and order</option>
-						<option value="3">Per site: shows contract and order no.</option>
-						<option value="4">Per site: shows date and order no.</option>
-						<option value="5">Per site: shows date and contract</option>
-						<option value="6">Per site: full site</option>
-						<option value="7">Per site and order number</option>
-						<option value="8">Per site and order no: full details</option>
-						<option value="9">Exclude from invoice runs</option>
-					</select>
-				</div>
-			</div> 
-			<div class="col-md-4">
-				<div class="form-group">
-					<label for="holiday_credit">Holiday Credit</label>
-					<select class="form-control" id="holiday_credit" name="holiday_credit">
-						<option value="1" selected>Standard</option>
-						<option value="2">No Holiday</option>
-						<option value="3">BUILDING</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="form-group">
-					<label for="prices_type">Prices</label>
-					<select class="form-control" id="prices_type" name="prices_type">
-						<option value="1" selected>Standard</option>
-						<option value="2">Special</option>
-					</select>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-6">
-				<div class="form-group">
-					<label for="statement_address">Statement Address</label>
-					<input type="text" class="form-control" id="statement_address" name="statement_address"/>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="form-group">
-					<label for="parent_account">Parent Account </label>
-					<input id="parent_account_id" type="hidden" value="" name="parent_account_id">
-					<input type="text" class="form-control" id="parent_account" autocomplete="off">						
-				</div>		
-			</div>
-		</div>
-
 		<div class="row">
 			<div class="col-md-12">
-				<hr/>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10">
-			</div>
-			<div class="col-md-2">
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary  btn-block">Save</button>
+				<div class="panel panel-default">
+					<div class="panel-heading">Bank Account</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Bank Name</label>
+									<input type="text" class="form-control" id="bank_name" name="bank_name" value="<?php echo isset($supplier[0]->bank_name) ? $supplier[0]->bank_name:"" ?>"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">Account Number</label>
+									<input type="text" class="form-control" id="account_number" name="account_number" value="<?php echo isset($supplier[0]->account_number) ? $supplier[0]->account_number:"" ?>"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">Swift Code</label>
+									<input type="text" class="form-control" id="swift_code" name="swift_code" value="<?php echo isset($supplier[0]->swift_code) ? $supplier[0]->swift_code:"" ?>"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">Account Type</label>
+									<select id="account_type" name="account_type" class="form-control">
+										<option value="1" <?php echo isset($supplier[0]->account_type) && $supplier[0]->account_type == 1 ? "selected":"" ?>>Checking</option>
+										<option value="2" <?php echo isset($supplier[0]->account_type) && $supplier[0]->account_type == 2 ? "selected":"" ?>>Savings</option>
+									</select>								
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">Account Address</label>
+									<input type="text" class="form-control" id="account_address1" name="account_address1" value="<?php echo isset($supplier[0]->account_address1) ? $supplier[0]->account_address1:"" ?>"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">&nbsp;</label>
+									<input type="text" class="form-control" id="account_address2" name="account_address2" value="<?php echo isset($supplier[0]->account_address2) ? $supplier[0]->account_address2:"" ?>"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">&nbsp;</label>
+									<input type="text" class="form-control" id="account_address3" name="account_address3" value="<?php echo isset($supplier[0]->account_address3) ? $supplier[0]->account_address3:"" ?>"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="name">Telephone</label>
+									<input type="text" class="form-control" id="bank_telephone" name="bank_telephone" value="<?php echo isset($supplier[0]->bank_telephone) ? $supplier[0]->bank_telephone:"" ?>"/>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				
+			</div>
+		</div>			
+		
 	</div>
-	<div id="message_board" class="col-md-6 message_board">
+	
+	<div class="col-md-4">
+		<div class="panel panel-default">
+					<div class="panel-heading">Terms</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Account Credit</label>
+									<select id="account_credit" name="account_credit" class="form-control">
+										<option value="1" <?php echo isset($supplier[0]->account_credit) && $supplier[0]->account_credit == 1 ? "selected":"" ?>>No</option>
+										<option value="2" <?php echo isset($supplier[0]->account_credit) && $supplier[0]->account_credit == 2 ? "selected":"" ?>>Yes</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Payment</label>
+									<select id="account_payment_credit" name="account_payment_credit" class="form-control">
+										<option value="1" <?php echo isset($supplier[0]->account_payment_credit) && $supplier[0]->account_payment_credit == 1 ? "selected":"" ?>>Days</option>
+										<option value="2" <?php echo isset($supplier[0]->account_payment_credit) && $supplier[0]->account_payment_credit == 2 ? "selected":"" ?>>Months</option>
+										<option value="3" <?php echo isset($supplier[0]->account_payment_credit) && $supplier[0]->account_payment_credit == 3 ? "selected":"" ?>>Weeks</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">From</label>
+									<input type="text" class="form-control" id="from" name="from" value="<?php echo isset($supplier[0]->account_payment_credit_from) ? $supplier[0]->account_payment_credit_from:"" ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Settlement</label>
+									<input type="text" class="form-control" id="settlement" name="settlement" value="<?php echo isset($supplier[0]->account_credit_setlement) ? $supplier[0]->account_credit_setlement:"" ?>"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+	
+	<div class="col-md-3">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Help</h3>				
+			</div>
+			<div class="panel-body">
+				<dl>
+				  <dt>Name</dt><dd>This field can contain only letters, numbers, dots, commas, dashes abd underscores.</dd>
+				  <br/>
+				  <dt>E-mail</dt><dd>The data format for this field is <i>name@domain.com</i>.</dd>				  
+				  <br/>
+				  <dt>...</dt><dd></dd>
+				</dl>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-9">
+		<hr/>
 	</div>
 </div>
+
+<div class="row">
+	<div class="col-md-6">
+	</div>
+	<div class="col-md-1">
+		<div class="form-group">
+			<a href="javascript:history.back()" class="btn btn-default" role="button">Go back</a>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary  btn-block">Save</button>
+		</div>
+	</div>
+</div>
+		
 </form>
-<div id="dropdown_parents_list" style="display:none">
-</div>
