@@ -219,19 +219,19 @@ class Contracts_m extends CI_Model
 		array_walk($vars_array, "self::clean_vars");
 		$query = "CALL ins_contract("
 									.$this->db->escape_str($vars_array["account_reference_id"]).","
-									.$this->db->escape_str($vars_array["contract_type"]).","				
-									.$this->db->escape_str($vars_array["identification_type"]).","	
-									."'".$this->db->escape_str($vars_array["identification"])."',"			
-									.$this->db->escape_str($vars_array["payment_method"]).","
-									.$this->db->escape_str($vars_array["payment_ammount"]).","
-									."'".$this->db->escape_str($vars_array["payment_notes"])."',"
+									.$this->db->escape_str($vars_array["contract_type"]).","
+									."NULL,"	
+									."NULL,"			
+									."NULL,"
+									."NULL,"
+									."NULL,"
 									."'".$this->db->escape_str($vars_array["saved_addresses"])."',"
 									.$this->db->escape_str($vars_array["delivery_charge"]).","
 									."'".$this->db->escape_str($vars_array["notes"])."',".
 									"'".date('Y-m-d H:i:s')."',"
-									."'".$this->db->escape_str($vars_array["time"])."',"
-									."'".$this->db->escape_str(str_replace("/","-",$vars_array["date"]))."',"
-									."'".$this->db->escape_str(str_replace("/","-",$vars_array["due_back"]))."'"
+									."NULL,"
+									."NULL,"
+									."NULL"
 									.")";		
 		$query = str_replace("'NULL'", "NULL", $query);
 		log_message('debug', $query);

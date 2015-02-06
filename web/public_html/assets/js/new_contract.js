@@ -127,8 +127,8 @@ $( document ).ready(function() {
 	$('#dropdown_parents_list').css("top", parent_input.offset().top + height + "px" );
 	$('#dropdown_parents_list').css("left", parent_input.offset().left + "px");
 	$('#dropdown_parents_list').css("min-width", width + "px");
-	$('#account_reference_id').val("");
-	$('#account_reference').val("");
+	//$('#account_reference_id').val("");
+	$('#account_reference').val($('#account_reference_id').val());
 	
 	//Contract date
 	var d = new Date();
@@ -155,7 +155,7 @@ $( document ).ready(function() {
 	month[11] = "december";
 
 	var nw = weekday[d.getDay()];
-	$('#date').val(nw + ", " + d.getDate() + " of " + month[d.getMonth()] + " of " +  d.getFullYear());
+	$('#date_string').val(nw + ", " + d.getDate() + " of " + month[d.getMonth()] + " of " +  d.getFullYear());
 	
 	//Contract time
 	$('#time').val(d.getHours() + ":" + d.getMinutes());
@@ -207,7 +207,9 @@ $('#parent_account').focusout(function() {
 
 /* New customer form */
 $( '#new_contract_form' ).submit( function( event ) {
-		$('#payment_ammount').val( parseFloat( $('#payment_ammount').val() ).toFixed(2) );
+		if( $('#delivery_charge').val() == "")
+			$('#delivery_charge').val(0);
+		
 		$('#delivery_charge').val( parseFloat( $('#delivery_charge').val() ).toFixed(2) );
 		return true;
 });

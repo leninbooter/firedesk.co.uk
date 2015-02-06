@@ -262,16 +262,6 @@ class Contracts extends CI_Controller
 					'rules'		=> 'trim|xss_clean|max_length[5]'
 			   ),
 			   array(
-					'field'		=> 'identification_type',
-					'label'		=> 'Identification Type',
-					'rules'		=> 'trim|xss_clean|integer|required'
-			   ),
-			   array(
-					'field'		=> 'identification',
-					'label'		=> 'Identification number',
-					'rules'		=> 'trim|xss_clean|required|alpha_dash'
-			   ),
-			   array(
 					'field'		=> 'date',
 					'label'		=> 'Date',
 					'rules'		=> 'trim|xss_clean|max_length[10]'
@@ -318,14 +308,8 @@ class Contracts extends CI_Controller
 		{
 		$account_reference_id	= $this->input->post('account_reference_id');
 		$contract_type			= $this->input->post('contract_type');
-		$time					= $this->input->post('time');
-		$identification_type	= $this->input->post('identification_type');
-		$identification			= $this->input->post('identification');
+		$time					= $this->input->post('time');		
 		$date					= date('Y-m-d', strtotime($this->input->post('date')));
-		$payment_method			= $this->input->post('payment_method');
-		$payment_ammount		= $this->input->post('payment_ammount');
-		$payment_notes			= $this->input->post('payment_notes');
-		$due_back				= date('Y-m-d', strtotime($this->input->post('due_back')));
 		$saved_addresses		= $this->input->post('saved_addresses');
 		$new_address			= $this->input->post('new_address');
 		$delivery_charge		= $this->input->post('delivery_charge');
@@ -334,14 +318,8 @@ class Contracts extends CI_Controller
 		$vars_array = compact(
 								"account_reference_id",
 								"contract_type",
-								"time",
-								"identification_type",
-								"identification",
+								"time",								
 								"date",
-								"payment_method",
-								"payment_ammount",
-								"payment_notes",
-								"due_back",
 								"saved_addresses",
 								"new_address",
 								"delivery_charge",
@@ -357,6 +335,7 @@ class Contracts extends CI_Controller
 				$data['address'] = $saved_addresses;
 				$data['delivery_charge'] = $delivery_charge;
 				$data['contract_status'] = 1;
+				$data['contract_items'] = $this->contracts_m->get_contract_items( $data['contract_id'] );
 				$this->load->view('header_nav');
 				$this->load->view('form_add_items_to_contract', $data);
 				$this->load->view('footer_common');
