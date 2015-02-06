@@ -89,6 +89,7 @@ class Customers extends CI_Controller
 		$this->load->view('header_nav');
 		$this->load->view('new_customer');
 		$this->load->view('footer_common');
+		$this->output->append_output("<script src=".base_url('assets/js/new_customer.js')."></script>");
 		$this->load->view('new_customer_footer');
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
@@ -105,7 +106,7 @@ class Customers extends CI_Controller
                array(
                      'field'   => 'account_reference',
                      'label'   => 'Account Reference',
-                     'rules'   => 'trim|xss_clean|max_length[7]|alpha_dash'
+                     'rules'   => 'trim|xss_clean|max_length[10]|alpha_dash'
                   ),
 			   array(
 					'field'		=> 'email',
@@ -163,8 +164,10 @@ class Customers extends CI_Controller
 		$this->form_validation->set_rules('name', 'Name', 'callback_name_valid');
 		$this->form_validation->set_rules('address', 'Address', 'callback_shorttext_valid');
 		$this->form_validation->set_rules('contact_name', 'Contact Name', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('representative', 'Representative', 'callback_shorttext_valid');
+		//$this->form_validation->set_rules('representative', 'Representative', 'callback_shorttext_valid');
 		$this->form_validation->set_rules('statement_address', 'Statement Address', 'callback_shorttext_valid');
+		$this->form_validation->set_rules('account_department', 'Account Department', 'callback_shorttext_valid');
+		$this->form_validation->set_rules('account_dept_number', 'Account Dept Number', 'callback_telephone_valid');
 		$this->form_validation->set_rules('telephone', 'Telephone', 'callback_telephone_valid');
 		$this->form_validation->set_rules('fax', 		'Fax', 		'callback_telephone_valid');
 		
@@ -195,6 +198,16 @@ class Customers extends CI_Controller
 			$prices_type 		= $this->input->post('prices_type');
 			$statement_address	= trim($this->input->post('statement_address', true));
 			$parent_account_id	= $this->input->post('parent_account_id');
+			$address1 			= trim($this->input->post('address1',true));
+			$address2			= trim($this->input->post('address2',true));
+			$address3 			= trim($this->input->post('address3',true));
+			$address4 			= trim($this->input->post('address4',true));
+			$address5 			= trim($this->input->post('address5',true));			
+			$post_code 			= trim($this->input->post('post_code',true));
+			$mobile 			= trim($this->input->post('mobile',true));
+			$disc_perc 			= trim($this->input->post('discount_perc',true));
+			$account_department	= trim($this->input->post('account_department',true));
+			$account_dept_number= trim($this->input->post('account_dept_number',true));
 			$vars_array = compact(
 								"account_reference",
 								"name",
@@ -213,7 +226,17 @@ class Customers extends CI_Controller
 								"holiday_credit",
 								"prices_type",
 								"statement_address",
-								"parent_account_id"
+								"parent_account_id",
+								"address1",
+								"address2",
+								"address3",
+								"address4",
+								"address5",
+								"post_code",
+								"mobile",
+								"disc_perc",
+								"account_department",
+								"account_dept_number"
 								);
 			$this->load->model('customers_m');
 			$result = $this->customers_m->save_customer( $vars_array );
@@ -221,7 +244,7 @@ class Customers extends CI_Controller
 			{
 				$data['message'] = $this->lang->line('mess_customer_saved_successfully');
 				$data['customer_id'] = $result;
-				$this->load->view('header_nav');		
+				$this->load->view('header_nav');
 				$this->load->view('new_customer_successfully_saved', $data);
 				$this->load->view('footer_common');
 				$this->load->view('footer_copyright');

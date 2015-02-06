@@ -34,7 +34,7 @@ function get_customers_selec_list()
 }
 
 $( document ).ready(function() {
-	var parent_input = $('#parent_account');
+	/*var parent_input = $('#parent_account');
 	var height	= Math.round(parent_input.height() + parseInt(parent_input.css("padding-top").replace("px","")) + parseInt(parent_input.css("padding-bottom").replace("px","")) + 2);
 	var width	= Math.round(parent_input.width()  + parseInt(parent_input.css("padding-left").replace("px","")) + parseInt(parent_input.css("padding-right").replace("px","")) + 2);
 	$('#dropdown_parents_list').css("position", "absolute");
@@ -42,7 +42,8 @@ $( document ).ready(function() {
 	$('#dropdown_parents_list').css("left", parent_input.offset().left + "px");
 	$('#dropdown_parents_list').css("min-width", width + "px");
 	$('#parent_account_id').val("");
-	$('#parent_account').val("");
+	$('#parent_account').val("");*/
+	$('#account_reference').focus();
 });
 
 $('#parent_account').keyup(function()

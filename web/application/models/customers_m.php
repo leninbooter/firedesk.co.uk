@@ -77,7 +77,18 @@ class Customers_m extends CI_Model
 									3,
 									".$this->db->escape_str($vars_array["credit_limit"]).", 
 									'".$this->db->escape_str($vars_array["statement_address"])."', 
-									".$this->db->escape_str($vars_array["parent_account_id"]).");";
+									".$this->db->escape_str($vars_array["parent_account_id"]).",
+									'".$this->db->escape_str($vars_array["address1"])."', 
+									'".$this->db->escape_str($vars_array["address2"])."', 
+									'".$this->db->escape_str($vars_array["address3"])."', 
+									'".$this->db->escape_str($vars_array["address4"])."', 
+									'".$this->db->escape_str($vars_array["address5"])."', 
+									'".$this->db->escape_str($vars_array["post_code"])."', 
+									'".$this->db->escape_str($vars_array["mobile"])."', 
+									'".$this->db->escape_str($vars_array["disc_perc"])."',
+									'".$this->db->escape_str($vars_array["account_department"])."',
+									'".$this->db->escape_str($vars_array["account_dept_number"])."'
+									)";
 		$query = str_replace("'NULL'", "NULL", $query);
 		$query = $this->db->query($query);
 		if( !empty($query->result()) )

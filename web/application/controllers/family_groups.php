@@ -33,7 +33,6 @@ class Family_groups extends CI_Controller
 		$this->load->view('header_nav');
 		$this->load->view('family_groups', $data);
 		$this->load->view('footer_common');
-		$this->output->append_output("<script src=\"".base_url('assets/js/suppliers.js')."\"></script>");
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}

@@ -128,7 +128,37 @@ $( document ).ready(function() {
 	$('#dropdown_parents_list').css("left", parent_input.offset().left + "px");
 	$('#dropdown_parents_list').css("min-width", width + "px");
 	$('#account_reference_id').val("");
-	$('#account_reference').val("");		
+	$('#account_reference').val("");
+	
+	//Contract date
+	var d = new Date();
+	var weekday = new Array(7);
+	weekday[0]=  "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+	var month = new Array(12);
+	month[0] = "january";
+	month[1] = "february";
+	month[2] = "march";
+	month[3] = "april";
+	month[4] = "may";
+	month[5] = "june";
+	month[6] = "july";
+	month[7] = "august";
+	month[8] = "september";
+	month[9] = "october";
+	month[10] = "november";
+	month[11] = "december";
+
+	var nw = weekday[d.getDay()];
+	$('#date').val(nw + ", " + d.getDate() + " of " + month[d.getMonth()] + " of " +  d.getFullYear());
+	
+	//Contract time
+	$('#time').val(d.getHours() + ":" + d.getMinutes());
 });
 
 $('#account_reference').keyup(function()

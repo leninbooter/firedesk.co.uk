@@ -1,6 +1,6 @@
 function ref_account_valid(campo)
 {
-	return /^[A-Za-zñÑ0-9\-\_]{1,7}$/.test(campo.val());
+	return /^[A-Za-zñÑ0-9\-\_]{1,10}$/.test(campo.val());
 }
 
 function name_valid(campo)
@@ -264,25 +264,30 @@ $( '#new_customer_form' ).submit( function( event ) {
 		err = err + 'The phone field contains invalid characters.\n';
 	}
 	
+	if( !email_valid( $('#email') ) )
+	{
+		err = err + 'The email field is empty or contains invalid characters.\n';
+	}
+	
+	if( $( '#mobile' ).val().length > 0 && !telephone_valid( $('#mobile') ) )
+	{
+		err = err + 'The mobile field contains invalid characters.\n';
+	}
+	
 	if( $( '#fax' ).val().length > 0 && !telephone_valid( $('#fax') ) )
 	{
 		err = err + 'The fax field contains invalid characters.\n';
 	}
-	
-	if( !email_valid( $('#email') ) )
-	{
-		err = err + 'The email field is empty or contains invalid characters.\n';
-	}	
 	
 	if( $( '#contact_name' ).val().length > 0 && !name_valid( $('#contact_name') ) )
 	{
 		err = err + 'The contact name field contains invalid characters.\n';
 	}
 	
-	if( $( '#representative' ).val().length > 0 && !name_valid( $(representative) ) )
+	/*if( $( '#representative' ).val().length > 0 && !name_valid( $(representative) ) )
 	{
 		err = err + 'The representative field contains invalid characters.\n';
-	}
+	}*/
 	
 	if( $( '#type' ).val() == 1 && !limit_credit_valid( $(credit_limit) ) )
 	{
@@ -292,6 +297,11 @@ $( '#new_customer_form' ).submit( function( event ) {
 	if( $( '#statement_address' ).val().length > 0 && !address_valid( $('#statement_address') ) )
 	{
 		err = err + 'The statement address contains invalid characters.\n';
+	}
+	
+	if( $( '#discount_perc' ).val().length > 0 && !isNaN($('#discount_perc'.val())) )
+	{
+		err = err + 'The discount field contains invalid characters.\n';
 	}
 	
 	if( err != '')

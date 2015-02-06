@@ -70,8 +70,8 @@
 					<ul class="dropdown-menu" role="menu">
 						<!--<li><a href="#">Stock Item</a></li>-->
 						<li><a href="<?php echo base_url('index.php/family_groups/groups'); ?>">Group Changes/order</a></li>
-						<!--<li><a href="#">Discount groups</a></li>
-						<li><a href="#">Add stock quantities</a></li>
+						<li><a href="<?php echo base_url('index.php/discount_groups/groups'); ?>">Discount groups</a></li>
+						<!--<li><a href="#">Add stock quantities</a></li>
 						<li><a href="#">Global</a></li>
 						<li><a href="#">Sold since</a></li>
 						<li><a href="#">Price & stock enquiry</a></li>
