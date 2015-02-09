@@ -7223,3 +7223,95 @@ DEBUG - 2015-02-06 05:37:06 --> File loaded: ../application/views/footer_copyrig
 DEBUG - 2015-02-06 05:37:06 --> File loaded: ../application/views/footer.php
 DEBUG - 2015-02-06 05:37:06 --> Final output sent to browser
 DEBUG - 2015-02-06 05:37:06 --> Total execution time: 0.0460
+DEBUG - 2015-02-06 14:22:10 --> Config Class Initialized
+DEBUG - 2015-02-06 14:22:10 --> Hooks Class Initialized
+DEBUG - 2015-02-06 14:22:10 --> Utf8 Class Initialized
+DEBUG - 2015-02-06 14:22:10 --> UTF-8 Support Enabled
+DEBUG - 2015-02-06 14:22:10 --> URI Class Initialized
+DEBUG - 2015-02-06 14:22:10 --> Router Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> Output Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> Security Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> Input Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-06 14:22:11 --> Language Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> Loader Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> Helper loaded: url_helper
+DEBUG - 2015-02-06 14:22:11 --> Controller Class Initialized
+DEBUG - 2015-02-06 14:22:11 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-06 14:22:11 --> File loaded: ../application/views/new_customer.php
+DEBUG - 2015-02-06 14:22:11 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-06 14:22:11 --> File loaded: ../application/views/new_customer_footer.php
+DEBUG - 2015-02-06 14:22:11 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-06 14:22:11 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-06 14:22:11 --> Final output sent to browser
+DEBUG - 2015-02-06 14:22:11 --> Total execution time: 1.0441
+DEBUG - 2015-02-06 14:22:20 --> Config Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Hooks Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Utf8 Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> UTF-8 Support Enabled
+DEBUG - 2015-02-06 14:22:20 --> URI Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Router Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Output Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Security Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Input Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-06 14:22:20 --> Language Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Loader Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Helper loaded: url_helper
+DEBUG - 2015-02-06 14:22:20 --> Controller Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Model Class Initialized
+DEBUG - 2015-02-06 14:22:20 --> Model Class Initialized
+DEBUG - 2015-02-06 14:22:21 --> Database Driver Class Initialized
+DEBUG - 2015-02-06 14:22:22 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-06 14:22:22 --> File loaded: ../application/views/utilities_form.php
+DEBUG - 2015-02-06 14:22:22 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-06 14:22:22 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-06 14:22:22 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-06 14:22:22 --> Final output sent to browser
+DEBUG - 2015-02-06 14:22:22 --> Total execution time: 1.8161
+DEBUG - 2015-02-06 14:22:37 --> Config Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Hooks Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Utf8 Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> UTF-8 Support Enabled
+DEBUG - 2015-02-06 14:22:37 --> URI Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Router Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Output Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Security Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Input Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-06 14:22:37 --> Language Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Loader Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Helper loaded: url_helper
+DEBUG - 2015-02-06 14:22:37 --> Controller Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Model Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Model Class Initialized
+DEBUG - 2015-02-06 14:22:37 --> Database Driver Class Initialized
+DEBUG - 2015-02-06 14:22:38 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-06 14:22:38 --> File loaded: ../application/views/utilities_form.php
+DEBUG - 2015-02-06 14:22:38 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-06 14:22:38 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-06 14:22:38 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-06 14:22:38 --> Final output sent to browser
+DEBUG - 2015-02-06 14:22:38 --> Total execution time: 1.0551
+DEBUG - 2015-02-06 14:25:32 --> Config Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Hooks Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Utf8 Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> UTF-8 Support Enabled
+DEBUG - 2015-02-06 14:25:32 --> URI Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Router Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Output Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Security Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Input Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-06 14:25:32 --> Language Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Loader Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> Helper loaded: url_helper
+DEBUG - 2015-02-06 14:25:32 --> Controller Class Initialized
+DEBUG - 2015-02-06 14:25:32 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-06 14:25:32 --> File loaded: ../application/views/new_customer.php
+DEBUG - 2015-02-06 14:25:32 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-06 14:25:32 --> File loaded: ../application/views/new_customer_footer.php
+DEBUG - 2015-02-06 14:25:32 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-06 14:25:32 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-06 14:25:32 --> Final output sent to browser
+DEBUG - 2015-02-06 14:25:32 --> Total execution time: 0.0340

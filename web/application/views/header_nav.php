@@ -68,7 +68,7 @@
 				</li>
 				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Sales Stock</a>
 					<ul class="dropdown-menu" role="menu">
-						<!--<li><a href="#">Stock Item</a></li>-->
+						<li><a href="<?php echo base_url('index.php/sales_stock/new_existing'); ?>">Stock Item</a></li>
 						<li><a href="<?php echo base_url('index.php/family_groups/groups'); ?>">Group Changes/order</a></li>
 						<li><a href="<?php echo base_url('index.php/discount_groups/groups'); ?>">Discount groups</a></li>
 						<!--<li><a href="#">Add stock quantities</a></li>
