@@ -6,13 +6,14 @@
 	<div class="col-md-6">
 	<?php if(isset($editing)): ?>
 		<?php if($editing): ?>
-			<div class="alert alert-warning" role="alert"><b>Editing <?php echo $item[0]->name; ?>.</b><p>Unless you change the number of the item, all changes made will overwrite existing data.</p></div>
+			<div class="alert alert-warning" role="alert"><b>Editing <?php echo $item[0]->description; ?>.</b><p>Unless you change the number of the item, all changes made will overwrite existing data.</p></div>
 		<?php endif; ?>
 	<?php endif; ?>
 			
 	</div>
 </div>
 <form role="form" id="new_supplier_form" method="post" action="<?php echo base_url('index.php/sales_stock/save_item'); ?>">
+<input type="hidden" id="pk_id" name="pk_id" value="<?php echo isset($item[0]->pk_id) ? $item[0]->pk_id : ""; ?>">
 <div class="row">
 	<div class="col-md-9">
 		<div class="row">
@@ -81,7 +82,7 @@
 								<div class="col-md-4">
 									<div class="form-group">
 										<label for="quantity_rec_level">Rec Level</label>
-										<input type="text" class="form-control" id="quantity_rec_level" name="quantity_rec_level" value="<?php echo isset($item[0]->quantity_rec_level) ? $item[0]->quantity_rec_level:"" ?>" disabled/>
+										<input type="text" class="form-control" id="quantity_rec_level" name="quantity_rec_level" value="<?php echo isset($item[0]->quantity_rec_level) ? $item[0]->quantity_rec_level:"" ?>"/>
 									</div>
 								</div>
 							</div>
@@ -97,7 +98,7 @@
 							<div class="col-md-12">
 									<div class="form-group">
 										<label for="last_movement">&nbsp;</label>
-										<input type="text" class="form-control" id="last_" name="last_" value="<?php echo isset($item[0]->last_) ? $item[0]->last_movement:"" ?>" disabled/>
+										<input type="text" class="form-control" id="last_" name="last_" value="<?php echo isset($item[0]->last_movement) ? date("d M Y",strtotime($item[0]->last_movement)):"" ?>" disabled/>
 									</div>
 							</div>							
 						</div>
@@ -128,6 +129,19 @@
 								<div class="form-group">
 									<label for="units_of_for_special">Units of</label>
 									<input type="text" class="form-control" id="units_of_for_special" name="units_of_for_special" value="<?php echo isset($item[0]->units_of_for_special) ? $item[0]->units_of_for_special:"" ?>" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<div class="form-group">
+									<label for="fk_vat_code">VAT Code</label>
+									<select class="form-control" id="fk_vat_code" name="fk_vat_code">
+											<option value="0"></option>
+											<?php foreach($vats as $option): ?>
+											<option value="<?php echo $option->pk_id; ?>" <?php if(isset($item[0]->fk_vat_code)) { if($item[0]->fk_vat_code == $option->pk_id) { echo "selected";} } ?>><?php echo $option->description." (".$option->percentage."%)"; ?></option>
+											<?php endforeach; ?>
+										</select>
 								</div>
 							</div>
 						</div>
@@ -176,7 +190,7 @@
 									<div class="form-group">
 										<label for="fk_supplier_a">&nbsp;</label>										
 										<select class="form-control" id="fk_supplier_a" name="fk_supplier_a">
-											<option value="NULL"></option>
+											<option value="0"></option>
 											<?php foreach($suppliers as $option): ?>
 											<option value="<?php echo $option->pk_id; ?>" <?php if(isset($item[0]->fk_supplier_a)) { if($item[0]->fk_supplier_a == $option->pk_id) { echo "selected";} } ?>><?php echo $option->name; ?></option>
 											<?php endforeach; ?>
@@ -198,7 +212,7 @@
 									<div class="form-group">
 										<label for="fk_supplier_a">&nbsp;</label>										
 										<select class="form-control" id="fk_supplier_b" name="fk_supplier_b">
-											<option value="NULL"></option>
+											<option value="0"></option>
 											<?php foreach($suppliers as $option): ?>
 											<option value="<?php echo $option->pk_id; ?>" <?php if(isset($item[0]->fk_supplier_b)) { if($item[0]->fk_supplier_b == $option->pk_id) { echo "selected";} } ?> ><?php echo $option->name; ?></option>
 											<?php endforeach; ?>
@@ -220,7 +234,7 @@
 									<div class="form-group">
 										<label for="fk_supplier_a">&nbsp;</label>										
 										<select class="form-control" id="fk_supplier_c" name="fk_supplier_c">
-											<option value="NULL"></option>
+											<option value="0"></option>
 											<?php foreach($suppliers as $option): ?>
 											<option value="<?php echo $option->pk_id; ?>" <?php if(isset($item[0]->fk_supplier_c)) { if($item[0]->fk_supplier_c == $option->pk_id) { echo "selected";} } ?> ><?php echo $option->name; ?></option>
 											<?php endforeach; ?>
@@ -244,7 +258,7 @@
 									<div class="form-group">
 										<label for="fk_family_group">&nbsp;</label>										
 										<select class="form-control" id="fk_family_group" name="fk_family_group">
-											<option value="NULL"></option>
+											<option value="0"></option>
 											<?php foreach($family_groups as $option): ?>
 											<option value="<?php echo $option->pk_id; ?>" <?php if(isset($item[0]->fk_family_group)) { if($item[0]->fk_family_group == $option->pk_id) { echo "selected";} } ?> ><?php echo $option->name; ?></option>
 											<?php endforeach; ?>
@@ -266,7 +280,7 @@
 									<div class="form-group">
 										<label for="fk_discount_group">&nbsp;</label>										
 										<select class="form-control" id="fk_discount_group" name="fk_discount_group">
-											<option value="NULL"></option>
+											<option value="0"></option>
 											<?php foreach($family_discounts as $option): ?>
 											<option value="<?php echo $option->pk_id; ?>" <?php if(isset($item[0]->fk_discount_group)) { if($item[0]->fk_discount_group == $option->pk_id) { echo "selected";} } ?>><?php echo $option->pk_id.") ".$option->description; ?></option>
 											<?php endforeach; ?>
@@ -305,7 +319,12 @@
 </div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-2">
+		<?php if(isset($item[0]->pk_id)): ?>
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#change_quantity">Change Quantities</button>
+		<?php endif; ?>
+	</div>
+	<div class="col-md-4">
 	</div>
 	<div class="col-md-1">
 		<div class="form-group">
@@ -317,6 +336,64 @@
 			<button type="submit" class="btn btn-primary  btn-block">Save</button>
 		</div>
 	</div>
-</div>
-		
+</div>		
 </form>
+
+<div class="modal fade" id="change_quantity" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Change Quantities</h4>
+			</div>
+			<div class="modal-body">
+				<form role="form" id="change_quantity_form"  method="post" action="<?php echo base_url('index.php/sales_stock/update_qty_manually');?>">
+					<input type="hidden" id="stock_item_id" name="stock_item_id" class="form-control" value="<?php echo isset($item[0]->pk_id) ? $item[0]->pk_id : ""; ?>">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="type">Action</label>
+								<select id="type" name="type" class="form-control">
+									<option value="add">Add</option>
+									<option value="remove">Remove</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="type">Qty</label>
+								<input type="text" class="form-control" id="qty" name="qty">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="cost_price">Cost</label>										
+								<input type="text" class="form-control" id="cost_price" name="cost_price"/>
+							</div>
+						</div>
+					</div>
+					<!--<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="cost_price">Cost</label>										
+								<input type="text" class="form-control" id="cost_price" name="cost_price"/>
+							</div>
+						</div>
+						<!--<div class="col-md-4">
+							<div class="form-group">
+								<label for="cost_price_a">Cost B</label>										
+								<input type="text" class="form-control" id="cost_price_b" name="cost_price_b"/>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="cost_price_a">Cost C</label>										
+								<input type="text" class="form-control" id="cost_price_c" name="cost_price_c"/>
+							</div>
+						</div>--
+					</div>-->
+					<button type="submit" class="btn btn-primary" onclick="$('#cost_price').val( parseFloat( $('#cost_price').val() ).toFixed(2) );">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -15,11 +15,21 @@ class Sales_stock extends CI_Controller
 		
 		$this->load->model('family_groups_m');
 		$this->load->model('discount_groups_m');
+		$this->load->model('suppliers_m');
+		$this->load->model('vats_m');
 		
-		$data['suppliers'] = array();
+		$data['vats'] = $this->vats_m->get_all_vats();
 		$data['family_groups'] = $this->family_groups_m->get_groups();
 		$data['family_discounts'] = $this->discount_groups_m->get_groups();
+		$data['suppliers'] = $this->suppliers_m->get_suppliers_addresses();
+		
 		$this->load->view('header_nav');
+		$message = urldecode(trim($this->uri->segment(4)));
+		if( $message != false )
+		{
+			$this->output->append_output("<div class=\"alert alert-danger\" role=\"alert\">".$danger."</div>");
+		}
+		
 		if( isset($data['item']) ) $this->load->view('new_existing_stock_item', $data);
 			else	$this->load->view('new_existing_stock_item', $data);
 		
@@ -29,256 +39,193 @@ class Sales_stock extends CI_Controller
 		$this->load->view('footer');
 	}
 	
-	
-	public function name_valid( $valor )
+	public function report_stock_levels()
 	{
-		if( preg_match('/^[A-Za-zñÑ0-9\-\_\.\,\s]{2,200}$/', $valor) == 1 )
-		{
-			return true;
-		}else
-		{
-			$this->form_validation->set_message('name_valid', 'The %s field can only contain letters, numbers, dashes, underscores, dots and commas.');
-			return false;
-		}
-	}
-
-	public function shorttext_valid( $valor )
-	{
-		if( (strlen($valor) > 0 && preg_match('/^[A-Za-zñÑ0-9\-\_\.\,\#\s]{2,200}$/', $valor) == 1 ) || strlen($valor) == 0)
-		{
-			return true;
-		}else
-		{
-			$this->form_validation->set_message('shorttext_valid', "Invalid characteres");
-			return false;
-		}
-	}
-
-	public function telephone_valid( $valor )
-	{
-		if( (strlen($valor) > 0 && preg_match( '/^(?:\d|\+){1}[0-9]{1,19}$/', $valor )  == 1) || $valor == "" )
-		{
-			return true;
-		}else
-		{
-			$this->form_validation->set_message('telephone_valid', $this->lang->line('error_bad_phone_account'));
-			return false;
-		}
-	}
-
-	public function list_suppliers_addresses()
-	{
-		$this->load->model('suppliers_m');
-		$data['suppliers'] = $this->suppliers_m->get_suppliers_addresses();
+		$this->load->model('stock_m');
+		$data['items'] = $this->stock_m->get_items_stock_levels();
+		
 		$this->load->view('header_nav');
-		$this->load->view('list_suppliers_addresses', $data);
+		$this->load->view('list_stock_items_levels', $data);
 		$this->load->view('footer_common');
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}
-
-	public function list_selectable_customers()
+	
+	public function save_item()
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-		$this->load->model('customers_m');
-		$name = trim($this->input->get('parent_account' ,true));
-		$name = str_replace("_", "%", $name);
-		if( ($results = $this->customers_m->get_names_like($name)) != false )
-		{
-			$data['customers'] = $results;
-			$this->load->view('customers_list_selectable_dropdown', $data);
-		}else
-		{
-			echo "none";
-		}
-	}
-
-		public function get_customers_addresses_json()
-	{
-		$this->load->helper(array('form', 'url'));
-		$this->load->model('suppliers');
-		$pk_id = trim($this->input->get('pk_id' ,true));
-		$pk_id = str_replace("_", "%", $pk_id);
-		if( ($results = $this->customers_m->get_customers_addresses($pk_id)) != false )
-		{
-			$data['addresses'] = $results;
-			$this->load->view('customers_address_json', $data);
-		}else
-		{
-			echo "none";
-		}
-	}
-
-	public function save_supplier()
-	{
-		$this->load->helper(array('form', 'url'));
-		$this->load->library('form_validation');
-		$this->lang->load('errors', 'english');
-		$this->lang->load('messages', 'english');
-		$this->lang->load('commands', 'english');
+		
 		$config = array(
                array(
-					'field'		=> 'email',
-					'label'		=> 'E-mail',
-					'rules'		=> 'trim|required|xss_clean|valid_email|min_length[5]|max_length[200]'
+					'field'		=> 'stock_number',
+					'label'		=> 'Stock Number',
+					'rules'		=> 'trim|required|xss_clean|min_length[1]|max_length[15]|alpha_numeric'
 			   ),
 			   array(
-					'field'		=> 'zipcode',
-					'label'		=> 'ZIP CODE',
-					'rules'		=> 'trim|xss_clean|min_length[1]|max_length[5|integer'
+					'field'		=> 'location',
+					'label'		=> 'Location',
+					'rules'		=> 'trim|xss_clean|min_length[1]|max_length[45|alpha_numeric'
 			   ),
 			   array(
-					'field'		=> 'bank_name',
-					'label'		=> 'Bank Name',
-					'rules'		=> 'trim|xss_clean|alpha_dash'
+					'field'		=> 'standard_price',
+					'label'		=> 'Standard Price',
+					'rules'		=> 'trim|xss_clean|decimal'
 			   ),
 			   array(
-					'field'		=> 'account_number',
-					'label'		=> 'Account Number',
-					'rules'		=> 'trim|xss_clean|alpha_dash'
+					'field'		=> 'special_price',
+					'label'		=> 'Special Price',
+					'rules'		=> 'trim|xss_clean|decimal'
 			   ),
 			   array(
-					'field'		=> 'swift_code',
-					'label'		=> 'Swift Code',
-					'rules'		=> 'trim|xss_clean|alpha_numeric'
-			   ),
-			   array(
-					'field'		=> 'account_type',
-					'label'		=> 'Account Type',
+					'field'		=> 'units_of_for_special',
+					'label'		=> 'Units of',
 					'rules'		=> 'trim|xss_clean|integer'
 			   ),
 			   array(
-					'field'		=> 'account_credit',
-					'label'		=> 'Account Credit',
-					'rules'		=> 'trim|xss_clean|integer|min_length[0]|max_length[1]'
+					'field'		=> 'cost_price_a',
+					'label'		=> 'Cost Price A',
+					'rules'		=> 'trim|xss_clean|decimal'
 			   ),
 			   array(
-					'field'		=> 'account_payment_credit',
-					'label'		=> 'Account Credit Payment',
-					'rules'		=> 'trim|xss_clean|integer|min_length[0]|max_length[1]'
+					'field'		=> 'cost_price_b',
+					'label'		=> 'Cost Price B',
+					'rules'		=> 'trim|xss_clean|decimal'
 			   ),
 			   array(
-					'field'		=> 'from',
-					'label'		=> 'Account Credit Payment Form',
-					'rules'		=> 'trim|xss_clean|alpha'
+					'field'		=> 'cost_price_c',
+					'label'		=> 'Cost Price C',
+					'rules'		=> 'trim|xss_clean|decimal'
 			   ),
 			   array(
-					'field'		=> 'settlement',
-					'label'		=> 'Account Credit Setlement',
-					'rules'		=> 'trim|xss_clean|alpha'
+					'field'		=> 'fk_vat_code',
+					'label'		=> 'VAT Code',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'fk_supplier_a',
+					'label'		=> 'Supplier A',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'fk_supplier_b',
+					'label'		=> 'Supplier B',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'fk_supplier_c',
+					'label'		=> 'Supplier C',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'fk_family_group',
+					'label'		=> 'Family Group',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'fk_discount_group',
+					'label'		=> 'Discount Group',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'pk_id',
+					'label'		=> 'Stock Item ID',
+					'rules'		=> 'trim|xss_clean|integer'
 			   )
+			   
             );
 
 		$this->form_validation->set_rules($config);
-		$this->form_validation->set_rules('name', 'Name', 'callback_name_valid');
-		$this->form_validation->set_rules('telephone1', 'Telephone', 'callback_telephone_valid');
-		$this->form_validation->set_rules('telephone2', 'Telephone', 'callback_telephone_valid');
-		$this->form_validation->set_rules('fax', 		'Fax', 		'callback_telephone_valid');
-		$this->form_validation->set_rules('address1', 'Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('address2', 'Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('address3', 'Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('address4', 'Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('address5', 'Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('address6', 'Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('contact', 'Contact Name', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('bank_acc_addr_1', 'Bank Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('bank_acc_addr_2', 'Bank Address', 'callback_shorttext_valid');
-		$this->form_validation->set_rules('bank_acc_addr_3', 'Bank Address', 'callback_shorttext_valid');
+		$this->form_validation->set_rules('description', 'Name', 'callback_shorttext_valid');
 
 		$this->form_validation->set_message('required', 'The %s field is mandatory.');
-		$this->form_validation->set_message('alpha', 'The %s field can only contain letters.');
 
 		if ( !$this->form_validation->run() )
 		{
 			echo validation_errors();
 		}
 		else
-		{
-			$name							= trim($this->input->post('name'), true);
-			$email							= trim($this->input->post('email'));
-			$telephone1						= trim($this->input->post('telephone1', true));
-			$telephone2						= trim($this->input->post('telephone2', true));
-			$fax							= trim($this->input->post('fax', true));
-			$address1						= trim($this->input->post('address1', true));
-			$address2						= trim($this->input->post('address2', true));
-			$address3						= trim($this->input->post('address3', true));
-			$address4						= trim($this->input->post('address4', true));
-			$address5						= trim($this->input->post('address5', true));
-			$address6						= trim($this->input->post('address6', true));
-			$zipcode						= trim($this->input->post('zipcode'));
-			$contact						= trim($this->input->post('contact', true));
-			$banck_name						= trim($this->input->post('banck_name'));
-			$account_number					= trim($this->input->post('account_number'));
-			$swift_code						= trim($this->input->post('swift_code'));
-			$account_type					= trim($this->input->post('account_type'));
-			$bank_acc_addr_1				= trim($this->input->post('bank_acc_addr_1', true));
-			$bank_acc_addr_2				= trim($this->input->post('bank_acc_addr_2', true));
-			$bank_acc_addr_3				= trim($this->input->post('bank_acc_addr_3', true));
-			$bank_telephone					= trim($this->input->post('bank_telephone', true));
-			$account_credit					= trim($this->input->post('account_credit'));
-			$account_payment_credit			= trim($this->input->post('account_payment_credit'));
-			$account_payment_credit_from	= trim($this->input->post('account_payment_credit_from'));
-			$account_credit_setlement		= trim($this->input->post('account_credit_setlement'));
+		{ 
+			$stock_number			= $this->input->post('stock_number');
+			$location				= $this->input->post('location');
+			$description           	= trim($this->input->post('description', true));
+			$stock_cost_total      	= $this->input->post('stock_cost_total');
+			$stock_cost_average    	= $this->input->post('stock_cost_average');
+			$quantity_balance      	= $this->input->post('quantity_balance');
+			$quantity_on_order     	= $this->input->post('quantity_on_order');
+			$quantity_rec_level    	= $this->input->post('quantity_rec_level');
+			$last_moverment        	= $this->input->post('last_moverment');
+			$standard_price        	= $this->input->post('standard_price');
+			$special_price         	= $this->input->post('special_price');
+			$units_of_for_special  	= $this->input->post('units_of_for_special');
+			$cost_price_a          	= $this->input->post('cost_price_a');
+			$cost_price_b          	= $this->input->post('cost_price_b');
+			$cost_price_c          	= $this->input->post('cost_price_c');
+			$fk_vat_code           	= $this->input->post('fk_vat_code') == "0" ? "NULL" : $this->input->post('fk_vat_code');
+			$fk_family_group       	= $this->input->post('fk_family_group') == "0" ? "NULL" : $this->input->post('fk_family_group');
+			$fk_discount_group     	= $this->input->post('fk_discount_group') == "0" ? "NULL" : $this->input->post('fk_discount_group');
+			$fk_supplier_a         	= $this->input->post('fk_supplier_a') == "0" ? "NULL" : $this->input->post('fk_supplier_a');
+			$fk_supplier_b         	= $this->input->post('fk_supplier_b') == "0" ? "NULL" : $this->input->post('fk_supplier_b');
+			$fk_supplier_c          = $this->input->post('fk_supplier_c') == "0" ? "NULL" : $this->input->post('fk_supplier_c');					
+			$pk_id 					= $this->input->post('pk_id');
 
 			$vars_array = compact(
-							"name",
-							"email",
-							"telephone1",
-							"telephone2",
-							"fax",
-							"address1",
-							"address2",
-							"address3",
-							"address4",
-							"address5",
-							"address6",
-							"zipcode",
-							"contact",
-							"banck_name",
-							"account_number",
-							"swift_code",
-							"account_type",
-							"bank_acc_addr_1",
-							"bank_acc_addr_2",
-							"bank_acc_addr_3",
-							"bank_telephone",
-							"account_credit",
-							"account_payment_credit",
-							"account_payment_credit_from",
-							"account_credit_setlement"
+							"stock_number",
+							"location",
+							"description",
+							"stock_cost_total",
+							"stock_cost_average",
+							"quantity_balance",
+							"quantity_on_order",
+							"quantity_rec_level",
+							"last_moverment",
+							"standard_price",
+							"special_price",
+							"units_of_for_special",
+							"cost_price_a",
+							"cost_price_b",
+							"cost_price_c",
+							"fk_vat_code",
+							"fk_family_group",
+							"fk_discount_group",
+							"fk_supplier_a",
+							"fk_supplier_b",
+							"fk_supplier_c"
 								);
-			$this->load->model('suppliers_m');
-			$result = $this->suppliers_m->save_supplier( $vars_array );
+								
+			$this->load->model('stock_m');
+			$result = $this->stock_m->save_item( $vars_array );
 			if( $result != false )
 			{
 				$this->load->view('header_nav');
 				switch($result['type'])
 				{
-					case "insert":
+					case "inserted":
 						$result['type'] = "inserted";
-						break;
-					case "update":
-						$result['type'] = "updated";
-						break;
-				}
-				$this->output->append_output("
+						$this->output->append_output("
 											<div class=\"row\">
 												<div class=\"col-md-12\">&nbsp;</div>
 											</div>
 											<div class=\"row\">
-												<div class=\"col-md-12\"><div class=\"alert alert-success\" role=\"alert\">".$name." was successfully ".$result['type'].".</div></div>
+												<div class=\"col-md-12\"><div class=\"alert alert-success\" role=\"alert\">The item was successfully ".$result['type'].".</div></div>
 											</div>
 											<div class=\"row\">
 												<div class=\"col-md-6\"></div>
-												<div class=\"col-md-2\"><a href=\"".base_url('index.php/suppliers/new_existing')."\"><button type=\"button\" class=\"btn btn-default\">Add another supplier</button></a></div>
+												<div class=\"col-md-2\"><a href=\"".base_url('index.php/sales_stock/new_existing')."\"><button type=\"button\" class=\"btn btn-default\">Add another item</button></a></div>
 												<div class=\"col-md-2\"><a href=\"javascript:history.back()\"><button type=\"button\" class=\"btn btn-default\">Go back to the form</button></a></div>
 												<div class=\"col-md-1\"><a href=\"".base_url('index.php')."\"><button type=\"button\" class=\"btn btn-default\">Back to main</button></a></div>
 											</div>
 											");
-				$this->load->view('footer_common');
-				$this->load->view('footer_copyright');
-				$this->load->view('footer');
+						$this->load->view('footer_common');
+						$this->load->view('footer_copyright');
+						$this->load->view('footer');
+						break;
+					case "updated":
+						$result['type'] = "updated";
+						redirect(base_url('index.php/sales_stock/new_existing/'.$pk_id),'refresh');
+						break;
+				}
+				
 			}else
 			{
 				$this->load->view('header_nav');
@@ -296,6 +243,77 @@ class Sales_stock extends CI_Controller
 				$this->load->view('footer_common');
 				$this->load->view('footer_copyright');
 				$this->load->view('footer');
+			}
+		}
+	}
+	
+	public function shorttext_valid( $valor )
+	{
+		if( (strlen($valor) > 0 && preg_match('/^[A-Za-zñÑ0-9\/\\\-\_\.\,\#\s]{2,200}$/', $valor) == 1 ) || strlen($valor) == 0)
+		{
+			return true;
+		}else
+		{
+			$this->form_validation->set_message('shorttext_valid', "Invalid characteres");
+			return false;
+		}
+	}	
+	
+	public function update_qty_manually()
+	{
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
+		
+		$config = array(
+               array(
+					'field'		=> 'type',
+					'label'		=> 'Type',
+					'rules'		=> 'trim|required|xss_clean|alpha'
+			   ),
+			   array(
+					'field'		=> 'qty',
+					'label'		=> 'Quantity',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ),
+			   array(
+					'field'		=> 'cost_price',
+					'label'		=> 'Cost Price',
+					'rules'		=> 'trim|xss_clean|decimal'
+			   ),
+			   array(
+					'field'		=> 'stock_item_id',
+					'label'		=> 'ITEM ID',
+					'rules'		=> 'trim|xss_clean|integer'
+			   ));
+		
+		$this->form_validation->set_rules($config);
+
+		if ( !$this->form_validation->run() )
+		{
+			echo validation_errors();
+		}
+		else
+		{ 
+			$fk_item_id = $this->input->post('stock_item_id');			
+			$qty = $this->input->post('qty');
+			$cost = $this->input->post('cost_price');
+			$description = "manual update";
+			$date = date('Y-m-d H:i:s');
+			$type = $this->input->post('type');
+			
+			if($type == "remove")
+				$qty *= -1;
+			
+			$vars_array = compact("fk_item_id", "qty", "cost", "cost_price_b", "cost_price_c", "description", "date");
+			
+			$this->load->model('stock_m');
+			$result = $this->stock_m->update_qty( $vars_array );
+			if($result)
+			{
+				redirect(base_url('index.php/sales_stock/new_existing/'.$fk_item_id),'refresh');
+			}else
+			{
+				redirect(base_url('index.php/sales_stock/new_existing/'.$fk_item_id.'/'.urlencode('There was a problem updating the item. Please, try again.')),'refresh');
 			}
 		}
 	}

@@ -75,8 +75,8 @@
 						<li><a href="#">Global</a></li>
 						<li><a href="#">Sold since</a></li>
 						<li><a href="#">Price & stock enquiry</a></li>
-						<li><a href="#">Price list</a></li>
-						<li><a href="#">Reports</a></li>-->
+						<li><a href="#">Price list</a></li>-->
+						<li><a href="<?php echo base_url('index.php/sales_stock/report_stock_levels'); ?>">Reports</a></li>
 					</ul>
 				</li>
 				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases & Suppliers</a>

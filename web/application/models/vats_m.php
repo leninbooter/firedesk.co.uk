@@ -1,30 +1,23 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Stock_m extends CI_Model
+class Vats_m extends CI_Model
 {		
+	public function get_all_vats()
+	{
+		$this->load->database();
+		$query = $this->db->query( "select * from vats;");
+		return !empty($query->result()) ? $query->result() : array();
+	}	
+
 	function clean_vars(&$value, $key)
 	{
 		if($value == "")
 		{
 			$value = "NULL";
 		}
-	}
+	}	
 	
-	public function get_item_details( $pk_id )
-	{
-		$this->load->database();
-		$query = $this->db->query( "SELECT * FROM sales_stock where pk_id = ".$pk_id);
-		return !empty($query->result()) ? $query->result() : array();
-	}
-	
-	public function get_items_stock_levels( )
-	{
-		$this->load->database();
-		$query = $this->db->query( "SELECT pk_id, stock_number, description, location, quantity_rec_level, quantity_balance FROM sales_stock;");
-		return !empty($query->result()) ? $query->result() : array();
-	}
-	
-	public function save_item( $vars_array )		
+	public function save_vat( $vars_array )		
 	{		
 		$this->load->database();
 		array_walk($vars_array, "self::clean_vars");
@@ -70,7 +63,7 @@ class Stock_m extends CI_Model
 		return false;
 	}
 	
-	public function update_qty($vars_array)
+	public function update_vat($vars_array)
 	{
 		$this->load->database();
 		array_walk($vars_array, "self::clean_vars");
