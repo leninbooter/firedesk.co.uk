@@ -3166,3 +3166,149 @@ DEBUG - 2015-02-11 14:42:07 --> File loaded: ../application/views/footer_copyrig
 DEBUG - 2015-02-11 14:42:07 --> File loaded: ../application/views/footer.php
 DEBUG - 2015-02-11 14:42:07 --> Final output sent to browser
 DEBUG - 2015-02-11 14:42:07 --> Total execution time: 1.0500
+DEBUG - 2015-02-11 14:44:07 --> Config Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Hooks Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Utf8 Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> UTF-8 Support Enabled
+DEBUG - 2015-02-11 14:44:07 --> URI Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Router Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Output Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Security Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Input Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-11 14:44:07 --> Language Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Loader Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Helper loaded: url_helper
+DEBUG - 2015-02-11 14:44:07 --> Controller Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Model Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Model Class Initialized
+DEBUG - 2015-02-11 14:44:07 --> Database Driver Class Initialized
+DEBUG - 2015-02-11 14:44:08 --> File loaded: ../application/views/header_nav.php
+ERROR - 2015-02-11 14:44:08 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\inetpub\firedesk.co.uk\web\application\views\list_all_contracts.php 8
+DEBUG - 2015-02-11 14:44:08 --> File loaded: ../application/views/list_all_contracts.php
+DEBUG - 2015-02-11 14:44:08 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-11 14:44:08 --> File loaded: ../application/views/new_contract_footer.php
+DEBUG - 2015-02-11 14:44:08 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-11 14:44:08 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-11 14:44:08 --> Final output sent to browser
+DEBUG - 2015-02-11 14:44:08 --> Total execution time: 1.1141
+DEBUG - 2015-02-11 14:44:13 --> Config Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Hooks Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Utf8 Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> UTF-8 Support Enabled
+DEBUG - 2015-02-11 14:44:13 --> URI Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Router Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Output Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Security Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Input Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-11 14:44:13 --> Language Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Loader Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> Helper loaded: url_helper
+DEBUG - 2015-02-11 14:44:13 --> Controller Class Initialized
+DEBUG - 2015-02-11 14:44:13 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-11 14:44:13 --> File loaded: ../application/views/new_contract.php
+DEBUG - 2015-02-11 14:44:13 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-11 14:44:13 --> File loaded: ../application/views/new_contract_footer.php
+DEBUG - 2015-02-11 14:44:13 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-11 14:44:13 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-11 14:44:13 --> Final output sent to browser
+DEBUG - 2015-02-11 14:44:13 --> Total execution time: 0.0410
+DEBUG - 2015-02-11 14:44:18 --> Config Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Hooks Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Utf8 Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> UTF-8 Support Enabled
+DEBUG - 2015-02-11 14:44:18 --> URI Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Router Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Output Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Security Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Input Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-11 14:44:18 --> Language Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Loader Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Helper loaded: url_helper
+DEBUG - 2015-02-11 14:44:18 --> Controller Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Model Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Model Class Initialized
+DEBUG - 2015-02-11 14:44:18 --> Database Driver Class Initialized
+DEBUG - 2015-02-11 14:44:19 --> File loaded: ../application/views/header_nav.php
+ERROR - 2015-02-11 14:44:19 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\inetpub\firedesk.co.uk\web\application\views\list_customers.php 8
+DEBUG - 2015-02-11 14:44:19 --> File loaded: ../application/views/list_customers.php
+DEBUG - 2015-02-11 14:44:19 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-11 14:44:19 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-11 14:44:19 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-11 14:44:19 --> Final output sent to browser
+DEBUG - 2015-02-11 14:44:19 --> Total execution time: 1.1081
+DEBUG - 2015-02-11 19:24:55 --> Config Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Hooks Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Utf8 Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> UTF-8 Support Enabled
+DEBUG - 2015-02-11 19:24:55 --> URI Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Router Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Output Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Security Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Input Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-11 19:24:55 --> Language Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Loader Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Helper loaded: url_helper
+DEBUG - 2015-02-11 19:24:55 --> Controller Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Model Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Model Class Initialized
+DEBUG - 2015-02-11 19:24:55 --> Database Driver Class Initialized
+DEBUG - 2015-02-11 19:24:56 --> File loaded: ../application/views/header_nav.php
+ERROR - 2015-02-11 19:24:56 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\inetpub\firedesk.co.uk\web\application\views\list_customers.php 8
+DEBUG - 2015-02-11 19:24:56 --> File loaded: ../application/views/list_customers.php
+DEBUG - 2015-02-11 19:24:56 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-11 19:24:56 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-11 19:24:56 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-11 19:24:56 --> Final output sent to browser
+DEBUG - 2015-02-11 19:24:56 --> Total execution time: 1.0751
+DEBUG - 2015-02-11 19:25:00 --> Config Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Hooks Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Utf8 Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> UTF-8 Support Enabled
+DEBUG - 2015-02-11 19:25:00 --> URI Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Router Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Output Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Security Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Input Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-11 19:25:00 --> Language Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Loader Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Helper loaded: url_helper
+DEBUG - 2015-02-11 19:25:00 --> Controller Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Model Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Model Class Initialized
+DEBUG - 2015-02-11 19:25:00 --> Database Driver Class Initialized
+DEBUG - 2015-02-11 19:25:01 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-11 19:25:01 --> File loaded: ../application/views/list_stock_items_levels.php
+DEBUG - 2015-02-11 19:25:01 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-11 19:25:01 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-11 19:25:01 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-11 19:25:01 --> Final output sent to browser
+DEBUG - 2015-02-11 19:25:01 --> Total execution time: 1.0621
+DEBUG - 2015-02-11 19:25:19 --> Config Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Hooks Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Utf8 Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> UTF-8 Support Enabled
+DEBUG - 2015-02-11 19:25:19 --> URI Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Router Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Output Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Security Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Input Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-11 19:25:19 --> Language Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Loader Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Helper loaded: url_helper
+DEBUG - 2015-02-11 19:25:19 --> Controller Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Model Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Model Class Initialized
+DEBUG - 2015-02-11 19:25:19 --> Database Driver Class Initialized
+DEBUG - 2015-02-11 19:25:20 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-02-11 19:25:20 --> File loaded: ../application/views/utilities_form.php
+DEBUG - 2015-02-11 19:25:20 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-02-11 19:25:20 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-02-11 19:25:20 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-02-11 19:25:20 --> Final output sent to browser
+DEBUG - 2015-02-11 19:25:20 --> Total execution time: 1.0601
