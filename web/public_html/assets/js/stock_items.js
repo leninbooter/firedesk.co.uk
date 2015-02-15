@@ -1,11 +1,5 @@
-$('#add_row').click(function()
-{
-	$('#rows').append($('#first_row').html());
-	$("button[name^=remove_row_btn]").click( function() {
-		if( $(this).parent().parent().parent().parent().attr("id") != "first_row")
-			$(this).parent().parent().parent().remove();
-	});
-	
+function type_checker()
+{	
 	$('[name^=customers_pk_id]').change( function(){ 
 		var types = [];	
 		
@@ -31,56 +25,25 @@ $('#add_row').click(function()
 		});
 
 	});
-	
-	/*$('#customers_pk_id').change( function(){ 
-		var types = [];
-		alert("pabblo");
-		$('select[name^=customers_pk_id]').each(function(index,value) {			
-			types.push($(this).val());
-			
-			if( $(this).val() == 0 )
-			{
-				if( $('#price_type').get(index).val() == "2")
-					$('#price_type').get(index).val("1");
-				$('#price_type option[value="2"]').get(index).attr('disabled', true);
-				$('#price_type option[value="0"]').get(index).attr('disabled', false);
-				$('#price_type option[value="1"]').get(index).attr('disabled', false);		
-			}else {
-				$('#price_type option[value="2"]').get(index).attr('disabled', false);
-				$('#price_type option[value="0"]').get(index).attr('disabled', true);
-				$('#price_type option[value="1"]').get(index).attr('disabled', true);
-				$('#price_type').get(index).val("2");
-			}
-		});	
-		
-		$.each(types, function(index, value) {
-				alert(index + ": " + value);
-		});
-	});*/
-	
-	
+}
 
-});
+type_checker();
 
-$('#customers_pk_id').change( function(){
-	if( $('#customers_pk_id').val() == 0 )
-	{
-		if( $('#price_type').val() == "2")
-			$('#price_type').val("1");
-		$('#price_type option[value="2"]').attr('disabled', true);
-		$('#price_type option[value="0"]').attr('disabled', false);
-		$('#price_type option[value="1"]').attr('disabled', false);		
-	}else {
-		$('#price_type option[value="2"]').attr('disabled', false);
-		$('#price_type option[value="0"]').attr('disabled', true);
-		$('#price_type option[value="1"]').attr('disabled', true);
-		$('#price_type').val("2");
-	}
+$('#add_row').click(function()
+{
+	$('#rows').append($('#first_row').html());
+	$("button[name^=remove_row_btn]").click( function() {
+		if( $(this).parent().parent().parent().parent().attr("id") != "first_row")
+			$(this).parent().parent().parent().remove();
+	});
+	
+	type_checker();
+
 });
 
 $('#prices_form').submit(function(event) {
 	event.preventDefault();	
-	$("input[name^=price]").each(function() {
+	$("input[name^=price], input[name^=min_qty], input[name^=max_qty]").each(function() {
 		 if( $(this).val() != "")
 		 {
 			if( isNaN($(this).val()) )
@@ -92,7 +55,9 @@ $('#prices_form').submit(function(event) {
 		 }
 	});
 	
-	$("input[name^=min_qty]").each(function() {
+	$('#first_row input, #first_row select').attr('disabled',true);
+	
+	/*$("input[name^=min_qty]").each(function() {
 		 if( $(this).val() != "")
 		 {
 			if( isNaN($(this).val()) )
@@ -110,7 +75,7 @@ $('#prices_form').submit(function(event) {
 				$(this).val("");
 			}
 		 }
-	});
+	});*/
 	
 	var dataForm = $('#prices_form').serializeArray();
 	$.ajax(
@@ -120,16 +85,20 @@ $('#prices_form').submit(function(event) {
 		data: dataForm,
 		dataType: "text"
 	}).done(function(response){
-		if(response == "ko-validation")
+		switch(response)
 		{
-			$('#special_prices .modal-body').append("<br/><div class=\"alert alert-warning\" role=\"alert\">Please, verify the data sent and try again.</div>");
-		}
-		if(response == "ko-db")
-		{
-			$('#special_prices .modal-body').append("<br/><div class=\"alert alert-danger\" role=\"alert\">There was an error updating the database; please , try again.</div>");
-		}else{
-			window.location = response;
-		}		
+			case "ko-validation":
+				$('#special_prices .modal-body').append("<br/><div class=\"alert alert-warning\" role=\"alert\">Please, verify the data sent and try again.</div>");
+			break;
+			
+			case "ko-db":
+				$('#special_prices .modal-body').append("<br/><div class=\"alert alert-danger\" role=\"alert\">There was an error updating the database; please , try again.</div>");
+			break;
+			
+			default:
+				window.location = response;
+				break;
+		}					
 	}).fail(function(response){
 			$('#special_prices .modal-body').append("<br/><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
 	});	

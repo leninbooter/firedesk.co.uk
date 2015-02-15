@@ -2,7 +2,6 @@
 
 class Sales_stock extends CI_Controller
 {
-	
 	public function new_existing()
 	{
 		$pk_id = trim($this->uri->segment(3));
@@ -11,6 +10,7 @@ class Sales_stock extends CI_Controller
 			$this->load->model('stock_m');			
 			$data['item'] = $this->stock_m->get_item_details($pk_id);
 			$data['editing'] = true;
+			$data['prices'] = $this->stock_m->get_item_prices($pk_id);
 		}
 		
 		$this->load->model('customers_m');
@@ -23,7 +23,7 @@ class Sales_stock extends CI_Controller
 		$data['vats'] = $this->vats_m->get_all_vats();
 		$data['family_groups'] = $this->family_groups_m->get_groups();
 		$data['family_discounts'] = $this->discount_groups_m->get_groups();
-		$data['suppliers'] = $this->suppliers_m->get_suppliers_addresses();
+		$data['suppliers'] = $this->suppliers_m->get_suppliers_addresses();		
 		
 		$this->load->view('header_nav');
 		$message = urldecode(trim($this->uri->segment(4)));
@@ -257,7 +257,7 @@ class Sales_stock extends CI_Controller
 		$prices = array();
 		for($i = 0; $i < count($_POST['customers_pk_id']); $i++)
 		{
-			$customer_id = trim($this->security->xss_clean($_POST["price_type"][$i])) == "0" ? "" : trim($this->security->xss_clean($_POST["price_type"][$i]));
+			$customer_id = trim($this->security->xss_clean($_POST["customers_pk_id"][$i])) == "0" ? "" : trim($this->security->xss_clean($_POST["customers_pk_id"][$i]));
 			$price_type = trim($this->security->xss_clean($_POST["price_type"][$i]));
 			$min_qty = trim($this->security->xss_clean($_POST["min_qty"][$i]));
 			$max_qty = trim($this->security->xss_clean($_POST["max_qty"][$i]));
@@ -267,7 +267,8 @@ class Sales_stock extends CI_Controller
 				((is_numeric($min_qty) && $min_qty > 0)  || $min_qty == "" ) && 
 				((is_numeric($max_qty) && $max_qty > 0) || $max_qty == "" ) &&
 				((is_numeric($price) && $price > 0 ) || $price == "" ) &&
-				(is_numeric($price_type) && $price_type >= 0 && $price_type <= 2)
+				(is_numeric($price_type) && $price_type >= 0 && $price_type <= 2) &&
+				( ($price_type == 2 && is_numeric($customer_id)) || (($price_type == 0 || $price_type == 1) && $customer_id == ""))
 				)
 			{
 				$prices_item = array("stock_item_id"=>$item_id, "customer_id"=>$customer_id , "price_type"=>$price_type, "min"=>$min_qty, "max"=>$max_qty, "price"=>$price);

@@ -74,4 +74,5 @@ setParentAccount	new_customer.js	8;"	function
 show_parents_dropdownlist	new_contract.js	68;"	function
 show_parents_dropdownlist	new_customer.js	3;"	function
 telephone_valid	firedesk.js	21;"	function
+type_checker	stock_items.js	1;"	function
 z	jquery.min.js	12;"	function

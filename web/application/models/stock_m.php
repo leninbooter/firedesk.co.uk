@@ -17,6 +17,14 @@ class Stock_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	
+	public function get_item_prices( $pk_id )
+	{
+		$this->load->database();
+		$query = "SELECT fk_customer_id, price_type, min_qty, max_qty, price FROM stock_item_prices WHERE fk_stock_item_id = ".$pk_id;
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
 	public function get_items_stock_levels( )
 	{
 		$this->load->database();

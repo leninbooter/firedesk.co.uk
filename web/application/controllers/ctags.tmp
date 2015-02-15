@@ -54,7 +54,7 @@ cash	invoices.php	159;"	variable
 cheque	invoices.php	160;"	variable
 config	contracts.php	248;"	variable
 config	customers.php	105;"	variable
-config	sales_stock.php	313;"	variable
+config	sales_stock.php	314;"	variable
 config	sales_stock.php	59;"	variable
 config	suppliers.php	113;"	variable
 config	utilities.php	5;"	function
@@ -71,7 +71,7 @@ contract_id	invoices.php	309;"	variable
 contract_id	invoices.php	92;"	variable
 contract_type	contracts.php	310;"	variable
 contract_type	contracts.php	334;"	variable
-cost	sales_stock.php	345;"	variable
+cost	sales_stock.php	346;"	variable
 cost_price_a	sales_stock.php	161;"	variable
 cost_price_b	sales_stock.php	162;"	variable
 cost_price_c	sales_stock.php	163;"	variable
@@ -85,14 +85,14 @@ data	invoices.php	79;"	variable
 date	contracts.php	312;"	variable
 date	invoices.php	186;"	variable
 date	invoices.php	311;"	variable
-date	sales_stock.php	347;"	variable
+date	sales_stock.php	348;"	variable
 days_week	customers.php	195;"	variable
 delivery_charge	contracts.php	315;"	variable
 description	contracts.php	386;"	variable
 description	discount_groups.php	43;"	variable
 description	invoices.php	121;"	variable
 description	sales_stock.php	151;"	variable
-description	sales_stock.php	346;"	variable
+description	sales_stock.php	347;"	variable
 disc	contracts.php	394;"	variable
 disc_perc	customers.php	208;"	variable
 discount_perc	invoices.php	129;"	variable
@@ -117,7 +117,7 @@ file_name	invoices.php	284;"	variable
 file_name	invoices.php	78;"	variable
 fk_discount_group	sales_stock.php	166;"	variable
 fk_family_group	sales_stock.php	165;"	variable
-fk_item_id	sales_stock.php	343;"	variable
+fk_item_id	sales_stock.php	344;"	variable
 fk_supplier_a	sales_stock.php	167;"	variable
 fk_supplier_b	sales_stock.php	168;"	variable
 fk_supplier_c	sales_stock.php	169;"	variable
@@ -199,7 +199,7 @@ name_valid	suppliers.php	6;"	function
 new_address	contracts.php	314;"	variable
 new_contract	contracts.php	217;"	function
 new_existing	customers.php	87;"	function
-new_existing	sales_stock.php	6;"	function
+new_existing	sales_stock.php	5;"	function
 new_existing	suppliers.php	86;"	function
 notes	contracts.php	316;"	variable
 now	contracts.php	118;"	variable
@@ -216,7 +216,7 @@ pk_id	customers.php	76;"	variable
 pk_id	discount_groups.php	42;"	variable
 pk_id	invoices.php	118;"	variable
 pk_id	sales_stock.php	170;"	variable
-pk_id	sales_stock.php	8;"	variable
+pk_id	sales_stock.php	7;"	variable
 pk_id	suppliers.php	74;"	variable
 pk_id	suppliers.php	75;"	variable
 pk_id	suppliers.php	88;"	variable
@@ -225,13 +225,14 @@ preview	invoices.php	303;"	function
 price	sales_stock.php	264;"	variable
 price	sales_stock.php	269;"	variable
 price_type	sales_stock.php	261;"	variable
+price_type	sales_stock.php	271;"	variable
 prices	sales_stock.php	257;"	variable
-prices_item	sales_stock.php	273;"	variable
+prices_item	sales_stock.php	274;"	variable
 prices_type	customers.php	198;"	variable
 process	invoices.php	84;"	function
 qty	contracts.php	385;"	variable
 qty	invoices.php	120;"	variable
-qty	sales_stock.php	344;"	variable
+qty	sales_stock.php	345;"	variable
 quantity_balance	sales_stock.php	154;"	variable
 quantity_on_order	sales_stock.php	155;"	variable
 quantity_rec_level	sales_stock.php	156;"	variable
@@ -259,7 +260,7 @@ result	customers.php	242;"	variable
 result	family_groups.php	70;"	variable
 result	invoices.php	145;"	variable
 result	sales_stock.php	197;"	variable
-result	sales_stock.php	356;"	variable
+result	sales_stock.php	357;"	variable
 result	suppliers.php	245;"	variable
 save_contract	contracts.php	241;"	function
 save_contract_item	contracts.php	352;"	function
@@ -273,7 +274,7 @@ save_supplier	suppliers.php	106;"	function
 saved_addresses	contracts.php	313;"	variable
 shorttext_valid	contracts.php	227;"	function
 shorttext_valid	customers.php	18;"	function
-shorttext_valid	sales_stock.php	296;"	function
+shorttext_valid	sales_stock.php	297;"	function
 shorttext_valid	suppliers.php	18;"	function
 special_price	sales_stock.php	159;"	variable
 standard_price	sales_stock.php	158;"	variable
@@ -311,7 +312,7 @@ type	customers.php	191;"	variable
 type	invoices.php	11;"	variable
 type	invoices.php	158;"	variable
 type	invoices.php	310;"	variable
-type	sales_stock.php	348;"	variable
+type	sales_stock.php	349;"	variable
 units_of_for_special	sales_stock.php	160;"	variable
 unpaid_ammount	invoices.php	172;"	variable
 unpaid_ammount	invoices.php	175;"	variable
@@ -319,7 +320,7 @@ unpaid_ammount	invoices.php	205;"	variable
 unpaid_cash_invoice	invoices.php	168;"	variable
 unpaid_cash_invoice	invoices.php	204;"	variable
 update_groups	discount_groups.php	30;"	function
-update_qty_manually	sales_stock.php	308;"	function
+update_qty_manually	sales_stock.php	309;"	function
 valor	customers.php	32;"	variable
 valor	suppliers.php	32;"	variable
 value	contracts.php	395;"	variable
@@ -333,7 +334,7 @@ vars_array	invoices.php	178;"	variable
 vars_array	invoices.php	188;"	variable
 vars_array	invoices.php	207;"	variable
 vars_array	sales_stock.php	172;"	variable
-vars_array	sales_stock.php	353;"	variable
+vars_array	sales_stock.php	354;"	variable
 vars_array	suppliers.php	217;"	variable
 vat	customers.php	194;"	variable
 vat	invoices.php	155;"	variable
