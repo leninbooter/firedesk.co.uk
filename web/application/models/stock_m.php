@@ -70,6 +70,27 @@ class Stock_m extends CI_Model
 		return false;
 	}
 	
+	public function ins_up_item_price($item)
+	{
+		$this->load->database();
+		array_walk($item, "self::clean_vars");
+		
+		$query = "call save_price(".$this->db->escape_str($item['customer_id']).",".$this->db->escape_str($item["stock_item_id"]).",".$this->db->escape_str($item["price"]).",".$this->db->escape_str($item["price_type"]).",".$this->db->escape_str($item["min"]).",".$this->db->escape_str($item["max"]).");";		
+		
+		$query = str_replace("'NULL'", "NULL", $query);
+		log_message('debug', $query);
+		$query = $this->db->query($query);
+		if( !empty($query->result()) )
+		{
+			$result = $query->row();
+			log_message('debug', $result->result);
+			mysqli_next_result( $this->db->conn_id );			
+			if($result->result == "ok" || $result->result == "notUpdated")
+				return true;
+		}
+		return false;
+	}
+	
 	public function update_qty($vars_array)
 	{
 		$this->load->database();

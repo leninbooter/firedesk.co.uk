@@ -187,8 +187,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="form-group">
-										<label for="fk_supplier_a">&nbsp;</label>										
+									<div class="form-group">							
 										<select class="form-control" id="fk_supplier_a" name="fk_supplier_a">
 											<option value="0"></option>
 											<?php foreach($suppliers as $option): ?>
@@ -210,7 +209,6 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<label for="fk_supplier_a">&nbsp;</label>										
 										<select class="form-control" id="fk_supplier_b" name="fk_supplier_b">
 											<option value="0"></option>
 											<?php foreach($suppliers as $option): ?>
@@ -231,8 +229,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="form-group">
-										<label for="fk_supplier_a">&nbsp;</label>										
+									<div class="form-group">										
 										<select class="form-control" id="fk_supplier_c" name="fk_supplier_c">
 											<option value="0"></option>
 											<?php foreach($suppliers as $option): ?>
@@ -255,8 +252,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="form-group">
-										<label for="fk_family_group">&nbsp;</label>										
+									<div class="form-group">										
 										<select class="form-control" id="fk_family_group" name="fk_family_group">
 											<option value="0"></option>
 											<?php foreach($family_groups as $option): ?>
@@ -277,8 +273,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="form-group">
-										<label for="fk_discount_group">&nbsp;</label>										
+									<div class="form-group">									
 										<select class="form-control" id="fk_discount_group" name="fk_discount_group">
 											<option value="0"></option>
 											<?php foreach($family_discounts as $option): ?>
@@ -318,27 +313,34 @@
 	</div>	
 </div>
 
-<div class="row">
-	<div class="col-md-2">
-		<?php if(isset($item[0]->pk_id)): ?>
-			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#change_quantity">Change Quantities</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-4">
-	</div>
+<div class="row">	
+	<?php if(isset($item[0]->pk_id)): ?>
+		<div class="col-md-2">
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#change_quantity">Change Quantities</button>			
+		</div>
+		<div class="col-md-4">
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#special_prices">Prices</button>			
+		</div>		
+	<?php else: ?>
+		<div class="col-md-6"></div>
+	<?php endif; ?>
+	
 	<div class="col-md-1">
 		<div class="form-group">
 			<a href="javascript:history.back()" class="btn btn-default" role="button">Go back</a>
 		</div>
 	</div>
+	
 	<div class="col-md-2">
 		<div class="form-group">
 			<button type="submit" class="btn btn-primary  btn-block">Save</button>
 		</div>
 	</div>
+	<div class="col-md-3">&nbsp;</div>
 </div>		
 </form>
 
+<!-- Change quantity modal -->
 <div class="modal fade" id="change_quantity" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -370,28 +372,137 @@
 								<input type="text" class="form-control" id="cost_price" name="cost_price"/>
 							</div>
 						</div>
-					</div>
-					<!--<div class="row">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="cost_price">Cost</label>										
-								<input type="text" class="form-control" id="cost_price" name="cost_price"/>
-							</div>
-						</div>
-						<!--<div class="col-md-4">
-							<div class="form-group">
-								<label for="cost_price_a">Cost B</label>										
-								<input type="text" class="form-control" id="cost_price_b" name="cost_price_b"/>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="cost_price_a">Cost C</label>										
-								<input type="text" class="form-control" id="cost_price_c" name="cost_price_c"/>
-							</div>
-						</div>--
-					</div>-->
+					</div>					
 					<button type="submit" class="btn btn-primary" onclick="$('#cost_price').val( parseFloat( $('#cost_price').val() ).toFixed(2) );">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Special Prices Modal -->
+<div class="modal fade" id="special_prices" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Prices</h4>
+			</div>
+			<div class="modal-body">
+				<form role="form" id="prices_form" >
+					<input type="hidden" id="stock_item_id" name="stock_item_id" class="form-control" value="<?php echo isset($item[0]->pk_id) ? $item[0]->pk_id : ""; ?>">
+					<!-- headers -->
+					<div class="row">						
+						<div class="col-md-3">
+							<div class="row">
+								<div class="row">
+								<div class="col-md-12">&nbsp;</div>
+							</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									Customer
+								</div>
+							</div>							
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<div class="row">
+									<div class="col-md-12">&nbsp;</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-center">Price Type</p>
+								</div>
+							</div>														
+						</div>
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-center">Prices Break</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p class="text-center">Min</p>
+								</div>
+								<div class="col-md-6">
+									<p class="text-center">Max</p>
+								</div>
+							</div>							
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<div class="row">
+									<div class="col-md-12">&nbsp;</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-center">Price</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></p>
+						</div>
+					</div>
+					<!-- data -->
+					<div id="first_row">
+					<div class="row" id="first_row_child">
+						<div class="col-md-3">
+							<div class="form-group">
+								<select class="form-control" id="customers_pk_id" name="customers_pk_id[]">
+									<option value="0"></option>
+									<?php foreach($customers as $customer): ?>
+										<option value="<?php echo $customer->pk_id;?>"><?php echo $customer->name;?></option>
+									<?php endforeach; ?>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<select id="price_type" name="price_type[]" class="form-control">
+								<option value="0">Standard</option>
+								<option value="1">Special</option>
+								<option value="2" disabled="true">Nett</option>
+							</select>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="number" min="1" max="1000000000" id="min_qty" name="min_qty[]" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="number" min="1" max="1000000000" id="max_qty" name="max_qty[]" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="text" id="price" name="price[]" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-1">
+							<p class="text-center">
+								<button type="button" class="btn btn-default" aria-label="Left Align" id="remove_row_btn" name="remove_row_btn[]">
+									<span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+								</button>
+							</p>
+						</div>
+					</div>
+					</div>
+					<div id="rows">
+					</div>					
+					<div class="row">
+						<div class="col-md-11"></div>
+						<div class="col-md-1">
+							<p class="text-center">
+								<button id="add_row" type="button" class="btn btn-default" aria-label="Left Align">
+									<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+								</button>
+							</p>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary" onclick="">Save</button>
 				</form>
 			</div>
 		</div>

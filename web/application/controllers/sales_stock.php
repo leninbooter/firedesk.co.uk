@@ -13,11 +13,13 @@ class Sales_stock extends CI_Controller
 			$data['editing'] = true;
 		}
 		
+		$this->load->model('customers_m');
 		$this->load->model('family_groups_m');
 		$this->load->model('discount_groups_m');
 		$this->load->model('suppliers_m');
 		$this->load->model('vats_m');
 		
+		$data['customers'] = $this->customers_m->get_customers();
 		$data['vats'] = $this->vats_m->get_all_vats();
 		$data['family_groups'] = $this->family_groups_m->get_groups();
 		$data['family_discounts'] = $this->discount_groups_m->get_groups();
@@ -30,11 +32,9 @@ class Sales_stock extends CI_Controller
 			$this->output->append_output("<div class=\"alert alert-danger\" role=\"alert\">".$danger."</div>");
 		}
 		
-		if( isset($data['item']) ) $this->load->view('new_existing_stock_item', $data);
-			else	$this->load->view('new_existing_stock_item', $data);
-		
+		$this->load->view('new_existing_stock_item', $data);		
 		$this->load->view('footer_common');
-		//$this->output->append_output("<script src=\"".base_url('assets/js/suppliers.js')."\"></script>");
+		$this->output->append_output("<script src=\"".base_url('assets/js/stock_items.js')."\"></script>");
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}
@@ -245,6 +245,52 @@ class Sales_stock extends CI_Controller
 				$this->load->view('footer');
 			}
 		}
+	}
+	
+	public function save_item_prices()
+	{
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
+		
+		$item_id = trim($this->input->post('stock_item_id', true));
+		
+		$prices = array();
+		for($i = 0; $i < count($_POST['customers_pk_id']); $i++)
+		{
+			$customer_id = trim($this->security->xss_clean($_POST["price_type"][$i])) == "0" ? "" : trim($this->security->xss_clean($_POST["price_type"][$i]));
+			$price_type = trim($this->security->xss_clean($_POST["price_type"][$i]));
+			$min_qty = trim($this->security->xss_clean($_POST["min_qty"][$i]));
+			$max_qty = trim($this->security->xss_clean($_POST["max_qty"][$i]));
+			$price = trim($this->security->xss_clean($_POST["price"][$i]));													
+			
+			if( (is_numeric($customer_id) || $customer_id == "") &&
+				((is_numeric($min_qty) && $min_qty > 0)  || $min_qty == "" ) && 
+				((is_numeric($max_qty) && $max_qty > 0) || $max_qty == "" ) &&
+				((is_numeric($price) && $price > 0 ) || $price == "" ) &&
+				(is_numeric($price_type) && $price_type >= 0 && $price_type <= 2)
+				)
+			{
+				$prices_item = array("stock_item_id"=>$item_id, "customer_id"=>$customer_id , "price_type"=>$price_type, "min"=>$min_qty, "max"=>$max_qty, "price"=>$price);
+				array_push($prices, $prices_item);							
+			}else
+			{
+				echo "ko-validation";
+				return;
+			}
+						
+		}
+		
+		$this->load->model('stock_m');
+		
+		foreach( $prices as $item )
+		{
+			if( !$this->stock_m->ins_up_item_price($item) )
+			{
+				echo "ko-db";
+				return;
+			}
+		}
+		echo base_url('index.php/sales_stock/new_existing/'.$item_id);
 	}
 	
 	public function shorttext_valid( $valor )
