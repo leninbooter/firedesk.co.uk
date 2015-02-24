@@ -10,10 +10,24 @@ class Stock_m extends CI_Model
 		}
 	}
 	
+	public function get_items_soled_by( $supplier_id )
+	{
+		$this->load->database();
+		$query = $this->db->query( "call get_items_obtained_from(".$supplier_id.");");
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
 	public function get_item_details( $pk_id )
 	{
 		$this->load->database();
 		$query = $this->db->query( "SELECT * FROM sales_stock where pk_id = ".$pk_id);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
+	public function get_items_from_family_from_item ( $pk_id )
+	{
+		$this->load->database();
+		$query = $this->db->query( "CALL get_items_from_family_of(".$pk_id.");");
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	

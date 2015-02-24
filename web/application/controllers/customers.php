@@ -111,7 +111,7 @@ class Customers extends CI_Controller
 			   array(
 					'field'		=> 'email',
 					'label'		=> 'E-mail',
-					'rules'		=> 'trim|required|xss_clean|valid_email|min_length[5]|max_length[200]'
+					'rules'		=> 'trim|xss_clean|valid_email|min_length[5]|max_length[200]'
 			   ),
 			   array(
 					'field'		=> 'credit_limit',

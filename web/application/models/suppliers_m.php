@@ -2,11 +2,11 @@
 
 class Suppliers_m extends CI_Model
 {	
-	public function get_customers()
+	public function get_suppliers()
 	{
 		$this->load->database();
-		$query = $this->db->query("select pk_id, name from customers order by 2");
-		return !empty($query->result()) ? $query->result() : array();
+		$query = $this->db->query( "select pk_id, name, contact, address1, telephone1, fax from suppliers order by 2;");
+		return !empty($query->result()) ? $query->result() : false;
 	}
 	
 	public function get_supplier_details( $pk_id )
@@ -21,36 +21,6 @@ class Suppliers_m extends CI_Model
 		$this->load->database();
 		$query = $this->db->query( "SELECT pk_id, name, address1, address2, address3, address4, address5, address6  FROM suppliers;" );
 		return !empty($query->result()) ? $query->result() : array();
-	}
-	
-	public function get_names_like( $name )
-	{			
-		$this->load->database();
-		$query = $this->db->query( "CALL get_customers_like(?);", array($name) );
-		if( $query->num_rows() > 0 )
-		{
-			$customers = $query->result_array();
-			mysqli_next_result( $this->db->conn_id );
-			return $customers;
-		}else
-		{
-			return false;
-		}
-	}
-	
-	public function get_customers_addresses( $pk_id )
-	{
-		$this->load->database();
-		$query = $this->db->query( "CALL get_customers_address(?);", array($pk_id) );
-		if( $query->num_rows() > 0 )
-		{
-			$addresses = $query->result_array();
-			mysqli_next_result( $this->db->conn_id );
-			return $addresses;
-		}else
-		{
-			return false;
-		}
 	}
 
 	function clean_vars(&$value, $key)

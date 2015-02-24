@@ -26,13 +26,13 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-9">
 						<div class="form-group">
 							<label for="address">Address</label>
 							<input tabindex="4" type="text" class="form-control" id="address" name="address"/>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<!--<div class="col-md-3">
 						<div class="form-group">
 							<label for="address">&nbsp;</label>
 							<input tabindex="5" type="text" class="form-control" id="address1" name="address1"/>
@@ -43,13 +43,7 @@
 							<label for="address">&nbsp;</label>
 							<input tabindex="6" type="text" class="form-control" id="address2" name="address2"/>
 						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<label for="statement_address">Statement Address</label>
-							<input tabindex="10" type="text" class="form-control" id="statement_address" name="statement_address"/>
-						</div>
-					</div>
+					</div>-->					
 				</div>
 				
 				<div class="row">
@@ -79,16 +73,53 @@
 					</div>
 				</div>
 				
+				<!-- Statement Address -->
+				<div class="row">
+					<div class="col-md-9">
+						<div class="form-group">
+							<label for="statement_address">Statement Address</label>
+							<input tabindex="4" type="text" class="form-control" id="statement_address" name="statement_address"/>
+						</div>
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="address">&nbsp;</label>
+							<input tabindex="7" type="text" class="form-control" id="address3" name="address3"/>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="address">&nbsp;</label>
+							<input tabindex="8" type="text" class="form-control" id="address4" name="address4"/>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="address">&nbsp;</label>
+							<input tabindex="9" type="text" class="form-control" id="address5" name="address5"/>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="post_code">Postal Code</label>
+							<input tabindex="11" type="text" class="form-control" id="post_code" name="post_code"/>
+						</div>
+					</div>
+				</div>
+				<!-- Statement Address End -->
+				
 				<div class="row">
 					<div class="col-md-6">
 						<div class="form-group">
-							<label for="account_department">Account department</label>
+							<label for="account_department">Account Contact Name</label>
 							<input tabindex="11" type="text" class="form-control" id="account_department" name="account_department"/>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label for="account_dept_number">Account Department Number</label>
+							<label for="account_dept_number">Account Contact Number</label>
 							<input tabindex="11" type="text" class="form-control" id="account_dept_number" name="account_dept_number"/>
 						</div>
 					</div>

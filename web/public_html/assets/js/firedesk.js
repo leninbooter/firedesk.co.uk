@@ -115,7 +115,7 @@ $( '#apellido' ).focusout(function() {
 });
 
 $( '#email' ).focusout(function() {
-	if( !email_valido( $(this) ) )
+	if( !email_valid( $(this) ) )
 	{
 		blink( $(this) );
 	}
@@ -242,7 +242,7 @@ $( '#form_contacto' ).submit( function( event ) {
 /* New customer form */
 $( '#new_customer_form' ).submit( function( event ) {
 	
-	err = '';
+	var err = '';
 	
 	if( $( '#type' ).val() == 1 && !ref_account_valid( $( '#account_reference' ) ) )
 	{		
@@ -264,7 +264,7 @@ $( '#new_customer_form' ).submit( function( event ) {
 		err = err + 'The phone field contains invalid characters.\n';
 	}
 	
-	if( !email_valid( $('#email') ) )
+	if( $( '#email' ).val().length > 0 && !email_valid( $('#email') ) )
 	{
 		err = err + 'The email field is empty or contains invalid characters.\n';
 	}
@@ -289,7 +289,7 @@ $( '#new_customer_form' ).submit( function( event ) {
 		err = err + 'The representative field contains invalid characters.\n';
 	}*/
 	
-	if( $( '#type' ).val() == 1 && !limit_credit_valid( $(credit_limit) ) )
+	if( $( '#credit_limit' ).val().length > 0 && !limit_credit_valid( $(credit_limit) ) )
 	{
 		err = err + 'The credit limit field contains invalid characters.\n';
 	}

@@ -9,7 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/justified-nav.css'); ?>">
 		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/datepicker/css/datepicker.css'); ?>" rel="stylesheet">
-		<link href="<?php echo base_url('assets/css/firedesk.css'); ?>" rel="stylesheet">		
+		<link href="<?php echo base_url('assets/css/firedesk.css'); ?>" rel="stylesheet">
+		<link href="<?php echo base_url('assets/jquery-ui-1.11.3.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">		
 		 
 		<title>FireDesk</title>
 	</head>
@@ -82,7 +83,7 @@
 				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases & Suppliers</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/suppliers/new_existing'); ?>">New/Existing supplier details</a></li>
-						<li><a class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown" href="<?php echo base_url('index.php/purchase_orders/new_existing'); ?>">Purchase orders</a></li>
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/new_order'); ?>">Purchase orders</a></li>
 						<li><a href="<?php echo base_url('index.php/suppliers/list_suppliers_addresses'); ?>">List supplier names/addresses</a></li>
 					</ul>
 				</li>

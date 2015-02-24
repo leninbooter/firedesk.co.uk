@@ -55,7 +55,7 @@
 		<table class="table table-hover table-responsive" id="items">
 			<thead>
 				<tr>
-					<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>No entries</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
+					<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>Order No.</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
 				</tr>
 			</thead>
 			<?php foreach($contract_items as $row): ?>

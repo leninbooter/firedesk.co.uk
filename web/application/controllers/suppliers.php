@@ -50,7 +50,7 @@ class Suppliers extends CI_Controller
 		$this->load->view('footer');
 	}
 
-	public function list_selectable_customers()
+	/*public function list_selectable_customers()
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
@@ -65,21 +65,25 @@ class Suppliers extends CI_Controller
 		{
 			echo "none";
 		}
-	}
+	}*/
 
-		public function get_customers_addresses_json()
+		public function get_suppliers_json()
 	{
 		$this->load->helper(array('form', 'url'));
-		$this->load->model('suppliers');
-		$pk_id = trim($this->input->get('pk_id' ,true));
-		$pk_id = str_replace("_", "%", $pk_id);
-		if( ($results = $this->customers_m->get_customers_addresses($pk_id)) != false )
-		{
-			$data['addresses'] = $results;
-			$this->load->view('customers_address_json', $data);
+		$this->load->model('suppliers_m');
+		
+		header('Content-type: application/json');
+		if( ($results = $this->suppliers_m->get_suppliers() ) != false )
+		{	
+			$data = array();
+			foreach($results as $sup)
+			{	
+				array_push( $data, array("pk_id" => intval($sup->pk_id), "label" => $sup->name, "contact"  => $sup->contact, "address1" => $sup->address1, "telephone1" => $sup->telephone1, "fax" => $sup->fax) );
+			}
+			echo json_encode($data);
 		}else
 		{
-			echo "none";
+			echo "[]";
 		}
 	}
 

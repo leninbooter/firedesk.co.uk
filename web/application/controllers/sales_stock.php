@@ -2,6 +2,63 @@
 
 class Sales_stock extends CI_Controller
 {
+	public function items_from_family_from_json()
+	{
+		$pk_id = trim($this->input->get('id'));
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->model('stock_m');			
+			$data = array();
+			foreach( $this->stock_m->get_items_from_family_from_item($pk_id) as $item)
+			{
+				$i = array("pk_id" => $item->pk_id, "label" => $item->description, "quantity_balance" => $item->quantity_balance, "quantity_on_order" => $item->quantity_on_order, "quantity_rec_level" => $item->quantity_rec_level );
+				if($item->supplier_a_code != "NULL") {
+					$i["cost_price"] = $item->cost_price_a ;
+					$i["supplier_code"] = $item->supplier_a_code == "null" ? "" : $item->supplier_a_code ; }
+				else if( $item->supplier_b_code != "NULL" ) {
+					$i["cost_price"] = $item->cost_price_b;
+					$i["supplier_code"] = $item->supplier_b_code == "null" ? "" : $item->supplier_b_code; }
+				else if( $item->supplier_c_code != "NULL" ) {
+					$i["cost_price"] = $item->cost_price_c;
+					$item->supplier_c_code == "null" ? "" : $item->supplier_c_code; }
+				
+				array_push($data , $i);
+			}
+			header('Content-type: application/json');
+			echo json_encode($data);
+		}else
+			echo "[]";
+	}
+	
+	public function items_from_supplier_json()
+	{
+		$pk_id = trim($this->input->get('id'));
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->model('stock_m');			
+			$data = array();
+			foreach( $this->stock_m->get_items_soled_by($pk_id) as $item)
+			{
+				$i = array("pk_id" => $item->pk_id, "label" => $item->description, "quantity_balance" => $item->quantity_balance, "quantity_on_order" => $item->quantity_on_order, "quantity_rec_level" => $item->quantity_rec_level );
+				if($item->supplier_a_code != "NULL") {
+					$i["cost_price"] = $item->cost_price_a ;
+					$i["supplier_code"] = $item->supplier_a_code == "null" ? "" : $item->supplier_a_code ; }
+				else if( $item->supplier_b_code != "NULL" ) {
+					$i["cost_price"] = $item->cost_price_b;
+					$i["supplier_code"] = $item->supplier_b_code == "null" ? "" : $item->supplier_b_code; }
+				else if( $item->supplier_c_code != "NULL" ) {
+					$i["cost_price"] = $item->cost_price_c;
+					$item->supplier_c_code == "null" ? "" : $item->supplier_c_code; }
+				
+				array_push($data , $i);
+			}
+			header('Content-type: application/json');
+			echo json_encode($data);
+		}else
+			echo "[]";
+		
+	}
+	
 	public function new_existing()
 	{
 		$pk_id = trim($this->uri->segment(3));

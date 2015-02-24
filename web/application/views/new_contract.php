@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-md-2">
 				<div class="form-group">
-					<label for="account_reference">Customer Account</label>
+					<label for="account_reference">Account Number</label>
 					<input type="text" class="form-control" id="account_reference" name="account_reference" autocomplete="off"/>
 					<input type="hidden" id="account_reference_id" name="account_reference_id" value="<?php echo $this->input->get('customer_id');?>"/>
 				</div>
@@ -41,17 +41,25 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-md-4">		
+			<div class="col-md-2">		
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="cash" name="cash">Cash
+					</label>
+				</div>
+			</div>
+			<!--<div class="col-md-4">		
 				<div class="form-group">
 					<label for="saved_address">Site / Delivery Address</label>
 					<select class="form-control" id="saved_addresses" name="saved_addresses">
 					</select>					
 				</div>
-			</div>
+			</div>-->
 			<div class="col-md-4">
 				<div class="form-group">
-					<label for="new_address">New Address</label>
-					<input type="text" class="form-control" id="new_address name="new_address" />
+					<label for="new_address">Delivery Address</label>
+					<!--<input type="text" class="form-control" id="new_address name="new_address" />-->
+					<textarea class="form-control" rows="3" id="new_address" name="new_address"></textarea>
 				</div>
 			</div>
 			<div class="col-md-2">
