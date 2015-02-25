@@ -22,8 +22,15 @@ from purchases_orders as po
 inner join suppliers as s on po.fk_supplier_id = s.pk_id
 where po.pk_id = ".$pk_id;		
 		$query = $this->db->query($query);
-		log_message('debug', $query->row()->name);
 		return !empty($query->result()) ? $query->row() : false;
+	}
+	
+	public function get_order_items( $pk_id )
+	{
+		$this->load->database();
+		$query = "select fk_purchase_order_id, fk_item_id, description, qty, suppliers_code, cost, perc_discount, total, `for`, due_delivery_date from purchases_orders_items where fk_purchase_order_id = ".$pk_id;
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
 	}
 	
 	public function get_suppliers()

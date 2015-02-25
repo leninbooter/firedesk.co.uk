@@ -37,7 +37,7 @@ edit	new_contract.js	63;"	function
 email_conf_valido	firedesk.js	16;"	function
 email_valid	firedesk.js	11;"	function
 f	bootbox.min.js	6;"	function
-fill_family_modal	purchase_orders_edit.js	162;"	function
+fill_family_modal	purchase_orders_edit.js	186;"	function
 g	bootbox.min.js	6;"	function
 get_customers_selec_list	new_contract.js	82;"	function
 get_customers_selec_list	new_customer.js	16;"	function
@@ -61,6 +61,7 @@ j	jquery.min.js	12;"	function
 limit_credit_valid	firedesk.js	46;"	function
 load_customers_addresses	new_contract.js	102;"	function
 locale	bootbox.min.js	6;"	property
+mark_to_delete	purchase_orders_edit.js	148;"	function
 name_valid	firedesk.js	6;"	function
 no_entries	purchase_orders_edit.js	1;"	variable
 o.browser.version	jquery.min.js	12;"	property
@@ -78,8 +79,8 @@ setParentAccount	new_contract.js	73;"	function
 setParentAccount	new_customer.js	8;"	function
 show_parents_dropdownlist	new_contract.js	68;"	function
 show_parents_dropdownlist	new_customer.js	3;"	function
-submit_edit_purchase_order_form	purchase_orders_edit.js	148;"	function
+submit_edit_purchase_order_form	purchase_orders_edit.js	170;"	function
 telephone_valid	firedesk.js	21;"	function
 type_checker	stock_items.js	1;"	function
-validate_item_ins	purchase_orders_edit.js	187;"	function
+validate_item_ins	purchase_orders_edit.js	211;"	function
 z	jquery.min.js	12;"	function

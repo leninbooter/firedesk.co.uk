@@ -22,7 +22,7 @@
 								<?php echo $order_details->telephone2; ?>
 						</div>
 					</div>
-					<p class="text-left"><small>No entries: <span id="no_entries"></span></small></p>
+					<p class="text-left"><small>No entries: <span id="no_entries"><?php echo !empty($items) ? count($items) : "0"; ?></span></small></p>
 				</div>				
 				<div class="col-md-5">
 					<div class="row">
@@ -70,6 +70,9 @@
 							</tr>
 						</thead>
 						<tbody>
+							<?php foreach($items as $i): ?>
+								<tr><input type="hidden" id="delete" name="delete[]" value="no"/><td><input type="hidden" id="item_id" name="item_id[]" value="<?php echo $i->fk_item_id; ?>"/><input class="form-control" id="qty" name="qty[]" value="<?php echo $i->qty; ?>" readonly/></td><td><input class="form-control" id="description" name="description[]" value="<?php echo $i->description; ?>" readonly/><br/><div class="form-inline"><div class="form-group"><label for="for">For </label> <input type="text" class="form-control input-sm" id="for" name="for[]" value="<?php echo $i->for; ?>" readonly/></div></div></td><td><input class="form-control" id="suppliers_code" name="suppliers_code[]" value="<?php echo $i->suppliers_code; ?>" readonly/></td><td><input class="form-control" id="cost" name="cost[]" value="<?php echo $i->cost; ?>" readonly/></td><td><input class="form-control" id="total" name="total[]" value="<?php echo $i->total; ?>" readonly/></td><td><button type="button" class="btn btn-default" aria-label="Left Align" onclick="mark_to_delete(this)" id="remove_row_btn" name="remove_row_btn[]"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button></td></tr>
+							<?php endforeach; ?>
 							<tr class="success"><td><input type="hidden" id="item_id_in" name="item_id_in"/><input type="hidden" id="hidden_name" name="hidden_name"/><div class="form-group"><input class="form-control" id="qty_in" name="qty_in" autocomplete="off"/></div></td><td><input class="form-control" id="description_in" name="description_in" autocomplete="off"/>							
 							</td><td><input class="form-control" id="suppliers_code_in" name="suppliers_code_in" autocomplete="off"/></td><td><input class="form-control" id="cost_in" name="cost_in" autocomplete="off"/></td><td colspan="2">
 								<div class="form-inline">

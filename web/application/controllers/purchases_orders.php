@@ -12,16 +12,17 @@ class Purchases_orders extends CI_Controller
 		{
 			$data['order_id'] = $pk_id;
 			$data['order_details'] = $this->purchases_orders_m->get_order_details( $pk_id );			
+			$data['items'] = $this->purchases_orders_m->get_order_items( $pk_id );
 			if($data['order_details'] != false) {
 				$data['supplier_id'] = $data['order_details']->fk_supplier_id;			
 				
-				$this->load->view('header_nav');		
-				$this->load->view('purchase_order_edit', $data);		
-				$this->load->view('footer_common');
-				$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
-				$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
-				$this->load->view('footer_copyright');
-				$this->load->view('footer');
+			$this->load->view('header_nav');		
+			$this->load->view('purchase_order_edit', $data);		
+			$this->load->view('footer_common');
+			$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
+			$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
+			$this->load->view('footer_copyright');
+			$this->load->view('footer');
 			}
 		}			
 	}
@@ -179,19 +180,22 @@ class Purchases_orders extends CI_Controller
 		$all_items = array();
 		for($i = 0; $i < count($_POST['qty']); $i++)
 		{
-			$item_id = trim($this->security->xss_clean($_POST["item_id"][$i]));
+			$item_id = trim($this->security->xss_clean($_POST["item_id"][$i]));			
 			$qty = trim($this->security->xss_clean($_POST["qty"][$i]));
 			$description = trim($this->security->xss_clean($_POST["description"][$i]));
 			$suppliers_code = trim($this->security->xss_clean($_POST["suppliers_code"][$i]));
 			$cost = trim($this->security->xss_clean($_POST["cost"][$i]));
 			$total = trim($this->security->xss_clean($_POST["total"][$i]));
 			$for = trim($this->security->xss_clean($_POST["for"][$i]));
-
+			$delete = trim($this->security->xss_clean($_POST["delete"][$i]));					
+			if($delete == "yes")
+				$qty*=-1;
+			
 			if( is_numeric($item_id) &&
-				( ( is_numeric($qty) && $qty > 0 )) && 
+				( ( is_numeric($qty) )) && 
 				( ( is_numeric($cost) && $cost > 0 )) &&
 				( ( is_numeric($total) && $total > 0 )) &&
-				( $total == $cost * $qty )				
+				( ($qty > 0 && $total == $cost * $qty )|| $qty < 0 )				
 			)
 			{
 				$item = compact('order_id', 'item_id', 'qty', 'description', 'suppliers_code', 'cost', 'total', 'for' );

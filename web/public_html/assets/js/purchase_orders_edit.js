@@ -100,7 +100,7 @@ function add_item()
 		$('#description_in').on('hidden.bs.popover', function () {
 			var total =  parseFloat($('#qty_in').val() * $('#cost_in').val()).toFixed(2);
 			$('#items tr').last().before(
-			"<tr><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+$( "#item_id_in" ).val()+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+$('#qty_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+$('#description_in').val()+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\""+$('#for_in').val()+"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+$('#suppliers_code_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+$('#cost_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
+			"<tr><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+$( "#item_id_in" ).val()+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+$('#qty_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+$('#description_in').val()+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\""+$('#for_in').val()+"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+$('#suppliers_code_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+$('#cost_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
 			);
 			
 			$('#qty_in').val("");
@@ -139,10 +139,32 @@ function add_item_with(item_id, qty, description, suppliers_code, cost)
 	var total =  parseFloat(qty * cost).toFixed(2);
 	suppliers_code = suppliers_code == "null" ? "": suppliers_code;
 	$('#items tr').last().before(
-			"<tr><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+item_id+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+qty+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+description+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+suppliers_code+"\" readonly/></td><td><input class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+cost+"\" readonly/></td><td><input class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
+			"<tr><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+item_id+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+qty+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+description+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+suppliers_code+"\" readonly/></td><td><input class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+cost+"\" readonly/></td><td><input class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
 			);
 	no_entries++;
 	$('#no_entries').html(no_entries);
+}
+
+function mark_to_delete( ele_button )
+{	
+	if( $(ele_button).parent().parent().hasClass('danger') )
+	{
+		$(ele_button).parent().parent().removeClass('danger');
+		$('input[name^=delete]:first', $(ele_button).parent().parent()).val("no");
+	}else {
+		$(ele_button).parent().parent().addClass('danger');
+		$('input[name^=delete]:first', $(ele_button).parent().parent()).val("yes");
+	}
+	/*$('input[name^=qty]:first', $(ele_button).parent().parent()).val(Number($('input[name^=qty]:first', $(ele_button).parent().parent()).val())*-1);
+	$('input[name^=qty]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
+	$('input[name^=description]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
+	$('input[name^=suppliers_code]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
+	$('input[name^=cost]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
+	$('input[name^=total]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
+	$('input[name^=for]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
+	$('label[for^=for]:first', $(ele_button).parent().parent()).remove();
+	$('br', $(ele_button).parent().parent()).remove();
+	$(ele_button).remove();*/
 }
 
 function submit_edit_purchase_order_form()
@@ -150,10 +172,12 @@ function submit_edit_purchase_order_form()
 	$.ajax({
 		type: "POST",
 		url: '../save_order',
-		data: $(this).serialize()
+		data: $('#edit_purchase_order_form').serialize()
 	}).done(function( response ) {
 		if(response == "ok")
 			window.location = '../../purchases_orders/edit/' + $('#order_id').val() ;
+		else
+			alert(response);
 	}).fail(function(){
 		alert("Request error");
 	});
