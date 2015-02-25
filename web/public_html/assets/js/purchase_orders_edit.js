@@ -3,7 +3,7 @@ $('input[id=qty_in]').focus();
 $('#no_entries').html(no_entries);
 
 $('#edit_purchase_order_form').submit( function(e) {
-	e.preventDefault();
+	e.preventDefault();	
 });
 
 $('input[id=qty_in]').on('keyup', function(e){
@@ -82,9 +82,14 @@ $.get( "../../sales_stock/items_from_supplier_json", { id : $('#supplier_id').va
 				jQuery.each(data, function() {
 					  if(Number(this.quantity_balance) < Number(this.quantity_rec_level))
 					  {
-						  $('#level_items_table tbody').append("<tr><td><input type=\"hidden\" id=\"lvl_modal_item_id_in\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"lvl_modal_suppliers_code_in\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input class=\"form-control\" id=\"lvl_modal_qty_in\" value=\""+ (Number(this.quantity_rec_level) - Number(this.quantity_balance)) +"\"/></td><td><input type=\"hidden\" id=\"lvl_modal_description_in\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"lvl_modal_cost_in\" vale=\""+this.cost_price+"\" />"+this.cost_price+"</td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"add_item_from_lvl_modal("+this.pk_id+", $('#lvl_modal_qty_in', $(this).parent().parent()).val(), '"+this.label+"', '"+this.supplier_code+"', '"+this.cost_price+"');\" id=\"add_row_btn\" name=\"add_row_btn[]\"><span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span></button></td></tr>");
+						  $('#level_items_table tbody').append("<tr><td><input type=\"hidden\" id=\"lvl_modal_item_id_in\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"lvl_modal_suppliers_code_in\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input class=\"form-control\" id=\"lvl_modal_qty_in\" value=\""+ (Number(this.quantity_rec_level) - Number(this.quantity_balance)) +"\"/></td><td><input type=\"hidden\" id=\"lvl_modal_description_in\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"lvl_modal_cost_in\" vale=\""+this.cost_price+"\" />"+this.cost_price+"</td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"add_item_with("+this.pk_id+", $('#lvl_modal_qty_in', $(this).parent().parent()).val(), '"+this.label+"', '"+this.supplier_code+"', '"+this.cost_price+"');\" id=\"add_row_btn\" name=\"add_row_btn[]\"><span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span></button></td></tr>");
 					  }
 				});				
+});
+
+$('#family_group_items_form').submit( function(e){
+	e.preventDefault();
+	add_items_from_family();
 });
 
 function add_item()
@@ -115,7 +120,21 @@ function add_item()
 	}
 }
 
-function add_item_from_lvl_modal(item_id, qty, description, suppliers_code, cost)
+function add_items_from_family()
+{
+	var arrayData = $('#family_group_items_form').serializeArray();
+	var j = 0;
+	for( var i=1; i <= (arrayData.length / 5); i++ )
+	{	
+		var qty = Number(arrayData[j+2].value);
+		if(!isNaN(qty) && qty > 0 )
+			add_item_with(arrayData[j].value, qty, arrayData[j+3].value, arrayData[j+1].value, Number(arrayData[j+4].value));
+		
+		j += 5;			
+	}
+}
+
+function add_item_with(item_id, qty, description, suppliers_code, cost)
 {
 	var total =  parseFloat(qty * cost).toFixed(2);
 	suppliers_code = suppliers_code == "null" ? "": suppliers_code;
@@ -124,6 +143,45 @@ function add_item_from_lvl_modal(item_id, qty, description, suppliers_code, cost
 			);
 	no_entries++;
 	$('#no_entries').html(no_entries);
+}
+
+function submit_edit_purchase_order_form()
+{
+	$.ajax({
+		type: "POST",
+		url: '../save_order',
+		data: $(this).serialize()
+	}).done(function( response ) {
+		if(response == "ok")
+			window.location = '../../purchases_orders/edit/' + $('#order_id').val() ;
+	}).fail(function(){
+		alert("Request error");
+	});
+}
+
+function fill_family_modal( member_id )
+{
+	$('#description_in').popover('destroy');
+	$('#family_group_table tbody').html("");
+	$('#family_group_modal').modal('show');
+	
+	$.get( "../../sales_stock/items_from_family_from_json/", { id : member_id })
+	.done( function( data ) {	
+		jQuery.each(data, function() {
+			$('#family_group_table tbody').append("<tr><td><input type=\"hidden\" id=\"family_group_modal_item_id_in\" name=\"family_group_modal_item_id_in[]\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"family_group_modal_suppliers_code_in\" name=\"family_group_modal_suppliers_code_in[]\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input type=\"text\" class=\"form-control\" id=\"family_group_modal_qty_in\" name=\"family_group_modal_qty_in[]\" value=\"\"/></td><td><input type=\"hidden\" id=\"family_group_modal_description_in\" name=\"family_group_modal_description_in[]\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"family_group_modal_cost_in\" name=\"family_group_modal_cost_in[]\" value=\""+this.cost_price+"\" />"+this.cost_price+"</td><td></td></tr>");
+		});		
+		$('input[name^=family_group_modal_qty_in]:first').focus();
+		
+		$('input[name^=family_group_modal_qty_in]').keydown(function(e){
+			if(e.which == 40)
+			{
+				$('input[name^=family_group_modal_qty_in]:first', $(this).parent().parent().next() ).focus();
+			}else {
+				if( e.which == 38)
+					$('input[name^=family_group_modal_qty_in]:first', $(this).parent().parent().prev() ).focus();
+			}
+		});
+	});
 }
 
 function validate_item_ins()
@@ -158,18 +216,4 @@ function validate_item_ins()
 	}
 	
 	return result;
-}
-
-function fill_family_modal( member_id )
-{
-	$('#description_in').popover('destroy');
-	$('#family_group_table tbody').html("");
-	$('#family_group_modal').modal('show');
-	
-	$.get( "../../sales_stock/items_from_family_from_json/", { id : member_id })
-	.done( function( data ) {	
-		jQuery.each(data, function() {
-			$('#family_group_table tbody').append("<tr><td><input type=\"hidden\" id=\"lvl_modal_item_id_in\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"lvl_modal_suppliers_code_in\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input class=\"form-control\" id=\"lvl_modal_qty_in\" value=\"\"/></td><td><input type=\"hidden\" id=\"lvl_modal_description_in\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"lvl_modal_cost_in\" vale=\""+this.cost_price+"\" />"+this.cost_price+"</td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"add_item_from_lvl_modal("+this.pk_id+", $('#lvl_modal_qty_in', $(this).parent().parent()).val(), '"+this.label+"', '"+this.supplier_code+"', '"+this.cost_price+"');\" id=\"add_row_btn\" name=\"add_row_btn[]\"><span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span></button></td></tr>");
-				});		
-	});
 }

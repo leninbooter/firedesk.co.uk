@@ -149,6 +149,9 @@ query	purchases_orders_m.php	39;"	variable
 query	purchases_orders_m.php	51;"	variable
 query	purchases_orders_m.php	60;"	variable
 query	purchases_orders_m.php	62;"	variable
+query	purchases_orders_m.php	80;"	variable
+query	purchases_orders_m.php	93;"	variable
+query	purchases_orders_m.php	94;"	variable
 query	stock_m.php	100;"	variable
 query	stock_m.php	102;"	variable
 query	stock_m.php	104;"	variable
@@ -235,6 +238,8 @@ result	invoices_m.php	84;"	variable
 result	invoices_m.php	87;"	variable
 result	purchases_orders_m.php	64;"	variable
 result	purchases_orders_m.php	67;"	variable
+result	purchases_orders_m.php	95;"	variable
+result	purchases_orders_m.php	98;"	variable
 result	stock_m.php	107;"	variable
 result	stock_m.php	132;"	variable
 result	stock_m.php	75;"	variable
@@ -254,6 +259,7 @@ save_customer	customers_m.php	57;"	function
 save_holiday	utilities_m.php	5;"	function
 save_invoice_data	invoices_m.php	153;"	function
 save_invoice_item	invoices_m.php	96;"	function
+save_item	purchases_orders_m.php	74;"	function
 save_item	stock_m.php	49;"	function
 save_item_supplied	contracts_m.php	283;"	function
 save_payment	invoices_m.php	173;"	function

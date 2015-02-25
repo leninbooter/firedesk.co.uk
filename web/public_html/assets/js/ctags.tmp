@@ -13,8 +13,9 @@ F	jquery.min.js	12;"	variable
 K	jquery.min.js	12;"	function
 abandon	new_contract.js	5;"	function
 activate	new_contract.js	34;"	function
-add_item	purchase_orders_edit.js	90;"	function
-add_item_from_lvl_modal	purchase_orders_edit.js	118;"	function
+add_item	purchase_orders_edit.js	95;"	function
+add_item_with	purchase_orders_edit.js	137;"	function
+add_items_from_family	purchase_orders_edit.js	123;"	function
 address_valid	firedesk.js	36;"	function
 backdrop	bootbox.min.js	6;"	property
 blink	firedesk.js	51;"	function
@@ -36,7 +37,7 @@ edit	new_contract.js	63;"	function
 email_conf_valido	firedesk.js	16;"	function
 email_valid	firedesk.js	11;"	function
 f	bootbox.min.js	6;"	function
-fill_family_modal	purchase_orders_edit.js	163;"	function
+fill_family_modal	purchase_orders_edit.js	162;"	function
 g	bootbox.min.js	6;"	function
 get_customers_selec_list	new_contract.js	82;"	function
 get_customers_selec_list	new_customer.js	16;"	function
@@ -77,7 +78,8 @@ setParentAccount	new_contract.js	73;"	function
 setParentAccount	new_customer.js	8;"	function
 show_parents_dropdownlist	new_contract.js	68;"	function
 show_parents_dropdownlist	new_customer.js	3;"	function
+submit_edit_purchase_order_form	purchase_orders_edit.js	148;"	function
 telephone_valid	firedesk.js	21;"	function
 type_checker	stock_items.js	1;"	function
-validate_item_ins	purchase_orders_edit.js	129;"	function
+validate_item_ins	purchase_orders_edit.js	187;"	function
 z	jquery.min.js	12;"	function

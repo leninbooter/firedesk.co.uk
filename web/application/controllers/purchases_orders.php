@@ -169,32 +169,33 @@ class Purchases_orders extends CI_Controller
 		}
 	}
 	
-	public function save_item_prices()
+	public function save_order()
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		
-		$item_id = trim($this->input->post('stock_item_id', true));
+		$order_id = trim($this->input->post('order_id', true));
 		
-		$prices = array();
-		for($i = 0; $i < count($_POST['customers_pk_id']); $i++)
+		$all_items = array();
+		for($i = 0; $i < count($_POST['qty']); $i++)
 		{
-			$customer_id = trim($this->security->xss_clean($_POST["customers_pk_id"][$i])) == "0" ? "" : trim($this->security->xss_clean($_POST["customers_pk_id"][$i]));
-			$price_type = trim($this->security->xss_clean($_POST["price_type"][$i]));
-			$min_qty = trim($this->security->xss_clean($_POST["min_qty"][$i]));
-			$max_qty = trim($this->security->xss_clean($_POST["max_qty"][$i]));
-			$price = trim($this->security->xss_clean($_POST["price"][$i]));													
-			
-			if( (is_numeric($customer_id) || $customer_id == "") &&
-				((is_numeric($min_qty) && $min_qty > 0)  || $min_qty == "" ) && 
-				((is_numeric($max_qty) && $max_qty > 0) || $max_qty == "" ) &&
-				((is_numeric($price) && $price > 0 ) || $price == "" ) &&
-				(is_numeric($price_type) && $price_type >= 0 && $price_type <= 2) &&
-				( ($price_type == 2 && is_numeric($customer_id)) || (($price_type == 0 || $price_type == 1) && $customer_id == ""))
-				)
+			$item_id = trim($this->security->xss_clean($_POST["item_id"][$i]));
+			$qty = trim($this->security->xss_clean($_POST["qty"][$i]));
+			$description = trim($this->security->xss_clean($_POST["description"][$i]));
+			$suppliers_code = trim($this->security->xss_clean($_POST["suppliers_code"][$i]));
+			$cost = trim($this->security->xss_clean($_POST["cost"][$i]));
+			$total = trim($this->security->xss_clean($_POST["total"][$i]));
+			$for = trim($this->security->xss_clean($_POST["for"][$i]));
+
+			if( is_numeric($item_id) &&
+				( ( is_numeric($qty) && $qty > 0 )) && 
+				( ( is_numeric($cost) && $cost > 0 )) &&
+				( ( is_numeric($total) && $total > 0 )) &&
+				( $total == $cost * $qty )				
+			)
 			{
-				$prices_item = array("stock_item_id"=>$item_id, "customer_id"=>$customer_id , "price_type"=>$price_type, "min"=>$min_qty, "max"=>$max_qty, "price"=>$price);
-				array_push($prices, $prices_item);							
+				$item = compact('order_id', 'item_id', 'qty', 'description', 'suppliers_code', 'cost', 'total', 'for' );
+				array_push($all_items, $item);							
 			}else
 			{
 				echo "ko-validation";
@@ -203,17 +204,18 @@ class Purchases_orders extends CI_Controller
 						
 		}
 		
-		$this->load->model('stock_m');
+		$this->load->model('purchases_orders_m');
 		
-		foreach( $prices as $item )
+		foreach( $all_items as $i )
 		{
-			if( !$this->stock_m->ins_up_item_price($item) )
+			if( !$this->purchases_orders_m->save_item($i) )
 			{
 				echo "ko-db";
 				return;
 			}
 		}
-		echo base_url('index.php/sales_stock/new_existing/'.$item_id);
+		//redirect(base_url('index.php/purchases_orders/edit/'.$order_id), 'refresh');
+		echo "ok";
 	}
 	
 	public function shorttext_valid( $valor )

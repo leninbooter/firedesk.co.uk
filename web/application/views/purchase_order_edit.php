@@ -5,7 +5,7 @@
 	<div class="col-md-6"><h1>Purchase Order No. <?php echo $order_id; ?></h1></div>
 	<div class="col-md-6"></div>
 </div>
-<form id="edit_purchase_order_form" role="form" method="post" action="<?php echo base_url('index.php/purchases_orders/edit'); ?>">
+<form id="edit_purchase_order_form" role="form" method="post" action="<?php echo base_url('index.php/purchases_orders/save_order'); ?>"><input type="hidden" id="order_id" name="order_id" value="<?php echo $order_id; ?>"/>
 	<div class="row">
 		<div class="col-md-9">
 			<div class="row">
@@ -89,25 +89,25 @@
 					
 				</div>
 				<div class="col-md-2">
-					<button type="default" class="btn btn-default  btn-block" tabindex="">Changes</button>
+					<!-- <button type="default" class="btn btn-default  btn-block" tabindex="">Changes</button> -->
 				</div>
 				<div class="col-md-1">
-					<button type="default" class="btn btn-default  btn-block" data-toggle="modal" data-target="#levels_modal" tabindex="">Level</button>
+					<button type="button" class="btn btn-default  btn-block" data-toggle="modal" data-target="#levels_modal">Level</button>
 				</div>
 				<div class="col-md-1">
-					<button type="default" class="btn btn-default  btn-block" tabindex="" onclick="fill_family_modal($('#item_id_in').val());">Family</button>
+					<button type="button" class="btn btn-default  btn-block" onclick="fill_family_modal($('#item_id_in').val());">Family</button>
 				</div>
 				<div class="col-md-1">
-					<button type="default" class="btn btn-default  btn-block" tabindex="">Print</button>
+					<button type="button" class="btn btn-default  btn-block">Print</button>
 				</div>
 				<div class="col-md-2">
-					<button type="default" class="btn btn-default  btn-block" tabindex="">Complete</button>
+					<button type="button" class="btn btn-default  btn-block">Complete</button>
 				</div>
 				<div class="col-md-2">
-					<button type="default" class="btn btn-default  btn-block" tabindex="">Abandon</button>
+					<button type="button" class="btn btn-default  btn-block">Abandon</button>
 				</div>
 				<div class="col-md-2">
-					<button type="default" class="btn btn-default  btn-block" tabindex="">Receipts</button>
+					<button type="button" class="btn btn-default  btn-block">Receipts</button>
 				</div>				
 			</div>
 			<div class="row">
@@ -115,13 +115,13 @@
 				<div class="col-md-2">
 					<div class="form-group">
 						<label>&nbsp;</label>
-						<button type="default" class="btn btn-default  btn-block" tabindex="">Exit</button>
+						<button type="button" class="btn btn-default  btn-block">Exit</button>
 					</div>
 				</div>
 				<div class="col-md-2">
 					<div class="form-group">
 						<label>&nbsp;</label>
-						<button type="submit" class="btn btn-primary  btn-block" tabindex="">Continue</button>
+						<button type="button" class="btn btn-primary  btn-block" onclick="submit_edit_purchase_order_form();">Save</button>
 					</div>
 				</div>
 			</div>
@@ -183,22 +183,25 @@
 				<h4 class="modal-title">Family Order</h4>
 			</div>
 			<div class="modal-body">
-				<table id="family_group_table" class="table table-hover">
-						<thead>
-							<tr>
-								<th style="width:5%">Balance</th>
-								<th style="width:5%">Ordered</th>
-								<th style="width:10%">Rec Stk</th>
-								<th style="width:10%">Order</th>
-								<th style="width:40%">Description</th>
-								<th style="width:10%">Cost</th>
-								<th style="width:10%"></th>
-							</tr>
-						</thead>
-						<tbody>
-						
-						</tbody>
-				</table>
+				<form id="family_group_items_form">
+					<table id="family_group_table" class="table table-hover">
+							<thead>
+								<tr>
+									<th style="width:5%">Balance</th>
+									<th style="width:5%">Ordered</th>
+									<th style="width:10%">Rec Stk</th>
+									<th style="width:10%">Order</th>
+									<th style="width:40%">Description</th>
+									<th style="width:10%">Cost</th>
+									<th style="width:10%"></th>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+					</table>
+					<button type="submit" class="btn btn-primary">Add to order</button>
+				</form>
 			</div>
 		</div>
 	</div>

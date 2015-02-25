@@ -69,5 +69,36 @@ where po.pk_id = ".$pk_id;
 			return is_numeric($result->result) ? $result->result : false;
 		}
 		return false;
-	}	
+	}
+
+	public function save_item( $vars_array )
+	{
+		$this->load->database();
+		
+		array_walk($vars_array, "self::clean_vars");
+		
+		$query = "CALL ins_purch_ord_item(
+											".$this->db->escape_str($vars_array["order_id"]).",
+											".$this->db->escape_str($vars_array["item_id"]).",
+											'".$this->db->escape_str($vars_array["description"])."',
+											".$this->db->escape_str($vars_array["qty"]).",											
+											'".$this->db->escape_str($vars_array["suppliers_code"])."',
+											".$this->db->escape_str($vars_array["cost"]).",											
+											NULL,
+											".$this->db->escape_str($vars_array["total"]).",
+											'".$this->db->escape_str($vars_array["for"])."',
+											NULL
+										);";
+				
+		$query = str_replace("'NULL'", "NULL", $query);		
+		$query = $this->db->query($query);
+		$result = $query->result();
+		if( !empty($result) )
+		{
+			$result = $query->row();
+			mysqli_next_result( $this->db->conn_id );
+			return $result->result == "ok" ? true : false;
+		}
+		return false;
+	}
 }
