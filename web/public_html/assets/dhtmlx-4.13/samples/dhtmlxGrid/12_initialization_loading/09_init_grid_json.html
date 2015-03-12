@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel="stylesheet" type="text/css" href="../../../codebase/dhtmlxgrid.css"/>
 	<script src="../../../codebase/dhtmlxgrid.js"></script>
+	<script src="../../../sources/dhtmlxGrid/codebase/ext/dhtmlxgrid_filter.js"></script>
 	<script>
 		data={
 		rows:[
@@ -826,6 +827,7 @@
 			myGrid.setColAlign("right,left,left");
 			myGrid.setColTypes("dyn,ed,ed");
 			myGrid.setColSorting("int,str,str");
+			myGrid.attachHeader("&nbsp;,#select_filter,&nbsp;,&nbsp;,&nbsp;,#select_filter");
 			myGrid.init();
 			myGrid.load("../common/data.json","json");
 		}

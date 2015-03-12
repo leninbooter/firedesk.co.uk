@@ -39,7 +39,7 @@ class Sales_stock extends CI_Controller
 			$data = array();
 			foreach( $this->stock_m->get_items_soled_by($pk_id) as $item)
 			{
-				$i = array("pk_id" => $item->pk_id, "label" => $item->description, "quantity_balance" => $item->quantity_balance, "quantity_on_order" => $item->quantity_on_order, "quantity_rec_level" => $item->quantity_rec_level );
+				$i = array("pk_id" => $item->pk_id, "label" => $item->description, "quantity_balance" => $item->quantity_balance == null ? 0:$item->quantity_balance, "quantity_on_order" => $item->quantity_on_order == null ? 0:$item->quantity_on_order, "quantity_rec_level" => $item->quantity_rec_level == null ? '0':$item->quantity_rec_level );
 				if($item->supplier_a_code != "NULL") {
 					$i["cost_price"] = $item->cost_price_a ;
 					$i["supplier_code"] = $item->supplier_a_code == "null" ? "" : $item->supplier_a_code ; }

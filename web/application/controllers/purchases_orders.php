@@ -2,6 +2,41 @@
 
 class Purchases_orders extends CI_Controller
 {
+	public function abandon()
+	{
+		$this->load->model('purchases_orders_m');
+		$pk_id = trim($this->uri->segment(3));
+		
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			if(!$this->purchases_orders_m->abandon_order( $pk_id ))
+			{
+				echo "ko-db";
+				return;
+			}else
+			{
+				echo "ok";
+			}
+		}		
+	}
+	
+	public function complete()
+	{
+		$this->load->model('purchases_orders_m');
+		$pk_id = trim($this->uri->segment(3));
+		
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			if(!$this->purchases_orders_m->activate_order( $pk_id ))
+			{
+				echo "ko-db";
+				return;
+			}else
+			{
+				echo "ok";
+			}
+		}		
+	}
 	
 	public function edit()
 	{
@@ -15,16 +50,73 @@ class Purchases_orders extends CI_Controller
 			$data['items'] = $this->purchases_orders_m->get_order_items( $pk_id );
 			if($data['order_details'] != false) {
 				$data['supplier_id'] = $data['order_details']->fk_supplier_id;			
-				
+						
+			
 			$this->load->view('header_nav');		
 			$this->load->view('purchase_order_edit', $data);		
 			$this->load->view('footer_common');
 			$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
-			$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
+			$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");					
 			$this->load->view('footer_copyright');
 			$this->load->view('footer');
 			}
 		}			
+	}
+	
+	public function list_all()
+	{
+		$this->load->model('purchases_orders_m');
+		
+		$data['orders'] = $this->purchases_orders_m->get_all_purchase_orders();
+		
+		$this->load->view('header_nav');
+		
+		$this->load->view('footer_common');
+		$this->load->view('purchase_orders_list_all', $data);
+		//$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
+		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.js')."\"></script>");	
+		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/ext/dhtmlxgrid_filter.js')."\"></script>");	
+
+		$this->output->append_output("<script>
+		var grid = new dhtmlXGridObject('gridbox');
+		grid.setHeader(\"Order No,Supplier,Date,Operator, Total Amount, Status\");
+		grid.setInitWidths(\"100,300,200,200,200,100\");
+		grid.setColAlign(\"left,left, left,left,right,right\"); 
+		grid.setColTypes(\"ron,ro,ro,ro,ron,ro\"); 
+		grid.setColSorting(\"int,str,str,str,str,str\");
+		grid.attachHeader(\"&nbsp;,#select_filter,&nbsp;,&nbsp;,&nbsp;,#select_filter\");	 
+		grid.init();
+		grid.load(\"get_all_orders_json\",\"json\");		
+		grid.enableAutoWidth(true);
+		
+		grid.getFilterElement(5)._filter = function(){
+			var input = this.value; // gets the text of the filter input
+			return function(value, id){
+				var val=grid.cells(id,5).getValue();
+				if (val == input){ 
+						return true;
+				}
+				if (input == \"\")
+					return true;
+				
+				return false;
+			}
+		};
+		
+		grid.attachEvent(\"onXLE\", function(grid_obj,count){
+			$('#gridbox tr').dblclick(function(){
+				location.href=\"".base_url('index.php/purchases_orders/edit')."\/\"+$('td:first', $(this)).html();
+			}).on('keyup',function(e){
+				if(e.which() ==  13)
+				{
+					location.href=\"".base_url('index.php/purchases_orders/edit')."\/\"+$('td:first', $(this)).html();
+				}
+			});
+		});
+				
+		</script>");		
+		$this->load->view('footer_copyright');
+		$this->load->view('footer');
 	}
 	
 	public function name_valid( $valor )
@@ -117,7 +209,7 @@ class Purchases_orders extends CI_Controller
 			$result = $this->purchases_orders_m->generate_order( $vars_array );
 			if( $result != false )
 			{
-				redirect('','refresh');
+				redirect(base_url('index.php/purchases_orders/edit/'.$result),'refresh');
 				echo $result;
 				
 				/*$this->load->view('header_nav');
@@ -170,56 +262,267 @@ class Purchases_orders extends CI_Controller
 		}
 	}
 	
-	public function save_order()
+	public function get_all_orders_json()
+	{	
+		$this->load->model('purchases_orders_m');
+		
+		header('Content-type: application/json');
+		if( ($results = $this->purchases_orders_m->get_all_purchase_orders() ) != false )
+		{	
+			$rows = array();
+			$data = array();
+			$id = 1;
+			foreach($results as $order)
+			{	
+				array_push( $data, array( 'id' => $id, "data" => array(intval($order->pk_id), $order->name,date('d/m/Y - H:i', strtotime( $order->creation_date )),$order->operator, $order->total_amount,$order->description )));
+				$id++;
+			}		
+			
+			echo json_encode(array( "rows" => $data));
+		}else
+		{
+			echo "[]";
+		}
+	}
+	
+	public function print_outstanding_orders_pdf()
+	{
+		$this->load->library('tcpdf');
+		$this->load->model('purchases_orders_m');
+		
+		$html = "";
+		
+		$data['orders'] = $this->purchases_orders_m->get_outstanding_orders();
+		
+		$html = $html.$this->load->view('reports/purchase_orders_outstanding_items_all_orders_header', $data, true);
+		
+		foreach( $data['orders'] as $o )
+		{
+			$data['order'] = $o;
+			$data['items'] = $this->purchases_orders_m->get_order_items( $o->pk_id );			
+			$html = $html.$this->load->view('reports/purchase_orders_outstanding_items_all_orders', $data, true);
+		}
+		// create new PDF document
+		$pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+
+		// set document information
+		$pdf->SetCreator(PDF_CREATOR);
+		/*$pdf->SetAuthor('Nicola Asuni');
+		$pdf->SetTitle('TCPDF Example 061');
+		$pdf->SetSubject('TCPDF Tutorial');
+		$pdf->SetKeywords('TCPDF, PDF, example, test, guide');*/
+
+		// set default header data
+		//$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 061', PDF_HEADER_STRING);
+
+		// set header and footer fonts
+		$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+		$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+
+		// set default monospaced font
+		$pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
+
+		// set margins
+		$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+		$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+		$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
+
+		// set auto page breaks
+		$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+
+		// set image scale factor
+		$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+
+		// set some language-dependent strings (optional)
+		if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
+			require_once(dirname(__FILE__).'/lang/eng.php');
+			$pdf->setLanguageArray($l);
+		}
+
+		// ---------------------------------------------------------
+
+		// set font
+		$pdf->SetFont('helvetica', '', 10);
+
+		// add a page
+		$pdf->AddPage();					
+
+		// output the HTML content
+		$pdf->writeHTML($html, true, false, true, false, '');
+		
+		//Close and output PDF document
+		$pdf->Output('outstanding_orders.pdf', 'I');
+	}
+	
+	public function print_order_pdf()
+	{
+		$this->load->model('purchases_orders_m');
+		$this->load->library('tcpdf');
+		
+		$pk_id = trim($this->uri->segment(3));
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$data['order_id'] = $pk_id;
+			$data['order_details'] = $this->purchases_orders_m->get_order_details( $pk_id );			
+			$data['items'] = $this->purchases_orders_m->get_order_items( $pk_id );
+			if($data['order_details'] != false) {
+				$data['supplier_id'] = $data['order_details']->fk_supplier_id;									
+			
+			// create new PDF document
+			$pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+
+			// set document information
+			$pdf->SetCreator(PDF_CREATOR);
+			/*$pdf->SetAuthor('Nicola Asuni');
+			$pdf->SetTitle('TCPDF Example 061');
+			$pdf->SetSubject('TCPDF Tutorial');
+			$pdf->SetKeywords('TCPDF, PDF, example, test, guide');*/
+
+			// set default header data
+			//$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 061', PDF_HEADER_STRING);
+
+			// set header and footer fonts
+			$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+			$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+
+			// set default monospaced font
+			$pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
+
+			// set margins
+			$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+			$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+			$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
+
+			// set auto page breaks
+			$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+
+			// set image scale factor
+			$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+
+			// set some language-dependent strings (optional)
+			if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
+				require_once(dirname(__FILE__).'/lang/eng.php');
+				$pdf->setLanguageArray($l);
+			}
+
+			// ---------------------------------------------------------
+
+			// set font
+			$pdf->SetFont('helvetica', '', 10);
+
+			// add a page
+			$pdf->AddPage();		
+			
+			//$out = $this->load->view('header_reports', '',true);	
+			$out = $this->load->view('reports/purchase_order', $data, true);		
+			//$out = $out.$this->load->view('footer_common', '',true);
+			//$out = $out.$this->load->view('footer','', true);
+
+			// output the HTML content
+			$pdf->writeHTML($out, true, false, true, false, '');
+			
+			//Close and output PDF document
+			$pdf->Output('example_061.pdf', 'I');
+			
+			//echo $out;
+			
+			//$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
+			//$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
+			//$this->load->view('footer_copyright');
+			//$this->load->view('footer');
+			}
+		}			
+	}
+	
+	public function receive_items()
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		
 		$order_id = trim($this->input->post('order_id', true));
+		$date = date('Y-m-d H:i:s');
 		
 		$all_items = array();
-		for($i = 0; $i < count($_POST['qty']); $i++)
+		for($i = 0; $i < count($_POST['qty_in_now']); $i++)
 		{
-			$item_id = trim($this->security->xss_clean($_POST["item_id"][$i]));			
-			$qty = trim($this->security->xss_clean($_POST["qty"][$i]));
-			$description = trim($this->security->xss_clean($_POST["description"][$i]));
-			$suppliers_code = trim($this->security->xss_clean($_POST["suppliers_code"][$i]));
-			$cost = trim($this->security->xss_clean($_POST["cost"][$i]));
-			$total = trim($this->security->xss_clean($_POST["total"][$i]));
-			$for = trim($this->security->xss_clean($_POST["for"][$i]));
-			$delete = trim($this->security->xss_clean($_POST["delete"][$i]));					
-			if($delete == "yes")
-				$qty*=-1;
+			$purchase_order_item_id = trim($this->security->xss_clean($_POST["purchase_order_item_id"][$i]));			
+			$qty = trim($this->security->xss_clean($_POST["qty_in_now"][$i]));
+			$cost = trim($this->security->xss_clean($_POST["cost"][$i]));			
 			
-			if( is_numeric($item_id) &&
-				( ( is_numeric($qty) )) && 
-				( ( is_numeric($cost) && $cost > 0 )) &&
-				( ( is_numeric($total) && $total > 0 )) &&
-				( ($qty > 0 && $total == $cost * $qty )|| $qty < 0 )				
-			)
-			{
-				$item = compact('order_id', 'item_id', 'qty', 'description', 'suppliers_code', 'cost', 'total', 'for' );
+			if( intval($qty) > 0 ) {
+				$item = compact('order_id', 'purchase_order_item_id', 'qty', 'cost', 'date');
 				array_push($all_items, $item);							
-			}else
-			{
-				echo "ko-validation";
-				return;
 			}
-						
 		}
 		
-		$this->load->model('purchases_orders_m');
+		$this->load->model('stock_m');
 		
 		foreach( $all_items as $i )
 		{
-			if( !$this->purchases_orders_m->save_item($i) )
+			if( !$this->stock_m->ins_items_receipts($i) )
 			{
 				echo "ko-db";
 				return;
 			}
 		}
-		//redirect(base_url('index.php/purchases_orders/edit/'.$order_id), 'refresh');
 		echo "ok";
+	}
+	
+	public function save_order()
+	{
+		if( isset($_POST['qty']))
+		{
+			$this->load->helper(array('form', 'url'));
+			$this->load->library('form_validation');
+			
+			$order_id = trim($this->input->post('order_id', true));
+			
+			$all_items = array();
+			for($i = 0; $i < count($_POST['qty']); $i++)
+			{
+				$item_id = trim($this->security->xss_clean($_POST["item_id"][$i]));			
+				$qty = trim($this->security->xss_clean($_POST["qty"][$i]));
+				$description = trim($this->security->xss_clean($_POST["description"][$i]));
+				$suppliers_code = trim($this->security->xss_clean($_POST["suppliers_code"][$i]));
+				$cost = trim($this->security->xss_clean($_POST["cost"][$i]));
+				$total = trim($this->security->xss_clean($_POST["total"][$i]));
+				$for = trim($this->security->xss_clean($_POST["for"][$i]));
+				$delete = trim($this->security->xss_clean($_POST["delete"][$i]));					
+				if($delete == "yes")
+					$qty*=-1;
+				
+				if( is_numeric($item_id) &&
+					( ( is_numeric($qty) )) && 
+					( ( is_numeric($cost) && $cost > 0 )) &&
+					( ( is_numeric($total) && $total > 0 )) &&
+					( ($qty > 0 && $total == $cost * $qty )|| $qty < 0 )				
+				)
+				{
+					$item = compact('order_id', 'item_id', 'qty', 'description', 'suppliers_code', 'cost', 'total', 'for' );
+					array_push($all_items, $item);							
+				}else
+				{
+					echo "ko-validation";
+					return;
+				}
+							
+			}
+			
+			$this->load->model('purchases_orders_m');
+			
+			foreach( $all_items as $i )
+			{
+				if( !$this->purchases_orders_m->save_item($i) )
+				{
+					echo "ko-db";
+					return;
+				}
+			}
+			//redirect(base_url('index.php/purchases_orders/edit/'.$order_id), 'refresh');
+			echo "ok";
+		}else{
+			echo "Nothing to save";
+		}
 	}
 	
 	public function shorttext_valid( $valor )

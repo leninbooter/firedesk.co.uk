@@ -229,10 +229,11 @@ class Contracts_m extends CI_Model
 									.$this->db->escape_str($vars_array["delivery_charge"]).","
 									."'".$this->db->escape_str($vars_array["notes"])."',".
 									"'".date('Y-m-d H:i:s')."',"
+									."'".$this->db->escape_str($vars_array["time"])."',"
+									."'".$this->db->escape_str($vars_array["date"])."',"
 									."NULL,"
-									."NULL,"
-									."NULL"
-									.")";		
+									.$this->db->escape_str($vars_array["type"])."
+								)";		
 		$query = str_replace("'NULL'", "NULL", $query);
 		log_message('debug', $query);
 		$query = $this->db->query($query);

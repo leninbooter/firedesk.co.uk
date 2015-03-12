@@ -156,6 +156,16 @@ $( document ).ready(function() {
 
 	var nw = weekday[d.getDay()];
 	$('#date_string').val(nw + ", " + d.getDate() + " of " + month[d.getMonth()] + " of " +  d.getFullYear());
+	$('#date').val(d.getFullYear() +"-"+ (d.getMonth()+1) + "-" + d.getDate());
+	
+	$('#date_string').datepicker({format: 'yyyy-mm-dd'})
+		.on('changeDate', function(ev){
+			$(this).datepicker('hide');
+			$('#date').val($('#date_string').val());
+			var new_date = new Date($('#date_string').val());
+			var nw = weekday[new_date.getDay()];
+			$('#date_string').val(nw + ", " + new_date.getDate() + " of " + month[new_date.getMonth()] + " of " +  new_date.getFullYear());
+		});
 	
 	//Contract time
 	$('#time').val(d.getHours() + ":" + d.getMinutes());
@@ -252,12 +262,11 @@ $('#desc_in').on('keyup', function(e) {
 									alert('Select the regularity');
 								}else {								
 									$('#items tr').last().before(
-									"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ $('#description_in').val() +"\" readonly></td><td><input id=\"no_entries\" name=\"no_entries[]\" type=\"text\" class=\"form-control\" value=\""+ $('#entry_in').val() +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly><input id=\"regularity\" name=\"regularity[]\" type=\"text\" class=\"form-control\" value=\""+ $('#regularity_in option:selected').text() +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(disc).toFixed(2) +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ parseFloat(value).toFixed(2) +"\" readonly></td></tr>"
+									"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ $('#description_in').val() +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly><input id=\"regularity\" name=\"regularity[]\" type=\"text\" class=\"form-control\" value=\""+ $('#regularity_in option:selected').text() +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(disc).toFixed(2) +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ parseFloat(value).toFixed(2) +"\" readonly></td></tr>"
 									);
 									$('#item_no_in').val("");
 									$('#qty_in').val("");
 									$('#description_in').val("");
-									$('#entry_in').val("");
 									$('#rate_in').val("");
 									$('#regularity_in').val(1);
 									$('#desc_in').val("");
@@ -268,12 +277,11 @@ $('#desc_in').on('keyup', function(e) {
 								if( $('input[name=options]:checked' ).val() == "sale" )
 								{
 									$('#items tr').last().before(
-									"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ $('#description_in').val() +"\" readonly></td><td><input id=\"no_entries\" name=\"no_entries[]\" type=\"text\" class=\"form-control\" value=\""+ $('#entry_in').val() +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(disc).toFixed(2) +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ parseFloat(value).toFixed(2) +"\" readonly></td></tr>"
+									"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ $('#description_in').val() +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(disc).toFixed(2) +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ parseFloat(value).toFixed(2) +"\" readonly></td></tr>"
 									);
 									$('#item_no_in').val("");
 									$('#qty_in').val("");
 									$('#description_in').val("");
-									$('#entry_in').val("");
 									$('#rate_in').val("");
 									$('#regularity_in').val(1);
 									$('#desc_in').val("");

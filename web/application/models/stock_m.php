@@ -92,6 +92,32 @@ class Stock_m extends CI_Model
 		return false;
 	}
 	
+	public function ins_items_receipts( $vars_array )
+	{
+		$this->load->database();		
+		array_walk($vars_array, "self::clean_vars");
+		
+		$query = "CALL ins_items_receipts(
+											".$this->db->escape_str($vars_array["order_id"]).",
+											".$this->db->escape_str($vars_array["purchase_order_item_id"]).",
+											".$this->db->escape_str($vars_array["qty"]).",
+											".$this->db->escape_str($vars_array["cost"]).",
+											'".$this->db->escape_str($vars_array["date"])."',
+											0
+											);";
+		log_message('debug', $query);
+		$query = str_replace("'NULL'", "NULL", $query);		
+		$query = $this->db->query($query);
+		$result = $query->result();
+		if( !empty($result) )
+		{
+			$result = $query->row();
+			mysqli_next_result( $this->db->conn_id );
+			return $result->result == "ok" ? true : false;
+		}
+		return false;
+	}
+	
 	public function ins_up_item_price($item)
 	{
 		$this->load->database();
@@ -106,7 +132,7 @@ class Stock_m extends CI_Model
 		{
 			$result = $query->row();
 			log_message('debug', $result->result);
-			mysqli_next_result( $this->db->conn_id );			
+			mysqli_next_result( $this->db->conn_id );					
 			if($result->result == "ok" || $result->result == "notUpdated")
 				return true;
 		}

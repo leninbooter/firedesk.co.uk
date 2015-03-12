@@ -29,13 +29,13 @@
 			<div class="col-md-3">
 				<div class="form-group">
 					<label for="date">Date</label>
-					<input type="text" class="form-control" id="date_string" name="date_string" readonly disabled="disabled"/>
+					<input type="text" class="form-control" id="date_string" name="date_string" />
 					<input type="hidden" class="form-control" id="date" name="date"/>
 				</div>
 			</div><div class="col-md-2">
 				<div class="form-group">
 					<label for="time">Time</label>
-					<input type="text" class="form-control" id="time" name="time" readonly/>
+					<input type="text" class="form-control" id="time" name="time" />
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 			<div class="col-md-2">		
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" id="cash" name="cash">Cash
+						<input type="checkbox" id="cash" name="cash" value="yes">Cash
 					</label>
 				</div>
 			</div>

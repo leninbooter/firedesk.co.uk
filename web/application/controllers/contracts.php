@@ -53,7 +53,7 @@ class Contracts extends CI_Controller
 	}
 
 	public function edit()
-	{
+	{		
 		$this->load->helper(array('url'));
 		$this->load->model('contracts_m');
 		$data['contract_id'] = trim($this->input->get('id', true));
@@ -61,6 +61,7 @@ class Contracts extends CI_Controller
 		$data['contract_items'] = $this->contracts_m->get_contract_items( $data['contract_id'] );
 		$data['customer_name'] = $data['contract_details']->name;
 		$data['contract_type'] = $data['contract_details']->type == 0 ? "Cash" : "Credit";
+		$data['contract_type_sale_hire'] = $data['contract_details']->fk_contract_type_id ;
 		$data['address'] = $data['contract_details']->address;
 		$data['delivery_charge'] = $data['contract_details']->delivery_charge;
 		$data['contract_status'] = $data['contract_details']->fk_contract_status_id;
@@ -314,6 +315,7 @@ class Contracts extends CI_Controller
 		$new_address			= $this->input->post('new_address');
 		$delivery_charge		= $this->input->post('delivery_charge');
 		$notes					= $this->input->post('notes');
+		$type					= $this->input->post('cash') == 'yes' ? '0' : '1';
 
 		$vars_array = compact(
 								"account_reference_id",
@@ -323,25 +325,14 @@ class Contracts extends CI_Controller
 								"saved_addresses",
 								"new_address",
 								"delivery_charge",
-								"notes"
+								"notes",
+								"type"
 							);
 			$this->load->model('contracts_m');
 			$result = $this->contracts_m->save_contract( $vars_array );
 			if( is_numeric($result) )
 			{
-				$data['contract_id'] = $result;
-				$data['customer_name'] = $this->input->post('account_reference');
-				$data['contract_type'] = $contract_type == 0 ? "Cash" : "Credit";
-				$data['address'] = $saved_addresses;
-				$data['delivery_charge'] = $delivery_charge;
-				$data['contract_status'] = 1;
-				$data['contract_items'] = $this->contracts_m->get_contract_items( $data['contract_id'] );
-				$this->load->view('header_nav');
-				$this->load->view('form_add_items_to_contract', $data);
-				$this->load->view('footer_common');
-				$this->load->view('new_contract_footer');
-				$this->load->view('footer_copyright');
-				$this->load->view('footer');
+				redirect(base_url('index.php/contracts/edit?id='.$result),'refresh');							
 			}else
 			{
 				echo "failed";

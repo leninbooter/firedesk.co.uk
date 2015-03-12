@@ -1,0 +1,5 @@
+pk_id,name,email,telephone1,telephone2,fax,address1,address2,address3,address4,address5,address6,zipcode,contact,banck_name,account_number,swift_code,account_type,bank_acc_addr_1,bank_acc_addr_2,bank_acc_addr_3,bank_telephone,account_credit,account_payment_credit,account_payment_credit_from,account_credit_setlement
+1,Suplos,leninbooter@gmail.com,+582617648605,00582617648606,00582617648607,"San Blas","Av de Canillejas a Vicalvaro","no. 72",Madrid,Madrid,Spain,28022,"Kirt N",NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,1,1,NULL,NULL
+2,"Epa Hardware Store",epa@epa.com,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,1,1,NULL,NULL
+3,"The Blue House",info@mybluehouse.com,+582617648605,NULL,NULL,"Haticos por abajo","Av 20","No. 3",Maracaibo,Zulia,Venezuela,4005,"Alvin Gonzalez",NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,1,1,NULL,NULL
+4,"Kirt hardware store",misguidedmuscle@gmail.com,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,1,1,NULL,NULL

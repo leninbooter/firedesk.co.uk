@@ -67,7 +67,7 @@ class Suppliers extends CI_Controller
 		}
 	}*/
 
-		public function get_suppliers_json()
+	public function get_suppliers_json()
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->model('suppliers_m');

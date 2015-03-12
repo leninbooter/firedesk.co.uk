@@ -55,15 +55,15 @@
 		<table class="table table-hover table-responsive" id="items">
 			<thead>
 				<tr>
-					<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>Order No.</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
+					<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
 				</tr>
 			</thead>
 			<?php foreach($contract_items as $row): ?>
-				<tr>
+				<tr>					
 					<td><?php echo $row->item_no; ?></td>
 					<td><?php echo $row->qty; ?></td>
 					<td><?php echo $row->description; ?></td>
-					<td><?php echo $row->entries_no; ?></td>
+					<!--<td>&nbsp;</td>-->
 					<td><?php echo $row->rate;
 							echo " ";
 							switch( $row->regularity )
@@ -78,8 +78,22 @@
 					<td><?php echo $row->value; ?></td>
 				</tr>
 			<?php endforeach; ?>
-				<tr>
-					<td><input class="form-control" type="text" id="item_no_in"/></td><td><input class="form-control" type="text" id="qty_in"/></td><td><input class="form-control" type="text" id="description_in"/></td><td><input class="form-control" type="text" id="entry_in"/></td><td><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select  class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td><td><input class="form-control" type="text" id="desc_in"/></td><td></td>
+				<tr>					
+					<td><input class="form-control" type="text" id="item_no_in"/></td><td><input class="form-control" type="text" id="qty_in"/></td><td><input class="form-control" type="text" id="description_in"/></td><!--<td><input class="form-control" type="text" id="entry_in"/></td>--><td><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select  class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td><td><input class="form-control" type="text" id="desc_in"/></td>
+					<td>
+						<?php if($contract_status < 5): ?>
+							<div class="btn-group" data-toggle="buttons">		
+									 <label class="btn btn-primary <?php echo $contract_type_sale_hire == 2 ? "active":"" ?>">
+										<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
+									  </label>
+									<?php if($contract_type_sale_hire == 1): ?>					  
+										<label class="btn btn-primary">
+											<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
+										</label>
+									<?php endif; ?>
+							</div>
+						<?php endif; ?>
+					</td>
 				</tr>
 		</table>
 	</div>
@@ -92,19 +106,7 @@
 </div>
 
 <div class="row">
-		<div class="col-md-2">
-			<?php if($contract_status < 5): ?>
-			<div class="btn-group" data-toggle="buttons">		
-					 <label class="btn btn-primary <?php echo $contract_type == 2 ? "active":"" ?>">
-						<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
-					  </label>
-					<?php if($contract_type == 1): ?>					  
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
-						</label>
-					<?php endif; ?>
-			</div>
-			<?php endif; ?>
+		<div class="col-md-2">					
 		</div>
 		<!--<div class="col-md-1">				
 			<?php if($contract_status < 5): ?>

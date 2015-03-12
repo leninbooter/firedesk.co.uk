@@ -1,8 +1,7 @@
-var no_entries = 0;
 $('input[id=qty_in]').focus();
 $('#no_entries').html(no_entries);
 
-$('#edit_purchase_order_form').submit( function(e) {
+$('#edit_purchase_order_form, #receptions_form').submit( function(e) {
 	e.preventDefault();	
 });
 
@@ -66,7 +65,7 @@ $.get( "../../sales_stock/items_from_supplier_json", { id : $('#supplier_id').va
 									html: true,
 									template:  	'<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
 									title: '',
-									content: '<table class="table"><thead><tr><td>Stock</td><td>Rec Level</td><td>On Order</td></tr></thead><tbody><tr><td>'+ui.item.quantity_balance+'</td><td>'+ui.item.quantity_on_order+'</td><td>'+ui.item.quantity_rec_level+'</td></tr></tbody></table>',
+									content: '<table class="table"><thead><tr><td>Stock</td><td>Rec Level</td><td>On Order</td></tr></thead><tbody><tr><td>'+ui.item.quantity_balance+'</td><td>'+ui.item.quantity_rec_level+'</td><td>'+ui.item.quantity_on_order+'</td></tr></tbody></table>',
 									trigger: 'manual' };
 					$('#description_in').popover(options);
 					$('#description_in').popover('show');										
@@ -82,7 +81,7 @@ $.get( "../../sales_stock/items_from_supplier_json", { id : $('#supplier_id').va
 				jQuery.each(data, function() {
 					  if(Number(this.quantity_balance) < Number(this.quantity_rec_level))
 					  {
-						  $('#level_items_table tbody').append("<tr><td><input type=\"hidden\" id=\"lvl_modal_item_id_in\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"lvl_modal_suppliers_code_in\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input class=\"form-control\" id=\"lvl_modal_qty_in\" value=\""+ (Number(this.quantity_rec_level) - Number(this.quantity_balance)) +"\"/></td><td><input type=\"hidden\" id=\"lvl_modal_description_in\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"lvl_modal_cost_in\" vale=\""+this.cost_price+"\" />"+this.cost_price+"</td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"add_item_with("+this.pk_id+", $('#lvl_modal_qty_in', $(this).parent().parent()).val(), '"+this.label+"', '"+this.supplier_code+"', '"+this.cost_price+"');\" id=\"add_row_btn\" name=\"add_row_btn[]\"><span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span></button></td></tr>");
+						  $('#level_items_table tbody').append("<tr><td><input type=\"hidden\" id=\"lvl_modal_item_id_in\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"lvl_modal_suppliers_code_in\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input type=\"text\" class=\"form-control\" id=\"lvl_modal_qty_in\" value=\""+ (Number(this.quantity_rec_level) - Number(this.quantity_balance)) +"\"/></td><td><input type=\"hidden\" id=\"lvl_modal_description_in\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"lvl_modal_cost_in\" vale=\""+this.cost_price+"\" />"+this.cost_price+"</td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"add_item_with("+this.pk_id+", $('#lvl_modal_qty_in', $(this).parent().parent()).val(), '"+this.label+"', '"+this.supplier_code+"', '"+this.cost_price+"');\" id=\"add_row_btn\" name=\"add_row_btn[]\"><span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span></button></td></tr>");
 					  }
 				});				
 });
@@ -92,6 +91,24 @@ $('#family_group_items_form').submit( function(e){
 	add_items_from_family();
 });
 
+function abandon( order_id )
+{
+	if(confirm('Once you set this order as abandoned, you will not be able to re-use it; please, confirm the action.'))
+	{
+		$.ajax({
+			type: "GET",
+			url: '../abandon/'+order_id,
+		}).done(function( response ) {
+			if(response == "ok")
+				window.location = '../../purchases_orders/edit/' + order_id ;
+			else
+				alert(response);
+		}).fail(function(){
+			alert("Request error");
+		});
+	}
+}
+
 function add_item()
 {
 	if( validate_item_ins() ) {
@@ -99,10 +116,15 @@ function add_item()
 	
 		$('#description_in').on('hidden.bs.popover', function () {
 			var total =  parseFloat($('#qty_in').val() * $('#cost_in').val()).toFixed(2);
-			$('#items tr').last().before(
-			"<tr><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+$( "#item_id_in" ).val()+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+$('#qty_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+$('#description_in').val()+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\""+$('#for_in').val()+"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+$('#suppliers_code_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+$('#cost_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
+			var cost = parseFloat($('#cost_in').val()).toFixed(2);
+			total_amount = Number(total_amount) + Number(total);
+			update_counters();
+			$('#items tr').last().prev().before(
+			"<tr><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+$( "#item_id_in" ).val()+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+$('#qty_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+$('#description_in').val()+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\""+$('#for_in').val()+"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+$('#suppliers_code_in').val()+"\" readonly/></td><td><input type=\"text\" class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+cost+"\" readonly/></td><td><input type=\"text\" class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
 			);
 			
+			
+			$('#item_id_in').val("");
 			$('#qty_in').val("");
 			$('#qty_in').parent().removeClass("has-error");
 			$('#description_in').val("");	
@@ -137,12 +159,54 @@ function add_items_from_family()
 function add_item_with(item_id, qty, description, suppliers_code, cost)
 {
 	var total =  parseFloat(qty * cost).toFixed(2);
+	total_amount = Number(total_amount) + Number(total);
+	update_counters();
 	suppliers_code = suppliers_code == "null" ? "": suppliers_code;
 	$('#items tr').last().before(
 			"<tr><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+item_id+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+qty+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+description+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+suppliers_code+"\" readonly/></td><td><input class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+cost+"\" readonly/></td><td><input class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
 			);
 	no_entries++;
-	$('#no_entries').html(no_entries);
+	$('#no_entries').html(no_entries);	
+}
+
+function submit_receptions_form()
+{
+	$.ajax({
+		type: "POST",
+		url: '../receive_items',
+		data: $('#receptions_form').serialize()
+	}).done(function( response ) {
+		if(response == "ok")
+			window.location = '../../purchases_orders/edit/' + $('#order_id').val() ;
+		else
+			alert(response);
+	}).fail(function(){
+		alert("Request error");
+	});
+}
+
+function complete( order_id )
+{
+	if(saved_items < 1)
+	{
+		alert("There no items in the order, add items before set it as completed.");
+		return;
+	}
+	
+	if(confirm('Once you set this order as completed, you will not be able to add items; please, confirm the action.'))
+	{
+		$.ajax({
+			type: "GET",
+			url: '../complete/'+order_id,
+		}).done(function( response ) {
+			if(response == "ok")
+				window.location = '../../purchases_orders/edit/' + order_id ;
+			else
+				alert(response);
+		}).fail(function(){
+			alert("Request error");
+		});
+	}
 }
 
 function mark_to_delete( ele_button )
@@ -185,27 +249,44 @@ function submit_edit_purchase_order_form()
 
 function fill_family_modal( member_id )
 {
-	$('#description_in').popover('destroy');
-	$('#family_group_table tbody').html("");
-	$('#family_group_modal').modal('show');
-	
-	$.get( "../../sales_stock/items_from_family_from_json/", { id : member_id })
-	.done( function( data ) {	
-		jQuery.each(data, function() {
-			$('#family_group_table tbody').append("<tr><td><input type=\"hidden\" id=\"family_group_modal_item_id_in\" name=\"family_group_modal_item_id_in[]\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"family_group_modal_suppliers_code_in\" name=\"family_group_modal_suppliers_code_in[]\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input type=\"text\" class=\"form-control\" id=\"family_group_modal_qty_in\" name=\"family_group_modal_qty_in[]\" value=\"\"/></td><td><input type=\"hidden\" id=\"family_group_modal_description_in\" name=\"family_group_modal_description_in[]\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"family_group_modal_cost_in\" name=\"family_group_modal_cost_in[]\" value=\""+this.cost_price+"\" />"+this.cost_price+"</td><td></td></tr>");
-		});		
-		$('input[name^=family_group_modal_qty_in]:first').focus();
+	if(member_id != "")
+	{
+		$('#description_in').popover('destroy');
+		$('#family_group_table tbody').html("");
+		$('#family_group_modal').modal('show');
 		
-		$('input[name^=family_group_modal_qty_in]').keydown(function(e){
-			if(e.which == 40)
-			{
-				$('input[name^=family_group_modal_qty_in]:first', $(this).parent().parent().next() ).focus();
-			}else {
-				if( e.which == 38)
-					$('input[name^=family_group_modal_qty_in]:first', $(this).parent().parent().prev() ).focus();
-			}
+		$.get( "../../sales_stock/items_from_family_from_json/", { id : member_id })
+		.done( function( data ) {	
+			jQuery.each(data, function() {
+				$('#family_group_table tbody').append("<tr><td><input type=\"hidden\" id=\"family_group_modal_item_id_in\" name=\"family_group_modal_item_id_in[]\" value=\""+Number(this.pk_id)+"\" /><input type=\"hidden\" id=\"family_group_modal_suppliers_code_in\" name=\"family_group_modal_suppliers_code_in[]\" value=\""+this.supplier_code+"\" />" + this.quantity_balance + "</td><td>"+this.quantity_on_order+"</td><td>"+Number(this.quantity_rec_level)+"</td><td><input type=\"text\" class=\"form-control\" id=\"family_group_modal_qty_in\" name=\"family_group_modal_qty_in[]\" value=\"\"/></td><td><input type=\"hidden\" id=\"family_group_modal_description_in\" name=\"family_group_modal_description_in[]\" value=\""+this.label+"\"/>"+this.label+"</td><td><input type=\"hidden\" id=\"family_group_modal_cost_in\" name=\"family_group_modal_cost_in[]\" value=\""+this.cost_price+"\" />"+this.cost_price+"</td><td></td></tr>");
+			});		
+			$('input[name^=family_group_modal_qty_in]:first').focus();
+			
+			$('input[name^=family_group_modal_qty_in]').keydown(function(e){
+				if(e.which == 40)
+				{
+					$('input[name^=family_group_modal_qty_in]:first', $(this).parent().parent().next() ).focus();
+				}else {
+					if( e.which == 38)
+						$('input[name^=family_group_modal_qty_in]:first', $(this).parent().parent().prev() ).focus();
+				}
+			});
 		});
-	});
+	}else
+	{
+		alert("Please, select a member item and click again.");
+	}
+}
+
+function purchase_order_pdf(order_id)
+{
+	$('#purchase_ord_pdf_modal_iframe').attr("src", '../print_order_pdf/' + order_id);
+}
+
+function update_counters()
+{
+	$('#total_amount_span').html(parseFloat(total_amount).toFixed(2));
+	$('#no_entries').html(parseFloat(no_entries).toFixed(0));
 }
 
 function validate_item_ins()
@@ -241,3 +322,5 @@ function validate_item_ins()
 	
 	return result;
 }
+
+update_counters();

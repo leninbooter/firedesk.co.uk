@@ -1,0 +1,4 @@
+pk_id,stock_number,location,description,stock_cost_total,stock_cost_average,quantity_balance,quantity_on_order,quantity_rec_level,last_movement,standard_price,special_price,units_of_for_special,cost_price_a,cost_price_b,cost_price_c,fk_vat_code,fk_family_group,fk_discount_group,fk_supplier_a,fk_supplier_b,fk_supplier_c,supplier_a_code,supplier_b_code,supplier_c_code
+1,k532,CH,"5/32 HSS Drill Bits",339.50,11.08,3013,14,3,"2015-03-06 00:50:09",10.00,8.00,12,3.00,3.00,3.50,NULL,2,NULL,1,1,1,Adrill,NULL,NULL
+2,k533,CH,"5/8 HSS Drill Bits",1500.00,3.00,50,0,100,"2015-02-11 09:56:06",10.00,8.00,12,3.00,3.00,3.50,NULL,1,NULL,1,2,3,NULL,NULL,NULL
+3,k534,CH,"2/2 HSS Drill Bits",45060.55,8.26,5015,178,100,"2015-03-06 00:55:32",10.00,8.00,12,3.00,3.00,3.50,NULL,1,13,1,2,NULL,NULL,NULL,NULL

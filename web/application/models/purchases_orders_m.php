@@ -2,6 +2,23 @@
 
 class Purchases_orders_m extends CI_Model
 {	
+	function abandon_order( $pk_id )
+	{
+		$this->load->database();
+		$query = "call set_purchase_order_abandon(".$pk_id.");";
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->row() : false;
+		
+	}
+
+	function activate_order( $pk_id )
+	{
+		$this->load->database();
+		$query = "call set_purchase_order_complete(".$pk_id.");";
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->row() : false;
+	}
+
 	function clean_vars(&$value, $key)
 	{
 		if($value == "")
@@ -10,10 +27,27 @@ class Purchases_orders_m extends CI_Model
 		}
 	}
 	
+	function get_outstanding_orders()
+	{
+		$this->load->database();
+		$query = "SELECT
+					DISTINCT(
+					po.pk_id),
+					po.creation_date,
+					po.fk_status,
+					po.total_amount,
+					s.name
+					FROM purchases_orders as po
+					INNER JOIN purchases_orders_items as poi ON poi.fk_purchase_order_id = po.pk_id and poi.qty_received < poi.qty and po.fk_status = 2
+					INNER JOIN suppliers as s ON s.pk_id = po.fk_supplier_id;";
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : false;
+	}
+	
 	public function get_order_details( $pk_id )
 	{
 		$this->load->database();
-		$query = "select fk_supplier_id, delivery_address, contact_name, contact_telephone, contact_email, creation_date, operator, fk_status, total_amount,
+		$query = "select fk_supplier_id, delivery_address, contact_name, contact_telephone, contact_email, creation_date, operator, fk_status, ifnull(total_amount,0.00) as 'total_amount',
 		s.name,
 		s.address1,
 		s.telephone1,
@@ -28,7 +62,28 @@ where po.pk_id = ".$pk_id;
 	public function get_order_items( $pk_id )
 	{
 		$this->load->database();
-		$query = "select fk_purchase_order_id, fk_item_id, description, qty, suppliers_code, cost, perc_discount, total, `for`, due_delivery_date from purchases_orders_items where fk_purchase_order_id = ".$pk_id;
+		$query = "select pk_id, fk_purchase_order_id, fk_item_id, description, qty, suppliers_code, cost, perc_discount, total, `for`, due_delivery_date, qty_received from purchases_orders_items where fk_purchase_order_id = ".$pk_id;
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
+	public function get_all_purchase_orders()
+	{
+		$this->load->database();
+		$query = "select
+			po.pk_id, 
+			po.fk_supplier_id, 
+			po.delivery_address, 
+			po.contact_name, 
+			po.contact_telephone, 
+			po.contact_email, 
+			po.creation_date, 
+			po.operator, 
+			po.fk_status, 
+			po.total_amount,
+			s.name,
+			sts.description
+			from purchases_orders as po inner join suppliers as s on po.fk_supplier_id = s.pk_id inner join purchases_orders_status as sts on sts.pk_id = po.fk_status ;";
 		$query = $this->db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}
@@ -77,7 +132,7 @@ where po.pk_id = ".$pk_id;
 		}
 		return false;
 	}
-
+	
 	public function save_item( $vars_array )
 	{
 		$this->load->database();

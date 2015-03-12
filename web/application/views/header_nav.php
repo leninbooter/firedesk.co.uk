@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/common.css'); ?>">				
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sticky-footer-navbar'); ?>">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/justified-nav.css'); ?>">
-		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">		
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/justified-nav.css'); ?>">		
 		<link href="<?php echo base_url('assets/datepicker/css/datepicker.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/css/firedesk.css'); ?>" rel="stylesheet">
-		<link href="<?php echo base_url('assets/jquery-ui-1.11.3.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">		
+		<link href="<?php echo base_url('assets/jquery-ui-1.11.3.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">
+		<link href="<?php echo base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.css'); ?>" rel="stylesheet">		
+		<link href="<?php echo base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_web.css'); ?>" rel="stylesheet">		
 		 
 		<title>FireDesk</title>
 	</head>
@@ -82,9 +82,12 @@
 				</li>
 				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases & Suppliers</a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="<?php echo base_url('index.php/suppliers/new_existing'); ?>">New/Existing supplier details</a></li>
-						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/new_order'); ?>">Purchase orders</a></li>
-						<li><a href="<?php echo base_url('index.php/suppliers/list_suppliers_addresses'); ?>">List supplier names/addresses</a></li>
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/new_order'); ?>">New purchase orders</a></li>
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/list_all'); ?>">List existing purchase orders</a></li>						
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/print_outstanding_orders_pdf'); ?>" target="_blank">Print Balance Items</a></li>						
+						<li class="divider"></li>						
+						<li><a href="<?php echo base_url('index.php/suppliers/new_existing'); ?>">New supplier</a></li>
+						<li><a href="<?php echo base_url('index.php/suppliers/list_suppliers_addresses'); ?>">List supplier names/addresses</a></li>												
 					</ul>
 				</li>
 				<li><a href="#">Servicing<br/>&nbsp;</a></li>
