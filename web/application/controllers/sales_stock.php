@@ -59,6 +59,23 @@ class Sales_stock extends CI_Controller
 		
 	}
 	
+	public function massive_changes_form()
+	{
+		$this->load->model('family_groups_m');
+		$this->load->model('vats_m');	
+		
+		$data['family_groups'] = $this->family_groups_m->get_groups();
+		$data['vats'] = $this->vats_m->get_all_vats();
+		
+	
+		$this->load->view('header_nav');
+		$this->load->view('footer_common');
+		$this->load->view('global_changes_forms', $data);
+		$this->output->append_output("<script src=\"".base_url('assets/js/stock_items.js')."\"></script>");					
+		$this->load->view('footer_copyright');
+		$this->load->view('footer');
+	}
+	
 	public function new_existing()
 	{
 		$pk_id = trim($this->uri->segment(3));
@@ -419,6 +436,137 @@ class Sales_stock extends CI_Controller
 			{
 				redirect(base_url('index.php/sales_stock/new_existing/'.$fk_item_id.'/'.urlencode('There was a problem updating the item. Please, try again.')),'refresh');
 			}
+		}
+	}
+
+	public function update_balances_massive()
+	{
+		$this->load->library('form_validation');
+	
+		if($_SERVER['REQUEST_METHOD'] === 'POST')
+		{
+			$this->load->model('stock_m');
+			log_message('debug', $this->input->post('apply_to', true));
+			
+			$apply_to = $this->input->post('apply_to', true);
+			$family_group_id = $this->input->post('family_groups', true);
+			$set_balance = $this->input->post('set_balance', true);
+			$date = date('Y-m-d H:i:s');
+			$negative_balances = ($set_balance) == "Zero all" ? "false":"true" ;
+			
+			$vars_array = compact("apply_to", "family_group_id", "negative_balances", "date");
+			$result = $this->stock_m->upd_balances_massive( $vars_array );
+			if($result != false)
+			{
+				echo $result;
+			}else
+			{
+				echo "ko-db";
+			}
+			
+		}else{
+			echo "No post received";
+		}
+	}
+	
+	public function update_locations_massive()
+	{
+		$this->load->library('form_validation');
+	
+		if($_SERVER['REQUEST_METHOD'] === 'POST')
+		{
+			$this->load->model('stock_m');
+			log_message('debug', $this->input->post('apply_to', true));
+			
+			$family_group_id = $this->input->post('family_groups', true) == false ? null:$this->input->post('family_groups', true);
+			$location = $this->input->post('location', true);
+			$date = date('Y-m-d H:i:s');
+			
+			$vars_array = compact("family_group_id", "location", "date");
+			$result = $this->stock_m->upd_locations_massive( $vars_array );
+			if($result != false)
+			{
+				echo $result;
+			}else
+			{
+				echo "ko-db";
+			}
+			
+		}else{
+			echo "No post received";
+		}
+	}
+	
+	public function update_prices_massive()
+	{
+		$this->load->library('form_validation');
+	
+		if($_SERVER['REQUEST_METHOD'] === 'POST')
+		{
+			$this->load->model('stock_m');
+			
+			$apply_to = $this->input->post('apply_to', true);
+			$family_group_id = $this->input->post('family_groups', true) == false ? null:$this->input->post('family_groups', true);
+			$date = date('Y-m-d H:i:s');			
+			$set_raised_by = $this->input->post('set_raised_by', true);			
+			$by_percentage = ($set_raised_by) == "Percentages" ? "true":"false";
+			
+			$standard = $this->input->post('standard_price', true) == '' ? null:$this->input->post('standard_price', true);
+			$standard = $by_percentage == "true" && $standard == null ? 0:$standard;
+			
+			$special = $this->input->post('special_price', true) == '' ? null:$this->input->post('special_price', true);
+			$special = $by_percentage == "true" && $special == null ? 0:$special;
+			
+			$cost_price_a = $this->input->post('cost_price_a', true) == '' ? null:$this->input->post('cost_price_a', true);
+			$cost_price_a = $by_percentage == "true" && $cost_price_a == null ? 0:$cost_price_a;
+			
+			$cost_price_b = $this->input->post('cost_price_b', true) == '' ? null:$this->input->post('cost_price_b', true);
+			$cost_price_b = $by_percentage == "true" && $cost_price_b == null ? 0:$cost_price_b;
+			
+			$cost_price_c = $this->input->post('cost_price_c', true) == '' ? null:$this->input->post('cost_price_c', true);
+			$cost_price_c = $by_percentage == "true" && $cost_price_c == null ? 0:$cost_price_c;
+			
+			log_message('debug', "$family_group_id $by_percentage $standard $special $cost_price_a $cost_price_b $cost_price_c $date");
+			$vars_array = compact("family_group_id", "by_percentage", "standard", "special", "cost_price_a", "cost_price_b", "cost_price_c", "date");
+			$result = $this->stock_m->upd_prices_massive( $vars_array );
+			if($result != false)
+			{
+				echo $result;
+			}else
+			{
+				echo "ko-db";
+			}
+			
+		}else{
+			echo "No post received";
+		}
+	}
+	
+	public function update_vats_massive()
+	{
+		$this->load->library('form_validation');
+	
+		if($_SERVER['REQUEST_METHOD'] === 'POST')
+		{
+			$this->load->model('stock_m');
+			log_message('debug', $this->input->post('apply_to', true));
+			
+			$family_group_id = $this->input->post('family_groups', true) == false ? null:$this->input->post('family_groups', true);
+			$vat_id = $this->input->post('fk_vat_code', true) == "0" ? '': $this->input->post('fk_vat_code', true);
+			$date = date('Y-m-d H:i:s');
+			
+			$vars_array = compact("family_group_id", "vat_id", "date");
+			$result = $this->stock_m->upd_vats_massive( $vars_array );
+			if($result != false)
+			{
+				echo $result;
+			}else
+			{
+				echo "ko-db";
+			}
+			
+		}else{
+			echo "No post received";
 		}
 	}
 }

@@ -103,3 +103,144 @@ $('#prices_form').submit(function(event) {
 			$('#special_prices .modal-body').append("<br/><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
 	});	
 });
+
+$('#update_balances_massive_form').submit(function(e){
+	e.preventDefault();	
+	
+	var dataForm = $('#update_balances_massive_form').serializeArray();
+	
+	$.ajax(
+	{
+		type: "POST",
+		url: "update_balances_massive",
+		data: dataForm,
+		dataType: "text"
+	}).done(function(response){
+		switch(response)
+		{
+			case "ko-validation":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-warning\" role=\"alert\">Please, verify the data sent and try again.</div>");
+			break;
+			
+			case "ko-db":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was an error updating the database; please , try again.</div>");
+			break;
+			
+			default:
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-success\" role=\"alert\">"+response+" records modified.</div>");
+				break;
+		}					
+	}).fail(function(response){
+			$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
+	});
+	
+});
+
+$('#update_location_massive_form').submit(function(e){
+	e.preventDefault();	
+	
+	var dataForm = $('#update_location_massive_form').serializeArray();
+	
+	$.ajax(
+	{
+		type: "POST",
+		url: "update_locations_massive",
+		data: dataForm,
+		dataType: "text"
+	}).done(function(response){
+		switch(response)
+		{
+			case "ko-validation":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-warning\" role=\"alert\">Please, verify the data sent and try again.</div>");
+			break;
+			
+			case "ko-db":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was an error updating the database; please , try again.</div>");
+			break;
+			
+			default:
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-success\" role=\"alert\">"+response+" records modified.</div>");
+				break;
+		}					
+	}).fail(function(response){
+			$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
+	});
+	
+});
+
+$('#update_prices_massive_form').submit(function(e){
+	e.preventDefault();	
+	
+	var dataForm = $('#update_prices_massive_form').serializeArray();
+	
+	$.ajax(
+	{
+		type: "POST",
+		url: "update_prices_massive",
+		data: dataForm,
+		dataType: "text"
+	}).done(function(response){
+		switch(response)
+		{
+			case "ko-validation":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-warning\" role=\"alert\">Please, verify the data sent and try again.</div>");
+			break;
+			
+			case "ko-db":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was an error updating the database; please , try again.</div>");
+			break;
+			
+			default:
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-success\" role=\"alert\">"+response+" records modified.</div>");
+				break;
+		}					
+	}).fail(function(response){
+			$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
+	});
+	
+});
+
+$('#update_vats_massive_form').submit(function(e){
+	e.preventDefault();	
+	
+	var dataForm = $('#update_vats_massive_form').serializeArray();
+	
+	$.ajax(
+	{
+		type: "POST",
+		url: "update_vats_massive",
+		data: dataForm,
+		dataType: "text"
+	}).done(function(response){
+		switch(response)
+		{
+			case "ko-validation":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-warning\" role=\"alert\">Please, verify the data sent and try again.</div>");
+			break;
+			
+			case "ko-db":
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was an error updating the database; please , try again.</div>");
+			break;
+			
+			default:
+				$('#working_modal .modal-body').html("<br/><div class=\"alert alert-success\" role=\"alert\">"+response+" records modified.</div>");
+				break;
+		}					
+	}).fail(function(response){
+			$('#working_modal .modal-body').html("<br/><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the request; please, try again.</div>");
+	});
+	
+});
+
+$('[name=apply_to]').change(function(){
+	var select = $('[name^=family_groups]:first', $(this).parent().parent() );
+	if( $(this).val() != "Family group" )
+	{
+		select.prop('disabled', true);
+	}else
+	{
+		select.prop('disabled', false);
+	}
+		
+		
+});

@@ -2,7 +2,6 @@
 
 class Discount_groups extends CI_Controller
 {
-
 	public function alpha_dash_space( $valor )
 	{
 		if( preg_match('/^[A-Za-z0-9\-\_\.\,\s]{5,50}$/', $valor) == 1 )
@@ -26,7 +25,7 @@ class Discount_groups extends CI_Controller
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}
-
+	
 	public function update_groups()
 	{
 		$this->load->helper(array('form', 'url'));
@@ -41,17 +40,33 @@ class Discount_groups extends CI_Controller
 			{
 				$pk_id = trim($this->security->xss_clean($_POST['pk_id'][$i]));
 				$description = trim($this->security->xss_clean($_POST['description'][$i]));
-				if( !$this->discount_groups_m->update_group($pk_id, $description) )
-				{
+				$discount_percentage = trim($this->security->xss_clean($_POST['discount_percentage'][$i]));
+				$discount_percentage = str_replace("%", "", $discount_percentage);
+				
+				if( is_numeric($discount_percentage) )
+				{				
+					if( !$this->discount_groups_m->update_group($pk_id, $description, $discount_percentage) )
+					{
+						$this->output->append_output("
+												<div class=\"row\">
+													<div class=\"col-md-12\">&nbsp;</div>
+												</div>
+												<div class=\"row\">
+													<div class=\"col-md-12\"><div class=\"alert alert-danger\" role=\"alert\">There was a problem updating the records; please, try again.</div></div>
+												</div>");
+					$error = true;
+					break;
+					}
+				}else
+					{
+					$error = true;
 					$this->output->append_output("
-											<div class=\"row\">
-												<div class=\"col-md-12\">&nbsp;</div>
-											</div>
-											<div class=\"row\">
-												<div class=\"col-md-12\"><div class=\"alert alert-danger\" role=\"alert\">There was a problem updating the records; please, try again.</div></div>
-											</div>");
-				$error = true;
-				break;
+																	<div class=\"row\">
+																		<div class=\"col-md-12\">&nbsp;</div>
+																	</div>
+																	<div class=\"row\">
+																		<div class=\"col-md-12\"><div class=\"alert alert-danger\" role=\"alert\">Data sent has invalid format; please, try again with valid information.</div></div>
+																	</div>");					
 				}
 		
 			}

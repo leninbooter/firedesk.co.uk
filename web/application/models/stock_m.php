@@ -4,7 +4,7 @@ class Stock_m extends CI_Model
 {		
 	function clean_vars(&$value, $key)
 	{
-		if($value == "")
+		if($value == "" && $value != "0")
 		{
 			$value = "NULL";
 		}
@@ -135,6 +135,128 @@ class Stock_m extends CI_Model
 			mysqli_next_result( $this->db->conn_id );					
 			if($result->result == "ok" || $result->result == "notUpdated")
 				return true;
+		}
+		return false;
+	}
+	
+	public function upd_balances_massive( $vars_array )
+	{
+		$this->load->database();
+		array_walk($vars_array, "self::clean_vars");
+		log_message('debug', $vars_array["apply_to"]);
+		if($vars_array["apply_to"] == "Family group")
+		{
+			$query = "call update_balances_massive(
+									".$this->db->escape_str($vars_array["family_group_id"]).",
+									".$this->db->escape_str($vars_array["negative_balances"]).",
+									'".$this->db->escape_str($vars_array["date"])."'
+									);";
+			
+		}elseif( $vars_array["apply_to"] == "Entire stock")
+		{
+			$query = "call update_balances_massive(
+									NULL,
+									".$this->db->escape_str($vars_array["negative_balances"]).",
+									'".$this->db->escape_str($vars_array["date"])."'
+									);";
+		}
+										
+		$query = str_replace("'NULL'", "NULL", $query);
+		log_message('debug', $query);
+		$query = $this->db->query($query);
+		if( !empty($query->result()) )
+		{
+			$result = $query->row();
+			mysqli_next_result( $this->db->conn_id );
+			log_message('debug', $result->result);
+			
+			return is_numeric($result->result) ? $result->result : false;
+		}
+		return false;
+	}
+	
+	public function upd_locations_massive( $vars_array )
+	{
+		$this->load->database();
+
+		array_walk($vars_array, "self::clean_vars");
+		
+		$query = "call update_locations_massive(
+								".$this->db->escape_str($vars_array["family_group_id"]).",
+								'".$this->db->escape_str($vars_array["location"])."',
+								'".$this->db->escape_str($vars_array["date"])."'
+								);";
+			
+		
+										
+		$query = str_replace("'NULL'", "NULL", $query);
+		log_message('debug', $query);
+		$query = $this->db->query($query);
+		if( !empty($query->result()) )
+		{
+			$result = $query->row();
+			mysqli_next_result( $this->db->conn_id );
+			
+			return is_numeric($result->result) ? $result->result : false;
+		}
+		return false;
+	}
+	
+	public function upd_prices_massive( $vars_array )
+	{
+		$this->load->database();
+		log_message('debug', $this->db->escape_str($vars_array["special"]));
+		array_walk($vars_array, "self::clean_vars");
+		
+		$query = "call update_prices_massive(
+								".$this->db->escape_str($vars_array["family_group_id"]).",
+								".$this->db->escape_str($vars_array["by_percentage"]).",
+								".$this->db->escape_str($vars_array["standard"]).",
+								".$this->db->escape_str($vars_array["special"]).",
+								".$this->db->escape_str($vars_array["cost_price_a"]).",
+								".$this->db->escape_str($vars_array["cost_price_b"]).",
+								".$this->db->escape_str($vars_array["cost_price_c"]).",
+								'".$this->db->escape_str($vars_array["date"])."'
+								);";
+			
+		
+										
+		$query = str_replace("'NULL'", "NULL", $query);
+		log_message('debug', $query);
+		$query = $this->db->query($query);
+		if( !empty($query->result()) )
+		{
+			$result = $query->row();
+			mysqli_next_result( $this->db->conn_id );
+			
+			return is_numeric($result->result) ? $result->result : false;
+		}
+		return false;
+	}
+	
+	public function upd_vats_massive( $vars_array )
+	{
+		$this->load->database();
+
+		array_walk($vars_array, "self::clean_vars");
+		
+		$query = "call update_vats_massive(
+								".$this->db->escape_str($vars_array["family_group_id"]).",
+								".$this->db->escape_str($vars_array["vat_id"]).",
+								'".$this->db->escape_str($vars_array["date"])."'
+								);";
+			
+		
+										
+		$query = str_replace("'NULL'", "NULL", $query);
+		log_message('debug', $query);
+		$query = $this->db->query($query);
+		if( !empty($query->result()) )
+		{
+			$result = $query->row();
+			mysqli_next_result( $this->db->conn_id );
+			
+			return is_numeric($result->result) ? $result->result : false;
 		}
 		return false;
 	}

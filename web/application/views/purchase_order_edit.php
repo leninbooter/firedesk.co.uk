@@ -77,7 +77,7 @@
 									<td colspan="2" style="text-align:right"><span id="total_amount_span" style="font-size:120%;"><?php echo $order_details->total_amount;?></span></td>
 								</tr>
 							<?php if( $order_details->fk_status == 1): ?>
-								<tr class="success"><td><input type="hidden" id="item_id_in" name="item_id_in"/><input type="hidden" id="hidden_name" name="hidden_name"/><div class="form-group"><input type="text" class="form-control" id="qty_in" name="qty_in" autocomplete="off"/></div></td><td><input type="text" class="form-control" id="description_in" name="description_in" autocomplete="off"/>							
+								<tr class="success"><td><input type="hidden" id="item_id_in" name="item_id_in"/><input type="hidden" id="hidden_name" name="hidden_name"/><input type="text" class="form-control" id="qty_in" name="qty_in" autocomplete="off"/></td><td><input type="text" class="form-control" id="description_in" name="description_in" autocomplete="off"/>							
 								</td><td><input type="text" class="form-control" id="suppliers_code_in" name="suppliers_code_in" autocomplete="off"/></td><td><input type="text" class="form-control" id="cost_in" name="cost_in" autocomplete="off"/></td><td colspan="2">
 									<div class="form-inline">
 											<div class="form-group" style="width:100%">

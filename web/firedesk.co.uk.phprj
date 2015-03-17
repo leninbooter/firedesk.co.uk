@@ -1,0 +1,19 @@
+{
+ "m_name": "firedesk.co.uk",
+ "m_isActive": true,
+ "m_importFileSpec": "*.php;*.html;*.phtml;*.inc;*.css;*.js;.htaccess",
+ "m_excludeFolders": ".git;.svn;.codelite",
+ "settings": {
+  "m_runAs": 1,
+  "m_phpExe": "C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\binaries\\php\\php_runningversion\\php.exe",
+  "m_indexFile": "C:\\inetpub\\firedesk.co.uk\\web\\public_html\\index.php",
+  "m_args": "",
+  "m_workingDirectory": "C:\\inetpub\\firedesk.co.uk\\web\\public_html",
+  "m_projectURL": "127.0.0.1/firedesk/index.php",
+  "m_includePath": "",
+  "m_ccIncludePath": "",
+  "m_flags": 5,
+  "m_phpIniFile": "",
+  "m_fileMapping": []
+ }
+}

@@ -10,8 +10,9 @@
 		<?php foreach($groups as $row): ?>
 			<div class="row">
 				<div class="col-md-1"><input type="hidden" id="pk_id" name="pk_id[]" value="<?php echo $row->pk_id;?>"><?php echo $row->pk_id;?>)</div>
-				<div class="col-md-8"><div class="form-group"><input type="text" class="form-control" id="description" name="description[]" value="<?php echo $row->description;?>" readonly="true" onclick="$(this).prop('readonly',false);"></div></div>
-				<div class="col-md-3"><div class="form-group"><button href="<?php echo base_url('index.php/discount_groups/remove_description/'.$row->pk_id); ?>" class="btn btn-default" role="button">Remove description</button></div></div>
+				<div class="col-md-5"><div class="form-group"><input type="text" class="form-control" id="description" name="description[]" value="<?php echo $row->description;?>" readonly="true" onclick="$(this).prop('readonly',false); $('input[id=discount_percentage]', $(this).parent().parent().parent()).prop('readonly',false);"></div></div>
+				<div class="col-md-3"><div class="form-group form-horizontal"><input type="text" class="form-control" id="discount_percentage" name="discount_percentage[]" value="<?php echo $row->discount_percentage;?>%" readonly="true" onclick="$(this).prop('readonly',false); $('input[id=description]', $(this).parent().parent().parent()).prop('readonly',false);$(this).select()"></div></div>
+				<div class="col-md-3"><div class="form-group"><button id="remove_description_btn" name="remove_description_btn[]" class="btn btn-default" type="button">Remove description</button></div></div>
 			</div>
 		<?php endforeach; ?>	
 		<div class="row">

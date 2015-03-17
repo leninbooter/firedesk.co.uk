@@ -62,9 +62,9 @@
 				</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Cross Hire</a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">New/existing order</a></li>
-						<li><a href="#">Display existing orders</a></li>
-						<li><a href="#">Items on hire to customers</a></li>
+						<li><a href="<?php echo base_url('index.php/cross_hire/new_order'); ?>">New/existing order</a></li>
+						<li><a href="<?php echo base_url('index.php/cross_hire/existing_orders'); ?>">Display existing orders</a></li>
+						<li><a href="<?php echo base_url('index.php/cross_hire/items_on_hire'); ?>">Items on hire to customers</a></li>
 					</ul>
 				</li>
 				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Sales Stock</a>
@@ -72,9 +72,9 @@
 						<li><a href="<?php echo base_url('index.php/sales_stock/new_existing'); ?>">Stock Item</a></li>
 						<li><a href="<?php echo base_url('index.php/family_groups/groups'); ?>">Group Changes/order</a></li>
 						<li><a href="<?php echo base_url('index.php/discount_groups/groups'); ?>">Discount groups</a></li>
-						<!--<li><a href="#">Add stock quantities</a></li>
-						<li><a href="#">Global</a></li>
-						<li><a href="#">Sold since</a></li>
+						<!--<li><a href="#">Add stock quantities</a></li>-->
+						<li><a href="<?php echo base_url('index.php/sales_stock/massive_changes_form'); ?>">Global</a></li>
+						<!--<li><a href="#">Sold since</a></li>
 						<li><a href="#">Price & stock enquiry</a></li>
 						<li><a href="#">Price list</a></li>-->
 						<li><a href="<?php echo base_url('index.php/sales_stock/report_stock_levels'); ?>">Reports</a></li>
