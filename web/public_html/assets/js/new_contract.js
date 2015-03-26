@@ -60,6 +60,12 @@ function activate( contract_id )
 	}
 }
 
+function add_item_to_grid(item_type, qty, description, rate, regularity, disc, total_row)
+{
+	$('#items tr').last().before(
+		"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ description +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly><input id=\"regularity\" name=\"regularity[]\" type=\"text\" class=\"form-control\" value=\""+ regularity +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ disc +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ total_row +"\" readonly></td></tr>");
+}
+
 function edit( contract_id )
 {
 	window.location.href = "edit?id="+contract_id;
@@ -171,6 +177,7 @@ $( document ).ready(function() {
 	$('#time').val(d.getHours() + ":" + d.getMinutes());
 });
 
+
 $('#account_reference').keyup(function()
 {
 	if( $(this).val().trim().length > 1 && $('#account_reference_id').val()=="")
@@ -203,6 +210,37 @@ $('#account_reference').keyup(function()
 		$('#account_reference_id').val("");
 	}
 	
+	
+});
+
+$('#hired_items_form').submit(function(e){
+	e.preventDefault();
+	
+	var fields = $(this).serializeArray();
+	var iter = 0;
+	 jQuery.each( fields, function( i, field ) {
+		iter ++;
+		switch(iter)
+		{
+			case 1:
+				item_type = 3;
+			break;
+			
+			case 2:
+				rate = field.value;
+			break;
+			
+			case 3: 
+				qty = field.value;
+			break;
+			
+			case 4:
+				description = field.value;
+				iter = 0;
+				add_item_to_grid(item_type, qty, description, rate, 1, 0, qty*rate);
+			break;
+		}
+	});
 	
 });
 

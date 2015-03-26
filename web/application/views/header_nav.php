@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/justified-nav.css'); ?>">		
 		<link href="<?php echo base_url('assets/datepicker/css/datepicker.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/css/firedesk.css'); ?>" rel="stylesheet">
-		<link href="<?php echo base_url('assets/jquery-ui-1.11.3.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">
+		<link href="<?php echo base_url('assets/jquery-ui-1.11.4.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.css'); ?>" rel="stylesheet">		
 		<link href="<?php echo base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_web.css'); ?>" rel="stylesheet">		
 		 
@@ -49,8 +49,8 @@
 				</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Hire Fleet</a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Fleet records</a></li>
-						<li><a href="#">Group changes</a></li>
+						<li><a href="<?php echo base_url('index.php/hire_stock/new_item'); ?>">New item</a></li>
+						<li><a href="<?php echo base_url('index.php/hire_stock/groups'); ?>">Group changes</a></li>
 						<li><a href="#">Discount groups</a></li>
 						<li><a href="#">Safety Tests</a></li>
 						<li><a href="#">Nett rates</a></li>

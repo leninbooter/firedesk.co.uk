@@ -10,6 +10,13 @@ class Stock_m extends CI_Model
 		}
 	}
 	
+	public function get_items_all( )
+	{
+		$this->load->database();
+		$query = $this->db->query( "SELECT pk_id, stock_number as 'number', description as 'label', 2 as 'origin' FROM sales_stock;");
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
 	public function get_items_soled_by( $supplier_id )
 	{
 		$this->load->database();

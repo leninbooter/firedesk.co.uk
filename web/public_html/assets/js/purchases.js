@@ -13,11 +13,8 @@ $.get( "../suppliers/get_suppliers_json", function( data ) {
 			$( "#supplier_name" ).val( ui.item.label );
 				return false;
 			},
-			select: function( event, ui ) {
-				$( "#project" ).val( ui.item.label );
+			select: function( event, ui ) {				
 				$( "#supplier_pk_id" ).val( ui.item.pk_id );
-				//$( "#project-description" ).html( ui.item.desc );
-				//$( "#project-icon" ).attr( "src", "images/" + ui.item.icon );
 				return false;
 			}
 			})

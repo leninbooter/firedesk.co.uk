@@ -9,6 +9,13 @@ class Customers_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	
+	public function get_customer_details( $pk_id )
+	{
+		$this->load->database();
+		$query = $this->db->query( "" );
+		return !empty($query->result()) ? $query->row() : false;
+	}
+	
 	public function get_names_address()
 	{	
 		$this->load->database();

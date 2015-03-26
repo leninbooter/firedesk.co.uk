@@ -1,8 +1,11 @@
 <div class="row">
-	<div class="col-xs-6"><h1>Cross Hire Order No. <?php echo $order_id; ?></h1></div>
-	<div class="col-xs-6"></div>
+	<div class="col-xs-6"><h1>Cross Hire Order No. <?php echo $order_id; ?></h1>
+	<kbd><?php echo $order_details->fk_status == 1 ? "INCOMPLETE":""; ?><?php echo $order_details->fk_status == 2 ? "COMPLETE":""; ?><?php echo $order_details->fk_status == 3 ? "ABANDONED":""; ?></kbd><br><br>
+	</div>
+	<div class="col-xs-6" style="text-align:right; vertical-align:bottom">	
+	</div>
 </div>
-<form id="edit_purchase_order_form" role="form" method="post" action="<?php echo base_url('index.php/cross_hire/save_order'); ?>"><input type="hidden" id="order_id" name="order_id" value="<?php echo $order_id; ?>"/>
+<form id="edit_cross_hire_order_form" role="form" method="post" action="<?php echo base_url('index.php/cross_hire/save_order'); ?>"><input type="hidden" id="order_id" name="order_id" value="<?php echo $order_id; ?>"/>
 	<div class="row">
 		<div class="col-xs-9">
 			<div class="row">
@@ -51,7 +54,7 @@
 			</div>			
 			<div class="row">
 				<div class="col-xs-12">
-					<table id="items" class="table table-hover table-condensed">
+					<table  class="table table-hover ">
 						<thead>
 							<tr>
 								<th style="width:10%">Qty</th>
@@ -64,10 +67,41 @@
 								<th>&nbsp;</th>
 							</tr>
 						</thead>
-						<tbody>
+						<tbody id="items">
 							<?php foreach($items as $i): ?>
-								<tr><input type="hidden" id="delete" name="delete[]" value="no"/><td><input type="hidden" id="item_id" name="item_id[]" value="<?php echo $i->fk_item_id; ?>"/><input type="text" class="form-control" id="qty" name="qty[]" value="<?php echo $i->qty; ?>" readonly/></td><td><input type="text" class="form-control" id="description" name="description[]" value="<?php echo $i->description; ?>" readonly/><br/><div class="form-inline"><div class="form-group"><label for="for">For </label> <input type="text" class="form-control input-sm" id="for" name="for[]" value="<?php echo $i->for; ?>" readonly/></div></div></td><td><input type="text" class="form-control" id="suppliers_code" name="suppliers_code[]" value="<?php echo $i->suppliers_code; ?>" readonly/></td><td><input type="text" class="form-control" id="cost" name="cost[]" value="<?php echo $i->cost; ?>" readonly/></td><td><input type="text" class="form-control" id="total" name="total[]" value="<?php echo $i->total; ?>" readonly/></td><td><?php if( $order_details->fk_status == 1): ?><button type="button" class="btn btn-default" aria-label="Left Align" onclick="mark_to_delete(this)" id="remove_row_btn" name="remove_row_btn[]"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button><?php endif; ?></td></tr>
+								<tr <?php if( $order_details->fk_status == 2): ?>onmouseover="set_popover_to_tr(this, <?php echo $i->qty_used; ?>, <?php echo $i->qty_idle; ?>, <?php echo $i->qty_rtns; ?>, <?php echo $i->qty_offhire; ?>)" <?php endif; ?>>
+									<input type="hidden" id="delete" name="delete[]" value="no"/>
+									<td>
+										<input type="hidden" id="item_id" name="item_id[]" value="<?php echo $i->fk_item_id; ?>"/>
+										<input type="text" class="form-control" id="qty" name="qty[]" value="<?php echo $i->qty; ?>" readonly/>
+									</td>
+									<td>
+										<input type="text" class="form-control" id="description" name="description[]" value="<?php echo $i->description; ?>" readonly/>
+									</td>
+									<td>
+										<input type="text" class="form-control" id="suppliers_code" name="suppliers_code[]" value="<?php echo $i->suppliers_code; ?>" readonly/>
+									</td>
+									<td>
+										<input type="text" class="form-control" id="rate" name="rate[]" value="<?php echo $i->rate; ?>" readonly/>
+									</td>
+									<td>
+										<input type="text" class="form-control" id="disc" name="disc[]" value="<?php echo $i->perc_discount; ?>" readonly/>
+									</td>
+									<td>
+										<input type="text" class="form-control" id="min" name="min[]" value="<?php echo $i->min_hire_days_charged; ?>" readonly/>
+									</td>
+									<td>
+										<input type="text" class="form-control" id="total" name="total[]" value="<?php echo $i->total; ?>" readonly/>
+									</td>
+									<td>
+										<?php if( $order_details->fk_status == 1): ?>
+											<button type="button" class="btn btn-default" aria-label="Left Align" id="remove_row_btn" name="remove_row_btn[]">
+											<span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button>
+										<?php endif; ?>
+									</td>
+								</tr>
 							<?php endforeach; ?>
+							<tr></tr>
 						</tbody>
 						</table>
 						<table class="table table-condensed" style="margin-bottom:0">
@@ -84,7 +118,7 @@
 								<td style="width:10%"><input type="text" class="form-control" id="rate_in" name="rate_in" autocomplete="off"/></td>
 								<td style="width:10%"><input type="text" class="form-control" id="disc_in" name="disc_in" autocomplete="off"/></td>
 								<td style="width:10%"><input type="text" class="form-control" id="min_hire_days_in" name="min_hire_days_in" autocomplete="off"/></td>
-								<td style="width:15%; text-align:right; font-size: 120%; vertical-align:middle"><span id="total_in" autocomplete="off"></span></td>
+								<td style="width:15%; text-align:right; font-size: 120%; vertical-align:middle;"><b><span id="total_in" autocomplete="off">0.00</span></b></td>
 								<td>&nbsp;</td>
 							</tr>
 							</table>								
@@ -121,7 +155,7 @@
 						<a class="btn btn-default btn-block" role="button" href="<?php echo base_url('index.php/desk'); ?>">Exit</a>
 				</div>
 				<div class="col-xs-2">
-						<button type="button" class="btn btn-primary  btn-block" onclick="submit_edit_purchase_order_form();">Save</button>
+						<button type="button" class="btn btn-primary  btn-block" onclick="submit_edit_cross_hire_order_form();">Save</button>
 				</div>				
 			</div>			
 		</div>		
@@ -234,6 +268,6 @@
 </div>
 <?php endif; ?>
 <script>
-	var total_amount = Number(<?php echo $order_details->total_amount; ?>);
+	//var total_amount = Number(<?php echo $order_details->total_amount; ?>);
 	var no_entries = saved_items = Number(<?php echo count($items); ?>);
 </script>

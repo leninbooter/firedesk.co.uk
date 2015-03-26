@@ -1,6 +1,7 @@
 $('input[id=qty_in]').focus();
 $('#no_entries').html(no_entries);
 
+
 $('#edit_purchase_order_form, #receptions_form').submit( function(e) {
 	e.preventDefault();	
 });
@@ -108,6 +109,7 @@ $('#family_group_items_form').submit( function(e){
 	add_items_from_family();
 });
 
+
 function abandon( order_id )
 {
 	if(confirm('Once you set this order as abandoned, you will not be able to re-use it; please, confirm the action.'))
@@ -117,7 +119,7 @@ function abandon( order_id )
 			url: '../abandon/'+order_id,
 		}).done(function( response ) {
 			if(response == "ok")
-				window.location = '../../purchases_orders/edit/' + order_id ;
+				window.location = '../../cross_hire/edit_order/' + order_id ;
 			else
 				alert(response);
 		}).fail(function(){
@@ -129,17 +131,28 @@ function abandon( order_id )
 function add_item()
 {
 	if( validate_item_ins() ) {
+		$('input[id=qty_in]').focus();
+		
 		$('#description_in').popover('destroy');
 	
 		$('#description_in').on('hidden.bs.popover', function () {
-			var total =  parseFloat($('#qty_in').val() * $('#rate_in').val()).toFixed(2);
-			var rate = parseFloat($('#rate_in').val()).toFixed(2);
-			total_amount = Number(total_amount) + Number(total);
-			update_counters();
-			$('#items tr').last().after(
-			"<tr><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+$( "#item_id_in" ).val()+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+$('#qty_in').val()+"\" readonly/></td><td><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+$('#description_in').val()+"\" readonly/><br/><div class=\"form-inline\"><div class=\"form-group\"><label for=\"for\">For </label> <input type=\"text\" class=\"form-control input-sm\" id=\"for\" name=\"for[]\" value=\""+$('#for_in').val()+"\" readonly/></div></div></td><td><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+$('#suppliers_code_in').val()+"\" readonly/></td><td><input type=\"text\" class=\"form-control\" id=\"cost\" name=\"cost[]\" value=\""+rate+"\" readonly/></td><td><input type=\"text\" class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>"
-			);
 			
+			var disc = parseFloat($('#disc_in').val()).toFixed(2);
+			var min = parseInt($('#min_hire_days_in').val());			
+			var rate = parseFloat($('#rate_in').val()).toFixed(2);
+			var total;
+			if( !isNaN(disc) )
+			{
+				var rate_reduced = parseFloat(rate - (rate*disc)/100).toFixed(2);
+				total =  parseFloat($('#qty_in').val() * rate_reduced).toFixed(2);
+			}else{
+				total =  parseFloat($('#qty_in').val() * rate).toFixed(2);
+			}
+							
+			//total_amount = Number(total_amount) + Number(total);			
+			
+			$('#items > tr').last().after(
+			"<tr onclick=\"set_popover_to_tr(this, this, this,this)\"><input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\"/><td style=\"width:10%\"\><input type=\"hidden\" id=\"item_id\" name=\"item_id[]\" value=\""+$( "#item_id_in" ).val()+"\"/><input class=\"form-control\" id=\"qty\" name=\"qty[]\" value=\""+$('#qty_in').val()+"\" readonly/></td><td style=\"width:30%\"><input class=\"form-control\" id=\"description\" name=\"description[]\" value=\""+$('#description_in').val()+"\" readonly/></td><td style=\"width:15%\"><input class=\"form-control\" id=\"suppliers_code\" name=\"suppliers_code[]\" value=\""+$('#suppliers_code_in').val()+"\" readonly/></td><td style=\"width:10%\"><input type=\"text\" class=\"form-control\" id=\"rate\" name=\"rate[]\" value=\""+rate+"\" readonly/></td><td style=\"width:10%\"><input type=\"text\" class=\"form-control\" id=\"disc\" name=\"disc[]\" value=\""+disc+"\" readonly/></td><td style=\"width:10%\"><input type=\"text\" class=\"form-control\" id=\"min\" name=\"min[]\" value=\""+min+"\" readonly/></td><td style=\"width:15%\"><input type=\"text\" class=\"form-control\" id=\"total\" name=\"total[]\" value=\""+total+"\" readonly/></td><td style=\"width:10%\"><button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().popover('destroy');$(this).parent().parent().remove();no_entries--;$('#no_entries').html(no_entries);$('#qty_in').focus();update_counters()\" id=\"remove_row_btn\" name=\"remove_row_btn[]\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button></td></tr>");								
 			
 			$('#item_id_in').val("");
 			$('#qty_in').val("");
@@ -148,11 +161,15 @@ function add_item()
 			$('#description_in').parent().removeClass("has-error");		
 			$('#suppliers_code_in').val("");
 			$('#suppliers_code_in').parent().removeClass("has-error");
-			$('#rate_in').val("");
+			$('#rate_in').val("");			
 			$('#rate_in').parent().removeClass("has-error");
-			$('#for_in').val("");
-		
-			$('input[id=qty_in]').focus();			
+			$('#disc_in').val("");
+			$('#disc_in').parent().removeClass("has-error");
+			$('#min_hire_days_in').val("");
+			$('#min_hire_days_in').parent().removeClass("has-error");
+			$('#total_in').html("0.00");
+			
+			update_counters();
 		});		
 	}
 }
@@ -188,7 +205,7 @@ function complete( order_id )
 			url: '../complete/'+order_id,
 		}).done(function( response ) {
 			if(response == "ok")
-				window.location = '../../purchases_orders/edit/' + order_id ;
+				window.location = '../../cross_hire/edit_order/' + order_id ;
 			else
 				alert(response);
 		}).fail(function(){
@@ -207,27 +224,18 @@ function mark_to_delete( ele_button )
 		$(ele_button).parent().parent().addClass('danger');
 		$('input[name^=delete]:first', $(ele_button).parent().parent()).val("yes");
 	}
-	/*$('input[name^=qty]:first', $(ele_button).parent().parent()).val(Number($('input[name^=qty]:first', $(ele_button).parent().parent()).val())*-1);
-	$('input[name^=qty]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
-	$('input[name^=description]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
-	$('input[name^=suppliers_code]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
-	$('input[name^=cost]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
-	$('input[name^=total]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
-	$('input[name^=for]:first', $(ele_button).parent().parent()).attr('type', 'hidden');
-	$('label[for^=for]:first', $(ele_button).parent().parent()).remove();
-	$('br', $(ele_button).parent().parent()).remove();
-	$(ele_button).remove();*/
+		
 }
 
-function submit_edit_purchase_order_form()
+function submit_edit_cross_hire_order_form()
 {
 	$.ajax({
 		type: "POST",
 		url: '../save_order',
-		data: $('#edit_purchase_order_form').serialize()
+		data: $('#edit_cross_hire_order_form').serialize()
 	}).done(function( response ) {
 		if(response == "ok")
-			window.location = '../../purchases_orders/edit/' + $('#order_id').val() ;
+			window.location = '../../cross_hire/edit_order/' + $('#order_id').val() ;
 		else
 			alert(response);
 	}).fail(function(){
@@ -271,24 +279,52 @@ function purchase_order_pdf(order_id)
 	$('#purchase_ord_pdf_modal_iframe').attr("src", '../print_order_pdf/' + order_id);
 }
 
+$('button[name^=remove_row_btn]').click(function(event){
+	event.stopPropagation();
+	mark_to_delete(this);
+});
+
+
+function set_popover_to_tr(parent, qty_used, qty_idle, qty_rtns, qty_offhire)
+{	
+		
+	var options = { 
+					animation: false,
+					placement: 'right',
+					html: true,
+					template:  	'<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
+					title: '',
+					content: '<table class="table"><thead><tr><td>Used</td><td>Idle</td><td>Rtns</td><td>Off hire</td></tr></thead><tbody><tr><td>'+qty_used+'</td><td>'+qty_idle+'</td><td>'+qty_rtns+'</td><td>'+qty_offhire+'</td></tr></tbody></table>',
+					trigger: 'click'
+				};
+	$(parent).popover(options);
+	//$(parent).popover('show');
+}
+
 function total_row()
 {
-	var total = parseInt($('#qty_in').val()) * parseFloat($('#rate_in').val()).toFixed(2);
 	var discount = parseFloat($('#disc_in').val()).toFixed(2);
-	if( !isNaN(total) ){
-		if( !isNaN(discount) )
+	var rate = parseFloat($('#rate_in').val()).toFixed(2);
+	if( !isNaN(discount) )
 		{
-			discount = (total * discount)/100;
-			total = total - discount;
+			rate = (rate - (rate * discount)/100);
 		}
-		
+	var total = parseFloat(parseInt($('#qty_in').val()) * rate).toFixed(2);
+	
+	if( !isNaN(total) ){
+				
 		$('#total_in').html(parseFloat(total).toFixed(2));
 	}
 }
 
 function update_counters()
 {
-	$('#total_amount_span').html(parseFloat(total_amount).toFixed(2));
+	var total_amount = 0;
+	$('input[name^=total]').each(function(){
+		total_amount += Number(parseFloat($(this).val()).toFixed(2));
+	});
+	total_amount = parseFloat(total_amount).toFixed(2);
+	$('#total_amount_span').html(total_amount);
 	$('#no_entries').html(parseFloat(no_entries).toFixed(0));
 }
 
@@ -322,6 +358,21 @@ function validate_item_ins()
 	}else {
 		$('#rate_in').parent().removeClass("has-error");
 	}
+	
+	if( isNaN($('#disc_in').val()) || $('#disc_in').val() == "" )
+	{
+		$('#disc_in').val("0.00");
+	}else {
+		$('#disc_in').parent().removeClass("has-error");
+	}
+	
+	if( isNaN($('#min_hire_days_in').val()) || $('#min_hire_days_in').val() == "" )
+	{
+		$('#min_hire_days_in').val("0");
+	}else {
+		$('#min_hire_days_in').parent().removeClass("has-error");
+	}
+	
 	
 	return result;
 }

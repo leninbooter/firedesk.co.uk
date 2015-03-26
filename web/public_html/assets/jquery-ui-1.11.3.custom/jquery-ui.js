@@ -8008,7 +8008,7 @@ var button = $.ui.button;
  * http://api.jqueryui.com/datepicker/
  */
 
-
+/*
 $.extend($.ui, { datepicker: { version: "1.11.3" } });
 
 var datepicker_instActive;
@@ -10065,7 +10065,7 @@ $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
 $.datepicker.version = "1.11.3";
 
-var datepicker = $.datepicker;
+var datepicker = $.datepicker;*/
 
 
 /*!

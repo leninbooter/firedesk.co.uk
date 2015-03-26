@@ -86,8 +86,7 @@ class Purchases_orders extends CI_Controller
 		grid.setColSorting(\"int,str,str,str,str,str\");
 		grid.attachHeader(\"&nbsp;,#select_filter,&nbsp;,&nbsp;,&nbsp;,#select_filter\");	 
 		grid.init();
-		grid.load(\"get_all_orders_json\",\"json\");		
-		grid.enableAutoWidth(true);
+		grid.load(\"get_all_orders_json\",\"json\");
 		
 		grid.getFilterElement(5)._filter = function(){
 			var input = this.value; // gets the text of the filter input

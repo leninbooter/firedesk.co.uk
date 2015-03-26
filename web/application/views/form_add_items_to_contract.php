@@ -17,8 +17,7 @@
 		<input type="hidden" id="contract_type" name="contract_type" value="<?php echo $contract_type; ?>">
 		<h4><?php echo $contract_type; ?></h4>
 		<address>
-			<strong>xxxxxxx xxxxxx</strong><br>
-			xxx xxxxxxxx xxxxxxx xx
+			<?php echo $contract_details->address; ?>
 		</address>
 	</div>
 	<div class="col-md-4">
@@ -55,7 +54,12 @@
 		<table class="table table-hover table-responsive" id="items">
 			<thead>
 				<tr>
-					<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
+					<th>Item No</th>
+					<th style="width:10%">Qty</th>
+					<th style="width:30%" >Rtn Description</th>
+					<th style="width:20%">Rate per</th>
+					<th style="width:10%">Disc. %</th>
+					<th style="width:20%">Value</th>
 				</tr>
 			</thead>
 			<?php foreach($contract_items as $row): ?>
@@ -79,22 +83,41 @@
 				</tr>
 			<?php endforeach; ?>
 				<tr>					
-					<td><input class="form-control" type="text" id="item_no_in"/></td><td><input class="form-control" type="text" id="qty_in"/></td><td><input class="form-control" type="text" id="description_in"/></td><!--<td><input class="form-control" type="text" id="entry_in"/></td>--><td><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select  class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td><td><input class="form-control" type="text" id="desc_in"/></td>
-					<td>
-						<?php if($contract_status < 5): ?>
-							<div class="btn-group" data-toggle="buttons">		
-									 <label class="btn btn-primary <?php echo $contract_type_sale_hire == 2 ? "active":"" ?>">
-										<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
-									  </label>
-									<?php if($contract_type_sale_hire == 1): ?>					  
-										<label class="btn btn-primary">
-											<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
-										</label>
-									<?php endif; ?>
-							</div>
-						<?php endif; ?>
-					</td>
+										
 				</tr>
+		</table>
+		<!--<table class="table table-condensed" style="margin-bottom:0">
+			<tr>							
+				<td style="text-align:right; ">
+					<span style="font-size:120%;">Total </span>
+					<span id="total_amount_span" style="font-size:120%;">
+						<?php echo $contract_details->total_amount;?>
+					</span>
+				</td>
+			</tr>
+		</table>-->
+		<table class="table table-responsive table-condensed">
+			<tr class="success">
+				<td><input class="form-control" type="text" id="item_no_in"/></td>
+				<td style="width:10%"><input class="form-control" type="text" id="qty_in"/></td>
+				<td style="width:30%"><input class="form-control" type="text" id="description_in"/></td>
+				<td style="width:20%"><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td>
+				<td style="width:10%"><input class="form-control" type="text" id="desc_in"/></td>
+				<td style="width:20%">
+					<?php if($contract_status < 5): ?>
+						<div class="btn-group" data-toggle="buttons">		
+								 <label class="btn btn-primary <?php echo $contract_type_sale_hire == 2 ? "active":"" ?>">
+									<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
+								  </label>
+								<?php if($contract_type_sale_hire == 1): ?>					  
+									<label class="btn btn-primary">
+										<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
+									</label>
+								<?php endif; ?>
+						</div>
+					<?php endif; ?>
+				</td>
+			</tr>
 		</table>
 	</div>
 </div>
@@ -108,12 +131,12 @@
 <div class="row">
 		<div class="col-md-2">					
 		</div>
-		<!--<div class="col-md-1">				
+		<div class="col-md-1">				
 			<?php if($contract_status < 5): ?>
-				 <button type="button" class="btn btn-info  btn-block">Sale</button>
+				 <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hired_items_modal">Cross Hire</button>
 			<?php endif; ?>
 		</div>
-		<div class="col-md-1">
+		<!--<div class="col-md-1">
 			<?php if($contract_status < 5): ?>
 				<button type="button" class="btn btn-info  btn-block">Hire</button>
 			<?php endif; ?>
@@ -292,3 +315,58 @@
 		</div>
 	</div>
 </div>
+
+<!-- Hired items modal -->
+<?php if( $contract_status == 1): ?>
+<div class="modal fade" id="hired_items_modal" tabindex="-1" role="dialog" aria-labelledby="receipts_modal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<form id="hired_items_form" action="" role="form" >
+			<div class="modal-header">
+				<h4 class="modal-title">Available cross hired equipment</h4>
+			</div>
+			<div class="modal-body">				
+					<table id="hire_items_table" class="table table-hover table-condensed">
+							<thead>
+								<tr>
+									<th style="width:20%">Hired from</th>
+									<th style="width:15%">Order number</th>
+									<th style="width:15%">Cost</th>
+									<th style="width:10%">Qty</th>
+									<th style="width:40%">Description</th>																	
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach($hired_items as $item): ?>
+									<tr>
+										<td>
+										<input id="chi_stock_id_in" name="chi_stock_id_in[]" type="hidden" value="<?php echo $item->cross_hire_order_id; ?>"/>
+										<?php echo $item->hired_from; ?></td>
+										<td><?php echo $item->cross_hire_order_id; ?></td>
+										<td>
+										<input id="chi_cost_in" name="chi_cost_in[]" type="hidden" value="<?php echo $item->cost; ?>"/>
+										<?php echo $item->cost; ?></td>
+										<td>
+										<select id="chi_qty_in" name="chi_qty_in" class="form-control">
+											<?php for($i=0; $i <= $item->max; $i++): ?>
+												<option><?php echo $i; ?></option>
+											<?php endfor; ?>
+										</select>
+										</td>
+										<td>
+										<input id="chi_description_in" name="chi_description_in[]" type="hidden" value="<?php echo $item->description; ?>"/>
+										<?php echo $item->description; ?></td>										
+									</tr>
+								<?php endforeach; ?>
+							</tbody>
+					</table>				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-info" >Add items</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+<?php endif; ?>

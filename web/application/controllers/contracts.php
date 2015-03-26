@@ -56,6 +56,9 @@ class Contracts extends CI_Controller
 	{		
 		$this->load->helper(array('url'));
 		$this->load->model('contracts_m');
+		$this->load->model('cross_hire_m');
+		
+		$data['hired_items'] = $this->cross_hire_m->get_hired_items();
 		$data['contract_id'] = trim($this->input->get('id', true));
 		$data['contract_details'] = $this->contracts_m->get_contract_details( $data['contract_id'] );
 		$data['contract_items'] = $this->contracts_m->get_contract_items( $data['contract_id'] );
@@ -65,6 +68,8 @@ class Contracts extends CI_Controller
 		$data['address'] = $data['contract_details']->address;
 		$data['delivery_charge'] = $data['contract_details']->delivery_charge;
 		$data['contract_status'] = $data['contract_details']->fk_contract_status_id;
+		
+		
 		$this->load->view('header_nav');
 		$this->load->view('form_add_items_to_contract', $data);
 		$this->load->view('footer_common');

@@ -5,7 +5,7 @@ class Cross_hire_m extends CI_Model
 	function abandon_order( $pk_id )
 	{
 		$this->load->database();
-		$query = "call set_purchase_order_abandon(".$pk_id.");";
+		$query = "call set_cross_hire_order_abandon(".$pk_id.");";
 		$query = $this->db->query($query);
 		return !empty($query->result()) ? $query->row() : false;
 		
@@ -14,7 +14,7 @@ class Cross_hire_m extends CI_Model
 	function activate_order( $pk_id )
 	{
 		$this->load->database();
-		$query = "call set_purchase_order_complete(".$pk_id.");";
+		$query = "call set_cross_hire_order_complete(".$pk_id.");";
 		$query = $this->db->query($query);
 		return !empty($query->result()) ? $query->row() : false;
 	}
@@ -62,8 +62,28 @@ where po.pk_id = ".$pk_id;
 	public function get_order_items( $pk_id )
 	{
 		$this->load->database();
-		$query = "select pk_id, fk_cross_hire_order_id, fk_item_id, description, qty, suppliers_code, rate, perc_discount, total, comments, due_delivery_date, qty_received
+		$query = "select pk_id, fk_cross_hire_order_id, fk_item_id, description, qty, suppliers_code, rate, perc_discount, total, min_hire_days_charged, due_delivery_date, qty_received, qty_used, qty_idle, qty_rtns, qty_offhire
 					from cross_hire_orders_items where fk_cross_hire_order_id = ".$pk_id;
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
+	public function get_hired_items()
+	{
+		$this->load->database();
+		$query ="select
+					 s.name as 'hired_from',
+					 chois.fk_cross_hire_order_id as 'cross_hire_order_id',
+					 chois.cost as 'cost',
+					 chois.fk_cross_hire_order_item_id,
+					 count(chois.fk_cross_hire_order_item_id) as 'max',
+					 choi.description as 'description',
+					 choi.fk_item_id as 'stock_id'
+				from cross_hire_items_stock as chois
+					 INNER JOIN cross_hire_orders_items as choi on choi.pk_id = chois.fk_cross_hire_order_item_id
+					 INNER JOIN cross_hire_orders as cho on cho.pk_id = chois.fk_cross_hire_order_id
+					 INNER JOIN suppliers as s on s.pk_id = cho.fk_supplier_id
+				group by chois.fk_cross_hire_order_item_id;";
 		$query = $this->db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}
@@ -72,19 +92,18 @@ where po.pk_id = ".$pk_id;
 	{
 		$this->load->database();
 		$query = "select
-			po.pk_id, 
-			po.fk_supplier_id, 
-			po.delivery_address, 
-			po.contact_name, 
-			po.contact_telephone, 
-			po.contact_email, 
-			po.creation_date, 
-			po.operator, 
-			po.fk_status, 
-			po.total_amount,
+			cho.pk_id, 
+			cho.fk_supplier_id, 
+			cho.creation_date, 
+			cho.fk_status, 
+			cho.total_amount,
 			s.name,
-			sts.description
-			from purchases_orders as po inner join suppliers as s on po.fk_supplier_id = s.pk_id inner join purchases_orders_status as sts on sts.pk_id = po.fk_status ;";
+			sts.description as 'status',
+            choi.description
+			from cross_hire_orders as cho
+				inner join cross_hire_orders_items as choi on choi.fk_cross_hire_order_id = cho.pk_id
+				inner join suppliers as s on cho.fk_supplier_id = s.pk_id 
+                inner join purchases_orders_status as sts on sts.pk_id = cho.fk_status;";
 		$query = $this->db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}
@@ -140,17 +159,15 @@ where po.pk_id = ".$pk_id;
 		
 		array_walk($vars_array, "self::clean_vars");
 		
-		$query = "CALL ins_purch_ord_item(
+		$query = "CALL ins_cross_hire_ord_item(
 											".$this->db->escape_str($vars_array["order_id"]).",
 											".$this->db->escape_str($vars_array["item_id"]).",
 											'".$this->db->escape_str($vars_array["description"])."',
 											".$this->db->escape_str($vars_array["qty"]).",											
 											'".$this->db->escape_str($vars_array["suppliers_code"])."',
-											".$this->db->escape_str($vars_array["cost"]).",											
-											NULL,
-											".$this->db->escape_str($vars_array["total"]).",
-											'".$this->db->escape_str($vars_array["for"])."',
-											NULL
+											".$this->db->escape_str($vars_array["rate"]).",											
+											".$this->db->escape_str($vars_array["disc"]).",	
+											".$this->db->escape_str($vars_array["total"])."
 										);";
 				
 		$query = str_replace("'NULL'", "NULL", $query);		

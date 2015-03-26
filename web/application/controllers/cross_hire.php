@@ -4,12 +4,12 @@ class Cross_hire extends CI_Controller
 {
 	public function abandon()
 	{
-		$this->load->model('purchases_orders_m');
+		$this->load->model('cross_hire_m');
 		$pk_id = trim($this->uri->segment(3));
 		
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
-			if(!$this->purchases_orders_m->abandon_order( $pk_id ))
+			if(!$this->cross_hire_m->abandon_order( $pk_id ))
 			{
 				echo "ko-db";
 				return;
@@ -22,12 +22,12 @@ class Cross_hire extends CI_Controller
 	
 	public function complete()
 	{
-		$this->load->model('purchases_orders_m');
+		$this->load->model('cross_hire_m');
 		$pk_id = trim($this->uri->segment(3));
 		
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
-			if(!$this->purchases_orders_m->activate_order( $pk_id ))
+			if(!$this->cross_hire_m->activate_order( $pk_id ))
 			{
 				echo "ko-db";
 				return;
@@ -63,33 +63,33 @@ class Cross_hire extends CI_Controller
 		}			
 	}
 	
-	public function list_all()
+	public function existing_orders()
 	{
-		$this->load->model('purchases_orders_m');
+		$this->load->model('cross_hire_m');
 		
-		$data['orders'] = $this->purchases_orders_m->get_all_purchase_orders();
+		$data['orders'] = $this->cross_hire_m->get_all_purchase_orders();
 		
 		$this->load->view('header_nav');
 		
 		$this->load->view('footer_common');
-		$this->load->view('purchase_orders_list_all', $data);
+		$this->load->view('cross_hire_orders_list_all', $data);
 		//$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
 		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.js')."\"></script>");	
 		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/ext/dhtmlxgrid_filter.js')."\"></script>");	
 
 		$this->output->append_output("<script>
 		var grid = new dhtmlXGridObject('gridbox');
-		grid.setHeader(\"Order No,Supplier,Date,Operator, Total Amount, Status\");
-		grid.setInitWidths(\"100,300,200,200,200,100\");
-		grid.setColAlign(\"left,left, left,left,right,right\"); 
-		grid.setColTypes(\"ron,ro,ro,ro,ron,ro\"); 
-		grid.setColSorting(\"int,str,str,str,str,str\");
-		grid.attachHeader(\"&nbsp;,#select_filter,&nbsp;,&nbsp;,&nbsp;,#select_filter\");	 
+		grid.setHeader(\"On hire, Order No.,Description, Hired from, Status\");
+		grid.setInitWidths(\"200,100,300,300,100\");
+		grid.setColAlign(\"left,left, left,left,left\"); 
+		grid.setColTypes(\"ro,ron,ro,ro,ro\"); 
+		grid.setColSorting(\"str,str,str,str,str\");
+		grid.attachHeader(\"&nbsp;,&nbsp;,#select_filter,#select_filter,#select_filter\");	 
 		grid.init();
 		grid.load(\"get_all_orders_json\",\"json\");		
-		grid.enableAutoWidth(true);
 		
-		grid.getFilterElement(5)._filter = function(){
+		
+		grid.getFilterElement(4)._filter = function(){
 			var input = this.value; // gets the text of the filter input
 			return function(value, id){
 				var val=grid.cells(id,5).getValue();
@@ -105,11 +105,11 @@ class Cross_hire extends CI_Controller
 		
 		grid.attachEvent(\"onXLE\", function(grid_obj,count){
 			$('#gridbox tr').dblclick(function(){
-				location.href=\"".base_url('index.php/purchases_orders/edit')."\/\"+$('td:first', $(this)).html();
+				location.href=\"".base_url('index.php/cross_hire/edit_order')."\/\"+$('td:first', $(this)).next().html();
 			}).on('keyup',function(e){
 				if(e.which() ==  13)
 				{
-					location.href=\"".base_url('index.php/purchases_orders/edit')."\/\"+$('td:first', $(this)).html();
+					location.href=\"".base_url('index.php/cross_hire/cross_hire')."\/\"+$('td:first', $(this)).html();
 				}
 			});
 		});
@@ -196,17 +196,17 @@ class Cross_hire extends CI_Controller
 	
 	public function get_all_orders_json()
 	{	
-		$this->load->model('purchases_orders_m');
+		$this->load->model('cross_hire_m');
 		
 		header('Content-type: application/json');
-		if( ($results = $this->purchases_orders_m->get_all_purchase_orders() ) != false )
+		if( ($results = $this->cross_hire_m->get_all_purchase_orders() ) != false )
 		{	
 			$rows = array();
 			$data = array();
 			$id = 1;
 			foreach($results as $order)
 			{	
-				array_push( $data, array( 'id' => $id, "data" => array(intval($order->pk_id), $order->name,date('d/m/Y - H:i', strtotime( $order->creation_date )),$order->operator, $order->total_amount,$order->description )));
+				array_push( $data, array( 'id' => $id, "data" => array(date('d/m/Y - H:i', strtotime( $order->creation_date )), intval($order->pk_id), $order->description, $order->name, $order->status)));
 				$id++;
 			}		
 			
@@ -215,7 +215,7 @@ class Cross_hire extends CI_Controller
 		{
 			echo "[]";
 		}
-	}
+	}	
 	
 	public function print_outstanding_orders_pdf()
 	{
@@ -416,21 +416,22 @@ class Cross_hire extends CI_Controller
 				$qty = trim($this->security->xss_clean($_POST["qty"][$i]));
 				$description = trim($this->security->xss_clean($_POST["description"][$i]));
 				$suppliers_code = trim($this->security->xss_clean($_POST["suppliers_code"][$i]));
-				$cost = trim($this->security->xss_clean($_POST["cost"][$i]));
+				$rate = trim($this->security->xss_clean($_POST["rate"][$i]));
+				$disc = trim($this->security->xss_clean($_POST["disc"][$i]));				
+				$min = trim($this->security->xss_clean($_POST["min"][$i]));
 				$total = trim($this->security->xss_clean($_POST["total"][$i]));
-				$for = trim($this->security->xss_clean($_POST["for"][$i]));
 				$delete = trim($this->security->xss_clean($_POST["delete"][$i]));					
 				if($delete == "yes")
 					$qty*=-1;
 				
 				if( is_numeric($item_id) &&
 					( ( is_numeric($qty) )) && 
-					( ( is_numeric($cost) && $cost > 0 )) &&
+					( ( is_numeric($rate) && $rate > 0 )) &&
 					( ( is_numeric($total) && $total > 0 )) &&
-					( ($qty > 0 && $total == $cost * $qty )|| $qty < 0 )				
+					( ($qty > 0 && ($total == $rate * $qty || $total == $rate * $qty - (($rate * $qty)*$disc)/100) )|| $qty < 0 )				
 				)
 				{
-					$item = compact('order_id', 'item_id', 'qty', 'description', 'suppliers_code', 'cost', 'total', 'for' );
+					$item = compact('order_id', 'item_id', 'qty', 'description', 'suppliers_code', 'rate', 'disc' ,'total', 'min' );
 					array_push($all_items, $item);							
 				}else
 				{
@@ -440,11 +441,11 @@ class Cross_hire extends CI_Controller
 							
 			}
 			
-			$this->load->model('purchases_orders_m');
+			$this->load->model('cross_hire_m');
 			
 			foreach( $all_items as $i )
 			{
-				if( !$this->purchases_orders_m->save_item($i) )
+				if( !$this->cross_hire_m->save_item($i) )
 				{
 					echo "ko-db";
 					return;
