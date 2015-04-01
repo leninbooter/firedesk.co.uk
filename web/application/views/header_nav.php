@@ -47,20 +47,20 @@
 						<li><a href="<?php echo base_url('index.php/customers/list_names_address'); ?>">List customer names/addresses</a></li>
 					</ul>
 				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Hire Fleet</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Hire Fleet<br/>&nbsp;</a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="<?php echo base_url('index.php/hire_stock/new_item'); ?>">New item</a></li>
+						<li><a href="<?php echo base_url('index.php/hire_stock/fleet_records'); ?>">Fleet records</a></li>
 						<li><a href="<?php echo base_url('index.php/hire_stock/groups'); ?>">Group changes</a></li>
-						<li><a href="#">Discount groups</a></li>
-						<li><a href="#">Safety Tests</a></li>
+						<!--<li><a href="#">Discount groups</a></li>-->
+						<!--<li><a href="#">Safety Tests</a></li>
 						<li><a href="#">Nett rates</a></li>
 						<li><a href="#">Global</a></li>
 						<li><a href="#">Fleet status</a></li>
-						<li><a href="#">Price List</a></li>
+						<li><a href="#">Price List</a></li>-->
 						<li><a href="#">Reports</a></li>
 					</ul>
 				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Cross Hire</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Cross Hire<br/>&nbsp;</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/cross_hire/new_order'); ?>">New/existing order</a></li>
 						<li><a href="<?php echo base_url('index.php/cross_hire/existing_orders'); ?>">Display existing orders</a></li>
@@ -91,8 +91,16 @@
 					</ul>
 				</li>
 				<li><a href="#">Servicing<br/>&nbsp;</a></li>
-				<li><a href="#">Ledgers & Cashbook</a></li>
-				<li><a href="#">Diary Messages</a></li>
+				<!--<li><a href="#">Ledgers & Cashbook</a></li>-->
+				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Diary Messages</a>
+					<ul class="dropdown-menu" role="menu">
+						<!--<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary/general'); ?>">General diary</a></li>-->
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Diary</a></li>												
+						<li class="divider"></li>						
+						<li><a href=""  data-toggle="modal" data-target="#messenger_new_message_modal">Send a message</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#messenger_messages_modal">Read messages</a></li>												
+					</ul>						
+				</li>
 				<li><a href="#">Reports<br/>&nbsp;</a></li>
 			  </ul>
 			</div>

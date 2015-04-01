@@ -216,7 +216,8 @@
 						<th style="width:10%">Fleet number</th>
 						<th style="width:50%">Description</th>
 						<th style="width:20%">Total stock</th>
-						<th style="width:20%">Required</th>
+						<th style="width:10%">Required</th>
+						<th style="width:10%"></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -228,6 +229,26 @@
 				<input type="text" id="search_hire_item" class="form-control input-sm" />
 				</div>
 				<button type="submit" class="btn btn-primary btn-block">Save components</button>
+			</div>
+		</div>
+		</form>
+	</div>
+</div>
+
+<div class="modal fade" id="multiple_item_qty_modal" tabindex="-1" role="dialog" aria-labelledby="multiple_item_qty_modal" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<form  role="form" id="multiple_item_qty_form" class="form-inline">
+		<input type="hidden" id="parent_item" name="parent_item" value=""/>
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Please supply the initial quantity of the item</h4>
+			</div>
+			<div class="modal-body">			
+				<div class="form-group">
+					<label>Qty</label>
+					<input type="text" id="new_item_qty_in" name="new_item_qty_in" class="form-control input-sm" value="0" />
+				</div>
+				<button type="submit" class="btn btn-primary  btn-sm">Save</button>
 			</div>
 		</div>
 		</form>

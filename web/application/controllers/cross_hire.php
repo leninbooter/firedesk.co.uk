@@ -69,8 +69,7 @@ class Cross_hire extends CI_Controller
 		
 		$data['orders'] = $this->cross_hire_m->get_all_purchase_orders();
 		
-		$this->load->view('header_nav');
-		
+		$this->load->view('header_nav');		
 		$this->load->view('footer_common');
 		$this->load->view('cross_hire_orders_list_all', $data);
 		//$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		

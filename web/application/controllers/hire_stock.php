@@ -1,14 +1,139 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Hire_stock extends CI_Controller
-{
+{	
+	public function acqs_rms_json()
+	{
+		$this->load->library('session');
+		
+		$pk_id = $this->session->flashdata('hire_item_id');
+		$this->session->keep_flashdata('hire_item_id');
+		
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->model('hire_stock_m');
+			$items = $this->hire_stock_m->select_acqs_rems($pk_id);
+			
+			$data = array();
+			$id = 1;
+			foreach($items as $i)
+			{
+				array_push($data, array( 'id' => $id, "data"=> array( $i->pk_id, $i->type, $i->fk_disposal_deducted_from == null ? $i->qty : $i->qty*-1, $i->disposed , date('d/m/Y', strtotime( $i->date_time)),  $i->cost_value_each, $i->notes, $i->fk_disposal_deducted_from != null ? $i->fk_disposal_deducted_from : $i->fk_disposal_deducted_from )));
+				$id++;
+			}
+			
+			//, "Accesory Group^javascript:edit_qtys(".$i->pk_id.");^_self",
+			//"Remove group^javascript:remove_group(".$i->pk_id.");^_self"
+			
+			header('Content-type: application/json');
+			echo json_encode(array( "rows" => $data));
+		}else{
+			echo "Not allowed";
+		}
+	}
+
+	public function add_remove()
+	{			
+		$pk_id = trim($this->security->xss_clean($this->uri->segment(3)));
+
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->model('hire_stock_m');
+			$this->load->library('session');
+			
+			$this->session->set_flashdata('hire_item_id', $pk_id);
+			
+			$data['item_id'] = $pk_id;
+			$data['item_details'] = $this->hire_stock_m->select_item_details($pk_id);			
+			
+			$this->load->view('header_nav');
+			$this->load->view('hire_stock_adds_disps', $data);		
+			$this->load->view('footer_common');
+			$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.js')."\"></script>");	
+			$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/ext/dhtmlxgrid_filter.js')."\"></script>");	
+			$this->output->append_output("<script src=\"".base_url('assets/js/hire_stock_adds_disps.js')."\"></script>");
+			$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
+			$this->load->view('footer_copyright');
+			$this->load->view('footer');
+		}
+		
+		
+	}
+	
+	public function fleet_records()
+	{
+		$data = array();
+		
+		$this->load->view('header_nav');
+		$this->load->view('hire_stock_fleet_records', $data);		
+		$this->load->view('footer_common');
+		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.js')."\"></script>");	
+		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/ext/dhtmlxgrid_filter.js')."\"></script>");	
+		$this->output->append_output("<script src=\"".base_url('assets/js/hire_stock_fleet_records.js')."\"></script>");
+		$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
+		$this->load->view('footer_copyright');
+		$this->load->view('footer');
+	}
+	
+	public function fleet_records_json()
+	{		
+		$this->load->model('hire_stock_m');
+		
+		$items = $this->hire_stock_m->select_all_items();
+		
+		$data = array();
+		$id = 1;
+		foreach($items as $i)
+		{
+			array_push($data, array( 'id' => $id, "data"=> array( $i->pk_id, $i->fleet_number, $i->description, $i->qty, $i->family_group, $i->type)));
+			$id++;
+		}
+		
+		//, "Accesory Group^javascript:edit_qtys(".$i->pk_id.");^_self",
+		//"Remove group^javascript:remove_group(".$i->pk_id.");^_self"
+		
+		header('Content-type: application/json');
+		echo json_encode(array( "rows" => $data));
+	}
+	
+	public function get_components()
+	{
+		$pk_id = trim($this->security->xss_clean($this->uri->segment(3)));
+
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->library('session');
+			$this->load->model('hire_stock_m');
+			
+			$this->session->set_flashdata('new_item_id', $pk_id);
+			
+			$data['components'] = $this->hire_stock_m->select_components_from($pk_id);
+			
+			$this->load->view('hire_stock_items_components', $data);
+		}
+	}
+	
 	public function get_eligible_items_for_group_json()
 	{
-		$this->load->model('stock_m');
 		$this->load->model('hire_stock_m');
 		
 		header('Content-type: application/json');
 		echo json_encode($this->hire_stock_m->select_elegible_items());
+	}
+	
+	public function get_groups_json()
+	{
+		$this->load->model('hire_stock_m');
+		
+		$groups = $this->hire_stock_m->get_groups_all();
+		
+		$data = array();
+		foreach($groups as $g)
+		{
+			array_push($data, array( "pk_id"=>$g->pk_id, "label"=>$g->name, "fleet_number"=>"", "qty"=>"0"));
+		}
+		header('Content-type: application/json');
+		echo json_encode($data);
 	}
 	
 	public function get_multiple_items_json()
@@ -79,6 +204,8 @@ class Hire_stock extends CI_Controller
 		}
 	}
 	
+	
+	
 	public function ins_charging_band()
 	{
 		$this->load->helper(array('form', 'url'));
@@ -132,74 +259,7 @@ class Hire_stock extends CI_Controller
 			   
 	}
 	
-	public function save_group()
-	{
-		$this->load->helper(array('form', 'url'));
-		
-		$name 				= $this->input->post('name', true);
-		$basic_rate 		= $this->input->post('basic_rate', true);		
-		$charging_band_id 	= $this->input->post('charging_band', true);		
-		$vat_code_id 		= $this->input->post('vat_code', true);
-		$group_id = trim($this->security->xss_clean($_POST['group_id']));
-		
-		if($charging_band_id!="")
-		{
-			$vars_array = compact("name",
-		                      "basic_rate", 			
-		                      "charging_band_id", 			
-		                      "vat_code_id"
-							  );
-		
-			$this->load->model('hire_stock_m');
-			
-			
-			if($group_id != "")
-			{				
-				$vars_array['group_id'] = $group_id;
-				
-				if($this->hire_stock_m->update_group( $vars_array ))
-				{
-					echo "ok";
-					return;
-				}else{
-					echo "ko";
-				}
-			}else{
-				$result = $this->hire_stock_m->insert_group( $vars_array );
-			}
-			
-			if( $result != false )
-			{
-				if(is_numeric($result))
-				{
-					log_message('debug', 'count: '.count($_POST['accesory_group']));
-					for($i = 0; $i < count($_POST['accesory_group']); $i++)
-					{
-						$data = trim($this->security->xss_clean($_POST['accesory_group'][$i]));	
-						$data = explode(",", $data);
-						$group_id = $result;
-						$item_type = $data[1];
-						$item_id = $data[0];
-						if(isset($_POST['accesory_group_qty'][$i]))
-							$qty = trim($this->security->xss_clean($_POST['accesory_group_qty'][$i]));	
-						
-						$vars_array = compact("group_id", "item_type", "item_id", "qty");
-						if( $this->hire_stock_m->ins_accesory_to_group( $vars_array ) == false )
-						{
-							echo "ko";
-							break;
-						}
-					}				
-					echo "ok";
-				}elseif($result == "exists"	)
-				{
-					echo "exists";
-				}
-			}
-		}else{
-			echo "Please, pick a charging band.";
-		}		
-	}
+	
 	
 	public function items_from_family_from_json()
 	{
@@ -316,31 +376,139 @@ class Hire_stock extends CI_Controller
 		$this->load->view('footer');
 	}
 	
-	public function save_components_members()
+	public function save_acquisition()
 	{
-		$this->load->model('hire_stock_m');
-		
-		for($i = 0; $i<count($_POST['new_item_id_in']); $i++)
-		{
-			$parent_item = $this->input->post('parent_item', true);
-			$item_id	= trim($this->security->xss_clean($_POST['new_item_id_in'][$i]));
-			$qty	= trim($this->security->xss_clean($_POST['new_item_qty_in'][$i]));
+		if(isset($_POST['qty']))
+		{			
+			$item_id = $this->input->post('item_id', true);
+			$qty = $this->input->post('qty', true);
+			$date_time = $this->input->post('date', true);
+			$cost_value_each = $this->input->post('cost', true);			
+			$notes = $this->input->post('notes', true);			
+			$vars_array = compact("item_id", "qty", "date_time", "cost_value_each", "notes");
 			
-			$vars_array = compact("parent_item", "item_id", "qty");
-			if($this->hire_stock_m->ins_item_to_family($vars_array) == false)
+			if(is_int(intval($qty)) && is_numeric($cost_value_each))
 			{
-				$return = array("result"=>"ko", "error"=>"error saving in the database");
-			echo json_encode($return);
-				return;
+				$this->load->model('hire_stock_m');
+				if($this->hire_stock_m->insert_stock($vars_array))
+				{
+					$return = array("result"=>"ok");
+				}
+				
+			}else {
+				$return = array("result"=>"ko", "error"=>"Invalid format");			
 			}
 			
+			header('Content-type: application/json');
+			echo json_encode($return);
 		}
-		$return = array("result"=>"ok");
+	}
+	
+	public function save_components_members()
+	{
+		$this->load->library('session');
+		$this->load->model('hire_stock_m');
+		
+		if(isset($_POST['new_item_id_in']))
+		{
+			for($i = 0; $i<count($_POST['new_item_id_in']); $i++)
+			{				
+				$parent_item = $this->session->flashdata('new_item_id');		
+				$this->session->keep_flashdata('new_item_id');				
+				$item_id	= trim($this->security->xss_clean($_POST['new_item_id_in'][$i]));
+				if( isset($_POST['new_item_qty_in'][$i]))
+					$qty		= trim($this->security->xss_clean($_POST['new_item_qty_in'][$i]));
+				else
+					$qty = false;
+				
+				$vars_array = compact("parent_item", "item_id", "qty");
+				
+				if( $_POST['new_item'][$i] == "yes") 
+				{	
+					if($qty != false){
+						if($this->hire_stock_m->ins_item_component($vars_array) == false)
+						{
+							$return = array("result"=>"ko", "error"=>"error saving in the database");
+							break;
+						}
+					}else {
+						if($this->hire_stock_m->ins_component_group($vars_array) == false)
+						{
+							$return = array("result"=>"ko", "error"=>"error saving in the database");
+							break;
+						}
+					}
+				}elseif($_POST['new_item'][$i] == "no")
+				{
+					if( $_POST['delete'][$i] == "yes")
+					{					
+						if($qty != false){
+							if($this->hire_stock_m->delete_item_component($vars_array) == false)
+							{
+								$return = array("result"=>"ko", "error"=>"error saving in the database");
+								break;
+							}
+						}else{
+							if($this->hire_stock_m->delete_component_group($vars_array) == false)
+							{
+								$return = array("result"=>"ko", "error"=>"error saving in the database");
+								break;
+							}
+						}
+					}elseif($_POST['delete'][$i] == "no")
+					{
+						if($qty != false){							
+							if($this->hire_stock_m->update_item_component($vars_array) == false)
+							{
+								$return = array("result"=>"ko", "error"=>"error saving in the database");
+								break;
+							}
+						}
+					}
+				}
+				
+			}
+			$return = array("result"=>"ok");
+		}else{
+			$return = array("result"=>"nothing");
+			
+		}		
 		echo json_encode($return);
+	}
+	
+	public function save_disposal()
+	{
+		if(isset($_POST['qty']))
+		{			
+			$item_id = $this->input->post('item_id', true);
+			$qty = $this->input->post('qty', true);
+			$date_time = $this->input->post('date', true);
+			$cost_value_each = $this->input->post('cost', true);			
+			$notes = $this->input->post('notes', true);			
+			$acquisition_id = $this->input->post('acquisition_id', true);			
+			
+			$vars_array = compact("item_id", "qty", "date_time", "cost_value_each", "notes", "acquisition_id");
+			
+			if(is_int(intval($qty)) && is_numeric($cost_value_each))
+			{
+				$this->load->model('hire_stock_m');
+				if($this->hire_stock_m->delete_stock($vars_array))
+				{
+					$return = array("result"=>"ok");
+				}
+				
+			}else {
+				$return = array("result"=>"ko", "error"=>"Invalid format");			
+			}
+			
+			header('Content-type: application/json');
+			echo json_encode($return);
+		}
 	}
 	
 	public function save_item()
 	{
+		$this->load->library('session');
 		$this->load->helper(array('form', 'url'));		
 
 		$fleet_number			= $this->input->post('fleet_number', true);
@@ -388,6 +556,7 @@ class Hire_stock extends CI_Controller
 		$result = $this->hire_stock_m->ins_hire_item( $vars_array );
 		if( $result != false )
 		{
+				$this->session->set_flashdata('new_item_id', $result);
 				$return = array("result"=>"ok", "new_item_id"=>$result, "type"=>$hire_item_type);
 				echo json_encode($return);
 		}
@@ -440,6 +609,75 @@ class Hire_stock extends CI_Controller
 		echo base_url('index.php/sales_stock/new_existing/'.$item_id);
 	}*/
 	
+	public function save_group()
+	{
+		$this->load->helper(array('form', 'url'));
+		
+		$name 				= $this->input->post('name', true);
+		$basic_rate 		= $this->input->post('basic_rate', true);		
+		$charging_band_id 	= $this->input->post('charging_band', true);		
+		$vat_code_id 		= $this->input->post('vat_code', true);
+		$group_id = trim($this->security->xss_clean($_POST['group_id']));
+		
+		if($charging_band_id!="")
+		{
+			$vars_array = compact("name",
+		                      "basic_rate", 			
+		                      "charging_band_id", 			
+		                      "vat_code_id"
+							  );
+		
+			$this->load->model('hire_stock_m');
+			
+			
+			if($group_id != "")
+			{				
+				$vars_array['group_id'] = $group_id;
+				
+				if($this->hire_stock_m->update_group( $vars_array ))
+				{
+					echo "ok";
+					return;
+				}else{
+					echo "ko";
+				}
+			}else{
+				$result = $this->hire_stock_m->insert_group( $vars_array );
+			}
+			
+			if( $result != false )
+			{
+				if(is_numeric($result))
+				{
+					log_message('debug', 'count: '.count($_POST['accesory_group']));
+					for($i = 0; $i < count($_POST['accesory_group']); $i++)
+					{
+						$data = trim($this->security->xss_clean($_POST['accesory_group'][$i]));	
+						$data = explode(",", $data);
+						$group_id = $result;
+						$item_type = $data[1];
+						$item_id = $data[0];
+						if(isset($_POST['accesory_group_qty'][$i]))
+							$qty = trim($this->security->xss_clean($_POST['accesory_group_qty'][$i]));	
+						
+						$vars_array = compact("group_id", "item_type", "item_id", "qty");
+						if( $this->hire_stock_m->ins_accesory_to_group( $vars_array ) == false )
+						{
+							echo "ko";
+							break;
+						}
+					}				
+					echo "ok";
+				}elseif($result == "exists"	)
+				{
+					echo "exists";
+				}
+			}
+		}else{
+			echo "Please, pick a charging band.";
+		}		
+	}
+	
 	public function save_accesory_group()
 	{
 		if($_SERVER['REQUEST_METHOD'] === 'POST')
@@ -491,6 +729,32 @@ class Hire_stock extends CI_Controller
 			}			
 			echo "ok";			
 		}		
+	}
+	
+	public function save_new_multiple_item_qty()
+	{
+		$this->load->library('session');
+		$this->load->model('hire_stock_m');
+		
+		if(isset($_POST['new_item_qty_in']))
+		{
+			$parent_item 	= $this->session->flashdata('new_item_id');
+			$qty			= trim($this->security->xss_clean($_POST['new_item_qty_in']));
+			
+			$vars_array = compact("parent_item", "qty");
+			
+			if($this->hire_stock_m->ins_initial_qty($vars_array) == false)
+			{
+				$return = array("result"=>"ko", "error"=>"error saving in the database");
+				break;
+			}
+				
+			$return = array("result"=>"ok");
+		}else{
+			$return = array("result"=>"Not allowed");
+			
+		}
+		echo json_encode($return);
 	}
 	
 	public function shorttext_valid( $valor )

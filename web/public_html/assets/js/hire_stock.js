@@ -1,3 +1,5 @@
+var options = { backdrop: 'static', keyboard: false, show:true };
+
 $( document ).ready(function() {
 	/*
 	* Date 
@@ -45,12 +47,15 @@ $( document ).ready(function() {
 		}).done(function( json ) {
 			if(json.result == "ok")
 			{
-				if(json.type != "1")
+				if(parseInt(json.type) > 2 )
 				{	
 					set_searcher(json.type);
 					$('#components_form #parent_item').val(json.new_item_id);
-					var options = {backdrop: 'static', keyboard: false, show:true};
 					$('#components_modal').modal(options);
+				}else if(parseInt(json.type) == 2)
+				{
+					$('#components_form #parent_item').val(json.new_item_id);
+					$('#multiple_item_qty_modal').modal(options);
 				}else{
 					location.href="../hire_stock/fleet_records";
 				}
@@ -75,7 +80,35 @@ $( document ).ready(function() {
 			if(json.result == "ok")
 			{				
 				$('#components_modal').modal('hide');
-				location.href="../hire_stock/fleet_records";			
+				location.href="../hire_stock/fleet_records";
+			}else if(json.result =="nothing")
+			{
+				if(confirm("There are no components added; please confirm to continue."))
+				{
+					$('#components_modal').modal('hide');
+					location.href="../hire_stock/fleet_records";
+				}
+			}else{
+				alert("Request error");
+			}
+			
+		}).fail(function(){
+			alert("Technical error");
+		});		
+	});
+	
+	$('#multiple_item_qty_form').submit(function(event){
+		event.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: 'save_new_multiple_item_qty',
+			data: $(this).serialize(),
+			dataType: "json"
+		}).done(function( json ) {
+			if(json.result == "ok")
+			{				
+				$('#components_modal').modal('hide');
+				location.href="../hire_stock/fleet_records";
 			}else{
 				alert("Request error");
 			}
@@ -99,7 +132,7 @@ function set_searcher( type )
 		func = "get_multiple_items_json";
 	}else if( type == 4)
 	{
-		func = "groups_json";
+		func = "get_groups_json";
 	}		
 		
 	$.get( "../hire_stock/"+func, function( data ) {
@@ -112,14 +145,26 @@ function set_searcher( type )
 						return false;
 					},
 					select: function( event, ui ) {
+						var html = "<tr>\
+									<td style=\"display:none\">\
+									<input type=\"hidden\" id=\"new_item\" name=\"new_item[]\" value=\"yes\">\
+									<input type=\"hidden\" id=\"delete\" name=\"delete[]\" value=\"no\">\
+									<input type=\"hidden\" id=\"new_item_id_in\" name=\"new_item_id_in[]\" value=\""+ui.item.pk_id+"\"></td>\
+									<td>"+ui.item.fleet_number+"</td>\
+									<td>"+ui.item.label+"</td>";
 						
-							$('#items_table > tbody').append(
-							"<tr>\
-								<td><input type=\"hidden\" id=\"new_item_id_in\" name=\"new_item_id_in[]\" value=\""+ui.item.pk_id+"\">"+ui.item.fleet_number+"</td>\
-								<td>"+ui.item.label+"</td>\
-								<td>"+ui.item.qty+"</td>\
-								<td><input type=\"text\" id=\"new_item_qty_in\" name=\"new_item_qty_in[]\" class=\"form-control input-sm\"/></td>\
-							</tr>");													
+						if(type < 4){
+							html = html + "<td>"+ui.item.qty+"</td><td><input type=\"text\" id=\"new_item_qty_in\" name=\"new_item_qty_in[]\" class=\"form-control input-sm\"/></td>\
+							<td><button type=\"button\" class=\"btn btn-default btn-sm\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button>\
+							</tr>";
+						}else{
+							html = html + "<td></td>\
+							<td></td>\
+							<td><button type=\"button\" class=\"btn btn-default btn-sm\" aria-label=\"Left Align\" onclick=\"$(this).parent().parent().remove();\"><span class=\"glyphicon glyphicon-minus-sign\" aria-hidden=\"true\"></span></button>\
+							</tr>";
+						}
+						
+						$('#items_table > tbody').append(html);												
 					
 						$( '#search_hire_item' ).val("");
 						return false;
@@ -129,6 +174,6 @@ function set_searcher( type )
 						return $( "<li>" )
 						.append( "<a>" + item.label + "</a>" )
 						.appendTo( ul );
-			};
+					};
 		});
 }

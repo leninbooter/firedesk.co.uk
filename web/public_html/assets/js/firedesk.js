@@ -239,6 +239,32 @@ $( '#form_contacto' ).submit( function( event ) {
 	}
 });
 
+/*
+*
+* New message form
+*/
+
+$('#messenger_new_message_form').submit(function(event){
+	event.preventDefault();
+	$.ajax({
+			type: "POST",
+			url: '../messenger/save_message',
+			data: $(this).serialize(),
+			dataType: "json"
+		}).done(function( json ) {
+			if(json.result == "ok")
+			{				
+				$('#messenger_new_message_form')[0].reset();
+				$('#messenger_new_message_modal').modal('hide');				
+			}else{
+				alert(json.error);
+			}
+			
+		}).fail(function(){
+			alert("Technical error");
+		});	
+});
+
 /* New customer form */
 $( '#new_customer_form' ).submit( function( event ) {
 	
@@ -343,4 +369,84 @@ $( document ).ready(function() {
 			.on('changeDate', function(ev){
 				$(this).datepicker('hide');
 			});
+	
+	/*
+	*
+	* Messages
+	*/
+	$.get( location.href.substring(0,location.href.lastIndexOf("index.php")) +"index.php/users/get_all_users_json", function( data ) {
+		var items = data;
+		var validate = function(selected) {
+			var matches = $.grep(items, function(n, i) {
+				return selected.toLowerCase() == n.label.toLowerCase();
+			});
+			
+			if(!matches.length)
+			{	$('#messenger_new_message_form #to_string').parent().addClass("has-error");
+				$('#messenger_new_message_form #to').val('');}
+			else
+			{
+				$('#messenger_new_message_form #to_string').parent().removeClass("has-error");
+				
+			}
+		};
+		$( '#messenger_new_message_form #to_string' ).autocomplete({
+			minLength: 0,
+			source: items,
+			focus: function( event, ui ) {
+				//$('#messenger_new_message_form #to_string').val( ui.item.label );
+					return false;
+				},
+				select: function( event, ui ) {
+					$('#messenger_new_message_form #to_string').val( ui.item.label );
+					$('#messenger_new_message_form #to').val(ui.item.pk_id);
+					validate(ui.item.label);
+					return false;
+				}
+			})
+			.keyup(function() {
+				var $parentContext = $(this);				
+				validate($parentContext.val());
+			})
+			.autocomplete( "instance" )._renderItem = function( ul, item ) {
+				return $( "<li>" )
+				.append( "<a>" + item.label + "</a>" )
+				.appendTo( ul );
+			};
+	});	
+	$('#messenger_messages_modal').on('show.bs.modal', function (e) {
+		$('.modal-content', this).load(location.href.substring(0,location.href.lastIndexOf("index.php")) +"index.php/messenger/inbox");
+	});	
 });
+
+function messenger_read_message( obj, msg_id )
+{
+	$(obj).removeClass("active");
+	$.get( "../messenger/message_read", {message: msg_id} , function( json ) {
+		if(json.result == "ko")
+		{
+			$(obj).addClass("active");
+		}
+	}, "json")
+}
+
+function messenger_delete_msg( event, obj, msg_id )
+{
+	event.stopPropagation();
+	if(confirm("Are you sure you want to delete this message?"))
+	{
+		
+		$(obj).parent().parent().parent().hide();
+		$.get( "../messenger/message_delete", {message: msg_id} , function( json ) {
+			if(json.result == "ok")
+			{
+				$(obj).parent().parent().parent().remove();
+				if($(obj).parent().parent().parent().parent().parent().text() == "")
+				$('#no-messages-text').css('display', 'block');
+			}else{
+				$(obj).parent().parent().parent().show();
+			}
+		}, "json")
+	}
+	
+}

@@ -2,13 +2,14 @@
 
 class Hire_stock_m extends CI_Model
 {		
-	function clean_vars(&$value, $key)
-	{
-		if($value == "" && $value != "0")
-		{
-			$value = "NULL";
-		}
-	}
+	function __construct()
+    {
+        // Call the Model constructor
+        parent::__construct();
+		$this->load->helper('models');
+    }
+	
+	
 	
 	public function delete_accesory( $id )
 	{
@@ -21,6 +22,39 @@ class Hire_stock_m extends CI_Model
 	{
 		$this->load->database();
 		return $this->db->query( "delete from hire_items_family_groups where pk_id = $id and qty = 0 or qty is null");		
+	}
+	
+	public function delete_component_group( $vars_array )
+	{
+		$this->load->database();
+		array_walk($vars_array, "clean_vars");
+		$query = "delete from hire_items_bundles_groups where pk_id = ".$this->db->escape_str($vars_array['item_id']);
+
+		return $this->db->query($query);
+	}
+	
+	public function delete_item_component($vars_array)
+	{
+		$this->load->database();
+		
+		array_walk($vars_array, "clean_vars");
+		$query = "update hire_items set fk_hire_item_parent = NULL, qty_required_as_component = NULL where pk_id = ".$this->db->escape_str($vars_array['item_id']);
+
+		return $this->db->query($query);
+	}
+	
+	public function delete_stock( $vars_array )
+	{
+		$this->load->database();
+		
+		$this->db->trans_start();
+		$query = "insert into hire_items_acqs_disp(type, date_time, fk_item_id, qty, cost_value_each, notes, fk_disposal_deducted_from)
+					values(2, '".$this->db->escape_str($vars_array['date_time'])."', ".$this->db->escape_str($vars_array['item_id']).", ".$this->db->escape_str($vars_array['qty']).", ".$this->db->escape_str($vars_array['cost_value_each']).", '".$this->db->escape_str($vars_array['notes'])."', ".$this->db->escape_str($vars_array['acquisition_id']).");";
+		$this->db->query($query);
+		$query = "update hire_items set qty = ifnull(qty,0) - ".$this->db->escape_str($vars_array['qty'])." where pk_id = ".$this->db->escape_str($vars_array['item_id']);
+		$this->db->query($query);
+		$this->db->trans_complete();
+		return $this->db->trans_status();
 	}
 	
 	public function get_groups_all( )
@@ -75,7 +109,7 @@ class Hire_stock_m extends CI_Model
 	{
 		$this->load->database();
 		
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		
 		$this->db->trans_start();
 		$query = "insert into hire_items (
@@ -135,7 +169,7 @@ class Hire_stock_m extends CI_Model
 			return "exists";
 		}
 		else{
-			array_walk($vars_array, "self::clean_vars");
+			array_walk($vars_array, "clean_vars");
 			$query ="insert into hire_items_family_groups (name, basic_rate, fk_charging_band, fk_vat_code_id)
 						values(
 							'".$this->db->escape_str($vars_array['name'])."',
@@ -162,7 +196,7 @@ class Hire_stock_m extends CI_Model
 	public function ins_accesory_to_group( $vars_array )
 	{
 		$this->load->database();
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		$query ="insert into hire_accesory_groups (fk_hire_family_group_id, item_type, fk_item_id, qty)
 					values(
 						".$this->db->escape_str($vars_array['group_id']).",
@@ -196,13 +230,31 @@ class Hire_stock_m extends CI_Model
 		return true;
 	}
 
-	public function ins_item_to_family($vars_array)
+	public function ins_initial_qty( $vars_array )
+	{
+		$this->load->database();
+		array_walk($vars_array, "clean_vars");
+		$query = "update hire_items set qty = ".$this->db->escape_str($vars_array['qty'])." where pk_id = ".$this->db->escape_str($vars_array['parent_item']);
+		
+		return $this->db->query($query);
+	}
+	
+	public function ins_component_group( $vars_array )
+	{
+		$this->load->database();
+		array_walk($vars_array, "clean_vars");
+		$query = "insert into hire_items_bundles_groups(fk_bundle_id, fk_hire_group_id) values (".$this->db->escape_str($vars_array['parent_item']).", ".$this->db->escape_str($vars_array['item_id'])."); ";
+		log_message('debug', $query);
+		return $this->db->query($query);
+	}
+	
+	public function ins_item_component($vars_array)
 	{
 		$this->load->database();
 		
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		$query = "update hire_items set fk_hire_item_parent = ".$this->db->escape_str($vars_array['parent_item']).", qty_required_as_component = ".$this->db->escape_str($vars_array['qty'])." where pk_id = ".$this->db->escape_str($vars_array['item_id']);
-		log_message('debug', $query);
+
 		return $this->db->query($query);
 	}
 	
@@ -210,7 +262,7 @@ class Hire_stock_m extends CI_Model
 	{
 		$this->load->database();
 		
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		
 		$query = $this->db->query("select pk_id from hire_items_charging_bands where name = '".$this->db->escape_str($vars_array['name'])."';");
 		$result = $query->result();
@@ -251,6 +303,20 @@ class Hire_stock_m extends CI_Model
 		return false;
 	}
 	
+	public function insert_stock( $vars_array )
+	{
+		$this->load->database();
+		
+		$this->db->trans_start();
+		$query = "insert into hire_items_acqs_disp(type, date_time, fk_item_id, qty, cost_value_each, notes)
+					values(1, '".$this->db->escape_str($vars_array['date_time'])."', ".$this->db->escape_str($vars_array['item_id']).", ".$this->db->escape_str($vars_array['qty']).", ".$this->db->escape_str($vars_array['cost_value_each']).", '".$this->db->escape_str($vars_array['notes'])."');";
+		$this->db->query($query);
+		$query = "update hire_items set qty = ifnull(qty,0) + ".$this->db->escape_str($vars_array['qty'])." where pk_id = ".$this->db->escape_str($vars_array['item_id']);
+		$this->db->query($query);
+		$this->db->trans_complete();
+		return $this->db->trans_status();
+	}
+	
 	public function select_elegible_items()
 	{
 		$this->load->database();
@@ -288,7 +354,7 @@ class Hire_stock_m extends CI_Model
 	public function save_item( $vars_array )		
 	{		
 		$this->load->database();
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		
 		$query = "call ins_stock_item(
 									'".$this->db->escape_str($vars_array["stock_number"])."',
@@ -329,6 +395,87 @@ class Hire_stock_m extends CI_Model
 			}
 		}
 		return false;
+	}
+	
+	public function select_acqs_rems( $pk_id )
+	{
+		$this->load->database();
+		$query = "select a.pk_id, 
+					a.type, 
+					a.date_time, 
+					a.qty, 
+                    ifnull(sum(b.qty),'') as disposed,
+					a.cost_value_each, 
+					a.notes, 
+					a.fk_disposal_deducted_from 
+				from hire_items_acqs_disp as a
+                left join hire_items_acqs_disp as b on b.fk_disposal_deducted_from = a.pk_id
+                where a.fk_item_id = ".$pk_id."
+                group by a.pk_id ";
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
+	public function select_components_from( $pk_id )
+	{
+		$this->load->database();
+		
+		$query = "SELECT
+					a.pk_id,
+					a.fleet_number,
+					a.description as label,
+					ifnull(a.qty_required_as_component,0) as qty_required,
+					ifnull(a.qty,0) as qty_stock
+				 FROM hire_items as a
+				 WHERE fk_hire_item_parent = ".$pk_id."
+				 UNION ALL
+				 SELECT 
+					a.pk_id,
+					'' as fleet_number,
+					b.name as label,
+					'' as qty_required,
+					'' as qty_stock
+				FROM hire_items_bundles_groups as a
+				inner join hire_items_family_groups as b on b.pk_id = a.fk_hire_group_id
+				where fk_bundle_id = ".$pk_id;
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
+	public function select_item_details( $pk_id )
+	{
+		$this->load->database();
+		$query = $this->db->query( "SELECT 
+									hi.pk_id as pk_id, 
+									hi.fleet_number,
+									hi.description,
+									hi.qty_required_as_component,
+									hi.purchase_date, 
+									hi.cost, 
+									hi.deprec_type, 
+									hi.deprec_value, 
+									hi.serial_number, 
+									hi.power, 
+									hi.fuse, 
+									hi.flash_test, 
+									hi.engine_speed, 
+									hi.output_spindle, 
+									hi.cable_type, 
+									hi.cable_length, 
+									hi.PPE_kit, 
+									hi.safety_leaflet, 
+									hi.test_frequency, 
+									hi.last_test_date, 
+									hi.repairs, 
+									hi.average_days_hire, 
+									hi.fk_hire_item_parent,
+									ifnull(hi.qty,0) as qty,
+									hit.description as 'item_type'
+									 FROM 
+										hire_items as hi
+										inner join hire_items_type as hit on hit.pk_id = hi.fk_type
+									WHERE hi.pk_id =".$pk_id);
+		return !empty($query->result()) ? $query->row() : array();
 	}
 	
 	public function select_items_multiple()
@@ -381,6 +528,24 @@ class Hire_stock_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	
+	public function select_all_items()
+	{
+		$this->load->database();
+		$query = "select 
+				hi.pk_id,
+				 hi.fleet_number,
+				 hi.description , 
+				 ifnull(hi.qty, 0) as qty, 
+				 hifg.name as 'family_group',
+				 hit.description as 'type'
+				 from
+					hire_items as hi
+					inner join hire_items_family_groups as hifg on hifg.pk_id = hi.fk_family_group
+					inner join hire_items_type as hit on hit.pk_id = hi.fk_type";
+		$query = $this->db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+	}
+	
 	public function update_accesory_qty($id, $qty)
 	{
 		$this->load->database();
@@ -388,11 +553,21 @@ class Hire_stock_m extends CI_Model
 		return $this->db->query($query);
 	}
 	
+	public function update_item_component($vars_array)
+	{
+		$this->load->database();
+		
+		array_walk($vars_array, "clean_vars");
+		$query = "update hire_items set qty_required_as_component = ".$this->db->escape_str($vars_array['qty'])." where pk_id = ".$this->db->escape_str($vars_array['item_id']);
+
+		return $this->db->query($query);
+	}
+	
 	public function update_group( $vars_array )
 	{
 		$this->load->database();
 		
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		$query = "update hire_items_family_groups set name = '".$this->db->escape_str($vars_array["name"])."', basic_rate = ".$this->db->escape_str($vars_array["basic_rate"]).", fk_vat_code_id = ".$this->db->escape_str($vars_array["vat_code_id"]).", fk_charging_band = ".$this->db->escape_str($vars_array["charging_band_id"])." where pk_id = ".$this->db->escape_str($vars_array["group_id"]);
 		$query = str_replace("'NULL'", "NULL", $query);
 		return $this->db->query($query);

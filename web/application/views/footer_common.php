@@ -16,6 +16,52 @@
 		</div>
 	</div>
 	
+<div class="modal fade" id="messenger_new_message_modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-sm">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title">New message</h4>
+		</div>
+		<div class="modal-body">
+			<form id="messenger_new_message_form" role="form">
+				<div class="row">
+					<div class="col-sm-3">
+						To:
+					</div>
+					<div class="col-sm-9">
+						<div class="form-group">
+							<input type="hidden" class="form-control" id="to" name="to" value="">
+							<input type="text" class="form-control input-sm" id="to_string" value="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						Message:
+					</div>
+					<div class="col-sm-9">
+						<textarea rows="5" class="form-control" id="message" name="message" value=""></textarea>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="submit" class="btn btn-primary btn-block">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="modal fade" id="messenger_messages_modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-smd">
+	<div class="modal-content">			
+	</div>
+</div>
+</div>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 	<script src="<?php echo base_url('assets/js/jquery-1.11.0.min.js'); ?>"></script>
