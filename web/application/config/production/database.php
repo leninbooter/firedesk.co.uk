@@ -46,12 +46,12 @@
 */
 
 $active_group = 'default';
-$active_record = TRUE;
+$active_record = FALSE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'cl52-democompa';
-$db['default']['password'] = '9-xhH3!VG';
-$db['default']['database'] = 'cl52-democompa';
+$db['default']['username'] = 'cl52-firedesk';
+$db['default']['password'] = 'Rfkt7Jkm.';
+$db['default']['database'] = 'cl52-firedesk';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -64,6 +64,22 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+/*
+$db['firedesk']['hostname'] = 'localhost';
+$db['firedesk']['username'] = 'root';
+$db['firedesk']['password'] = '7H3nMvBaWcAHDr8K';
+$db['firedesk']['database'] = 'firedesk';
+$db['firedesk']['dbdriver'] = 'mysqli';
+$db['firedesk']['dbprefix'] = '';
+$db['firedesk']['pconnect'] = TRUE;
+$db['firedesk']['db_debug'] = TRUE;
+$db['firedesk']['cache_on'] = FALSE;
+$db['firedesk']['cachedir'] = '';
+$db['firedesk']['char_set'] = 'utf8';
+$db['firedesk']['dbcollat'] = 'utf8_general_ci';
+$db['firedesk']['swap_pre'] = '';
+$db['firedesk']['autoinit'] = TRUE;
+$db['firedesk']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

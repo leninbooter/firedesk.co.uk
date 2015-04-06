@@ -23,6 +23,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<a href="<?php echo base_url('index.php/hire_stock/new_item'); ?>" class="btn btn-default btn-block btn-sm" role="button">New item</a>
+				<a href="" id="print_prices_list_pdf_btn" data-toggle="modal" data-target="#multiporpuses_modal" class="btn btn-default btn-block btn-sm" role="button">Print price list</a>
 			</div>
 		</div>
 		<div class="row">	

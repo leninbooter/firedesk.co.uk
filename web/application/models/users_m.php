@@ -2,21 +2,30 @@
 
 class Users_m extends CI_Model
 {		
-	function __construct()
-    {
-        // Call the Model constructor
-        parent::__construct();
-		$this->load->helper('models');
-    }
+	var $company_db;
 	
-	public function select_users_all()
+	function __construct()
 	{
-		$this->load->database();
+		parent::__construct();
 		
+		$this->load->helper('models');
+		
+		$this->company_db = $this->load->database(company_db_string_connection(), true);
+	}
+	
+	function sel_user_data($global_user_id)
+	{
+		$query = "select pk_id, name, fk_profile_id, email from users where fk_global_user_id = $global_user_id";
+		$query =  $this->company_db->query($query);
+		return !empty($query->result()) ? $query->row() : array();
+	}
+	
+	function select_users_all()
+	{
 		$query = "select pk_id, name as label from users
 					union all
 					select '-1' as pk_id, 'Everybody' as label;";
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	

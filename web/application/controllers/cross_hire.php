@@ -55,7 +55,7 @@ class Cross_hire extends CI_Controller
 			$this->load->view('header_nav');		
 			$this->load->view('cross_hire_order_edit', $data);		
 			$this->load->view('footer_common');
-			$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
+			$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
 			$this->output->append_output("<script src=\"".base_url('assets/js/cross_hire.js')."\"></script>");					
 			$this->load->view('footer_copyright');
 			$this->load->view('footer');
@@ -124,7 +124,7 @@ class Cross_hire extends CI_Controller
 		$this->load->view('header_nav');		
 		$this->load->view('cross_hire_order_new');		
 		$this->load->view('footer_common');
-		$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
+		$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
 		$this->output->append_output("<script src=\"".base_url('assets/js/cross_hire.js')."\"></script>");		
 		$this->output->append_output("<script src=\"".base_url('assets/js/purchases.js')."\"></script>");		
 		$this->load->view('footer_copyright');
@@ -357,7 +357,7 @@ class Cross_hire extends CI_Controller
 			
 			//echo $out;
 			
-			//$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.3.custom/jquery-ui.js')."\"></script>");
+			//$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
 			//$this->output->append_output("<script src=\"".base_url('assets/js/purchase_orders_edit.js')."\"></script>");		
 			//$this->load->view('footer_copyright');
 			//$this->load->view('footer');

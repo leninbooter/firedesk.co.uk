@@ -62,11 +62,20 @@
 </div>
 </div>
 
+<div class="modal fade" id="multiporpuses_modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg">
+	<div class="modal-content">			
+	</div>
+</div>
+</div>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 	<script src="<?php echo base_url('assets/js/jquery-1.11.0.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.min.js'); ?>"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/global.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/firedesk.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootbox.min.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/datepicker/js/bootstrap-datepicker.js'); ?>"></script>

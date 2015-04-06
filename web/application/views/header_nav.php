@@ -6,6 +6,7 @@
 
 		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">		
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/justified-nav.css'); ?>">		
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/magic.min.css'); ?>">		
 		<link href="<?php echo base_url('assets/datepicker/css/datepicker.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/css/firedesk.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/jquery-ui-1.11.4.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">
@@ -92,13 +93,13 @@
 				</li>
 				<li><a href="#">Servicing<br/>&nbsp;</a></li>
 				<!--<li><a href="#">Ledgers & Cashbook</a></li>-->
-				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Diary Messages</a>
+				<li><a id="nav_diary_messages_btn" href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Diary Messages</a>
 					<ul class="dropdown-menu" role="menu">
 						<!--<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary/general'); ?>">General diary</a></li>-->
-						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Diary</a></li>												
+						<li><a id="nav_diary_messages_read_diary_btn" class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Diary</a></li>												
 						<li class="divider"></li>						
 						<li><a href=""  data-toggle="modal" data-target="#messenger_new_message_modal">Send a message</a></li>
-						<li><a href="#" data-toggle="modal" data-target="#messenger_messages_modal">Read messages</a></li>												
+						<li><a id="nav_diary_messages_read_msgs_btn" href="#" data-toggle="modal" data-target="#messenger_messages_modal">Read messages</a></li>												
 					</ul>						
 				</li>
 				<li><a href="#">Reports<br/>&nbsp;</a></li>

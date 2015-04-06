@@ -1,7 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Contracts_m extends CI_Model
-{	
+{
+	$company_db;
+	
+	function __construct()
+	{
+		parent::__construct();
+		
+		$this->load->helper('models');
+		
+		$this->company_db = $this->load->database(company_db_string_connection(), true);
+	}
+	
 	function clean_vars(&$value, $key)
 	{
 		if($value == "")
@@ -10,14 +21,14 @@ class Contracts_m extends CI_Model
 		}
 	}
 	
-	public function get_accounts_like( $text_search )
+	function get_accounts_like( $text_search )
 	{			
-		$this->load->database();
-		$query = $this->db->query( "CALL get_accounts_like(?);", array($text_search) );
+		
+		$query =  $this->company_db->query( "CALL get_accounts_like(?);", array($text_search) );
 		if( $query->num_rows() > 0 )
 		{
 			$customers = $query->result_array();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $customers;
 		}else
 		{
@@ -25,15 +36,15 @@ class Contracts_m extends CI_Model
 		}
 	}	
 	
-	public function get_contract_list( )
+	function get_contract_list( )
 	{
-		$this->load->database();
+		
 		$query = "call get_all_contracts()";
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{			
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 		{
@@ -41,7 +52,7 @@ class Contracts_m extends CI_Model
 		}
 	}
 	
-	public function get_live_contracts ( $customer_id = 0 )
+	function get_live_contracts ( $customer_id = 0 )
 	{
 		$query = "select
 						customers.name,
@@ -56,18 +67,18 @@ class Contracts_m extends CI_Model
 		if( $customer_id > 0 )
 			$query = $query." and fk_customer_id = ".$customer_id;
 			
-		$this->load->database();
-		$query = $this->db->query($query);
+		
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 			return array();
 	}
 	
-	public function get_outstanding_contracts_orderBy ( $order = 0 )
+	function get_outstanding_contracts_orderBy ( $order = 0 )
 	{
 		$query = "SELECT
 					customers.name,
@@ -90,20 +101,20 @@ class Contracts_m extends CI_Model
 			$query = $query." ORDER BY ".$order;
 		else return array();
 			
-		$this->load->database();
-		$query = $this->db->query($query);
+		
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 			return array();
 	}
 	
-	public function get_outstanding_items ( $contract_id )
+	function get_outstanding_items ( $contract_id )
 	{
-		$this->load->database();
+		
 		$query = "SELECT
 					contract_items.pk_id,
 					contract_items.item_no,
@@ -114,44 +125,44 @@ class Contracts_m extends CI_Model
 				FROM
 					contract_items
 				WHERE
-					fk_contract_id = ".$this->db->escape_str($contract_id);
+					fk_contract_id = ". $this->company_db->escape_str($contract_id);
 		
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 			return array();
 	}
 	
-	public function get_contract_status( $contract_id )
+	function get_contract_status( $contract_id )
 	{
-		$this->load->database();
+		
 		$query = "select fk_contract_status_id as result from contracts where pk_id = ".$contract_id;
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return is_numeric($result->result) ? $result->result : false;
 		}else
 		{
 			return false;
 		}
 	}
-	public function get_contract_details( $contract_id )
+	function get_contract_details( $contract_id )
 	{
-		$this->load->database();
+		
 		$query = "call get_contract_details(".$contract_id.");";
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result(); 
 		if( !empty($result) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 		{
@@ -159,16 +170,16 @@ class Contracts_m extends CI_Model
 		}
 	}
 	
-	public function get_contract_items( $contract_id )
+	function get_contract_items( $contract_id )
 	{
-		$this->load->database();
+		
 		$query = "call get_contract_items(".$contract_id.");";
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->result();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 		{
@@ -176,39 +187,39 @@ class Contracts_m extends CI_Model
 		}
 	}
 
-	public function get_all_items_not_invoiced( $contract_id )
+	function get_all_items_not_invoiced( $contract_id )
 	{
-		$this->load->database();
-		$query = "select pk_id, item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and qty_supplied > 0 and fk_contract_id = ".$this->db->escape_str($contract_id).";";				
-		$query = $this->db->query($query);
+		
+		$query = "select pk_id, item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and qty_supplied > 0 and fk_contract_id = ". $this->company_db->escape_str($contract_id).";";				
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->result();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 			return array();
 	}
 	
-	public function get_all_items_not_invoiced_not_supplied( $contract_id )
+	function get_all_items_not_invoiced_not_supplied( $contract_id )
 	{
-		$this->load->database();
-		$query = "select pk_id, item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and fk_contract_id = ".$this->db->escape_str($contract_id).";";				
-		$query = $this->db->query($query);
+		
+		$query = "select pk_id, item_no, qty_supplied, description, entries_no, rate, regularity, discount_perc, value, item_type from contract_items where invoiced = 0 and fk_contract_id = ". $this->company_db->escape_str($contract_id).";";				
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->result();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result;
 		}else
 			return array();
 	}
 	
-	public function save_contract( $vars_array )		
+	function save_contract( $vars_array )		
 	{		
-		$this->load->database();		
+				
 		if( $vars_array["saved_addresses"] == "" )
 		{
 				if( $vars_array["new_address"] != "" )
@@ -218,30 +229,30 @@ class Contracts_m extends CI_Model
 		}
 		array_walk($vars_array, "self::clean_vars");
 		$query = "CALL ins_contract("
-									.$this->db->escape_str($vars_array["account_reference_id"]).","
-									.$this->db->escape_str($vars_array["contract_type"]).","
+									. $this->company_db->escape_str($vars_array["account_reference_id"]).","
+									. $this->company_db->escape_str($vars_array["contract_type"]).","
 									."NULL,"	
 									."NULL,"			
 									."NULL,"
 									."NULL,"
 									."NULL,"
-									."'".$this->db->escape_str($vars_array["saved_addresses"])."',"
-									.$this->db->escape_str($vars_array["delivery_charge"]).","
-									."'".$this->db->escape_str($vars_array["notes"])."',".
+									."'". $this->company_db->escape_str($vars_array["saved_addresses"])."',"
+									. $this->company_db->escape_str($vars_array["delivery_charge"]).","
+									."'". $this->company_db->escape_str($vars_array["notes"])."',".
 									"'".date('Y-m-d H:i:s')."',"
-									."'".$this->db->escape_str($vars_array["time"])."',"
-									."'".$this->db->escape_str($vars_array["date"])."',"
+									."'". $this->company_db->escape_str($vars_array["time"])."',"
+									."'". $this->company_db->escape_str($vars_array["date"])."',"
 									."NULL,"
-									.$this->db->escape_str($vars_array["type"])."
+									. $this->company_db->escape_str($vars_array["type"])."
 								)";		
 		$query = str_replace("'NULL'", "NULL", $query);
 		log_message('debug', $query);
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			log_message('debug', $result->result);
 			return is_numeric($result->result) ? $result->result : false;
 		}else
@@ -250,30 +261,30 @@ class Contracts_m extends CI_Model
 		}			
 	}
 	
-	public function save_contract_item( $vars_array )		
+	function save_contract_item( $vars_array )		
 	{		
-		$this->load->database();		
+				
 		array_walk($vars_array, "self::clean_vars");
 		$query = "CALL ins_contract_item("
-									.$this->db->escape_str($vars_array["item_no"]).","
-									.$this->db->escape_str($vars_array["qty"]).","				
-									."'".$this->db->escape_str($vars_array["description"])."',"			
-									.$this->db->escape_str($vars_array["entry"]).","
-									.$this->db->escape_str($vars_array["rate_per"]).","
-									.$this->db->escape_str($vars_array["regularity"]).","
-									.$this->db->escape_str($vars_array["disc"]).","
-									.$this->db->escape_str($vars_array["value"]).","
-									.$this->db->escape_str($vars_array["contract_id"]).","
-									.$this->db->escape_str($vars_array["item_type"])
+									. $this->company_db->escape_str($vars_array["item_no"]).","
+									. $this->company_db->escape_str($vars_array["qty"]).","				
+									."'". $this->company_db->escape_str($vars_array["description"])."',"			
+									. $this->company_db->escape_str($vars_array["entry"]).","
+									. $this->company_db->escape_str($vars_array["rate_per"]).","
+									. $this->company_db->escape_str($vars_array["regularity"]).","
+									. $this->company_db->escape_str($vars_array["disc"]).","
+									. $this->company_db->escape_str($vars_array["value"]).","
+									. $this->company_db->escape_str($vars_array["contract_id"]).","
+									. $this->company_db->escape_str($vars_array["item_type"])
 									.")";		
 		$query = str_replace("'NULL'", "NULL", $query);
 		log_message('debug', $query);
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result->result == "true" ? true : false;
 		}else
 		{
@@ -281,41 +292,41 @@ class Contracts_m extends CI_Model
 		}			
 	}
 	
-	public function save_item_supplied( $vars_array )
+	function save_item_supplied( $vars_array )
 	{
-		$this->load->database();
+		
 		log_message('debug', "database loaded");
 		array_walk($vars_array, "self::clean_vars");
 		log_message('debug', "vars_array cleaned");
 		$query = "CALL save_item_supplied(
-		".$this->db->escape_str($vars_array['contract_id']).",
-		".$this->db->escape_str($vars_array['item_id']).",
-		".$this->db->escape_str($vars_array['now'])."
+		". $this->company_db->escape_str($vars_array['contract_id']).",
+		". $this->company_db->escape_str($vars_array['item_id']).",
+		". $this->company_db->escape_str($vars_array['now'])."
 		)";
 		log_message('debug', "query formed");
 		$query = str_replace("'NULL'", "NULL", $query);
 		log_message('debug', $query);
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result))
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id);
+			mysqli_next_result(  $this->company_db->conn_id);
 			return $result->result == "true" ? true : false;
 		}else
 			return false;
 	}
 	
-	public function set_contract_abandoned( $contract_id )
+	function set_contract_abandoned( $contract_id )
 	{
-		$this->load->database();
+		
 		$query = "call set_contract_abandoned(".$contract_id.")";
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result->result == 'true' ? true : false;
 		}else
 		{
@@ -323,16 +334,16 @@ class Contracts_m extends CI_Model
 		}
 	}
 	
-	public function set_contract_active( $contract_id )
+	function set_contract_active( $contract_id )
 	{
-		$this->load->database();
+		
 		$query = "call set_contract_active(".$contract_id.")";
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result->result == 'true' ? true : false;
 		}else
 		{

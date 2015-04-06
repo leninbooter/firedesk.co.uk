@@ -349,6 +349,73 @@ class Hire_stock extends CI_Controller
 		$this->load->view('footer');
 	}
 	
+	public function print_prices_list()
+	{
+		$this->load->library('tcpdf');
+		$this->load->model('hire_stock_m');
+		
+		$data['items'] = $this->hire_stock_m->sel_all_prices();
+		
+		$pre = null;
+		$parents = array();
+		$childs = array();
+		foreach($data['items'] as $i)
+		{
+			if(is_null($pre))
+			{
+				$pre = $i;
+			}
+			else
+			{
+				if($i->parent != $i->pk_id && $i->parent == $pre->pk_id)
+				{
+					array_push($parents, $pre);
+					array_push($childs, $i);
+				}elseif( $i->parent != $i->pk_id && $i->parent == $pre->parent)
+				{
+					array_push($childs, $i);
+				}else
+				{
+					array_push($parents, $i);
+				}
+			}
+			$pre = $i;
+		}
+		
+		function cmp($a, $b)
+		{
+			return strcmp(strtolower($a->item_description), strtolower($b->item_description));
+		}
+
+		usort($parents, "cmp");
+		
+		$data['company_name'] = $this->nativesession->get('user')['company_name'];
+		$data['items'] = $parents;
+		$data['childs'] = $childs;
+		$data['printing_date'] = date("m/d/Y \a\\t H:i");
+	
+		$html = "";
+		$html = $html.$this->load->view('reports/hire_stock_price_list', $data, true);
+		$pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+		$pdf->SetCreator(PDF_CREATOR);
+		$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+		$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+		$pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
+		$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+		$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+		$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
+		$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+		$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+		if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
+			require_once(dirname(__FILE__).'/lang/eng.php');
+			$pdf->setLanguageArray($l);
+		}
+		$pdf->SetFont('helvetica', '', 10);
+		$pdf->AddPage();					
+		$pdf->writeHTML($html, true, false, true, false, '');
+		$pdf->Output('outstanding_orders.pdf', 'I');
+	}
+	
 	public function remove_accesory()
 	{
 		$pk_id = trim($this->input->post('id'));

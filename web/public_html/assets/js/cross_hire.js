@@ -276,7 +276,7 @@ function fill_family_modal( member_id )
 
 function purchase_order_pdf(order_id)
 {
-	$('#purchase_ord_pdf_modal_iframe').attr("src", '../print_order_pdf/' + order_id);
+	$('#purchase_ord_pdf_modal_iframe').attr("src", base_url+'index.php/cross_hire/print_order_pdf/' + order_id);
 }
 
 $('button[name^=remove_row_btn]').click(function(event){

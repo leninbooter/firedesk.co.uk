@@ -1,3 +1,49 @@
+var blinking_diary_msgs_btn, blinking_nav_diary_messages_read_diary_btn, blinking_nav_diary_messages_read_msgs_btn;
+var messages = events = false;
+
+function set_blinking_diarymsgs_btn()
+{
+	if(messages || events)
+	{
+		blinking_diary_msgs_btn = setInterval(function(){$( "#nav_diary_messages_btn" ).effect( "highlight" ,{color: "#d1cfcf"},"slow");},1000);
+		if(messages)
+			blinking_nav_diary_messages_read_msgs_btn = setInterval(function(){$("#nav_diary_messages_read_msgs_btn" ).effect( "highlight" ,{color: "#edecec"},"slow");},1000);
+		else
+			clearInterval(blinking_nav_diary_messages_read_msgs_btn);
+		
+		if(events)
+			blinking_nav_diary_messages_read_diary_btn = setInterval(function(){$("#nav_diary_messages_read_diary_btn" ).effect( "highlight" ,{color: "#edecec"},"slow");},1000);
+		else
+			clearInterval(blinking_nav_diary_messages_read_diary_btn);
+	}
+	else if( messages == false && events == false )
+	{
+		clearInterval(blinking_diary_msgs_btn);
+	}
+}
+
+function check_alerts()
+{	
+
+	$.get( base_url+"index.php/messenger/are_there_new_messages", {} , function( json ) {
+		if(json.result == "yes")
+		{
+			messages = true;
+			set_blinking_diarymsgs_btn();
+		}
+	}, "json");
+	
+	$.get( base_url+"index.php/diary/are_there_events_4_today", {dateandtime: now_mysqlformat} , function( json ) {
+		if(json.result == "yes")
+		{
+			events = true;
+			set_blinking_diarymsgs_btn();
+		}
+	}, "json");
+	
+	
+}
+
 function ref_account_valid(campo)
 {
 	return /^[A-Za-zñÑ0-9\-\_]{1,10}$/.test(campo.val());
@@ -248,7 +294,7 @@ $('#messenger_new_message_form').submit(function(event){
 	event.preventDefault();
 	$.ajax({
 			type: "POST",
-			url: '../messenger/save_message',
+			url: location.href.substring(0,location.href.lastIndexOf("index.php"))+"index.php/messenger/save_message",
 			data: $(this).serialize(),
 			dataType: "json"
 		}).done(function( json ) {
@@ -417,17 +463,26 @@ $( document ).ready(function() {
 	$('#messenger_messages_modal').on('show.bs.modal', function (e) {
 		$('.modal-content', this).load(location.href.substring(0,location.href.lastIndexOf("index.php")) +"index.php/messenger/inbox");
 	});	
+	
+	check_alerts();
 });
 
 function messenger_read_message( obj, msg_id )
 {
 	$(obj).removeClass("active");
-	$.get( "../messenger/message_read", {message: msg_id} , function( json ) {
+	$.get( base_url+"index.php/messenger/message_read", {message: msg_id} , function( json ) {
 		if(json.result == "ko")
 		{
 			$(obj).addClass("active");
 		}
-	}, "json")
+		else
+		{
+			check_alerts();
+		}
+	}, "json").fail(function(){
+					$(obj).addClass("active");				
+				});
+	
 }
 
 function messenger_delete_msg( event, obj, msg_id )

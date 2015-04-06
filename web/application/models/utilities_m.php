@@ -2,20 +2,31 @@
 
 class Utilities_m extends CI_Model
 {	
-	public function save_holiday($month, $day, $isholiday)
+	var $company_db;
+	
+	function __construct()
 	{
-		$this->load->database();
+		parent::__construct();
+		
+		$this->load->helper('models');
+		
+		$this->company_db = $this->load->database(company_db_string_connection(), true);
+	}
+	
+	function save_holiday($month, $day, $isholiday)
+	{
+		
 		$query = "UPDATE holidays SET isholiday = ".$isholiday." WHERE month = ".$month." AND monthday = ".$day;
 		log_message('debug', $query);
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		return true;
 	}
 	
-	public function get_holidays($month)
+	function get_holidays($month)
 	{
-		$this->load->database();
+		
 		$query = "select monthday from holidays where isholiday = 1 and month = ".$month;
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		$result = $query->result();
 		if( !empty($result) )
 		{

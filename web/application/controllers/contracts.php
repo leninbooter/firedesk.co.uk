@@ -226,6 +226,7 @@ class Contracts extends CI_Controller
 		$this->load->view('new_contract');
 		$this->load->view('footer_common');
 		$this->load->view('new_contract_footer');
+		$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}

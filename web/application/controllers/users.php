@@ -2,6 +2,10 @@
 
 class Users extends CI_Controller 
 {
+	public function get_user_data($global_user_id)
+	{
+		
+	}
 
 	public function get_all_users_json()
 	{

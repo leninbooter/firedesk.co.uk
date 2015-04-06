@@ -2,10 +2,21 @@
 
 class Vats_m extends CI_Model
 {		
-	public function get_all_vats()
+	var $company_db;
+	
+	function __construct()
 	{
-		$this->load->database();
-		$query = $this->db->query( "select * from vats;");
+		parent::__construct();
+		
+		$this->load->helper('models');
+		
+		$this->company_db = $this->load->database(company_db_string_connection(), true);
+	}
+	
+	function get_all_vats()
+	{
+		
+		$query =  $this->company_db->query( "select * from vats;");
 		return !empty($query->result()) ? $query->result() : array();
 	}	
 
@@ -17,37 +28,37 @@ class Vats_m extends CI_Model
 		}
 	}	
 	
-	public function save_vat( $vars_array )		
+	function save_vat( $vars_array )		
 	{		
-		$this->load->database();
+		
 		array_walk($vars_array, "self::clean_vars");
 		
 		$query = "call ins_stock_item(
-									'".$this->db->escape_str($vars_array["stock_number"])."',
-									'".$this->db->escape_str($vars_array["location"])."',
-									'".$this->db->escape_str($vars_array["description"])."',
-									 ".$this->db->escape_str($vars_array["quantity_rec_level"]).",
-									 ".$this->db->escape_str($vars_array["standard_price"]).",
-									 ".$this->db->escape_str($vars_array["special_price"]).",
-									 ".$this->db->escape_str($vars_array["units_of_for_special"]).",
-									 ".$this->db->escape_str($vars_array["cost_price_a"]).",
-									 ".$this->db->escape_str($vars_array["cost_price_b"]).",
-									 ".$this->db->escape_str($vars_array["cost_price_c"]).",
-									 ".$this->db->escape_str($vars_array["fk_vat_code"]).",
-									 ".$this->db->escape_str($vars_array["fk_family_group"]).",
-									 ".$this->db->escape_str($vars_array["fk_discount_group"]).",
-									 ".$this->db->escape_str($vars_array["fk_supplier_a"]).",
-									 ".$this->db->escape_str($vars_array["fk_supplier_b"]).",
-									 ".$this->db->escape_str($vars_array["fk_supplier_c"])."
+									'". $this->company_db->escape_str($vars_array["stock_number"])."',
+									'". $this->company_db->escape_str($vars_array["location"])."',
+									'". $this->company_db->escape_str($vars_array["description"])."',
+									 ". $this->company_db->escape_str($vars_array["quantity_rec_level"]).",
+									 ". $this->company_db->escape_str($vars_array["standard_price"]).",
+									 ". $this->company_db->escape_str($vars_array["special_price"]).",
+									 ". $this->company_db->escape_str($vars_array["units_of_for_special"]).",
+									 ". $this->company_db->escape_str($vars_array["cost_price_a"]).",
+									 ". $this->company_db->escape_str($vars_array["cost_price_b"]).",
+									 ". $this->company_db->escape_str($vars_array["cost_price_c"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_vat_code"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_family_group"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_discount_group"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_supplier_a"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_supplier_b"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_supplier_c"])."
 									);";
 		$query = str_replace("'NULL'", "NULL", $query);
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 						
 		$result = $query->result();
 		if( !empty($query->result()) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			if($result->type == "inserted" )
 			{	
 				$return['type'] = $result->type;
@@ -63,24 +74,24 @@ class Vats_m extends CI_Model
 		return false;
 	}
 	
-	public function update_vat($vars_array)
+	function update_vat($vars_array)
 	{
-		$this->load->database();
+		
 		array_walk($vars_array, "self::clean_vars");
 		
 		$query = "call update_stock(
-									'".$this->db->escape_str($vars_array["date"])."',
-									".$this->db->escape_str($vars_array["fk_item_id"]).",
-									'".$this->db->escape_str($vars_array["description"])."',
-									".$this->db->escape_str($vars_array["qty"]).",
-									".$this->db->escape_str($vars_array["cost"])."
+									'". $this->company_db->escape_str($vars_array["date"])."',
+									". $this->company_db->escape_str($vars_array["fk_item_id"]).",
+									'". $this->company_db->escape_str($vars_array["description"])."',
+									". $this->company_db->escape_str($vars_array["qty"]).",
+									". $this->company_db->escape_str($vars_array["cost"])."
 									);";
 		$query = str_replace("'NULL'", "NULL", $query);
-		$query = $this->db->query($query);
+		$query =  $this->company_db->query($query);
 		if( !empty($query->result()) )
 		{
 			$result = $query->row();
-			mysqli_next_result( $this->db->conn_id );
+			mysqli_next_result(  $this->company_db->conn_id );
 			return $result->result == "ok" ? $result->result : false;
 		}
 		return false;

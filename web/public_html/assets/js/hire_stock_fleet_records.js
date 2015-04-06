@@ -50,6 +50,14 @@ $('#components_form').submit(function(event){
 		});
 });
 
+$('#print_prices_list_pdf_btn').click(function(){
+	$('#multiporpuses_modal').on('show.bs.modal', 
+								function() { 
+									$('#multiporpuses_modal .modal-content').html("<div class=\"modal-body\"><iframe style=\"width:100%; height:500px\" src=\""+base_url+"index.php/hire_stock/print_prices_list\"></iframe></div>"); 
+								} 
+							);
+});
+
 function attachEvents()
 {
 	

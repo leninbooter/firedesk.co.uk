@@ -2,13 +2,28 @@
 
 class Messenger extends CI_Controller 
 {
+	
+	public function are_there_new_messages()
+	{
+		$this->load->model('messenger_m');
+		
+		if(empty($this->messenger_m->sel_unread_messages($this->nativesession->get('user')['local_user_id'])))
+		{
+			$return = array("result"=>"no");
+		}
+		else
+		{
+			$return = array("result"=>"yes");
+		}
+		header('Content-type: application/json');
+		echo json_encode($return);
+	}
+	
 	public function inbox()
 	{
 		$this->load->model('messenger_m');
 		
-		$user_id = 1;
-		
-		$data['messages'] = $this->messenger_m->sel_messages_of($user_id);
+		$data['messages'] = $this->messenger_m->sel_messages_of($this->nativesession->get('user')['local_user_id']);
 		
 		$this->load->view('messenger_inbox_view', $data);
 	}
@@ -46,7 +61,7 @@ class Messenger extends CI_Controller
 		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$this->load->model('messenger_m');
 			
-			$user_id = 1;
+			$user_id = $this->nativesession->get('user')['local_user_id'];
 			$user_destination_id = $this->input->post('to', true);;
 			$message = $this->input->post('message', true);
 			$creation_date = date('Y-m-d H:i:s');

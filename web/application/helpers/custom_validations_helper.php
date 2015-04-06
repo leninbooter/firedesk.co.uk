@@ -1,7 +1,21 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
+use Respect\Validation\Validator as v;	
 
-if ( ! function_exists('name_valid'))
+if ( ! function_exists('datetime'))
+{
+	function date_validate($datetime)
+	{
+		return v::date('d-m-Y')->validate($datetime);
+	}
+	
+	function datetime_24_validate($datetime)
+	{
+		return v::date('d-m-Y H:i')->validate($datetime);
+	}
+}
+	
+	if ( ! function_exists('name_valid'))
 {
     function name_valid( $valor )
 	{

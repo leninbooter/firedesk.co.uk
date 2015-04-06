@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.firedesk.co.uk';
+$config['base_url']	= 'http://firedesk.co.uk';
 
 /*
 |--------------------------------------------------------------------------
