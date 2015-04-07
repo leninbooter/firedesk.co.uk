@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+use Respect\Validation\Validator as v;
+
 class Hire_stock extends CI_Controller
 {	
 	public function acqs_rms_json()
@@ -30,6 +32,38 @@ class Hire_stock extends CI_Controller
 		}else{
 			echo "Not allowed";
 		}
+	}
+	
+	public function activity()
+	{
+		log_message('debug', 'AQUI 1');
+		//$this->load->library('session');
+		log_message('debug', 'AQUI 2');
+		$this->load->model('hire_stock_m');
+		log_message('debug', 'AQUI 3');
+		$from = $this->input->get('from',true);
+		$to = $this->input->get('to',true);
+		$item = $this->input->get('item',true);		
+		
+		/*$this->session->set_flashdata("current_hire_item_id", $item);
+		$this->session->set_flashdata("activity_from", $from);
+		$this->session->set_flashdata("activity_to", $to);*/
+		
+		$data['custom_css'] = array("assets/dhtmlx-4.13/codebase/dhtmlxchart.css");
+		$data['from'] = $from;
+		$data['to'] = $to;
+		$data['hire_item_id'] = $item;
+		$data['item_name'] = $this->hire_stock_m->select_item_details($item)->description;
+		
+		$this->load->view('header_nav', $data);
+		$this->load->view('hire_stock_item_activity', $data);
+		$this->load->view('footer_common');
+		//$this->output->append_output("<script src=\"".base_url('assets/js/global.js')."\"></script>");	
+		//$this->output->append_output("<script src=\"".base_url('assets/js/jquery-1.11.0.min.js')."\"></script>");	
+		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxchart.js')."\"></script>");	
+		$this->output->append_output("<script src=\"".base_url('assets/js/hire_item_activity.js')."\"></script>");			
+		$this->load->view('footer_copyright');
+		$this->load->view('footer');		
 	}
 
 	public function add_remove()
@@ -134,6 +168,44 @@ class Hire_stock extends CI_Controller
 		}
 		header('Content-type: application/json');
 		echo json_encode($data);
+	}
+	
+	public function get_item_activity_json()
+	{
+		//$this->load->library('session');
+		$this->load->model('hire_stock_m');
+		
+		$from = $this->input->get('activity_from');
+		$to = $this->input->get('activity_to');
+		$item = $this->input->get('activity_item');	
+
+		$monthyearv = v::regex('/\d{1,2}\/\d{4,4}/');
+		
+		if(v::int()->validate($item) && $monthyearv->validate($from) && $monthyearv->validate($to))
+		{		
+			$items = $this->hire_stock_m->select_activity($from, $to, $item);
+			
+			$json = array();
+			if(!empty($items))
+			{	
+				$ite = 1;
+				foreach($items as $i)
+				{
+					array_push( $json, array("id"=>$ite, "hired" => intval($i->hired_days), "month"=>DateTime::createFromFormat('m',$i->month)->format('M')."/".$i->year));
+					$ite++;
+				}
+			}
+			else
+			{
+				array_push( $json, array("id"=>0));		
+			}
+			header('Content-type: application/json');
+			echo json_encode($json);
+		}
+		else
+		{
+			echo "Bad format";
+		}
 	}
 	
 	public function get_multiple_items_json()

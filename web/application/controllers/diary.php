@@ -1,6 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-
 use Respect\Validation\Validator as v;
 
 class Diary extends CI_Controller 

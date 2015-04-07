@@ -420,6 +420,27 @@ class Hire_stock_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	
+	function select_activity($from, $to, $item_id)
+	{	
+		log_message('debug', "AQUI DB");
+		$from = explode("/", $from);
+		$to = explode("/", $to);
+		
+		$query = "SELECT year, month, hired_days FROM hire_items_activity WHERE fk_hire_item_id = $item_id and ";
+		
+		if($from[1] == $to[1])
+		{
+			$query = $query."(year = $from[1] and month between $from[0] and $to[0])";
+		}
+		else
+		{
+			$query = $query . "((year = $from[1] and month between $from[0] and 12) or (year = $to[1] and month between 1 and $to[0]))";
+		}
+		
+		$query =  $this->company_db->query($query);
+		return !empty($query->result()) ? $query->result() : array();		
+	}
+	
 	function select_components_from( $pk_id )
 	{
 		

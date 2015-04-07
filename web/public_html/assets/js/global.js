@@ -16,4 +16,4 @@ else
 
 // User date & time
 var now = new Date();
-var now_mysqlformat = now.getFullYear()+"-"+("0"+(now.getMonth()+1)).toString().slice(-2)+"-"+("0"+now.getDate()).toString().slice(-2)+" "+now.getHours()+":"+now.getMinutes()+".000";
+var now_mysqlformat = now.getFullYear()+"-"+("0"+(now.getMonth()+1)).toString().slice(-2)+"-"+("0"+now.getDate()).toString().slice(-2)+" "+("0"+now.getHours()).toString().slice(-2)+":"+("0"+now.getMinutes()).toString().slice(-2)+".000";

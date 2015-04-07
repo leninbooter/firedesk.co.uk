@@ -50,8 +50,8 @@
 		<div class="modal-content">		
 			<div class="modal-body">
 				<div class="list-group">
-					<a href="javascript:go_to(1);" class="list-group-item">Activity</a>
-					<a href="javascript:go_to('add_remove');"" class="list-group-item">Addition / Disposal</a>
+					<a href="javascript:go_to('activity');" class="list-group-item">Activity</a>
+					<a href="javascript:go_to('add_remove');"  class="list-group-item">Addition / Disposal</a>
 					<a href="javascript:go_to(3);"" class="list-group-item">Edit</a>
 					<a href="javascript:go_to(4);"" class="list-group-item">History</a>
 				</div>								

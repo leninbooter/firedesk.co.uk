@@ -7970,3 +7970,16612 @@ DEBUG - 2015-04-06 03:34:41 --> Database Driver Class Initialized
 DEBUG - 2015-04-06 03:34:42 --> File loaded: ../application/views/reports/hire_stock_price_list.php
 DEBUG - 2015-04-06 03:34:42 --> Final output sent to browser
 DEBUG - 2015-04-06 03:34:42 --> Total execution time: 4.5273
+DEBUG - 2015-04-06 11:40:51 --> Config Class Initialized
+DEBUG - 2015-04-06 11:40:51 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:40:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:40:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:40:51 --> URI Class Initialized
+DEBUG - 2015-04-06 11:40:51 --> Router Class Initialized
+DEBUG - 2015-04-06 11:40:51 --> Output Class Initialized
+DEBUG - 2015-04-06 11:40:52 --> Security Class Initialized
+DEBUG - 2015-04-06 11:40:52 --> Input Class Initialized
+DEBUG - 2015-04-06 11:40:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:40:52 --> Language Class Initialized
+DEBUG - 2015-04-06 11:40:52 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:40:52 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:40:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:40:52 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 11:40:52 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 11:40:52 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 11:40:52 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 11:40:52 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 11:40:52 --> Final output sent to browser
+DEBUG - 2015-04-06 11:40:52 --> Total execution time: 1.2751
+DEBUG - 2015-04-06 11:40:55 --> Config Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:40:55 --> URI Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Router Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Output Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Security Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Config Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Config Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Input Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:40:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:40:55 --> Language Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> URI Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Router Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Output Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:40:55 --> Security Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Input Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:40:55 --> Language Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:40:55 --> URI Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Router Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Output Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Security Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Input Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:40:55 --> Language Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:40:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:40:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:40:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:40:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:40:56 --> hostname=
+DEBUG - 2015-04-06 11:40:56 --> hostname=
+DEBUG - 2015-04-06 11:40:56 --> username=
+DEBUG - 2015-04-06 11:40:56 --> username=
+DEBUG - 2015-04-06 11:40:56 --> password=
+DEBUG - 2015-04-06 11:40:56 --> password=
+DEBUG - 2015-04-06 11:40:56 --> database=
+DEBUG - 2015-04-06 11:40:56 --> database=
+DEBUG - 2015-04-06 11:40:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:40:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:40:56 --> dbprefix=
+DEBUG - 2015-04-06 11:40:56 --> dbprefix=
+DEBUG - 2015-04-06 11:40:56 --> pconnect=1
+DEBUG - 2015-04-06 11:40:56 --> pconnect=1
+DEBUG - 2015-04-06 11:40:56 --> db_debug=1
+DEBUG - 2015-04-06 11:40:56 --> db_debug=1
+DEBUG - 2015-04-06 11:40:56 --> cache_on=
+DEBUG - 2015-04-06 11:40:56 --> cache_on=
+DEBUG - 2015-04-06 11:40:56 --> cachedir=
+DEBUG - 2015-04-06 11:40:56 --> cachedir=
+DEBUG - 2015-04-06 11:40:56 --> char_set=utf8
+DEBUG - 2015-04-06 11:40:56 --> char_set=utf8
+DEBUG - 2015-04-06 11:40:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:40:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:40:56 --> swap_pre=
+DEBUG - 2015-04-06 11:40:56 --> swap_pre=
+DEBUG - 2015-04-06 11:40:56 --> autoinit=1
+DEBUG - 2015-04-06 11:40:56 --> autoinit=1
+DEBUG - 2015-04-06 11:40:56 --> stricton=
+DEBUG - 2015-04-06 11:40:56 --> stricton=
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:40:56 --> hostname=
+DEBUG - 2015-04-06 11:40:56 --> username=
+DEBUG - 2015-04-06 11:40:56 --> password=
+DEBUG - 2015-04-06 11:40:56 --> database=
+DEBUG - 2015-04-06 11:40:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:40:56 --> dbprefix=
+DEBUG - 2015-04-06 11:40:56 --> pconnect=1
+DEBUG - 2015-04-06 11:40:56 --> db_debug=1
+DEBUG - 2015-04-06 11:40:56 --> cache_on=
+DEBUG - 2015-04-06 11:40:56 --> cachedir=
+DEBUG - 2015-04-06 11:40:56 --> char_set=utf8
+DEBUG - 2015-04-06 11:40:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:40:56 --> swap_pre=
+DEBUG - 2015-04-06 11:40:56 --> autoinit=1
+DEBUG - 2015-04-06 11:40:56 --> stricton=
+DEBUG - 2015-04-06 11:40:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Config Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:40:56 --> URI Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Router Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Output Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Security Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Input Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:40:56 --> Language Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:40:56 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Model Class Initialized
+DEBUG - 2015-04-06 11:40:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:40:56 --> hostname=
+DEBUG - 2015-04-06 11:40:56 --> username=
+DEBUG - 2015-04-06 11:40:56 --> password=
+DEBUG - 2015-04-06 11:40:56 --> database=
+DEBUG - 2015-04-06 11:40:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:40:56 --> dbprefix=
+DEBUG - 2015-04-06 11:40:56 --> pconnect=1
+DEBUG - 2015-04-06 11:40:56 --> db_debug=1
+DEBUG - 2015-04-06 11:40:56 --> cache_on=
+DEBUG - 2015-04-06 11:40:56 --> cachedir=
+DEBUG - 2015-04-06 11:40:56 --> char_set=utf8
+DEBUG - 2015-04-06 11:40:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:40:56 --> swap_pre=
+DEBUG - 2015-04-06 11:40:56 --> autoinit=1
+DEBUG - 2015-04-06 11:40:56 --> stricton=
+DEBUG - 2015-04-06 11:40:56 --> Database Driver Class Initialized
+ERROR - 2015-04-06 11:40:57 --> Severity: Warning  --> mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\inetpub\firedesk.co.uk\web\system\database\drivers\mysqli\mysqli_driver.php 76
+ERROR - 2015-04-06 11:40:57 --> Severity: Warning  --> mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\inetpub\firedesk.co.uk\web\system\database\drivers\mysqli\mysqli_driver.php 76
+ERROR - 2015-04-06 11:40:57 --> Unable to connect to the database
+ERROR - 2015-04-06 11:40:57 --> Severity: Warning  --> mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\inetpub\firedesk.co.uk\web\system\database\drivers\mysqli\mysqli_driver.php 76
+ERROR - 2015-04-06 11:40:57 --> Unable to connect to the database
+ERROR - 2015-04-06 11:40:57 --> Unable to connect to the database
+DEBUG - 2015-04-06 11:40:57 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 11:40:57 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 11:40:57 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 11:40:57 --> Severity: Warning  --> mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\inetpub\firedesk.co.uk\web\system\database\drivers\mysqli\mysqli_driver.php 76
+ERROR - 2015-04-06 11:40:57 --> Unable to connect to the database
+DEBUG - 2015-04-06 11:40:57 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 11:43:01 --> Config Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:43:01 --> URI Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Router Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Output Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Security Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Input Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:43:01 --> Language Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:43:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:43:01 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 11:43:01 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 11:43:01 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 11:43:01 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 11:43:01 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 11:43:01 --> Final output sent to browser
+DEBUG - 2015-04-06 11:43:01 --> Total execution time: 0.5210
+DEBUG - 2015-04-06 11:43:05 --> Config Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Config Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:43:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:43:05 --> URI Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> URI Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Router Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Router Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Output Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Output Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Security Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Security Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Input Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Input Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:43:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:43:05 --> Language Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Language Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:43:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:43:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:43:05 --> hostname=localhost
+DEBUG - 2015-04-06 11:43:05 --> username=root
+DEBUG - 2015-04-06 11:43:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 11:43:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 11:43:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:43:05 --> dbprefix=
+DEBUG - 2015-04-06 11:43:05 --> pconnect=1
+DEBUG - 2015-04-06 11:43:05 --> db_debug=1
+DEBUG - 2015-04-06 11:43:05 --> cache_on=
+DEBUG - 2015-04-06 11:43:05 --> cachedir=
+DEBUG - 2015-04-06 11:43:05 --> char_set=utf8
+DEBUG - 2015-04-06 11:43:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:43:05 --> swap_pre=
+DEBUG - 2015-04-06 11:43:05 --> autoinit=1
+DEBUG - 2015-04-06 11:43:05 --> stricton=
+DEBUG - 2015-04-06 11:43:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Config Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:43:05 --> URI Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Router Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Output Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Security Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Input Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:43:05 --> Language Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:43:05 --> Config Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:43:05 --> URI Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Router Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Output Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Security Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Input Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:43:05 --> Language Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:43:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:43:06 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 11:43:06 --> Final output sent to browser
+DEBUG - 2015-04-06 11:43:06 --> Total execution time: 1.1811
+DEBUG - 2015-04-06 11:43:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:43:06 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:06 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:43:06 --> hostname=localhost
+DEBUG - 2015-04-06 11:43:06 --> username=root
+DEBUG - 2015-04-06 11:43:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 11:43:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 11:43:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:43:06 --> dbprefix=
+DEBUG - 2015-04-06 11:43:06 --> pconnect=1
+DEBUG - 2015-04-06 11:43:06 --> db_debug=1
+DEBUG - 2015-04-06 11:43:06 --> cache_on=
+DEBUG - 2015-04-06 11:43:06 --> cachedir=
+DEBUG - 2015-04-06 11:43:06 --> char_set=utf8
+DEBUG - 2015-04-06 11:43:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:43:06 --> swap_pre=
+DEBUG - 2015-04-06 11:43:06 --> autoinit=1
+DEBUG - 2015-04-06 11:43:06 --> stricton=
+DEBUG - 2015-04-06 11:43:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:43:07 --> Final output sent to browser
+DEBUG - 2015-04-06 11:43:07 --> Total execution time: 2.2421
+DEBUG - 2015-04-06 11:43:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:43:07 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 11:43:07 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:07 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:43:07 --> hostname=localhost
+DEBUG - 2015-04-06 11:43:07 --> username=root
+DEBUG - 2015-04-06 11:43:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 11:43:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 11:43:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:43:07 --> dbprefix=
+DEBUG - 2015-04-06 11:43:07 --> pconnect=1
+DEBUG - 2015-04-06 11:43:07 --> db_debug=1
+DEBUG - 2015-04-06 11:43:07 --> cache_on=
+DEBUG - 2015-04-06 11:43:07 --> cachedir=
+DEBUG - 2015-04-06 11:43:07 --> char_set=utf8
+DEBUG - 2015-04-06 11:43:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:43:07 --> swap_pre=
+DEBUG - 2015-04-06 11:43:07 --> autoinit=1
+DEBUG - 2015-04-06 11:43:07 --> stricton=
+DEBUG - 2015-04-06 11:43:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:43:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 11:43:09 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 11:43.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 11:43.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 11:43:09 --> Final output sent to browser
+DEBUG - 2015-04-06 11:43:09 --> Total execution time: 3.9262
+DEBUG - 2015-04-06 11:43:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:43:09 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:09 --> Model Class Initialized
+DEBUG - 2015-04-06 11:43:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:43:09 --> hostname=localhost
+DEBUG - 2015-04-06 11:43:09 --> username=root
+DEBUG - 2015-04-06 11:43:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 11:43:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 11:43:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:43:09 --> dbprefix=
+DEBUG - 2015-04-06 11:43:09 --> pconnect=1
+DEBUG - 2015-04-06 11:43:09 --> db_debug=1
+DEBUG - 2015-04-06 11:43:09 --> cache_on=
+DEBUG - 2015-04-06 11:43:09 --> cachedir=
+DEBUG - 2015-04-06 11:43:09 --> char_set=utf8
+DEBUG - 2015-04-06 11:43:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:43:09 --> swap_pre=
+DEBUG - 2015-04-06 11:43:09 --> autoinit=1
+DEBUG - 2015-04-06 11:43:09 --> stricton=
+DEBUG - 2015-04-06 11:43:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:43:10 --> Final output sent to browser
+DEBUG - 2015-04-06 11:43:10 --> Total execution time: 5.0823
+DEBUG - 2015-04-06 11:50:41 --> Config Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Hooks Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 11:50:41 --> URI Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Router Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Output Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Security Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Input Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 11:50:41 --> Language Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Loader Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 11:50:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Model Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Model Class Initialized
+DEBUG - 2015-04-06 11:50:41 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 11:50:41 --> hostname=localhost
+DEBUG - 2015-04-06 11:50:41 --> username=root
+DEBUG - 2015-04-06 11:50:41 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 11:50:41 --> database=cl51-democompa
+DEBUG - 2015-04-06 11:50:41 --> dbdriver=mysqli
+DEBUG - 2015-04-06 11:50:41 --> dbprefix=
+DEBUG - 2015-04-06 11:50:41 --> pconnect=1
+DEBUG - 2015-04-06 11:50:41 --> db_debug=1
+DEBUG - 2015-04-06 11:50:41 --> cache_on=
+DEBUG - 2015-04-06 11:50:41 --> cachedir=
+DEBUG - 2015-04-06 11:50:41 --> char_set=utf8
+DEBUG - 2015-04-06 11:50:41 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 11:50:41 --> swap_pre=
+DEBUG - 2015-04-06 11:50:41 --> autoinit=1
+DEBUG - 2015-04-06 11:50:41 --> stricton=
+DEBUG - 2015-04-06 11:50:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 11:50:42 --> File loaded: ../application/views/reports/hire_stock_price_list.php
+DEBUG - 2015-04-06 11:50:43 --> Final output sent to browser
+DEBUG - 2015-04-06 11:50:43 --> Total execution time: 1.8600
+DEBUG - 2015-04-06 14:34:20 --> Config Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:34:20 --> URI Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Router Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Output Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Security Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Input Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:34:20 --> Language Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:34:20 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Model Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Model Class Initialized
+DEBUG - 2015-04-06 14:34:20 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:34:20 --> hostname=localhost
+DEBUG - 2015-04-06 14:34:20 --> username=root
+DEBUG - 2015-04-06 14:34:20 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:34:20 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:34:20 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:34:20 --> dbprefix=
+DEBUG - 2015-04-06 14:34:20 --> pconnect=1
+DEBUG - 2015-04-06 14:34:20 --> db_debug=1
+DEBUG - 2015-04-06 14:34:20 --> cache_on=
+DEBUG - 2015-04-06 14:34:20 --> cachedir=
+DEBUG - 2015-04-06 14:34:20 --> char_set=utf8
+DEBUG - 2015-04-06 14:34:20 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:34:20 --> swap_pre=
+DEBUG - 2015-04-06 14:34:20 --> autoinit=1
+DEBUG - 2015-04-06 14:34:20 --> stricton=
+DEBUG - 2015-04-06 14:34:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:34:21 --> XSS Filtering completed
+ERROR - 2015-04-06 14:34:21 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 428
+ERROR - 2015-04-06 14:34:21 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 434
+DEBUG - 2015-04-06 14:34:21 --> DB Transaction Failure
+ERROR - 2015-04-06 14:34:21 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and(year = 2014 and month between 04 and 12) or (year =  and month between 1 and' at line 1
+DEBUG - 2015-04-06 14:34:21 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 14:34:21 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 14:41:52 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:52 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:52 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:52 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 14:41:52 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 14:41:52 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 14:41:52 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 14:41:52 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 14:41:52 --> Final output sent to browser
+DEBUG - 2015-04-06 14:41:52 --> Total execution time: 0.0500
+DEBUG - 2015-04-06 14:41:53 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:53 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:53 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:41:53 --> hostname=localhost
+DEBUG - 2015-04-06 14:41:53 --> username=root
+DEBUG - 2015-04-06 14:41:53 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:41:53 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:41:53 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:41:53 --> dbprefix=
+DEBUG - 2015-04-06 14:41:53 --> pconnect=1
+DEBUG - 2015-04-06 14:41:53 --> db_debug=1
+DEBUG - 2015-04-06 14:41:53 --> cache_on=
+DEBUG - 2015-04-06 14:41:53 --> cachedir=
+DEBUG - 2015-04-06 14:41:53 --> char_set=utf8
+DEBUG - 2015-04-06 14:41:53 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:41:53 --> swap_pre=
+DEBUG - 2015-04-06 14:41:53 --> autoinit=1
+DEBUG - 2015-04-06 14:41:53 --> stricton=
+DEBUG - 2015-04-06 14:41:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:53 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:53 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:53 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:53 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:53 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:53 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:53 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:54 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:54 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:54 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:54 --> Final output sent to browser
+DEBUG - 2015-04-06 14:41:54 --> Total execution time: 1.1370
+DEBUG - 2015-04-06 14:41:54 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:54 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:41:54 --> hostname=localhost
+DEBUG - 2015-04-06 14:41:54 --> username=root
+DEBUG - 2015-04-06 14:41:54 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:41:54 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:41:54 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:41:54 --> dbprefix=
+DEBUG - 2015-04-06 14:41:54 --> pconnect=1
+DEBUG - 2015-04-06 14:41:54 --> db_debug=1
+DEBUG - 2015-04-06 14:41:54 --> cache_on=
+DEBUG - 2015-04-06 14:41:54 --> cachedir=
+DEBUG - 2015-04-06 14:41:54 --> char_set=utf8
+DEBUG - 2015-04-06 14:41:54 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:41:54 --> swap_pre=
+DEBUG - 2015-04-06 14:41:54 --> autoinit=1
+DEBUG - 2015-04-06 14:41:54 --> stricton=
+DEBUG - 2015-04-06 14:41:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:41:55 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 14:41:55 --> Final output sent to browser
+DEBUG - 2015-04-06 14:41:55 --> Total execution time: 2.1240
+DEBUG - 2015-04-06 14:41:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:55 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 14:41:55 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:55 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:55 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:41:55 --> hostname=localhost
+DEBUG - 2015-04-06 14:41:55 --> username=root
+DEBUG - 2015-04-06 14:41:55 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:41:55 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:41:55 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:41:55 --> dbprefix=
+DEBUG - 2015-04-06 14:41:55 --> pconnect=1
+DEBUG - 2015-04-06 14:41:55 --> db_debug=1
+DEBUG - 2015-04-06 14:41:55 --> cache_on=
+DEBUG - 2015-04-06 14:41:55 --> cachedir=
+DEBUG - 2015-04-06 14:41:55 --> char_set=utf8
+DEBUG - 2015-04-06 14:41:55 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:41:55 --> swap_pre=
+DEBUG - 2015-04-06 14:41:55 --> autoinit=1
+DEBUG - 2015-04-06 14:41:55 --> stricton=
+DEBUG - 2015-04-06 14:41:55 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:41:56 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:41:56 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 14:41.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 14:41.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 14:41:56 --> Final output sent to browser
+DEBUG - 2015-04-06 14:41:56 --> Total execution time: 3.0930
+DEBUG - 2015-04-06 14:41:56 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:56 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:56 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:41:56 --> hostname=localhost
+DEBUG - 2015-04-06 14:41:56 --> username=root
+DEBUG - 2015-04-06 14:41:56 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:41:56 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:41:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:41:56 --> dbprefix=
+DEBUG - 2015-04-06 14:41:56 --> pconnect=1
+DEBUG - 2015-04-06 14:41:56 --> db_debug=1
+DEBUG - 2015-04-06 14:41:56 --> cache_on=
+DEBUG - 2015-04-06 14:41:56 --> cachedir=
+DEBUG - 2015-04-06 14:41:56 --> char_set=utf8
+DEBUG - 2015-04-06 14:41:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:41:56 --> swap_pre=
+DEBUG - 2015-04-06 14:41:56 --> autoinit=1
+DEBUG - 2015-04-06 14:41:56 --> stricton=
+DEBUG - 2015-04-06 14:41:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:41:57 --> Final output sent to browser
+DEBUG - 2015-04-06 14:41:57 --> Total execution time: 4.3090
+DEBUG - 2015-04-06 14:41:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:57 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:57 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:57 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:41:57 --> hostname=localhost
+DEBUG - 2015-04-06 14:41:57 --> username=root
+DEBUG - 2015-04-06 14:41:57 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:41:57 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:41:57 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:41:57 --> dbprefix=
+DEBUG - 2015-04-06 14:41:57 --> pconnect=1
+DEBUG - 2015-04-06 14:41:57 --> db_debug=1
+DEBUG - 2015-04-06 14:41:57 --> cache_on=
+DEBUG - 2015-04-06 14:41:57 --> cachedir=
+DEBUG - 2015-04-06 14:41:57 --> char_set=utf8
+DEBUG - 2015-04-06 14:41:57 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:41:57 --> swap_pre=
+DEBUG - 2015-04-06 14:41:57 --> autoinit=1
+DEBUG - 2015-04-06 14:41:57 --> stricton=
+DEBUG - 2015-04-06 14:41:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:41:58 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 14:41:58 --> File loaded: ../application/views/hire_stock_new_item.php
+DEBUG - 2015-04-06 14:41:58 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 14:41:58 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 14:41:58 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 14:41:58 --> Final output sent to browser
+DEBUG - 2015-04-06 14:41:58 --> Total execution time: 4.7650
+DEBUG - 2015-04-06 14:41:59 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:59 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:59 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:59 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:59 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:59 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Config Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Model Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:41:59 --> hostname=localhost
+DEBUG - 2015-04-06 14:41:59 --> username=root
+DEBUG - 2015-04-06 14:41:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:41:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:41:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:41:59 --> dbprefix=
+DEBUG - 2015-04-06 14:41:59 --> pconnect=1
+DEBUG - 2015-04-06 14:41:59 --> db_debug=1
+DEBUG - 2015-04-06 14:41:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> cache_on=
+DEBUG - 2015-04-06 14:41:59 --> cachedir=
+DEBUG - 2015-04-06 14:41:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> char_set=utf8
+DEBUG - 2015-04-06 14:41:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:41:59 --> URI Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Router Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:41:59 --> swap_pre=
+DEBUG - 2015-04-06 14:41:59 --> autoinit=1
+DEBUG - 2015-04-06 14:41:59 --> stricton=
+DEBUG - 2015-04-06 14:41:59 --> Output Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Security Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Input Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:41:59 --> Language Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:41:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:41:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:00 --> Total execution time: 1.0720
+DEBUG - 2015-04-06 14:42:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:00 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:00 --> username=root
+DEBUG - 2015-04-06 14:42:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:00 --> dbprefix=
+DEBUG - 2015-04-06 14:42:00 --> pconnect=1
+DEBUG - 2015-04-06 14:42:00 --> db_debug=1
+DEBUG - 2015-04-06 14:42:00 --> cache_on=
+DEBUG - 2015-04-06 14:42:00 --> cachedir=
+DEBUG - 2015-04-06 14:42:00 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:00 --> swap_pre=
+DEBUG - 2015-04-06 14:42:00 --> autoinit=1
+DEBUG - 2015-04-06 14:42:00 --> stricton=
+DEBUG - 2015-04-06 14:42:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:00 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:00 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:01 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 14:42:01 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:01 --> Total execution time: 2.1040
+DEBUG - 2015-04-06 14:42:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 14:42:01 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:01 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:01 --> username=root
+DEBUG - 2015-04-06 14:42:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:01 --> dbprefix=
+DEBUG - 2015-04-06 14:42:01 --> pconnect=1
+DEBUG - 2015-04-06 14:42:01 --> db_debug=1
+DEBUG - 2015-04-06 14:42:01 --> cache_on=
+DEBUG - 2015-04-06 14:42:01 --> cachedir=
+DEBUG - 2015-04-06 14:42:01 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:01 --> swap_pre=
+DEBUG - 2015-04-06 14:42:01 --> autoinit=1
+DEBUG - 2015-04-06 14:42:01 --> stricton=
+DEBUG - 2015-04-06 14:42:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:01 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:01 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:02 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:02 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:02 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:02 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:42:02 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 14:41.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 14:41.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 14:42:02 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:02 --> Total execution time: 3.1500
+DEBUG - 2015-04-06 14:42:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 14:42:02 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:02 --> Total execution time: 2.0310
+DEBUG - 2015-04-06 14:42:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 14:42:02 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:02 --> Total execution time: 0.8020
+DEBUG - 2015-04-06 14:42:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 14:42:02 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 14:42:02 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:02 --> Total execution time: 0.5320
+DEBUG - 2015-04-06 14:42:03 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:03 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:03 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:03 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:03 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:03 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:03 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:03 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:03 --> username=root
+DEBUG - 2015-04-06 14:42:03 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:03 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:03 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:03 --> dbprefix=
+DEBUG - 2015-04-06 14:42:03 --> pconnect=1
+DEBUG - 2015-04-06 14:42:03 --> db_debug=1
+DEBUG - 2015-04-06 14:42:03 --> cache_on=
+DEBUG - 2015-04-06 14:42:03 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> cachedir=
+DEBUG - 2015-04-06 14:42:03 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:03 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:03 --> swap_pre=
+DEBUG - 2015-04-06 14:42:03 --> autoinit=1
+DEBUG - 2015-04-06 14:42:03 --> stricton=
+DEBUG - 2015-04-06 14:42:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:03 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:03 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:03 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:03 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:03 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:04 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:04 --> Total execution time: 1.1840
+DEBUG - 2015-04-06 14:42:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:04 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:04 --> username=root
+DEBUG - 2015-04-06 14:42:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:04 --> dbprefix=
+DEBUG - 2015-04-06 14:42:04 --> pconnect=1
+DEBUG - 2015-04-06 14:42:04 --> db_debug=1
+DEBUG - 2015-04-06 14:42:04 --> cache_on=
+DEBUG - 2015-04-06 14:42:04 --> cachedir=
+DEBUG - 2015-04-06 14:42:04 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:04 --> swap_pre=
+DEBUG - 2015-04-06 14:42:04 --> autoinit=1
+DEBUG - 2015-04-06 14:42:04 --> stricton=
+DEBUG - 2015-04-06 14:42:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:04 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:04 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:05 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:05 --> Total execution time: 2.2580
+DEBUG - 2015-04-06 14:42:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:05 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 14:42:05 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:05 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:05 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:05 --> username=root
+DEBUG - 2015-04-06 14:42:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:05 --> dbprefix=
+DEBUG - 2015-04-06 14:42:05 --> pconnect=1
+DEBUG - 2015-04-06 14:42:05 --> db_debug=1
+DEBUG - 2015-04-06 14:42:05 --> cache_on=
+DEBUG - 2015-04-06 14:42:05 --> cachedir=
+DEBUG - 2015-04-06 14:42:05 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:05 --> swap_pre=
+DEBUG - 2015-04-06 14:42:05 --> autoinit=1
+DEBUG - 2015-04-06 14:42:05 --> stricton=
+DEBUG - 2015-04-06 14:42:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:42:06 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 14:42.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 14:42.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 14:42:06 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:06 --> Total execution time: 3.2880
+DEBUG - 2015-04-06 14:42:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:06 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:06 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:06 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:06 --> username=root
+DEBUG - 2015-04-06 14:42:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:06 --> dbprefix=
+DEBUG - 2015-04-06 14:42:06 --> pconnect=1
+DEBUG - 2015-04-06 14:42:06 --> db_debug=1
+DEBUG - 2015-04-06 14:42:06 --> cache_on=
+DEBUG - 2015-04-06 14:42:06 --> cachedir=
+DEBUG - 2015-04-06 14:42:06 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:06 --> swap_pre=
+DEBUG - 2015-04-06 14:42:06 --> autoinit=1
+DEBUG - 2015-04-06 14:42:06 --> stricton=
+DEBUG - 2015-04-06 14:42:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:07 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 14:42:07 --> Final output sent to browser
+DEBUG - 2015-04-06 14:42:07 --> Total execution time: 4.3380
+DEBUG - 2015-04-06 14:42:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:07 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:07 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:07 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:07 --> username=root
+DEBUG - 2015-04-06 14:42:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:07 --> dbprefix=
+DEBUG - 2015-04-06 14:42:07 --> pconnect=1
+DEBUG - 2015-04-06 14:42:07 --> db_debug=1
+DEBUG - 2015-04-06 14:42:07 --> cache_on=
+DEBUG - 2015-04-06 14:42:07 --> cachedir=
+DEBUG - 2015-04-06 14:42:07 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:07 --> swap_pre=
+DEBUG - 2015-04-06 14:42:07 --> autoinit=1
+DEBUG - 2015-04-06 14:42:07 --> stricton=
+DEBUG - 2015-04-06 14:42:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:08 --> XSS Filtering completed
+ERROR - 2015-04-06 14:42:08 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 428
+ERROR - 2015-04-06 14:42:08 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 434
+DEBUG - 2015-04-06 14:42:08 --> DB Transaction Failure
+ERROR - 2015-04-06 14:42:08 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and(year = 2014 and month between 04 and 12) or (year =  and month between 1 and' at line 1
+DEBUG - 2015-04-06 14:42:08 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 14:42:08 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 14:42:27 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:27 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:27 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:27 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:27 --> username=root
+DEBUG - 2015-04-06 14:42:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:27 --> dbprefix=
+DEBUG - 2015-04-06 14:42:27 --> pconnect=1
+DEBUG - 2015-04-06 14:42:27 --> db_debug=1
+DEBUG - 2015-04-06 14:42:27 --> cache_on=
+DEBUG - 2015-04-06 14:42:27 --> cachedir=
+DEBUG - 2015-04-06 14:42:27 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:27 --> swap_pre=
+DEBUG - 2015-04-06 14:42:27 --> autoinit=1
+DEBUG - 2015-04-06 14:42:27 --> stricton=
+DEBUG - 2015-04-06 14:42:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:28 --> XSS Filtering completed
+ERROR - 2015-04-06 14:42:28 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 428
+ERROR - 2015-04-06 14:42:28 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 434
+DEBUG - 2015-04-06 14:42:28 --> DB Transaction Failure
+ERROR - 2015-04-06 14:42:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and(year = 2014 and month between 04 and 12) or (year =  and month between 1 and' at line 1
+DEBUG - 2015-04-06 14:42:28 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 14:42:28 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\application\controllers\hire_stock.php:146) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 14:42:53 --> Config Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:42:53 --> URI Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Router Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Output Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Security Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Input Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:42:53 --> Language Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:42:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Model Class Initialized
+DEBUG - 2015-04-06 14:42:53 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:42:53 --> hostname=localhost
+DEBUG - 2015-04-06 14:42:53 --> username=root
+DEBUG - 2015-04-06 14:42:53 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:42:53 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:42:53 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:42:53 --> dbprefix=
+DEBUG - 2015-04-06 14:42:53 --> pconnect=1
+DEBUG - 2015-04-06 14:42:53 --> db_debug=1
+DEBUG - 2015-04-06 14:42:53 --> cache_on=
+DEBUG - 2015-04-06 14:42:53 --> cachedir=
+DEBUG - 2015-04-06 14:42:53 --> char_set=utf8
+DEBUG - 2015-04-06 14:42:53 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:42:53 --> swap_pre=
+DEBUG - 2015-04-06 14:42:53 --> autoinit=1
+DEBUG - 2015-04-06 14:42:53 --> stricton=
+DEBUG - 2015-04-06 14:42:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:42:54 --> XSS Filtering completed
+ERROR - 2015-04-06 14:42:54 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 14:42:54 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 436
+DEBUG - 2015-04-06 14:42:54 --> DB Transaction Failure
+ERROR - 2015-04-06 14:42:54 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and(year = 2014 and month between 04 and 12) or (year =  and month between 1 and' at line 1
+DEBUG - 2015-04-06 14:42:54 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 14:42:54 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php:427) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 14:43:13 --> Config Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:43:13 --> URI Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Router Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Output Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Security Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Input Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:43:13 --> Language Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:43:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Model Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Model Class Initialized
+DEBUG - 2015-04-06 14:43:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:43:13 --> hostname=localhost
+DEBUG - 2015-04-06 14:43:13 --> username=root
+DEBUG - 2015-04-06 14:43:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:43:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:43:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:43:13 --> dbprefix=
+DEBUG - 2015-04-06 14:43:13 --> pconnect=1
+DEBUG - 2015-04-06 14:43:13 --> db_debug=1
+DEBUG - 2015-04-06 14:43:13 --> cache_on=
+DEBUG - 2015-04-06 14:43:13 --> cachedir=
+DEBUG - 2015-04-06 14:43:13 --> char_set=utf8
+DEBUG - 2015-04-06 14:43:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:43:13 --> swap_pre=
+DEBUG - 2015-04-06 14:43:13 --> autoinit=1
+DEBUG - 2015-04-06 14:43:13 --> stricton=
+DEBUG - 2015-04-06 14:43:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:43:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:43:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:43:14 --> DB Transaction Failure
+ERROR - 2015-04-06 14:43:14 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and(year = 2014 and month between 04 and 12) or (year = 2015 and month between 1' at line 1
+DEBUG - 2015-04-06 14:43:14 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 14:43:14 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php:427) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 14:43:43 --> Config Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:43:43 --> URI Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Router Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Output Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Security Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Input Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:43:43 --> Language Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:43:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Model Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Model Class Initialized
+DEBUG - 2015-04-06 14:43:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:43:43 --> hostname=localhost
+DEBUG - 2015-04-06 14:43:43 --> username=root
+DEBUG - 2015-04-06 14:43:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:43:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:43:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:43:43 --> dbprefix=
+DEBUG - 2015-04-06 14:43:43 --> pconnect=1
+DEBUG - 2015-04-06 14:43:43 --> db_debug=1
+DEBUG - 2015-04-06 14:43:43 --> cache_on=
+DEBUG - 2015-04-06 14:43:43 --> cachedir=
+DEBUG - 2015-04-06 14:43:43 --> char_set=utf8
+DEBUG - 2015-04-06 14:43:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:43:43 --> swap_pre=
+DEBUG - 2015-04-06 14:43:43 --> autoinit=1
+DEBUG - 2015-04-06 14:43:43 --> stricton=
+DEBUG - 2015-04-06 14:43:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:43:44 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:43:44 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:43:44 --> DB Transaction Failure
+ERROR - 2015-04-06 14:43:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year = 2014 and month between 04 and 12) or (year = 2015 and month between ' at line 1
+DEBUG - 2015-04-06 14:43:44 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 14:43:44 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php:427) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 14:44:34 --> Config Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:44:34 --> URI Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Router Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Output Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Security Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Input Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:44:34 --> Language Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:44:34 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Model Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Model Class Initialized
+DEBUG - 2015-04-06 14:44:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:44:34 --> hostname=localhost
+DEBUG - 2015-04-06 14:44:34 --> username=root
+DEBUG - 2015-04-06 14:44:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:44:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:44:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:44:34 --> dbprefix=
+DEBUG - 2015-04-06 14:44:34 --> pconnect=1
+DEBUG - 2015-04-06 14:44:34 --> db_debug=1
+DEBUG - 2015-04-06 14:44:34 --> cache_on=
+DEBUG - 2015-04-06 14:44:34 --> cachedir=
+DEBUG - 2015-04-06 14:44:34 --> char_set=utf8
+DEBUG - 2015-04-06 14:44:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:44:34 --> swap_pre=
+DEBUG - 2015-04-06 14:44:34 --> autoinit=1
+DEBUG - 2015-04-06 14:44:34 --> stricton=
+DEBUG - 2015-04-06 14:44:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:44:35 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:44:35 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:44:35 --> XSS Filtering completed
+ERROR - 2015-04-06 14:44:35 --> Severity: Notice  --> Use of undefined constant json - assumed 'json' C:\inetpub\firedesk.co.uk\web\application\controllers\hire_stock.php 158
+DEBUG - 2015-04-06 14:44:35 --> Final output sent to browser
+DEBUG - 2015-04-06 14:44:35 --> Total execution time: 1.0720
+DEBUG - 2015-04-06 14:45:00 --> Config Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 14:45:00 --> URI Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Router Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Output Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Security Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Input Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 14:45:00 --> Language Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 14:45:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Model Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Model Class Initialized
+DEBUG - 2015-04-06 14:45:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 14:45:00 --> hostname=localhost
+DEBUG - 2015-04-06 14:45:00 --> username=root
+DEBUG - 2015-04-06 14:45:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 14:45:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 14:45:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 14:45:00 --> dbprefix=
+DEBUG - 2015-04-06 14:45:00 --> pconnect=1
+DEBUG - 2015-04-06 14:45:00 --> db_debug=1
+DEBUG - 2015-04-06 14:45:00 --> cache_on=
+DEBUG - 2015-04-06 14:45:00 --> cachedir=
+DEBUG - 2015-04-06 14:45:00 --> char_set=utf8
+DEBUG - 2015-04-06 14:45:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 14:45:00 --> swap_pre=
+DEBUG - 2015-04-06 14:45:00 --> autoinit=1
+DEBUG - 2015-04-06 14:45:00 --> stricton=
+DEBUG - 2015-04-06 14:45:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 14:45:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:45:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:45:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 14:45:01 --> Final output sent to browser
+DEBUG - 2015-04-06 14:45:01 --> Total execution time: 1.0600
+DEBUG - 2015-04-06 15:33:01 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:01 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:01 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:13 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:13 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Session Class Initialized
+DEBUG - 2015-04-06 15:33:13 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:33:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:14 --> A session cookie was not found.
+DEBUG - 2015-04-06 15:33:14 --> Session routines successfully run
+DEBUG - 2015-04-06 15:33:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:33:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:33:14 --> XSS Filtering completed
+ERROR - 2015-04-06 15:33:14 --> Severity: Notice  --> Undefined variable: custom_css C:\inetpub\firedesk.co.uk\web\application\views\header_nav.php 16
+ERROR - 2015-04-06 15:33:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\inetpub\firedesk.co.uk\web\application\views\header_nav.php 16
+DEBUG - 2015-04-06 15:33:14 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 15:33:14 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 15:33:14 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 15:33:14 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 15:33:14 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 15:33:14 --> Final output sent to browser
+DEBUG - 2015-04-06 15:33:14 --> Total execution time: 1.4231
+DEBUG - 2015-04-06 15:33:15 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:15 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:15 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:15 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:15 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:15 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 15:33:15 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:15 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:33:15 --> hostname=localhost
+DEBUG - 2015-04-06 15:33:15 --> username=root
+DEBUG - 2015-04-06 15:33:15 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:33:15 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:33:15 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:33:15 --> dbprefix=
+DEBUG - 2015-04-06 15:33:15 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> pconnect=1
+DEBUG - 2015-04-06 15:33:15 --> db_debug=1
+DEBUG - 2015-04-06 15:33:15 --> cache_on=
+DEBUG - 2015-04-06 15:33:15 --> cachedir=
+DEBUG - 2015-04-06 15:33:15 --> char_set=utf8
+DEBUG - 2015-04-06 15:33:15 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:33:15 --> swap_pre=
+DEBUG - 2015-04-06 15:33:15 --> autoinit=1
+DEBUG - 2015-04-06 15:33:15 --> stricton=
+DEBUG - 2015-04-06 15:33:15 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:15 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:15 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:15 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:15 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:15 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:15 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:16 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:33:16 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 15:33.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 15:33.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 15:33:16 --> Final output sent to browser
+DEBUG - 2015-04-06 15:33:16 --> Total execution time: 1.1131
+DEBUG - 2015-04-06 15:33:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:16 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:16 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:33:16 --> hostname=localhost
+DEBUG - 2015-04-06 15:33:16 --> username=root
+DEBUG - 2015-04-06 15:33:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:33:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:33:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:33:16 --> dbprefix=
+DEBUG - 2015-04-06 15:33:16 --> pconnect=1
+DEBUG - 2015-04-06 15:33:16 --> db_debug=1
+DEBUG - 2015-04-06 15:33:16 --> cache_on=
+DEBUG - 2015-04-06 15:33:16 --> cachedir=
+DEBUG - 2015-04-06 15:33:16 --> char_set=utf8
+DEBUG - 2015-04-06 15:33:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:33:16 --> swap_pre=
+DEBUG - 2015-04-06 15:33:16 --> autoinit=1
+DEBUG - 2015-04-06 15:33:16 --> stricton=
+DEBUG - 2015-04-06 15:33:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:17 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 15:33:17 --> Final output sent to browser
+DEBUG - 2015-04-06 15:33:17 --> Total execution time: 2.1411
+DEBUG - 2015-04-06 15:33:17 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:17 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:17 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:17 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:33:17 --> hostname=localhost
+DEBUG - 2015-04-06 15:33:17 --> username=root
+DEBUG - 2015-04-06 15:33:17 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:33:17 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:33:17 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:33:17 --> dbprefix=
+DEBUG - 2015-04-06 15:33:17 --> pconnect=1
+DEBUG - 2015-04-06 15:33:17 --> db_debug=1
+DEBUG - 2015-04-06 15:33:17 --> cache_on=
+DEBUG - 2015-04-06 15:33:17 --> cachedir=
+DEBUG - 2015-04-06 15:33:17 --> char_set=utf8
+DEBUG - 2015-04-06 15:33:17 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:33:17 --> swap_pre=
+DEBUG - 2015-04-06 15:33:17 --> autoinit=1
+DEBUG - 2015-04-06 15:33:17 --> stricton=
+DEBUG - 2015-04-06 15:33:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:18 --> Final output sent to browser
+DEBUG - 2015-04-06 15:33:18 --> Total execution time: 3.1692
+DEBUG - 2015-04-06 15:33:18 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:18 --> Session Class Initialized
+DEBUG - 2015-04-06 15:33:18 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:33:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:19 --> Session routines successfully run
+DEBUG - 2015-04-06 15:33:19 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:19 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:19 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:33:19 --> hostname=localhost
+DEBUG - 2015-04-06 15:33:19 --> username=root
+DEBUG - 2015-04-06 15:33:19 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:33:19 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:33:19 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:33:19 --> dbprefix=
+DEBUG - 2015-04-06 15:33:19 --> pconnect=1
+DEBUG - 2015-04-06 15:33:19 --> db_debug=1
+DEBUG - 2015-04-06 15:33:19 --> cache_on=
+DEBUG - 2015-04-06 15:33:19 --> cachedir=
+DEBUG - 2015-04-06 15:33:19 --> char_set=utf8
+DEBUG - 2015-04-06 15:33:19 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:33:19 --> swap_pre=
+DEBUG - 2015-04-06 15:33:19 --> autoinit=1
+DEBUG - 2015-04-06 15:33:19 --> stricton=
+DEBUG - 2015-04-06 15:33:19 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:20 --> Final output sent to browser
+DEBUG - 2015-04-06 15:33:20 --> Total execution time: 5.1833
+DEBUG - 2015-04-06 15:33:57 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:57 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:57 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Session Class Initialized
+DEBUG - 2015-04-06 15:33:57 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:33:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:33:58 --> Session routines successfully run
+DEBUG - 2015-04-06 15:33:58 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:33:58 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:33:58 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:33:59 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 15:33:59 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 15:33:59 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 15:33:59 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 15:33:59 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 15:33:59 --> Final output sent to browser
+DEBUG - 2015-04-06 15:33:59 --> Total execution time: 1.4241
+DEBUG - 2015-04-06 15:33:59 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:59 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:59 --> Config Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:59 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:59 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:59 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:59 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:59 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:33:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> URI Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Router Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:59 --> Output Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Security Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Model Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Input Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:33:59 --> hostname=localhost
+DEBUG - 2015-04-06 15:33:59 --> username=root
+DEBUG - 2015-04-06 15:33:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:33:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:33:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:33:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:33:59 --> dbprefix=
+DEBUG - 2015-04-06 15:33:59 --> pconnect=1
+DEBUG - 2015-04-06 15:33:59 --> Language Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> db_debug=1
+DEBUG - 2015-04-06 15:33:59 --> cache_on=
+DEBUG - 2015-04-06 15:33:59 --> cachedir=
+DEBUG - 2015-04-06 15:33:59 --> char_set=utf8
+DEBUG - 2015-04-06 15:33:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:33:59 --> swap_pre=
+DEBUG - 2015-04-06 15:33:59 --> autoinit=1
+DEBUG - 2015-04-06 15:33:59 --> stricton=
+DEBUG - 2015-04-06 15:33:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:33:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:33:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:00 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 15:34:00 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:00 --> Total execution time: 1.0841
+DEBUG - 2015-04-06 15:34:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:00 --> Session Class Initialized
+DEBUG - 2015-04-06 15:34:00 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:34:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:01 --> Session routines successfully run
+DEBUG - 2015-04-06 15:34:01 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:01 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:01 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:01 --> username=root
+DEBUG - 2015-04-06 15:34:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:01 --> dbprefix=
+DEBUG - 2015-04-06 15:34:01 --> pconnect=1
+DEBUG - 2015-04-06 15:34:01 --> db_debug=1
+DEBUG - 2015-04-06 15:34:01 --> cache_on=
+DEBUG - 2015-04-06 15:34:01 --> cachedir=
+DEBUG - 2015-04-06 15:34:01 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:01 --> swap_pre=
+DEBUG - 2015-04-06 15:34:01 --> autoinit=1
+DEBUG - 2015-04-06 15:34:01 --> stricton=
+DEBUG - 2015-04-06 15:34:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:02 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:02 --> Total execution time: 3.3252
+DEBUG - 2015-04-06 15:34:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:02 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 15:34:03 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:03 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:03 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:03 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:03 --> username=root
+DEBUG - 2015-04-06 15:34:03 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:03 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:03 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:03 --> dbprefix=
+DEBUG - 2015-04-06 15:34:03 --> pconnect=1
+DEBUG - 2015-04-06 15:34:03 --> db_debug=1
+DEBUG - 2015-04-06 15:34:03 --> cache_on=
+DEBUG - 2015-04-06 15:34:03 --> cachedir=
+DEBUG - 2015-04-06 15:34:03 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:03 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:03 --> swap_pre=
+DEBUG - 2015-04-06 15:34:03 --> autoinit=1
+DEBUG - 2015-04-06 15:34:03 --> stricton=
+DEBUG - 2015-04-06 15:34:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:04 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:04 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 15:33.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 15:33.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 15:34:04 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:04 --> Total execution time: 4.3783
+DEBUG - 2015-04-06 15:34:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:04 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:04 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:04 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:04 --> username=root
+DEBUG - 2015-04-06 15:34:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:04 --> dbprefix=
+DEBUG - 2015-04-06 15:34:04 --> pconnect=1
+DEBUG - 2015-04-06 15:34:04 --> db_debug=1
+DEBUG - 2015-04-06 15:34:04 --> cache_on=
+DEBUG - 2015-04-06 15:34:04 --> cachedir=
+DEBUG - 2015-04-06 15:34:04 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:04 --> swap_pre=
+DEBUG - 2015-04-06 15:34:04 --> autoinit=1
+DEBUG - 2015-04-06 15:34:04 --> stricton=
+DEBUG - 2015-04-06 15:34:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:05 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:05 --> Total execution time: 5.4383
+DEBUG - 2015-04-06 15:34:27 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:27 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:27 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Session Class Initialized
+DEBUG - 2015-04-06 15:34:27 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:34:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:28 --> Session routines successfully run
+DEBUG - 2015-04-06 15:34:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:28 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 15:34:28 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 15:34:28 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 15:34:28 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 15:34:28 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 15:34:28 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:28 --> Total execution time: 1.3151
+DEBUG - 2015-04-06 15:34:29 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:29 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:29 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:29 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:29 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:29 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:29 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:29 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:29 --> username=root
+DEBUG - 2015-04-06 15:34:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:29 --> dbprefix=
+DEBUG - 2015-04-06 15:34:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> pconnect=1
+DEBUG - 2015-04-06 15:34:29 --> db_debug=1
+DEBUG - 2015-04-06 15:34:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:29 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:29 --> cache_on=
+DEBUG - 2015-04-06 15:34:29 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> cachedir=
+DEBUG - 2015-04-06 15:34:29 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:29 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:29 --> swap_pre=
+DEBUG - 2015-04-06 15:34:29 --> autoinit=1
+DEBUG - 2015-04-06 15:34:29 --> stricton=
+DEBUG - 2015-04-06 15:34:29 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:29 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:30 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:30 --> Total execution time: 1.0761
+DEBUG - 2015-04-06 15:34:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:30 --> Session Class Initialized
+DEBUG - 2015-04-06 15:34:30 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:34:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:31 --> Session routines successfully run
+DEBUG - 2015-04-06 15:34:31 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:31 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:31 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:31 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:31 --> username=root
+DEBUG - 2015-04-06 15:34:31 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:31 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:31 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:31 --> dbprefix=
+DEBUG - 2015-04-06 15:34:31 --> pconnect=1
+DEBUG - 2015-04-06 15:34:31 --> db_debug=1
+DEBUG - 2015-04-06 15:34:31 --> cache_on=
+DEBUG - 2015-04-06 15:34:31 --> cachedir=
+DEBUG - 2015-04-06 15:34:31 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:31 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:31 --> swap_pre=
+DEBUG - 2015-04-06 15:34:31 --> autoinit=1
+DEBUG - 2015-04-06 15:34:31 --> stricton=
+DEBUG - 2015-04-06 15:34:31 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:32 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:32 --> Total execution time: 3.4212
+DEBUG - 2015-04-06 15:34:32 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:32 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:32 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:32 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:32 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:32 --> username=root
+DEBUG - 2015-04-06 15:34:32 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:32 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:32 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:32 --> dbprefix=
+DEBUG - 2015-04-06 15:34:32 --> pconnect=1
+DEBUG - 2015-04-06 15:34:32 --> db_debug=1
+DEBUG - 2015-04-06 15:34:32 --> cache_on=
+DEBUG - 2015-04-06 15:34:32 --> cachedir=
+DEBUG - 2015-04-06 15:34:32 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:32 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:32 --> swap_pre=
+DEBUG - 2015-04-06 15:34:32 --> autoinit=1
+DEBUG - 2015-04-06 15:34:32 --> stricton=
+DEBUG - 2015-04-06 15:34:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:33 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 15:34:33 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:33 --> Total execution time: 4.4833
+DEBUG - 2015-04-06 15:34:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:33 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 15:34:33 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:33 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:33 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:33 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:33 --> username=root
+DEBUG - 2015-04-06 15:34:33 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:33 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:33 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:33 --> dbprefix=
+DEBUG - 2015-04-06 15:34:33 --> pconnect=1
+DEBUG - 2015-04-06 15:34:33 --> db_debug=1
+DEBUG - 2015-04-06 15:34:33 --> cache_on=
+DEBUG - 2015-04-06 15:34:33 --> cachedir=
+DEBUG - 2015-04-06 15:34:33 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:33 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:33 --> swap_pre=
+DEBUG - 2015-04-06 15:34:33 --> autoinit=1
+DEBUG - 2015-04-06 15:34:33 --> stricton=
+DEBUG - 2015-04-06 15:34:33 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:34 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:34 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 15:34.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 15:34.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 15:34:34 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:34 --> Total execution time: 5.5183
+DEBUG - 2015-04-06 15:34:41 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:41 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:41 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Session Class Initialized
+DEBUG - 2015-04-06 15:34:41 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:34:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:43 --> Session garbage collection performed.
+DEBUG - 2015-04-06 15:34:43 --> Session routines successfully run
+DEBUG - 2015-04-06 15:34:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:43 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 15:34:43 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 15:34:43 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 15:34:43 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 15:34:43 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 15:34:43 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:43 --> Total execution time: 1.8921
+DEBUG - 2015-04-06 15:34:44 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:44 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:44 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:44 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:44 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:44 --> Config Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:44 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:44 --> username=root
+DEBUG - 2015-04-06 15:34:44 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:44 --> dbprefix=
+DEBUG - 2015-04-06 15:34:44 --> pconnect=1
+DEBUG - 2015-04-06 15:34:44 --> db_debug=1
+DEBUG - 2015-04-06 15:34:44 --> cache_on=
+DEBUG - 2015-04-06 15:34:44 --> cachedir=
+DEBUG - 2015-04-06 15:34:44 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:44 --> swap_pre=
+DEBUG - 2015-04-06 15:34:44 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> autoinit=1
+DEBUG - 2015-04-06 15:34:44 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 15:34:44 --> stricton=
+DEBUG - 2015-04-06 15:34:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:44 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> URI Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:44 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Router Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Output Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Security Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:44 --> Input Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 15:34:44 --> Language Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 15:34:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 15:34:45 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 15:34:45 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:45 --> Total execution time: 1.0811
+DEBUG - 2015-04-06 15:34:45 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:45 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 15:34:45 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:45 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:45 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:45 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:45 --> username=root
+DEBUG - 2015-04-06 15:34:45 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:45 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:45 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:45 --> dbprefix=
+DEBUG - 2015-04-06 15:34:45 --> pconnect=1
+DEBUG - 2015-04-06 15:34:45 --> db_debug=1
+DEBUG - 2015-04-06 15:34:45 --> cache_on=
+DEBUG - 2015-04-06 15:34:45 --> cachedir=
+DEBUG - 2015-04-06 15:34:45 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:45 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:45 --> swap_pre=
+DEBUG - 2015-04-06 15:34:45 --> autoinit=1
+DEBUG - 2015-04-06 15:34:45 --> stricton=
+DEBUG - 2015-04-06 15:34:45 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:46 --> XSS Filtering completed
+DEBUG - 2015-04-06 15:34:46 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 15:34.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 15:34.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 15:34:46 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:46 --> Total execution time: 2.2111
+DEBUG - 2015-04-06 15:34:46 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:46 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:46 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:46 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:46 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:46 --> username=root
+DEBUG - 2015-04-06 15:34:46 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:46 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:46 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:46 --> dbprefix=
+DEBUG - 2015-04-06 15:34:46 --> pconnect=1
+DEBUG - 2015-04-06 15:34:46 --> db_debug=1
+DEBUG - 2015-04-06 15:34:46 --> cache_on=
+DEBUG - 2015-04-06 15:34:46 --> cachedir=
+DEBUG - 2015-04-06 15:34:46 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:46 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:46 --> swap_pre=
+DEBUG - 2015-04-06 15:34:46 --> autoinit=1
+DEBUG - 2015-04-06 15:34:46 --> stricton=
+DEBUG - 2015-04-06 15:34:46 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:47 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:47 --> Total execution time: 3.2442
+DEBUG - 2015-04-06 15:34:47 --> Controller Class Initialized
+DEBUG - 2015-04-06 15:34:47 --> Session Class Initialized
+DEBUG - 2015-04-06 15:34:47 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 15:34:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:48 --> Session routines successfully run
+DEBUG - 2015-04-06 15:34:48 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:48 --> Model Class Initialized
+DEBUG - 2015-04-06 15:34:48 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 15:34:48 --> hostname=localhost
+DEBUG - 2015-04-06 15:34:48 --> username=root
+DEBUG - 2015-04-06 15:34:48 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 15:34:48 --> database=cl51-democompa
+DEBUG - 2015-04-06 15:34:48 --> dbdriver=mysqli
+DEBUG - 2015-04-06 15:34:48 --> dbprefix=
+DEBUG - 2015-04-06 15:34:48 --> pconnect=1
+DEBUG - 2015-04-06 15:34:48 --> db_debug=1
+DEBUG - 2015-04-06 15:34:48 --> cache_on=
+DEBUG - 2015-04-06 15:34:48 --> cachedir=
+DEBUG - 2015-04-06 15:34:48 --> char_set=utf8
+DEBUG - 2015-04-06 15:34:48 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 15:34:48 --> swap_pre=
+DEBUG - 2015-04-06 15:34:48 --> autoinit=1
+DEBUG - 2015-04-06 15:34:48 --> stricton=
+DEBUG - 2015-04-06 15:34:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 15:34:49 --> Final output sent to browser
+DEBUG - 2015-04-06 15:34:49 --> Total execution time: 5.5393
+DEBUG - 2015-04-06 19:06:17 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:17 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:17 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:06:17 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:17 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:06:17 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 19:06:17 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:06:17 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:06:17 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:06:17 --> Final output sent to browser
+DEBUG - 2015-04-06 19:06:17 --> Total execution time: 0.0420
+DEBUG - 2015-04-06 19:06:18 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:18 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:18 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:18 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:06:18 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:06:18 --> hostname=localhost
+DEBUG - 2015-04-06 19:06:18 --> username=root
+DEBUG - 2015-04-06 19:06:18 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:06:18 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:06:18 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:06:18 --> dbprefix=
+DEBUG - 2015-04-06 19:06:18 --> pconnect=1
+DEBUG - 2015-04-06 19:06:18 --> db_debug=1
+DEBUG - 2015-04-06 19:06:18 --> cache_on=
+DEBUG - 2015-04-06 19:06:18 --> cachedir=
+DEBUG - 2015-04-06 19:06:18 --> char_set=utf8
+DEBUG - 2015-04-06 19:06:18 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:06:18 --> swap_pre=
+DEBUG - 2015-04-06 19:06:18 --> autoinit=1
+DEBUG - 2015-04-06 19:06:18 --> stricton=
+DEBUG - 2015-04-06 19:06:18 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:18 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:06:18 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:18 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:18 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:06:18 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:18 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:06:19 --> Final output sent to browser
+DEBUG - 2015-04-06 19:06:19 --> Total execution time: 1.1621
+DEBUG - 2015-04-06 19:06:19 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:19 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:19 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:19 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:06:19 --> hostname=localhost
+DEBUG - 2015-04-06 19:06:19 --> username=root
+DEBUG - 2015-04-06 19:06:19 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:06:19 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:06:19 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:06:19 --> dbprefix=
+DEBUG - 2015-04-06 19:06:19 --> pconnect=1
+DEBUG - 2015-04-06 19:06:19 --> db_debug=1
+DEBUG - 2015-04-06 19:06:19 --> cache_on=
+DEBUG - 2015-04-06 19:06:19 --> cachedir=
+DEBUG - 2015-04-06 19:06:19 --> char_set=utf8
+DEBUG - 2015-04-06 19:06:19 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:06:19 --> swap_pre=
+DEBUG - 2015-04-06 19:06:19 --> autoinit=1
+DEBUG - 2015-04-06 19:06:19 --> stricton=
+DEBUG - 2015-04-06 19:06:19 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:21 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:06:21 --> Final output sent to browser
+DEBUG - 2015-04-06 19:06:21 --> Total execution time: 2.1961
+DEBUG - 2015-04-06 19:06:21 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:21 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:06:21 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:21 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:21 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:06:21 --> hostname=localhost
+DEBUG - 2015-04-06 19:06:21 --> username=root
+DEBUG - 2015-04-06 19:06:21 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:06:21 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:06:21 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:06:21 --> dbprefix=
+DEBUG - 2015-04-06 19:06:21 --> pconnect=1
+DEBUG - 2015-04-06 19:06:21 --> db_debug=1
+DEBUG - 2015-04-06 19:06:21 --> cache_on=
+DEBUG - 2015-04-06 19:06:21 --> cachedir=
+DEBUG - 2015-04-06 19:06:21 --> char_set=utf8
+DEBUG - 2015-04-06 19:06:21 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:06:21 --> swap_pre=
+DEBUG - 2015-04-06 19:06:21 --> autoinit=1
+DEBUG - 2015-04-06 19:06:21 --> stricton=
+DEBUG - 2015-04-06 19:06:21 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:06:22 --> Final output sent to browser
+DEBUG - 2015-04-06 19:06:22 --> Total execution time: 3.1902
+DEBUG - 2015-04-06 19:06:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:22 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:22 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:22 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:06:22 --> hostname=localhost
+DEBUG - 2015-04-06 19:06:22 --> username=root
+DEBUG - 2015-04-06 19:06:22 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:06:22 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:06:22 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:06:22 --> dbprefix=
+DEBUG - 2015-04-06 19:06:22 --> pconnect=1
+DEBUG - 2015-04-06 19:06:22 --> db_debug=1
+DEBUG - 2015-04-06 19:06:22 --> cache_on=
+DEBUG - 2015-04-06 19:06:22 --> cachedir=
+DEBUG - 2015-04-06 19:06:22 --> char_set=utf8
+DEBUG - 2015-04-06 19:06:22 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:06:22 --> swap_pre=
+DEBUG - 2015-04-06 19:06:22 --> autoinit=1
+DEBUG - 2015-04-06 19:06:22 --> stricton=
+DEBUG - 2015-04-06 19:06:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:23 --> Final output sent to browser
+DEBUG - 2015-04-06 19:06:23 --> Total execution time: 4.2412
+DEBUG - 2015-04-06 19:06:33 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:33 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:33 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:06:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Session Class Initialized
+DEBUG - 2015-04-06 19:06:33 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:06:33 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> A session cookie was not found.
+DEBUG - 2015-04-06 19:06:34 --> Session routines successfully run
+DEBUG - 2015-04-06 19:06:34 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:06:34 --> hostname=localhost
+DEBUG - 2015-04-06 19:06:34 --> username=root
+DEBUG - 2015-04-06 19:06:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:06:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:06:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:06:34 --> dbprefix=
+DEBUG - 2015-04-06 19:06:34 --> pconnect=1
+DEBUG - 2015-04-06 19:06:34 --> db_debug=1
+DEBUG - 2015-04-06 19:06:34 --> cache_on=
+DEBUG - 2015-04-06 19:06:34 --> cachedir=
+DEBUG - 2015-04-06 19:06:34 --> char_set=utf8
+DEBUG - 2015-04-06 19:06:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:06:34 --> swap_pre=
+DEBUG - 2015-04-06 19:06:34 --> autoinit=1
+DEBUG - 2015-04-06 19:06:34 --> stricton=
+DEBUG - 2015-04-06 19:06:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Config Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:06:34 --> URI Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Router Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Output Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Security Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Input Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:06:34 --> Language Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:06:34 --> Helper loaded: url_helper
+ERROR - 2015-04-06 19:06:35 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:06:35 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:06:35 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:06:35 --> DB Transaction Failure
+ERROR - 2015-04-06 19:06:35 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:06:35 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:06:35 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:06:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:06:35 --> Session Class Initialized
+DEBUG - 2015-04-06 19:06:35 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:06:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:06:36 --> A session cookie was not found.
+DEBUG - 2015-04-06 19:06:36 --> Session routines successfully run
+DEBUG - 2015-04-06 19:06:36 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:36 --> Model Class Initialized
+DEBUG - 2015-04-06 19:06:36 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:06:36 --> hostname=localhost
+DEBUG - 2015-04-06 19:06:36 --> username=root
+DEBUG - 2015-04-06 19:06:36 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:06:36 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:06:36 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:06:36 --> dbprefix=
+DEBUG - 2015-04-06 19:06:36 --> pconnect=1
+DEBUG - 2015-04-06 19:06:36 --> db_debug=1
+DEBUG - 2015-04-06 19:06:36 --> cache_on=
+DEBUG - 2015-04-06 19:06:36 --> cachedir=
+DEBUG - 2015-04-06 19:06:36 --> char_set=utf8
+DEBUG - 2015-04-06 19:06:36 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:06:36 --> swap_pre=
+DEBUG - 2015-04-06 19:06:36 --> autoinit=1
+DEBUG - 2015-04-06 19:06:36 --> stricton=
+DEBUG - 2015-04-06 19:06:36 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:06:37 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:06:37 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:06:37 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:06:37 --> DB Transaction Failure
+ERROR - 2015-04-06 19:06:37 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:06:37 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:06:37 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:07:26 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:26 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:26 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Session Class Initialized
+DEBUG - 2015-04-06 19:07:26 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:07:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:07:27 --> Session routines successfully run
+DEBUG - 2015-04-06 19:07:27 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:27 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:07:27 --> hostname=localhost
+DEBUG - 2015-04-06 19:07:27 --> username=root
+DEBUG - 2015-04-06 19:07:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:07:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:07:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:07:27 --> dbprefix=
+DEBUG - 2015-04-06 19:07:27 --> pconnect=1
+DEBUG - 2015-04-06 19:07:27 --> db_debug=1
+DEBUG - 2015-04-06 19:07:27 --> cache_on=
+DEBUG - 2015-04-06 19:07:27 --> cachedir=
+DEBUG - 2015-04-06 19:07:27 --> char_set=utf8
+DEBUG - 2015-04-06 19:07:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:07:27 --> swap_pre=
+DEBUG - 2015-04-06 19:07:27 --> autoinit=1
+DEBUG - 2015-04-06 19:07:27 --> stricton=
+DEBUG - 2015-04-06 19:07:27 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:07:28 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:07:28 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:07:28 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:07:28 --> DB Transaction Failure
+ERROR - 2015-04-06 19:07:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:07:28 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:07:28 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:07:53 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:53 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:53 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Session Class Initialized
+DEBUG - 2015-04-06 19:07:53 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:07:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:07:54 --> Session routines successfully run
+DEBUG - 2015-04-06 19:07:54 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:07:54 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:07:54 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:07:54 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:07:54 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:07:54 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:07:54 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:07:54 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:07:54 --> Final output sent to browser
+DEBUG - 2015-04-06 19:07:54 --> Total execution time: 1.2321
+DEBUG - 2015-04-06 19:07:55 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:55 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:55 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:55 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:55 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:07:55 --> hostname=localhost
+DEBUG - 2015-04-06 19:07:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:55 --> username=root
+DEBUG - 2015-04-06 19:07:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:07:55 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:07:55 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:07:55 --> dbprefix=
+DEBUG - 2015-04-06 19:07:55 --> pconnect=1
+DEBUG - 2015-04-06 19:07:55 --> db_debug=1
+DEBUG - 2015-04-06 19:07:55 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:55 --> cache_on=
+DEBUG - 2015-04-06 19:07:55 --> cachedir=
+DEBUG - 2015-04-06 19:07:55 --> char_set=utf8
+DEBUG - 2015-04-06 19:07:55 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:07:55 --> swap_pre=
+DEBUG - 2015-04-06 19:07:55 --> autoinit=1
+DEBUG - 2015-04-06 19:07:55 --> stricton=
+DEBUG - 2015-04-06 19:07:55 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:55 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:55 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:55 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:55 --> Config Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:07:55 --> URI Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Router Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Output Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Security Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Input Class Initialized
+DEBUG - 2015-04-06 19:07:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:07:55 --> Language Class Initialized
+DEBUG - 2015-04-06 19:07:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:07:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:07:56 --> Final output sent to browser
+DEBUG - 2015-04-06 19:07:56 --> Total execution time: 1.1331
+DEBUG - 2015-04-06 19:07:56 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:07:56 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:56 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:07:56 --> hostname=localhost
+DEBUG - 2015-04-06 19:07:56 --> username=root
+DEBUG - 2015-04-06 19:07:56 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:07:56 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:07:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:07:56 --> dbprefix=
+DEBUG - 2015-04-06 19:07:56 --> pconnect=1
+DEBUG - 2015-04-06 19:07:56 --> db_debug=1
+DEBUG - 2015-04-06 19:07:56 --> cache_on=
+DEBUG - 2015-04-06 19:07:56 --> cachedir=
+DEBUG - 2015-04-06 19:07:56 --> char_set=utf8
+DEBUG - 2015-04-06 19:07:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:07:56 --> swap_pre=
+DEBUG - 2015-04-06 19:07:56 --> autoinit=1
+DEBUG - 2015-04-06 19:07:56 --> stricton=
+DEBUG - 2015-04-06 19:07:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:07:57 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:07:57 --> Final output sent to browser
+DEBUG - 2015-04-06 19:07:57 --> Total execution time: 2.1701
+DEBUG - 2015-04-06 19:07:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:07:57 --> Session Class Initialized
+DEBUG - 2015-04-06 19:07:57 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:07:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:07:58 --> Session routines successfully run
+DEBUG - 2015-04-06 19:07:58 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:58 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:58 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:07:58 --> hostname=localhost
+DEBUG - 2015-04-06 19:07:58 --> username=root
+DEBUG - 2015-04-06 19:07:58 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:07:58 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:07:58 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:07:58 --> dbprefix=
+DEBUG - 2015-04-06 19:07:58 --> pconnect=1
+DEBUG - 2015-04-06 19:07:58 --> db_debug=1
+DEBUG - 2015-04-06 19:07:58 --> cache_on=
+DEBUG - 2015-04-06 19:07:58 --> cachedir=
+DEBUG - 2015-04-06 19:07:58 --> char_set=utf8
+DEBUG - 2015-04-06 19:07:58 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:07:58 --> swap_pre=
+DEBUG - 2015-04-06 19:07:58 --> autoinit=1
+DEBUG - 2015-04-06 19:07:58 --> stricton=
+DEBUG - 2015-04-06 19:07:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:07:59 --> Final output sent to browser
+DEBUG - 2015-04-06 19:07:59 --> Total execution time: 4.4833
+DEBUG - 2015-04-06 19:07:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:07:59 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:07:59 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:59 --> Model Class Initialized
+DEBUG - 2015-04-06 19:07:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:07:59 --> hostname=localhost
+DEBUG - 2015-04-06 19:07:59 --> username=root
+DEBUG - 2015-04-06 19:07:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:07:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:07:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:07:59 --> dbprefix=
+DEBUG - 2015-04-06 19:07:59 --> pconnect=1
+DEBUG - 2015-04-06 19:07:59 --> db_debug=1
+DEBUG - 2015-04-06 19:07:59 --> cache_on=
+DEBUG - 2015-04-06 19:07:59 --> cachedir=
+DEBUG - 2015-04-06 19:07:59 --> char_set=utf8
+DEBUG - 2015-04-06 19:07:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:07:59 --> swap_pre=
+DEBUG - 2015-04-06 19:07:59 --> autoinit=1
+DEBUG - 2015-04-06 19:07:59 --> stricton=
+DEBUG - 2015-04-06 19:07:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:08:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:08:00 --> Final output sent to browser
+DEBUG - 2015-04-06 19:08:00 --> Total execution time: 5.4733
+DEBUG - 2015-04-06 19:08:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:08:00 --> Session Class Initialized
+DEBUG - 2015-04-06 19:08:00 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:08:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:08:02 --> Session routines successfully run
+DEBUG - 2015-04-06 19:08:02 --> Model Class Initialized
+DEBUG - 2015-04-06 19:08:02 --> Model Class Initialized
+DEBUG - 2015-04-06 19:08:02 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:08:02 --> hostname=localhost
+DEBUG - 2015-04-06 19:08:02 --> username=root
+DEBUG - 2015-04-06 19:08:02 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:08:02 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:08:02 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:08:02 --> dbprefix=
+DEBUG - 2015-04-06 19:08:02 --> pconnect=1
+DEBUG - 2015-04-06 19:08:02 --> db_debug=1
+DEBUG - 2015-04-06 19:08:02 --> cache_on=
+DEBUG - 2015-04-06 19:08:02 --> cachedir=
+DEBUG - 2015-04-06 19:08:02 --> char_set=utf8
+DEBUG - 2015-04-06 19:08:02 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:08:02 --> swap_pre=
+DEBUG - 2015-04-06 19:08:02 --> autoinit=1
+DEBUG - 2015-04-06 19:08:02 --> stricton=
+DEBUG - 2015-04-06 19:08:02 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:08:03 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:08:03 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:08:03 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:08:03 --> DB Transaction Failure
+ERROR - 2015-04-06 19:08:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:08:03 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:08:03 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:08:05 --> Config Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:08:05 --> URI Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Router Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Output Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Security Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Input Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:08:05 --> Language Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:08:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Session Class Initialized
+DEBUG - 2015-04-06 19:08:05 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:08:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:08:06 --> Session routines successfully run
+DEBUG - 2015-04-06 19:08:06 --> Model Class Initialized
+DEBUG - 2015-04-06 19:08:06 --> Model Class Initialized
+DEBUG - 2015-04-06 19:08:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:08:06 --> hostname=localhost
+DEBUG - 2015-04-06 19:08:06 --> username=root
+DEBUG - 2015-04-06 19:08:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:08:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:08:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:08:06 --> dbprefix=
+DEBUG - 2015-04-06 19:08:06 --> pconnect=1
+DEBUG - 2015-04-06 19:08:06 --> db_debug=1
+DEBUG - 2015-04-06 19:08:06 --> cache_on=
+DEBUG - 2015-04-06 19:08:06 --> cachedir=
+DEBUG - 2015-04-06 19:08:06 --> char_set=utf8
+DEBUG - 2015-04-06 19:08:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:08:06 --> swap_pre=
+DEBUG - 2015-04-06 19:08:06 --> autoinit=1
+DEBUG - 2015-04-06 19:08:06 --> stricton=
+DEBUG - 2015-04-06 19:08:06 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:08:07 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:08:07 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:08:07 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:08:07 --> DB Transaction Failure
+ERROR - 2015-04-06 19:08:07 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:08:07 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:08:07 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:09:40 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:40 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:40 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Session Class Initialized
+DEBUG - 2015-04-06 19:09:40 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:09:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:41 --> Session routines successfully run
+DEBUG - 2015-04-06 19:09:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:41 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:09:41 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:09:41 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:09:41 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:09:41 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:09:41 --> Final output sent to browser
+DEBUG - 2015-04-06 19:09:41 --> Total execution time: 1.4851
+DEBUG - 2015-04-06 19:09:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:09:42 --> hostname=localhost
+DEBUG - 2015-04-06 19:09:42 --> username=root
+DEBUG - 2015-04-06 19:09:42 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:09:42 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:09:42 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:09:42 --> dbprefix=
+DEBUG - 2015-04-06 19:09:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> pconnect=1
+DEBUG - 2015-04-06 19:09:42 --> db_debug=1
+DEBUG - 2015-04-06 19:09:42 --> cache_on=
+DEBUG - 2015-04-06 19:09:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> cachedir=
+DEBUG - 2015-04-06 19:09:42 --> char_set=utf8
+DEBUG - 2015-04-06 19:09:42 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:09:42 --> swap_pre=
+DEBUG - 2015-04-06 19:09:42 --> autoinit=1
+DEBUG - 2015-04-06 19:09:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:42 --> stricton=
+DEBUG - 2015-04-06 19:09:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:43 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:09:43 --> Final output sent to browser
+DEBUG - 2015-04-06 19:09:43 --> Total execution time: 1.0681
+DEBUG - 2015-04-06 19:09:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:09:43 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:09:43 --> hostname=localhost
+DEBUG - 2015-04-06 19:09:43 --> username=root
+DEBUG - 2015-04-06 19:09:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:09:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:09:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:09:43 --> dbprefix=
+DEBUG - 2015-04-06 19:09:43 --> pconnect=1
+DEBUG - 2015-04-06 19:09:43 --> db_debug=1
+DEBUG - 2015-04-06 19:09:43 --> cache_on=
+DEBUG - 2015-04-06 19:09:43 --> cachedir=
+DEBUG - 2015-04-06 19:09:43 --> char_set=utf8
+DEBUG - 2015-04-06 19:09:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:09:43 --> swap_pre=
+DEBUG - 2015-04-06 19:09:43 --> autoinit=1
+DEBUG - 2015-04-06 19:09:43 --> stricton=
+DEBUG - 2015-04-06 19:09:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:43 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:43 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:43 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:44 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:44 --> Final output sent to browser
+DEBUG - 2015-04-06 19:09:44 --> Total execution time: 2.1191
+DEBUG - 2015-04-06 19:09:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:44 --> Session Class Initialized
+DEBUG - 2015-04-06 19:09:44 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:09:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:46 --> Session routines successfully run
+DEBUG - 2015-04-06 19:09:46 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:46 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:46 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:09:46 --> hostname=localhost
+DEBUG - 2015-04-06 19:09:46 --> username=root
+DEBUG - 2015-04-06 19:09:46 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:09:46 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:09:46 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:09:46 --> dbprefix=
+DEBUG - 2015-04-06 19:09:46 --> pconnect=1
+DEBUG - 2015-04-06 19:09:46 --> db_debug=1
+DEBUG - 2015-04-06 19:09:46 --> cache_on=
+DEBUG - 2015-04-06 19:09:46 --> cachedir=
+DEBUG - 2015-04-06 19:09:46 --> char_set=utf8
+DEBUG - 2015-04-06 19:09:46 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:09:46 --> swap_pre=
+DEBUG - 2015-04-06 19:09:46 --> autoinit=1
+DEBUG - 2015-04-06 19:09:46 --> stricton=
+DEBUG - 2015-04-06 19:09:46 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:09:47 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:09:47 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:09:47 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:09:47 --> DB Transaction Failure
+ERROR - 2015-04-06 19:09:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:09:47 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:09:47 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:09:47 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:47 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:47 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:47 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:09:47 --> hostname=localhost
+DEBUG - 2015-04-06 19:09:47 --> username=root
+DEBUG - 2015-04-06 19:09:47 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:09:47 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:09:47 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:09:47 --> dbprefix=
+DEBUG - 2015-04-06 19:09:47 --> pconnect=1
+DEBUG - 2015-04-06 19:09:47 --> db_debug=1
+DEBUG - 2015-04-06 19:09:47 --> cache_on=
+DEBUG - 2015-04-06 19:09:47 --> cachedir=
+DEBUG - 2015-04-06 19:09:47 --> char_set=utf8
+DEBUG - 2015-04-06 19:09:47 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:09:47 --> swap_pre=
+DEBUG - 2015-04-06 19:09:47 --> autoinit=1
+DEBUG - 2015-04-06 19:09:47 --> stricton=
+DEBUG - 2015-04-06 19:09:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:48 --> Final output sent to browser
+DEBUG - 2015-04-06 19:09:48 --> Total execution time: 5.5723
+DEBUG - 2015-04-06 19:09:48 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:48 --> Session Class Initialized
+DEBUG - 2015-04-06 19:09:48 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:09:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:49 --> Session routines successfully run
+DEBUG - 2015-04-06 19:09:49 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:49 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:49 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:09:49 --> hostname=localhost
+DEBUG - 2015-04-06 19:09:49 --> username=root
+DEBUG - 2015-04-06 19:09:49 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:09:49 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:09:49 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:09:49 --> dbprefix=
+DEBUG - 2015-04-06 19:09:49 --> pconnect=1
+DEBUG - 2015-04-06 19:09:49 --> db_debug=1
+DEBUG - 2015-04-06 19:09:49 --> cache_on=
+DEBUG - 2015-04-06 19:09:49 --> cachedir=
+DEBUG - 2015-04-06 19:09:49 --> char_set=utf8
+DEBUG - 2015-04-06 19:09:49 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:09:49 --> swap_pre=
+DEBUG - 2015-04-06 19:09:49 --> autoinit=1
+DEBUG - 2015-04-06 19:09:49 --> stricton=
+DEBUG - 2015-04-06 19:09:49 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:09:50 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:09:50 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:09:50 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:09:50 --> DB Transaction Failure
+ERROR - 2015-04-06 19:09:50 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:09:50 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:09:50 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:09:57 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:57 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:57 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Session Class Initialized
+DEBUG - 2015-04-06 19:09:57 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:09:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:58 --> Session routines successfully run
+DEBUG - 2015-04-06 19:09:58 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:58 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:58 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:09:59 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:09:59 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:09:59 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:09:59 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:09:59 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:09:59 --> Final output sent to browser
+DEBUG - 2015-04-06 19:09:59 --> Total execution time: 1.4191
+DEBUG - 2015-04-06 19:09:59 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:59 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:59 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:59 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:59 --> Config Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:09:59 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Model Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:09:59 --> hostname=localhost
+DEBUG - 2015-04-06 19:09:59 --> username=root
+DEBUG - 2015-04-06 19:09:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:09:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:09:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:09:59 --> dbprefix=
+DEBUG - 2015-04-06 19:09:59 --> pconnect=1
+DEBUG - 2015-04-06 19:09:59 --> db_debug=1
+DEBUG - 2015-04-06 19:09:59 --> cache_on=
+DEBUG - 2015-04-06 19:09:59 --> cachedir=
+DEBUG - 2015-04-06 19:09:59 --> char_set=utf8
+DEBUG - 2015-04-06 19:09:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:09:59 --> swap_pre=
+DEBUG - 2015-04-06 19:09:59 --> autoinit=1
+DEBUG - 2015-04-06 19:09:59 --> stricton=
+DEBUG - 2015-04-06 19:09:59 --> URI Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Router Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:59 --> Output Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Security Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Input Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:09:59 --> Language Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:09:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:09:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:10:00 --> Final output sent to browser
+DEBUG - 2015-04-06 19:10:00 --> Total execution time: 1.1231
+DEBUG - 2015-04-06 19:10:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:10:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:10:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:10:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:10:00 --> hostname=localhost
+DEBUG - 2015-04-06 19:10:00 --> username=root
+DEBUG - 2015-04-06 19:10:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:10:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:10:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:10:00 --> dbprefix=
+DEBUG - 2015-04-06 19:10:00 --> pconnect=1
+DEBUG - 2015-04-06 19:10:00 --> db_debug=1
+DEBUG - 2015-04-06 19:10:00 --> cache_on=
+DEBUG - 2015-04-06 19:10:00 --> cachedir=
+DEBUG - 2015-04-06 19:10:00 --> char_set=utf8
+DEBUG - 2015-04-06 19:10:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:10:00 --> swap_pre=
+DEBUG - 2015-04-06 19:10:00 --> autoinit=1
+DEBUG - 2015-04-06 19:10:00 --> stricton=
+DEBUG - 2015-04-06 19:10:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:10:01 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:10:02 --> Final output sent to browser
+DEBUG - 2015-04-06 19:10:02 --> Total execution time: 2.2571
+DEBUG - 2015-04-06 19:10:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:10:02 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:10:02 --> Model Class Initialized
+DEBUG - 2015-04-06 19:10:02 --> Model Class Initialized
+DEBUG - 2015-04-06 19:10:02 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:10:02 --> hostname=localhost
+DEBUG - 2015-04-06 19:10:02 --> username=root
+DEBUG - 2015-04-06 19:10:02 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:10:02 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:10:02 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:10:02 --> dbprefix=
+DEBUG - 2015-04-06 19:10:02 --> pconnect=1
+DEBUG - 2015-04-06 19:10:02 --> db_debug=1
+DEBUG - 2015-04-06 19:10:02 --> cache_on=
+DEBUG - 2015-04-06 19:10:02 --> cachedir=
+DEBUG - 2015-04-06 19:10:02 --> char_set=utf8
+DEBUG - 2015-04-06 19:10:02 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:10:02 --> swap_pre=
+DEBUG - 2015-04-06 19:10:02 --> autoinit=1
+DEBUG - 2015-04-06 19:10:02 --> stricton=
+DEBUG - 2015-04-06 19:10:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:10:03 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:10:03 --> Final output sent to browser
+DEBUG - 2015-04-06 19:10:03 --> Total execution time: 3.2662
+DEBUG - 2015-04-06 19:10:03 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:10:03 --> Session Class Initialized
+DEBUG - 2015-04-06 19:10:03 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:10:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:10:04 --> Session routines successfully run
+DEBUG - 2015-04-06 19:10:04 --> Model Class Initialized
+DEBUG - 2015-04-06 19:10:04 --> Model Class Initialized
+DEBUG - 2015-04-06 19:10:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:10:04 --> hostname=localhost
+DEBUG - 2015-04-06 19:10:04 --> username=root
+DEBUG - 2015-04-06 19:10:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:10:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:10:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:10:04 --> dbprefix=
+DEBUG - 2015-04-06 19:10:04 --> pconnect=1
+DEBUG - 2015-04-06 19:10:04 --> db_debug=1
+DEBUG - 2015-04-06 19:10:04 --> cache_on=
+DEBUG - 2015-04-06 19:10:04 --> cachedir=
+DEBUG - 2015-04-06 19:10:04 --> char_set=utf8
+DEBUG - 2015-04-06 19:10:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:10:04 --> swap_pre=
+DEBUG - 2015-04-06 19:10:04 --> autoinit=1
+DEBUG - 2015-04-06 19:10:04 --> stricton=
+DEBUG - 2015-04-06 19:10:04 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:10:05 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:10:05 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:10:05 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:10:05 --> DB Transaction Failure
+ERROR - 2015-04-06 19:10:05 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:10:05 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:10:05 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:10:59 --> Config Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:10:59 --> URI Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Router Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Output Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Security Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Input Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:10:59 --> Language Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:10:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Session Class Initialized
+DEBUG - 2015-04-06 19:10:59 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:10:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:00 --> Session routines successfully run
+DEBUG - 2015-04-06 19:11:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:11:00 --> hostname=localhost
+DEBUG - 2015-04-06 19:11:00 --> username=root
+DEBUG - 2015-04-06 19:11:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:11:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:11:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:11:00 --> dbprefix=
+DEBUG - 2015-04-06 19:11:00 --> pconnect=1
+DEBUG - 2015-04-06 19:11:00 --> db_debug=1
+DEBUG - 2015-04-06 19:11:00 --> cache_on=
+DEBUG - 2015-04-06 19:11:00 --> cachedir=
+DEBUG - 2015-04-06 19:11:00 --> char_set=utf8
+DEBUG - 2015-04-06 19:11:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:11:00 --> swap_pre=
+DEBUG - 2015-04-06 19:11:00 --> autoinit=1
+DEBUG - 2015-04-06 19:11:00 --> stricton=
+DEBUG - 2015-04-06 19:11:00 --> Database Driver Class Initialized
+ERROR - 2015-04-06 19:11:02 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:11:02 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 430
+ERROR - 2015-04-06 19:11:02 --> Severity: Notice  --> Undefined offset: 1 C:\inetpub\firedesk.co.uk\web\application\models\hire_stock_m.php 432
+DEBUG - 2015-04-06 19:11:02 --> DB Transaction Failure
+ERROR - 2015-04-06 19:11:02 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (year =  and month between  and )' at line 1
+DEBUG - 2015-04-06 19:11:02 --> Language file loaded: language/english/db_lang.php
+ERROR - 2015-04-06 19:11:02 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\inetpub\firedesk.co.uk\web\system\core\Exceptions.php:185) C:\inetpub\firedesk.co.uk\web\system\core\Common.php 440
+DEBUG - 2015-04-06 19:11:03 --> Config Class Initialized
+DEBUG - 2015-04-06 19:11:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:11:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:11:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:11:04 --> URI Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Router Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Output Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Security Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Input Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:11:04 --> Language Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:11:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Session Class Initialized
+DEBUG - 2015-04-06 19:11:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:11:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Session routines successfully run
+DEBUG - 2015-04-06 19:11:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:11:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:11:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:11:05 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:11:05 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:11:05 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:11:05 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:11:05 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:11:05 --> Final output sent to browser
+DEBUG - 2015-04-06 19:11:05 --> Total execution time: 1.4841
+DEBUG - 2015-04-06 19:11:05 --> Config Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:11:05 --> URI Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Router Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Config Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:11:05 --> URI Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Router Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Output Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Security Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Input Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:11:05 --> Language Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Config Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:11:05 --> URI Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Router Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Config Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Output Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:11:05 --> Security Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Input Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:11:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Language Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Output Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Security Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:11:05 --> Input Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:11:05 --> Language Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:11:05 --> URI Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Session Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:11:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:11:05 --> Router Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Output Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Security Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Input Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:11:05 --> Language Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:11:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:11:07 --> Session routines successfully run
+DEBUG - 2015-04-06 19:11:07 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:07 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:11:07 --> hostname=localhost
+DEBUG - 2015-04-06 19:11:07 --> username=root
+DEBUG - 2015-04-06 19:11:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:11:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:11:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:11:07 --> dbprefix=
+DEBUG - 2015-04-06 19:11:07 --> pconnect=1
+DEBUG - 2015-04-06 19:11:07 --> db_debug=1
+DEBUG - 2015-04-06 19:11:07 --> cache_on=
+DEBUG - 2015-04-06 19:11:07 --> cachedir=
+DEBUG - 2015-04-06 19:11:07 --> char_set=utf8
+DEBUG - 2015-04-06 19:11:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:11:07 --> swap_pre=
+DEBUG - 2015-04-06 19:11:07 --> autoinit=1
+DEBUG - 2015-04-06 19:11:07 --> stricton=
+DEBUG - 2015-04-06 19:11:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:08 --> Final output sent to browser
+DEBUG - 2015-04-06 19:11:08 --> Total execution time: 2.7762
+DEBUG - 2015-04-06 19:11:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:11:08 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:08 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:11:08 --> hostname=localhost
+DEBUG - 2015-04-06 19:11:08 --> username=root
+DEBUG - 2015-04-06 19:11:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:11:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:11:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:11:08 --> dbprefix=
+DEBUG - 2015-04-06 19:11:08 --> pconnect=1
+DEBUG - 2015-04-06 19:11:08 --> db_debug=1
+DEBUG - 2015-04-06 19:11:08 --> cache_on=
+DEBUG - 2015-04-06 19:11:08 --> cachedir=
+DEBUG - 2015-04-06 19:11:08 --> char_set=utf8
+DEBUG - 2015-04-06 19:11:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:11:08 --> swap_pre=
+DEBUG - 2015-04-06 19:11:08 --> autoinit=1
+DEBUG - 2015-04-06 19:11:08 --> stricton=
+DEBUG - 2015-04-06 19:11:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:09 --> Final output sent to browser
+DEBUG - 2015-04-06 19:11:09 --> Total execution time: 3.8162
+DEBUG - 2015-04-06 19:11:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:11:09 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:11:09 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:09 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:11:09 --> hostname=localhost
+DEBUG - 2015-04-06 19:11:09 --> username=root
+DEBUG - 2015-04-06 19:11:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:11:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:11:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:11:09 --> dbprefix=
+DEBUG - 2015-04-06 19:11:09 --> pconnect=1
+DEBUG - 2015-04-06 19:11:09 --> db_debug=1
+DEBUG - 2015-04-06 19:11:09 --> cache_on=
+DEBUG - 2015-04-06 19:11:09 --> cachedir=
+DEBUG - 2015-04-06 19:11:09 --> char_set=utf8
+DEBUG - 2015-04-06 19:11:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:11:09 --> swap_pre=
+DEBUG - 2015-04-06 19:11:09 --> autoinit=1
+DEBUG - 2015-04-06 19:11:09 --> stricton=
+DEBUG - 2015-04-06 19:11:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:10 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:11:10 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:11.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:11.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:11:10 --> Final output sent to browser
+DEBUG - 2015-04-06 19:11:10 --> Total execution time: 4.8403
+DEBUG - 2015-04-06 19:11:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:11:10 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:10 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:11:10 --> hostname=localhost
+DEBUG - 2015-04-06 19:11:10 --> username=root
+DEBUG - 2015-04-06 19:11:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:11:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:11:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:11:10 --> dbprefix=
+DEBUG - 2015-04-06 19:11:10 --> pconnect=1
+DEBUG - 2015-04-06 19:11:10 --> db_debug=1
+DEBUG - 2015-04-06 19:11:10 --> cache_on=
+DEBUG - 2015-04-06 19:11:10 --> cachedir=
+DEBUG - 2015-04-06 19:11:10 --> char_set=utf8
+DEBUG - 2015-04-06 19:11:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:11:10 --> swap_pre=
+DEBUG - 2015-04-06 19:11:10 --> autoinit=1
+DEBUG - 2015-04-06 19:11:10 --> stricton=
+DEBUG - 2015-04-06 19:11:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:11 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:11:11 --> Final output sent to browser
+DEBUG - 2015-04-06 19:11:11 --> Total execution time: 5.8803
+DEBUG - 2015-04-06 19:11:12 --> Config Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:11:12 --> URI Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Router Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Output Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Security Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Input Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:11:12 --> Language Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:11:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Session Class Initialized
+DEBUG - 2015-04-06 19:11:12 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:11:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:13 --> Session routines successfully run
+DEBUG - 2015-04-06 19:11:13 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:13 --> Model Class Initialized
+DEBUG - 2015-04-06 19:11:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:11:13 --> hostname=localhost
+DEBUG - 2015-04-06 19:11:13 --> username=root
+DEBUG - 2015-04-06 19:11:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:11:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:11:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:11:13 --> dbprefix=
+DEBUG - 2015-04-06 19:11:13 --> pconnect=1
+DEBUG - 2015-04-06 19:11:13 --> db_debug=1
+DEBUG - 2015-04-06 19:11:13 --> cache_on=
+DEBUG - 2015-04-06 19:11:13 --> cachedir=
+DEBUG - 2015-04-06 19:11:13 --> char_set=utf8
+DEBUG - 2015-04-06 19:11:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:11:13 --> swap_pre=
+DEBUG - 2015-04-06 19:11:13 --> autoinit=1
+DEBUG - 2015-04-06 19:11:13 --> stricton=
+DEBUG - 2015-04-06 19:11:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:11:14 --> Final output sent to browser
+DEBUG - 2015-04-06 19:11:14 --> Total execution time: 2.6031
+DEBUG - 2015-04-06 19:12:04 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:04 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:04 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Session Class Initialized
+DEBUG - 2015-04-06 19:12:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:12:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:06 --> Session routines successfully run
+DEBUG - 2015-04-06 19:12:06 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:06 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:06 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:06 --> username=root
+DEBUG - 2015-04-06 19:12:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:06 --> dbprefix=
+DEBUG - 2015-04-06 19:12:06 --> pconnect=1
+DEBUG - 2015-04-06 19:12:06 --> db_debug=1
+DEBUG - 2015-04-06 19:12:06 --> cache_on=
+DEBUG - 2015-04-06 19:12:06 --> cachedir=
+DEBUG - 2015-04-06 19:12:06 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:06 --> swap_pre=
+DEBUG - 2015-04-06 19:12:06 --> autoinit=1
+DEBUG - 2015-04-06 19:12:06 --> stricton=
+DEBUG - 2015-04-06 19:12:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:07 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:07 --> Total execution time: 2.9792
+DEBUG - 2015-04-06 19:12:10 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:10 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:10 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Session Class Initialized
+DEBUG - 2015-04-06 19:12:10 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:12:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Session routines successfully run
+DEBUG - 2015-04-06 19:12:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:12 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:12:12 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:12:12 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:12:12 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:12:12 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:12:12 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:12 --> Total execution time: 1.7531
+DEBUG - 2015-04-06 19:12:12 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:12 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:12 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:12 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:12 --> username=root
+DEBUG - 2015-04-06 19:12:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:12 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:12 --> dbprefix=
+DEBUG - 2015-04-06 19:12:12 --> pconnect=1
+DEBUG - 2015-04-06 19:12:12 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> db_debug=1
+DEBUG - 2015-04-06 19:12:12 --> cache_on=
+DEBUG - 2015-04-06 19:12:12 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> cachedir=
+DEBUG - 2015-04-06 19:12:12 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:12 --> swap_pre=
+DEBUG - 2015-04-06 19:12:12 --> autoinit=1
+DEBUG - 2015-04-06 19:12:12 --> stricton=
+DEBUG - 2015-04-06 19:12:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:12 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:12 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:12 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:12 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:12 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:12 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:12 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:13 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:13 --> Total execution time: 1.1261
+DEBUG - 2015-04-06 19:12:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:13 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:13 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:13 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:13 --> username=root
+DEBUG - 2015-04-06 19:12:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:13 --> dbprefix=
+DEBUG - 2015-04-06 19:12:13 --> pconnect=1
+DEBUG - 2015-04-06 19:12:13 --> db_debug=1
+DEBUG - 2015-04-06 19:12:13 --> cache_on=
+DEBUG - 2015-04-06 19:12:13 --> cachedir=
+DEBUG - 2015-04-06 19:12:13 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:13 --> swap_pre=
+DEBUG - 2015-04-06 19:12:13 --> autoinit=1
+DEBUG - 2015-04-06 19:12:13 --> stricton=
+DEBUG - 2015-04-06 19:12:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:15 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:12:15 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:15 --> Total execution time: 2.1271
+DEBUG - 2015-04-06 19:12:15 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:15 --> Session Class Initialized
+DEBUG - 2015-04-06 19:12:15 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:12:15 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:16 --> Session routines successfully run
+DEBUG - 2015-04-06 19:12:16 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:16 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:16 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:16 --> username=root
+DEBUG - 2015-04-06 19:12:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:16 --> dbprefix=
+DEBUG - 2015-04-06 19:12:16 --> pconnect=1
+DEBUG - 2015-04-06 19:12:16 --> db_debug=1
+DEBUG - 2015-04-06 19:12:16 --> cache_on=
+DEBUG - 2015-04-06 19:12:16 --> cachedir=
+DEBUG - 2015-04-06 19:12:16 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:16 --> swap_pre=
+DEBUG - 2015-04-06 19:12:16 --> autoinit=1
+DEBUG - 2015-04-06 19:12:16 --> stricton=
+DEBUG - 2015-04-06 19:12:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:18 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:18 --> Total execution time: 5.1133
+DEBUG - 2015-04-06 19:12:18 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:18 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:12:18 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:18 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:18 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:18 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:18 --> username=root
+DEBUG - 2015-04-06 19:12:18 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:18 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:18 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:18 --> dbprefix=
+DEBUG - 2015-04-06 19:12:18 --> pconnect=1
+DEBUG - 2015-04-06 19:12:18 --> db_debug=1
+DEBUG - 2015-04-06 19:12:18 --> cache_on=
+DEBUG - 2015-04-06 19:12:18 --> cachedir=
+DEBUG - 2015-04-06 19:12:18 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:18 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:18 --> swap_pre=
+DEBUG - 2015-04-06 19:12:18 --> autoinit=1
+DEBUG - 2015-04-06 19:12:18 --> stricton=
+DEBUG - 2015-04-06 19:12:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:19 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:19 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:12.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:12.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:12:19 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:19 --> Total execution time: 6.1844
+DEBUG - 2015-04-06 19:12:28 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:28 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:28 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Session Class Initialized
+DEBUG - 2015-04-06 19:12:28 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:12:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Session routines successfully run
+DEBUG - 2015-04-06 19:12:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:30 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:12:30 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:12:30 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:12:30 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:12:30 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:12:30 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:30 --> Total execution time: 1.6791
+DEBUG - 2015-04-06 19:12:30 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:30 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:30 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:30 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:30 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:30 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Config Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:30 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:30 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:12:30 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> URI Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Router Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:30 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Output Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Security Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Input Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:12:30 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Language Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:30 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:12:30 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:30 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:30 --> username=root
+DEBUG - 2015-04-06 19:12:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:30 --> dbprefix=
+DEBUG - 2015-04-06 19:12:30 --> pconnect=1
+DEBUG - 2015-04-06 19:12:30 --> db_debug=1
+DEBUG - 2015-04-06 19:12:30 --> cache_on=
+DEBUG - 2015-04-06 19:12:30 --> cachedir=
+DEBUG - 2015-04-06 19:12:30 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:30 --> swap_pre=
+DEBUG - 2015-04-06 19:12:30 --> autoinit=1
+DEBUG - 2015-04-06 19:12:30 --> stricton=
+DEBUG - 2015-04-06 19:12:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:31 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:31 --> Total execution time: 1.1001
+DEBUG - 2015-04-06 19:12:31 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:31 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:31 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:31 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:31 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:31 --> username=root
+DEBUG - 2015-04-06 19:12:31 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:31 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:31 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:31 --> dbprefix=
+DEBUG - 2015-04-06 19:12:31 --> pconnect=1
+DEBUG - 2015-04-06 19:12:31 --> db_debug=1
+DEBUG - 2015-04-06 19:12:31 --> cache_on=
+DEBUG - 2015-04-06 19:12:31 --> cachedir=
+DEBUG - 2015-04-06 19:12:31 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:31 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:31 --> swap_pre=
+DEBUG - 2015-04-06 19:12:31 --> autoinit=1
+DEBUG - 2015-04-06 19:12:31 --> stricton=
+DEBUG - 2015-04-06 19:12:31 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:32 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:12:32 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:32 --> Total execution time: 2.1261
+DEBUG - 2015-04-06 19:12:32 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:32 --> Session Class Initialized
+DEBUG - 2015-04-06 19:12:32 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:12:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:34 --> Session routines successfully run
+DEBUG - 2015-04-06 19:12:34 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:34 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:34 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:34 --> username=root
+DEBUG - 2015-04-06 19:12:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:34 --> dbprefix=
+DEBUG - 2015-04-06 19:12:34 --> pconnect=1
+DEBUG - 2015-04-06 19:12:34 --> db_debug=1
+DEBUG - 2015-04-06 19:12:34 --> cache_on=
+DEBUG - 2015-04-06 19:12:34 --> cachedir=
+DEBUG - 2015-04-06 19:12:34 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:34 --> swap_pre=
+DEBUG - 2015-04-06 19:12:34 --> autoinit=1
+DEBUG - 2015-04-06 19:12:34 --> stricton=
+DEBUG - 2015-04-06 19:12:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:35 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:35 --> Total execution time: 5.0623
+DEBUG - 2015-04-06 19:12:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:12:35 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:12:35 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:35 --> Model Class Initialized
+DEBUG - 2015-04-06 19:12:35 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:12:35 --> hostname=localhost
+DEBUG - 2015-04-06 19:12:35 --> username=root
+DEBUG - 2015-04-06 19:12:35 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:12:35 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:12:35 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:12:35 --> dbprefix=
+DEBUG - 2015-04-06 19:12:35 --> pconnect=1
+DEBUG - 2015-04-06 19:12:35 --> db_debug=1
+DEBUG - 2015-04-06 19:12:35 --> cache_on=
+DEBUG - 2015-04-06 19:12:35 --> cachedir=
+DEBUG - 2015-04-06 19:12:35 --> char_set=utf8
+DEBUG - 2015-04-06 19:12:35 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:12:35 --> swap_pre=
+DEBUG - 2015-04-06 19:12:35 --> autoinit=1
+DEBUG - 2015-04-06 19:12:35 --> stricton=
+DEBUG - 2015-04-06 19:12:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:12:36 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:12:36 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:12.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:12.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:12:36 --> Final output sent to browser
+DEBUG - 2015-04-06 19:12:36 --> Total execution time: 6.1844
+DEBUG - 2015-04-06 19:13:41 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:41 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:41 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Session Class Initialized
+DEBUG - 2015-04-06 19:13:41 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:13:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:43 --> Session routines successfully run
+DEBUG - 2015-04-06 19:13:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:43 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:13:43 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:13:43 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:13:43 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:13:43 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:13:43 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:43 --> Total execution time: 1.8021
+DEBUG - 2015-04-06 19:13:44 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:44 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:44 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:44 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:44 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:44 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:44 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:44 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:44 --> username=root
+DEBUG - 2015-04-06 19:13:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:44 --> dbprefix=
+DEBUG - 2015-04-06 19:13:44 --> pconnect=1
+DEBUG - 2015-04-06 19:13:44 --> db_debug=1
+DEBUG - 2015-04-06 19:13:44 --> cache_on=
+DEBUG - 2015-04-06 19:13:44 --> cachedir=
+DEBUG - 2015-04-06 19:13:44 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:44 --> swap_pre=
+DEBUG - 2015-04-06 19:13:44 --> autoinit=1
+DEBUG - 2015-04-06 19:13:44 --> stricton=
+DEBUG - 2015-04-06 19:13:44 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:44 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:44 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:44 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:44 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:45 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:45 --> Total execution time: 1.1051
+DEBUG - 2015-04-06 19:13:45 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:45 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:45 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:45 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:45 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:45 --> username=root
+DEBUG - 2015-04-06 19:13:45 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:45 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:45 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:45 --> dbprefix=
+DEBUG - 2015-04-06 19:13:45 --> pconnect=1
+DEBUG - 2015-04-06 19:13:45 --> db_debug=1
+DEBUG - 2015-04-06 19:13:45 --> cache_on=
+DEBUG - 2015-04-06 19:13:45 --> cachedir=
+DEBUG - 2015-04-06 19:13:45 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:45 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:45 --> swap_pre=
+DEBUG - 2015-04-06 19:13:45 --> autoinit=1
+DEBUG - 2015-04-06 19:13:45 --> stricton=
+DEBUG - 2015-04-06 19:13:45 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:46 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:13:46 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:46 --> Total execution time: 2.1261
+DEBUG - 2015-04-06 19:13:46 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:46 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:13:46 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:46 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:46 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:46 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:46 --> username=root
+DEBUG - 2015-04-06 19:13:46 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:46 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:46 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:46 --> dbprefix=
+DEBUG - 2015-04-06 19:13:46 --> pconnect=1
+DEBUG - 2015-04-06 19:13:46 --> db_debug=1
+DEBUG - 2015-04-06 19:13:46 --> cache_on=
+DEBUG - 2015-04-06 19:13:46 --> cachedir=
+DEBUG - 2015-04-06 19:13:46 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:46 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:46 --> swap_pre=
+DEBUG - 2015-04-06 19:13:46 --> autoinit=1
+DEBUG - 2015-04-06 19:13:46 --> stricton=
+DEBUG - 2015-04-06 19:13:46 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:47 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:47 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:13.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:13.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:13:47 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:47 --> Total execution time: 3.1542
+DEBUG - 2015-04-06 19:13:47 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:47 --> Session Class Initialized
+DEBUG - 2015-04-06 19:13:47 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:13:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:48 --> Session routines successfully run
+DEBUG - 2015-04-06 19:13:48 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:48 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:48 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:48 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:48 --> username=root
+DEBUG - 2015-04-06 19:13:48 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:48 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:48 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:48 --> dbprefix=
+DEBUG - 2015-04-06 19:13:48 --> pconnect=1
+DEBUG - 2015-04-06 19:13:48 --> db_debug=1
+DEBUG - 2015-04-06 19:13:48 --> cache_on=
+DEBUG - 2015-04-06 19:13:48 --> cachedir=
+DEBUG - 2015-04-06 19:13:48 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:48 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:48 --> swap_pre=
+DEBUG - 2015-04-06 19:13:48 --> autoinit=1
+DEBUG - 2015-04-06 19:13:48 --> stricton=
+DEBUG - 2015-04-06 19:13:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:50 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:50 --> Total execution time: 5.8563
+DEBUG - 2015-04-06 19:13:53 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:53 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:53 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Session Class Initialized
+DEBUG - 2015-04-06 19:13:53 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:13:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:55 --> Session routines successfully run
+DEBUG - 2015-04-06 19:13:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:13:55 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:13:55 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:13:55 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:13:55 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:13:55 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:13:55 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:55 --> Total execution time: 1.6451
+DEBUG - 2015-04-06 19:13:56 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:56 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:56 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:56 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:56 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Config Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:56 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:56 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:56 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:56 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:56 --> username=root
+DEBUG - 2015-04-06 19:13:56 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:56 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:13:56 --> URI Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Router Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:56 --> dbprefix=
+DEBUG - 2015-04-06 19:13:56 --> pconnect=1
+DEBUG - 2015-04-06 19:13:56 --> db_debug=1
+DEBUG - 2015-04-06 19:13:56 --> cache_on=
+DEBUG - 2015-04-06 19:13:56 --> cachedir=
+DEBUG - 2015-04-06 19:13:56 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:56 --> swap_pre=
+DEBUG - 2015-04-06 19:13:56 --> autoinit=1
+DEBUG - 2015-04-06 19:13:56 --> stricton=
+DEBUG - 2015-04-06 19:13:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Output Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:56 --> Security Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Input Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:13:56 --> Language Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:13:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:13:57 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:57 --> Total execution time: 1.1011
+DEBUG - 2015-04-06 19:13:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:57 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:57 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:57 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:57 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:57 --> username=root
+DEBUG - 2015-04-06 19:13:57 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:57 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:57 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:57 --> dbprefix=
+DEBUG - 2015-04-06 19:13:57 --> pconnect=1
+DEBUG - 2015-04-06 19:13:57 --> db_debug=1
+DEBUG - 2015-04-06 19:13:57 --> cache_on=
+DEBUG - 2015-04-06 19:13:57 --> cachedir=
+DEBUG - 2015-04-06 19:13:57 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:57 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:57 --> swap_pre=
+DEBUG - 2015-04-06 19:13:57 --> autoinit=1
+DEBUG - 2015-04-06 19:13:57 --> stricton=
+DEBUG - 2015-04-06 19:13:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:58 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:13:58 --> Final output sent to browser
+DEBUG - 2015-04-06 19:13:58 --> Total execution time: 2.1251
+DEBUG - 2015-04-06 19:13:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:13:58 --> Session Class Initialized
+DEBUG - 2015-04-06 19:13:58 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:13:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:13:59 --> Session routines successfully run
+DEBUG - 2015-04-06 19:13:59 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:59 --> Model Class Initialized
+DEBUG - 2015-04-06 19:13:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:13:59 --> hostname=localhost
+DEBUG - 2015-04-06 19:13:59 --> username=root
+DEBUG - 2015-04-06 19:13:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:13:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:13:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:13:59 --> dbprefix=
+DEBUG - 2015-04-06 19:13:59 --> pconnect=1
+DEBUG - 2015-04-06 19:13:59 --> db_debug=1
+DEBUG - 2015-04-06 19:13:59 --> cache_on=
+DEBUG - 2015-04-06 19:13:59 --> cachedir=
+DEBUG - 2015-04-06 19:13:59 --> char_set=utf8
+DEBUG - 2015-04-06 19:13:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:13:59 --> swap_pre=
+DEBUG - 2015-04-06 19:13:59 --> autoinit=1
+DEBUG - 2015-04-06 19:13:59 --> stricton=
+DEBUG - 2015-04-06 19:13:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:14:00 --> Final output sent to browser
+DEBUG - 2015-04-06 19:14:00 --> Total execution time: 4.8523
+DEBUG - 2015-04-06 19:14:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:14:00 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:14:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:14:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:14:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:14:00 --> hostname=localhost
+DEBUG - 2015-04-06 19:14:00 --> username=root
+DEBUG - 2015-04-06 19:14:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:14:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:14:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:14:00 --> dbprefix=
+DEBUG - 2015-04-06 19:14:00 --> pconnect=1
+DEBUG - 2015-04-06 19:14:00 --> db_debug=1
+DEBUG - 2015-04-06 19:14:00 --> cache_on=
+DEBUG - 2015-04-06 19:14:00 --> cachedir=
+DEBUG - 2015-04-06 19:14:00 --> char_set=utf8
+DEBUG - 2015-04-06 19:14:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:14:00 --> swap_pre=
+DEBUG - 2015-04-06 19:14:00 --> autoinit=1
+DEBUG - 2015-04-06 19:14:00 --> stricton=
+DEBUG - 2015-04-06 19:14:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:14:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:14:01 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:13.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:13.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:14:01 --> Final output sent to browser
+DEBUG - 2015-04-06 19:14:01 --> Total execution time: 5.9343
+DEBUG - 2015-04-06 19:16:06 --> Config Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:16:06 --> URI Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Router Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Output Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Security Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Input Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:16:06 --> Language Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:16:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Session Class Initialized
+DEBUG - 2015-04-06 19:16:06 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:16:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Session routines successfully run
+DEBUG - 2015-04-06 19:16:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:16:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:16:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:16:08 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:16:08 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:16:08 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:16:08 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:16:08 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:16:08 --> Final output sent to browser
+DEBUG - 2015-04-06 19:16:08 --> Total execution time: 2.0051
+DEBUG - 2015-04-06 19:16:08 --> Config Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:16:08 --> URI Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Router Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Config Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Output Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Config Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Security Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:16:08 --> Input Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:16:08 --> Language Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:16:08 --> URI Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> URI Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Router Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Router Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:16:08 --> Output Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Security Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Input Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:16:08 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:16:08 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Output Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Language Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Security Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Input Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:16:08 --> hostname=localhost
+DEBUG - 2015-04-06 19:16:08 --> username=root
+DEBUG - 2015-04-06 19:16:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:16:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:16:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:16:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:16:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:16:08 --> dbprefix=
+DEBUG - 2015-04-06 19:16:08 --> Language Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> pconnect=1
+DEBUG - 2015-04-06 19:16:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:16:08 --> db_debug=1
+DEBUG - 2015-04-06 19:16:09 --> cache_on=
+DEBUG - 2015-04-06 19:16:09 --> cachedir=
+DEBUG - 2015-04-06 19:16:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:16:09 --> char_set=utf8
+DEBUG - 2015-04-06 19:16:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:16:09 --> swap_pre=
+DEBUG - 2015-04-06 19:16:09 --> autoinit=1
+DEBUG - 2015-04-06 19:16:09 --> stricton=
+DEBUG - 2015-04-06 19:16:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Config Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:16:09 --> URI Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Router Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Output Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Security Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Input Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:16:09 --> Language Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:16:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:16:10 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:16:10 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:16.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:16.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:16:10 --> Final output sent to browser
+DEBUG - 2015-04-06 19:16:10 --> Total execution time: 1.1211
+DEBUG - 2015-04-06 19:16:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:16:10 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:10 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:16:10 --> hostname=localhost
+DEBUG - 2015-04-06 19:16:10 --> username=root
+DEBUG - 2015-04-06 19:16:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:16:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:16:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:16:10 --> dbprefix=
+DEBUG - 2015-04-06 19:16:10 --> pconnect=1
+DEBUG - 2015-04-06 19:16:10 --> db_debug=1
+DEBUG - 2015-04-06 19:16:10 --> cache_on=
+DEBUG - 2015-04-06 19:16:10 --> cachedir=
+DEBUG - 2015-04-06 19:16:10 --> char_set=utf8
+DEBUG - 2015-04-06 19:16:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:16:10 --> swap_pre=
+DEBUG - 2015-04-06 19:16:10 --> autoinit=1
+DEBUG - 2015-04-06 19:16:10 --> stricton=
+DEBUG - 2015-04-06 19:16:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:16:11 --> Final output sent to browser
+DEBUG - 2015-04-06 19:16:11 --> Total execution time: 2.1371
+DEBUG - 2015-04-06 19:16:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:16:11 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:11 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:11 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:16:11 --> hostname=localhost
+DEBUG - 2015-04-06 19:16:11 --> username=root
+DEBUG - 2015-04-06 19:16:11 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:16:11 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:16:11 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:16:11 --> dbprefix=
+DEBUG - 2015-04-06 19:16:11 --> pconnect=1
+DEBUG - 2015-04-06 19:16:11 --> db_debug=1
+DEBUG - 2015-04-06 19:16:11 --> cache_on=
+DEBUG - 2015-04-06 19:16:11 --> cachedir=
+DEBUG - 2015-04-06 19:16:11 --> char_set=utf8
+DEBUG - 2015-04-06 19:16:11 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:16:11 --> swap_pre=
+DEBUG - 2015-04-06 19:16:11 --> autoinit=1
+DEBUG - 2015-04-06 19:16:11 --> stricton=
+DEBUG - 2015-04-06 19:16:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:16:12 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:16:12 --> Final output sent to browser
+DEBUG - 2015-04-06 19:16:12 --> Total execution time: 3.1932
+DEBUG - 2015-04-06 19:16:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:16:12 --> Session Class Initialized
+DEBUG - 2015-04-06 19:16:12 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:16:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:16:13 --> Session routines successfully run
+DEBUG - 2015-04-06 19:16:13 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:13 --> Model Class Initialized
+DEBUG - 2015-04-06 19:16:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:16:13 --> hostname=localhost
+DEBUG - 2015-04-06 19:16:13 --> username=root
+DEBUG - 2015-04-06 19:16:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:16:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:16:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:16:13 --> dbprefix=
+DEBUG - 2015-04-06 19:16:13 --> pconnect=1
+DEBUG - 2015-04-06 19:16:13 --> db_debug=1
+DEBUG - 2015-04-06 19:16:13 --> cache_on=
+DEBUG - 2015-04-06 19:16:13 --> cachedir=
+DEBUG - 2015-04-06 19:16:13 --> char_set=utf8
+DEBUG - 2015-04-06 19:16:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:16:13 --> swap_pre=
+DEBUG - 2015-04-06 19:16:13 --> autoinit=1
+DEBUG - 2015-04-06 19:16:13 --> stricton=
+DEBUG - 2015-04-06 19:16:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:16:14 --> Final output sent to browser
+DEBUG - 2015-04-06 19:16:14 --> Total execution time: 5.8503
+DEBUG - 2015-04-06 19:23:58 --> Config Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:23:58 --> URI Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Router Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Output Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Security Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Input Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:23:58 --> Language Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:23:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Session Class Initialized
+DEBUG - 2015-04-06 19:23:58 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:23:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Session routines successfully run
+DEBUG - 2015-04-06 19:24:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:24:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:24:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:24:00 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:24:00 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:24:00 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:24:00 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:24:00 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:24:00 --> Final output sent to browser
+DEBUG - 2015-04-06 19:24:00 --> Total execution time: 1.8041
+DEBUG - 2015-04-06 19:24:00 --> Config Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:24:00 --> URI Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Router Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Config Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Output Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Config Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Security Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Config Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:24:00 --> Input Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:24:00 --> URI Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:24:00 --> Language Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:24:00 --> URI Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> URI Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Router Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Router Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Output Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Output Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Security Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Security Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Input Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:24:00 --> Input Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:24:00 --> Language Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Router Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Output Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Security Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Language Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Input Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:24:00 --> Language Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:24:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:24:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:24:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:24:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:24:00 --> hostname=localhost
+DEBUG - 2015-04-06 19:24:00 --> username=root
+DEBUG - 2015-04-06 19:24:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:24:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:24:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:24:00 --> dbprefix=
+DEBUG - 2015-04-06 19:24:00 --> pconnect=1
+DEBUG - 2015-04-06 19:24:00 --> db_debug=1
+DEBUG - 2015-04-06 19:24:00 --> cache_on=
+DEBUG - 2015-04-06 19:24:00 --> cachedir=
+DEBUG - 2015-04-06 19:24:00 --> char_set=utf8
+DEBUG - 2015-04-06 19:24:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:24:00 --> swap_pre=
+DEBUG - 2015-04-06 19:24:00 --> autoinit=1
+DEBUG - 2015-04-06 19:24:00 --> stricton=
+DEBUG - 2015-04-06 19:24:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:24:01 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:24:01 --> Final output sent to browser
+DEBUG - 2015-04-06 19:24:01 --> Total execution time: 1.0771
+DEBUG - 2015-04-06 19:24:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:24:01 --> Session Class Initialized
+DEBUG - 2015-04-06 19:24:01 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:24:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:24:03 --> Session routines successfully run
+DEBUG - 2015-04-06 19:24:03 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:03 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:03 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:24:03 --> hostname=localhost
+DEBUG - 2015-04-06 19:24:03 --> username=root
+DEBUG - 2015-04-06 19:24:03 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:24:03 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:24:03 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:24:03 --> dbprefix=
+DEBUG - 2015-04-06 19:24:03 --> pconnect=1
+DEBUG - 2015-04-06 19:24:03 --> db_debug=1
+DEBUG - 2015-04-06 19:24:03 --> cache_on=
+DEBUG - 2015-04-06 19:24:03 --> cachedir=
+DEBUG - 2015-04-06 19:24:03 --> char_set=utf8
+DEBUG - 2015-04-06 19:24:03 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:24:03 --> swap_pre=
+DEBUG - 2015-04-06 19:24:03 --> autoinit=1
+DEBUG - 2015-04-06 19:24:03 --> stricton=
+DEBUG - 2015-04-06 19:24:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:24:04 --> Final output sent to browser
+DEBUG - 2015-04-06 19:24:04 --> Total execution time: 3.8032
+DEBUG - 2015-04-06 19:24:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:24:04 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:04 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:24:04 --> hostname=localhost
+DEBUG - 2015-04-06 19:24:04 --> username=root
+DEBUG - 2015-04-06 19:24:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:24:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:24:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:24:04 --> dbprefix=
+DEBUG - 2015-04-06 19:24:04 --> pconnect=1
+DEBUG - 2015-04-06 19:24:04 --> db_debug=1
+DEBUG - 2015-04-06 19:24:04 --> cache_on=
+DEBUG - 2015-04-06 19:24:04 --> cachedir=
+DEBUG - 2015-04-06 19:24:04 --> char_set=utf8
+DEBUG - 2015-04-06 19:24:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:24:04 --> swap_pre=
+DEBUG - 2015-04-06 19:24:04 --> autoinit=1
+DEBUG - 2015-04-06 19:24:04 --> stricton=
+DEBUG - 2015-04-06 19:24:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:24:05 --> Final output sent to browser
+DEBUG - 2015-04-06 19:24:05 --> Total execution time: 4.8653
+DEBUG - 2015-04-06 19:24:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:24:05 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:24:05 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:05 --> Model Class Initialized
+DEBUG - 2015-04-06 19:24:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:24:05 --> hostname=localhost
+DEBUG - 2015-04-06 19:24:05 --> username=root
+DEBUG - 2015-04-06 19:24:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:24:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:24:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:24:05 --> dbprefix=
+DEBUG - 2015-04-06 19:24:05 --> pconnect=1
+DEBUG - 2015-04-06 19:24:05 --> db_debug=1
+DEBUG - 2015-04-06 19:24:05 --> cache_on=
+DEBUG - 2015-04-06 19:24:05 --> cachedir=
+DEBUG - 2015-04-06 19:24:05 --> char_set=utf8
+DEBUG - 2015-04-06 19:24:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:24:05 --> swap_pre=
+DEBUG - 2015-04-06 19:24:05 --> autoinit=1
+DEBUG - 2015-04-06 19:24:05 --> stricton=
+DEBUG - 2015-04-06 19:24:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:24:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:24:06 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:24.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:24.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:24:06 --> Final output sent to browser
+DEBUG - 2015-04-06 19:24:06 --> Total execution time: 5.8923
+DEBUG - 2015-04-06 19:48:04 --> Config Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:48:04 --> URI Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Router Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Output Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Security Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Input Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:48:04 --> Language Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:48:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Session Class Initialized
+DEBUG - 2015-04-06 19:48:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:48:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:48:06 --> Session routines successfully run
+DEBUG - 2015-04-06 19:48:06 --> Model Class Initialized
+DEBUG - 2015-04-06 19:48:06 --> Model Class Initialized
+DEBUG - 2015-04-06 19:48:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:48:06 --> hostname=localhost
+DEBUG - 2015-04-06 19:48:06 --> username=root
+DEBUG - 2015-04-06 19:48:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:48:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:48:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:48:06 --> dbprefix=
+DEBUG - 2015-04-06 19:48:06 --> pconnect=1
+DEBUG - 2015-04-06 19:48:06 --> db_debug=1
+DEBUG - 2015-04-06 19:48:06 --> cache_on=
+DEBUG - 2015-04-06 19:48:06 --> cachedir=
+DEBUG - 2015-04-06 19:48:06 --> char_set=utf8
+DEBUG - 2015-04-06 19:48:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:48:06 --> swap_pre=
+DEBUG - 2015-04-06 19:48:06 --> autoinit=1
+DEBUG - 2015-04-06 19:48:06 --> stricton=
+DEBUG - 2015-04-06 19:48:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:48:07 --> Final output sent to browser
+DEBUG - 2015-04-06 19:48:07 --> Total execution time: 3.5582
+DEBUG - 2015-04-06 19:49:39 --> Config Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:49:39 --> URI Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Router Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Output Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Security Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Input Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:49:39 --> Language Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:49:39 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Session Class Initialized
+DEBUG - 2015-04-06 19:49:39 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:49:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:49:41 --> Session routines successfully run
+DEBUG - 2015-04-06 19:49:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:49:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:49:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:49:41 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:49:41 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:49:41 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:49:41 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:49:41 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:49:41 --> Final output sent to browser
+DEBUG - 2015-04-06 19:49:41 --> Total execution time: 1.7580
+DEBUG - 2015-04-06 19:49:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:49:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:49:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:49:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:49:42 --> hostname=localhost
+DEBUG - 2015-04-06 19:49:42 --> username=root
+DEBUG - 2015-04-06 19:49:42 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:49:42 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:49:42 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:49:42 --> dbprefix=
+DEBUG - 2015-04-06 19:49:42 --> pconnect=1
+DEBUG - 2015-04-06 19:49:42 --> db_debug=1
+DEBUG - 2015-04-06 19:49:42 --> cache_on=
+DEBUG - 2015-04-06 19:49:42 --> cachedir=
+DEBUG - 2015-04-06 19:49:42 --> char_set=utf8
+DEBUG - 2015-04-06 19:49:42 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:49:42 --> swap_pre=
+DEBUG - 2015-04-06 19:49:42 --> autoinit=1
+DEBUG - 2015-04-06 19:49:42 --> stricton=
+DEBUG - 2015-04-06 19:49:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:49:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:49:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:49:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:49:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:49:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:49:42 --> Config Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:49:42 --> URI Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Router Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Output Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Security Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Input Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:49:42 --> Language Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:49:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:49:43 --> Final output sent to browser
+DEBUG - 2015-04-06 19:49:43 --> Total execution time: 1.1731
+DEBUG - 2015-04-06 19:49:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:49:43 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:43 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:49:43 --> hostname=localhost
+DEBUG - 2015-04-06 19:49:43 --> username=root
+DEBUG - 2015-04-06 19:49:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:49:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:49:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:49:43 --> dbprefix=
+DEBUG - 2015-04-06 19:49:43 --> pconnect=1
+DEBUG - 2015-04-06 19:49:43 --> db_debug=1
+DEBUG - 2015-04-06 19:49:43 --> cache_on=
+DEBUG - 2015-04-06 19:49:43 --> cachedir=
+DEBUG - 2015-04-06 19:49:43 --> char_set=utf8
+DEBUG - 2015-04-06 19:49:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:49:43 --> swap_pre=
+DEBUG - 2015-04-06 19:49:43 --> autoinit=1
+DEBUG - 2015-04-06 19:49:43 --> stricton=
+DEBUG - 2015-04-06 19:49:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:49:44 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:49:44 --> Final output sent to browser
+DEBUG - 2015-04-06 19:49:44 --> Total execution time: 2.1671
+DEBUG - 2015-04-06 19:49:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:49:44 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:49:44 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:44 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:49:44 --> hostname=localhost
+DEBUG - 2015-04-06 19:49:44 --> username=root
+DEBUG - 2015-04-06 19:49:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:49:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:49:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:49:44 --> dbprefix=
+DEBUG - 2015-04-06 19:49:44 --> pconnect=1
+DEBUG - 2015-04-06 19:49:44 --> db_debug=1
+DEBUG - 2015-04-06 19:49:44 --> cache_on=
+DEBUG - 2015-04-06 19:49:44 --> cachedir=
+DEBUG - 2015-04-06 19:49:44 --> char_set=utf8
+DEBUG - 2015-04-06 19:49:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:49:44 --> swap_pre=
+DEBUG - 2015-04-06 19:49:44 --> autoinit=1
+DEBUG - 2015-04-06 19:49:44 --> stricton=
+DEBUG - 2015-04-06 19:49:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:49:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:49:45 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:49.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:49.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:49:45 --> Final output sent to browser
+DEBUG - 2015-04-06 19:49:45 --> Total execution time: 3.1792
+DEBUG - 2015-04-06 19:49:45 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:49:45 --> Session Class Initialized
+DEBUG - 2015-04-06 19:49:45 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:49:45 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:49:47 --> Session routines successfully run
+DEBUG - 2015-04-06 19:49:47 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:47 --> Model Class Initialized
+DEBUG - 2015-04-06 19:49:47 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:49:47 --> hostname=localhost
+DEBUG - 2015-04-06 19:49:47 --> username=root
+DEBUG - 2015-04-06 19:49:47 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:49:47 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:49:47 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:49:47 --> dbprefix=
+DEBUG - 2015-04-06 19:49:47 --> pconnect=1
+DEBUG - 2015-04-06 19:49:47 --> db_debug=1
+DEBUG - 2015-04-06 19:49:47 --> cache_on=
+DEBUG - 2015-04-06 19:49:47 --> cachedir=
+DEBUG - 2015-04-06 19:49:47 --> char_set=utf8
+DEBUG - 2015-04-06 19:49:47 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:49:47 --> swap_pre=
+DEBUG - 2015-04-06 19:49:47 --> autoinit=1
+DEBUG - 2015-04-06 19:49:47 --> stricton=
+DEBUG - 2015-04-06 19:49:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:49:48 --> Final output sent to browser
+DEBUG - 2015-04-06 19:49:48 --> Total execution time: 5.5933
+DEBUG - 2015-04-06 19:57:52 --> Config Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:57:52 --> URI Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Router Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Output Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Security Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Input Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:57:52 --> Language Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:57:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Session Class Initialized
+DEBUG - 2015-04-06 19:57:52 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:57:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:57:54 --> Session routines successfully run
+DEBUG - 2015-04-06 19:57:54 --> Model Class Initialized
+DEBUG - 2015-04-06 19:57:54 --> Model Class Initialized
+DEBUG - 2015-04-06 19:57:54 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:57:54 --> hostname=localhost
+DEBUG - 2015-04-06 19:57:54 --> username=root
+DEBUG - 2015-04-06 19:57:54 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:57:54 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:57:54 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:57:54 --> dbprefix=
+DEBUG - 2015-04-06 19:57:54 --> pconnect=1
+DEBUG - 2015-04-06 19:57:54 --> db_debug=1
+DEBUG - 2015-04-06 19:57:54 --> cache_on=
+DEBUG - 2015-04-06 19:57:54 --> cachedir=
+DEBUG - 2015-04-06 19:57:54 --> char_set=utf8
+DEBUG - 2015-04-06 19:57:54 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:57:54 --> swap_pre=
+DEBUG - 2015-04-06 19:57:54 --> autoinit=1
+DEBUG - 2015-04-06 19:57:54 --> stricton=
+DEBUG - 2015-04-06 19:57:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:57:55 --> Final output sent to browser
+DEBUG - 2015-04-06 19:57:55 --> Total execution time: 2.9240
+DEBUG - 2015-04-06 19:57:59 --> Config Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:57:59 --> URI Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Router Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Output Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Security Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Input Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:57:59 --> Language Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:57:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Session Class Initialized
+DEBUG - 2015-04-06 19:57:59 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:57:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:58:00 --> Session garbage collection performed.
+DEBUG - 2015-04-06 19:58:00 --> Session routines successfully run
+DEBUG - 2015-04-06 19:58:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:58:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:58:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:58:00 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 19:58:00 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 19:58:00 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 19:58:00 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 19:58:00 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 19:58:00 --> Final output sent to browser
+DEBUG - 2015-04-06 19:58:00 --> Total execution time: 1.6590
+DEBUG - 2015-04-06 19:58:01 --> Config Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:58:01 --> URI Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Router Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Output Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Security Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Input Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:58:01 --> Language Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:58:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 19:58:01 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:58:01 --> hostname=localhost
+DEBUG - 2015-04-06 19:58:01 --> username=root
+DEBUG - 2015-04-06 19:58:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:58:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:58:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:58:01 --> dbprefix=
+DEBUG - 2015-04-06 19:58:01 --> pconnect=1
+DEBUG - 2015-04-06 19:58:01 --> db_debug=1
+DEBUG - 2015-04-06 19:58:01 --> cache_on=
+DEBUG - 2015-04-06 19:58:01 --> cachedir=
+DEBUG - 2015-04-06 19:58:01 --> char_set=utf8
+DEBUG - 2015-04-06 19:58:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:58:01 --> swap_pre=
+DEBUG - 2015-04-06 19:58:01 --> autoinit=1
+DEBUG - 2015-04-06 19:58:01 --> stricton=
+DEBUG - 2015-04-06 19:58:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Config Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:58:01 --> URI Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Router Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Output Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Config Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:58:01 --> URI Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Router Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Output Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Security Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Input Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:58:01 --> Language Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:58:01 --> Security Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Input Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:58:01 --> Language Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:58:01 --> Config Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 19:58:01 --> URI Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Router Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Output Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Security Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Input Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 19:58:01 --> Language Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 19:58:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 19:58:02 --> XSS Filtering completed
+DEBUG - 2015-04-06 19:58:02 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 19:58.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 19:58.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 19:58:02 --> Final output sent to browser
+DEBUG - 2015-04-06 19:58:02 --> Total execution time: 1.1740
+DEBUG - 2015-04-06 19:58:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:58:02 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:02 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:02 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:58:02 --> hostname=localhost
+DEBUG - 2015-04-06 19:58:02 --> username=root
+DEBUG - 2015-04-06 19:58:02 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:58:02 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:58:02 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:58:02 --> dbprefix=
+DEBUG - 2015-04-06 19:58:02 --> pconnect=1
+DEBUG - 2015-04-06 19:58:02 --> db_debug=1
+DEBUG - 2015-04-06 19:58:02 --> cache_on=
+DEBUG - 2015-04-06 19:58:02 --> cachedir=
+DEBUG - 2015-04-06 19:58:02 --> char_set=utf8
+DEBUG - 2015-04-06 19:58:02 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:58:02 --> swap_pre=
+DEBUG - 2015-04-06 19:58:02 --> autoinit=1
+DEBUG - 2015-04-06 19:58:02 --> stricton=
+DEBUG - 2015-04-06 19:58:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:58:03 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 19:58:03 --> Final output sent to browser
+DEBUG - 2015-04-06 19:58:03 --> Total execution time: 2.1150
+DEBUG - 2015-04-06 19:58:03 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:58:03 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:03 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:03 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:58:03 --> hostname=localhost
+DEBUG - 2015-04-06 19:58:03 --> username=root
+DEBUG - 2015-04-06 19:58:03 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:58:03 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:58:03 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:58:03 --> dbprefix=
+DEBUG - 2015-04-06 19:58:03 --> pconnect=1
+DEBUG - 2015-04-06 19:58:03 --> db_debug=1
+DEBUG - 2015-04-06 19:58:03 --> cache_on=
+DEBUG - 2015-04-06 19:58:03 --> cachedir=
+DEBUG - 2015-04-06 19:58:03 --> char_set=utf8
+DEBUG - 2015-04-06 19:58:03 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:58:03 --> swap_pre=
+DEBUG - 2015-04-06 19:58:03 --> autoinit=1
+DEBUG - 2015-04-06 19:58:03 --> stricton=
+DEBUG - 2015-04-06 19:58:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:58:04 --> Final output sent to browser
+DEBUG - 2015-04-06 19:58:04 --> Total execution time: 3.2250
+DEBUG - 2015-04-06 19:58:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 19:58:04 --> Session Class Initialized
+DEBUG - 2015-04-06 19:58:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 19:58:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:58:05 --> Session routines successfully run
+DEBUG - 2015-04-06 19:58:05 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:05 --> Model Class Initialized
+DEBUG - 2015-04-06 19:58:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 19:58:05 --> hostname=localhost
+DEBUG - 2015-04-06 19:58:05 --> username=root
+DEBUG - 2015-04-06 19:58:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 19:58:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 19:58:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 19:58:05 --> dbprefix=
+DEBUG - 2015-04-06 19:58:05 --> pconnect=1
+DEBUG - 2015-04-06 19:58:05 --> db_debug=1
+DEBUG - 2015-04-06 19:58:05 --> cache_on=
+DEBUG - 2015-04-06 19:58:05 --> cachedir=
+DEBUG - 2015-04-06 19:58:05 --> char_set=utf8
+DEBUG - 2015-04-06 19:58:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 19:58:05 --> swap_pre=
+DEBUG - 2015-04-06 19:58:05 --> autoinit=1
+DEBUG - 2015-04-06 19:58:05 --> stricton=
+DEBUG - 2015-04-06 19:58:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 19:58:07 --> Final output sent to browser
+DEBUG - 2015-04-06 19:58:07 --> Total execution time: 5.7960
+DEBUG - 2015-04-06 20:00:43 --> Config Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:00:43 --> URI Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Router Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Output Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Security Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Input Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:00:43 --> Language Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:00:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Session Class Initialized
+DEBUG - 2015-04-06 20:00:43 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:00:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Session routines successfully run
+DEBUG - 2015-04-06 20:00:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:00:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:00:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:00:45 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:00:45 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:00:45 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:00:45 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:00:45 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:00:45 --> Final output sent to browser
+DEBUG - 2015-04-06 20:00:45 --> Total execution time: 1.6300
+DEBUG - 2015-04-06 20:00:45 --> Config Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:00:45 --> URI Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Router Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Output Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Security Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Input Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:00:45 --> Language Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:00:45 --> Config Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:00:45 --> URI Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Router Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Output Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Security Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Input Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:00:45 --> Language Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:00:45 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Config Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:00:45 --> URI Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Router Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Output Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Security Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Input Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:00:45 --> Language Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:00:45 --> Config Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:00:45 --> URI Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Router Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Output Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Security Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Input Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:00:45 --> Language Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:00:45 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:00:45 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:00:45 --> hostname=localhost
+DEBUG - 2015-04-06 20:00:45 --> username=root
+DEBUG - 2015-04-06 20:00:45 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:00:45 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:00:45 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:00:45 --> dbprefix=
+DEBUG - 2015-04-06 20:00:45 --> pconnect=1
+DEBUG - 2015-04-06 20:00:45 --> db_debug=1
+DEBUG - 2015-04-06 20:00:45 --> cache_on=
+DEBUG - 2015-04-06 20:00:45 --> cachedir=
+DEBUG - 2015-04-06 20:00:45 --> char_set=utf8
+DEBUG - 2015-04-06 20:00:45 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:00:45 --> swap_pre=
+DEBUG - 2015-04-06 20:00:45 --> autoinit=1
+DEBUG - 2015-04-06 20:00:45 --> stricton=
+DEBUG - 2015-04-06 20:00:45 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:00:46 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:00:47 --> Final output sent to browser
+DEBUG - 2015-04-06 20:00:47 --> Total execution time: 1.2190
+DEBUG - 2015-04-06 20:00:47 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:00:47 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:47 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:47 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:00:47 --> hostname=localhost
+DEBUG - 2015-04-06 20:00:47 --> username=root
+DEBUG - 2015-04-06 20:00:47 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:00:47 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:00:47 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:00:47 --> dbprefix=
+DEBUG - 2015-04-06 20:00:47 --> pconnect=1
+DEBUG - 2015-04-06 20:00:47 --> db_debug=1
+DEBUG - 2015-04-06 20:00:47 --> cache_on=
+DEBUG - 2015-04-06 20:00:47 --> cachedir=
+DEBUG - 2015-04-06 20:00:47 --> char_set=utf8
+DEBUG - 2015-04-06 20:00:47 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:00:47 --> swap_pre=
+DEBUG - 2015-04-06 20:00:47 --> autoinit=1
+DEBUG - 2015-04-06 20:00:47 --> stricton=
+DEBUG - 2015-04-06 20:00:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:00:48 --> Final output sent to browser
+DEBUG - 2015-04-06 20:00:48 --> Total execution time: 2.3120
+DEBUG - 2015-04-06 20:00:48 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:00:48 --> Session Class Initialized
+DEBUG - 2015-04-06 20:00:48 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:00:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:00:49 --> Session routines successfully run
+DEBUG - 2015-04-06 20:00:49 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:49 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:49 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:00:49 --> hostname=localhost
+DEBUG - 2015-04-06 20:00:49 --> username=root
+DEBUG - 2015-04-06 20:00:49 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:00:49 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:00:49 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:00:49 --> dbprefix=
+DEBUG - 2015-04-06 20:00:49 --> pconnect=1
+DEBUG - 2015-04-06 20:00:49 --> db_debug=1
+DEBUG - 2015-04-06 20:00:49 --> cache_on=
+DEBUG - 2015-04-06 20:00:49 --> cachedir=
+DEBUG - 2015-04-06 20:00:49 --> char_set=utf8
+DEBUG - 2015-04-06 20:00:49 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:00:49 --> swap_pre=
+DEBUG - 2015-04-06 20:00:49 --> autoinit=1
+DEBUG - 2015-04-06 20:00:49 --> stricton=
+DEBUG - 2015-04-06 20:00:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:00:50 --> Final output sent to browser
+DEBUG - 2015-04-06 20:00:50 --> Total execution time: 5.1420
+DEBUG - 2015-04-06 20:00:50 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:00:50 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:00:50 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:50 --> Model Class Initialized
+DEBUG - 2015-04-06 20:00:50 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:00:50 --> hostname=localhost
+DEBUG - 2015-04-06 20:00:50 --> username=root
+DEBUG - 2015-04-06 20:00:50 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:00:50 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:00:50 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:00:50 --> dbprefix=
+DEBUG - 2015-04-06 20:00:50 --> pconnect=1
+DEBUG - 2015-04-06 20:00:50 --> db_debug=1
+DEBUG - 2015-04-06 20:00:50 --> cache_on=
+DEBUG - 2015-04-06 20:00:50 --> cachedir=
+DEBUG - 2015-04-06 20:00:50 --> char_set=utf8
+DEBUG - 2015-04-06 20:00:50 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:00:50 --> swap_pre=
+DEBUG - 2015-04-06 20:00:50 --> autoinit=1
+DEBUG - 2015-04-06 20:00:50 --> stricton=
+DEBUG - 2015-04-06 20:00:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:00:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:00:51 --> Final output sent to browser
+DEBUG - 2015-04-06 20:00:51 --> Total execution time: 6.0950
+DEBUG - 2015-04-06 20:02:00 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:00 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:00 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Session Class Initialized
+DEBUG - 2015-04-06 20:02:00 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:02:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:01 --> Session routines successfully run
+DEBUG - 2015-04-06 20:02:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:01 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:02:01 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:02:01 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:02:01 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:02:01 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:02:01 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:01 --> Total execution time: 1.6320
+DEBUG - 2015-04-06 20:02:02 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:02 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:02 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:02 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:02 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:02 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:02 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:02 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:02 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> username=root
+DEBUG - 2015-04-06 20:02:02 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:02 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:02 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:02 --> dbprefix=
+DEBUG - 2015-04-06 20:02:02 --> pconnect=1
+DEBUG - 2015-04-06 20:02:02 --> db_debug=1
+DEBUG - 2015-04-06 20:02:02 --> cache_on=
+DEBUG - 2015-04-06 20:02:02 --> cachedir=
+DEBUG - 2015-04-06 20:02:02 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:02 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:02 --> swap_pre=
+DEBUG - 2015-04-06 20:02:02 --> autoinit=1
+DEBUG - 2015-04-06 20:02:02 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> stricton=
+DEBUG - 2015-04-06 20:02:02 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:02 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:02 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:03 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:02:03 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:03 --> Total execution time: 1.1010
+DEBUG - 2015-04-06 20:02:03 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:03 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:03 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:03 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:03 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:03 --> username=root
+DEBUG - 2015-04-06 20:02:03 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:03 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:03 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:03 --> dbprefix=
+DEBUG - 2015-04-06 20:02:03 --> pconnect=1
+DEBUG - 2015-04-06 20:02:03 --> db_debug=1
+DEBUG - 2015-04-06 20:02:03 --> cache_on=
+DEBUG - 2015-04-06 20:02:03 --> cachedir=
+DEBUG - 2015-04-06 20:02:03 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:03 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:03 --> swap_pre=
+DEBUG - 2015-04-06 20:02:03 --> autoinit=1
+DEBUG - 2015-04-06 20:02:03 --> stricton=
+DEBUG - 2015-04-06 20:02:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:04 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:04 --> Total execution time: 2.1490
+DEBUG - 2015-04-06 20:02:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:04 --> Session Class Initialized
+DEBUG - 2015-04-06 20:02:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:02:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:05 --> Session routines successfully run
+DEBUG - 2015-04-06 20:02:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:05 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:05 --> username=root
+DEBUG - 2015-04-06 20:02:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:05 --> dbprefix=
+DEBUG - 2015-04-06 20:02:05 --> pconnect=1
+DEBUG - 2015-04-06 20:02:05 --> db_debug=1
+DEBUG - 2015-04-06 20:02:05 --> cache_on=
+DEBUG - 2015-04-06 20:02:05 --> cachedir=
+DEBUG - 2015-04-06 20:02:05 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:05 --> swap_pre=
+DEBUG - 2015-04-06 20:02:05 --> autoinit=1
+DEBUG - 2015-04-06 20:02:05 --> stricton=
+DEBUG - 2015-04-06 20:02:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:06 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:06 --> Total execution time: 4.6340
+DEBUG - 2015-04-06 20:02:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:06 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:02:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:07 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:07 --> username=root
+DEBUG - 2015-04-06 20:02:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:07 --> dbprefix=
+DEBUG - 2015-04-06 20:02:07 --> pconnect=1
+DEBUG - 2015-04-06 20:02:07 --> db_debug=1
+DEBUG - 2015-04-06 20:02:07 --> cache_on=
+DEBUG - 2015-04-06 20:02:07 --> cachedir=
+DEBUG - 2015-04-06 20:02:07 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:07 --> swap_pre=
+DEBUG - 2015-04-06 20:02:07 --> autoinit=1
+DEBUG - 2015-04-06 20:02:07 --> stricton=
+DEBUG - 2015-04-06 20:02:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:08 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:08 --> Total execution time: 5.6970
+DEBUG - 2015-04-06 20:02:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Session Class Initialized
+DEBUG - 2015-04-06 20:02:11 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:02:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:13 --> Session routines successfully run
+DEBUG - 2015-04-06 20:02:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:13 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:02:13 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:02:13 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:02:13 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:02:13 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:02:13 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:13 --> Total execution time: 1.7770
+DEBUG - 2015-04-06 20:02:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:14 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:14 --> username=root
+DEBUG - 2015-04-06 20:02:14 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:14 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:14 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:14 --> dbprefix=
+DEBUG - 2015-04-06 20:02:14 --> pconnect=1
+DEBUG - 2015-04-06 20:02:14 --> db_debug=1
+DEBUG - 2015-04-06 20:02:14 --> cache_on=
+DEBUG - 2015-04-06 20:02:14 --> cachedir=
+DEBUG - 2015-04-06 20:02:14 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:14 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:14 --> swap_pre=
+DEBUG - 2015-04-06 20:02:14 --> autoinit=1
+DEBUG - 2015-04-06 20:02:14 --> stricton=
+DEBUG - 2015-04-06 20:02:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:15 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:15 --> Total execution time: 1.1510
+DEBUG - 2015-04-06 20:02:15 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:15 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:15 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:15 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:15 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:15 --> username=root
+DEBUG - 2015-04-06 20:02:15 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:15 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:15 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:15 --> dbprefix=
+DEBUG - 2015-04-06 20:02:15 --> pconnect=1
+DEBUG - 2015-04-06 20:02:15 --> db_debug=1
+DEBUG - 2015-04-06 20:02:15 --> cache_on=
+DEBUG - 2015-04-06 20:02:15 --> cachedir=
+DEBUG - 2015-04-06 20:02:15 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:15 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:15 --> swap_pre=
+DEBUG - 2015-04-06 20:02:15 --> autoinit=1
+DEBUG - 2015-04-06 20:02:15 --> stricton=
+DEBUG - 2015-04-06 20:02:15 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:16 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:02:16 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:16 --> Total execution time: 2.1410
+DEBUG - 2015-04-06 20:02:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:16 --> Session Class Initialized
+DEBUG - 2015-04-06 20:02:16 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:02:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:17 --> Session routines successfully run
+DEBUG - 2015-04-06 20:02:17 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:17 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:17 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:17 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:17 --> username=root
+DEBUG - 2015-04-06 20:02:17 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:17 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:17 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:17 --> dbprefix=
+DEBUG - 2015-04-06 20:02:17 --> pconnect=1
+DEBUG - 2015-04-06 20:02:17 --> db_debug=1
+DEBUG - 2015-04-06 20:02:17 --> cache_on=
+DEBUG - 2015-04-06 20:02:17 --> cachedir=
+DEBUG - 2015-04-06 20:02:17 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:17 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:17 --> swap_pre=
+DEBUG - 2015-04-06 20:02:17 --> autoinit=1
+DEBUG - 2015-04-06 20:02:17 --> stricton=
+DEBUG - 2015-04-06 20:02:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:19 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:19 --> Total execution time: 4.8290
+DEBUG - 2015-04-06 20:02:19 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:19 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:02:19 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:19 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:19 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:19 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:19 --> username=root
+DEBUG - 2015-04-06 20:02:19 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:19 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:19 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:19 --> dbprefix=
+DEBUG - 2015-04-06 20:02:19 --> pconnect=1
+DEBUG - 2015-04-06 20:02:19 --> db_debug=1
+DEBUG - 2015-04-06 20:02:19 --> cache_on=
+DEBUG - 2015-04-06 20:02:19 --> cachedir=
+DEBUG - 2015-04-06 20:02:19 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:19 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:19 --> swap_pre=
+DEBUG - 2015-04-06 20:02:19 --> autoinit=1
+DEBUG - 2015-04-06 20:02:19 --> stricton=
+DEBUG - 2015-04-06 20:02:19 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:20 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:20 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:20 --> Total execution time: 5.8620
+DEBUG - 2015-04-06 20:02:22 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:22 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:22 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Session Class Initialized
+DEBUG - 2015-04-06 20:02:22 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:02:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:24 --> Session routines successfully run
+DEBUG - 2015-04-06 20:02:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:24 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:02:24 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:02:24 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:02:24 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:02:24 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:02:24 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:24 --> Total execution time: 1.5220
+DEBUG - 2015-04-06 20:02:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:25 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:25 --> username=root
+DEBUG - 2015-04-06 20:02:25 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:25 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:25 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:25 --> dbprefix=
+DEBUG - 2015-04-06 20:02:25 --> pconnect=1
+DEBUG - 2015-04-06 20:02:25 --> db_debug=1
+DEBUG - 2015-04-06 20:02:25 --> cache_on=
+DEBUG - 2015-04-06 20:02:25 --> cachedir=
+DEBUG - 2015-04-06 20:02:25 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:25 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:25 --> swap_pre=
+DEBUG - 2015-04-06 20:02:25 --> autoinit=1
+DEBUG - 2015-04-06 20:02:25 --> stricton=
+DEBUG - 2015-04-06 20:02:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:02:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:02:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:02:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:02:26 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:02:26 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:26 --> Total execution time: 1.1620
+DEBUG - 2015-04-06 20:02:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:26 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:26 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:26 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:26 --> username=root
+DEBUG - 2015-04-06 20:02:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:26 --> dbprefix=
+DEBUG - 2015-04-06 20:02:26 --> pconnect=1
+DEBUG - 2015-04-06 20:02:26 --> db_debug=1
+DEBUG - 2015-04-06 20:02:26 --> cache_on=
+DEBUG - 2015-04-06 20:02:26 --> cachedir=
+DEBUG - 2015-04-06 20:02:26 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:26 --> swap_pre=
+DEBUG - 2015-04-06 20:02:26 --> autoinit=1
+DEBUG - 2015-04-06 20:02:26 --> stricton=
+DEBUG - 2015-04-06 20:02:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:27 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:27 --> Total execution time: 2.1490
+DEBUG - 2015-04-06 20:02:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:27 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:02:27 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:27 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:27 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:27 --> username=root
+DEBUG - 2015-04-06 20:02:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:27 --> dbprefix=
+DEBUG - 2015-04-06 20:02:27 --> pconnect=1
+DEBUG - 2015-04-06 20:02:27 --> db_debug=1
+DEBUG - 2015-04-06 20:02:27 --> cache_on=
+DEBUG - 2015-04-06 20:02:27 --> cachedir=
+DEBUG - 2015-04-06 20:02:27 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:27 --> swap_pre=
+DEBUG - 2015-04-06 20:02:27 --> autoinit=1
+DEBUG - 2015-04-06 20:02:27 --> stricton=
+DEBUG - 2015-04-06 20:02:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:02:28 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:28 --> Total execution time: 3.2040
+DEBUG - 2015-04-06 20:02:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:02:28 --> Session Class Initialized
+DEBUG - 2015-04-06 20:02:28 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:02:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:29 --> Session routines successfully run
+DEBUG - 2015-04-06 20:02:29 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:29 --> Model Class Initialized
+DEBUG - 2015-04-06 20:02:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:02:29 --> hostname=localhost
+DEBUG - 2015-04-06 20:02:29 --> username=root
+DEBUG - 2015-04-06 20:02:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:02:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:02:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:02:29 --> dbprefix=
+DEBUG - 2015-04-06 20:02:29 --> pconnect=1
+DEBUG - 2015-04-06 20:02:29 --> db_debug=1
+DEBUG - 2015-04-06 20:02:29 --> cache_on=
+DEBUG - 2015-04-06 20:02:29 --> cachedir=
+DEBUG - 2015-04-06 20:02:29 --> char_set=utf8
+DEBUG - 2015-04-06 20:02:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:02:29 --> swap_pre=
+DEBUG - 2015-04-06 20:02:29 --> autoinit=1
+DEBUG - 2015-04-06 20:02:29 --> stricton=
+DEBUG - 2015-04-06 20:02:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:02:31 --> Final output sent to browser
+DEBUG - 2015-04-06 20:02:31 --> Total execution time: 5.8210
+DEBUG - 2015-04-06 20:06:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:06:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:06:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:06:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Session Class Initialized
+DEBUG - 2015-04-06 20:06:01 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:06:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:06:04 --> Session routines successfully run
+DEBUG - 2015-04-06 20:06:04 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:06:04 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:06:04 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:06:04 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:06:04 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:06:04 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:06:04 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:06:04 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:06:04 --> Final output sent to browser
+DEBUG - 2015-04-06 20:06:04 --> Total execution time: 3.1771
+DEBUG - 2015-04-06 20:06:05 --> Config Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:06:05 --> URI Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Config Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Router Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:06:05 --> Output Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Security Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> URI Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Router Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Input Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:06:05 --> Language Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Output Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Security Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Input Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:06:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:06:05 --> Language Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:06:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:06:05 --> hostname=localhost
+DEBUG - 2015-04-06 20:06:05 --> username=root
+DEBUG - 2015-04-06 20:06:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:06:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:06:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:06:05 --> dbprefix=
+DEBUG - 2015-04-06 20:06:05 --> pconnect=1
+DEBUG - 2015-04-06 20:06:05 --> db_debug=1
+DEBUG - 2015-04-06 20:06:05 --> cache_on=
+DEBUG - 2015-04-06 20:06:05 --> cachedir=
+DEBUG - 2015-04-06 20:06:05 --> char_set=utf8
+DEBUG - 2015-04-06 20:06:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:06:05 --> swap_pre=
+DEBUG - 2015-04-06 20:06:05 --> autoinit=1
+DEBUG - 2015-04-06 20:06:05 --> stricton=
+DEBUG - 2015-04-06 20:06:05 --> Config Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:06:05 --> URI Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Router Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Output Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Security Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Input Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:06:05 --> Language Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Config Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:06:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> URI Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:06:05 --> Router Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Output Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Security Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Input Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:06:05 --> Language Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:06:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:06:06 --> Final output sent to browser
+DEBUG - 2015-04-06 20:06:06 --> Total execution time: 1.1890
+DEBUG - 2015-04-06 20:06:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:06:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:06:06 --> hostname=localhost
+DEBUG - 2015-04-06 20:06:06 --> username=root
+DEBUG - 2015-04-06 20:06:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:06:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:06:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:06:06 --> dbprefix=
+DEBUG - 2015-04-06 20:06:06 --> pconnect=1
+DEBUG - 2015-04-06 20:06:06 --> db_debug=1
+DEBUG - 2015-04-06 20:06:06 --> cache_on=
+DEBUG - 2015-04-06 20:06:06 --> cachedir=
+DEBUG - 2015-04-06 20:06:06 --> char_set=utf8
+DEBUG - 2015-04-06 20:06:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:06:06 --> swap_pre=
+DEBUG - 2015-04-06 20:06:06 --> autoinit=1
+DEBUG - 2015-04-06 20:06:06 --> stricton=
+DEBUG - 2015-04-06 20:06:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:06:08 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:06:08 --> Final output sent to browser
+DEBUG - 2015-04-06 20:06:08 --> Total execution time: 2.2200
+DEBUG - 2015-04-06 20:06:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:06:08 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:06:08 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:08 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:06:08 --> hostname=localhost
+DEBUG - 2015-04-06 20:06:08 --> username=root
+DEBUG - 2015-04-06 20:06:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:06:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:06:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:06:08 --> dbprefix=
+DEBUG - 2015-04-06 20:06:08 --> pconnect=1
+DEBUG - 2015-04-06 20:06:08 --> db_debug=1
+DEBUG - 2015-04-06 20:06:08 --> cache_on=
+DEBUG - 2015-04-06 20:06:08 --> cachedir=
+DEBUG - 2015-04-06 20:06:08 --> char_set=utf8
+DEBUG - 2015-04-06 20:06:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:06:08 --> swap_pre=
+DEBUG - 2015-04-06 20:06:08 --> autoinit=1
+DEBUG - 2015-04-06 20:06:08 --> stricton=
+DEBUG - 2015-04-06 20:06:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:06:09 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:06:09 --> Final output sent to browser
+DEBUG - 2015-04-06 20:06:09 --> Total execution time: 3.2250
+DEBUG - 2015-04-06 20:06:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:06:09 --> Session Class Initialized
+DEBUG - 2015-04-06 20:06:09 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:06:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:06:10 --> Session routines successfully run
+DEBUG - 2015-04-06 20:06:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:06:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:06:10 --> hostname=localhost
+DEBUG - 2015-04-06 20:06:10 --> username=root
+DEBUG - 2015-04-06 20:06:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:06:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:06:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:06:10 --> dbprefix=
+DEBUG - 2015-04-06 20:06:10 --> pconnect=1
+DEBUG - 2015-04-06 20:06:10 --> db_debug=1
+DEBUG - 2015-04-06 20:06:10 --> cache_on=
+DEBUG - 2015-04-06 20:06:10 --> cachedir=
+DEBUG - 2015-04-06 20:06:10 --> char_set=utf8
+DEBUG - 2015-04-06 20:06:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:06:10 --> swap_pre=
+DEBUG - 2015-04-06 20:06:10 --> autoinit=1
+DEBUG - 2015-04-06 20:06:10 --> stricton=
+DEBUG - 2015-04-06 20:06:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:06:11 --> Final output sent to browser
+DEBUG - 2015-04-06 20:06:11 --> Total execution time: 6.0551
+DEBUG - 2015-04-06 20:07:58 --> Config Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:07:58 --> URI Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Router Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Output Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Security Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Input Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:07:58 --> Language Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:07:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Session Class Initialized
+DEBUG - 2015-04-06 20:07:58 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:07:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:07:59 --> Session routines successfully run
+DEBUG - 2015-04-06 20:07:59 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:07:59 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:07:59 --> XSS Filtering completed
+ERROR - 2015-04-06 20:07:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\inetpub\firedesk.co.uk\web\application\views\header_nav.php 16
+DEBUG - 2015-04-06 20:07:59 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:07:59 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:07:59 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:07:59 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:08:00 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:08:00 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:00 --> Total execution time: 1.5620
+DEBUG - 2015-04-06 20:08:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:01 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:01 --> username=root
+DEBUG - 2015-04-06 20:08:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:01 --> dbprefix=
+DEBUG - 2015-04-06 20:08:01 --> pconnect=1
+DEBUG - 2015-04-06 20:08:01 --> db_debug=1
+DEBUG - 2015-04-06 20:08:01 --> cache_on=
+DEBUG - 2015-04-06 20:08:01 --> cachedir=
+DEBUG - 2015-04-06 20:08:01 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:01 --> swap_pre=
+DEBUG - 2015-04-06 20:08:01 --> autoinit=1
+DEBUG - 2015-04-06 20:08:01 --> stricton=
+DEBUG - 2015-04-06 20:08:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:02 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:02 --> Total execution time: 1.1740
+DEBUG - 2015-04-06 20:08:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:02 --> Session Class Initialized
+DEBUG - 2015-04-06 20:08:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:08:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:04 --> Session routines successfully run
+DEBUG - 2015-04-06 20:08:04 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:04 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:04 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:04 --> username=root
+DEBUG - 2015-04-06 20:08:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:04 --> dbprefix=
+DEBUG - 2015-04-06 20:08:04 --> pconnect=1
+DEBUG - 2015-04-06 20:08:04 --> db_debug=1
+DEBUG - 2015-04-06 20:08:04 --> cache_on=
+DEBUG - 2015-04-06 20:08:04 --> cachedir=
+DEBUG - 2015-04-06 20:08:04 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:04 --> swap_pre=
+DEBUG - 2015-04-06 20:08:04 --> autoinit=1
+DEBUG - 2015-04-06 20:08:04 --> stricton=
+DEBUG - 2015-04-06 20:08:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:05 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:05 --> Total execution time: 4.1890
+DEBUG - 2015-04-06 20:08:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:05 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:08:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:05 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:05 --> username=root
+DEBUG - 2015-04-06 20:08:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:05 --> dbprefix=
+DEBUG - 2015-04-06 20:08:05 --> pconnect=1
+DEBUG - 2015-04-06 20:08:05 --> db_debug=1
+DEBUG - 2015-04-06 20:08:05 --> cache_on=
+DEBUG - 2015-04-06 20:08:05 --> cachedir=
+DEBUG - 2015-04-06 20:08:05 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:05 --> swap_pre=
+DEBUG - 2015-04-06 20:08:05 --> autoinit=1
+DEBUG - 2015-04-06 20:08:05 --> stricton=
+DEBUG - 2015-04-06 20:08:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:08:06 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:06 --> Total execution time: 5.1940
+DEBUG - 2015-04-06 20:08:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:06 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:06 --> username=root
+DEBUG - 2015-04-06 20:08:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:06 --> dbprefix=
+DEBUG - 2015-04-06 20:08:06 --> pconnect=1
+DEBUG - 2015-04-06 20:08:06 --> db_debug=1
+DEBUG - 2015-04-06 20:08:06 --> cache_on=
+DEBUG - 2015-04-06 20:08:06 --> cachedir=
+DEBUG - 2015-04-06 20:08:06 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:06 --> swap_pre=
+DEBUG - 2015-04-06 20:08:06 --> autoinit=1
+DEBUG - 2015-04-06 20:08:06 --> stricton=
+DEBUG - 2015-04-06 20:08:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:07 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:08:07 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:07 --> Total execution time: 6.2630
+DEBUG - 2015-04-06 20:08:31 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:31 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:31 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:31 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Session Class Initialized
+DEBUG - 2015-04-06 20:08:31 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:08:31 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:32 --> Session routines successfully run
+DEBUG - 2015-04-06 20:08:32 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:08:32 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:08:32 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:08:33 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:08:33 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:08:33 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:08:33 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:08:33 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:08:33 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:33 --> Total execution time: 1.9020
+DEBUG - 2015-04-06 20:08:33 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:33 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:33 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:33 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:33 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:34 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:34 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Config Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:34 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:34 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:08:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:34 --> URI Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Router Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Output Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Security Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:34 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:34 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Input Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> username=root
+DEBUG - 2015-04-06 20:08:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:08:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:34 --> dbprefix=
+DEBUG - 2015-04-06 20:08:34 --> pconnect=1
+DEBUG - 2015-04-06 20:08:34 --> db_debug=1
+DEBUG - 2015-04-06 20:08:34 --> cache_on=
+DEBUG - 2015-04-06 20:08:34 --> cachedir=
+DEBUG - 2015-04-06 20:08:34 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:34 --> swap_pre=
+DEBUG - 2015-04-06 20:08:34 --> autoinit=1
+DEBUG - 2015-04-06 20:08:34 --> stricton=
+DEBUG - 2015-04-06 20:08:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Language Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:08:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:08:35 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:08:35 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:35 --> Total execution time: 1.1120
+DEBUG - 2015-04-06 20:08:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:35 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:08:35 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:35 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:35 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:35 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:35 --> username=root
+DEBUG - 2015-04-06 20:08:35 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:35 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:35 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:35 --> dbprefix=
+DEBUG - 2015-04-06 20:08:35 --> pconnect=1
+DEBUG - 2015-04-06 20:08:35 --> db_debug=1
+DEBUG - 2015-04-06 20:08:35 --> cache_on=
+DEBUG - 2015-04-06 20:08:35 --> cachedir=
+DEBUG - 2015-04-06 20:08:35 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:35 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:35 --> swap_pre=
+DEBUG - 2015-04-06 20:08:35 --> autoinit=1
+DEBUG - 2015-04-06 20:08:35 --> stricton=
+DEBUG - 2015-04-06 20:08:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:36 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:08:36 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:36 --> Total execution time: 2.1930
+DEBUG - 2015-04-06 20:08:36 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:36 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:36 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:36 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:36 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:36 --> username=root
+DEBUG - 2015-04-06 20:08:36 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:36 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:36 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:36 --> dbprefix=
+DEBUG - 2015-04-06 20:08:36 --> pconnect=1
+DEBUG - 2015-04-06 20:08:36 --> db_debug=1
+DEBUG - 2015-04-06 20:08:36 --> cache_on=
+DEBUG - 2015-04-06 20:08:36 --> cachedir=
+DEBUG - 2015-04-06 20:08:36 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:36 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:36 --> swap_pre=
+DEBUG - 2015-04-06 20:08:36 --> autoinit=1
+DEBUG - 2015-04-06 20:08:36 --> stricton=
+DEBUG - 2015-04-06 20:08:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:37 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:37 --> Total execution time: 3.2570
+DEBUG - 2015-04-06 20:08:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:08:37 --> Session Class Initialized
+DEBUG - 2015-04-06 20:08:37 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:08:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:39 --> Session routines successfully run
+DEBUG - 2015-04-06 20:08:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:08:39 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:08:39 --> hostname=localhost
+DEBUG - 2015-04-06 20:08:39 --> username=root
+DEBUG - 2015-04-06 20:08:39 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:08:39 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:08:39 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:08:39 --> dbprefix=
+DEBUG - 2015-04-06 20:08:39 --> pconnect=1
+DEBUG - 2015-04-06 20:08:39 --> db_debug=1
+DEBUG - 2015-04-06 20:08:39 --> cache_on=
+DEBUG - 2015-04-06 20:08:39 --> cachedir=
+DEBUG - 2015-04-06 20:08:39 --> char_set=utf8
+DEBUG - 2015-04-06 20:08:39 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:08:39 --> swap_pre=
+DEBUG - 2015-04-06 20:08:39 --> autoinit=1
+DEBUG - 2015-04-06 20:08:39 --> stricton=
+DEBUG - 2015-04-06 20:08:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:08:40 --> Final output sent to browser
+DEBUG - 2015-04-06 20:08:40 --> Total execution time: 6.3190
+DEBUG - 2015-04-06 20:09:26 --> Config Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:09:26 --> URI Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Router Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Output Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Security Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Input Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:09:26 --> Language Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:09:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Session Class Initialized
+DEBUG - 2015-04-06 20:09:26 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:09:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:09:28 --> Session routines successfully run
+DEBUG - 2015-04-06 20:09:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:09:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:09:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:09:28 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:09:28 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:09:28 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:09:28 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:09:28 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:09:28 --> Final output sent to browser
+DEBUG - 2015-04-06 20:09:28 --> Total execution time: 1.5710
+DEBUG - 2015-04-06 20:09:29 --> Config Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:09:29 --> URI Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Config Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:09:29 --> URI Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Router Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Output Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Config Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Security Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:09:29 --> Input Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> URI Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:09:29 --> Language Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:09:29 --> Config Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:09:29 --> URI Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Router Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Output Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Session Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:09:29 --> Router Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Output Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Security Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Input Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:09:29 --> Language Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:09:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Security Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Input Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:09:29 --> Language Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:09:29 --> Router Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Output Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Security Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Input Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:09:29 --> Language Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:09:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:09:30 --> Session routines successfully run
+DEBUG - 2015-04-06 20:09:30 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:30 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:09:30 --> hostname=localhost
+DEBUG - 2015-04-06 20:09:30 --> username=root
+DEBUG - 2015-04-06 20:09:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:09:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:09:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:09:30 --> dbprefix=
+DEBUG - 2015-04-06 20:09:30 --> pconnect=1
+DEBUG - 2015-04-06 20:09:30 --> db_debug=1
+DEBUG - 2015-04-06 20:09:30 --> cache_on=
+DEBUG - 2015-04-06 20:09:30 --> cachedir=
+DEBUG - 2015-04-06 20:09:30 --> char_set=utf8
+DEBUG - 2015-04-06 20:09:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:09:30 --> swap_pre=
+DEBUG - 2015-04-06 20:09:30 --> autoinit=1
+DEBUG - 2015-04-06 20:09:30 --> stricton=
+DEBUG - 2015-04-06 20:09:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:09:32 --> Final output sent to browser
+DEBUG - 2015-04-06 20:09:32 --> Total execution time: 2.6420
+DEBUG - 2015-04-06 20:09:32 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:09:32 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:32 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:32 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:09:32 --> hostname=localhost
+DEBUG - 2015-04-06 20:09:32 --> username=root
+DEBUG - 2015-04-06 20:09:32 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:09:32 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:09:32 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:09:32 --> dbprefix=
+DEBUG - 2015-04-06 20:09:32 --> pconnect=1
+DEBUG - 2015-04-06 20:09:32 --> db_debug=1
+DEBUG - 2015-04-06 20:09:32 --> cache_on=
+DEBUG - 2015-04-06 20:09:32 --> cachedir=
+DEBUG - 2015-04-06 20:09:32 --> char_set=utf8
+DEBUG - 2015-04-06 20:09:32 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:09:32 --> swap_pre=
+DEBUG - 2015-04-06 20:09:32 --> autoinit=1
+DEBUG - 2015-04-06 20:09:32 --> stricton=
+DEBUG - 2015-04-06 20:09:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:09:33 --> Final output sent to browser
+DEBUG - 2015-04-06 20:09:33 --> Total execution time: 3.6960
+DEBUG - 2015-04-06 20:09:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:09:33 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:09:33 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:33 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:33 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:09:33 --> hostname=localhost
+DEBUG - 2015-04-06 20:09:33 --> username=root
+DEBUG - 2015-04-06 20:09:33 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:09:33 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:09:33 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:09:33 --> dbprefix=
+DEBUG - 2015-04-06 20:09:33 --> pconnect=1
+DEBUG - 2015-04-06 20:09:33 --> db_debug=1
+DEBUG - 2015-04-06 20:09:33 --> cache_on=
+DEBUG - 2015-04-06 20:09:33 --> cachedir=
+DEBUG - 2015-04-06 20:09:33 --> char_set=utf8
+DEBUG - 2015-04-06 20:09:33 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:09:33 --> swap_pre=
+DEBUG - 2015-04-06 20:09:33 --> autoinit=1
+DEBUG - 2015-04-06 20:09:33 --> stricton=
+DEBUG - 2015-04-06 20:09:33 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:09:34 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:09:34 --> Final output sent to browser
+DEBUG - 2015-04-06 20:09:34 --> Total execution time: 4.7260
+DEBUG - 2015-04-06 20:09:34 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:09:34 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:34 --> Model Class Initialized
+DEBUG - 2015-04-06 20:09:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:09:34 --> hostname=localhost
+DEBUG - 2015-04-06 20:09:34 --> username=root
+DEBUG - 2015-04-06 20:09:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:09:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:09:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:09:34 --> dbprefix=
+DEBUG - 2015-04-06 20:09:34 --> pconnect=1
+DEBUG - 2015-04-06 20:09:34 --> db_debug=1
+DEBUG - 2015-04-06 20:09:34 --> cache_on=
+DEBUG - 2015-04-06 20:09:34 --> cachedir=
+DEBUG - 2015-04-06 20:09:34 --> char_set=utf8
+DEBUG - 2015-04-06 20:09:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:09:34 --> swap_pre=
+DEBUG - 2015-04-06 20:09:34 --> autoinit=1
+DEBUG - 2015-04-06 20:09:34 --> stricton=
+DEBUG - 2015-04-06 20:09:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:09:35 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:09:35 --> Final output sent to browser
+DEBUG - 2015-04-06 20:09:35 --> Total execution time: 5.7860
+DEBUG - 2015-04-06 20:10:04 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:04 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:04 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Session Class Initialized
+DEBUG - 2015-04-06 20:10:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:10:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Session routines successfully run
+DEBUG - 2015-04-06 20:10:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:06 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:10:06 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:10:06 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:10:06 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:10:06 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:10:06 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:06 --> Total execution time: 1.8060
+DEBUG - 2015-04-06 20:10:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:06 --> username=root
+DEBUG - 2015-04-06 20:10:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:06 --> dbprefix=
+DEBUG - 2015-04-06 20:10:06 --> pconnect=1
+DEBUG - 2015-04-06 20:10:06 --> db_debug=1
+DEBUG - 2015-04-06 20:10:06 --> cache_on=
+DEBUG - 2015-04-06 20:10:06 --> cachedir=
+DEBUG - 2015-04-06 20:10:06 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:06 --> swap_pre=
+DEBUG - 2015-04-06 20:10:06 --> autoinit=1
+DEBUG - 2015-04-06 20:10:06 --> stricton=
+DEBUG - 2015-04-06 20:10:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:07 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:07 --> Total execution time: 1.3020
+DEBUG - 2015-04-06 20:10:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:07 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:10:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:07 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:07 --> username=root
+DEBUG - 2015-04-06 20:10:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:07 --> dbprefix=
+DEBUG - 2015-04-06 20:10:07 --> pconnect=1
+DEBUG - 2015-04-06 20:10:07 --> db_debug=1
+DEBUG - 2015-04-06 20:10:07 --> cache_on=
+DEBUG - 2015-04-06 20:10:07 --> cachedir=
+DEBUG - 2015-04-06 20:10:07 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:07 --> swap_pre=
+DEBUG - 2015-04-06 20:10:07 --> autoinit=1
+DEBUG - 2015-04-06 20:10:07 --> stricton=
+DEBUG - 2015-04-06 20:10:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:08 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:10.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:10.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:10:09 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:09 --> Total execution time: 2.5590
+DEBUG - 2015-04-06 20:10:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:09 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:09 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:09 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:09 --> username=root
+DEBUG - 2015-04-06 20:10:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:09 --> dbprefix=
+DEBUG - 2015-04-06 20:10:09 --> pconnect=1
+DEBUG - 2015-04-06 20:10:09 --> db_debug=1
+DEBUG - 2015-04-06 20:10:09 --> cache_on=
+DEBUG - 2015-04-06 20:10:09 --> cachedir=
+DEBUG - 2015-04-06 20:10:09 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:09 --> swap_pre=
+DEBUG - 2015-04-06 20:10:09 --> autoinit=1
+DEBUG - 2015-04-06 20:10:09 --> stricton=
+DEBUG - 2015-04-06 20:10:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:10 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:10:10 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:10 --> Total execution time: 3.6340
+DEBUG - 2015-04-06 20:10:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:10 --> Session Class Initialized
+DEBUG - 2015-04-06 20:10:10 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:10:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:11 --> Session routines successfully run
+DEBUG - 2015-04-06 20:10:11 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:11 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:11 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:11 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:11 --> username=root
+DEBUG - 2015-04-06 20:10:11 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:11 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:11 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:11 --> dbprefix=
+DEBUG - 2015-04-06 20:10:11 --> pconnect=1
+DEBUG - 2015-04-06 20:10:11 --> db_debug=1
+DEBUG - 2015-04-06 20:10:11 --> cache_on=
+DEBUG - 2015-04-06 20:10:11 --> cachedir=
+DEBUG - 2015-04-06 20:10:11 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:11 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:11 --> swap_pre=
+DEBUG - 2015-04-06 20:10:11 --> autoinit=1
+DEBUG - 2015-04-06 20:10:11 --> stricton=
+DEBUG - 2015-04-06 20:10:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:12 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:12 --> Total execution time: 6.2520
+DEBUG - 2015-04-06 20:10:46 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:46 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:46 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:46 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Session Class Initialized
+DEBUG - 2015-04-06 20:10:46 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:10:46 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Session routines successfully run
+DEBUG - 2015-04-06 20:10:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:48 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:10:48 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:10:48 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:10:48 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:10:48 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:10:48 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:48 --> Total execution time: 1.7130
+DEBUG - 2015-04-06 20:10:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Session Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:10:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:10:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:10:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:10:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:10:50 --> Session routines successfully run
+DEBUG - 2015-04-06 20:10:50 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:50 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:50 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:50 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:50 --> username=root
+DEBUG - 2015-04-06 20:10:50 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:50 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:50 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:50 --> dbprefix=
+DEBUG - 2015-04-06 20:10:50 --> pconnect=1
+DEBUG - 2015-04-06 20:10:50 --> db_debug=1
+DEBUG - 2015-04-06 20:10:50 --> cache_on=
+DEBUG - 2015-04-06 20:10:50 --> cachedir=
+DEBUG - 2015-04-06 20:10:50 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:50 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:50 --> swap_pre=
+DEBUG - 2015-04-06 20:10:50 --> autoinit=1
+DEBUG - 2015-04-06 20:10:50 --> stricton=
+DEBUG - 2015-04-06 20:10:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:51 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:51 --> Total execution time: 2.8880
+DEBUG - 2015-04-06 20:10:51 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:51 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:10:51 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:51 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:51 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:51 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:51 --> username=root
+DEBUG - 2015-04-06 20:10:51 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:51 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:51 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:51 --> dbprefix=
+DEBUG - 2015-04-06 20:10:51 --> pconnect=1
+DEBUG - 2015-04-06 20:10:51 --> db_debug=1
+DEBUG - 2015-04-06 20:10:51 --> cache_on=
+DEBUG - 2015-04-06 20:10:51 --> cachedir=
+DEBUG - 2015-04-06 20:10:51 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:51 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:51 --> swap_pre=
+DEBUG - 2015-04-06 20:10:51 --> autoinit=1
+DEBUG - 2015-04-06 20:10:51 --> stricton=
+DEBUG - 2015-04-06 20:10:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:52 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:10:52 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:10.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:10.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:10:52 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:52 --> Total execution time: 3.9280
+DEBUG - 2015-04-06 20:10:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:52 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:52 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:52 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:52 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:52 --> username=root
+DEBUG - 2015-04-06 20:10:52 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:52 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:52 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:52 --> dbprefix=
+DEBUG - 2015-04-06 20:10:52 --> pconnect=1
+DEBUG - 2015-04-06 20:10:52 --> db_debug=1
+DEBUG - 2015-04-06 20:10:52 --> cache_on=
+DEBUG - 2015-04-06 20:10:52 --> cachedir=
+DEBUG - 2015-04-06 20:10:52 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:52 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:52 --> swap_pre=
+DEBUG - 2015-04-06 20:10:52 --> autoinit=1
+DEBUG - 2015-04-06 20:10:52 --> stricton=
+DEBUG - 2015-04-06 20:10:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:53 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:53 --> Total execution time: 4.9910
+DEBUG - 2015-04-06 20:10:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:10:53 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:53 --> Model Class Initialized
+DEBUG - 2015-04-06 20:10:53 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:10:53 --> hostname=localhost
+DEBUG - 2015-04-06 20:10:53 --> username=root
+DEBUG - 2015-04-06 20:10:53 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:10:53 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:10:53 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:10:53 --> dbprefix=
+DEBUG - 2015-04-06 20:10:53 --> pconnect=1
+DEBUG - 2015-04-06 20:10:53 --> db_debug=1
+DEBUG - 2015-04-06 20:10:53 --> cache_on=
+DEBUG - 2015-04-06 20:10:53 --> cachedir=
+DEBUG - 2015-04-06 20:10:53 --> char_set=utf8
+DEBUG - 2015-04-06 20:10:53 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:10:53 --> swap_pre=
+DEBUG - 2015-04-06 20:10:53 --> autoinit=1
+DEBUG - 2015-04-06 20:10:53 --> stricton=
+DEBUG - 2015-04-06 20:10:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:10:54 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:10:54 --> Final output sent to browser
+DEBUG - 2015-04-06 20:10:54 --> Total execution time: 6.0330
+DEBUG - 2015-04-06 20:11:18 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:18 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:18 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:18 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Session Class Initialized
+DEBUG - 2015-04-06 20:11:18 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:11:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:19 --> Session routines successfully run
+DEBUG - 2015-04-06 20:11:19 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:19 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:19 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:20 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:11:20 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:11:20 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:11:20 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:11:20 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:11:20 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:20 --> Total execution time: 1.8100
+DEBUG - 2015-04-06 20:11:20 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:20 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:20 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:20 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:20 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:20 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:20 --> username=root
+DEBUG - 2015-04-06 20:11:20 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:20 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:20 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:20 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:20 --> dbprefix=
+DEBUG - 2015-04-06 20:11:20 --> pconnect=1
+DEBUG - 2015-04-06 20:11:20 --> db_debug=1
+DEBUG - 2015-04-06 20:11:20 --> cache_on=
+DEBUG - 2015-04-06 20:11:20 --> cachedir=
+DEBUG - 2015-04-06 20:11:20 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:20 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:20 --> swap_pre=
+DEBUG - 2015-04-06 20:11:20 --> autoinit=1
+DEBUG - 2015-04-06 20:11:20 --> stricton=
+DEBUG - 2015-04-06 20:11:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:20 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:20 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:20 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:20 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:21 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:11:21 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:21 --> Total execution time: 1.0620
+DEBUG - 2015-04-06 20:11:21 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:21 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:21 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:21 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:21 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:21 --> username=root
+DEBUG - 2015-04-06 20:11:21 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:21 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:21 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:21 --> dbprefix=
+DEBUG - 2015-04-06 20:11:21 --> pconnect=1
+DEBUG - 2015-04-06 20:11:21 --> db_debug=1
+DEBUG - 2015-04-06 20:11:21 --> cache_on=
+DEBUG - 2015-04-06 20:11:21 --> cachedir=
+DEBUG - 2015-04-06 20:11:21 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:21 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:21 --> swap_pre=
+DEBUG - 2015-04-06 20:11:21 --> autoinit=1
+DEBUG - 2015-04-06 20:11:21 --> stricton=
+DEBUG - 2015-04-06 20:11:21 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:22 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:22 --> Total execution time: 2.1220
+DEBUG - 2015-04-06 20:11:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:22 --> Session Class Initialized
+DEBUG - 2015-04-06 20:11:22 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:11:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:24 --> Session routines successfully run
+DEBUG - 2015-04-06 20:11:24 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:24 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:24 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:24 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:24 --> username=root
+DEBUG - 2015-04-06 20:11:24 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:24 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:24 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:24 --> dbprefix=
+DEBUG - 2015-04-06 20:11:24 --> pconnect=1
+DEBUG - 2015-04-06 20:11:24 --> db_debug=1
+DEBUG - 2015-04-06 20:11:24 --> cache_on=
+DEBUG - 2015-04-06 20:11:24 --> cachedir=
+DEBUG - 2015-04-06 20:11:24 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:24 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:24 --> swap_pre=
+DEBUG - 2015-04-06 20:11:24 --> autoinit=1
+DEBUG - 2015-04-06 20:11:24 --> stricton=
+DEBUG - 2015-04-06 20:11:24 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:25 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:25 --> Total execution time: 5.2640
+DEBUG - 2015-04-06 20:11:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:25 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:11:25 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:25 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:25 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:25 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:25 --> username=root
+DEBUG - 2015-04-06 20:11:25 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:25 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:25 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:25 --> dbprefix=
+DEBUG - 2015-04-06 20:11:25 --> pconnect=1
+DEBUG - 2015-04-06 20:11:25 --> db_debug=1
+DEBUG - 2015-04-06 20:11:25 --> cache_on=
+DEBUG - 2015-04-06 20:11:25 --> cachedir=
+DEBUG - 2015-04-06 20:11:25 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:25 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:25 --> swap_pre=
+DEBUG - 2015-04-06 20:11:25 --> autoinit=1
+DEBUG - 2015-04-06 20:11:25 --> stricton=
+DEBUG - 2015-04-06 20:11:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:26 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:26 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:11.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:11.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:11:26 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:26 --> Total execution time: 6.3360
+DEBUG - 2015-04-06 20:11:26 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:26 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:27 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Session Class Initialized
+DEBUG - 2015-04-06 20:11:27 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:11:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:28 --> Session routines successfully run
+DEBUG - 2015-04-06 20:11:28 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:28 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:28 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:28 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:28 --> username=root
+DEBUG - 2015-04-06 20:11:28 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:28 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:28 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:28 --> dbprefix=
+DEBUG - 2015-04-06 20:11:28 --> pconnect=1
+DEBUG - 2015-04-06 20:11:28 --> db_debug=1
+DEBUG - 2015-04-06 20:11:28 --> cache_on=
+DEBUG - 2015-04-06 20:11:28 --> cachedir=
+DEBUG - 2015-04-06 20:11:28 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:28 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:28 --> swap_pre=
+DEBUG - 2015-04-06 20:11:28 --> autoinit=1
+DEBUG - 2015-04-06 20:11:28 --> stricton=
+DEBUG - 2015-04-06 20:11:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:29 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:29 --> Total execution time: 2.5490
+DEBUG - 2015-04-06 20:11:46 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:46 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:46 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:46 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Session Class Initialized
+DEBUG - 2015-04-06 20:11:46 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:11:46 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Session routines successfully run
+DEBUG - 2015-04-06 20:11:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:48 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:11:48 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:11:48 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:11:48 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:11:48 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:11:48 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:48 --> Total execution time: 1.5300
+DEBUG - 2015-04-06 20:11:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:48 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:48 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:48 --> username=root
+DEBUG - 2015-04-06 20:11:48 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:48 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:48 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:48 --> dbprefix=
+DEBUG - 2015-04-06 20:11:48 --> pconnect=1
+DEBUG - 2015-04-06 20:11:48 --> db_debug=1
+DEBUG - 2015-04-06 20:11:48 --> cache_on=
+DEBUG - 2015-04-06 20:11:48 --> cachedir=
+DEBUG - 2015-04-06 20:11:48 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:48 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:48 --> swap_pre=
+DEBUG - 2015-04-06 20:11:48 --> autoinit=1
+DEBUG - 2015-04-06 20:11:48 --> stricton=
+DEBUG - 2015-04-06 20:11:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Config Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:11:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> URI Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Router Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:48 --> Output Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Security Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:48 --> Input Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:11:48 --> Language Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:11:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:11:49 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:49 --> Total execution time: 1.1080
+DEBUG - 2015-04-06 20:11:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:49 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:49 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:49 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:49 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:49 --> username=root
+DEBUG - 2015-04-06 20:11:49 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:49 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:49 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:49 --> dbprefix=
+DEBUG - 2015-04-06 20:11:49 --> pconnect=1
+DEBUG - 2015-04-06 20:11:49 --> db_debug=1
+DEBUG - 2015-04-06 20:11:49 --> cache_on=
+DEBUG - 2015-04-06 20:11:49 --> cachedir=
+DEBUG - 2015-04-06 20:11:49 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:49 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:49 --> swap_pre=
+DEBUG - 2015-04-06 20:11:49 --> autoinit=1
+DEBUG - 2015-04-06 20:11:49 --> stricton=
+DEBUG - 2015-04-06 20:11:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:50 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:11:50 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:50 --> Total execution time: 2.1020
+DEBUG - 2015-04-06 20:11:50 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:50 --> Session Class Initialized
+DEBUG - 2015-04-06 20:11:50 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:11:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:52 --> Session routines successfully run
+DEBUG - 2015-04-06 20:11:52 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:52 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:52 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:52 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:52 --> username=root
+DEBUG - 2015-04-06 20:11:52 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:52 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:52 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:52 --> dbprefix=
+DEBUG - 2015-04-06 20:11:52 --> pconnect=1
+DEBUG - 2015-04-06 20:11:52 --> db_debug=1
+DEBUG - 2015-04-06 20:11:52 --> cache_on=
+DEBUG - 2015-04-06 20:11:52 --> cachedir=
+DEBUG - 2015-04-06 20:11:52 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:52 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:52 --> swap_pre=
+DEBUG - 2015-04-06 20:11:52 --> autoinit=1
+DEBUG - 2015-04-06 20:11:52 --> stricton=
+DEBUG - 2015-04-06 20:11:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:53 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:53 --> Total execution time: 4.9290
+DEBUG - 2015-04-06 20:11:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:11:53 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:11:53 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:53 --> Model Class Initialized
+DEBUG - 2015-04-06 20:11:53 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:11:53 --> hostname=localhost
+DEBUG - 2015-04-06 20:11:53 --> username=root
+DEBUG - 2015-04-06 20:11:53 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:11:53 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:11:53 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:11:53 --> dbprefix=
+DEBUG - 2015-04-06 20:11:53 --> pconnect=1
+DEBUG - 2015-04-06 20:11:53 --> db_debug=1
+DEBUG - 2015-04-06 20:11:53 --> cache_on=
+DEBUG - 2015-04-06 20:11:53 --> cachedir=
+DEBUG - 2015-04-06 20:11:53 --> char_set=utf8
+DEBUG - 2015-04-06 20:11:53 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:11:53 --> swap_pre=
+DEBUG - 2015-04-06 20:11:53 --> autoinit=1
+DEBUG - 2015-04-06 20:11:53 --> stricton=
+DEBUG - 2015-04-06 20:11:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:11:54 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:11:54 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:11.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:11.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:11:54 --> Final output sent to browser
+DEBUG - 2015-04-06 20:11:54 --> Total execution time: 5.9880
+DEBUG - 2015-04-06 20:17:08 --> Config Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:17:08 --> URI Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Router Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Output Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Security Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Input Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:17:08 --> Language Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:17:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Session Class Initialized
+DEBUG - 2015-04-06 20:17:08 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:17:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:17:10 --> Session routines successfully run
+DEBUG - 2015-04-06 20:17:10 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:17:10 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:17:10 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:17:10 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:17:10 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:17:10 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:17:10 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:17:10 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:17:10 --> Final output sent to browser
+DEBUG - 2015-04-06 20:17:10 --> Total execution time: 1.9871
+DEBUG - 2015-04-06 20:17:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:17:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:17:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:17:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:17:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:17:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:17:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:17:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:17:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:17:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:17:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> hostname=localhost
+DEBUG - 2015-04-06 20:17:11 --> username=root
+DEBUG - 2015-04-06 20:17:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:17:11 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:17:11 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:17:11 --> dbprefix=
+DEBUG - 2015-04-06 20:17:11 --> pconnect=1
+DEBUG - 2015-04-06 20:17:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> db_debug=1
+DEBUG - 2015-04-06 20:17:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:17:11 --> cache_on=
+DEBUG - 2015-04-06 20:17:11 --> cachedir=
+DEBUG - 2015-04-06 20:17:11 --> char_set=utf8
+DEBUG - 2015-04-06 20:17:11 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:17:11 --> swap_pre=
+DEBUG - 2015-04-06 20:17:11 --> autoinit=1
+DEBUG - 2015-04-06 20:17:11 --> stricton=
+DEBUG - 2015-04-06 20:17:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:17:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:17:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:17:12 --> Final output sent to browser
+DEBUG - 2015-04-06 20:17:12 --> Total execution time: 1.0741
+DEBUG - 2015-04-06 20:17:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:17:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:17:12 --> hostname=localhost
+DEBUG - 2015-04-06 20:17:12 --> username=root
+DEBUG - 2015-04-06 20:17:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:17:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:17:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:17:12 --> dbprefix=
+DEBUG - 2015-04-06 20:17:12 --> pconnect=1
+DEBUG - 2015-04-06 20:17:12 --> db_debug=1
+DEBUG - 2015-04-06 20:17:12 --> cache_on=
+DEBUG - 2015-04-06 20:17:12 --> cachedir=
+DEBUG - 2015-04-06 20:17:12 --> char_set=utf8
+DEBUG - 2015-04-06 20:17:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:17:12 --> swap_pre=
+DEBUG - 2015-04-06 20:17:12 --> autoinit=1
+DEBUG - 2015-04-06 20:17:12 --> stricton=
+DEBUG - 2015-04-06 20:17:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:17:13 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:17:13 --> Final output sent to browser
+DEBUG - 2015-04-06 20:17:13 --> Total execution time: 2.1231
+DEBUG - 2015-04-06 20:17:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:17:13 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:17:13 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:13 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:17:13 --> hostname=localhost
+DEBUG - 2015-04-06 20:17:13 --> username=root
+DEBUG - 2015-04-06 20:17:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:17:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:17:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:17:13 --> dbprefix=
+DEBUG - 2015-04-06 20:17:13 --> pconnect=1
+DEBUG - 2015-04-06 20:17:13 --> db_debug=1
+DEBUG - 2015-04-06 20:17:13 --> cache_on=
+DEBUG - 2015-04-06 20:17:13 --> cachedir=
+DEBUG - 2015-04-06 20:17:13 --> char_set=utf8
+DEBUG - 2015-04-06 20:17:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:17:13 --> swap_pre=
+DEBUG - 2015-04-06 20:17:13 --> autoinit=1
+DEBUG - 2015-04-06 20:17:13 --> stricton=
+DEBUG - 2015-04-06 20:17:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:17:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:17:14 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:17.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:17.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:17:14 --> Final output sent to browser
+DEBUG - 2015-04-06 20:17:14 --> Total execution time: 3.1492
+DEBUG - 2015-04-06 20:17:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:17:14 --> Session Class Initialized
+DEBUG - 2015-04-06 20:17:14 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:17:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:17:16 --> Session routines successfully run
+DEBUG - 2015-04-06 20:17:16 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:16 --> Model Class Initialized
+DEBUG - 2015-04-06 20:17:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:17:16 --> hostname=localhost
+DEBUG - 2015-04-06 20:17:16 --> username=root
+DEBUG - 2015-04-06 20:17:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:17:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:17:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:17:16 --> dbprefix=
+DEBUG - 2015-04-06 20:17:16 --> pconnect=1
+DEBUG - 2015-04-06 20:17:16 --> db_debug=1
+DEBUG - 2015-04-06 20:17:16 --> cache_on=
+DEBUG - 2015-04-06 20:17:16 --> cachedir=
+DEBUG - 2015-04-06 20:17:16 --> char_set=utf8
+DEBUG - 2015-04-06 20:17:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:17:16 --> swap_pre=
+DEBUG - 2015-04-06 20:17:16 --> autoinit=1
+DEBUG - 2015-04-06 20:17:16 --> stricton=
+DEBUG - 2015-04-06 20:17:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:17:17 --> Final output sent to browser
+DEBUG - 2015-04-06 20:17:17 --> Total execution time: 6.3804
+DEBUG - 2015-04-06 20:18:03 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:03 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:03 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:03 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Session Class Initialized
+DEBUG - 2015-04-06 20:18:03 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:18:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Session garbage collection performed.
+DEBUG - 2015-04-06 20:18:05 --> Session routines successfully run
+DEBUG - 2015-04-06 20:18:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:05 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:18:05 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:18:05 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:18:05 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:18:05 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:18:05 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:05 --> Total execution time: 1.6171
+DEBUG - 2015-04-06 20:18:05 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:05 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:05 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:05 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:05 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:06 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:06 --> username=root
+DEBUG - 2015-04-06 20:18:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:06 --> dbprefix=
+DEBUG - 2015-04-06 20:18:06 --> pconnect=1
+DEBUG - 2015-04-06 20:18:06 --> db_debug=1
+DEBUG - 2015-04-06 20:18:06 --> cache_on=
+DEBUG - 2015-04-06 20:18:06 --> cachedir=
+DEBUG - 2015-04-06 20:18:06 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:06 --> swap_pre=
+DEBUG - 2015-04-06 20:18:06 --> autoinit=1
+DEBUG - 2015-04-06 20:18:06 --> stricton=
+DEBUG - 2015-04-06 20:18:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:07 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:07 --> Total execution time: 1.1421
+DEBUG - 2015-04-06 20:18:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:07 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:18:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:07 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:07 --> username=root
+DEBUG - 2015-04-06 20:18:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:07 --> dbprefix=
+DEBUG - 2015-04-06 20:18:07 --> pconnect=1
+DEBUG - 2015-04-06 20:18:07 --> db_debug=1
+DEBUG - 2015-04-06 20:18:07 --> cache_on=
+DEBUG - 2015-04-06 20:18:07 --> cachedir=
+DEBUG - 2015-04-06 20:18:07 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:07 --> swap_pre=
+DEBUG - 2015-04-06 20:18:07 --> autoinit=1
+DEBUG - 2015-04-06 20:18:07 --> stricton=
+DEBUG - 2015-04-06 20:18:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:08 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:18.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:18.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:18:08 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:08 --> Total execution time: 2.2861
+DEBUG - 2015-04-06 20:18:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:08 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:08 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:08 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:08 --> username=root
+DEBUG - 2015-04-06 20:18:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:08 --> dbprefix=
+DEBUG - 2015-04-06 20:18:08 --> pconnect=1
+DEBUG - 2015-04-06 20:18:08 --> db_debug=1
+DEBUG - 2015-04-06 20:18:08 --> cache_on=
+DEBUG - 2015-04-06 20:18:08 --> cachedir=
+DEBUG - 2015-04-06 20:18:08 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:08 --> swap_pre=
+DEBUG - 2015-04-06 20:18:08 --> autoinit=1
+DEBUG - 2015-04-06 20:18:08 --> stricton=
+DEBUG - 2015-04-06 20:18:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:09 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:18:09 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:09 --> Total execution time: 3.3732
+DEBUG - 2015-04-06 20:18:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:09 --> Session Class Initialized
+DEBUG - 2015-04-06 20:18:09 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:18:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:10 --> Session routines successfully run
+DEBUG - 2015-04-06 20:18:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:10 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:10 --> username=root
+DEBUG - 2015-04-06 20:18:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:10 --> dbprefix=
+DEBUG - 2015-04-06 20:18:10 --> pconnect=1
+DEBUG - 2015-04-06 20:18:10 --> db_debug=1
+DEBUG - 2015-04-06 20:18:10 --> cache_on=
+DEBUG - 2015-04-06 20:18:10 --> cachedir=
+DEBUG - 2015-04-06 20:18:10 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:10 --> swap_pre=
+DEBUG - 2015-04-06 20:18:10 --> autoinit=1
+DEBUG - 2015-04-06 20:18:10 --> stricton=
+DEBUG - 2015-04-06 20:18:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:12 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:12 --> Total execution time: 6.1003
+DEBUG - 2015-04-06 20:18:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:12 --> Session Class Initialized
+DEBUG - 2015-04-06 20:18:12 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:18:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:13 --> Session routines successfully run
+DEBUG - 2015-04-06 20:18:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:13 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:18:13 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:18:13 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:18:13 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:18:13 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:18:13 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:13 --> Total execution time: 2.1461
+DEBUG - 2015-04-06 20:18:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:14 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:14 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:14 --> username=root
+DEBUG - 2015-04-06 20:18:14 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:14 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:14 --> Config Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:18:14 --> URI Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:14 --> dbprefix=
+DEBUG - 2015-04-06 20:18:14 --> pconnect=1
+DEBUG - 2015-04-06 20:18:14 --> db_debug=1
+DEBUG - 2015-04-06 20:18:14 --> Router Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> cache_on=
+DEBUG - 2015-04-06 20:18:14 --> cachedir=
+DEBUG - 2015-04-06 20:18:14 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:14 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:14 --> swap_pre=
+DEBUG - 2015-04-06 20:18:14 --> autoinit=1
+DEBUG - 2015-04-06 20:18:14 --> stricton=
+DEBUG - 2015-04-06 20:18:14 --> Output Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Security Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Input Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:18:14 --> Language Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:18:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:18:15 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:18:15 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:15 --> Total execution time: 1.1091
+DEBUG - 2015-04-06 20:18:15 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:15 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:18:15 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:15 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:15 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:15 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:15 --> username=root
+DEBUG - 2015-04-06 20:18:15 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:15 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:15 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:15 --> dbprefix=
+DEBUG - 2015-04-06 20:18:15 --> pconnect=1
+DEBUG - 2015-04-06 20:18:15 --> db_debug=1
+DEBUG - 2015-04-06 20:18:15 --> cache_on=
+DEBUG - 2015-04-06 20:18:15 --> cachedir=
+DEBUG - 2015-04-06 20:18:15 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:15 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:15 --> swap_pre=
+DEBUG - 2015-04-06 20:18:15 --> autoinit=1
+DEBUG - 2015-04-06 20:18:15 --> stricton=
+DEBUG - 2015-04-06 20:18:15 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:16 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:18:16 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:18.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:18.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:18:16 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:16 --> Total execution time: 2.1361
+DEBUG - 2015-04-06 20:18:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:16 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:16 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:16 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:16 --> username=root
+DEBUG - 2015-04-06 20:18:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:16 --> dbprefix=
+DEBUG - 2015-04-06 20:18:16 --> pconnect=1
+DEBUG - 2015-04-06 20:18:16 --> db_debug=1
+DEBUG - 2015-04-06 20:18:16 --> cache_on=
+DEBUG - 2015-04-06 20:18:16 --> cachedir=
+DEBUG - 2015-04-06 20:18:16 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:16 --> swap_pre=
+DEBUG - 2015-04-06 20:18:16 --> autoinit=1
+DEBUG - 2015-04-06 20:18:16 --> stricton=
+DEBUG - 2015-04-06 20:18:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:17 --> Final output sent to browser
+DEBUG - 2015-04-06 20:18:17 --> Total execution time: 3.1842
+DEBUG - 2015-04-06 20:18:17 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:18:17 --> Session Class Initialized
+DEBUG - 2015-04-06 20:18:17 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:18:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:18 --> Session routines successfully run
+DEBUG - 2015-04-06 20:18:18 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:18 --> Model Class Initialized
+DEBUG - 2015-04-06 20:18:18 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:18:18 --> hostname=localhost
+DEBUG - 2015-04-06 20:18:18 --> username=root
+DEBUG - 2015-04-06 20:18:18 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:18:18 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:18:18 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:18:18 --> dbprefix=
+DEBUG - 2015-04-06 20:18:18 --> pconnect=1
+DEBUG - 2015-04-06 20:18:18 --> db_debug=1
+DEBUG - 2015-04-06 20:18:18 --> cache_on=
+DEBUG - 2015-04-06 20:18:18 --> cachedir=
+DEBUG - 2015-04-06 20:18:18 --> char_set=utf8
+DEBUG - 2015-04-06 20:18:18 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:18:18 --> swap_pre=
+DEBUG - 2015-04-06 20:18:18 --> autoinit=1
+DEBUG - 2015-04-06 20:18:18 --> stricton=
+DEBUG - 2015-04-06 20:18:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:18:19 --> DB Transaction Failure
+ERROR - 2015-04-06 20:18:19 --> Query error: Unknown column 'p' in 'where clause'
+DEBUG - 2015-04-06 20:18:19 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 20:29:37 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:37 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:37 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Session Class Initialized
+DEBUG - 2015-04-06 20:29:37 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:29:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:39 --> Session routines successfully run
+DEBUG - 2015-04-06 20:29:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:39 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:29:39 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:29:39 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:29:39 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:29:39 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:29:39 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:39 --> Total execution time: 2.4301
+DEBUG - 2015-04-06 20:29:40 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:40 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:40 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:40 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:40 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:40 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:40 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:40 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:40 --> username=root
+DEBUG - 2015-04-06 20:29:40 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:40 --> dbprefix=
+DEBUG - 2015-04-06 20:29:40 --> pconnect=1
+DEBUG - 2015-04-06 20:29:40 --> db_debug=1
+DEBUG - 2015-04-06 20:29:40 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:40 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:40 --> cache_on=
+DEBUG - 2015-04-06 20:29:40 --> cachedir=
+DEBUG - 2015-04-06 20:29:40 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:40 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> swap_pre=
+DEBUG - 2015-04-06 20:29:40 --> autoinit=1
+DEBUG - 2015-04-06 20:29:40 --> stricton=
+DEBUG - 2015-04-06 20:29:40 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:40 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:41 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:41 --> Total execution time: 1.0921
+DEBUG - 2015-04-06 20:29:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:41 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:41 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:41 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:41 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:41 --> username=root
+DEBUG - 2015-04-06 20:29:41 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:41 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:41 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:41 --> dbprefix=
+DEBUG - 2015-04-06 20:29:41 --> pconnect=1
+DEBUG - 2015-04-06 20:29:41 --> db_debug=1
+DEBUG - 2015-04-06 20:29:41 --> cache_on=
+DEBUG - 2015-04-06 20:29:41 --> cachedir=
+DEBUG - 2015-04-06 20:29:41 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:41 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:41 --> swap_pre=
+DEBUG - 2015-04-06 20:29:41 --> autoinit=1
+DEBUG - 2015-04-06 20:29:41 --> stricton=
+DEBUG - 2015-04-06 20:29:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:42 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:29:42 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:42 --> Total execution time: 2.1321
+DEBUG - 2015-04-06 20:29:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:42 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:29:42 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:42 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:42 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:42 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:42 --> username=root
+DEBUG - 2015-04-06 20:29:42 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:42 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:42 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:42 --> dbprefix=
+DEBUG - 2015-04-06 20:29:42 --> pconnect=1
+DEBUG - 2015-04-06 20:29:42 --> db_debug=1
+DEBUG - 2015-04-06 20:29:42 --> cache_on=
+DEBUG - 2015-04-06 20:29:42 --> cachedir=
+DEBUG - 2015-04-06 20:29:42 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:42 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:42 --> swap_pre=
+DEBUG - 2015-04-06 20:29:42 --> autoinit=1
+DEBUG - 2015-04-06 20:29:42 --> stricton=
+DEBUG - 2015-04-06 20:29:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:43 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:29.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:29.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:29:43 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:43 --> Total execution time: 3.1442
+DEBUG - 2015-04-06 20:29:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:43 --> Session Class Initialized
+DEBUG - 2015-04-06 20:29:43 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:29:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:44 --> Session routines successfully run
+DEBUG - 2015-04-06 20:29:44 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:44 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:44 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:44 --> username=root
+DEBUG - 2015-04-06 20:29:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:44 --> dbprefix=
+DEBUG - 2015-04-06 20:29:44 --> pconnect=1
+DEBUG - 2015-04-06 20:29:44 --> db_debug=1
+DEBUG - 2015-04-06 20:29:44 --> cache_on=
+DEBUG - 2015-04-06 20:29:44 --> cachedir=
+DEBUG - 2015-04-06 20:29:44 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:44 --> swap_pre=
+DEBUG - 2015-04-06 20:29:44 --> autoinit=1
+DEBUG - 2015-04-06 20:29:44 --> stricton=
+DEBUG - 2015-04-06 20:29:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:45 --> DB Transaction Failure
+ERROR - 2015-04-06 20:29:45 --> Query error: Unknown column 'p' in 'where clause'
+DEBUG - 2015-04-06 20:29:45 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 20:29:53 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:53 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:53 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Session Class Initialized
+DEBUG - 2015-04-06 20:29:53 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:29:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Session routines successfully run
+DEBUG - 2015-04-06 20:29:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:29:55 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:29:55 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:29:55 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:29:55 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:29:55 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:29:55 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:55 --> Total execution time: 1.7511
+DEBUG - 2015-04-06 20:29:55 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:55 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:55 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:55 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:55 --> username=root
+DEBUG - 2015-04-06 20:29:55 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:55 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:55 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:55 --> dbprefix=
+DEBUG - 2015-04-06 20:29:55 --> pconnect=1
+DEBUG - 2015-04-06 20:29:55 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> db_debug=1
+DEBUG - 2015-04-06 20:29:55 --> cache_on=
+DEBUG - 2015-04-06 20:29:55 --> cachedir=
+DEBUG - 2015-04-06 20:29:55 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:55 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:55 --> swap_pre=
+DEBUG - 2015-04-06 20:29:55 --> autoinit=1
+DEBUG - 2015-04-06 20:29:55 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> stricton=
+DEBUG - 2015-04-06 20:29:55 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:55 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:55 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:55 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:55 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:55 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:55 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:56 --> Config Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:29:56 --> URI Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Router Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Output Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Security Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Input Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:29:56 --> Language Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:29:56 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:56 --> Total execution time: 1.1401
+DEBUG - 2015-04-06 20:29:56 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:56 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:56 --> username=root
+DEBUG - 2015-04-06 20:29:56 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:56 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:56 --> dbprefix=
+DEBUG - 2015-04-06 20:29:56 --> pconnect=1
+DEBUG - 2015-04-06 20:29:56 --> db_debug=1
+DEBUG - 2015-04-06 20:29:56 --> cache_on=
+DEBUG - 2015-04-06 20:29:56 --> cachedir=
+DEBUG - 2015-04-06 20:29:56 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:56 --> swap_pre=
+DEBUG - 2015-04-06 20:29:56 --> autoinit=1
+DEBUG - 2015-04-06 20:29:56 --> stricton=
+DEBUG - 2015-04-06 20:29:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:58 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:29:58 --> Final output sent to browser
+DEBUG - 2015-04-06 20:29:58 --> Total execution time: 2.1591
+DEBUG - 2015-04-06 20:29:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:29:58 --> Session Class Initialized
+DEBUG - 2015-04-06 20:29:58 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:29:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:29:59 --> Session routines successfully run
+DEBUG - 2015-04-06 20:29:59 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:59 --> Model Class Initialized
+DEBUG - 2015-04-06 20:29:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:29:59 --> hostname=localhost
+DEBUG - 2015-04-06 20:29:59 --> username=root
+DEBUG - 2015-04-06 20:29:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:29:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:29:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:29:59 --> dbprefix=
+DEBUG - 2015-04-06 20:29:59 --> pconnect=1
+DEBUG - 2015-04-06 20:29:59 --> db_debug=1
+DEBUG - 2015-04-06 20:29:59 --> cache_on=
+DEBUG - 2015-04-06 20:29:59 --> cachedir=
+DEBUG - 2015-04-06 20:29:59 --> char_set=utf8
+DEBUG - 2015-04-06 20:29:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:29:59 --> swap_pre=
+DEBUG - 2015-04-06 20:29:59 --> autoinit=1
+DEBUG - 2015-04-06 20:29:59 --> stricton=
+DEBUG - 2015-04-06 20:29:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:01 --> DB Transaction Failure
+ERROR - 2015-04-06 20:30:01 --> Query error: Unknown column 'p' in 'where clause'
+DEBUG - 2015-04-06 20:30:01 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 20:30:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:30:01 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:30:01 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:01 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:30:01 --> hostname=localhost
+DEBUG - 2015-04-06 20:30:01 --> username=root
+DEBUG - 2015-04-06 20:30:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:30:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:30:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:30:01 --> dbprefix=
+DEBUG - 2015-04-06 20:30:01 --> pconnect=1
+DEBUG - 2015-04-06 20:30:01 --> db_debug=1
+DEBUG - 2015-04-06 20:30:01 --> cache_on=
+DEBUG - 2015-04-06 20:30:01 --> cachedir=
+DEBUG - 2015-04-06 20:30:01 --> char_set=utf8
+DEBUG - 2015-04-06 20:30:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:30:01 --> swap_pre=
+DEBUG - 2015-04-06 20:30:01 --> autoinit=1
+DEBUG - 2015-04-06 20:30:01 --> stricton=
+DEBUG - 2015-04-06 20:30:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:02 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:30:02 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:29.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:29.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:30:02 --> Final output sent to browser
+DEBUG - 2015-04-06 20:30:02 --> Total execution time: 6.2964
+DEBUG - 2015-04-06 20:30:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:30:02 --> Session Class Initialized
+DEBUG - 2015-04-06 20:30:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:30:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:03 --> Session routines successfully run
+DEBUG - 2015-04-06 20:30:03 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:30:03 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:30:03 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:30:03 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:30:03 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:30:03 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:30:03 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:30:03 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:30:03 --> Final output sent to browser
+DEBUG - 2015-04-06 20:30:03 --> Total execution time: 6.9874
+DEBUG - 2015-04-06 20:30:04 --> Config Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:30:04 --> URI Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Router Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Config Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Output Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Config Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Config Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Security Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:30:04 --> URI Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Input Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:30:04 --> Router Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Language Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Output Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Security Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:30:04 --> Input Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:30:04 --> Language Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:30:04 --> hostname=localhost
+DEBUG - 2015-04-06 20:30:04 --> username=root
+DEBUG - 2015-04-06 20:30:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:30:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:30:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:30:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:30:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:30:04 --> URI Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> dbprefix=
+DEBUG - 2015-04-06 20:30:04 --> pconnect=1
+DEBUG - 2015-04-06 20:30:04 --> db_debug=1
+DEBUG - 2015-04-06 20:30:04 --> cache_on=
+DEBUG - 2015-04-06 20:30:04 --> cachedir=
+DEBUG - 2015-04-06 20:30:04 --> char_set=utf8
+DEBUG - 2015-04-06 20:30:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:30:04 --> swap_pre=
+DEBUG - 2015-04-06 20:30:04 --> autoinit=1
+DEBUG - 2015-04-06 20:30:04 --> stricton=
+DEBUG - 2015-04-06 20:30:04 --> Router Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Output Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Security Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Input Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:30:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:30:04 --> Language Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> URI Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Router Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:30:04 --> Output Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Security Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Input Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:30:04 --> Language Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:30:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:30:05 --> Final output sent to browser
+DEBUG - 2015-04-06 20:30:05 --> Total execution time: 1.0891
+DEBUG - 2015-04-06 20:30:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:30:05 --> Session Class Initialized
+DEBUG - 2015-04-06 20:30:05 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:30:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:06 --> Session routines successfully run
+DEBUG - 2015-04-06 20:30:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:30:06 --> hostname=localhost
+DEBUG - 2015-04-06 20:30:06 --> username=root
+DEBUG - 2015-04-06 20:30:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:30:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:30:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:30:06 --> dbprefix=
+DEBUG - 2015-04-06 20:30:06 --> pconnect=1
+DEBUG - 2015-04-06 20:30:06 --> db_debug=1
+DEBUG - 2015-04-06 20:30:06 --> cache_on=
+DEBUG - 2015-04-06 20:30:06 --> cachedir=
+DEBUG - 2015-04-06 20:30:06 --> char_set=utf8
+DEBUG - 2015-04-06 20:30:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:30:06 --> swap_pre=
+DEBUG - 2015-04-06 20:30:06 --> autoinit=1
+DEBUG - 2015-04-06 20:30:06 --> stricton=
+DEBUG - 2015-04-06 20:30:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:07 --> Final output sent to browser
+DEBUG - 2015-04-06 20:30:07 --> Total execution time: 3.5662
+DEBUG - 2015-04-06 20:30:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:30:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:07 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:30:07 --> hostname=localhost
+DEBUG - 2015-04-06 20:30:07 --> username=root
+DEBUG - 2015-04-06 20:30:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:30:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:30:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:30:07 --> dbprefix=
+DEBUG - 2015-04-06 20:30:07 --> pconnect=1
+DEBUG - 2015-04-06 20:30:07 --> db_debug=1
+DEBUG - 2015-04-06 20:30:07 --> cache_on=
+DEBUG - 2015-04-06 20:30:07 --> cachedir=
+DEBUG - 2015-04-06 20:30:07 --> char_set=utf8
+DEBUG - 2015-04-06 20:30:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:30:07 --> swap_pre=
+DEBUG - 2015-04-06 20:30:07 --> autoinit=1
+DEBUG - 2015-04-06 20:30:07 --> stricton=
+DEBUG - 2015-04-06 20:30:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:08 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:30:08 --> Final output sent to browser
+DEBUG - 2015-04-06 20:30:08 --> Total execution time: 4.6033
+DEBUG - 2015-04-06 20:30:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:30:08 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:30:08 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:08 --> Model Class Initialized
+DEBUG - 2015-04-06 20:30:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:30:08 --> hostname=localhost
+DEBUG - 2015-04-06 20:30:08 --> username=root
+DEBUG - 2015-04-06 20:30:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:30:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:30:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:30:08 --> dbprefix=
+DEBUG - 2015-04-06 20:30:08 --> pconnect=1
+DEBUG - 2015-04-06 20:30:08 --> db_debug=1
+DEBUG - 2015-04-06 20:30:08 --> cache_on=
+DEBUG - 2015-04-06 20:30:08 --> cachedir=
+DEBUG - 2015-04-06 20:30:08 --> char_set=utf8
+DEBUG - 2015-04-06 20:30:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:30:08 --> swap_pre=
+DEBUG - 2015-04-06 20:30:08 --> autoinit=1
+DEBUG - 2015-04-06 20:30:08 --> stricton=
+DEBUG - 2015-04-06 20:30:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:30:09 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:30:09 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:30.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:30.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:30:09 --> Final output sent to browser
+DEBUG - 2015-04-06 20:30:09 --> Total execution time: 5.6393
+DEBUG - 2015-04-06 20:40:11 --> Config Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:40:11 --> URI Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Router Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Output Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Security Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Input Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:40:11 --> Language Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:40:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Session Class Initialized
+DEBUG - 2015-04-06 20:40:11 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:40:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:40:12 --> Session routines successfully run
+DEBUG - 2015-04-06 20:40:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:40:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:40:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:40:12 --> hostname=localhost
+DEBUG - 2015-04-06 20:40:12 --> username=root
+DEBUG - 2015-04-06 20:40:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:40:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:40:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:40:12 --> dbprefix=
+DEBUG - 2015-04-06 20:40:12 --> pconnect=1
+DEBUG - 2015-04-06 20:40:12 --> db_debug=1
+DEBUG - 2015-04-06 20:40:13 --> cache_on=
+DEBUG - 2015-04-06 20:40:13 --> cachedir=
+DEBUG - 2015-04-06 20:40:13 --> char_set=utf8
+DEBUG - 2015-04-06 20:40:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:40:13 --> swap_pre=
+DEBUG - 2015-04-06 20:40:13 --> autoinit=1
+DEBUG - 2015-04-06 20:40:13 --> stricton=
+DEBUG - 2015-04-06 20:40:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:40:14 --> Final output sent to browser
+DEBUG - 2015-04-06 20:40:14 --> Total execution time: 2.6852
+DEBUG - 2015-04-06 20:40:49 --> Config Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:40:49 --> URI Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Router Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Output Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Security Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Input Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:40:49 --> Language Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:40:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Session Class Initialized
+DEBUG - 2015-04-06 20:40:49 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:40:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:40:51 --> Session routines successfully run
+DEBUG - 2015-04-06 20:40:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:40:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:40:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:08 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:08 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:08 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Session Class Initialized
+DEBUG - 2015-04-06 20:42:08 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:42:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:09 --> Session routines successfully run
+DEBUG - 2015-04-06 20:42:09 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:09 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:09 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:09 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:42:09 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:42:09 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:42:09 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:42:09 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:42:09 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:09 --> Total execution time: 1.3111
+DEBUG - 2015-04-06 20:42:10 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:10 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:10 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:10 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:10 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:10 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:10 --> username=root
+DEBUG - 2015-04-06 20:42:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:10 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:10 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:10 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:10 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:10 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:10 --> dbprefix=
+DEBUG - 2015-04-06 20:42:10 --> pconnect=1
+DEBUG - 2015-04-06 20:42:10 --> db_debug=1
+DEBUG - 2015-04-06 20:42:10 --> cache_on=
+DEBUG - 2015-04-06 20:42:10 --> cachedir=
+DEBUG - 2015-04-06 20:42:10 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:10 --> swap_pre=
+DEBUG - 2015-04-06 20:42:10 --> autoinit=1
+DEBUG - 2015-04-06 20:42:10 --> stricton=
+DEBUG - 2015-04-06 20:42:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:10 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:10 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:11 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:42:11 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:11 --> Total execution time: 1.0971
+DEBUG - 2015-04-06 20:42:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:11 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:42:11 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:11 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:11 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:11 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:11 --> username=root
+DEBUG - 2015-04-06 20:42:11 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:11 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:11 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:11 --> dbprefix=
+DEBUG - 2015-04-06 20:42:11 --> pconnect=1
+DEBUG - 2015-04-06 20:42:11 --> db_debug=1
+DEBUG - 2015-04-06 20:42:11 --> cache_on=
+DEBUG - 2015-04-06 20:42:11 --> cachedir=
+DEBUG - 2015-04-06 20:42:11 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:11 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:11 --> swap_pre=
+DEBUG - 2015-04-06 20:42:11 --> autoinit=1
+DEBUG - 2015-04-06 20:42:11 --> stricton=
+DEBUG - 2015-04-06 20:42:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:12 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:42.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:42.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:42:12 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:12 --> Total execution time: 2.1181
+DEBUG - 2015-04-06 20:42:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:12 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:12 --> username=root
+DEBUG - 2015-04-06 20:42:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:12 --> dbprefix=
+DEBUG - 2015-04-06 20:42:12 --> pconnect=1
+DEBUG - 2015-04-06 20:42:12 --> db_debug=1
+DEBUG - 2015-04-06 20:42:12 --> cache_on=
+DEBUG - 2015-04-06 20:42:12 --> cachedir=
+DEBUG - 2015-04-06 20:42:12 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:12 --> swap_pre=
+DEBUG - 2015-04-06 20:42:12 --> autoinit=1
+DEBUG - 2015-04-06 20:42:12 --> stricton=
+DEBUG - 2015-04-06 20:42:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:13 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:13 --> Total execution time: 3.1682
+DEBUG - 2015-04-06 20:42:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:13 --> Session Class Initialized
+DEBUG - 2015-04-06 20:42:13 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:42:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:14 --> Session routines successfully run
+DEBUG - 2015-04-06 20:42:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:14 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:14 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:14 --> username=root
+DEBUG - 2015-04-06 20:42:14 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:14 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:14 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:14 --> dbprefix=
+DEBUG - 2015-04-06 20:42:14 --> pconnect=1
+DEBUG - 2015-04-06 20:42:14 --> db_debug=1
+DEBUG - 2015-04-06 20:42:14 --> cache_on=
+DEBUG - 2015-04-06 20:42:14 --> cachedir=
+DEBUG - 2015-04-06 20:42:14 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:14 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:14 --> swap_pre=
+DEBUG - 2015-04-06 20:42:14 --> autoinit=1
+DEBUG - 2015-04-06 20:42:14 --> stricton=
+DEBUG - 2015-04-06 20:42:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:17 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:17 --> Total execution time: 6.8254
+DEBUG - 2015-04-06 20:42:20 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:20 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:20 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:20 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Session Class Initialized
+DEBUG - 2015-04-06 20:42:20 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:42:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:21 --> Session routines successfully run
+DEBUG - 2015-04-06 20:42:21 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:21 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:21 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:21 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:21 --> Total execution time: 1.3581
+DEBUG - 2015-04-06 20:42:30 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:30 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:30 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Session Class Initialized
+DEBUG - 2015-04-06 20:42:30 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:42:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Session routines successfully run
+DEBUG - 2015-04-06 20:42:32 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:32 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:32 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:32 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:42:32 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:42:32 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:42:32 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:42:32 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:42:32 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:32 --> Total execution time: 1.4131
+DEBUG - 2015-04-06 20:42:32 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:32 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Config Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:32 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:32 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:32 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:42:32 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> URI Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Router Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:32 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:32 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:32 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:32 --> username=root
+DEBUG - 2015-04-06 20:42:32 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:32 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:32 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:32 --> dbprefix=
+DEBUG - 2015-04-06 20:42:32 --> pconnect=1
+DEBUG - 2015-04-06 20:42:32 --> db_debug=1
+DEBUG - 2015-04-06 20:42:32 --> cache_on=
+DEBUG - 2015-04-06 20:42:32 --> cachedir=
+DEBUG - 2015-04-06 20:42:32 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:32 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:32 --> swap_pre=
+DEBUG - 2015-04-06 20:42:32 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> autoinit=1
+DEBUG - 2015-04-06 20:42:32 --> stricton=
+DEBUG - 2015-04-06 20:42:32 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:32 --> Output Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Security Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Input Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:42:32 --> Language Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:32 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:42:32 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:42:34 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:34 --> Total execution time: 1.1161
+DEBUG - 2015-04-06 20:42:34 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:34 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:34 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:34 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:34 --> username=root
+DEBUG - 2015-04-06 20:42:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:34 --> dbprefix=
+DEBUG - 2015-04-06 20:42:34 --> pconnect=1
+DEBUG - 2015-04-06 20:42:34 --> db_debug=1
+DEBUG - 2015-04-06 20:42:34 --> cache_on=
+DEBUG - 2015-04-06 20:42:34 --> cachedir=
+DEBUG - 2015-04-06 20:42:34 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:34 --> swap_pre=
+DEBUG - 2015-04-06 20:42:34 --> autoinit=1
+DEBUG - 2015-04-06 20:42:34 --> stricton=
+DEBUG - 2015-04-06 20:42:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:35 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:42:35 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:35 --> Total execution time: 2.1561
+DEBUG - 2015-04-06 20:42:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:35 --> Session Class Initialized
+DEBUG - 2015-04-06 20:42:35 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:42:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:36 --> Session garbage collection performed.
+DEBUG - 2015-04-06 20:42:36 --> Session routines successfully run
+DEBUG - 2015-04-06 20:42:36 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:36 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:36 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:36 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:36 --> username=root
+DEBUG - 2015-04-06 20:42:36 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:36 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:36 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:36 --> dbprefix=
+DEBUG - 2015-04-06 20:42:36 --> pconnect=1
+DEBUG - 2015-04-06 20:42:36 --> db_debug=1
+DEBUG - 2015-04-06 20:42:36 --> cache_on=
+DEBUG - 2015-04-06 20:42:36 --> cachedir=
+DEBUG - 2015-04-06 20:42:36 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:36 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:36 --> swap_pre=
+DEBUG - 2015-04-06 20:42:36 --> autoinit=1
+DEBUG - 2015-04-06 20:42:36 --> stricton=
+DEBUG - 2015-04-06 20:42:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:37 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:37 --> Total execution time: 4.6623
+DEBUG - 2015-04-06 20:42:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:42:37 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:42:37 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:37 --> Model Class Initialized
+DEBUG - 2015-04-06 20:42:37 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:42:37 --> hostname=localhost
+DEBUG - 2015-04-06 20:42:37 --> username=root
+DEBUG - 2015-04-06 20:42:37 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:42:37 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:42:37 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:42:37 --> dbprefix=
+DEBUG - 2015-04-06 20:42:37 --> pconnect=1
+DEBUG - 2015-04-06 20:42:37 --> db_debug=1
+DEBUG - 2015-04-06 20:42:37 --> cache_on=
+DEBUG - 2015-04-06 20:42:37 --> cachedir=
+DEBUG - 2015-04-06 20:42:37 --> char_set=utf8
+DEBUG - 2015-04-06 20:42:37 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:42:37 --> swap_pre=
+DEBUG - 2015-04-06 20:42:37 --> autoinit=1
+DEBUG - 2015-04-06 20:42:37 --> stricton=
+DEBUG - 2015-04-06 20:42:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:42:38 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:42:38 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:42.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:42.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:42:38 --> Final output sent to browser
+DEBUG - 2015-04-06 20:42:38 --> Total execution time: 5.7443
+DEBUG - 2015-04-06 20:43:10 --> Config Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:43:10 --> URI Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Router Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Output Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Security Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Input Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:43:10 --> Language Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:43:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Session Class Initialized
+DEBUG - 2015-04-06 20:43:10 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:43:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Session routines successfully run
+DEBUG - 2015-04-06 20:43:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:43:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:43:12 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:43:12 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:43:12 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:43:12 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:43:12 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:43:12 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:43:12 --> Final output sent to browser
+DEBUG - 2015-04-06 20:43:12 --> Total execution time: 1.7481
+DEBUG - 2015-04-06 20:43:12 --> Config Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:43:12 --> Config Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> URI Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Router Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Output Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Security Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Input Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:43:12 --> Config Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Language Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:43:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> URI Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Router Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:43:12 --> Output Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Security Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:43:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:43:12 --> Input Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> hostname=localhost
+DEBUG - 2015-04-06 20:43:12 --> username=root
+DEBUG - 2015-04-06 20:43:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:43:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:43:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:43:12 --> dbprefix=
+DEBUG - 2015-04-06 20:43:12 --> URI Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:43:12 --> pconnect=1
+DEBUG - 2015-04-06 20:43:12 --> db_debug=1
+DEBUG - 2015-04-06 20:43:12 --> Router Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> cache_on=
+DEBUG - 2015-04-06 20:43:12 --> Language Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> cachedir=
+DEBUG - 2015-04-06 20:43:12 --> char_set=utf8
+DEBUG - 2015-04-06 20:43:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:43:12 --> swap_pre=
+DEBUG - 2015-04-06 20:43:12 --> autoinit=1
+DEBUG - 2015-04-06 20:43:12 --> stricton=
+DEBUG - 2015-04-06 20:43:12 --> Output Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Security Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Input Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:43:12 --> Language Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:43:12 --> Config Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:43:12 --> URI Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Router Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:43:12 --> Output Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Security Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Input Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:43:12 --> Language Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:43:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:43:13 --> Final output sent to browser
+DEBUG - 2015-04-06 20:43:13 --> Total execution time: 1.1091
+DEBUG - 2015-04-06 20:43:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:43:13 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:43:13 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:13 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:43:13 --> hostname=localhost
+DEBUG - 2015-04-06 20:43:13 --> username=root
+DEBUG - 2015-04-06 20:43:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:43:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:43:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:43:13 --> dbprefix=
+DEBUG - 2015-04-06 20:43:13 --> pconnect=1
+DEBUG - 2015-04-06 20:43:13 --> db_debug=1
+DEBUG - 2015-04-06 20:43:13 --> cache_on=
+DEBUG - 2015-04-06 20:43:13 --> cachedir=
+DEBUG - 2015-04-06 20:43:13 --> char_set=utf8
+DEBUG - 2015-04-06 20:43:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:43:13 --> swap_pre=
+DEBUG - 2015-04-06 20:43:13 --> autoinit=1
+DEBUG - 2015-04-06 20:43:13 --> stricton=
+DEBUG - 2015-04-06 20:43:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:43:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:43:14 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:43.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:43.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:43:14 --> Final output sent to browser
+DEBUG - 2015-04-06 20:43:14 --> Total execution time: 2.2241
+DEBUG - 2015-04-06 20:43:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:43:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:14 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:14 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:43:14 --> hostname=localhost
+DEBUG - 2015-04-06 20:43:14 --> username=root
+DEBUG - 2015-04-06 20:43:14 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:43:14 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:43:14 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:43:14 --> dbprefix=
+DEBUG - 2015-04-06 20:43:14 --> pconnect=1
+DEBUG - 2015-04-06 20:43:14 --> db_debug=1
+DEBUG - 2015-04-06 20:43:14 --> cache_on=
+DEBUG - 2015-04-06 20:43:14 --> cachedir=
+DEBUG - 2015-04-06 20:43:14 --> char_set=utf8
+DEBUG - 2015-04-06 20:43:14 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:43:14 --> swap_pre=
+DEBUG - 2015-04-06 20:43:14 --> autoinit=1
+DEBUG - 2015-04-06 20:43:14 --> stricton=
+DEBUG - 2015-04-06 20:43:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:43:16 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:43:16 --> Final output sent to browser
+DEBUG - 2015-04-06 20:43:16 --> Total execution time: 3.3012
+DEBUG - 2015-04-06 20:43:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:43:16 --> Session Class Initialized
+DEBUG - 2015-04-06 20:43:16 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:43:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:43:17 --> Session routines successfully run
+DEBUG - 2015-04-06 20:43:17 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:17 --> Model Class Initialized
+DEBUG - 2015-04-06 20:43:17 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:43:17 --> hostname=localhost
+DEBUG - 2015-04-06 20:43:17 --> username=root
+DEBUG - 2015-04-06 20:43:17 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:43:17 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:43:17 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:43:17 --> dbprefix=
+DEBUG - 2015-04-06 20:43:17 --> pconnect=1
+DEBUG - 2015-04-06 20:43:17 --> db_debug=1
+DEBUG - 2015-04-06 20:43:17 --> cache_on=
+DEBUG - 2015-04-06 20:43:17 --> cachedir=
+DEBUG - 2015-04-06 20:43:17 --> char_set=utf8
+DEBUG - 2015-04-06 20:43:17 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:43:17 --> swap_pre=
+DEBUG - 2015-04-06 20:43:17 --> autoinit=1
+DEBUG - 2015-04-06 20:43:17 --> stricton=
+DEBUG - 2015-04-06 20:43:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:43:18 --> Final output sent to browser
+DEBUG - 2015-04-06 20:43:18 --> Total execution time: 6.2184
+DEBUG - 2015-04-06 20:44:59 --> Config Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:44:59 --> URI Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Router Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Output Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Security Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Input Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:44:59 --> Language Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:44:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Session Class Initialized
+DEBUG - 2015-04-06 20:44:59 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:44:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Session routines successfully run
+DEBUG - 2015-04-06 20:45:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:45:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:45:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:45:01 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:45:01 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:45:01 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:45:01 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:45:01 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:45:01 --> Final output sent to browser
+DEBUG - 2015-04-06 20:45:01 --> Total execution time: 1.8541
+DEBUG - 2015-04-06 20:45:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:45:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:45:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:45:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:45:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:45:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:45:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:45:01 --> hostname=localhost
+DEBUG - 2015-04-06 20:45:01 --> username=root
+DEBUG - 2015-04-06 20:45:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:45:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:45:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:45:01 --> dbprefix=
+DEBUG - 2015-04-06 20:45:01 --> pconnect=1
+DEBUG - 2015-04-06 20:45:01 --> db_debug=1
+DEBUG - 2015-04-06 20:45:01 --> cache_on=
+DEBUG - 2015-04-06 20:45:01 --> cachedir=
+DEBUG - 2015-04-06 20:45:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:45:01 --> char_set=utf8
+DEBUG - 2015-04-06 20:45:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:45:01 --> swap_pre=
+DEBUG - 2015-04-06 20:45:01 --> autoinit=1
+DEBUG - 2015-04-06 20:45:01 --> stricton=
+DEBUG - 2015-04-06 20:45:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:45:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:45:01 --> Config Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:45:01 --> URI Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Router Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Output Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Security Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Input Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:45:01 --> Language Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:45:01 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:45:02 --> Final output sent to browser
+DEBUG - 2015-04-06 20:45:02 --> Total execution time: 1.0751
+DEBUG - 2015-04-06 20:45:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:45:02 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:45:02 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:02 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:02 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:45:02 --> hostname=localhost
+DEBUG - 2015-04-06 20:45:02 --> username=root
+DEBUG - 2015-04-06 20:45:02 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:45:02 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:45:02 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:45:02 --> dbprefix=
+DEBUG - 2015-04-06 20:45:02 --> pconnect=1
+DEBUG - 2015-04-06 20:45:02 --> db_debug=1
+DEBUG - 2015-04-06 20:45:02 --> cache_on=
+DEBUG - 2015-04-06 20:45:02 --> cachedir=
+DEBUG - 2015-04-06 20:45:02 --> char_set=utf8
+DEBUG - 2015-04-06 20:45:02 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:45:02 --> swap_pre=
+DEBUG - 2015-04-06 20:45:02 --> autoinit=1
+DEBUG - 2015-04-06 20:45:02 --> stricton=
+DEBUG - 2015-04-06 20:45:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:45:04 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:45:04 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:45.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:45.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:45:04 --> Final output sent to browser
+DEBUG - 2015-04-06 20:45:04 --> Total execution time: 2.1141
+DEBUG - 2015-04-06 20:45:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:45:04 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:04 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:45:04 --> hostname=localhost
+DEBUG - 2015-04-06 20:45:04 --> username=root
+DEBUG - 2015-04-06 20:45:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:45:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:45:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:45:04 --> dbprefix=
+DEBUG - 2015-04-06 20:45:04 --> pconnect=1
+DEBUG - 2015-04-06 20:45:04 --> db_debug=1
+DEBUG - 2015-04-06 20:45:04 --> cache_on=
+DEBUG - 2015-04-06 20:45:04 --> cachedir=
+DEBUG - 2015-04-06 20:45:04 --> char_set=utf8
+DEBUG - 2015-04-06 20:45:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:45:04 --> swap_pre=
+DEBUG - 2015-04-06 20:45:04 --> autoinit=1
+DEBUG - 2015-04-06 20:45:04 --> stricton=
+DEBUG - 2015-04-06 20:45:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:45:05 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:45:05 --> Final output sent to browser
+DEBUG - 2015-04-06 20:45:05 --> Total execution time: 3.1722
+DEBUG - 2015-04-06 20:45:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:45:05 --> Session Class Initialized
+DEBUG - 2015-04-06 20:45:05 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:45:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:45:06 --> Session routines successfully run
+DEBUG - 2015-04-06 20:45:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:06 --> Model Class Initialized
+DEBUG - 2015-04-06 20:45:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:45:06 --> hostname=localhost
+DEBUG - 2015-04-06 20:45:06 --> username=root
+DEBUG - 2015-04-06 20:45:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:45:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:45:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:45:06 --> dbprefix=
+DEBUG - 2015-04-06 20:45:06 --> pconnect=1
+DEBUG - 2015-04-06 20:45:06 --> db_debug=1
+DEBUG - 2015-04-06 20:45:06 --> cache_on=
+DEBUG - 2015-04-06 20:45:06 --> cachedir=
+DEBUG - 2015-04-06 20:45:06 --> char_set=utf8
+DEBUG - 2015-04-06 20:45:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:45:06 --> swap_pre=
+DEBUG - 2015-04-06 20:45:06 --> autoinit=1
+DEBUG - 2015-04-06 20:45:06 --> stricton=
+DEBUG - 2015-04-06 20:45:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:45:07 --> Final output sent to browser
+DEBUG - 2015-04-06 20:45:07 --> Total execution time: 5.4893
+DEBUG - 2015-04-06 20:46:47 --> Config Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:46:47 --> URI Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Router Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Output Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Security Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Input Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:46:47 --> Language Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:46:47 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Session Class Initialized
+DEBUG - 2015-04-06 20:46:47 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:46:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:46:48 --> Session routines successfully run
+DEBUG - 2015-04-06 20:46:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:46:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:46:48 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:46:49 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:46:49 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:46:49 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:46:49 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:46:49 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:46:49 --> Final output sent to browser
+DEBUG - 2015-04-06 20:46:49 --> Total execution time: 1.6341
+DEBUG - 2015-04-06 20:46:49 --> Config Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:46:49 --> URI Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Router Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Output Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Security Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Config Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Input Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:46:49 --> Language Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:46:49 --> URI Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Router Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Config Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Output Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:46:49 --> URI Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Router Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:46:49 --> Output Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Security Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Input Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Security Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:46:49 --> hostname=localhost
+DEBUG - 2015-04-06 20:46:49 --> username=root
+DEBUG - 2015-04-06 20:46:49 --> Input Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:46:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:46:49 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:46:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:46:49 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:46:49 --> dbprefix=
+DEBUG - 2015-04-06 20:46:49 --> Language Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> pconnect=1
+DEBUG - 2015-04-06 20:46:49 --> Language Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> db_debug=1
+DEBUG - 2015-04-06 20:46:49 --> cache_on=
+DEBUG - 2015-04-06 20:46:49 --> cachedir=
+DEBUG - 2015-04-06 20:46:49 --> char_set=utf8
+DEBUG - 2015-04-06 20:46:49 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:46:49 --> swap_pre=
+DEBUG - 2015-04-06 20:46:49 --> autoinit=1
+DEBUG - 2015-04-06 20:46:49 --> stricton=
+DEBUG - 2015-04-06 20:46:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:46:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:46:49 --> Config Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:46:49 --> URI Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Router Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Output Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Security Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Input Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:46:49 --> Language Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:46:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:46:50 --> Final output sent to browser
+DEBUG - 2015-04-06 20:46:50 --> Total execution time: 1.0741
+DEBUG - 2015-04-06 20:46:50 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:46:50 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:46:50 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:50 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:50 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:46:50 --> hostname=localhost
+DEBUG - 2015-04-06 20:46:50 --> username=root
+DEBUG - 2015-04-06 20:46:50 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:46:50 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:46:50 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:46:50 --> dbprefix=
+DEBUG - 2015-04-06 20:46:50 --> pconnect=1
+DEBUG - 2015-04-06 20:46:50 --> db_debug=1
+DEBUG - 2015-04-06 20:46:50 --> cache_on=
+DEBUG - 2015-04-06 20:46:50 --> cachedir=
+DEBUG - 2015-04-06 20:46:50 --> char_set=utf8
+DEBUG - 2015-04-06 20:46:50 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:46:50 --> swap_pre=
+DEBUG - 2015-04-06 20:46:50 --> autoinit=1
+DEBUG - 2015-04-06 20:46:50 --> stricton=
+DEBUG - 2015-04-06 20:46:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:46:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:46:51 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:46.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:46.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:46:51 --> Final output sent to browser
+DEBUG - 2015-04-06 20:46:51 --> Total execution time: 2.1291
+DEBUG - 2015-04-06 20:46:51 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:46:51 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:51 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:51 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:46:51 --> hostname=localhost
+DEBUG - 2015-04-06 20:46:51 --> username=root
+DEBUG - 2015-04-06 20:46:51 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:46:51 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:46:51 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:46:51 --> dbprefix=
+DEBUG - 2015-04-06 20:46:51 --> pconnect=1
+DEBUG - 2015-04-06 20:46:51 --> db_debug=1
+DEBUG - 2015-04-06 20:46:51 --> cache_on=
+DEBUG - 2015-04-06 20:46:51 --> cachedir=
+DEBUG - 2015-04-06 20:46:51 --> char_set=utf8
+DEBUG - 2015-04-06 20:46:51 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:46:51 --> swap_pre=
+DEBUG - 2015-04-06 20:46:51 --> autoinit=1
+DEBUG - 2015-04-06 20:46:51 --> stricton=
+DEBUG - 2015-04-06 20:46:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:46:52 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:46:52 --> Final output sent to browser
+DEBUG - 2015-04-06 20:46:52 --> Total execution time: 3.1722
+DEBUG - 2015-04-06 20:46:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:46:52 --> Session Class Initialized
+DEBUG - 2015-04-06 20:46:52 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:46:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:46:54 --> Session routines successfully run
+DEBUG - 2015-04-06 20:46:54 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:54 --> Model Class Initialized
+DEBUG - 2015-04-06 20:46:54 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:46:54 --> hostname=localhost
+DEBUG - 2015-04-06 20:46:54 --> username=root
+DEBUG - 2015-04-06 20:46:54 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:46:54 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:46:54 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:46:54 --> dbprefix=
+DEBUG - 2015-04-06 20:46:54 --> pconnect=1
+DEBUG - 2015-04-06 20:46:54 --> db_debug=1
+DEBUG - 2015-04-06 20:46:54 --> cache_on=
+DEBUG - 2015-04-06 20:46:54 --> cachedir=
+DEBUG - 2015-04-06 20:46:54 --> char_set=utf8
+DEBUG - 2015-04-06 20:46:54 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:46:54 --> swap_pre=
+DEBUG - 2015-04-06 20:46:54 --> autoinit=1
+DEBUG - 2015-04-06 20:46:54 --> stricton=
+DEBUG - 2015-04-06 20:46:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:46:55 --> Final output sent to browser
+DEBUG - 2015-04-06 20:46:55 --> Total execution time: 6.0263
+DEBUG - 2015-04-06 20:47:36 --> Config Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:47:36 --> URI Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Router Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Output Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Security Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Input Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:47:36 --> Language Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:47:36 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Session Class Initialized
+DEBUG - 2015-04-06 20:47:36 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:47:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:47:37 --> Session routines successfully run
+DEBUG - 2015-04-06 20:47:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:47:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:47:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:47:37 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:47:37 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:47:37 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:47:37 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:47:37 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:47:37 --> Final output sent to browser
+DEBUG - 2015-04-06 20:47:37 --> Total execution time: 1.5011
+DEBUG - 2015-04-06 20:47:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:47:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:47:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:47:38 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:47:38 --> hostname=localhost
+DEBUG - 2015-04-06 20:47:38 --> username=root
+DEBUG - 2015-04-06 20:47:38 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:47:38 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:47:38 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:47:38 --> dbprefix=
+DEBUG - 2015-04-06 20:47:38 --> pconnect=1
+DEBUG - 2015-04-06 20:47:38 --> db_debug=1
+DEBUG - 2015-04-06 20:47:38 --> cache_on=
+DEBUG - 2015-04-06 20:47:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:47:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:47:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:47:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:47:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:47:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> cachedir=
+DEBUG - 2015-04-06 20:47:38 --> char_set=utf8
+DEBUG - 2015-04-06 20:47:38 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:47:38 --> swap_pre=
+DEBUG - 2015-04-06 20:47:38 --> autoinit=1
+DEBUG - 2015-04-06 20:47:38 --> stricton=
+DEBUG - 2015-04-06 20:47:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:47:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:47:38 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:47:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:47:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:47:39 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:47:39 --> Final output sent to browser
+DEBUG - 2015-04-06 20:47:39 --> Total execution time: 1.1291
+DEBUG - 2015-04-06 20:47:39 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:47:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:39 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:47:39 --> hostname=localhost
+DEBUG - 2015-04-06 20:47:39 --> username=root
+DEBUG - 2015-04-06 20:47:39 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:47:39 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:47:39 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:47:39 --> dbprefix=
+DEBUG - 2015-04-06 20:47:39 --> pconnect=1
+DEBUG - 2015-04-06 20:47:39 --> db_debug=1
+DEBUG - 2015-04-06 20:47:39 --> cache_on=
+DEBUG - 2015-04-06 20:47:39 --> cachedir=
+DEBUG - 2015-04-06 20:47:39 --> char_set=utf8
+DEBUG - 2015-04-06 20:47:39 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:47:39 --> swap_pre=
+DEBUG - 2015-04-06 20:47:39 --> autoinit=1
+DEBUG - 2015-04-06 20:47:39 --> stricton=
+DEBUG - 2015-04-06 20:47:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:47:40 --> Final output sent to browser
+DEBUG - 2015-04-06 20:47:40 --> Total execution time: 2.1571
+DEBUG - 2015-04-06 20:47:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:47:40 --> Session Class Initialized
+DEBUG - 2015-04-06 20:47:40 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:47:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:47:42 --> Session routines successfully run
+DEBUG - 2015-04-06 20:47:42 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:42 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:42 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:47:42 --> hostname=localhost
+DEBUG - 2015-04-06 20:47:42 --> username=root
+DEBUG - 2015-04-06 20:47:42 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:47:42 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:47:42 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:47:42 --> dbprefix=
+DEBUG - 2015-04-06 20:47:42 --> pconnect=1
+DEBUG - 2015-04-06 20:47:42 --> db_debug=1
+DEBUG - 2015-04-06 20:47:42 --> cache_on=
+DEBUG - 2015-04-06 20:47:42 --> cachedir=
+DEBUG - 2015-04-06 20:47:42 --> char_set=utf8
+DEBUG - 2015-04-06 20:47:42 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:47:42 --> swap_pre=
+DEBUG - 2015-04-06 20:47:42 --> autoinit=1
+DEBUG - 2015-04-06 20:47:42 --> stricton=
+DEBUG - 2015-04-06 20:47:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:47:43 --> Final output sent to browser
+DEBUG - 2015-04-06 20:47:43 --> Total execution time: 4.4633
+DEBUG - 2015-04-06 20:47:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:47:43 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:47:43 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:43 --> Model Class Initialized
+DEBUG - 2015-04-06 20:47:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:47:43 --> hostname=localhost
+DEBUG - 2015-04-06 20:47:43 --> username=root
+DEBUG - 2015-04-06 20:47:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:47:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:47:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:47:43 --> dbprefix=
+DEBUG - 2015-04-06 20:47:43 --> pconnect=1
+DEBUG - 2015-04-06 20:47:43 --> db_debug=1
+DEBUG - 2015-04-06 20:47:43 --> cache_on=
+DEBUG - 2015-04-06 20:47:43 --> cachedir=
+DEBUG - 2015-04-06 20:47:43 --> char_set=utf8
+DEBUG - 2015-04-06 20:47:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:47:43 --> swap_pre=
+DEBUG - 2015-04-06 20:47:43 --> autoinit=1
+DEBUG - 2015-04-06 20:47:43 --> stricton=
+DEBUG - 2015-04-06 20:47:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:47:44 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:47:44 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:47.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:47.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:47:44 --> Final output sent to browser
+DEBUG - 2015-04-06 20:47:44 --> Total execution time: 5.4983
+DEBUG - 2015-04-06 20:49:36 --> Config Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:49:36 --> URI Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Router Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Output Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Security Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Input Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:49:36 --> Language Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:49:36 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Session Class Initialized
+DEBUG - 2015-04-06 20:49:36 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:49:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:49:37 --> Session routines successfully run
+DEBUG - 2015-04-06 20:49:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:49:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:49:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:49:37 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:49:37 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:49:37 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:49:37 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:49:37 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:49:37 --> Final output sent to browser
+DEBUG - 2015-04-06 20:49:37 --> Total execution time: 1.4251
+DEBUG - 2015-04-06 20:49:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:49:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:49:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:49:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Config Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:49:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:49:38 --> hostname=localhost
+DEBUG - 2015-04-06 20:49:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:49:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> username=root
+DEBUG - 2015-04-06 20:49:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:49:38 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:49:38 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:49:38 --> dbprefix=
+DEBUG - 2015-04-06 20:49:38 --> pconnect=1
+DEBUG - 2015-04-06 20:49:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> db_debug=1
+DEBUG - 2015-04-06 20:49:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:49:38 --> cache_on=
+DEBUG - 2015-04-06 20:49:38 --> cachedir=
+DEBUG - 2015-04-06 20:49:38 --> char_set=utf8
+DEBUG - 2015-04-06 20:49:38 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:49:38 --> swap_pre=
+DEBUG - 2015-04-06 20:49:38 --> autoinit=1
+DEBUG - 2015-04-06 20:49:38 --> stricton=
+DEBUG - 2015-04-06 20:49:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:49:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:49:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:49:38 --> URI Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Router Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:49:38 --> Output Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Security Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Input Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:49:38 --> Language Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:49:38 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:49:39 --> Final output sent to browser
+DEBUG - 2015-04-06 20:49:39 --> Total execution time: 1.0781
+DEBUG - 2015-04-06 20:49:39 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:49:39 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:49:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:39 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:49:39 --> hostname=localhost
+DEBUG - 2015-04-06 20:49:39 --> username=root
+DEBUG - 2015-04-06 20:49:39 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:49:39 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:49:39 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:49:39 --> dbprefix=
+DEBUG - 2015-04-06 20:49:39 --> pconnect=1
+DEBUG - 2015-04-06 20:49:39 --> db_debug=1
+DEBUG - 2015-04-06 20:49:39 --> cache_on=
+DEBUG - 2015-04-06 20:49:39 --> cachedir=
+DEBUG - 2015-04-06 20:49:39 --> char_set=utf8
+DEBUG - 2015-04-06 20:49:39 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:49:39 --> swap_pre=
+DEBUG - 2015-04-06 20:49:39 --> autoinit=1
+DEBUG - 2015-04-06 20:49:39 --> stricton=
+DEBUG - 2015-04-06 20:49:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:49:40 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:49:40 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:49.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:49.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:49:40 --> Final output sent to browser
+DEBUG - 2015-04-06 20:49:40 --> Total execution time: 2.1191
+DEBUG - 2015-04-06 20:49:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:49:40 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:40 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:49:40 --> hostname=localhost
+DEBUG - 2015-04-06 20:49:40 --> username=root
+DEBUG - 2015-04-06 20:49:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:49:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:49:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:49:40 --> dbprefix=
+DEBUG - 2015-04-06 20:49:40 --> pconnect=1
+DEBUG - 2015-04-06 20:49:40 --> db_debug=1
+DEBUG - 2015-04-06 20:49:40 --> cache_on=
+DEBUG - 2015-04-06 20:49:40 --> cachedir=
+DEBUG - 2015-04-06 20:49:40 --> char_set=utf8
+DEBUG - 2015-04-06 20:49:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:49:40 --> swap_pre=
+DEBUG - 2015-04-06 20:49:40 --> autoinit=1
+DEBUG - 2015-04-06 20:49:40 --> stricton=
+DEBUG - 2015-04-06 20:49:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:49:41 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:49:41 --> Final output sent to browser
+DEBUG - 2015-04-06 20:49:41 --> Total execution time: 3.1822
+DEBUG - 2015-04-06 20:49:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:49:41 --> Session Class Initialized
+DEBUG - 2015-04-06 20:49:41 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:49:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:49:43 --> Session routines successfully run
+DEBUG - 2015-04-06 20:49:43 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:43 --> Model Class Initialized
+DEBUG - 2015-04-06 20:49:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:49:43 --> hostname=localhost
+DEBUG - 2015-04-06 20:49:43 --> username=root
+DEBUG - 2015-04-06 20:49:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:49:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:49:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:49:43 --> dbprefix=
+DEBUG - 2015-04-06 20:49:43 --> pconnect=1
+DEBUG - 2015-04-06 20:49:43 --> db_debug=1
+DEBUG - 2015-04-06 20:49:43 --> cache_on=
+DEBUG - 2015-04-06 20:49:43 --> cachedir=
+DEBUG - 2015-04-06 20:49:43 --> char_set=utf8
+DEBUG - 2015-04-06 20:49:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:49:43 --> swap_pre=
+DEBUG - 2015-04-06 20:49:43 --> autoinit=1
+DEBUG - 2015-04-06 20:49:43 --> stricton=
+DEBUG - 2015-04-06 20:49:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:49:44 --> Final output sent to browser
+DEBUG - 2015-04-06 20:49:44 --> Total execution time: 5.4493
+DEBUG - 2015-04-06 20:50:23 --> Config Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:50:23 --> URI Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Router Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Output Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Security Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Input Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:50:23 --> Language Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:50:23 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Session Class Initialized
+DEBUG - 2015-04-06 20:50:23 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:50:23 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:50:24 --> Session routines successfully run
+DEBUG - 2015-04-06 20:50:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:50:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:50:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:50:24 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:50:24 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:50:24 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:50:24 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:50:24 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:50:24 --> Final output sent to browser
+DEBUG - 2015-04-06 20:50:24 --> Total execution time: 1.5041
+DEBUG - 2015-04-06 20:50:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:50:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:50:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:50:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:50:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Config Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:50:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:50:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:50:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Session Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:50:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:50:25 --> URI Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Router Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:50:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Output Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Security Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:50:25 --> Input Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:50:25 --> Language Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:50:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:50:26 --> Session routines successfully run
+DEBUG - 2015-04-06 20:50:26 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:26 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:50:26 --> hostname=localhost
+DEBUG - 2015-04-06 20:50:26 --> username=root
+DEBUG - 2015-04-06 20:50:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:50:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:50:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:50:26 --> dbprefix=
+DEBUG - 2015-04-06 20:50:26 --> pconnect=1
+DEBUG - 2015-04-06 20:50:26 --> db_debug=1
+DEBUG - 2015-04-06 20:50:26 --> cache_on=
+DEBUG - 2015-04-06 20:50:26 --> cachedir=
+DEBUG - 2015-04-06 20:50:26 --> char_set=utf8
+DEBUG - 2015-04-06 20:50:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:50:26 --> swap_pre=
+DEBUG - 2015-04-06 20:50:26 --> autoinit=1
+DEBUG - 2015-04-06 20:50:26 --> stricton=
+DEBUG - 2015-04-06 20:50:26 --> Database Driver Class Initialized
+ERROR - 2015-04-06 20:50:27 --> Severity: Notice  --> Undefined variable: monthyearv C:\inetpub\firedesk.co.uk\web\application\controllers\hire_stock.php 175
+DEBUG - 2015-04-06 20:50:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:50:27 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:27 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:50:27 --> hostname=localhost
+DEBUG - 2015-04-06 20:50:27 --> username=root
+DEBUG - 2015-04-06 20:50:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:50:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:50:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:50:27 --> dbprefix=
+DEBUG - 2015-04-06 20:50:27 --> pconnect=1
+DEBUG - 2015-04-06 20:50:27 --> db_debug=1
+DEBUG - 2015-04-06 20:50:27 --> cache_on=
+DEBUG - 2015-04-06 20:50:27 --> cachedir=
+DEBUG - 2015-04-06 20:50:27 --> char_set=utf8
+DEBUG - 2015-04-06 20:50:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:50:27 --> swap_pre=
+DEBUG - 2015-04-06 20:50:27 --> autoinit=1
+DEBUG - 2015-04-06 20:50:27 --> stricton=
+DEBUG - 2015-04-06 20:50:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:50:28 --> Final output sent to browser
+DEBUG - 2015-04-06 20:50:28 --> Total execution time: 3.4482
+DEBUG - 2015-04-06 20:50:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:50:28 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:28 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:28 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:50:28 --> hostname=localhost
+DEBUG - 2015-04-06 20:50:28 --> username=root
+DEBUG - 2015-04-06 20:50:28 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:50:28 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:50:28 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:50:28 --> dbprefix=
+DEBUG - 2015-04-06 20:50:28 --> pconnect=1
+DEBUG - 2015-04-06 20:50:28 --> db_debug=1
+DEBUG - 2015-04-06 20:50:28 --> cache_on=
+DEBUG - 2015-04-06 20:50:28 --> cachedir=
+DEBUG - 2015-04-06 20:50:28 --> char_set=utf8
+DEBUG - 2015-04-06 20:50:28 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:50:28 --> swap_pre=
+DEBUG - 2015-04-06 20:50:28 --> autoinit=1
+DEBUG - 2015-04-06 20:50:28 --> stricton=
+DEBUG - 2015-04-06 20:50:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:50:29 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:50:29 --> Final output sent to browser
+DEBUG - 2015-04-06 20:50:29 --> Total execution time: 4.4473
+DEBUG - 2015-04-06 20:50:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:50:29 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:50:29 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:29 --> Model Class Initialized
+DEBUG - 2015-04-06 20:50:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:50:29 --> hostname=localhost
+DEBUG - 2015-04-06 20:50:29 --> username=root
+DEBUG - 2015-04-06 20:50:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:50:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:50:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:50:29 --> dbprefix=
+DEBUG - 2015-04-06 20:50:29 --> pconnect=1
+DEBUG - 2015-04-06 20:50:29 --> db_debug=1
+DEBUG - 2015-04-06 20:50:29 --> cache_on=
+DEBUG - 2015-04-06 20:50:29 --> cachedir=
+DEBUG - 2015-04-06 20:50:29 --> char_set=utf8
+DEBUG - 2015-04-06 20:50:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:50:29 --> swap_pre=
+DEBUG - 2015-04-06 20:50:29 --> autoinit=1
+DEBUG - 2015-04-06 20:50:29 --> stricton=
+DEBUG - 2015-04-06 20:50:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:50:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:50:30 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:50.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:50.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:50:30 --> Final output sent to browser
+DEBUG - 2015-04-06 20:50:30 --> Total execution time: 5.4963
+DEBUG - 2015-04-06 20:51:06 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:06 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:06 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Session Class Initialized
+DEBUG - 2015-04-06 20:51:06 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:51:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:07 --> Session routines successfully run
+DEBUG - 2015-04-06 20:51:07 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:07 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:07 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:08 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:51:08 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:51:08 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:51:08 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:51:08 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:51:08 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:08 --> Total execution time: 1.3991
+DEBUG - 2015-04-06 20:51:09 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:09 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:09 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:09 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:09 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:09 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:09 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:09 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:09 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:09 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:09 --> username=root
+DEBUG - 2015-04-06 20:51:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:09 --> dbprefix=
+DEBUG - 2015-04-06 20:51:09 --> pconnect=1
+DEBUG - 2015-04-06 20:51:09 --> db_debug=1
+DEBUG - 2015-04-06 20:51:09 --> cache_on=
+DEBUG - 2015-04-06 20:51:09 --> cachedir=
+DEBUG - 2015-04-06 20:51:09 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:09 --> swap_pre=
+DEBUG - 2015-04-06 20:51:09 --> autoinit=1
+DEBUG - 2015-04-06 20:51:09 --> stricton=
+DEBUG - 2015-04-06 20:51:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:10 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:10 --> Total execution time: 1.1151
+DEBUG - 2015-04-06 20:51:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:10 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:10 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:10 --> username=root
+DEBUG - 2015-04-06 20:51:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:10 --> dbprefix=
+DEBUG - 2015-04-06 20:51:10 --> pconnect=1
+DEBUG - 2015-04-06 20:51:10 --> db_debug=1
+DEBUG - 2015-04-06 20:51:10 --> cache_on=
+DEBUG - 2015-04-06 20:51:10 --> cachedir=
+DEBUG - 2015-04-06 20:51:10 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:10 --> swap_pre=
+DEBUG - 2015-04-06 20:51:10 --> autoinit=1
+DEBUG - 2015-04-06 20:51:10 --> stricton=
+DEBUG - 2015-04-06 20:51:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:11 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:51:11 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:11 --> Total execution time: 2.1771
+DEBUG - 2015-04-06 20:51:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:11 --> Session Class Initialized
+DEBUG - 2015-04-06 20:51:11 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:51:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:12 --> Session routines successfully run
+DEBUG - 2015-04-06 20:51:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:12 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:12 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:12 --> username=root
+DEBUG - 2015-04-06 20:51:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:12 --> dbprefix=
+DEBUG - 2015-04-06 20:51:12 --> pconnect=1
+DEBUG - 2015-04-06 20:51:12 --> db_debug=1
+DEBUG - 2015-04-06 20:51:12 --> cache_on=
+DEBUG - 2015-04-06 20:51:12 --> cachedir=
+DEBUG - 2015-04-06 20:51:12 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:12 --> swap_pre=
+DEBUG - 2015-04-06 20:51:12 --> autoinit=1
+DEBUG - 2015-04-06 20:51:12 --> stricton=
+DEBUG - 2015-04-06 20:51:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:13 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:13 --> Total execution time: 4.9353
+DEBUG - 2015-04-06 20:51:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:13 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:51:13 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:13 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:13 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:13 --> username=root
+DEBUG - 2015-04-06 20:51:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:13 --> dbprefix=
+DEBUG - 2015-04-06 20:51:13 --> pconnect=1
+DEBUG - 2015-04-06 20:51:13 --> db_debug=1
+DEBUG - 2015-04-06 20:51:13 --> cache_on=
+DEBUG - 2015-04-06 20:51:13 --> cachedir=
+DEBUG - 2015-04-06 20:51:13 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:13 --> swap_pre=
+DEBUG - 2015-04-06 20:51:13 --> autoinit=1
+DEBUG - 2015-04-06 20:51:13 --> stricton=
+DEBUG - 2015-04-06 20:51:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:14 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:51.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:51.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:51:14 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:14 --> Total execution time: 5.9643
+DEBUG - 2015-04-06 20:51:20 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:20 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:20 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:20 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Session Class Initialized
+DEBUG - 2015-04-06 20:51:20 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:51:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Session routines successfully run
+DEBUG - 2015-04-06 20:51:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:22 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:51:22 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:51:22 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:51:22 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:51:22 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:51:22 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:22 --> Total execution time: 1.8751
+DEBUG - 2015-04-06 20:51:22 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:22 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:22 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:22 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:22 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:22 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> username=root
+DEBUG - 2015-04-06 20:51:22 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:22 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:22 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:22 --> dbprefix=
+DEBUG - 2015-04-06 20:51:22 --> pconnect=1
+DEBUG - 2015-04-06 20:51:22 --> db_debug=1
+DEBUG - 2015-04-06 20:51:22 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:22 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:22 --> cache_on=
+DEBUG - 2015-04-06 20:51:22 --> cachedir=
+DEBUG - 2015-04-06 20:51:22 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:22 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:22 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:22 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> swap_pre=
+DEBUG - 2015-04-06 20:51:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:22 --> autoinit=1
+DEBUG - 2015-04-06 20:51:22 --> stricton=
+DEBUG - 2015-04-06 20:51:22 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:22 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:22 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:22 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:23 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:23 --> Total execution time: 1.1071
+DEBUG - 2015-04-06 20:51:23 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:23 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:23 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:23 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:23 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:23 --> username=root
+DEBUG - 2015-04-06 20:51:23 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:23 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:23 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:23 --> dbprefix=
+DEBUG - 2015-04-06 20:51:23 --> pconnect=1
+DEBUG - 2015-04-06 20:51:23 --> db_debug=1
+DEBUG - 2015-04-06 20:51:23 --> cache_on=
+DEBUG - 2015-04-06 20:51:23 --> cachedir=
+DEBUG - 2015-04-06 20:51:23 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:23 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:23 --> swap_pre=
+DEBUG - 2015-04-06 20:51:23 --> autoinit=1
+DEBUG - 2015-04-06 20:51:23 --> stricton=
+DEBUG - 2015-04-06 20:51:23 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:25 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:51:25 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:25 --> Total execution time: 2.1261
+DEBUG - 2015-04-06 20:51:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:25 --> Session Class Initialized
+DEBUG - 2015-04-06 20:51:25 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:51:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:26 --> Session routines successfully run
+DEBUG - 2015-04-06 20:51:26 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:26 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:26 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:26 --> username=root
+DEBUG - 2015-04-06 20:51:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:26 --> dbprefix=
+DEBUG - 2015-04-06 20:51:26 --> pconnect=1
+DEBUG - 2015-04-06 20:51:26 --> db_debug=1
+DEBUG - 2015-04-06 20:51:26 --> cache_on=
+DEBUG - 2015-04-06 20:51:26 --> cachedir=
+DEBUG - 2015-04-06 20:51:26 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:26 --> swap_pre=
+DEBUG - 2015-04-06 20:51:26 --> autoinit=1
+DEBUG - 2015-04-06 20:51:26 --> stricton=
+DEBUG - 2015-04-06 20:51:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:27 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:27 --> Total execution time: 4.7073
+DEBUG - 2015-04-06 20:51:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:27 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:51:27 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:27 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:27 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:27 --> username=root
+DEBUG - 2015-04-06 20:51:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:27 --> dbprefix=
+DEBUG - 2015-04-06 20:51:27 --> pconnect=1
+DEBUG - 2015-04-06 20:51:27 --> db_debug=1
+DEBUG - 2015-04-06 20:51:27 --> cache_on=
+DEBUG - 2015-04-06 20:51:27 --> cachedir=
+DEBUG - 2015-04-06 20:51:27 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:27 --> swap_pre=
+DEBUG - 2015-04-06 20:51:27 --> autoinit=1
+DEBUG - 2015-04-06 20:51:27 --> stricton=
+DEBUG - 2015-04-06 20:51:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:28 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:51.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:51.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:51:28 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:28 --> Total execution time: 5.7883
+DEBUG - 2015-04-06 20:51:33 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:33 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:33 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Session Class Initialized
+DEBUG - 2015-04-06 20:51:33 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:51:33 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:34 --> Session routines successfully run
+DEBUG - 2015-04-06 20:51:34 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:34 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:34 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:35 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 20:51:35 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 20:51:35 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 20:51:35 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 20:51:35 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 20:51:35 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:35 --> Total execution time: 1.5181
+DEBUG - 2015-04-06 20:51:35 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:35 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:35 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:35 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:35 --> username=root
+DEBUG - 2015-04-06 20:51:35 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:35 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:35 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:35 --> dbprefix=
+DEBUG - 2015-04-06 20:51:35 --> pconnect=1
+DEBUG - 2015-04-06 20:51:35 --> db_debug=1
+DEBUG - 2015-04-06 20:51:35 --> cache_on=
+DEBUG - 2015-04-06 20:51:35 --> cachedir=
+DEBUG - 2015-04-06 20:51:35 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:35 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:35 --> swap_pre=
+DEBUG - 2015-04-06 20:51:35 --> autoinit=1
+DEBUG - 2015-04-06 20:51:35 --> stricton=
+DEBUG - 2015-04-06 20:51:35 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:35 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Config Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Hooks Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:35 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:35 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:35 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:35 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:35 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 20:51:35 --> URI Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Router Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Output Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Security Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Input Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 20:51:35 --> Language Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Loader Class Initialized
+DEBUG - 2015-04-06 20:51:35 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 20:51:36 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:36 --> Total execution time: 1.0971
+DEBUG - 2015-04-06 20:51:36 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:36 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 20:51:36 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:36 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:36 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:36 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:36 --> username=root
+DEBUG - 2015-04-06 20:51:36 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:36 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:36 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:36 --> dbprefix=
+DEBUG - 2015-04-06 20:51:36 --> pconnect=1
+DEBUG - 2015-04-06 20:51:36 --> db_debug=1
+DEBUG - 2015-04-06 20:51:36 --> cache_on=
+DEBUG - 2015-04-06 20:51:36 --> cachedir=
+DEBUG - 2015-04-06 20:51:36 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:36 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:36 --> swap_pre=
+DEBUG - 2015-04-06 20:51:36 --> autoinit=1
+DEBUG - 2015-04-06 20:51:36 --> stricton=
+DEBUG - 2015-04-06 20:51:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 20:51:37 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 20:51.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 20:51.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 20:51:37 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:37 --> Total execution time: 2.1151
+DEBUG - 2015-04-06 20:51:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:37 --> Session Class Initialized
+DEBUG - 2015-04-06 20:51:37 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 20:51:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:39 --> Session routines successfully run
+DEBUG - 2015-04-06 20:51:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:39 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:39 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:39 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:39 --> username=root
+DEBUG - 2015-04-06 20:51:39 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:39 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:39 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:39 --> dbprefix=
+DEBUG - 2015-04-06 20:51:39 --> pconnect=1
+DEBUG - 2015-04-06 20:51:39 --> db_debug=1
+DEBUG - 2015-04-06 20:51:39 --> cache_on=
+DEBUG - 2015-04-06 20:51:39 --> cachedir=
+DEBUG - 2015-04-06 20:51:39 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:39 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:39 --> swap_pre=
+DEBUG - 2015-04-06 20:51:39 --> autoinit=1
+DEBUG - 2015-04-06 20:51:39 --> stricton=
+DEBUG - 2015-04-06 20:51:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:40 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:40 --> Total execution time: 4.5733
+DEBUG - 2015-04-06 20:51:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 20:51:40 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:40 --> Model Class Initialized
+DEBUG - 2015-04-06 20:51:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 20:51:40 --> hostname=localhost
+DEBUG - 2015-04-06 20:51:40 --> username=root
+DEBUG - 2015-04-06 20:51:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 20:51:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 20:51:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 20:51:40 --> dbprefix=
+DEBUG - 2015-04-06 20:51:40 --> pconnect=1
+DEBUG - 2015-04-06 20:51:40 --> db_debug=1
+DEBUG - 2015-04-06 20:51:40 --> cache_on=
+DEBUG - 2015-04-06 20:51:40 --> cachedir=
+DEBUG - 2015-04-06 20:51:40 --> char_set=utf8
+DEBUG - 2015-04-06 20:51:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 20:51:40 --> swap_pre=
+DEBUG - 2015-04-06 20:51:40 --> autoinit=1
+DEBUG - 2015-04-06 20:51:40 --> stricton=
+DEBUG - 2015-04-06 20:51:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 20:51:41 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 20:51:41 --> Final output sent to browser
+DEBUG - 2015-04-06 20:51:41 --> Total execution time: 5.6713
+DEBUG - 2015-04-06 21:48:12 --> Config Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:48:12 --> URI Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Router Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Output Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Security Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Input Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:48:12 --> Language Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:48:12 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Session Class Initialized
+DEBUG - 2015-04-06 21:48:12 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 21:48:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:48:14 --> Session routines successfully run
+DEBUG - 2015-04-06 21:48:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:48:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:48:14 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:48:14 --> File loaded: ../application/views/header_nav.php
+ERROR - 2015-04-06 21:48:14 --> Severity: Notice  --> Undefined variable: from C:\inetpub\firedesk.co.uk\web\application\views\hire_stock_item_activity.php 1
+DEBUG - 2015-04-06 21:53:30 --> Config Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:53:30 --> URI Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Router Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Output Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Security Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Input Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:53:30 --> Language Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:53:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Session Class Initialized
+DEBUG - 2015-04-06 21:53:30 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 21:53:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:53:33 --> Session routines successfully run
+DEBUG - 2015-04-06 21:53:33 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:53:33 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:53:33 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:53:33 --> File loaded: ../application/views/header_nav.php
+ERROR - 2015-04-06 21:53:33 --> Severity: Notice  --> Undefined variable: from C:\inetpub\firedesk.co.uk\web\application\views\hire_stock_item_activity.php 1
+DEBUG - 2015-04-06 21:55:22 --> Config Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:55:22 --> URI Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Router Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Output Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Security Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Input Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:55:22 --> Language Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:55:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Session Class Initialized
+DEBUG - 2015-04-06 21:55:22 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 21:55:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:55:23 --> Session routines successfully run
+DEBUG - 2015-04-06 21:55:23 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:55:23 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:55:23 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:55:24 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 21:55:24 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 21:55:24 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 21:55:24 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 21:55:24 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 21:55:24 --> Final output sent to browser
+DEBUG - 2015-04-06 21:55:24 --> Total execution time: 1.6791
+DEBUG - 2015-04-06 21:55:25 --> Config Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:55:25 --> URI Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Router Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Output Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Security Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Input Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:55:25 --> Language Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:55:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 21:55:25 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:55:25 --> hostname=localhost
+DEBUG - 2015-04-06 21:55:25 --> username=root
+DEBUG - 2015-04-06 21:55:25 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:55:25 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:55:25 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:55:25 --> dbprefix=
+DEBUG - 2015-04-06 21:55:25 --> pconnect=1
+DEBUG - 2015-04-06 21:55:25 --> db_debug=1
+DEBUG - 2015-04-06 21:55:25 --> cache_on=
+DEBUG - 2015-04-06 21:55:25 --> cachedir=
+DEBUG - 2015-04-06 21:55:25 --> char_set=utf8
+DEBUG - 2015-04-06 21:55:25 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:55:25 --> swap_pre=
+DEBUG - 2015-04-06 21:55:25 --> autoinit=1
+DEBUG - 2015-04-06 21:55:25 --> stricton=
+DEBUG - 2015-04-06 21:55:25 --> Config Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:55:25 --> URI Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Router Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Output Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Security Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Input Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:55:25 --> Language Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:55:25 --> Config Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:55:25 --> URI Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Router Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Output Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Security Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Input Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:55:25 --> Language Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:55:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Config Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:55:25 --> URI Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Router Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Output Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Security Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Input Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:55:25 --> Language Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:55:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:55:26 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:55:26 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 21:55.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 21:55.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 21:55:26 --> Final output sent to browser
+DEBUG - 2015-04-06 21:55:26 --> Total execution time: 1.3491
+DEBUG - 2015-04-06 21:55:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:55:26 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:26 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:55:26 --> hostname=localhost
+DEBUG - 2015-04-06 21:55:26 --> username=root
+DEBUG - 2015-04-06 21:55:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:55:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:55:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:55:26 --> dbprefix=
+DEBUG - 2015-04-06 21:55:26 --> pconnect=1
+DEBUG - 2015-04-06 21:55:26 --> db_debug=1
+DEBUG - 2015-04-06 21:55:26 --> cache_on=
+DEBUG - 2015-04-06 21:55:26 --> cachedir=
+DEBUG - 2015-04-06 21:55:26 --> char_set=utf8
+DEBUG - 2015-04-06 21:55:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:55:26 --> swap_pre=
+DEBUG - 2015-04-06 21:55:26 --> autoinit=1
+DEBUG - 2015-04-06 21:55:26 --> stricton=
+DEBUG - 2015-04-06 21:55:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:55:27 --> Final output sent to browser
+DEBUG - 2015-04-06 21:55:27 --> Total execution time: 2.4551
+DEBUG - 2015-04-06 21:55:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:55:27 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:27 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:55:27 --> hostname=localhost
+DEBUG - 2015-04-06 21:55:27 --> username=root
+DEBUG - 2015-04-06 21:55:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:55:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:55:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:55:27 --> dbprefix=
+DEBUG - 2015-04-06 21:55:27 --> pconnect=1
+DEBUG - 2015-04-06 21:55:27 --> db_debug=1
+DEBUG - 2015-04-06 21:55:27 --> cache_on=
+DEBUG - 2015-04-06 21:55:27 --> cachedir=
+DEBUG - 2015-04-06 21:55:27 --> char_set=utf8
+DEBUG - 2015-04-06 21:55:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:55:27 --> swap_pre=
+DEBUG - 2015-04-06 21:55:27 --> autoinit=1
+DEBUG - 2015-04-06 21:55:27 --> stricton=
+DEBUG - 2015-04-06 21:55:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:55:28 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 21:55:28 --> Final output sent to browser
+DEBUG - 2015-04-06 21:55:28 --> Total execution time: 3.5782
+DEBUG - 2015-04-06 21:55:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:55:28 --> Session Class Initialized
+DEBUG - 2015-04-06 21:55:28 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 21:55:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:55:30 --> Session routines successfully run
+DEBUG - 2015-04-06 21:55:30 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:30 --> Model Class Initialized
+DEBUG - 2015-04-06 21:55:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:55:30 --> hostname=localhost
+DEBUG - 2015-04-06 21:55:30 --> username=root
+DEBUG - 2015-04-06 21:55:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:55:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:55:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:55:30 --> dbprefix=
+DEBUG - 2015-04-06 21:55:30 --> pconnect=1
+DEBUG - 2015-04-06 21:55:30 --> db_debug=1
+DEBUG - 2015-04-06 21:55:30 --> cache_on=
+DEBUG - 2015-04-06 21:55:30 --> cachedir=
+DEBUG - 2015-04-06 21:55:30 --> char_set=utf8
+DEBUG - 2015-04-06 21:55:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:55:30 --> swap_pre=
+DEBUG - 2015-04-06 21:55:30 --> autoinit=1
+DEBUG - 2015-04-06 21:55:30 --> stricton=
+DEBUG - 2015-04-06 21:55:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:55:31 --> Final output sent to browser
+DEBUG - 2015-04-06 21:55:31 --> Total execution time: 6.3964
+DEBUG - 2015-04-06 21:56:24 --> Config Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:56:24 --> URI Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Router Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Output Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Security Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Input Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:56:24 --> Language Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:56:24 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Session Class Initialized
+DEBUG - 2015-04-06 21:56:24 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 21:56:24 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:56:25 --> Session routines successfully run
+DEBUG - 2015-04-06 21:56:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:56:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:56:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:56:26 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 21:56:26 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 21:56:26 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 21:56:26 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 21:56:26 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 21:56:26 --> Final output sent to browser
+DEBUG - 2015-04-06 21:56:26 --> Total execution time: 1.5891
+DEBUG - 2015-04-06 21:56:27 --> Config Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Config Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:56:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:56:27 --> URI Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> URI Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Router Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Router Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Output Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Output Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Security Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Security Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Input Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:56:27 --> Input Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Language Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:56:27 --> Language Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:56:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:56:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:56:27 --> hostname=localhost
+DEBUG - 2015-04-06 21:56:27 --> username=root
+DEBUG - 2015-04-06 21:56:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:56:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:56:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:56:27 --> dbprefix=
+DEBUG - 2015-04-06 21:56:27 --> pconnect=1
+DEBUG - 2015-04-06 21:56:27 --> db_debug=1
+DEBUG - 2015-04-06 21:56:27 --> cache_on=
+DEBUG - 2015-04-06 21:56:27 --> cachedir=
+DEBUG - 2015-04-06 21:56:27 --> char_set=utf8
+DEBUG - 2015-04-06 21:56:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:56:27 --> swap_pre=
+DEBUG - 2015-04-06 21:56:27 --> autoinit=1
+DEBUG - 2015-04-06 21:56:27 --> stricton=
+DEBUG - 2015-04-06 21:56:27 --> Config Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:56:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> URI Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Router Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Output Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Security Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Input Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:56:27 --> Language Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:56:27 --> Config Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 21:56:27 --> URI Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Router Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Output Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Security Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Input Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 21:56:27 --> Language Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 21:56:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 21:56:28 --> Final output sent to browser
+DEBUG - 2015-04-06 21:56:28 --> Total execution time: 1.0951
+DEBUG - 2015-04-06 21:56:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:56:28 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:28 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:28 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:56:28 --> hostname=localhost
+DEBUG - 2015-04-06 21:56:28 --> username=root
+DEBUG - 2015-04-06 21:56:28 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:56:28 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:56:28 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:56:28 --> dbprefix=
+DEBUG - 2015-04-06 21:56:28 --> pconnect=1
+DEBUG - 2015-04-06 21:56:28 --> db_debug=1
+DEBUG - 2015-04-06 21:56:28 --> cache_on=
+DEBUG - 2015-04-06 21:56:28 --> cachedir=
+DEBUG - 2015-04-06 21:56:28 --> char_set=utf8
+DEBUG - 2015-04-06 21:56:28 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:56:28 --> swap_pre=
+DEBUG - 2015-04-06 21:56:28 --> autoinit=1
+DEBUG - 2015-04-06 21:56:28 --> stricton=
+DEBUG - 2015-04-06 21:56:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:56:29 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 21:56:29 --> Final output sent to browser
+DEBUG - 2015-04-06 21:56:29 --> Total execution time: 2.1351
+DEBUG - 2015-04-06 21:56:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:56:29 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 21:56:29 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:29 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:56:29 --> hostname=localhost
+DEBUG - 2015-04-06 21:56:29 --> username=root
+DEBUG - 2015-04-06 21:56:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:56:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:56:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:56:29 --> dbprefix=
+DEBUG - 2015-04-06 21:56:29 --> pconnect=1
+DEBUG - 2015-04-06 21:56:29 --> db_debug=1
+DEBUG - 2015-04-06 21:56:29 --> cache_on=
+DEBUG - 2015-04-06 21:56:29 --> cachedir=
+DEBUG - 2015-04-06 21:56:29 --> char_set=utf8
+DEBUG - 2015-04-06 21:56:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:56:29 --> swap_pre=
+DEBUG - 2015-04-06 21:56:29 --> autoinit=1
+DEBUG - 2015-04-06 21:56:29 --> stricton=
+DEBUG - 2015-04-06 21:56:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:56:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 21:56:30 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 21:56.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 21:56.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 21:56:30 --> Final output sent to browser
+DEBUG - 2015-04-06 21:56:30 --> Total execution time: 3.3272
+DEBUG - 2015-04-06 21:56:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 21:56:30 --> Session Class Initialized
+DEBUG - 2015-04-06 21:56:30 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 21:56:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:56:32 --> Session routines successfully run
+DEBUG - 2015-04-06 21:56:32 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:32 --> Model Class Initialized
+DEBUG - 2015-04-06 21:56:32 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 21:56:32 --> hostname=localhost
+DEBUG - 2015-04-06 21:56:32 --> username=root
+DEBUG - 2015-04-06 21:56:32 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 21:56:32 --> database=cl51-democompa
+DEBUG - 2015-04-06 21:56:32 --> dbdriver=mysqli
+DEBUG - 2015-04-06 21:56:32 --> dbprefix=
+DEBUG - 2015-04-06 21:56:32 --> pconnect=1
+DEBUG - 2015-04-06 21:56:32 --> db_debug=1
+DEBUG - 2015-04-06 21:56:32 --> cache_on=
+DEBUG - 2015-04-06 21:56:32 --> cachedir=
+DEBUG - 2015-04-06 21:56:32 --> char_set=utf8
+DEBUG - 2015-04-06 21:56:32 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 21:56:32 --> swap_pre=
+DEBUG - 2015-04-06 21:56:32 --> autoinit=1
+DEBUG - 2015-04-06 21:56:32 --> stricton=
+DEBUG - 2015-04-06 21:56:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 21:56:33 --> Final output sent to browser
+DEBUG - 2015-04-06 21:56:33 --> Total execution time: 6.1154
+DEBUG - 2015-04-06 22:04:03 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:03 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:03 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:03 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Session Class Initialized
+DEBUG - 2015-04-06 22:04:03 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:04:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:05 --> Session routines successfully run
+DEBUG - 2015-04-06 22:04:05 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:05 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:05 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:05 --> username=root
+DEBUG - 2015-04-06 22:04:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:05 --> dbprefix=
+DEBUG - 2015-04-06 22:04:05 --> pconnect=1
+DEBUG - 2015-04-06 22:04:05 --> db_debug=1
+DEBUG - 2015-04-06 22:04:05 --> cache_on=
+DEBUG - 2015-04-06 22:04:05 --> cachedir=
+DEBUG - 2015-04-06 22:04:05 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:05 --> swap_pre=
+DEBUG - 2015-04-06 22:04:05 --> autoinit=1
+DEBUG - 2015-04-06 22:04:05 --> stricton=
+DEBUG - 2015-04-06 22:04:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:07 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:04:07 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:04:07 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:04:07 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:04:07 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:04:07 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:07 --> Total execution time: 3.5402
+DEBUG - 2015-04-06 22:04:08 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:08 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:08 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:08 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:08 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:08 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:08 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:08 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:08 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:08 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:08 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:08 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:08 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:08 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:08 --> username=root
+DEBUG - 2015-04-06 22:04:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:08 --> dbprefix=
+DEBUG - 2015-04-06 22:04:08 --> pconnect=1
+DEBUG - 2015-04-06 22:04:08 --> db_debug=1
+DEBUG - 2015-04-06 22:04:08 --> cache_on=
+DEBUG - 2015-04-06 22:04:08 --> cachedir=
+DEBUG - 2015-04-06 22:04:08 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:08 --> swap_pre=
+DEBUG - 2015-04-06 22:04:08 --> autoinit=1
+DEBUG - 2015-04-06 22:04:08 --> stricton=
+DEBUG - 2015-04-06 22:04:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:09 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:09 --> Total execution time: 1.1021
+DEBUG - 2015-04-06 22:04:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:09 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:04:09 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:09 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:09 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:09 --> username=root
+DEBUG - 2015-04-06 22:04:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:09 --> dbprefix=
+DEBUG - 2015-04-06 22:04:09 --> pconnect=1
+DEBUG - 2015-04-06 22:04:09 --> db_debug=1
+DEBUG - 2015-04-06 22:04:09 --> cache_on=
+DEBUG - 2015-04-06 22:04:09 --> cachedir=
+DEBUG - 2015-04-06 22:04:09 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:09 --> swap_pre=
+DEBUG - 2015-04-06 22:04:09 --> autoinit=1
+DEBUG - 2015-04-06 22:04:09 --> stricton=
+DEBUG - 2015-04-06 22:04:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:10 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:10 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:10 --> Total execution time: 2.1251
+DEBUG - 2015-04-06 22:04:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:10 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:10 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:10 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:10 --> username=root
+DEBUG - 2015-04-06 22:04:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:10 --> dbprefix=
+DEBUG - 2015-04-06 22:04:10 --> pconnect=1
+DEBUG - 2015-04-06 22:04:10 --> db_debug=1
+DEBUG - 2015-04-06 22:04:10 --> cache_on=
+DEBUG - 2015-04-06 22:04:10 --> cachedir=
+DEBUG - 2015-04-06 22:04:10 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:10 --> swap_pre=
+DEBUG - 2015-04-06 22:04:10 --> autoinit=1
+DEBUG - 2015-04-06 22:04:10 --> stricton=
+DEBUG - 2015-04-06 22:04:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:11 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:04:11 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:11 --> Total execution time: 3.1472
+DEBUG - 2015-04-06 22:04:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:11 --> Session Class Initialized
+DEBUG - 2015-04-06 22:04:11 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:04:11 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:13 --> Session garbage collection performed.
+DEBUG - 2015-04-06 22:04:13 --> Session routines successfully run
+DEBUG - 2015-04-06 22:04:13 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:13 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:13 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:13 --> username=root
+DEBUG - 2015-04-06 22:04:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:13 --> dbprefix=
+DEBUG - 2015-04-06 22:04:13 --> pconnect=1
+DEBUG - 2015-04-06 22:04:13 --> db_debug=1
+DEBUG - 2015-04-06 22:04:13 --> cache_on=
+DEBUG - 2015-04-06 22:04:13 --> cachedir=
+DEBUG - 2015-04-06 22:04:13 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:13 --> swap_pre=
+DEBUG - 2015-04-06 22:04:13 --> autoinit=1
+DEBUG - 2015-04-06 22:04:13 --> stricton=
+DEBUG - 2015-04-06 22:04:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:14 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:14 --> Total execution time: 6.1734
+DEBUG - 2015-04-06 22:04:54 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:54 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:54 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:54 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Session Class Initialized
+DEBUG - 2015-04-06 22:04:54 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:04:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:56 --> Session routines successfully run
+DEBUG - 2015-04-06 22:04:56 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:56 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:56 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:56 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:56 --> username=root
+DEBUG - 2015-04-06 22:04:56 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:56 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:56 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:56 --> dbprefix=
+DEBUG - 2015-04-06 22:04:56 --> pconnect=1
+DEBUG - 2015-04-06 22:04:56 --> db_debug=1
+DEBUG - 2015-04-06 22:04:56 --> cache_on=
+DEBUG - 2015-04-06 22:04:56 --> cachedir=
+DEBUG - 2015-04-06 22:04:56 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:56 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:56 --> swap_pre=
+DEBUG - 2015-04-06 22:04:56 --> autoinit=1
+DEBUG - 2015-04-06 22:04:56 --> stricton=
+DEBUG - 2015-04-06 22:04:56 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:57 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:57 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:57 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:04:57 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:04:57 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:04:57 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:04:57 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:04:57 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:04:57 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:57 --> Total execution time: 3.1062
+DEBUG - 2015-04-06 22:04:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:04:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:58 --> username=root
+DEBUG - 2015-04-06 22:04:58 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:58 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:58 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:58 --> dbprefix=
+DEBUG - 2015-04-06 22:04:58 --> pconnect=1
+DEBUG - 2015-04-06 22:04:58 --> db_debug=1
+DEBUG - 2015-04-06 22:04:58 --> cache_on=
+DEBUG - 2015-04-06 22:04:58 --> cachedir=
+DEBUG - 2015-04-06 22:04:58 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:58 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:58 --> swap_pre=
+DEBUG - 2015-04-06 22:04:58 --> autoinit=1
+DEBUG - 2015-04-06 22:04:58 --> stricton=
+DEBUG - 2015-04-06 22:04:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:04:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:04:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:04:59 --> Final output sent to browser
+DEBUG - 2015-04-06 22:04:59 --> Total execution time: 1.1081
+DEBUG - 2015-04-06 22:04:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:04:59 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:59 --> Model Class Initialized
+DEBUG - 2015-04-06 22:04:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:04:59 --> hostname=localhost
+DEBUG - 2015-04-06 22:04:59 --> username=root
+DEBUG - 2015-04-06 22:04:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:04:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:04:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:04:59 --> dbprefix=
+DEBUG - 2015-04-06 22:04:59 --> pconnect=1
+DEBUG - 2015-04-06 22:04:59 --> db_debug=1
+DEBUG - 2015-04-06 22:04:59 --> cache_on=
+DEBUG - 2015-04-06 22:04:59 --> cachedir=
+DEBUG - 2015-04-06 22:04:59 --> char_set=utf8
+DEBUG - 2015-04-06 22:04:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:04:59 --> swap_pre=
+DEBUG - 2015-04-06 22:04:59 --> autoinit=1
+DEBUG - 2015-04-06 22:04:59 --> stricton=
+DEBUG - 2015-04-06 22:04:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:05:00 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:05:00 --> Final output sent to browser
+DEBUG - 2015-04-06 22:05:00 --> Total execution time: 2.0891
+DEBUG - 2015-04-06 22:05:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:05:00 --> Session Class Initialized
+DEBUG - 2015-04-06 22:05:00 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:05:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:05:01 --> Session routines successfully run
+DEBUG - 2015-04-06 22:05:01 --> Model Class Initialized
+DEBUG - 2015-04-06 22:05:01 --> Model Class Initialized
+DEBUG - 2015-04-06 22:05:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:05:01 --> hostname=localhost
+DEBUG - 2015-04-06 22:05:01 --> username=root
+DEBUG - 2015-04-06 22:05:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:05:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:05:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:05:01 --> dbprefix=
+DEBUG - 2015-04-06 22:05:01 --> pconnect=1
+DEBUG - 2015-04-06 22:05:01 --> db_debug=1
+DEBUG - 2015-04-06 22:05:01 --> cache_on=
+DEBUG - 2015-04-06 22:05:01 --> cachedir=
+DEBUG - 2015-04-06 22:05:01 --> char_set=utf8
+DEBUG - 2015-04-06 22:05:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:05:01 --> swap_pre=
+DEBUG - 2015-04-06 22:05:01 --> autoinit=1
+DEBUG - 2015-04-06 22:05:01 --> stricton=
+DEBUG - 2015-04-06 22:05:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:05:02 --> Final output sent to browser
+DEBUG - 2015-04-06 22:05:02 --> Total execution time: 4.5923
+DEBUG - 2015-04-06 22:05:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:05:02 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:05:02 --> Model Class Initialized
+DEBUG - 2015-04-06 22:05:02 --> Model Class Initialized
+DEBUG - 2015-04-06 22:05:02 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:05:02 --> hostname=localhost
+DEBUG - 2015-04-06 22:05:02 --> username=root
+DEBUG - 2015-04-06 22:05:02 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:05:02 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:05:02 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:05:02 --> dbprefix=
+DEBUG - 2015-04-06 22:05:02 --> pconnect=1
+DEBUG - 2015-04-06 22:05:02 --> db_debug=1
+DEBUG - 2015-04-06 22:05:02 --> cache_on=
+DEBUG - 2015-04-06 22:05:02 --> cachedir=
+DEBUG - 2015-04-06 22:05:02 --> char_set=utf8
+DEBUG - 2015-04-06 22:05:02 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:05:02 --> swap_pre=
+DEBUG - 2015-04-06 22:05:02 --> autoinit=1
+DEBUG - 2015-04-06 22:05:02 --> stricton=
+DEBUG - 2015-04-06 22:05:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:05:04 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:05:04 --> Final output sent to browser
+DEBUG - 2015-04-06 22:05:04 --> Total execution time: 5.6713
+DEBUG - 2015-04-06 22:08:18 --> Config Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:08:18 --> URI Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Router Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Output Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Security Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Input Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:08:18 --> Language Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:08:18 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Session Class Initialized
+DEBUG - 2015-04-06 22:08:18 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:08:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:20 --> Session routines successfully run
+DEBUG - 2015-04-06 22:08:20 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:20 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:20 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:08:20 --> hostname=localhost
+DEBUG - 2015-04-06 22:08:20 --> username=root
+DEBUG - 2015-04-06 22:08:20 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:08:20 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:08:20 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:08:20 --> dbprefix=
+DEBUG - 2015-04-06 22:08:20 --> pconnect=1
+DEBUG - 2015-04-06 22:08:20 --> db_debug=1
+DEBUG - 2015-04-06 22:08:20 --> cache_on=
+DEBUG - 2015-04-06 22:08:20 --> cachedir=
+DEBUG - 2015-04-06 22:08:20 --> char_set=utf8
+DEBUG - 2015-04-06 22:08:20 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:08:20 --> swap_pre=
+DEBUG - 2015-04-06 22:08:20 --> autoinit=1
+DEBUG - 2015-04-06 22:08:20 --> stricton=
+DEBUG - 2015-04-06 22:08:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:21 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:08:21 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:08:21 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:08:21 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:08:21 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:08:21 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:08:21 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:08:21 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:08:21 --> Final output sent to browser
+DEBUG - 2015-04-06 22:08:21 --> Total execution time: 2.9762
+DEBUG - 2015-04-06 22:08:22 --> Config Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:08:22 --> URI Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Router Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Config Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:08:22 --> URI Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Router Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Output Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Security Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Config Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Input Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Output Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:08:22 --> Security Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Config Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> URI Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Router Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:08:22 --> Input Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Output Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> URI Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Security Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Router Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Input Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:08:22 --> Output Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:08:22 --> Language Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Language Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Security Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Input Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:08:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:08:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:08:22 --> Language Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:08:22 --> hostname=localhost
+DEBUG - 2015-04-06 22:08:22 --> username=root
+DEBUG - 2015-04-06 22:08:22 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:08:22 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:08:22 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:08:22 --> dbprefix=
+DEBUG - 2015-04-06 22:08:22 --> pconnect=1
+DEBUG - 2015-04-06 22:08:22 --> db_debug=1
+DEBUG - 2015-04-06 22:08:22 --> cache_on=
+DEBUG - 2015-04-06 22:08:22 --> cachedir=
+DEBUG - 2015-04-06 22:08:22 --> char_set=utf8
+DEBUG - 2015-04-06 22:08:22 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:08:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> swap_pre=
+DEBUG - 2015-04-06 22:08:22 --> autoinit=1
+DEBUG - 2015-04-06 22:08:22 --> stricton=
+DEBUG - 2015-04-06 22:08:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:08:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:08:22 --> Language Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:08:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:08:23 --> Final output sent to browser
+DEBUG - 2015-04-06 22:08:23 --> Total execution time: 1.0801
+DEBUG - 2015-04-06 22:08:23 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:08:23 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:08:23 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:23 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:23 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:08:23 --> hostname=localhost
+DEBUG - 2015-04-06 22:08:23 --> username=root
+DEBUG - 2015-04-06 22:08:23 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:08:23 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:08:23 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:08:23 --> dbprefix=
+DEBUG - 2015-04-06 22:08:23 --> pconnect=1
+DEBUG - 2015-04-06 22:08:23 --> db_debug=1
+DEBUG - 2015-04-06 22:08:23 --> cache_on=
+DEBUG - 2015-04-06 22:08:23 --> cachedir=
+DEBUG - 2015-04-06 22:08:23 --> char_set=utf8
+DEBUG - 2015-04-06 22:08:23 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:08:23 --> swap_pre=
+DEBUG - 2015-04-06 22:08:23 --> autoinit=1
+DEBUG - 2015-04-06 22:08:23 --> stricton=
+DEBUG - 2015-04-06 22:08:23 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:08:24 --> Final output sent to browser
+DEBUG - 2015-04-06 22:08:24 --> Total execution time: 2.1071
+DEBUG - 2015-04-06 22:08:24 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:08:24 --> Session Class Initialized
+DEBUG - 2015-04-06 22:08:24 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:08:24 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:25 --> Session routines successfully run
+DEBUG - 2015-04-06 22:08:25 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:25 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:25 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:08:25 --> hostname=localhost
+DEBUG - 2015-04-06 22:08:25 --> username=root
+DEBUG - 2015-04-06 22:08:25 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:08:25 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:08:25 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:08:25 --> dbprefix=
+DEBUG - 2015-04-06 22:08:25 --> pconnect=1
+DEBUG - 2015-04-06 22:08:25 --> db_debug=1
+DEBUG - 2015-04-06 22:08:25 --> cache_on=
+DEBUG - 2015-04-06 22:08:25 --> cachedir=
+DEBUG - 2015-04-06 22:08:25 --> char_set=utf8
+DEBUG - 2015-04-06 22:08:25 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:08:25 --> swap_pre=
+DEBUG - 2015-04-06 22:08:25 --> autoinit=1
+DEBUG - 2015-04-06 22:08:25 --> stricton=
+DEBUG - 2015-04-06 22:08:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:26 --> Final output sent to browser
+DEBUG - 2015-04-06 22:08:26 --> Total execution time: 4.6853
+DEBUG - 2015-04-06 22:08:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:08:26 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:26 --> Model Class Initialized
+DEBUG - 2015-04-06 22:08:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:08:26 --> hostname=localhost
+DEBUG - 2015-04-06 22:08:26 --> username=root
+DEBUG - 2015-04-06 22:08:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:08:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:08:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:08:26 --> dbprefix=
+DEBUG - 2015-04-06 22:08:26 --> pconnect=1
+DEBUG - 2015-04-06 22:08:26 --> db_debug=1
+DEBUG - 2015-04-06 22:08:26 --> cache_on=
+DEBUG - 2015-04-06 22:08:26 --> cachedir=
+DEBUG - 2015-04-06 22:08:26 --> char_set=utf8
+DEBUG - 2015-04-06 22:08:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:08:26 --> swap_pre=
+DEBUG - 2015-04-06 22:08:26 --> autoinit=1
+DEBUG - 2015-04-06 22:08:26 --> stricton=
+DEBUG - 2015-04-06 22:08:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:08:27 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:08:27 --> Final output sent to browser
+DEBUG - 2015-04-06 22:08:27 --> Total execution time: 5.7623
+DEBUG - 2015-04-06 22:11:27 --> Config Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:11:27 --> URI Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Router Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Output Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Security Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Input Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:11:27 --> Language Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:11:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:11:27 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:11:27 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:11:27 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:11:27 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:11:27 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:11:27 --> Final output sent to browser
+DEBUG - 2015-04-06 22:11:27 --> Total execution time: 0.0380
+DEBUG - 2015-04-06 22:11:28 --> Config Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:11:28 --> URI Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Router Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Output Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Security Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Input Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:11:28 --> Language Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Config Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:11:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:11:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:11:28 --> hostname=localhost
+DEBUG - 2015-04-06 22:11:28 --> username=root
+DEBUG - 2015-04-06 22:11:28 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:11:28 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:11:28 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:11:28 --> dbprefix=
+DEBUG - 2015-04-06 22:11:28 --> pconnect=1
+DEBUG - 2015-04-06 22:11:28 --> db_debug=1
+DEBUG - 2015-04-06 22:11:28 --> cache_on=
+DEBUG - 2015-04-06 22:11:28 --> cachedir=
+DEBUG - 2015-04-06 22:11:28 --> char_set=utf8
+DEBUG - 2015-04-06 22:11:28 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:11:28 --> swap_pre=
+DEBUG - 2015-04-06 22:11:28 --> autoinit=1
+DEBUG - 2015-04-06 22:11:28 --> stricton=
+DEBUG - 2015-04-06 22:11:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> URI Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Router Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Config Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Config Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:11:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:11:28 --> URI Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> URI Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Router Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Output Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Router Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Security Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Input Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Output Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:11:28 --> Language Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Security Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Input Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:11:28 --> Language Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Output Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Security Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:11:28 --> Input Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:11:28 --> Language Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:11:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:11:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:11:29 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:11:29 --> Final output sent to browser
+DEBUG - 2015-04-06 22:11:29 --> Total execution time: 1.0701
+DEBUG - 2015-04-06 22:11:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:11:29 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:11:29 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:29 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:11:29 --> hostname=localhost
+DEBUG - 2015-04-06 22:11:29 --> username=root
+DEBUG - 2015-04-06 22:11:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:11:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:11:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:11:29 --> dbprefix=
+DEBUG - 2015-04-06 22:11:29 --> pconnect=1
+DEBUG - 2015-04-06 22:11:29 --> db_debug=1
+DEBUG - 2015-04-06 22:11:29 --> cache_on=
+DEBUG - 2015-04-06 22:11:29 --> cachedir=
+DEBUG - 2015-04-06 22:11:29 --> char_set=utf8
+DEBUG - 2015-04-06 22:11:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:11:29 --> swap_pre=
+DEBUG - 2015-04-06 22:11:29 --> autoinit=1
+DEBUG - 2015-04-06 22:11:29 --> stricton=
+DEBUG - 2015-04-06 22:11:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:11:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:11:30 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:11.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:11.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:11:30 --> Final output sent to browser
+DEBUG - 2015-04-06 22:11:30 --> Total execution time: 2.0541
+DEBUG - 2015-04-06 22:11:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:11:30 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:30 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:11:30 --> hostname=localhost
+DEBUG - 2015-04-06 22:11:30 --> username=root
+DEBUG - 2015-04-06 22:11:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:11:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:11:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:11:30 --> dbprefix=
+DEBUG - 2015-04-06 22:11:30 --> pconnect=1
+DEBUG - 2015-04-06 22:11:30 --> db_debug=1
+DEBUG - 2015-04-06 22:11:30 --> cache_on=
+DEBUG - 2015-04-06 22:11:30 --> cachedir=
+DEBUG - 2015-04-06 22:11:30 --> char_set=utf8
+DEBUG - 2015-04-06 22:11:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:11:30 --> swap_pre=
+DEBUG - 2015-04-06 22:11:30 --> autoinit=1
+DEBUG - 2015-04-06 22:11:30 --> stricton=
+DEBUG - 2015-04-06 22:11:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:11:31 --> Final output sent to browser
+DEBUG - 2015-04-06 22:11:31 --> Total execution time: 3.1352
+DEBUG - 2015-04-06 22:11:31 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:11:31 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:31 --> Model Class Initialized
+DEBUG - 2015-04-06 22:11:31 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:11:31 --> hostname=localhost
+DEBUG - 2015-04-06 22:11:31 --> username=root
+DEBUG - 2015-04-06 22:11:31 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:11:31 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:11:31 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:11:31 --> dbprefix=
+DEBUG - 2015-04-06 22:11:31 --> pconnect=1
+DEBUG - 2015-04-06 22:11:31 --> db_debug=1
+DEBUG - 2015-04-06 22:11:31 --> cache_on=
+DEBUG - 2015-04-06 22:11:31 --> cachedir=
+DEBUG - 2015-04-06 22:11:31 --> char_set=utf8
+DEBUG - 2015-04-06 22:11:31 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:11:31 --> swap_pre=
+DEBUG - 2015-04-06 22:11:31 --> autoinit=1
+DEBUG - 2015-04-06 22:11:31 --> stricton=
+DEBUG - 2015-04-06 22:11:31 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:11:32 --> Final output sent to browser
+DEBUG - 2015-04-06 22:11:32 --> Total execution time: 4.3923
+DEBUG - 2015-04-06 22:36:36 --> Config Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:36:36 --> URI Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Router Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Output Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Security Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Input Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:36:36 --> Language Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:36:36 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Session Class Initialized
+DEBUG - 2015-04-06 22:36:36 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:36:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:38 --> Session routines successfully run
+DEBUG - 2015-04-06 22:36:38 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:38 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:38 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:36:38 --> hostname=localhost
+DEBUG - 2015-04-06 22:36:38 --> username=root
+DEBUG - 2015-04-06 22:36:38 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:36:38 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:36:38 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:36:38 --> dbprefix=
+DEBUG - 2015-04-06 22:36:38 --> pconnect=1
+DEBUG - 2015-04-06 22:36:38 --> db_debug=1
+DEBUG - 2015-04-06 22:36:38 --> cache_on=
+DEBUG - 2015-04-06 22:36:38 --> cachedir=
+DEBUG - 2015-04-06 22:36:38 --> char_set=utf8
+DEBUG - 2015-04-06 22:36:38 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:36:38 --> swap_pre=
+DEBUG - 2015-04-06 22:36:38 --> autoinit=1
+DEBUG - 2015-04-06 22:36:38 --> stricton=
+DEBUG - 2015-04-06 22:36:38 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:36:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:36:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:36:39 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:36:39 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:36:39 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:36:39 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:36:39 --> Final output sent to browser
+DEBUG - 2015-04-06 22:36:39 --> Total execution time: 3.1912
+DEBUG - 2015-04-06 22:36:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:36:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:36:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:36:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:36:40 --> hostname=localhost
+DEBUG - 2015-04-06 22:36:40 --> username=root
+DEBUG - 2015-04-06 22:36:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:36:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:36:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:36:40 --> dbprefix=
+DEBUG - 2015-04-06 22:36:40 --> pconnect=1
+DEBUG - 2015-04-06 22:36:40 --> db_debug=1
+DEBUG - 2015-04-06 22:36:40 --> cache_on=
+DEBUG - 2015-04-06 22:36:40 --> cachedir=
+DEBUG - 2015-04-06 22:36:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:36:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> char_set=utf8
+DEBUG - 2015-04-06 22:36:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:36:40 --> swap_pre=
+DEBUG - 2015-04-06 22:36:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> autoinit=1
+DEBUG - 2015-04-06 22:36:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> stricton=
+DEBUG - 2015-04-06 22:36:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:36:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:36:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:36:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:36:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:36:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:36:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:36:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:36:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:36:41 --> Final output sent to browser
+DEBUG - 2015-04-06 22:36:41 --> Total execution time: 1.1621
+DEBUG - 2015-04-06 22:36:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:36:41 --> Session Class Initialized
+DEBUG - 2015-04-06 22:36:41 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:36:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:43 --> Session routines successfully run
+DEBUG - 2015-04-06 22:36:43 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:43 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:36:43 --> hostname=localhost
+DEBUG - 2015-04-06 22:36:43 --> username=root
+DEBUG - 2015-04-06 22:36:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:36:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:36:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:36:43 --> dbprefix=
+DEBUG - 2015-04-06 22:36:43 --> pconnect=1
+DEBUG - 2015-04-06 22:36:43 --> db_debug=1
+DEBUG - 2015-04-06 22:36:43 --> cache_on=
+DEBUG - 2015-04-06 22:36:43 --> cachedir=
+DEBUG - 2015-04-06 22:36:43 --> char_set=utf8
+DEBUG - 2015-04-06 22:36:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:36:43 --> swap_pre=
+DEBUG - 2015-04-06 22:36:43 --> autoinit=1
+DEBUG - 2015-04-06 22:36:43 --> stricton=
+DEBUG - 2015-04-06 22:36:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:44 --> Final output sent to browser
+DEBUG - 2015-04-06 22:36:44 --> Total execution time: 4.0532
+DEBUG - 2015-04-06 22:36:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:36:44 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:44 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:36:44 --> hostname=localhost
+DEBUG - 2015-04-06 22:36:44 --> username=root
+DEBUG - 2015-04-06 22:36:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:36:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:36:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:36:44 --> dbprefix=
+DEBUG - 2015-04-06 22:36:44 --> pconnect=1
+DEBUG - 2015-04-06 22:36:44 --> db_debug=1
+DEBUG - 2015-04-06 22:36:44 --> cache_on=
+DEBUG - 2015-04-06 22:36:44 --> cachedir=
+DEBUG - 2015-04-06 22:36:44 --> char_set=utf8
+DEBUG - 2015-04-06 22:36:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:36:44 --> swap_pre=
+DEBUG - 2015-04-06 22:36:44 --> autoinit=1
+DEBUG - 2015-04-06 22:36:44 --> stricton=
+DEBUG - 2015-04-06 22:36:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:45 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:36:45 --> Final output sent to browser
+DEBUG - 2015-04-06 22:36:45 --> Total execution time: 5.0593
+DEBUG - 2015-04-06 22:36:45 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:36:45 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:36:45 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:45 --> Model Class Initialized
+DEBUG - 2015-04-06 22:36:45 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:36:45 --> hostname=localhost
+DEBUG - 2015-04-06 22:36:45 --> username=root
+DEBUG - 2015-04-06 22:36:45 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:36:45 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:36:45 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:36:45 --> dbprefix=
+DEBUG - 2015-04-06 22:36:45 --> pconnect=1
+DEBUG - 2015-04-06 22:36:45 --> db_debug=1
+DEBUG - 2015-04-06 22:36:45 --> cache_on=
+DEBUG - 2015-04-06 22:36:45 --> cachedir=
+DEBUG - 2015-04-06 22:36:45 --> char_set=utf8
+DEBUG - 2015-04-06 22:36:45 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:36:45 --> swap_pre=
+DEBUG - 2015-04-06 22:36:45 --> autoinit=1
+DEBUG - 2015-04-06 22:36:45 --> stricton=
+DEBUG - 2015-04-06 22:36:45 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:36:46 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:36:46 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:36.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:36.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:36:46 --> Final output sent to browser
+DEBUG - 2015-04-06 22:36:46 --> Total execution time: 6.1484
+DEBUG - 2015-04-06 22:38:57 --> Config Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:38:57 --> URI Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Router Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Output Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Security Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Input Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:38:57 --> Language Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:38:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Session Class Initialized
+DEBUG - 2015-04-06 22:38:57 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:38:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:38:59 --> Session routines successfully run
+DEBUG - 2015-04-06 22:38:59 --> Model Class Initialized
+DEBUG - 2015-04-06 22:38:59 --> Model Class Initialized
+DEBUG - 2015-04-06 22:38:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:38:59 --> hostname=localhost
+DEBUG - 2015-04-06 22:38:59 --> username=root
+DEBUG - 2015-04-06 22:38:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:38:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:38:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:38:59 --> dbprefix=
+DEBUG - 2015-04-06 22:38:59 --> pconnect=1
+DEBUG - 2015-04-06 22:38:59 --> db_debug=1
+DEBUG - 2015-04-06 22:38:59 --> cache_on=
+DEBUG - 2015-04-06 22:38:59 --> cachedir=
+DEBUG - 2015-04-06 22:38:59 --> char_set=utf8
+DEBUG - 2015-04-06 22:38:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:38:59 --> swap_pre=
+DEBUG - 2015-04-06 22:38:59 --> autoinit=1
+DEBUG - 2015-04-06 22:38:59 --> stricton=
+DEBUG - 2015-04-06 22:38:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:00 --> DB Transaction Failure
+ERROR - 2015-04-06 22:39:00 --> Query error: Unknown column 'p' in 'where clause'
+DEBUG - 2015-04-06 22:39:00 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-04-06 22:39:04 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:04 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:04 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Session Class Initialized
+DEBUG - 2015-04-06 22:39:04 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:39:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:05 --> Session routines successfully run
+DEBUG - 2015-04-06 22:39:05 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:05 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:05 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:05 --> username=root
+DEBUG - 2015-04-06 22:39:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:05 --> dbprefix=
+DEBUG - 2015-04-06 22:39:05 --> pconnect=1
+DEBUG - 2015-04-06 22:39:05 --> db_debug=1
+DEBUG - 2015-04-06 22:39:05 --> cache_on=
+DEBUG - 2015-04-06 22:39:05 --> cachedir=
+DEBUG - 2015-04-06 22:39:05 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:05 --> swap_pre=
+DEBUG - 2015-04-06 22:39:05 --> autoinit=1
+DEBUG - 2015-04-06 22:39:05 --> stricton=
+DEBUG - 2015-04-06 22:39:05 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:06 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:07 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:39:07 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:39:07 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:39:07 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:39:07 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:07 --> Total execution time: 2.5891
+DEBUG - 2015-04-06 22:39:07 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:07 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:07 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:07 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:07 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:07 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:07 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:07 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:07 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:39:07 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:07 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:07 --> username=root
+DEBUG - 2015-04-06 22:39:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:07 --> dbprefix=
+DEBUG - 2015-04-06 22:39:07 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> pconnect=1
+DEBUG - 2015-04-06 22:39:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:07 --> db_debug=1
+DEBUG - 2015-04-06 22:39:07 --> cache_on=
+DEBUG - 2015-04-06 22:39:07 --> cachedir=
+DEBUG - 2015-04-06 22:39:07 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:07 --> swap_pre=
+DEBUG - 2015-04-06 22:39:07 --> autoinit=1
+DEBUG - 2015-04-06 22:39:07 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> stricton=
+DEBUG - 2015-04-06 22:39:07 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:07 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:07 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:07 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:08 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:39.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:39.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:39:08 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:08 --> Total execution time: 1.1261
+DEBUG - 2015-04-06 22:39:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:08 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:08 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:08 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:08 --> username=root
+DEBUG - 2015-04-06 22:39:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:08 --> dbprefix=
+DEBUG - 2015-04-06 22:39:08 --> pconnect=1
+DEBUG - 2015-04-06 22:39:08 --> db_debug=1
+DEBUG - 2015-04-06 22:39:08 --> cache_on=
+DEBUG - 2015-04-06 22:39:08 --> cachedir=
+DEBUG - 2015-04-06 22:39:08 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:08 --> swap_pre=
+DEBUG - 2015-04-06 22:39:08 --> autoinit=1
+DEBUG - 2015-04-06 22:39:08 --> stricton=
+DEBUG - 2015-04-06 22:39:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:09 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:09 --> Total execution time: 2.1681
+DEBUG - 2015-04-06 22:39:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:09 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:09 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:09 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:09 --> username=root
+DEBUG - 2015-04-06 22:39:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:09 --> dbprefix=
+DEBUG - 2015-04-06 22:39:09 --> pconnect=1
+DEBUG - 2015-04-06 22:39:09 --> db_debug=1
+DEBUG - 2015-04-06 22:39:09 --> cache_on=
+DEBUG - 2015-04-06 22:39:09 --> cachedir=
+DEBUG - 2015-04-06 22:39:09 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:09 --> swap_pre=
+DEBUG - 2015-04-06 22:39:09 --> autoinit=1
+DEBUG - 2015-04-06 22:39:09 --> stricton=
+DEBUG - 2015-04-06 22:39:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:10 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:39:10 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:10 --> Total execution time: 3.1522
+DEBUG - 2015-04-06 22:39:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:10 --> Session Class Initialized
+DEBUG - 2015-04-06 22:39:10 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:39:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:12 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:12 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:12 --> Session routines successfully run
+DEBUG - 2015-04-06 22:39:12 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:12 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:12 --> username=root
+DEBUG - 2015-04-06 22:39:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:12 --> dbprefix=
+DEBUG - 2015-04-06 22:39:12 --> pconnect=1
+DEBUG - 2015-04-06 22:39:12 --> db_debug=1
+DEBUG - 2015-04-06 22:39:12 --> cache_on=
+DEBUG - 2015-04-06 22:39:12 --> cachedir=
+DEBUG - 2015-04-06 22:39:12 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:12 --> swap_pre=
+DEBUG - 2015-04-06 22:39:12 --> autoinit=1
+DEBUG - 2015-04-06 22:39:12 --> stricton=
+DEBUG - 2015-04-06 22:39:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:13 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:13 --> Total execution time: 6.1444
+DEBUG - 2015-04-06 22:39:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:13 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:39:13 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:39:13 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:39:13 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:39:13 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:39:13 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:13 --> Total execution time: 1.6121
+DEBUG - 2015-04-06 22:39:14 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:14 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:14 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Config Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:14 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:14 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:39:14 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:14 --> URI Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> username=root
+DEBUG - 2015-04-06 22:39:14 --> Router Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:14 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:14 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:14 --> dbprefix=
+DEBUG - 2015-04-06 22:39:14 --> pconnect=1
+DEBUG - 2015-04-06 22:39:14 --> db_debug=1
+DEBUG - 2015-04-06 22:39:14 --> cache_on=
+DEBUG - 2015-04-06 22:39:14 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:14 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Output Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:14 --> Security Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Input Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:39:14 --> Language Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> cachedir=
+DEBUG - 2015-04-06 22:39:14 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:14 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:14 --> swap_pre=
+DEBUG - 2015-04-06 22:39:14 --> autoinit=1
+DEBUG - 2015-04-06 22:39:14 --> stricton=
+DEBUG - 2015-04-06 22:39:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:39:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:39:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:15 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:15 --> Total execution time: 1.1521
+DEBUG - 2015-04-06 22:39:15 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:15 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:39:15 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:15 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:15 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:15 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:15 --> username=root
+DEBUG - 2015-04-06 22:39:15 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:15 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:15 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:15 --> dbprefix=
+DEBUG - 2015-04-06 22:39:15 --> pconnect=1
+DEBUG - 2015-04-06 22:39:15 --> db_debug=1
+DEBUG - 2015-04-06 22:39:15 --> cache_on=
+DEBUG - 2015-04-06 22:39:15 --> cachedir=
+DEBUG - 2015-04-06 22:39:15 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:15 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:15 --> swap_pre=
+DEBUG - 2015-04-06 22:39:15 --> autoinit=1
+DEBUG - 2015-04-06 22:39:15 --> stricton=
+DEBUG - 2015-04-06 22:39:15 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:16 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:39:16 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:39.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:39.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:39:16 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:16 --> Total execution time: 2.2801
+DEBUG - 2015-04-06 22:39:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:16 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:16 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:16 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:16 --> username=root
+DEBUG - 2015-04-06 22:39:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:16 --> dbprefix=
+DEBUG - 2015-04-06 22:39:16 --> pconnect=1
+DEBUG - 2015-04-06 22:39:16 --> db_debug=1
+DEBUG - 2015-04-06 22:39:16 --> cache_on=
+DEBUG - 2015-04-06 22:39:16 --> cachedir=
+DEBUG - 2015-04-06 22:39:16 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:16 --> swap_pre=
+DEBUG - 2015-04-06 22:39:16 --> autoinit=1
+DEBUG - 2015-04-06 22:39:16 --> stricton=
+DEBUG - 2015-04-06 22:39:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:17 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:17 --> Total execution time: 3.2962
+DEBUG - 2015-04-06 22:39:17 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:39:17 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:17 --> Model Class Initialized
+DEBUG - 2015-04-06 22:39:17 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:39:17 --> hostname=localhost
+DEBUG - 2015-04-06 22:39:17 --> username=root
+DEBUG - 2015-04-06 22:39:17 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:39:17 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:39:17 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:39:17 --> dbprefix=
+DEBUG - 2015-04-06 22:39:17 --> pconnect=1
+DEBUG - 2015-04-06 22:39:17 --> db_debug=1
+DEBUG - 2015-04-06 22:39:17 --> cache_on=
+DEBUG - 2015-04-06 22:39:17 --> cachedir=
+DEBUG - 2015-04-06 22:39:17 --> char_set=utf8
+DEBUG - 2015-04-06 22:39:17 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:39:17 --> swap_pre=
+DEBUG - 2015-04-06 22:39:17 --> autoinit=1
+DEBUG - 2015-04-06 22:39:17 --> stricton=
+DEBUG - 2015-04-06 22:39:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:39:19 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:39:19 --> Final output sent to browser
+DEBUG - 2015-04-06 22:39:19 --> Total execution time: 4.4363
+DEBUG - 2015-04-06 22:40:39 --> Config Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:40:39 --> URI Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Router Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Output Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Security Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Input Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:40:39 --> Language Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:40:39 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:40:39 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:40:39 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:40:39 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:40:39 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:40:39 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:40:39 --> Final output sent to browser
+DEBUG - 2015-04-06 22:40:39 --> Total execution time: 0.0510
+DEBUG - 2015-04-06 22:40:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:40:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:40:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:40:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:40:40 --> hostname=localhost
+DEBUG - 2015-04-06 22:40:40 --> username=root
+DEBUG - 2015-04-06 22:40:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:40:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:40:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:40:40 --> dbprefix=
+DEBUG - 2015-04-06 22:40:40 --> pconnect=1
+DEBUG - 2015-04-06 22:40:40 --> db_debug=1
+DEBUG - 2015-04-06 22:40:40 --> cache_on=
+DEBUG - 2015-04-06 22:40:40 --> cachedir=
+DEBUG - 2015-04-06 22:40:40 --> char_set=utf8
+DEBUG - 2015-04-06 22:40:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:40:40 --> swap_pre=
+DEBUG - 2015-04-06 22:40:40 --> autoinit=1
+DEBUG - 2015-04-06 22:40:40 --> stricton=
+DEBUG - 2015-04-06 22:40:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:40:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:40:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:40:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:40:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:40:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:40:40 --> Config Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:40:40 --> URI Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Router Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Output Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Security Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Input Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:40:40 --> Language Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:40:40 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:40:41 --> Final output sent to browser
+DEBUG - 2015-04-06 22:40:41 --> Total execution time: 1.1531
+DEBUG - 2015-04-06 22:40:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:40:41 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:41 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:41 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:40:41 --> hostname=localhost
+DEBUG - 2015-04-06 22:40:41 --> username=root
+DEBUG - 2015-04-06 22:40:41 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:40:41 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:40:41 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:40:41 --> dbprefix=
+DEBUG - 2015-04-06 22:40:41 --> pconnect=1
+DEBUG - 2015-04-06 22:40:41 --> db_debug=1
+DEBUG - 2015-04-06 22:40:41 --> cache_on=
+DEBUG - 2015-04-06 22:40:41 --> cachedir=
+DEBUG - 2015-04-06 22:40:41 --> char_set=utf8
+DEBUG - 2015-04-06 22:40:41 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:40:41 --> swap_pre=
+DEBUG - 2015-04-06 22:40:41 --> autoinit=1
+DEBUG - 2015-04-06 22:40:41 --> stricton=
+DEBUG - 2015-04-06 22:40:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:40:42 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:40:42 --> Final output sent to browser
+DEBUG - 2015-04-06 22:40:42 --> Total execution time: 2.1411
+DEBUG - 2015-04-06 22:40:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:40:42 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:40:42 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:42 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:42 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:40:42 --> hostname=localhost
+DEBUG - 2015-04-06 22:40:42 --> username=root
+DEBUG - 2015-04-06 22:40:42 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:40:42 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:40:42 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:40:42 --> dbprefix=
+DEBUG - 2015-04-06 22:40:42 --> pconnect=1
+DEBUG - 2015-04-06 22:40:42 --> db_debug=1
+DEBUG - 2015-04-06 22:40:42 --> cache_on=
+DEBUG - 2015-04-06 22:40:42 --> cachedir=
+DEBUG - 2015-04-06 22:40:42 --> char_set=utf8
+DEBUG - 2015-04-06 22:40:42 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:40:42 --> swap_pre=
+DEBUG - 2015-04-06 22:40:42 --> autoinit=1
+DEBUG - 2015-04-06 22:40:42 --> stricton=
+DEBUG - 2015-04-06 22:40:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:40:43 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:40:43 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:40.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:40.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:40:43 --> Final output sent to browser
+DEBUG - 2015-04-06 22:40:43 --> Total execution time: 3.1702
+DEBUG - 2015-04-06 22:40:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:40:43 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:43 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:40:43 --> hostname=localhost
+DEBUG - 2015-04-06 22:40:43 --> username=root
+DEBUG - 2015-04-06 22:40:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:40:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:40:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:40:43 --> dbprefix=
+DEBUG - 2015-04-06 22:40:43 --> pconnect=1
+DEBUG - 2015-04-06 22:40:43 --> db_debug=1
+DEBUG - 2015-04-06 22:40:43 --> cache_on=
+DEBUG - 2015-04-06 22:40:43 --> cachedir=
+DEBUG - 2015-04-06 22:40:43 --> char_set=utf8
+DEBUG - 2015-04-06 22:40:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:40:43 --> swap_pre=
+DEBUG - 2015-04-06 22:40:43 --> autoinit=1
+DEBUG - 2015-04-06 22:40:43 --> stricton=
+DEBUG - 2015-04-06 22:40:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:40:44 --> Final output sent to browser
+DEBUG - 2015-04-06 22:40:44 --> Total execution time: 4.1672
+DEBUG - 2015-04-06 22:40:49 --> Config Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:40:49 --> URI Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Router Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Output Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Security Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Input Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:40:49 --> Language Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:40:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Session Class Initialized
+DEBUG - 2015-04-06 22:40:49 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:40:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:40:51 --> Session routines successfully run
+DEBUG - 2015-04-06 22:40:51 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:51 --> Model Class Initialized
+DEBUG - 2015-04-06 22:40:51 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:40:51 --> hostname=localhost
+DEBUG - 2015-04-06 22:40:51 --> username=root
+DEBUG - 2015-04-06 22:40:51 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:40:51 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:40:51 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:40:51 --> dbprefix=
+DEBUG - 2015-04-06 22:40:51 --> pconnect=1
+DEBUG - 2015-04-06 22:40:51 --> db_debug=1
+DEBUG - 2015-04-06 22:40:51 --> cache_on=
+DEBUG - 2015-04-06 22:40:51 --> cachedir=
+DEBUG - 2015-04-06 22:40:51 --> char_set=utf8
+DEBUG - 2015-04-06 22:40:51 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:40:51 --> swap_pre=
+DEBUG - 2015-04-06 22:40:51 --> autoinit=1
+DEBUG - 2015-04-06 22:40:51 --> stricton=
+DEBUG - 2015-04-06 22:40:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:40:52 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:40:52 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:40:52 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:41:10 --> Config Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:41:10 --> URI Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Router Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Output Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Security Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Input Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:41:10 --> Language Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:41:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Session Class Initialized
+DEBUG - 2015-04-06 22:41:10 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:41:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:41:12 --> Session routines successfully run
+DEBUG - 2015-04-06 22:41:12 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:12 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:12 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:41:12 --> hostname=localhost
+DEBUG - 2015-04-06 22:41:12 --> username=root
+DEBUG - 2015-04-06 22:41:12 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:41:12 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:41:12 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:41:12 --> dbprefix=
+DEBUG - 2015-04-06 22:41:12 --> pconnect=1
+DEBUG - 2015-04-06 22:41:12 --> db_debug=1
+DEBUG - 2015-04-06 22:41:12 --> cache_on=
+DEBUG - 2015-04-06 22:41:12 --> cachedir=
+DEBUG - 2015-04-06 22:41:12 --> char_set=utf8
+DEBUG - 2015-04-06 22:41:12 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:41:12 --> swap_pre=
+DEBUG - 2015-04-06 22:41:12 --> autoinit=1
+DEBUG - 2015-04-06 22:41:12 --> stricton=
+DEBUG - 2015-04-06 22:41:12 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:41:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:41:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:41:13 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:41:25 --> Config Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:41:25 --> URI Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Router Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Output Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Security Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Input Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:41:25 --> Language Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:41:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:41:25 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:41:25 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:41:25 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:41:25 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:41:25 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:41:25 --> Final output sent to browser
+DEBUG - 2015-04-06 22:41:25 --> Total execution time: 0.0410
+DEBUG - 2015-04-06 22:41:26 --> Config Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:41:26 --> URI Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Router Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Output Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Security Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Input Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:41:26 --> Language Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:41:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Config Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Config Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:41:26 --> Config Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:41:26 --> URI Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> URI Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Router Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Router Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Output Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Output Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Security Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Input Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Security Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:41:26 --> Language Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Input Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:41:26 --> Language Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:41:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:41:26 --> hostname=localhost
+DEBUG - 2015-04-06 22:41:26 --> username=root
+DEBUG - 2015-04-06 22:41:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:41:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:41:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:41:26 --> dbprefix=
+DEBUG - 2015-04-06 22:41:26 --> pconnect=1
+DEBUG - 2015-04-06 22:41:26 --> db_debug=1
+DEBUG - 2015-04-06 22:41:26 --> cache_on=
+DEBUG - 2015-04-06 22:41:26 --> cachedir=
+DEBUG - 2015-04-06 22:41:26 --> char_set=utf8
+DEBUG - 2015-04-06 22:41:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:41:26 --> swap_pre=
+DEBUG - 2015-04-06 22:41:26 --> autoinit=1
+DEBUG - 2015-04-06 22:41:26 --> stricton=
+DEBUG - 2015-04-06 22:41:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:41:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:41:26 --> URI Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Router Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Output Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Security Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Input Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:41:26 --> Language Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:41:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:41:27 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:41:27 --> Final output sent to browser
+DEBUG - 2015-04-06 22:41:27 --> Total execution time: 1.1381
+DEBUG - 2015-04-06 22:41:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:41:27 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:41:27 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:27 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:41:27 --> hostname=localhost
+DEBUG - 2015-04-06 22:41:27 --> username=root
+DEBUG - 2015-04-06 22:41:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:41:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:41:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:41:27 --> dbprefix=
+DEBUG - 2015-04-06 22:41:27 --> pconnect=1
+DEBUG - 2015-04-06 22:41:27 --> db_debug=1
+DEBUG - 2015-04-06 22:41:27 --> cache_on=
+DEBUG - 2015-04-06 22:41:27 --> cachedir=
+DEBUG - 2015-04-06 22:41:27 --> char_set=utf8
+DEBUG - 2015-04-06 22:41:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:41:27 --> swap_pre=
+DEBUG - 2015-04-06 22:41:27 --> autoinit=1
+DEBUG - 2015-04-06 22:41:27 --> stricton=
+DEBUG - 2015-04-06 22:41:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:41:28 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:41:28 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:41.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:41.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:41:28 --> Final output sent to browser
+DEBUG - 2015-04-06 22:41:28 --> Total execution time: 2.2141
+DEBUG - 2015-04-06 22:41:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:41:28 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:28 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:28 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:41:28 --> hostname=localhost
+DEBUG - 2015-04-06 22:41:28 --> username=root
+DEBUG - 2015-04-06 22:41:28 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:41:28 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:41:28 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:41:28 --> dbprefix=
+DEBUG - 2015-04-06 22:41:28 --> pconnect=1
+DEBUG - 2015-04-06 22:41:28 --> db_debug=1
+DEBUG - 2015-04-06 22:41:28 --> cache_on=
+DEBUG - 2015-04-06 22:41:28 --> cachedir=
+DEBUG - 2015-04-06 22:41:28 --> char_set=utf8
+DEBUG - 2015-04-06 22:41:28 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:41:28 --> swap_pre=
+DEBUG - 2015-04-06 22:41:28 --> autoinit=1
+DEBUG - 2015-04-06 22:41:28 --> stricton=
+DEBUG - 2015-04-06 22:41:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:41:29 --> Final output sent to browser
+DEBUG - 2015-04-06 22:41:29 --> Total execution time: 3.2702
+DEBUG - 2015-04-06 22:41:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:41:29 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:29 --> Model Class Initialized
+DEBUG - 2015-04-06 22:41:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:41:29 --> hostname=localhost
+DEBUG - 2015-04-06 22:41:29 --> username=root
+DEBUG - 2015-04-06 22:41:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:41:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:41:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:41:29 --> dbprefix=
+DEBUG - 2015-04-06 22:41:29 --> pconnect=1
+DEBUG - 2015-04-06 22:41:29 --> db_debug=1
+DEBUG - 2015-04-06 22:41:29 --> cache_on=
+DEBUG - 2015-04-06 22:41:29 --> cachedir=
+DEBUG - 2015-04-06 22:41:29 --> char_set=utf8
+DEBUG - 2015-04-06 22:41:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:41:29 --> swap_pre=
+DEBUG - 2015-04-06 22:41:29 --> autoinit=1
+DEBUG - 2015-04-06 22:41:29 --> stricton=
+DEBUG - 2015-04-06 22:41:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:41:30 --> Final output sent to browser
+DEBUG - 2015-04-06 22:41:30 --> Total execution time: 4.3112
+DEBUG - 2015-04-06 22:42:04 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:04 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:04 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:04 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:04 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:42:04 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:42:04 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:42:04 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:42:04 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:42:04 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:04 --> Total execution time: 0.0480
+DEBUG - 2015-04-06 22:42:05 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:05 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:05 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:05 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:42:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:05 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> hostname=localhost
+DEBUG - 2015-04-06 22:42:05 --> username=root
+DEBUG - 2015-04-06 22:42:05 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:42:05 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:42:05 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:42:05 --> dbprefix=
+DEBUG - 2015-04-06 22:42:05 --> pconnect=1
+DEBUG - 2015-04-06 22:42:05 --> db_debug=1
+DEBUG - 2015-04-06 22:42:05 --> cache_on=
+DEBUG - 2015-04-06 22:42:05 --> cachedir=
+DEBUG - 2015-04-06 22:42:05 --> char_set=utf8
+DEBUG - 2015-04-06 22:42:05 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:42:05 --> swap_pre=
+DEBUG - 2015-04-06 22:42:05 --> autoinit=1
+DEBUG - 2015-04-06 22:42:05 --> stricton=
+DEBUG - 2015-04-06 22:42:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:05 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:05 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:06 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:06 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:06 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:06 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:07 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:07 --> Total execution time: 1.0991
+DEBUG - 2015-04-06 22:42:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:07 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:42:07 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:07 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:42:07 --> hostname=localhost
+DEBUG - 2015-04-06 22:42:07 --> username=root
+DEBUG - 2015-04-06 22:42:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:42:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:42:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:42:07 --> dbprefix=
+DEBUG - 2015-04-06 22:42:07 --> pconnect=1
+DEBUG - 2015-04-06 22:42:07 --> db_debug=1
+DEBUG - 2015-04-06 22:42:07 --> cache_on=
+DEBUG - 2015-04-06 22:42:07 --> cachedir=
+DEBUG - 2015-04-06 22:42:07 --> char_set=utf8
+DEBUG - 2015-04-06 22:42:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:42:07 --> swap_pre=
+DEBUG - 2015-04-06 22:42:07 --> autoinit=1
+DEBUG - 2015-04-06 22:42:07 --> stricton=
+DEBUG - 2015-04-06 22:42:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:42:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:42:08 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:42.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:42.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:42:08 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:08 --> Total execution time: 2.1371
+DEBUG - 2015-04-06 22:42:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:08 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:08 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:42:08 --> hostname=localhost
+DEBUG - 2015-04-06 22:42:08 --> username=root
+DEBUG - 2015-04-06 22:42:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:42:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:42:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:42:08 --> dbprefix=
+DEBUG - 2015-04-06 22:42:08 --> pconnect=1
+DEBUG - 2015-04-06 22:42:08 --> db_debug=1
+DEBUG - 2015-04-06 22:42:08 --> cache_on=
+DEBUG - 2015-04-06 22:42:08 --> cachedir=
+DEBUG - 2015-04-06 22:42:08 --> char_set=utf8
+DEBUG - 2015-04-06 22:42:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:42:08 --> swap_pre=
+DEBUG - 2015-04-06 22:42:08 --> autoinit=1
+DEBUG - 2015-04-06 22:42:08 --> stricton=
+DEBUG - 2015-04-06 22:42:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:42:09 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:42:09 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:09 --> Total execution time: 3.1852
+DEBUG - 2015-04-06 22:42:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:09 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:09 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:42:09 --> hostname=localhost
+DEBUG - 2015-04-06 22:42:09 --> username=root
+DEBUG - 2015-04-06 22:42:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:42:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:42:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:42:09 --> dbprefix=
+DEBUG - 2015-04-06 22:42:09 --> pconnect=1
+DEBUG - 2015-04-06 22:42:09 --> db_debug=1
+DEBUG - 2015-04-06 22:42:09 --> cache_on=
+DEBUG - 2015-04-06 22:42:09 --> cachedir=
+DEBUG - 2015-04-06 22:42:09 --> char_set=utf8
+DEBUG - 2015-04-06 22:42:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:42:09 --> swap_pre=
+DEBUG - 2015-04-06 22:42:09 --> autoinit=1
+DEBUG - 2015-04-06 22:42:09 --> stricton=
+DEBUG - 2015-04-06 22:42:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:42:10 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:10 --> Total execution time: 4.1562
+DEBUG - 2015-04-06 22:42:57 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:57 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:57 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:57 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:42:57 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:42:57 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:42:57 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:42:57 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:42:57 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:57 --> Total execution time: 0.0380
+DEBUG - 2015-04-06 22:42:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:42:58 --> hostname=localhost
+DEBUG - 2015-04-06 22:42:58 --> username=root
+DEBUG - 2015-04-06 22:42:58 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:42:58 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:42:58 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:42:58 --> dbprefix=
+DEBUG - 2015-04-06 22:42:58 --> pconnect=1
+DEBUG - 2015-04-06 22:42:58 --> db_debug=1
+DEBUG - 2015-04-06 22:42:58 --> cache_on=
+DEBUG - 2015-04-06 22:42:58 --> cachedir=
+DEBUG - 2015-04-06 22:42:58 --> char_set=utf8
+DEBUG - 2015-04-06 22:42:58 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:42:58 --> swap_pre=
+DEBUG - 2015-04-06 22:42:58 --> autoinit=1
+DEBUG - 2015-04-06 22:42:58 --> stricton=
+DEBUG - 2015-04-06 22:42:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Config Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:42:58 --> URI Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Router Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Output Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Security Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Input Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:42:58 --> Language Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:42:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:42:59 --> Final output sent to browser
+DEBUG - 2015-04-06 22:42:59 --> Total execution time: 1.1351
+DEBUG - 2015-04-06 22:42:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:42:59 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:59 --> Model Class Initialized
+DEBUG - 2015-04-06 22:42:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:42:59 --> hostname=localhost
+DEBUG - 2015-04-06 22:42:59 --> username=root
+DEBUG - 2015-04-06 22:42:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:42:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:42:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:42:59 --> dbprefix=
+DEBUG - 2015-04-06 22:42:59 --> pconnect=1
+DEBUG - 2015-04-06 22:42:59 --> db_debug=1
+DEBUG - 2015-04-06 22:42:59 --> cache_on=
+DEBUG - 2015-04-06 22:42:59 --> cachedir=
+DEBUG - 2015-04-06 22:42:59 --> char_set=utf8
+DEBUG - 2015-04-06 22:42:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:42:59 --> swap_pre=
+DEBUG - 2015-04-06 22:42:59 --> autoinit=1
+DEBUG - 2015-04-06 22:42:59 --> stricton=
+DEBUG - 2015-04-06 22:42:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:43:00 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:43:00 --> Final output sent to browser
+DEBUG - 2015-04-06 22:43:00 --> Total execution time: 2.1381
+DEBUG - 2015-04-06 22:43:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:43:00 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:43:00 --> Model Class Initialized
+DEBUG - 2015-04-06 22:43:00 --> Model Class Initialized
+DEBUG - 2015-04-06 22:43:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:43:00 --> hostname=localhost
+DEBUG - 2015-04-06 22:43:00 --> username=root
+DEBUG - 2015-04-06 22:43:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:43:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:43:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:43:00 --> dbprefix=
+DEBUG - 2015-04-06 22:43:00 --> pconnect=1
+DEBUG - 2015-04-06 22:43:00 --> db_debug=1
+DEBUG - 2015-04-06 22:43:00 --> cache_on=
+DEBUG - 2015-04-06 22:43:00 --> cachedir=
+DEBUG - 2015-04-06 22:43:00 --> char_set=utf8
+DEBUG - 2015-04-06 22:43:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:43:00 --> swap_pre=
+DEBUG - 2015-04-06 22:43:00 --> autoinit=1
+DEBUG - 2015-04-06 22:43:00 --> stricton=
+DEBUG - 2015-04-06 22:43:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:43:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:43:01 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:42.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:42.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:43:01 --> Final output sent to browser
+DEBUG - 2015-04-06 22:43:01 --> Total execution time: 3.1882
+DEBUG - 2015-04-06 22:43:01 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:43:01 --> Model Class Initialized
+DEBUG - 2015-04-06 22:43:01 --> Model Class Initialized
+DEBUG - 2015-04-06 22:43:01 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:43:01 --> hostname=localhost
+DEBUG - 2015-04-06 22:43:01 --> username=root
+DEBUG - 2015-04-06 22:43:01 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:43:01 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:43:01 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:43:01 --> dbprefix=
+DEBUG - 2015-04-06 22:43:01 --> pconnect=1
+DEBUG - 2015-04-06 22:43:01 --> db_debug=1
+DEBUG - 2015-04-06 22:43:01 --> cache_on=
+DEBUG - 2015-04-06 22:43:01 --> cachedir=
+DEBUG - 2015-04-06 22:43:01 --> char_set=utf8
+DEBUG - 2015-04-06 22:43:01 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:43:01 --> swap_pre=
+DEBUG - 2015-04-06 22:43:01 --> autoinit=1
+DEBUG - 2015-04-06 22:43:01 --> stricton=
+DEBUG - 2015-04-06 22:43:01 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:43:02 --> Final output sent to browser
+DEBUG - 2015-04-06 22:43:02 --> Total execution time: 4.2182
+DEBUG - 2015-04-06 22:47:41 --> Config Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:47:41 --> URI Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Router Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Output Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Security Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Input Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:47:41 --> Language Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:47:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:47:41 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:47:41 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:47:41 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:47:41 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:47:41 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:47:41 --> Final output sent to browser
+DEBUG - 2015-04-06 22:47:41 --> Total execution time: 0.0400
+DEBUG - 2015-04-06 22:47:42 --> Config Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:47:42 --> URI Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Router Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Output Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Security Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Input Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:47:42 --> Language Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:47:42 --> Config Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:47:42 --> URI Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Router Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Output Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Security Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Input Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:47:42 --> Language Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:47:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Config Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Config Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:47:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:47:42 --> URI Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> URI Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Router Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Router Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Output Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Output Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Security Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Security Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Input Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:47:42 --> Input Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:47:42 --> Language Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Language Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:47:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:47:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:47:42 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:47:42 --> hostname=localhost
+DEBUG - 2015-04-06 22:47:42 --> username=root
+DEBUG - 2015-04-06 22:47:42 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:47:42 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:47:42 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:47:42 --> dbprefix=
+DEBUG - 2015-04-06 22:47:42 --> pconnect=1
+DEBUG - 2015-04-06 22:47:42 --> db_debug=1
+DEBUG - 2015-04-06 22:47:42 --> cache_on=
+DEBUG - 2015-04-06 22:47:42 --> cachedir=
+DEBUG - 2015-04-06 22:47:42 --> char_set=utf8
+DEBUG - 2015-04-06 22:47:42 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:47:42 --> swap_pre=
+DEBUG - 2015-04-06 22:47:42 --> autoinit=1
+DEBUG - 2015-04-06 22:47:42 --> stricton=
+DEBUG - 2015-04-06 22:47:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:47:43 --> Final output sent to browser
+DEBUG - 2015-04-06 22:47:43 --> Total execution time: 1.1681
+DEBUG - 2015-04-06 22:47:43 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:47:43 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:47:43 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:43 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:47:43 --> hostname=localhost
+DEBUG - 2015-04-06 22:47:43 --> username=root
+DEBUG - 2015-04-06 22:47:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:47:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:47:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:47:43 --> dbprefix=
+DEBUG - 2015-04-06 22:47:43 --> pconnect=1
+DEBUG - 2015-04-06 22:47:43 --> db_debug=1
+DEBUG - 2015-04-06 22:47:43 --> cache_on=
+DEBUG - 2015-04-06 22:47:43 --> cachedir=
+DEBUG - 2015-04-06 22:47:43 --> char_set=utf8
+DEBUG - 2015-04-06 22:47:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:47:43 --> swap_pre=
+DEBUG - 2015-04-06 22:47:43 --> autoinit=1
+DEBUG - 2015-04-06 22:47:43 --> stricton=
+DEBUG - 2015-04-06 22:47:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:47:44 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:47:44 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:47.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:47.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:47:44 --> Final output sent to browser
+DEBUG - 2015-04-06 22:47:44 --> Total execution time: 2.2181
+DEBUG - 2015-04-06 22:47:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:47:44 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:44 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:47:44 --> hostname=localhost
+DEBUG - 2015-04-06 22:47:44 --> username=root
+DEBUG - 2015-04-06 22:47:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:47:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:47:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:47:44 --> dbprefix=
+DEBUG - 2015-04-06 22:47:44 --> pconnect=1
+DEBUG - 2015-04-06 22:47:44 --> db_debug=1
+DEBUG - 2015-04-06 22:47:44 --> cache_on=
+DEBUG - 2015-04-06 22:47:44 --> cachedir=
+DEBUG - 2015-04-06 22:47:44 --> char_set=utf8
+DEBUG - 2015-04-06 22:47:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:47:44 --> swap_pre=
+DEBUG - 2015-04-06 22:47:44 --> autoinit=1
+DEBUG - 2015-04-06 22:47:44 --> stricton=
+DEBUG - 2015-04-06 22:47:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:47:45 --> Final output sent to browser
+DEBUG - 2015-04-06 22:47:45 --> Total execution time: 3.2302
+DEBUG - 2015-04-06 22:47:45 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:47:45 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:45 --> Model Class Initialized
+DEBUG - 2015-04-06 22:47:45 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:47:45 --> hostname=localhost
+DEBUG - 2015-04-06 22:47:45 --> username=root
+DEBUG - 2015-04-06 22:47:45 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:47:45 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:47:45 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:47:45 --> dbprefix=
+DEBUG - 2015-04-06 22:47:45 --> pconnect=1
+DEBUG - 2015-04-06 22:47:45 --> db_debug=1
+DEBUG - 2015-04-06 22:47:45 --> cache_on=
+DEBUG - 2015-04-06 22:47:45 --> cachedir=
+DEBUG - 2015-04-06 22:47:45 --> char_set=utf8
+DEBUG - 2015-04-06 22:47:45 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:47:45 --> swap_pre=
+DEBUG - 2015-04-06 22:47:45 --> autoinit=1
+DEBUG - 2015-04-06 22:47:45 --> stricton=
+DEBUG - 2015-04-06 22:47:45 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:47:46 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:47:46 --> Final output sent to browser
+DEBUG - 2015-04-06 22:47:46 --> Total execution time: 4.3192
+DEBUG - 2015-04-06 22:49:42 --> Config Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:49:42 --> URI Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Router Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Output Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Security Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Input Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:49:42 --> Language Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:49:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Session Class Initialized
+DEBUG - 2015-04-06 22:49:42 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:49:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:49:44 --> Session routines successfully run
+DEBUG - 2015-04-06 22:49:44 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:44 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:49:44 --> hostname=localhost
+DEBUG - 2015-04-06 22:49:44 --> username=root
+DEBUG - 2015-04-06 22:49:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:49:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:49:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:49:44 --> dbprefix=
+DEBUG - 2015-04-06 22:49:44 --> pconnect=1
+DEBUG - 2015-04-06 22:49:44 --> db_debug=1
+DEBUG - 2015-04-06 22:49:44 --> cache_on=
+DEBUG - 2015-04-06 22:49:44 --> cachedir=
+DEBUG - 2015-04-06 22:49:44 --> char_set=utf8
+DEBUG - 2015-04-06 22:49:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:49:44 --> swap_pre=
+DEBUG - 2015-04-06 22:49:44 --> autoinit=1
+DEBUG - 2015-04-06 22:49:44 --> stricton=
+DEBUG - 2015-04-06 22:49:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:49:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:49:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:49:45 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:49:45 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:49:45 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:49:45 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:49:45 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:49:45 --> Final output sent to browser
+DEBUG - 2015-04-06 22:49:45 --> Total execution time: 3.4912
+DEBUG - 2015-04-06 22:49:47 --> Config Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:49:47 --> URI Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Router Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Output Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Security Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Input Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:49:47 --> Language Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:49:47 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:49:47 --> hostname=localhost
+DEBUG - 2015-04-06 22:49:47 --> username=root
+DEBUG - 2015-04-06 22:49:47 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:49:47 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:49:47 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:49:47 --> dbprefix=
+DEBUG - 2015-04-06 22:49:47 --> pconnect=1
+DEBUG - 2015-04-06 22:49:47 --> db_debug=1
+DEBUG - 2015-04-06 22:49:47 --> cache_on=
+DEBUG - 2015-04-06 22:49:47 --> cachedir=
+DEBUG - 2015-04-06 22:49:47 --> char_set=utf8
+DEBUG - 2015-04-06 22:49:47 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:49:47 --> swap_pre=
+DEBUG - 2015-04-06 22:49:47 --> autoinit=1
+DEBUG - 2015-04-06 22:49:47 --> stricton=
+DEBUG - 2015-04-06 22:49:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Config Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:49:47 --> URI Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Router Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Output Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Config Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Security Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:49:47 --> Input Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:49:47 --> Language Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:49:47 --> URI Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Router Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Output Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Security Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Input Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:49:47 --> Language Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:49:47 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:49:48 --> Final output sent to browser
+DEBUG - 2015-04-06 22:49:48 --> Total execution time: 1.0931
+DEBUG - 2015-04-06 22:49:48 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:49:48 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:49:48 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:48 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:48 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:49:48 --> hostname=localhost
+DEBUG - 2015-04-06 22:49:48 --> username=root
+DEBUG - 2015-04-06 22:49:48 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:49:48 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:49:48 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:49:48 --> dbprefix=
+DEBUG - 2015-04-06 22:49:48 --> pconnect=1
+DEBUG - 2015-04-06 22:49:48 --> db_debug=1
+DEBUG - 2015-04-06 22:49:48 --> cache_on=
+DEBUG - 2015-04-06 22:49:48 --> cachedir=
+DEBUG - 2015-04-06 22:49:48 --> char_set=utf8
+DEBUG - 2015-04-06 22:49:48 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:49:48 --> swap_pre=
+DEBUG - 2015-04-06 22:49:48 --> autoinit=1
+DEBUG - 2015-04-06 22:49:48 --> stricton=
+DEBUG - 2015-04-06 22:49:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:49:49 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:49:49 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:49.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:49.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:49:49 --> Final output sent to browser
+DEBUG - 2015-04-06 22:49:49 --> Total execution time: 2.1031
+DEBUG - 2015-04-06 22:49:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:49:49 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:49 --> Model Class Initialized
+DEBUG - 2015-04-06 22:49:49 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:49:49 --> hostname=localhost
+DEBUG - 2015-04-06 22:49:49 --> username=root
+DEBUG - 2015-04-06 22:49:49 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:49:49 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:49:49 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:49:49 --> dbprefix=
+DEBUG - 2015-04-06 22:49:49 --> pconnect=1
+DEBUG - 2015-04-06 22:49:49 --> db_debug=1
+DEBUG - 2015-04-06 22:49:49 --> cache_on=
+DEBUG - 2015-04-06 22:49:49 --> cachedir=
+DEBUG - 2015-04-06 22:49:49 --> char_set=utf8
+DEBUG - 2015-04-06 22:49:49 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:49:49 --> swap_pre=
+DEBUG - 2015-04-06 22:49:49 --> autoinit=1
+DEBUG - 2015-04-06 22:49:49 --> stricton=
+DEBUG - 2015-04-06 22:49:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:49:50 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:49:50 --> Final output sent to browser
+DEBUG - 2015-04-06 22:49:50 --> Total execution time: 3.1422
+DEBUG - 2015-04-06 22:52:44 --> Config Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:52:44 --> URI Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Router Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Output Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Security Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Input Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:52:44 --> Language Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:52:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Session Class Initialized
+DEBUG - 2015-04-06 22:52:44 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:52:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:46 --> Session routines successfully run
+DEBUG - 2015-04-06 22:52:46 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:46 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:46 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:52:46 --> hostname=localhost
+DEBUG - 2015-04-06 22:52:46 --> username=root
+DEBUG - 2015-04-06 22:52:46 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:52:46 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:52:46 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:52:46 --> dbprefix=
+DEBUG - 2015-04-06 22:52:46 --> pconnect=1
+DEBUG - 2015-04-06 22:52:46 --> db_debug=1
+DEBUG - 2015-04-06 22:52:46 --> cache_on=
+DEBUG - 2015-04-06 22:52:46 --> cachedir=
+DEBUG - 2015-04-06 22:52:46 --> char_set=utf8
+DEBUG - 2015-04-06 22:52:46 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:52:46 --> swap_pre=
+DEBUG - 2015-04-06 22:52:46 --> autoinit=1
+DEBUG - 2015-04-06 22:52:46 --> stricton=
+DEBUG - 2015-04-06 22:52:46 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:47 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:52:47 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:52:47 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:52:47 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:52:47 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:52:47 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:52:47 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:52:47 --> Final output sent to browser
+DEBUG - 2015-04-06 22:52:47 --> Total execution time: 2.9092
+DEBUG - 2015-04-06 22:52:48 --> Config Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:52:48 --> URI Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Router Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Output Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Security Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Input Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:52:48 --> Language Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:52:48 --> Config Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:52:48 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> URI Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:52:48 --> Config Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> hostname=localhost
+DEBUG - 2015-04-06 22:52:48 --> username=root
+DEBUG - 2015-04-06 22:52:48 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:52:48 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:52:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:52:48 --> dbprefix=
+DEBUG - 2015-04-06 22:52:48 --> pconnect=1
+DEBUG - 2015-04-06 22:52:48 --> db_debug=1
+DEBUG - 2015-04-06 22:52:48 --> cache_on=
+DEBUG - 2015-04-06 22:52:48 --> Router Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:52:48 --> cachedir=
+DEBUG - 2015-04-06 22:52:48 --> char_set=utf8
+DEBUG - 2015-04-06 22:52:48 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:52:48 --> swap_pre=
+DEBUG - 2015-04-06 22:52:48 --> autoinit=1
+DEBUG - 2015-04-06 22:52:48 --> stricton=
+DEBUG - 2015-04-06 22:52:48 --> Output Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Security Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Input Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:52:48 --> Language Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Config Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> URI Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:52:48 --> Router Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:52:48 --> URI Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Output Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Router Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Security Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Output Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Security Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Input Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Input Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:52:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:52:48 --> Language Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Language Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:52:48 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:52:48 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:52:49 --> Final output sent to browser
+DEBUG - 2015-04-06 22:52:49 --> Total execution time: 1.1061
+DEBUG - 2015-04-06 22:52:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:52:49 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:52:49 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:49 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:49 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:52:49 --> hostname=localhost
+DEBUG - 2015-04-06 22:52:49 --> username=root
+DEBUG - 2015-04-06 22:52:49 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:52:49 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:52:49 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:52:49 --> dbprefix=
+DEBUG - 2015-04-06 22:52:49 --> pconnect=1
+DEBUG - 2015-04-06 22:52:49 --> db_debug=1
+DEBUG - 2015-04-06 22:52:49 --> cache_on=
+DEBUG - 2015-04-06 22:52:49 --> cachedir=
+DEBUG - 2015-04-06 22:52:49 --> char_set=utf8
+DEBUG - 2015-04-06 22:52:49 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:52:49 --> swap_pre=
+DEBUG - 2015-04-06 22:52:49 --> autoinit=1
+DEBUG - 2015-04-06 22:52:49 --> stricton=
+DEBUG - 2015-04-06 22:52:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:50 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:52:50 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:52.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:52.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:52:50 --> Final output sent to browser
+DEBUG - 2015-04-06 22:52:50 --> Total execution time: 2.1361
+DEBUG - 2015-04-06 22:52:50 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:52:50 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:50 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:50 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:52:50 --> hostname=localhost
+DEBUG - 2015-04-06 22:52:50 --> username=root
+DEBUG - 2015-04-06 22:52:50 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:52:50 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:52:50 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:52:50 --> dbprefix=
+DEBUG - 2015-04-06 22:52:50 --> pconnect=1
+DEBUG - 2015-04-06 22:52:50 --> db_debug=1
+DEBUG - 2015-04-06 22:52:50 --> cache_on=
+DEBUG - 2015-04-06 22:52:50 --> cachedir=
+DEBUG - 2015-04-06 22:52:50 --> char_set=utf8
+DEBUG - 2015-04-06 22:52:50 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:52:50 --> swap_pre=
+DEBUG - 2015-04-06 22:52:50 --> autoinit=1
+DEBUG - 2015-04-06 22:52:50 --> stricton=
+DEBUG - 2015-04-06 22:52:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:51 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:52:51 --> Final output sent to browser
+DEBUG - 2015-04-06 22:52:51 --> Total execution time: 3.1782
+DEBUG - 2015-04-06 22:52:51 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:52:51 --> Session Class Initialized
+DEBUG - 2015-04-06 22:52:51 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:52:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:52 --> Session routines successfully run
+DEBUG - 2015-04-06 22:52:52 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:52 --> Model Class Initialized
+DEBUG - 2015-04-06 22:52:52 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:52:52 --> hostname=localhost
+DEBUG - 2015-04-06 22:52:52 --> username=root
+DEBUG - 2015-04-06 22:52:52 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:52:52 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:52:52 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:52:52 --> dbprefix=
+DEBUG - 2015-04-06 22:52:52 --> pconnect=1
+DEBUG - 2015-04-06 22:52:52 --> db_debug=1
+DEBUG - 2015-04-06 22:52:52 --> cache_on=
+DEBUG - 2015-04-06 22:52:52 --> cachedir=
+DEBUG - 2015-04-06 22:52:52 --> char_set=utf8
+DEBUG - 2015-04-06 22:52:52 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:52:52 --> swap_pre=
+DEBUG - 2015-04-06 22:52:52 --> autoinit=1
+DEBUG - 2015-04-06 22:52:52 --> stricton=
+DEBUG - 2015-04-06 22:52:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:52:54 --> Final output sent to browser
+DEBUG - 2015-04-06 22:52:54 --> Total execution time: 5.8303
+DEBUG - 2015-04-06 22:54:33 --> Config Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:54:33 --> URI Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Router Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Output Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Security Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Input Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:54:33 --> Language Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:54:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Session Class Initialized
+DEBUG - 2015-04-06 22:54:33 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:54:33 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:54:35 --> Session routines successfully run
+DEBUG - 2015-04-06 22:54:35 --> Model Class Initialized
+DEBUG - 2015-04-06 22:54:35 --> Model Class Initialized
+DEBUG - 2015-04-06 22:54:35 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:54:35 --> hostname=localhost
+DEBUG - 2015-04-06 22:54:35 --> username=root
+DEBUG - 2015-04-06 22:54:35 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:54:35 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:54:35 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:54:35 --> dbprefix=
+DEBUG - 2015-04-06 22:54:35 --> pconnect=1
+DEBUG - 2015-04-06 22:54:35 --> db_debug=1
+DEBUG - 2015-04-06 22:54:35 --> cache_on=
+DEBUG - 2015-04-06 22:54:35 --> cachedir=
+DEBUG - 2015-04-06 22:54:35 --> char_set=utf8
+DEBUG - 2015-04-06 22:54:35 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:54:35 --> swap_pre=
+DEBUG - 2015-04-06 22:54:35 --> autoinit=1
+DEBUG - 2015-04-06 22:54:35 --> stricton=
+DEBUG - 2015-04-06 22:54:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:54:36 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:54:36 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:54:36 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:54:36 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:54:36 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:54:36 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:54:36 --> Final output sent to browser
+DEBUG - 2015-04-06 22:54:36 --> Total execution time: 2.6662
+DEBUG - 2015-04-06 22:54:50 --> Config Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:54:50 --> URI Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Router Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Output Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Security Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Input Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:54:50 --> Language Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:54:50 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Session Class Initialized
+DEBUG - 2015-04-06 22:54:50 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:54:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:54:51 --> Session routines successfully run
+DEBUG - 2015-04-06 22:54:51 --> Model Class Initialized
+DEBUG - 2015-04-06 22:54:51 --> Model Class Initialized
+DEBUG - 2015-04-06 22:54:51 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:54:51 --> hostname=localhost
+DEBUG - 2015-04-06 22:54:51 --> username=root
+DEBUG - 2015-04-06 22:54:51 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:54:51 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:54:51 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:54:51 --> dbprefix=
+DEBUG - 2015-04-06 22:54:51 --> pconnect=1
+DEBUG - 2015-04-06 22:54:51 --> db_debug=1
+DEBUG - 2015-04-06 22:54:51 --> cache_on=
+DEBUG - 2015-04-06 22:54:51 --> cachedir=
+DEBUG - 2015-04-06 22:54:51 --> char_set=utf8
+DEBUG - 2015-04-06 22:54:51 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:54:51 --> swap_pre=
+DEBUG - 2015-04-06 22:54:51 --> autoinit=1
+DEBUG - 2015-04-06 22:54:51 --> stricton=
+DEBUG - 2015-04-06 22:54:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:54:53 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:54:53 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:54:53 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:54:53 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:54:53 --> Final output sent to browser
+DEBUG - 2015-04-06 22:54:53 --> Total execution time: 2.6212
+DEBUG - 2015-04-06 22:56:02 --> Config Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:56:02 --> URI Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Router Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Output Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Security Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Input Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:56:02 --> Language Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:56:02 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Session Class Initialized
+DEBUG - 2015-04-06 22:56:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:56:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:56:04 --> Session routines successfully run
+DEBUG - 2015-04-06 22:56:04 --> Model Class Initialized
+DEBUG - 2015-04-06 22:56:04 --> Model Class Initialized
+DEBUG - 2015-04-06 22:56:04 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:56:04 --> hostname=localhost
+DEBUG - 2015-04-06 22:56:04 --> username=root
+DEBUG - 2015-04-06 22:56:04 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:56:04 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:56:04 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:56:04 --> dbprefix=
+DEBUG - 2015-04-06 22:56:04 --> pconnect=1
+DEBUG - 2015-04-06 22:56:04 --> db_debug=1
+DEBUG - 2015-04-06 22:56:04 --> cache_on=
+DEBUG - 2015-04-06 22:56:04 --> cachedir=
+DEBUG - 2015-04-06 22:56:04 --> char_set=utf8
+DEBUG - 2015-04-06 22:56:04 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:56:04 --> swap_pre=
+DEBUG - 2015-04-06 22:56:04 --> autoinit=1
+DEBUG - 2015-04-06 22:56:04 --> stricton=
+DEBUG - 2015-04-06 22:56:04 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:56:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:56:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:56:05 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:56:05 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:56:05 --> Final output sent to browser
+DEBUG - 2015-04-06 22:56:05 --> Total execution time: 2.8892
+DEBUG - 2015-04-06 22:56:49 --> Config Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:56:49 --> URI Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Router Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Output Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Security Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Input Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:56:49 --> Language Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:56:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Session Class Initialized
+DEBUG - 2015-04-06 22:56:49 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:56:49 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:56:50 --> Session routines successfully run
+DEBUG - 2015-04-06 22:56:50 --> Model Class Initialized
+DEBUG - 2015-04-06 22:56:50 --> Model Class Initialized
+DEBUG - 2015-04-06 22:56:50 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:56:50 --> hostname=localhost
+DEBUG - 2015-04-06 22:56:50 --> username=root
+DEBUG - 2015-04-06 22:56:50 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:56:50 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:56:50 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:56:50 --> dbprefix=
+DEBUG - 2015-04-06 22:56:50 --> pconnect=1
+DEBUG - 2015-04-06 22:56:50 --> db_debug=1
+DEBUG - 2015-04-06 22:56:50 --> cache_on=
+DEBUG - 2015-04-06 22:56:50 --> cachedir=
+DEBUG - 2015-04-06 22:56:50 --> char_set=utf8
+DEBUG - 2015-04-06 22:56:50 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:56:50 --> swap_pre=
+DEBUG - 2015-04-06 22:56:50 --> autoinit=1
+DEBUG - 2015-04-06 22:56:50 --> stricton=
+DEBUG - 2015-04-06 22:56:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:56:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:56:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:56:51 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:56:51 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:56:51 --> Final output sent to browser
+DEBUG - 2015-04-06 22:56:51 --> Total execution time: 2.6462
+DEBUG - 2015-04-06 22:57:20 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:20 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:20 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:20 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Session Class Initialized
+DEBUG - 2015-04-06 22:57:20 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:57:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:21 --> Session routines successfully run
+DEBUG - 2015-04-06 22:57:21 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:21 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:21 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:57:21 --> hostname=localhost
+DEBUG - 2015-04-06 22:57:21 --> username=root
+DEBUG - 2015-04-06 22:57:21 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:57:21 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:57:21 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:57:21 --> dbprefix=
+DEBUG - 2015-04-06 22:57:21 --> pconnect=1
+DEBUG - 2015-04-06 22:57:21 --> db_debug=1
+DEBUG - 2015-04-06 22:57:21 --> cache_on=
+DEBUG - 2015-04-06 22:57:21 --> cachedir=
+DEBUG - 2015-04-06 22:57:21 --> char_set=utf8
+DEBUG - 2015-04-06 22:57:21 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:57:21 --> swap_pre=
+DEBUG - 2015-04-06 22:57:21 --> autoinit=1
+DEBUG - 2015-04-06 22:57:21 --> stricton=
+DEBUG - 2015-04-06 22:57:21 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:57:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:57:22 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:57:22 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 22:57:22 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:22 --> Total execution time: 2.5321
+DEBUG - 2015-04-06 22:57:23 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:23 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:23 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:23 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Session Class Initialized
+DEBUG - 2015-04-06 22:57:23 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 22:57:23 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:24 --> Session routines successfully run
+DEBUG - 2015-04-06 22:57:24 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:24 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:24 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:57:24 --> hostname=localhost
+DEBUG - 2015-04-06 22:57:24 --> username=root
+DEBUG - 2015-04-06 22:57:24 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:57:24 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:57:24 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:57:24 --> dbprefix=
+DEBUG - 2015-04-06 22:57:24 --> pconnect=1
+DEBUG - 2015-04-06 22:57:24 --> db_debug=1
+DEBUG - 2015-04-06 22:57:24 --> cache_on=
+DEBUG - 2015-04-06 22:57:24 --> cachedir=
+DEBUG - 2015-04-06 22:57:24 --> char_set=utf8
+DEBUG - 2015-04-06 22:57:24 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:57:24 --> swap_pre=
+DEBUG - 2015-04-06 22:57:24 --> autoinit=1
+DEBUG - 2015-04-06 22:57:24 --> stricton=
+DEBUG - 2015-04-06 22:57:24 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:26 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:26 --> Total execution time: 2.6502
+DEBUG - 2015-04-06 22:57:35 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:35 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:35 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:35 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:57:35 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:57:35 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:57:35 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:57:35 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:57:35 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:35 --> Total execution time: 0.0400
+DEBUG - 2015-04-06 22:57:37 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:37 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:37 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:57:37 --> hostname=localhost
+DEBUG - 2015-04-06 22:57:37 --> username=root
+DEBUG - 2015-04-06 22:57:37 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:57:37 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:57:37 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:57:37 --> dbprefix=
+DEBUG - 2015-04-06 22:57:37 --> pconnect=1
+DEBUG - 2015-04-06 22:57:37 --> db_debug=1
+DEBUG - 2015-04-06 22:57:37 --> cache_on=
+DEBUG - 2015-04-06 22:57:37 --> cachedir=
+DEBUG - 2015-04-06 22:57:37 --> char_set=utf8
+DEBUG - 2015-04-06 22:57:37 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:57:37 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:37 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:37 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:37 --> swap_pre=
+DEBUG - 2015-04-06 22:57:37 --> autoinit=1
+DEBUG - 2015-04-06 22:57:37 --> stricton=
+DEBUG - 2015-04-06 22:57:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:37 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:37 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:37 --> Config Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:57:37 --> URI Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Router Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Output Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Security Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Input Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:57:37 --> Language Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:57:37 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:57:38 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:38 --> Total execution time: 1.2111
+DEBUG - 2015-04-06 22:57:38 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:38 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:57:38 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:38 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:38 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:57:38 --> hostname=localhost
+DEBUG - 2015-04-06 22:57:38 --> username=root
+DEBUG - 2015-04-06 22:57:38 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:57:38 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:57:38 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:57:38 --> dbprefix=
+DEBUG - 2015-04-06 22:57:38 --> pconnect=1
+DEBUG - 2015-04-06 22:57:38 --> db_debug=1
+DEBUG - 2015-04-06 22:57:38 --> cache_on=
+DEBUG - 2015-04-06 22:57:38 --> cachedir=
+DEBUG - 2015-04-06 22:57:38 --> char_set=utf8
+DEBUG - 2015-04-06 22:57:38 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:57:38 --> swap_pre=
+DEBUG - 2015-04-06 22:57:38 --> autoinit=1
+DEBUG - 2015-04-06 22:57:38 --> stricton=
+DEBUG - 2015-04-06 22:57:38 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:39 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:57:39 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:57.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:57.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:57:39 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:39 --> Total execution time: 2.2751
+DEBUG - 2015-04-06 22:57:39 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:39 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:39 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:39 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:57:39 --> hostname=localhost
+DEBUG - 2015-04-06 22:57:39 --> username=root
+DEBUG - 2015-04-06 22:57:39 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:57:39 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:57:39 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:57:39 --> dbprefix=
+DEBUG - 2015-04-06 22:57:39 --> pconnect=1
+DEBUG - 2015-04-06 22:57:39 --> db_debug=1
+DEBUG - 2015-04-06 22:57:39 --> cache_on=
+DEBUG - 2015-04-06 22:57:39 --> cachedir=
+DEBUG - 2015-04-06 22:57:39 --> char_set=utf8
+DEBUG - 2015-04-06 22:57:39 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:57:39 --> swap_pre=
+DEBUG - 2015-04-06 22:57:39 --> autoinit=1
+DEBUG - 2015-04-06 22:57:39 --> stricton=
+DEBUG - 2015-04-06 22:57:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:40 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:40 --> Total execution time: 3.3982
+DEBUG - 2015-04-06 22:57:40 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:57:40 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:40 --> Model Class Initialized
+DEBUG - 2015-04-06 22:57:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:57:40 --> hostname=localhost
+DEBUG - 2015-04-06 22:57:40 --> username=root
+DEBUG - 2015-04-06 22:57:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:57:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:57:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:57:40 --> dbprefix=
+DEBUG - 2015-04-06 22:57:40 --> pconnect=1
+DEBUG - 2015-04-06 22:57:40 --> db_debug=1
+DEBUG - 2015-04-06 22:57:40 --> cache_on=
+DEBUG - 2015-04-06 22:57:40 --> cachedir=
+DEBUG - 2015-04-06 22:57:40 --> char_set=utf8
+DEBUG - 2015-04-06 22:57:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:57:40 --> swap_pre=
+DEBUG - 2015-04-06 22:57:40 --> autoinit=1
+DEBUG - 2015-04-06 22:57:40 --> stricton=
+DEBUG - 2015-04-06 22:57:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:57:41 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:57:41 --> Final output sent to browser
+DEBUG - 2015-04-06 22:57:41 --> Total execution time: 4.4953
+DEBUG - 2015-04-06 22:58:11 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:11 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:11 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:11 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:11 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:58:11 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:58:11 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:58:11 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:58:11 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:58:11 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:11 --> Total execution time: 0.0390
+DEBUG - 2015-04-06 22:58:13 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:13 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:13 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:13 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:13 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:13 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:13 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:13 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:13 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:13 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:13 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:13 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:13 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> username=root
+DEBUG - 2015-04-06 22:58:13 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:13 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:13 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:13 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> dbprefix=
+DEBUG - 2015-04-06 22:58:13 --> pconnect=1
+DEBUG - 2015-04-06 22:58:13 --> db_debug=1
+DEBUG - 2015-04-06 22:58:13 --> cache_on=
+DEBUG - 2015-04-06 22:58:13 --> cachedir=
+DEBUG - 2015-04-06 22:58:13 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:13 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:13 --> swap_pre=
+DEBUG - 2015-04-06 22:58:13 --> autoinit=1
+DEBUG - 2015-04-06 22:58:13 --> stricton=
+DEBUG - 2015-04-06 22:58:13 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:13 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:14 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:58:14 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:14 --> Total execution time: 1.1101
+DEBUG - 2015-04-06 22:58:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:14 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:14 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:14 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:14 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:14 --> username=root
+DEBUG - 2015-04-06 22:58:14 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:14 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:14 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:14 --> dbprefix=
+DEBUG - 2015-04-06 22:58:14 --> pconnect=1
+DEBUG - 2015-04-06 22:58:14 --> db_debug=1
+DEBUG - 2015-04-06 22:58:14 --> cache_on=
+DEBUG - 2015-04-06 22:58:14 --> cachedir=
+DEBUG - 2015-04-06 22:58:14 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:14 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:14 --> swap_pre=
+DEBUG - 2015-04-06 22:58:14 --> autoinit=1
+DEBUG - 2015-04-06 22:58:14 --> stricton=
+DEBUG - 2015-04-06 22:58:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:15 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:15 --> Total execution time: 2.1871
+DEBUG - 2015-04-06 22:58:15 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:15 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:58:15 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:15 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:15 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:15 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:15 --> username=root
+DEBUG - 2015-04-06 22:58:15 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:15 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:15 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:15 --> dbprefix=
+DEBUG - 2015-04-06 22:58:15 --> pconnect=1
+DEBUG - 2015-04-06 22:58:15 --> db_debug=1
+DEBUG - 2015-04-06 22:58:15 --> cache_on=
+DEBUG - 2015-04-06 22:58:15 --> cachedir=
+DEBUG - 2015-04-06 22:58:15 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:15 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:15 --> swap_pre=
+DEBUG - 2015-04-06 22:58:15 --> autoinit=1
+DEBUG - 2015-04-06 22:58:15 --> stricton=
+DEBUG - 2015-04-06 22:58:15 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:16 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:58:16 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:58.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:58.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:58:16 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:16 --> Total execution time: 3.1762
+DEBUG - 2015-04-06 22:58:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:16 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:16 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:16 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:16 --> username=root
+DEBUG - 2015-04-06 22:58:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:16 --> dbprefix=
+DEBUG - 2015-04-06 22:58:16 --> pconnect=1
+DEBUG - 2015-04-06 22:58:16 --> db_debug=1
+DEBUG - 2015-04-06 22:58:16 --> cache_on=
+DEBUG - 2015-04-06 22:58:16 --> cachedir=
+DEBUG - 2015-04-06 22:58:16 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:16 --> swap_pre=
+DEBUG - 2015-04-06 22:58:16 --> autoinit=1
+DEBUG - 2015-04-06 22:58:16 --> stricton=
+DEBUG - 2015-04-06 22:58:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:17 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:17 --> Total execution time: 4.1812
+DEBUG - 2015-04-06 22:58:49 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:49 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:49 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:49 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 22:58:49 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 22:58:49 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 22:58:49 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 22:58:49 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 22:58:49 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:49 --> Total execution time: 0.0440
+DEBUG - 2015-04-06 22:58:51 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:51 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:51 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:51 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:51 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:51 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:51 --> username=root
+DEBUG - 2015-04-06 22:58:51 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:51 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:51 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:51 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> dbprefix=
+DEBUG - 2015-04-06 22:58:51 --> pconnect=1
+DEBUG - 2015-04-06 22:58:51 --> db_debug=1
+DEBUG - 2015-04-06 22:58:51 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> cache_on=
+DEBUG - 2015-04-06 22:58:51 --> cachedir=
+DEBUG - 2015-04-06 22:58:51 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:51 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:51 --> swap_pre=
+DEBUG - 2015-04-06 22:58:51 --> autoinit=1
+DEBUG - 2015-04-06 22:58:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> stricton=
+DEBUG - 2015-04-06 22:58:51 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:51 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:51 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:51 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:51 --> Config Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Hooks Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 22:58:51 --> URI Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Router Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Output Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Security Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Input Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 22:58:51 --> Language Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Loader Class Initialized
+DEBUG - 2015-04-06 22:58:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 22:58:52 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:52 --> Total execution time: 1.0921
+DEBUG - 2015-04-06 22:58:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:52 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 22:58:52 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:52 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:52 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:52 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:52 --> username=root
+DEBUG - 2015-04-06 22:58:52 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:52 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:52 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:52 --> dbprefix=
+DEBUG - 2015-04-06 22:58:52 --> pconnect=1
+DEBUG - 2015-04-06 22:58:52 --> db_debug=1
+DEBUG - 2015-04-06 22:58:52 --> cache_on=
+DEBUG - 2015-04-06 22:58:52 --> cachedir=
+DEBUG - 2015-04-06 22:58:52 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:52 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:52 --> swap_pre=
+DEBUG - 2015-04-06 22:58:52 --> autoinit=1
+DEBUG - 2015-04-06 22:58:52 --> stricton=
+DEBUG - 2015-04-06 22:58:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:53 --> XSS Filtering completed
+DEBUG - 2015-04-06 22:58:53 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 22:58.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 22:58.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 22:58:53 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:53 --> Total execution time: 2.1261
+DEBUG - 2015-04-06 22:58:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:53 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:53 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:53 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:53 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:53 --> username=root
+DEBUG - 2015-04-06 22:58:53 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:53 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:53 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:53 --> dbprefix=
+DEBUG - 2015-04-06 22:58:53 --> pconnect=1
+DEBUG - 2015-04-06 22:58:53 --> db_debug=1
+DEBUG - 2015-04-06 22:58:53 --> cache_on=
+DEBUG - 2015-04-06 22:58:53 --> cachedir=
+DEBUG - 2015-04-06 22:58:53 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:53 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:53 --> swap_pre=
+DEBUG - 2015-04-06 22:58:53 --> autoinit=1
+DEBUG - 2015-04-06 22:58:53 --> stricton=
+DEBUG - 2015-04-06 22:58:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:54 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 22:58:54 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:54 --> Total execution time: 3.1532
+DEBUG - 2015-04-06 22:58:54 --> Controller Class Initialized
+DEBUG - 2015-04-06 22:58:54 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:54 --> Model Class Initialized
+DEBUG - 2015-04-06 22:58:54 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 22:58:54 --> hostname=localhost
+DEBUG - 2015-04-06 22:58:54 --> username=root
+DEBUG - 2015-04-06 22:58:54 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 22:58:54 --> database=cl51-democompa
+DEBUG - 2015-04-06 22:58:54 --> dbdriver=mysqli
+DEBUG - 2015-04-06 22:58:54 --> dbprefix=
+DEBUG - 2015-04-06 22:58:54 --> pconnect=1
+DEBUG - 2015-04-06 22:58:54 --> db_debug=1
+DEBUG - 2015-04-06 22:58:54 --> cache_on=
+DEBUG - 2015-04-06 22:58:54 --> cachedir=
+DEBUG - 2015-04-06 22:58:54 --> char_set=utf8
+DEBUG - 2015-04-06 22:58:54 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 22:58:54 --> swap_pre=
+DEBUG - 2015-04-06 22:58:54 --> autoinit=1
+DEBUG - 2015-04-06 22:58:54 --> stricton=
+DEBUG - 2015-04-06 22:58:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 22:58:55 --> Final output sent to browser
+DEBUG - 2015-04-06 22:58:55 --> Total execution time: 4.1502
+DEBUG - 2015-04-06 23:21:44 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:44 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:44 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:44 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:44 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:21:44 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:21:44 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:21:44 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:21:44 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:21:44 --> Final output sent to browser
+DEBUG - 2015-04-06 23:21:44 --> Total execution time: 0.0470
+DEBUG - 2015-04-06 23:21:49 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:49 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:49 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:49 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:49 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:21:49 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:21:49 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:21:49 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:21:49 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:21:49 --> Final output sent to browser
+DEBUG - 2015-04-06 23:21:49 --> Total execution time: 0.0410
+DEBUG - 2015-04-06 23:21:50 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:50 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:50 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:50 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:50 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:21:50 --> hostname=localhost
+DEBUG - 2015-04-06 23:21:50 --> username=root
+DEBUG - 2015-04-06 23:21:50 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:21:50 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:21:50 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:21:50 --> dbprefix=
+DEBUG - 2015-04-06 23:21:50 --> pconnect=1
+DEBUG - 2015-04-06 23:21:50 --> db_debug=1
+DEBUG - 2015-04-06 23:21:50 --> cache_on=
+DEBUG - 2015-04-06 23:21:50 --> cachedir=
+DEBUG - 2015-04-06 23:21:50 --> char_set=utf8
+DEBUG - 2015-04-06 23:21:50 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:21:50 --> swap_pre=
+DEBUG - 2015-04-06 23:21:50 --> autoinit=1
+DEBUG - 2015-04-06 23:21:50 --> stricton=
+DEBUG - 2015-04-06 23:21:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:50 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:50 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:50 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:50 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:50 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:50 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:50 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:51 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:21:51 --> Final output sent to browser
+DEBUG - 2015-04-06 23:21:51 --> Total execution time: 1.1341
+DEBUG - 2015-04-06 23:21:51 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:51 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:51 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:51 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:21:51 --> hostname=localhost
+DEBUG - 2015-04-06 23:21:51 --> username=root
+DEBUG - 2015-04-06 23:21:51 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:21:51 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:21:51 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:21:51 --> dbprefix=
+DEBUG - 2015-04-06 23:21:51 --> pconnect=1
+DEBUG - 2015-04-06 23:21:51 --> db_debug=1
+DEBUG - 2015-04-06 23:21:51 --> cache_on=
+DEBUG - 2015-04-06 23:21:51 --> cachedir=
+DEBUG - 2015-04-06 23:21:51 --> char_set=utf8
+DEBUG - 2015-04-06 23:21:51 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:21:51 --> swap_pre=
+DEBUG - 2015-04-06 23:21:51 --> autoinit=1
+DEBUG - 2015-04-06 23:21:51 --> stricton=
+DEBUG - 2015-04-06 23:21:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:21:52 --> Final output sent to browser
+DEBUG - 2015-04-06 23:21:52 --> Total execution time: 2.1831
+DEBUG - 2015-04-06 23:21:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:52 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:21:52 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:52 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:52 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:21:52 --> hostname=localhost
+DEBUG - 2015-04-06 23:21:52 --> username=root
+DEBUG - 2015-04-06 23:21:52 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:21:52 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:21:52 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:21:52 --> dbprefix=
+DEBUG - 2015-04-06 23:21:52 --> pconnect=1
+DEBUG - 2015-04-06 23:21:52 --> db_debug=1
+DEBUG - 2015-04-06 23:21:52 --> cache_on=
+DEBUG - 2015-04-06 23:21:52 --> cachedir=
+DEBUG - 2015-04-06 23:21:52 --> char_set=utf8
+DEBUG - 2015-04-06 23:21:52 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:21:52 --> swap_pre=
+DEBUG - 2015-04-06 23:21:52 --> autoinit=1
+DEBUG - 2015-04-06 23:21:52 --> stricton=
+DEBUG - 2015-04-06 23:21:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:21:53 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:21:53 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:21.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:21.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:21:53 --> Final output sent to browser
+DEBUG - 2015-04-06 23:21:53 --> Total execution time: 3.1552
+DEBUG - 2015-04-06 23:21:53 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:53 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:53 --> Model Class Initialized
+DEBUG - 2015-04-06 23:21:53 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:21:53 --> hostname=localhost
+DEBUG - 2015-04-06 23:21:53 --> username=root
+DEBUG - 2015-04-06 23:21:53 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:21:53 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:21:53 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:21:53 --> dbprefix=
+DEBUG - 2015-04-06 23:21:53 --> pconnect=1
+DEBUG - 2015-04-06 23:21:53 --> db_debug=1
+DEBUG - 2015-04-06 23:21:53 --> cache_on=
+DEBUG - 2015-04-06 23:21:53 --> cachedir=
+DEBUG - 2015-04-06 23:21:53 --> char_set=utf8
+DEBUG - 2015-04-06 23:21:53 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:21:53 --> swap_pre=
+DEBUG - 2015-04-06 23:21:53 --> autoinit=1
+DEBUG - 2015-04-06 23:21:53 --> stricton=
+DEBUG - 2015-04-06 23:21:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:21:54 --> Final output sent to browser
+DEBUG - 2015-04-06 23:21:54 --> Total execution time: 4.1312
+DEBUG - 2015-04-06 23:21:58 --> Config Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:21:58 --> URI Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Router Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Output Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Security Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Input Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:21:58 --> Language Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:21:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Session Class Initialized
+DEBUG - 2015-04-06 23:21:58 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:21:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:22:00 --> Session routines successfully run
+DEBUG - 2015-04-06 23:22:00 --> Model Class Initialized
+DEBUG - 2015-04-06 23:22:00 --> Model Class Initialized
+DEBUG - 2015-04-06 23:22:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:22:00 --> hostname=localhost
+DEBUG - 2015-04-06 23:22:00 --> username=root
+DEBUG - 2015-04-06 23:22:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:22:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:22:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:22:00 --> dbprefix=
+DEBUG - 2015-04-06 23:22:00 --> pconnect=1
+DEBUG - 2015-04-06 23:22:00 --> db_debug=1
+DEBUG - 2015-04-06 23:22:00 --> cache_on=
+DEBUG - 2015-04-06 23:22:00 --> cachedir=
+DEBUG - 2015-04-06 23:22:00 --> char_set=utf8
+DEBUG - 2015-04-06 23:22:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:22:00 --> swap_pre=
+DEBUG - 2015-04-06 23:22:00 --> autoinit=1
+DEBUG - 2015-04-06 23:22:00 --> stricton=
+DEBUG - 2015-04-06 23:22:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:22:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:22:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:22:01 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:22:01 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:22:01 --> Final output sent to browser
+DEBUG - 2015-04-06 23:22:01 --> Total execution time: 3.3822
+DEBUG - 2015-04-06 23:22:27 --> Config Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:22:27 --> URI Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Router Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Output Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Security Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Input Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:22:27 --> Language Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:22:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Session Class Initialized
+DEBUG - 2015-04-06 23:22:27 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:22:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:22:28 --> Session routines successfully run
+DEBUG - 2015-04-06 23:22:28 --> Model Class Initialized
+DEBUG - 2015-04-06 23:22:28 --> Model Class Initialized
+DEBUG - 2015-04-06 23:22:28 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:22:28 --> hostname=localhost
+DEBUG - 2015-04-06 23:22:28 --> username=root
+DEBUG - 2015-04-06 23:22:28 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:22:28 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:22:28 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:22:28 --> dbprefix=
+DEBUG - 2015-04-06 23:22:28 --> pconnect=1
+DEBUG - 2015-04-06 23:22:28 --> db_debug=1
+DEBUG - 2015-04-06 23:22:28 --> cache_on=
+DEBUG - 2015-04-06 23:22:28 --> cachedir=
+DEBUG - 2015-04-06 23:22:28 --> char_set=utf8
+DEBUG - 2015-04-06 23:22:28 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:22:28 --> swap_pre=
+DEBUG - 2015-04-06 23:22:28 --> autoinit=1
+DEBUG - 2015-04-06 23:22:28 --> stricton=
+DEBUG - 2015-04-06 23:22:28 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:22:29 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:22:29 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:22:29 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:22:30 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:22:30 --> Final output sent to browser
+DEBUG - 2015-04-06 23:22:30 --> Total execution time: 2.6422
+DEBUG - 2015-04-06 23:24:55 --> Config Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:24:55 --> URI Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Router Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Output Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Security Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Input Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:24:55 --> Language Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:24:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:24:55 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:24:55 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:24:55 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:24:55 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:24:55 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:24:55 --> Final output sent to browser
+DEBUG - 2015-04-06 23:24:55 --> Total execution time: 0.0470
+DEBUG - 2015-04-06 23:24:57 --> Config Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:24:57 --> URI Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Router Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Output Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Security Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Input Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:24:57 --> Language Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:24:57 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Model Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Model Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:24:57 --> hostname=localhost
+DEBUG - 2015-04-06 23:24:57 --> username=root
+DEBUG - 2015-04-06 23:24:57 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:24:57 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:24:57 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:24:57 --> dbprefix=
+DEBUG - 2015-04-06 23:24:57 --> pconnect=1
+DEBUG - 2015-04-06 23:24:57 --> db_debug=1
+DEBUG - 2015-04-06 23:24:57 --> cache_on=
+DEBUG - 2015-04-06 23:24:57 --> cachedir=
+DEBUG - 2015-04-06 23:24:57 --> char_set=utf8
+DEBUG - 2015-04-06 23:24:57 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:24:57 --> swap_pre=
+DEBUG - 2015-04-06 23:24:57 --> autoinit=1
+DEBUG - 2015-04-06 23:24:57 --> stricton=
+DEBUG - 2015-04-06 23:24:57 --> Config Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:24:57 --> URI Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Router Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Output Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Security Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Input Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:24:57 --> Language Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:24:57 --> Config Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:24:57 --> URI Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Router Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Output Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Security Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Input Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:24:57 --> Language Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Config Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:24:57 --> URI Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Router Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Output Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Security Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Input Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:24:57 --> Language Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:24:57 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:24:57 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:24:58 --> Final output sent to browser
+DEBUG - 2015-04-06 23:24:58 --> Total execution time: 1.1581
+DEBUG - 2015-04-06 23:24:58 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:24:58 --> Model Class Initialized
+DEBUG - 2015-04-06 23:24:58 --> Model Class Initialized
+DEBUG - 2015-04-06 23:24:58 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:24:58 --> hostname=localhost
+DEBUG - 2015-04-06 23:24:58 --> username=root
+DEBUG - 2015-04-06 23:24:58 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:24:58 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:24:58 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:24:58 --> dbprefix=
+DEBUG - 2015-04-06 23:24:58 --> pconnect=1
+DEBUG - 2015-04-06 23:24:58 --> db_debug=1
+DEBUG - 2015-04-06 23:24:58 --> cache_on=
+DEBUG - 2015-04-06 23:24:58 --> cachedir=
+DEBUG - 2015-04-06 23:24:58 --> char_set=utf8
+DEBUG - 2015-04-06 23:24:58 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:24:58 --> swap_pre=
+DEBUG - 2015-04-06 23:24:58 --> autoinit=1
+DEBUG - 2015-04-06 23:24:58 --> stricton=
+DEBUG - 2015-04-06 23:24:58 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:24:59 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:24:59 --> Final output sent to browser
+DEBUG - 2015-04-06 23:24:59 --> Total execution time: 2.1601
+DEBUG - 2015-04-06 23:24:59 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:24:59 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:24:59 --> Model Class Initialized
+DEBUG - 2015-04-06 23:24:59 --> Model Class Initialized
+DEBUG - 2015-04-06 23:24:59 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:24:59 --> hostname=localhost
+DEBUG - 2015-04-06 23:24:59 --> username=root
+DEBUG - 2015-04-06 23:24:59 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:24:59 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:24:59 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:24:59 --> dbprefix=
+DEBUG - 2015-04-06 23:24:59 --> pconnect=1
+DEBUG - 2015-04-06 23:24:59 --> db_debug=1
+DEBUG - 2015-04-06 23:24:59 --> cache_on=
+DEBUG - 2015-04-06 23:24:59 --> cachedir=
+DEBUG - 2015-04-06 23:24:59 --> char_set=utf8
+DEBUG - 2015-04-06 23:24:59 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:24:59 --> swap_pre=
+DEBUG - 2015-04-06 23:24:59 --> autoinit=1
+DEBUG - 2015-04-06 23:24:59 --> stricton=
+DEBUG - 2015-04-06 23:24:59 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:25:00 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:00 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:24.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:24.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:25:00 --> Final output sent to browser
+DEBUG - 2015-04-06 23:25:00 --> Total execution time: 3.2262
+DEBUG - 2015-04-06 23:25:00 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:25:00 --> Model Class Initialized
+DEBUG - 2015-04-06 23:25:00 --> Model Class Initialized
+DEBUG - 2015-04-06 23:25:00 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:25:00 --> hostname=localhost
+DEBUG - 2015-04-06 23:25:00 --> username=root
+DEBUG - 2015-04-06 23:25:00 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:25:00 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:25:00 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:25:00 --> dbprefix=
+DEBUG - 2015-04-06 23:25:00 --> pconnect=1
+DEBUG - 2015-04-06 23:25:00 --> db_debug=1
+DEBUG - 2015-04-06 23:25:00 --> cache_on=
+DEBUG - 2015-04-06 23:25:00 --> cachedir=
+DEBUG - 2015-04-06 23:25:00 --> char_set=utf8
+DEBUG - 2015-04-06 23:25:00 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:25:00 --> swap_pre=
+DEBUG - 2015-04-06 23:25:00 --> autoinit=1
+DEBUG - 2015-04-06 23:25:00 --> stricton=
+DEBUG - 2015-04-06 23:25:00 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:25:01 --> Final output sent to browser
+DEBUG - 2015-04-06 23:25:01 --> Total execution time: 4.2172
+DEBUG - 2015-04-06 23:25:16 --> Config Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:25:16 --> URI Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Router Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Output Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Security Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Input Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:25:16 --> Language Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:25:16 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Session Class Initialized
+DEBUG - 2015-04-06 23:25:16 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:25:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:25:17 --> Session routines successfully run
+DEBUG - 2015-04-06 23:25:17 --> Model Class Initialized
+DEBUG - 2015-04-06 23:25:17 --> Model Class Initialized
+DEBUG - 2015-04-06 23:25:17 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:25:17 --> hostname=localhost
+DEBUG - 2015-04-06 23:25:17 --> username=root
+DEBUG - 2015-04-06 23:25:17 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:25:17 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:25:17 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:25:17 --> dbprefix=
+DEBUG - 2015-04-06 23:25:17 --> pconnect=1
+DEBUG - 2015-04-06 23:25:17 --> db_debug=1
+DEBUG - 2015-04-06 23:25:17 --> cache_on=
+DEBUG - 2015-04-06 23:25:17 --> cachedir=
+DEBUG - 2015-04-06 23:25:17 --> char_set=utf8
+DEBUG - 2015-04-06 23:25:17 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:25:17 --> swap_pre=
+DEBUG - 2015-04-06 23:25:17 --> autoinit=1
+DEBUG - 2015-04-06 23:25:17 --> stricton=
+DEBUG - 2015-04-06 23:25:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:25:18 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:18 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:18 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:19 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:25:19 --> Final output sent to browser
+DEBUG - 2015-04-06 23:25:19 --> Total execution time: 2.7742
+DEBUG - 2015-04-06 23:25:34 --> Config Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:25:34 --> URI Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Router Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Output Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Security Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Input Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:25:34 --> Language Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:25:34 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Session Class Initialized
+DEBUG - 2015-04-06 23:25:34 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:25:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:25:36 --> Session routines successfully run
+DEBUG - 2015-04-06 23:25:36 --> Model Class Initialized
+DEBUG - 2015-04-06 23:25:36 --> Model Class Initialized
+DEBUG - 2015-04-06 23:25:36 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:25:36 --> hostname=localhost
+DEBUG - 2015-04-06 23:25:36 --> username=root
+DEBUG - 2015-04-06 23:25:36 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:25:36 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:25:36 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:25:36 --> dbprefix=
+DEBUG - 2015-04-06 23:25:36 --> pconnect=1
+DEBUG - 2015-04-06 23:25:36 --> db_debug=1
+DEBUG - 2015-04-06 23:25:36 --> cache_on=
+DEBUG - 2015-04-06 23:25:36 --> cachedir=
+DEBUG - 2015-04-06 23:25:36 --> char_set=utf8
+DEBUG - 2015-04-06 23:25:36 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:25:36 --> swap_pre=
+DEBUG - 2015-04-06 23:25:36 --> autoinit=1
+DEBUG - 2015-04-06 23:25:36 --> stricton=
+DEBUG - 2015-04-06 23:25:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:25:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:25:37 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:25:37 --> Final output sent to browser
+DEBUG - 2015-04-06 23:25:37 --> Total execution time: 3.0412
+DEBUG - 2015-04-06 23:26:05 --> Config Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:26:05 --> URI Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Router Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Output Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Security Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Input Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:26:05 --> Language Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:26:05 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:26:05 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:26:05 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:26:05 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:26:05 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:26:05 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:26:05 --> Final output sent to browser
+DEBUG - 2015-04-06 23:26:05 --> Total execution time: 0.0380
+DEBUG - 2015-04-06 23:26:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:26:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:26:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:26:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:26:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:26:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:26:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:26:06 --> hostname=localhost
+DEBUG - 2015-04-06 23:26:06 --> username=root
+DEBUG - 2015-04-06 23:26:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:26:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:26:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:26:06 --> dbprefix=
+DEBUG - 2015-04-06 23:26:06 --> pconnect=1
+DEBUG - 2015-04-06 23:26:06 --> db_debug=1
+DEBUG - 2015-04-06 23:26:06 --> cache_on=
+DEBUG - 2015-04-06 23:26:06 --> cachedir=
+DEBUG - 2015-04-06 23:26:06 --> char_set=utf8
+DEBUG - 2015-04-06 23:26:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:26:06 --> swap_pre=
+DEBUG - 2015-04-06 23:26:06 --> autoinit=1
+DEBUG - 2015-04-06 23:26:06 --> stricton=
+DEBUG - 2015-04-06 23:26:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:26:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:26:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:26:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:26:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:26:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:26:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:26:07 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:26:07 --> Final output sent to browser
+DEBUG - 2015-04-06 23:26:07 --> Total execution time: 1.1251
+DEBUG - 2015-04-06 23:26:07 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:26:07 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:07 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:07 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:26:07 --> hostname=localhost
+DEBUG - 2015-04-06 23:26:07 --> username=root
+DEBUG - 2015-04-06 23:26:07 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:26:07 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:26:07 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:26:07 --> dbprefix=
+DEBUG - 2015-04-06 23:26:07 --> pconnect=1
+DEBUG - 2015-04-06 23:26:07 --> db_debug=1
+DEBUG - 2015-04-06 23:26:07 --> cache_on=
+DEBUG - 2015-04-06 23:26:07 --> cachedir=
+DEBUG - 2015-04-06 23:26:07 --> char_set=utf8
+DEBUG - 2015-04-06 23:26:07 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:26:07 --> swap_pre=
+DEBUG - 2015-04-06 23:26:07 --> autoinit=1
+DEBUG - 2015-04-06 23:26:07 --> stricton=
+DEBUG - 2015-04-06 23:26:07 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:26:08 --> Final output sent to browser
+DEBUG - 2015-04-06 23:26:08 --> Total execution time: 2.1681
+DEBUG - 2015-04-06 23:26:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:26:08 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:26:08 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:08 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:26:08 --> hostname=localhost
+DEBUG - 2015-04-06 23:26:08 --> username=root
+DEBUG - 2015-04-06 23:26:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:26:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:26:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:26:08 --> dbprefix=
+DEBUG - 2015-04-06 23:26:08 --> pconnect=1
+DEBUG - 2015-04-06 23:26:08 --> db_debug=1
+DEBUG - 2015-04-06 23:26:08 --> cache_on=
+DEBUG - 2015-04-06 23:26:08 --> cachedir=
+DEBUG - 2015-04-06 23:26:08 --> char_set=utf8
+DEBUG - 2015-04-06 23:26:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:26:08 --> swap_pre=
+DEBUG - 2015-04-06 23:26:08 --> autoinit=1
+DEBUG - 2015-04-06 23:26:08 --> stricton=
+DEBUG - 2015-04-06 23:26:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:26:09 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:26:09 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:26.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:26.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:26:09 --> Final output sent to browser
+DEBUG - 2015-04-06 23:26:09 --> Total execution time: 3.1882
+DEBUG - 2015-04-06 23:26:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:26:09 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:09 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:26:09 --> hostname=localhost
+DEBUG - 2015-04-06 23:26:10 --> username=root
+DEBUG - 2015-04-06 23:26:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:26:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:26:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:26:10 --> dbprefix=
+DEBUG - 2015-04-06 23:26:10 --> pconnect=1
+DEBUG - 2015-04-06 23:26:10 --> db_debug=1
+DEBUG - 2015-04-06 23:26:10 --> cache_on=
+DEBUG - 2015-04-06 23:26:10 --> cachedir=
+DEBUG - 2015-04-06 23:26:10 --> char_set=utf8
+DEBUG - 2015-04-06 23:26:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:26:10 --> swap_pre=
+DEBUG - 2015-04-06 23:26:10 --> autoinit=1
+DEBUG - 2015-04-06 23:26:10 --> stricton=
+DEBUG - 2015-04-06 23:26:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:26:11 --> Final output sent to browser
+DEBUG - 2015-04-06 23:26:11 --> Total execution time: 4.1932
+DEBUG - 2015-04-06 23:26:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:26:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:26:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:26:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Session Class Initialized
+DEBUG - 2015-04-06 23:26:29 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:26:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:26:30 --> Session routines successfully run
+DEBUG - 2015-04-06 23:26:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:26:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:26:30 --> hostname=localhost
+DEBUG - 2015-04-06 23:26:30 --> username=root
+DEBUG - 2015-04-06 23:26:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:26:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:26:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:26:30 --> dbprefix=
+DEBUG - 2015-04-06 23:26:30 --> pconnect=1
+DEBUG - 2015-04-06 23:26:30 --> db_debug=1
+DEBUG - 2015-04-06 23:26:30 --> cache_on=
+DEBUG - 2015-04-06 23:26:30 --> cachedir=
+DEBUG - 2015-04-06 23:26:30 --> char_set=utf8
+DEBUG - 2015-04-06 23:26:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:26:30 --> swap_pre=
+DEBUG - 2015-04-06 23:26:30 --> autoinit=1
+DEBUG - 2015-04-06 23:26:30 --> stricton=
+DEBUG - 2015-04-06 23:26:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:26:31 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:26:31 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:26:31 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:26:32 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:26:32 --> Final output sent to browser
+DEBUG - 2015-04-06 23:26:32 --> Total execution time: 2.9172
+DEBUG - 2015-04-06 23:27:28 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:28 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:28 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:28 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:27:28 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:27:28 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:27:28 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:27:28 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:27:28 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:28 --> Total execution time: 0.0440
+DEBUG - 2015-04-06 23:27:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:29 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:27:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:27:29 --> hostname=localhost
+DEBUG - 2015-04-06 23:27:29 --> username=root
+DEBUG - 2015-04-06 23:27:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:27:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:27:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:27:29 --> dbprefix=
+DEBUG - 2015-04-06 23:27:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:29 --> pconnect=1
+DEBUG - 2015-04-06 23:27:29 --> db_debug=1
+DEBUG - 2015-04-06 23:27:29 --> cache_on=
+DEBUG - 2015-04-06 23:27:29 --> cachedir=
+DEBUG - 2015-04-06 23:27:29 --> char_set=utf8
+DEBUG - 2015-04-06 23:27:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:27:29 --> swap_pre=
+DEBUG - 2015-04-06 23:27:29 --> autoinit=1
+DEBUG - 2015-04-06 23:27:29 --> stricton=
+DEBUG - 2015-04-06 23:27:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:27:30 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:27.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:27.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:27:30 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:30 --> Total execution time: 1.1981
+DEBUG - 2015-04-06 23:27:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:27:30 --> hostname=localhost
+DEBUG - 2015-04-06 23:27:30 --> username=root
+DEBUG - 2015-04-06 23:27:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:27:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:27:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:27:30 --> dbprefix=
+DEBUG - 2015-04-06 23:27:30 --> pconnect=1
+DEBUG - 2015-04-06 23:27:30 --> db_debug=1
+DEBUG - 2015-04-06 23:27:30 --> cache_on=
+DEBUG - 2015-04-06 23:27:30 --> cachedir=
+DEBUG - 2015-04-06 23:27:30 --> char_set=utf8
+DEBUG - 2015-04-06 23:27:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:27:30 --> swap_pre=
+DEBUG - 2015-04-06 23:27:30 --> autoinit=1
+DEBUG - 2015-04-06 23:27:30 --> stricton=
+DEBUG - 2015-04-06 23:27:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:32 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:27:32 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:32 --> Total execution time: 2.2261
+DEBUG - 2015-04-06 23:27:32 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:32 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:32 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:32 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:27:32 --> hostname=localhost
+DEBUG - 2015-04-06 23:27:32 --> username=root
+DEBUG - 2015-04-06 23:27:32 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:27:32 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:27:32 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:27:32 --> dbprefix=
+DEBUG - 2015-04-06 23:27:32 --> pconnect=1
+DEBUG - 2015-04-06 23:27:32 --> db_debug=1
+DEBUG - 2015-04-06 23:27:32 --> cache_on=
+DEBUG - 2015-04-06 23:27:32 --> cachedir=
+DEBUG - 2015-04-06 23:27:32 --> char_set=utf8
+DEBUG - 2015-04-06 23:27:32 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:27:32 --> swap_pre=
+DEBUG - 2015-04-06 23:27:32 --> autoinit=1
+DEBUG - 2015-04-06 23:27:32 --> stricton=
+DEBUG - 2015-04-06 23:27:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:33 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:33 --> Total execution time: 3.2382
+DEBUG - 2015-04-06 23:27:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:33 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:33 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:33 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:27:33 --> hostname=localhost
+DEBUG - 2015-04-06 23:27:33 --> username=root
+DEBUG - 2015-04-06 23:27:33 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:27:33 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:27:33 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:27:33 --> dbprefix=
+DEBUG - 2015-04-06 23:27:33 --> pconnect=1
+DEBUG - 2015-04-06 23:27:33 --> db_debug=1
+DEBUG - 2015-04-06 23:27:33 --> cache_on=
+DEBUG - 2015-04-06 23:27:33 --> cachedir=
+DEBUG - 2015-04-06 23:27:33 --> char_set=utf8
+DEBUG - 2015-04-06 23:27:33 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:27:33 --> swap_pre=
+DEBUG - 2015-04-06 23:27:33 --> autoinit=1
+DEBUG - 2015-04-06 23:27:33 --> stricton=
+DEBUG - 2015-04-06 23:27:33 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:34 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:34 --> Total execution time: 4.2302
+DEBUG - 2015-04-06 23:27:37 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:37 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:37 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Session Class Initialized
+DEBUG - 2015-04-06 23:27:37 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:27:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:39 --> Session routines successfully run
+DEBUG - 2015-04-06 23:27:39 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:39 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:39 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:27:39 --> hostname=localhost
+DEBUG - 2015-04-06 23:27:39 --> username=root
+DEBUG - 2015-04-06 23:27:39 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:27:39 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:27:39 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:27:39 --> dbprefix=
+DEBUG - 2015-04-06 23:27:39 --> pconnect=1
+DEBUG - 2015-04-06 23:27:39 --> db_debug=1
+DEBUG - 2015-04-06 23:27:39 --> cache_on=
+DEBUG - 2015-04-06 23:27:39 --> cachedir=
+DEBUG - 2015-04-06 23:27:39 --> char_set=utf8
+DEBUG - 2015-04-06 23:27:39 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:27:39 --> swap_pre=
+DEBUG - 2015-04-06 23:27:39 --> autoinit=1
+DEBUG - 2015-04-06 23:27:39 --> stricton=
+DEBUG - 2015-04-06 23:27:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:40 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:27:40 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:27:40 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:27:40 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:27:40 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:40 --> Total execution time: 2.8602
+DEBUG - 2015-04-06 23:27:41 --> Config Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:27:41 --> URI Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Router Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Output Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Security Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Input Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:27:41 --> Language Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:27:41 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Session Class Initialized
+DEBUG - 2015-04-06 23:27:41 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:27:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:43 --> Session routines successfully run
+DEBUG - 2015-04-06 23:27:43 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:43 --> Model Class Initialized
+DEBUG - 2015-04-06 23:27:43 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:27:43 --> hostname=localhost
+DEBUG - 2015-04-06 23:27:43 --> username=root
+DEBUG - 2015-04-06 23:27:43 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:27:43 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:27:43 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:27:43 --> dbprefix=
+DEBUG - 2015-04-06 23:27:43 --> pconnect=1
+DEBUG - 2015-04-06 23:27:43 --> db_debug=1
+DEBUG - 2015-04-06 23:27:43 --> cache_on=
+DEBUG - 2015-04-06 23:27:43 --> cachedir=
+DEBUG - 2015-04-06 23:27:43 --> char_set=utf8
+DEBUG - 2015-04-06 23:27:43 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:27:43 --> swap_pre=
+DEBUG - 2015-04-06 23:27:43 --> autoinit=1
+DEBUG - 2015-04-06 23:27:43 --> stricton=
+DEBUG - 2015-04-06 23:27:43 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:27:44 --> Final output sent to browser
+DEBUG - 2015-04-06 23:27:44 --> Total execution time: 3.0482
+DEBUG - 2015-04-06 23:41:22 --> Config Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:41:22 --> URI Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Router Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Output Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Security Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Input Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:41:22 --> Language Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:41:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Session Class Initialized
+DEBUG - 2015-04-06 23:41:22 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:41:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:41:24 --> Session routines successfully run
+DEBUG - 2015-04-06 23:41:24 --> Model Class Initialized
+DEBUG - 2015-04-06 23:41:24 --> Model Class Initialized
+DEBUG - 2015-04-06 23:41:24 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:41:24 --> hostname=localhost
+DEBUG - 2015-04-06 23:41:24 --> username=root
+DEBUG - 2015-04-06 23:41:24 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:41:24 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:41:24 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:41:24 --> dbprefix=
+DEBUG - 2015-04-06 23:41:24 --> pconnect=1
+DEBUG - 2015-04-06 23:41:24 --> db_debug=1
+DEBUG - 2015-04-06 23:41:24 --> cache_on=
+DEBUG - 2015-04-06 23:41:24 --> cachedir=
+DEBUG - 2015-04-06 23:41:24 --> char_set=utf8
+DEBUG - 2015-04-06 23:41:24 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:41:24 --> swap_pre=
+DEBUG - 2015-04-06 23:41:24 --> autoinit=1
+DEBUG - 2015-04-06 23:41:24 --> stricton=
+DEBUG - 2015-04-06 23:41:24 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:41:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:41:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:41:25 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:41:25 --> Final output sent to browser
+DEBUG - 2015-04-06 23:41:25 --> Total execution time: 3.1672
+DEBUG - 2015-04-06 23:41:25 --> Config Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:41:25 --> URI Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Router Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Output Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Security Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Input Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:41:25 --> Language Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:41:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Session Class Initialized
+DEBUG - 2015-04-06 23:41:25 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:41:25 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:41:27 --> Session routines successfully run
+DEBUG - 2015-04-06 23:41:27 --> Model Class Initialized
+DEBUG - 2015-04-06 23:41:27 --> Model Class Initialized
+DEBUG - 2015-04-06 23:41:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:41:27 --> hostname=localhost
+DEBUG - 2015-04-06 23:41:27 --> username=root
+DEBUG - 2015-04-06 23:41:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:41:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:41:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:41:27 --> dbprefix=
+DEBUG - 2015-04-06 23:41:27 --> pconnect=1
+DEBUG - 2015-04-06 23:41:27 --> db_debug=1
+DEBUG - 2015-04-06 23:41:27 --> cache_on=
+DEBUG - 2015-04-06 23:41:27 --> cachedir=
+DEBUG - 2015-04-06 23:41:27 --> char_set=utf8
+DEBUG - 2015-04-06 23:41:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:41:27 --> swap_pre=
+DEBUG - 2015-04-06 23:41:27 --> autoinit=1
+DEBUG - 2015-04-06 23:41:27 --> stricton=
+DEBUG - 2015-04-06 23:41:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:41:28 --> Final output sent to browser
+DEBUG - 2015-04-06 23:41:28 --> Total execution time: 2.5701
+DEBUG - 2015-04-06 23:52:22 --> Config Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:52:22 --> URI Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Router Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Output Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Security Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Input Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:52:22 --> Language Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:52:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Session Class Initialized
+DEBUG - 2015-04-06 23:52:22 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:52:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:52:24 --> Session routines successfully run
+DEBUG - 2015-04-06 23:52:24 --> Model Class Initialized
+DEBUG - 2015-04-06 23:52:24 --> Model Class Initialized
+DEBUG - 2015-04-06 23:52:24 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:52:24 --> hostname=localhost
+DEBUG - 2015-04-06 23:52:24 --> username=root
+DEBUG - 2015-04-06 23:52:24 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:52:24 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:52:24 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:52:24 --> dbprefix=
+DEBUG - 2015-04-06 23:52:24 --> pconnect=1
+DEBUG - 2015-04-06 23:52:24 --> db_debug=1
+DEBUG - 2015-04-06 23:52:24 --> cache_on=
+DEBUG - 2015-04-06 23:52:24 --> cachedir=
+DEBUG - 2015-04-06 23:52:24 --> char_set=utf8
+DEBUG - 2015-04-06 23:52:24 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:52:24 --> swap_pre=
+DEBUG - 2015-04-06 23:52:24 --> autoinit=1
+DEBUG - 2015-04-06 23:52:24 --> stricton=
+DEBUG - 2015-04-06 23:52:24 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:52:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:52:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:52:25 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:52:25 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:52:25 --> Final output sent to browser
+DEBUG - 2015-04-06 23:52:25 --> Total execution time: 3.2552
+DEBUG - 2015-04-06 23:52:26 --> Config Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:52:26 --> URI Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Router Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Output Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Security Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Input Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:52:26 --> Language Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:52:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Session Class Initialized
+DEBUG - 2015-04-06 23:52:26 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:52:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:52:27 --> Session routines successfully run
+DEBUG - 2015-04-06 23:52:27 --> Model Class Initialized
+DEBUG - 2015-04-06 23:52:27 --> Model Class Initialized
+DEBUG - 2015-04-06 23:52:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:52:27 --> hostname=localhost
+DEBUG - 2015-04-06 23:52:27 --> username=root
+DEBUG - 2015-04-06 23:52:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:52:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:52:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:52:27 --> dbprefix=
+DEBUG - 2015-04-06 23:52:27 --> pconnect=1
+DEBUG - 2015-04-06 23:52:27 --> db_debug=1
+DEBUG - 2015-04-06 23:52:27 --> cache_on=
+DEBUG - 2015-04-06 23:52:27 --> cachedir=
+DEBUG - 2015-04-06 23:52:27 --> char_set=utf8
+DEBUG - 2015-04-06 23:52:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:52:27 --> swap_pre=
+DEBUG - 2015-04-06 23:52:27 --> autoinit=1
+DEBUG - 2015-04-06 23:52:27 --> stricton=
+DEBUG - 2015-04-06 23:52:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:52:28 --> Final output sent to browser
+DEBUG - 2015-04-06 23:52:28 --> Total execution time: 2.7392
+DEBUG - 2015-04-06 23:54:25 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:25 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:25 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:25 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:25 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:54:25 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:54:25 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:54:25 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:54:25 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:54:25 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:25 --> Total execution time: 0.0430
+DEBUG - 2015-04-06 23:54:26 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:26 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:26 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:26 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:54:26 --> hostname=localhost
+DEBUG - 2015-04-06 23:54:26 --> username=root
+DEBUG - 2015-04-06 23:54:26 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:54:26 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:54:26 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:54:26 --> dbprefix=
+DEBUG - 2015-04-06 23:54:26 --> pconnect=1
+DEBUG - 2015-04-06 23:54:26 --> db_debug=1
+DEBUG - 2015-04-06 23:54:26 --> cache_on=
+DEBUG - 2015-04-06 23:54:26 --> cachedir=
+DEBUG - 2015-04-06 23:54:26 --> char_set=utf8
+DEBUG - 2015-04-06 23:54:26 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:54:26 --> swap_pre=
+DEBUG - 2015-04-06 23:54:26 --> autoinit=1
+DEBUG - 2015-04-06 23:54:26 --> stricton=
+DEBUG - 2015-04-06 23:54:26 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:26 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:26 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:26 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:26 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:26 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:26 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:26 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:26 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:27 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:27 --> Total execution time: 1.1711
+DEBUG - 2015-04-06 23:54:27 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:27 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:27 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:27 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:54:27 --> hostname=localhost
+DEBUG - 2015-04-06 23:54:27 --> username=root
+DEBUG - 2015-04-06 23:54:27 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:54:27 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:54:27 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:54:27 --> dbprefix=
+DEBUG - 2015-04-06 23:54:27 --> pconnect=1
+DEBUG - 2015-04-06 23:54:27 --> db_debug=1
+DEBUG - 2015-04-06 23:54:27 --> cache_on=
+DEBUG - 2015-04-06 23:54:27 --> cachedir=
+DEBUG - 2015-04-06 23:54:27 --> char_set=utf8
+DEBUG - 2015-04-06 23:54:27 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:54:27 --> swap_pre=
+DEBUG - 2015-04-06 23:54:27 --> autoinit=1
+DEBUG - 2015-04-06 23:54:27 --> stricton=
+DEBUG - 2015-04-06 23:54:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:28 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:54:29 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:29 --> Total execution time: 2.6752
+DEBUG - 2015-04-06 23:54:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:29 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:54:29 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:29 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:54:29 --> hostname=localhost
+DEBUG - 2015-04-06 23:54:29 --> username=root
+DEBUG - 2015-04-06 23:54:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:54:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:54:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:54:29 --> dbprefix=
+DEBUG - 2015-04-06 23:54:29 --> pconnect=1
+DEBUG - 2015-04-06 23:54:29 --> db_debug=1
+DEBUG - 2015-04-06 23:54:29 --> cache_on=
+DEBUG - 2015-04-06 23:54:29 --> cachedir=
+DEBUG - 2015-04-06 23:54:29 --> char_set=utf8
+DEBUG - 2015-04-06 23:54:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:54:29 --> swap_pre=
+DEBUG - 2015-04-06 23:54:29 --> autoinit=1
+DEBUG - 2015-04-06 23:54:29 --> stricton=
+DEBUG - 2015-04-06 23:54:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:30 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:54:30 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:54.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:54.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:54:30 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:30 --> Total execution time: 3.7682
+DEBUG - 2015-04-06 23:54:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:54:30 --> hostname=localhost
+DEBUG - 2015-04-06 23:54:30 --> username=root
+DEBUG - 2015-04-06 23:54:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:54:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:54:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:54:30 --> dbprefix=
+DEBUG - 2015-04-06 23:54:30 --> pconnect=1
+DEBUG - 2015-04-06 23:54:30 --> db_debug=1
+DEBUG - 2015-04-06 23:54:30 --> cache_on=
+DEBUG - 2015-04-06 23:54:30 --> cachedir=
+DEBUG - 2015-04-06 23:54:30 --> char_set=utf8
+DEBUG - 2015-04-06 23:54:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:54:30 --> swap_pre=
+DEBUG - 2015-04-06 23:54:30 --> autoinit=1
+DEBUG - 2015-04-06 23:54:30 --> stricton=
+DEBUG - 2015-04-06 23:54:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:31 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:31 --> Total execution time: 4.8413
+DEBUG - 2015-04-06 23:54:39 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:39 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:39 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:39 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Session Class Initialized
+DEBUG - 2015-04-06 23:54:39 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:54:39 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:40 --> Session garbage collection performed.
+DEBUG - 2015-04-06 23:54:40 --> Session routines successfully run
+DEBUG - 2015-04-06 23:54:40 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:40 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:40 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:54:40 --> hostname=localhost
+DEBUG - 2015-04-06 23:54:40 --> username=root
+DEBUG - 2015-04-06 23:54:40 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:54:40 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:54:40 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:54:40 --> dbprefix=
+DEBUG - 2015-04-06 23:54:40 --> pconnect=1
+DEBUG - 2015-04-06 23:54:40 --> db_debug=1
+DEBUG - 2015-04-06 23:54:40 --> cache_on=
+DEBUG - 2015-04-06 23:54:40 --> cachedir=
+DEBUG - 2015-04-06 23:54:40 --> char_set=utf8
+DEBUG - 2015-04-06 23:54:40 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:54:40 --> swap_pre=
+DEBUG - 2015-04-06 23:54:40 --> autoinit=1
+DEBUG - 2015-04-06 23:54:40 --> stricton=
+DEBUG - 2015-04-06 23:54:40 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:54:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:54:41 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:54:42 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:54:42 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:42 --> Total execution time: 2.7842
+DEBUG - 2015-04-06 23:54:42 --> Config Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:54:42 --> URI Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Router Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Output Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Security Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Input Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:54:42 --> Language Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:54:42 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Session Class Initialized
+DEBUG - 2015-04-06 23:54:42 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:54:42 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:44 --> Session routines successfully run
+DEBUG - 2015-04-06 23:54:44 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:44 --> Model Class Initialized
+DEBUG - 2015-04-06 23:54:44 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:54:44 --> hostname=localhost
+DEBUG - 2015-04-06 23:54:44 --> username=root
+DEBUG - 2015-04-06 23:54:44 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:54:44 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:54:44 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:54:44 --> dbprefix=
+DEBUG - 2015-04-06 23:54:44 --> pconnect=1
+DEBUG - 2015-04-06 23:54:44 --> db_debug=1
+DEBUG - 2015-04-06 23:54:44 --> cache_on=
+DEBUG - 2015-04-06 23:54:44 --> cachedir=
+DEBUG - 2015-04-06 23:54:44 --> char_set=utf8
+DEBUG - 2015-04-06 23:54:44 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:54:44 --> swap_pre=
+DEBUG - 2015-04-06 23:54:44 --> autoinit=1
+DEBUG - 2015-04-06 23:54:44 --> stricton=
+DEBUG - 2015-04-06 23:54:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:54:45 --> Final output sent to browser
+DEBUG - 2015-04-06 23:54:45 --> Total execution time: 2.8832
+DEBUG - 2015-04-06 23:56:19 --> Config Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:56:19 --> URI Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Router Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Output Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Security Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Input Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:56:19 --> Language Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:56:19 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:56:19 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:56:19 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:56:19 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:56:19 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:56:19 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:56:19 --> Final output sent to browser
+DEBUG - 2015-04-06 23:56:19 --> Total execution time: 0.0410
+DEBUG - 2015-04-06 23:56:20 --> Config Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:56:20 --> URI Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Router Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Output Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Security Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Input Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:56:20 --> Language Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:56:20 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Config Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:56:20 --> URI Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Router Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Output Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Security Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Config Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Input Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:56:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:56:20 --> Language Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> URI Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Router Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Output Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Security Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Input Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:56:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:56:20 --> Language Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:56:20 --> Config Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:56:20 --> URI Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Router Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:56:20 --> hostname=localhost
+DEBUG - 2015-04-06 23:56:20 --> username=root
+DEBUG - 2015-04-06 23:56:20 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:56:20 --> Output Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Security Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Input Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:56:20 --> Language Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:56:20 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:56:20 --> dbprefix=
+DEBUG - 2015-04-06 23:56:20 --> pconnect=1
+DEBUG - 2015-04-06 23:56:20 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:56:20 --> db_debug=1
+DEBUG - 2015-04-06 23:56:20 --> cache_on=
+DEBUG - 2015-04-06 23:56:20 --> cachedir=
+DEBUG - 2015-04-06 23:56:20 --> char_set=utf8
+DEBUG - 2015-04-06 23:56:20 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:56:20 --> swap_pre=
+DEBUG - 2015-04-06 23:56:20 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:56:20 --> autoinit=1
+DEBUG - 2015-04-06 23:56:20 --> stricton=
+DEBUG - 2015-04-06 23:56:20 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:56:21 --> Final output sent to browser
+DEBUG - 2015-04-06 23:56:21 --> Total execution time: 1.1201
+DEBUG - 2015-04-06 23:56:21 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:56:21 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:21 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:21 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:56:21 --> hostname=localhost
+DEBUG - 2015-04-06 23:56:21 --> username=root
+DEBUG - 2015-04-06 23:56:21 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:56:21 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:56:21 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:56:21 --> dbprefix=
+DEBUG - 2015-04-06 23:56:21 --> pconnect=1
+DEBUG - 2015-04-06 23:56:21 --> db_debug=1
+DEBUG - 2015-04-06 23:56:21 --> cache_on=
+DEBUG - 2015-04-06 23:56:21 --> cachedir=
+DEBUG - 2015-04-06 23:56:21 --> char_set=utf8
+DEBUG - 2015-04-06 23:56:21 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:56:21 --> swap_pre=
+DEBUG - 2015-04-06 23:56:21 --> autoinit=1
+DEBUG - 2015-04-06 23:56:21 --> stricton=
+DEBUG - 2015-04-06 23:56:21 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:56:22 --> Final output sent to browser
+DEBUG - 2015-04-06 23:56:22 --> Total execution time: 2.1431
+DEBUG - 2015-04-06 23:56:22 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:56:22 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:22 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:22 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:56:22 --> hostname=localhost
+DEBUG - 2015-04-06 23:56:22 --> username=root
+DEBUG - 2015-04-06 23:56:22 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:56:22 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:56:22 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:56:22 --> dbprefix=
+DEBUG - 2015-04-06 23:56:22 --> pconnect=1
+DEBUG - 2015-04-06 23:56:22 --> db_debug=1
+DEBUG - 2015-04-06 23:56:22 --> cache_on=
+DEBUG - 2015-04-06 23:56:22 --> cachedir=
+DEBUG - 2015-04-06 23:56:22 --> char_set=utf8
+DEBUG - 2015-04-06 23:56:22 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:56:22 --> swap_pre=
+DEBUG - 2015-04-06 23:56:22 --> autoinit=1
+DEBUG - 2015-04-06 23:56:22 --> stricton=
+DEBUG - 2015-04-06 23:56:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:56:23 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:56:23 --> Final output sent to browser
+DEBUG - 2015-04-06 23:56:23 --> Total execution time: 3.1742
+DEBUG - 2015-04-06 23:56:23 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:56:23 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:56:23 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:23 --> Model Class Initialized
+DEBUG - 2015-04-06 23:56:23 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:56:23 --> hostname=localhost
+DEBUG - 2015-04-06 23:56:23 --> username=root
+DEBUG - 2015-04-06 23:56:23 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:56:23 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:56:23 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:56:23 --> dbprefix=
+DEBUG - 2015-04-06 23:56:23 --> pconnect=1
+DEBUG - 2015-04-06 23:56:23 --> db_debug=1
+DEBUG - 2015-04-06 23:56:23 --> cache_on=
+DEBUG - 2015-04-06 23:56:23 --> cachedir=
+DEBUG - 2015-04-06 23:56:23 --> char_set=utf8
+DEBUG - 2015-04-06 23:56:23 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:56:23 --> swap_pre=
+DEBUG - 2015-04-06 23:56:23 --> autoinit=1
+DEBUG - 2015-04-06 23:56:23 --> stricton=
+DEBUG - 2015-04-06 23:56:23 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:56:24 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:56:24 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:56.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:56.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:56:24 --> Final output sent to browser
+DEBUG - 2015-04-06 23:56:24 --> Total execution time: 4.2122
+DEBUG - 2015-04-06 23:57:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:57:06 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:57:06 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:57:06 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:57:06 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:57:06 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:06 --> Total execution time: 0.0460
+DEBUG - 2015-04-06 23:57:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:57:06 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:06 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:06 --> username=root
+DEBUG - 2015-04-06 23:57:06 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:06 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:06 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:06 --> dbprefix=
+DEBUG - 2015-04-06 23:57:06 --> pconnect=1
+DEBUG - 2015-04-06 23:57:06 --> db_debug=1
+DEBUG - 2015-04-06 23:57:06 --> cache_on=
+DEBUG - 2015-04-06 23:57:06 --> cachedir=
+DEBUG - 2015-04-06 23:57:06 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:06 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:06 --> swap_pre=
+DEBUG - 2015-04-06 23:57:06 --> autoinit=1
+DEBUG - 2015-04-06 23:57:06 --> stricton=
+DEBUG - 2015-04-06 23:57:06 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:06 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:06 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:07 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:07 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:07 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:07 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:07 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:07 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:08 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:08 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:57.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:57.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:57:08 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:08 --> Total execution time: 1.1191
+DEBUG - 2015-04-06 23:57:08 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:08 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:08 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:08 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:08 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:08 --> username=root
+DEBUG - 2015-04-06 23:57:08 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:08 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:08 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:08 --> dbprefix=
+DEBUG - 2015-04-06 23:57:08 --> pconnect=1
+DEBUG - 2015-04-06 23:57:08 --> db_debug=1
+DEBUG - 2015-04-06 23:57:08 --> cache_on=
+DEBUG - 2015-04-06 23:57:08 --> cachedir=
+DEBUG - 2015-04-06 23:57:08 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:08 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:08 --> swap_pre=
+DEBUG - 2015-04-06 23:57:08 --> autoinit=1
+DEBUG - 2015-04-06 23:57:08 --> stricton=
+DEBUG - 2015-04-06 23:57:08 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:09 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:57:09 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:09 --> Total execution time: 2.1341
+DEBUG - 2015-04-06 23:57:09 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:09 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:09 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:09 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:09 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:09 --> username=root
+DEBUG - 2015-04-06 23:57:09 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:09 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:09 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:09 --> dbprefix=
+DEBUG - 2015-04-06 23:57:09 --> pconnect=1
+DEBUG - 2015-04-06 23:57:09 --> db_debug=1
+DEBUG - 2015-04-06 23:57:09 --> cache_on=
+DEBUG - 2015-04-06 23:57:09 --> cachedir=
+DEBUG - 2015-04-06 23:57:09 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:09 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:09 --> swap_pre=
+DEBUG - 2015-04-06 23:57:09 --> autoinit=1
+DEBUG - 2015-04-06 23:57:09 --> stricton=
+DEBUG - 2015-04-06 23:57:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:10 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:10 --> Total execution time: 3.1752
+DEBUG - 2015-04-06 23:57:10 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:10 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:10 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:10 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:10 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:10 --> username=root
+DEBUG - 2015-04-06 23:57:10 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:10 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:10 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:10 --> dbprefix=
+DEBUG - 2015-04-06 23:57:10 --> pconnect=1
+DEBUG - 2015-04-06 23:57:10 --> db_debug=1
+DEBUG - 2015-04-06 23:57:10 --> cache_on=
+DEBUG - 2015-04-06 23:57:10 --> cachedir=
+DEBUG - 2015-04-06 23:57:10 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:10 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:10 --> swap_pre=
+DEBUG - 2015-04-06 23:57:10 --> autoinit=1
+DEBUG - 2015-04-06 23:57:10 --> stricton=
+DEBUG - 2015-04-06 23:57:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:11 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:11 --> Total execution time: 4.1872
+DEBUG - 2015-04-06 23:57:14 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:14 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:14 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:14 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Session Class Initialized
+DEBUG - 2015-04-06 23:57:14 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:57:14 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:16 --> Session routines successfully run
+DEBUG - 2015-04-06 23:57:16 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:16 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:16 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:16 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:16 --> username=root
+DEBUG - 2015-04-06 23:57:16 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:16 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:16 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:16 --> dbprefix=
+DEBUG - 2015-04-06 23:57:16 --> pconnect=1
+DEBUG - 2015-04-06 23:57:16 --> db_debug=1
+DEBUG - 2015-04-06 23:57:16 --> cache_on=
+DEBUG - 2015-04-06 23:57:16 --> cachedir=
+DEBUG - 2015-04-06 23:57:16 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:16 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:16 --> swap_pre=
+DEBUG - 2015-04-06 23:57:16 --> autoinit=1
+DEBUG - 2015-04-06 23:57:16 --> stricton=
+DEBUG - 2015-04-06 23:57:16 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:17 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:17 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:17 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:57:17 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:17 --> Total execution time: 2.6331
+DEBUG - 2015-04-06 23:57:17 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:17 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:17 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:17 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Session Class Initialized
+DEBUG - 2015-04-06 23:57:17 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:57:17 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:19 --> Session routines successfully run
+DEBUG - 2015-04-06 23:57:19 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:19 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:19 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:19 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:19 --> username=root
+DEBUG - 2015-04-06 23:57:19 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:19 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:19 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:19 --> dbprefix=
+DEBUG - 2015-04-06 23:57:19 --> pconnect=1
+DEBUG - 2015-04-06 23:57:19 --> db_debug=1
+DEBUG - 2015-04-06 23:57:19 --> cache_on=
+DEBUG - 2015-04-06 23:57:19 --> cachedir=
+DEBUG - 2015-04-06 23:57:19 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:19 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:19 --> swap_pre=
+DEBUG - 2015-04-06 23:57:19 --> autoinit=1
+DEBUG - 2015-04-06 23:57:19 --> stricton=
+DEBUG - 2015-04-06 23:57:19 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:20 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:20 --> Total execution time: 2.7522
+DEBUG - 2015-04-06 23:57:28 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:28 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:28 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:28 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:28 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:57:28 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:57:28 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:57:28 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:57:28 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:57:28 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:28 --> Total execution time: 0.0410
+DEBUG - 2015-04-06 23:57:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:29 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:29 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:29 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:29 --> username=root
+DEBUG - 2015-04-06 23:57:29 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:29 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:29 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:29 --> dbprefix=
+DEBUG - 2015-04-06 23:57:29 --> pconnect=1
+DEBUG - 2015-04-06 23:57:29 --> db_debug=1
+DEBUG - 2015-04-06 23:57:29 --> cache_on=
+DEBUG - 2015-04-06 23:57:29 --> cachedir=
+DEBUG - 2015-04-06 23:57:29 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:29 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:29 --> swap_pre=
+DEBUG - 2015-04-06 23:57:29 --> autoinit=1
+DEBUG - 2015-04-06 23:57:29 --> stricton=
+DEBUG - 2015-04-06 23:57:29 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:29 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:29 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:29 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:30 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:30 --> Total execution time: 1.1321
+DEBUG - 2015-04-06 23:57:30 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:30 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:30 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:30 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:30 --> username=root
+DEBUG - 2015-04-06 23:57:30 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:30 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:30 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:30 --> dbprefix=
+DEBUG - 2015-04-06 23:57:30 --> pconnect=1
+DEBUG - 2015-04-06 23:57:30 --> db_debug=1
+DEBUG - 2015-04-06 23:57:30 --> cache_on=
+DEBUG - 2015-04-06 23:57:30 --> cachedir=
+DEBUG - 2015-04-06 23:57:30 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:30 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:30 --> swap_pre=
+DEBUG - 2015-04-06 23:57:30 --> autoinit=1
+DEBUG - 2015-04-06 23:57:30 --> stricton=
+DEBUG - 2015-04-06 23:57:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:31 --> Total execution time: 2.1311
+DEBUG - 2015-04-06 23:57:31 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:31 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:31 --> username=root
+DEBUG - 2015-04-06 23:57:31 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:31 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:31 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:31 --> dbprefix=
+DEBUG - 2015-04-06 23:57:31 --> pconnect=1
+DEBUG - 2015-04-06 23:57:31 --> db_debug=1
+DEBUG - 2015-04-06 23:57:31 --> cache_on=
+DEBUG - 2015-04-06 23:57:31 --> cachedir=
+DEBUG - 2015-04-06 23:57:31 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:31 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:31 --> swap_pre=
+DEBUG - 2015-04-06 23:57:31 --> autoinit=1
+DEBUG - 2015-04-06 23:57:31 --> stricton=
+DEBUG - 2015-04-06 23:57:31 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:31 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:31 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:31 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:32 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:57:32 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:32 --> Total execution time: 3.2202
+DEBUG - 2015-04-06 23:57:32 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:32 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:57:32 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:32 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:32 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:32 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:32 --> username=root
+DEBUG - 2015-04-06 23:57:32 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:32 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:32 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:32 --> dbprefix=
+DEBUG - 2015-04-06 23:57:32 --> pconnect=1
+DEBUG - 2015-04-06 23:57:32 --> db_debug=1
+DEBUG - 2015-04-06 23:57:32 --> cache_on=
+DEBUG - 2015-04-06 23:57:32 --> cachedir=
+DEBUG - 2015-04-06 23:57:32 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:32 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:32 --> swap_pre=
+DEBUG - 2015-04-06 23:57:32 --> autoinit=1
+DEBUG - 2015-04-06 23:57:32 --> stricton=
+DEBUG - 2015-04-06 23:57:32 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:33 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:33 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:57.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:57.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:57:33 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:33 --> Total execution time: 4.2302
+DEBUG - 2015-04-06 23:57:33 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:33 --> File loaded: ../application/views/header_nav.php
+DEBUG - 2015-04-06 23:57:33 --> File loaded: ../application/views/hire_stock_fleet_records.php
+DEBUG - 2015-04-06 23:57:33 --> File loaded: ../application/views/footer_common.php
+DEBUG - 2015-04-06 23:57:33 --> File loaded: ../application/views/footer_copyright.php
+DEBUG - 2015-04-06 23:57:33 --> File loaded: ../application/views/footer.php
+DEBUG - 2015-04-06 23:57:33 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:33 --> Total execution time: 2.0701
+DEBUG - 2015-04-06 23:57:34 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:34 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:34 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:34 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:34 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:34 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:34 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:34 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:34 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:34 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:34 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:34 --> username=root
+DEBUG - 2015-04-06 23:57:34 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:34 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:34 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:34 --> dbprefix=
+DEBUG - 2015-04-06 23:57:34 --> pconnect=1
+DEBUG - 2015-04-06 23:57:34 --> db_debug=1
+DEBUG - 2015-04-06 23:57:34 --> cache_on=
+DEBUG - 2015-04-06 23:57:34 --> cachedir=
+DEBUG - 2015-04-06 23:57:34 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:34 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:34 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> swap_pre=
+DEBUG - 2015-04-06 23:57:34 --> autoinit=1
+DEBUG - 2015-04-06 23:57:34 --> stricton=
+DEBUG - 2015-04-06 23:57:34 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:34 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:34 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:35 --> select mm.pk_id from messenger_messages as mm
+					inner join messenger_users_messages as mum on mum.fk_message_id = mm.pk_id 
+					and mum.`read` = 0 
+					and mm.fk_destination_user = 1
+					limit 1;
+DEBUG - 2015-04-06 23:57:35 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:35 --> Total execution time: 1.0971
+DEBUG - 2015-04-06 23:57:35 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:35 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:35 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:35 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:35 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:35 --> username=root
+DEBUG - 2015-04-06 23:57:35 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:35 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:35 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:35 --> dbprefix=
+DEBUG - 2015-04-06 23:57:35 --> pconnect=1
+DEBUG - 2015-04-06 23:57:35 --> db_debug=1
+DEBUG - 2015-04-06 23:57:35 --> cache_on=
+DEBUG - 2015-04-06 23:57:35 --> cachedir=
+DEBUG - 2015-04-06 23:57:35 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:35 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:35 --> swap_pre=
+DEBUG - 2015-04-06 23:57:35 --> autoinit=1
+DEBUG - 2015-04-06 23:57:35 --> stricton=
+DEBUG - 2015-04-06 23:57:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:36 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:36 --> Total execution time: 2.1781
+DEBUG - 2015-04-06 23:57:36 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:36 --> Helper loaded: custom_validations_helper
+DEBUG - 2015-04-06 23:57:36 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:36 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:36 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:36 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:36 --> username=root
+DEBUG - 2015-04-06 23:57:36 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:36 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:36 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:36 --> dbprefix=
+DEBUG - 2015-04-06 23:57:36 --> pconnect=1
+DEBUG - 2015-04-06 23:57:36 --> db_debug=1
+DEBUG - 2015-04-06 23:57:36 --> cache_on=
+DEBUG - 2015-04-06 23:57:36 --> cachedir=
+DEBUG - 2015-04-06 23:57:36 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:36 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:36 --> swap_pre=
+DEBUG - 2015-04-06 23:57:36 --> autoinit=1
+DEBUG - 2015-04-06 23:57:36 --> stricton=
+DEBUG - 2015-04-06 23:57:36 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:37 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:37 --> select dv.*, 'self' as name, u.email from diary_events as dv left join users as u on u.pk_id = dv.fk_user_id where start_datetime >= '2015-04-06 23:57.000' and start_datetime <= '2015-04-06 23:59.999' and fk_user_id = 1
+				union all
+				select dv.*, u.name, u.email from diary_events as dv
+				left join diary_events_users as deu on deu.fk_event_id = dv.pk_id
+				left join users as u on u.pk_id = dv.fk_user_id
+				where start_datetime >= '2015-04-06 23:57.000' and start_datetime <= '2015-04-06 23:59.999' 
+				and dv.fk_user_id != 1
+				and deu.fk_user_id = 1
+DEBUG - 2015-04-06 23:57:37 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:37 --> Total execution time: 3.2042
+DEBUG - 2015-04-06 23:57:37 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:37 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:37 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:37 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:37 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:37 --> username=root
+DEBUG - 2015-04-06 23:57:37 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:37 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:37 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:37 --> dbprefix=
+DEBUG - 2015-04-06 23:57:37 --> pconnect=1
+DEBUG - 2015-04-06 23:57:37 --> db_debug=1
+DEBUG - 2015-04-06 23:57:37 --> cache_on=
+DEBUG - 2015-04-06 23:57:37 --> cachedir=
+DEBUG - 2015-04-06 23:57:37 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:37 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:37 --> swap_pre=
+DEBUG - 2015-04-06 23:57:37 --> autoinit=1
+DEBUG - 2015-04-06 23:57:37 --> stricton=
+DEBUG - 2015-04-06 23:57:37 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:38 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:38 --> Total execution time: 4.2322
+DEBUG - 2015-04-06 23:57:52 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:52 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:52 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:52 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Session Class Initialized
+DEBUG - 2015-04-06 23:57:52 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:57:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:54 --> Session routines successfully run
+DEBUG - 2015-04-06 23:57:54 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:54 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:54 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:54 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:54 --> username=root
+DEBUG - 2015-04-06 23:57:54 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:54 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:54 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:54 --> dbprefix=
+DEBUG - 2015-04-06 23:57:54 --> pconnect=1
+DEBUG - 2015-04-06 23:57:54 --> db_debug=1
+DEBUG - 2015-04-06 23:57:54 --> cache_on=
+DEBUG - 2015-04-06 23:57:54 --> cachedir=
+DEBUG - 2015-04-06 23:57:54 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:54 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:54 --> swap_pre=
+DEBUG - 2015-04-06 23:57:54 --> autoinit=1
+DEBUG - 2015-04-06 23:57:54 --> stricton=
+DEBUG - 2015-04-06 23:57:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:55 --> XSS Filtering completed
+DEBUG - 2015-04-06 23:57:55 --> File loaded: ../application/views/hire_stock_item_activity.php
+DEBUG - 2015-04-06 23:57:55 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:55 --> Total execution time: 3.3342
+DEBUG - 2015-04-06 23:57:55 --> Config Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Hooks Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Utf8 Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> UTF-8 Support Enabled
+DEBUG - 2015-04-06 23:57:55 --> URI Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Router Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Output Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Security Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Input Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-06 23:57:55 --> Language Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Loader Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Helper loaded: url_helper
+DEBUG - 2015-04-06 23:57:55 --> Controller Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Session Class Initialized
+DEBUG - 2015-04-06 23:57:55 --> Helper loaded: string_helper
+DEBUG - 2015-04-06 23:57:55 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:57 --> Session routines successfully run
+DEBUG - 2015-04-06 23:57:57 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:57 --> Model Class Initialized
+DEBUG - 2015-04-06 23:57:57 --> Helper loaded: models_helper
+DEBUG - 2015-04-06 23:57:57 --> hostname=localhost
+DEBUG - 2015-04-06 23:57:57 --> username=root
+DEBUG - 2015-04-06 23:57:57 --> password=7H3nMvBaWcAHDr8K
+DEBUG - 2015-04-06 23:57:57 --> database=cl51-democompa
+DEBUG - 2015-04-06 23:57:57 --> dbdriver=mysqli
+DEBUG - 2015-04-06 23:57:57 --> dbprefix=
+DEBUG - 2015-04-06 23:57:57 --> pconnect=1
+DEBUG - 2015-04-06 23:57:57 --> db_debug=1
+DEBUG - 2015-04-06 23:57:57 --> cache_on=
+DEBUG - 2015-04-06 23:57:57 --> cachedir=
+DEBUG - 2015-04-06 23:57:57 --> char_set=utf8
+DEBUG - 2015-04-06 23:57:57 --> dbcollat=utf8_general_ci
+DEBUG - 2015-04-06 23:57:57 --> swap_pre=
+DEBUG - 2015-04-06 23:57:57 --> autoinit=1
+DEBUG - 2015-04-06 23:57:57 --> stricton=
+DEBUG - 2015-04-06 23:57:57 --> Database Driver Class Initialized
+DEBUG - 2015-04-06 23:57:58 --> Final output sent to browser
+DEBUG - 2015-04-06 23:57:58 --> Total execution time: 2.7192

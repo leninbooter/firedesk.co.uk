@@ -85,7 +85,16 @@ function go_to(url)
 		{
 			location.href="../hire_stock/"+url+"/"+grid.cells(grid.getSelectedRowId(),0).getValue();
 		}
-	}	
+	}
+	else if(url == 'activity')
+	{
+		var from = (now.getMonth()+1) + "/" + (now.getFullYear()-1);
+		var to = (now.getMonth()+1) + "/" + now.getFullYear();			
+		
+		$('#items_menu_modal').modal('hide');
+		
+		location.href=base_url+"index.php/hire_stock/activity?from="+from+"&to="+to+"&item="+grid.cells(grid.getSelectedRowId(),0).getValue();
+	}
 }
 
 function mark_to_delete(obj)

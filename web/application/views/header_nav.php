@@ -12,7 +12,11 @@
 		<link href="<?php echo base_url('assets/jquery-ui-1.11.4.custom/themes/themes/flick/jquery-ui.css'); ?>" rel="stylesheet">
 		<link href="<?php echo base_url('assets/dhtmlx-4.13/codebase/dhtmlxgrid.css'); ?>" rel="stylesheet">		
 		<link href="<?php echo base_url('assets/dhtmlx-4.13/sources/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_web.css'); ?>" rel="stylesheet">		
-		 
+		<?php if(isset($custom_css)): ?>
+			<?php foreach($custom_css as $file): ?>
+				<link href="<?php echo base_url($file); ?>" rel="stylesheet">		
+			<?php endforeach; ?>
+		<?php endif; ?>
 		<title>FireDesk</title>
 	</head>
 	<body>

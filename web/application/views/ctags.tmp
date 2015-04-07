@@ -13,6 +13,10 @@ date	list_all_contracts.php	16;"	variable
 date	list_balance_orders.php	13;"	variable
 date	list_live_contracts.php	21;"	variable
 i	diary_events.php	3;"	variable
+i	hire_stock_item_activity.php	19;"	variable
+i	hire_stock_item_activity.php	29;"	variable
+i	hire_stock_item_activity.php	39;"	variable
+i	hire_stock_item_activity.php	49;"	variable
 key	customers_address_json.php	3;"	variable
 key	customers_list_selectable_dropdown.php	5;"	variable
 key	customers_list_selectable_dropdown_accRef_name.php	5;"	variable
