@@ -1,7 +1,64 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Sales_stock extends CI_Controller
+use Respect\Validation\Validator as v;
+
+class Sales_stock extends MY_Controller
 {
+    function __construct() {
+        
+        parent::__construct();
+    }
+    
+    public function getItemsNameAndIDJSON() {
+     
+        $this->load->model('stock_m');
+        
+        $data = array();
+        /*foreach( $this->stock_m->selItemsNameAndID() as $item)
+        {
+            $i = array("pk_id"=> $item->pk_id, "label"=>$item->label);
+        }*/
+        
+        header('Content-type: application/json');
+        echo json_encode($this->stock_m->selItemsNameAndID());
+    }
+    
+    /**
+    *
+    * Retrieve The sales price of a sales stock item
+    *
+    * @param    $itemID     Row id of the sales stock item
+    *           $customerID Row id of the current customerID
+    *           $qty        Requested qty of the sales stock item
+    *
+    * @return   String The sales price for the item
+    */
+    public function getSalesPriceOf() {
+        
+        $itemID     = $this->queryStrArr['itemID'];
+        $customerID = $this->queryStrArr['customerID'];
+        $qty        = $this->queryStrArr['qty'];               
+        
+        if ( v::Int()->validate($itemID) 
+            && v::Int()->validate($customerID)
+            && v::Int()->validate($qty)) {
+             
+               $this->load->model('stock_m');
+               
+               $parArray = compact('itemID', 'customerID', 'qty');
+               $price = $this->stock_m->selectItemSalesPrice( $parArray );
+               
+               header('Content-type: text/html');
+               if ($price != false) {
+                   
+                   echo $price;
+               }else {
+                   
+                   echo "";
+               }
+            }        
+    }
+    
 	public function items_from_family_from_json()
 	{
 		$pk_id = trim($this->input->get('id'));

@@ -1,17 +1,6 @@
-<form role="form" id="modify_accesory_form">
-<input type="hidden" id="group_id" name="group_id" value="<?php echo $group_id; ?>">
-<div class="row">
-	<div class="col-md-12">
-		<table class="table table-condensed">
-			<thead>
-				<tr>
-					<th style="width:20%">Stock No.</th>
-					<th style="width:50%">Description</th>
-					<th style="width:20%">Qty</th>
-					<th style="width:10%"></th>
-				</tr>
-			</thead>
-			<tbody>
+            <tr style="display:none">
+            <td colspan="4"><input type="hidden" id="group_id" name="group_id" value="<?php echo $group_id; ?>"></td>
+            </tr>
 			<?php foreach($accesories as $acc): ?>
 				<?php if(is_numeric($acc->qty)): ?>
 					<tr>
@@ -38,24 +27,3 @@
 					<?php endforeach; ?>
 				<?php endif; ?>		
 			<?php endforeach; ?>
-			</tbody>
-		</table>
-		
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-12">
-		<div class="form-group">
-			Search an item to add it as accesory <span style="font-size:150%">&darr;</span>
-		<input type="text" id="search_items_for_group" class="form-control input-sm" />
-		<input type="hidden" id="accesory_groups" name="accesory_groups" />
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-12">
-		<button type="button" class="btn btn-primary btn-block" onclick="send_modify_accesory_form();">Save changes</button>
-	</div>
-</div>
-</form>

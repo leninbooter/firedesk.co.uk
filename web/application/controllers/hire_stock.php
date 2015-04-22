@@ -2,9 +2,20 @@
 
 use Respect\Validation\Validator as v;
 
-class Hire_stock extends CI_Controller
+class Hire_stock extends MY_Controller
 {	
-	public function acqs_rms_json()
+	function __construct() {
+        
+        parent::__construct();
+    }
+    
+    /**
+    *
+    * Retrieves a json with acquisitions and removals of hire items
+    *
+    * @return json with the adquisitions and removals of a hire item
+    */
+    public function acqs_rms_json()
 	{
 		$this->load->library('session');
 		
@@ -130,7 +141,7 @@ class Hire_stock extends CI_Controller
 		echo json_encode(array( "rows" => $data));
 	}
 	
-	public function get_components()
+    public function get_components()
 	{
 		$pk_id = trim($this->security->xss_clean($this->uri->segment(3)));
 
@@ -147,6 +158,16 @@ class Hire_stock extends CI_Controller
 		}
 	}
 	
+   
+    
+    /**
+    *
+    * Returns a JSON with multiple type items from the hire fleet and items
+    * from the sales stock for being added as accesory to a group
+    *
+    * @return JSON with the multiple type items and items from the sales stock
+    *
+    */
 	public function get_eligible_items_for_group_json()
 	{
 		$this->load->model('hire_stock_m');
@@ -175,9 +196,9 @@ class Hire_stock extends CI_Controller
 		//$this->load->library('session');
 		$this->load->model('hire_stock_m');
 		
-		$from = $this->input->get('activity_from');
-		$to = $this->input->get('activity_to');
-		$item = $this->input->get('activity_item');	
+		$from   = $this->input->get('activity_from');
+		$to      = $this->input->get('activity_to');
+		$item   = $this->input->get('activity_item');	
 
 		$monthyearv = v::regex('/\d{1,2}\/\d{4,4}/');
 		
@@ -208,6 +229,50 @@ class Hire_stock extends CI_Controller
 		}
 	}
 	
+	public function get_items_json()
+	{
+		$this->load->model('hire_stock_m');
+		
+		$items = $this->hire_stock_m->select_all_items();
+		
+		$arr = array();
+		foreach($items as $i)
+		{
+			array_push($arr, array("id"=>$i->pk_id, "fleet_number" => $i->fleet_number, "label"=>$i->description, "qty"=>$i->qty,"family_id"=>$i->family_group_id, "family"=>$i->family_group, "type"=>$i->type, "rate"=>$i->rate));
+		}
+		
+		header('Content-type: application/json');
+		echo json_encode($arr);		
+	}
+    
+     /**
+    *
+    * Retrieves html form of  accesories of a group for contract
+    *
+    * @param rowID of group
+    *
+    * @return html of accesories
+    *
+    */
+    public function getMultipartItemComponentsContractForm() {
+        
+        $pk_id = $this->queryStrArr['itemID'];
+
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->library('session');
+			$this->load->model('hire_stock_m');
+			
+			$this->session->set_flashdata('new_item_id', $pk_id);
+			
+            $data['contractID'] = $this->queryStrArr['contractID'];
+            $data['hireItemID'] = $pk_id;
+			$data['components'] = $this->hire_stock_m->select_components_from($pk_id, true);
+			
+			$this->load->view('contracts_multipart_item_components_form', $data);
+		}
+    }
+	
 	public function get_multiple_items_json()
 	{
 		$this->load->model('hire_stock_m');
@@ -215,6 +280,7 @@ class Hire_stock extends CI_Controller
 		header('Content-type: application/json');
 		echo json_encode($this->hire_stock_m->select_items_multiple());
 	}
+    
 	
 	public function get_single_items_json()
 	{
@@ -264,8 +330,9 @@ class Hire_stock extends CI_Controller
 
 	public function group_accesories()
 	{
-		$pk_id = trim($this->input->get('id'));
-		if( $pk_id != false && is_numeric($pk_id) )
+		$pk_id = $this->queryStrArr['id'];
+        
+		if( is_numeric($pk_id) )
 		{
 			$this->load->model('hire_stock_m');
 			
@@ -276,7 +343,31 @@ class Hire_stock extends CI_Controller
 		}
 	}
 	
-	
+	/**
+    *
+    * Retrieves form of accesories of a group for contract
+    *
+    * @param rowID of group
+    *
+    * @return html of accesories
+    *
+    */
+    public function getGroupAccesoriesContractForm() {
+        
+        $pk_id = $this->queryStrArr['hireItemID'];
+        
+        if( is_numeric($this->queryStrArr['groupID']) ) {
+            
+            $this->load->model('hire_stock_m');
+			            
+            $data['contractID']     = $this->queryStrArr['contractID'];
+            $data['hireItemID']     = $pk_id;
+            $data['group_id']       = $this->queryStrArr['groupID'];
+            $data['accesories']     = $this->hire_stock_m->get_accesories_from_group($data['group_id'], true);
+            
+            $this->load->view('contracts_group_accesories_form', $data);
+        }
+    }
 	
 	public function ins_charging_band()
 	{
@@ -669,7 +760,8 @@ class Hire_stock extends CI_Controller
 		$ppe_kit     		= "NULL";
 		$safety_leaflet     	= $this->input->post('safety_leaflet', true);
 		$test_frequency     	= $this->input->post('test_frecuency', true);		
-
+		$qty = $hire_item_type == "1" ? 1:0;
+	
 		$vars_array = compact(
 						"fleet_number",
 						"description",
@@ -689,7 +781,8 @@ class Hire_stock extends CI_Controller
 						"cable_length",
 						"ppe_kit",
 						"safety_leaflet",
-						"test_frequency"
+						"test_frequency",
+						"qty"
 					);
 		$this->load->model('hire_stock_m');
 		$result = $this->hire_stock_m->ins_hire_item( $vars_array );
@@ -820,7 +913,7 @@ class Hire_stock extends CI_Controller
 	public function save_accesory_group()
 	{
 		if($_SERVER['REQUEST_METHOD'] === 'POST')
-		{
+		{ 
 			$this->load->model('hire_stock_m');
 		
 			if(isset($_POST['item_id']))

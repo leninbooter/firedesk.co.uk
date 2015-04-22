@@ -181,7 +181,7 @@ function attachEvents()
 function edit_qtys(group_id)
 {
 	$.get("../hire_stock/group_accesories", { "id": group_id}, function(result){
-		$('#edit_qtys_form_modal .modal-body').html(result);
+		$('#edit_qtys_form_modal #accesories_group').html(result);
 		set_accesory_searcher($('#edit_qtys_form_modal .modal-body #search_items_for_group'));
 	}, "text" );
 	

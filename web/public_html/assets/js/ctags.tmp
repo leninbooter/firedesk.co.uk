@@ -40,13 +40,14 @@ comments_valido	firedesk.js	77;"	function
 complete	cross_hire.js	193;"	function
 complete	purchase_orders_edit.js	188;"	function
 confirm	bootbox.min.js	6;"	function
+contract_details_pdf	new_contract.js	69;"	function
 cp_valido	firedesk.js	87;"	function
 d	bootbox.min.js	6;"	function
 delete_event	diary.js	81;"	function
 dialog	bootbox.min.js	6;"	function
 e	bootbox.min.js	6;"	function
 e	jquery.min.js	12;"	function
-edit	new_contract.js	69;"	function
+edit	new_contract.js	74;"	function
 edit_qtys	hire_stock_groups.js	181;"	function
 email_conf_valido	firedesk.js	62;"	function
 email_valid	firedesk.js	57;"	function
@@ -54,8 +55,8 @@ f	bootbox.min.js	6;"	function
 fill_family_modal	cross_hire.js	246;"	function
 fill_family_modal	purchase_orders_edit.js	250;"	function
 g	bootbox.min.js	6;"	function
-get_customers_selec_list	new_contract.js	88;"	function
-get_customers_selec_list	new_customer.js	16;"	function
+getPrice	form_add_items_to_contract.js	161;"	function
+get_customers_selec_list	new_contract.js	93;"	function
 go_to	hire_stock_fleet_records.js	66;"	function
 h	bootbox.min.js	6;"	function
 h.i	bootbox.min.js	6;"	function
@@ -76,7 +77,7 @@ items_qty	new_contract.js	2;"	variable
 j	jquery.min.js	12;"	function
 limit_credit_valid	firedesk.js	92;"	function
 load_activity_chart	hire_item_activity.js	18;"	function
-load_customers_addresses	new_contract.js	108;"	function
+load_customers_addresses	new_contract.js	113;"	function
 load_events_of	diary.js	107;"	function
 locale	bootbox.min.js	6;"	property
 mark_to_delete	cross_hire.js	217;"	function
@@ -112,7 +113,7 @@ return.init	bootbox.min.js	6;"	function
 send_modify_accesory_form	hire_stock_groups.js	237;"	function
 setDefaults	bootbox.min.js	6;"	function
 setDefaults.q.br	bootbox.min.js	6;"	property
-setParentAccount	new_contract.js	79;"	function
+setParentAccount	new_contract.js	84;"	function
 setParentAccount	new_customer.js	8;"	function
 set_accesory_searcher	hire_stock_groups.js	256;"	function
 set_blinking_diarymsgs_btn	firedesk.js	4;"	function
@@ -125,7 +126,7 @@ set_popover_to_tr.options.template	cross_hire.js	294;"	property
 set_popover_to_tr.options.title	cross_hire.js	295;"	property
 set_searcher	hire_stock.js	123;"	function
 set_searcher	hire_stock_fleet_records.js	113;"	function
-show_parents_dropdownlist	new_contract.js	74;"	function
+show_parents_dropdownlist	new_contract.js	79;"	function
 show_parents_dropdownlist	new_customer.js	3;"	function
 submit_edit_cross_hire_order_form	cross_hire.js	230;"	function
 submit_edit_purchase_order_form	purchase_orders_edit.js	234;"	function
@@ -133,6 +134,7 @@ submit_new_hire_fleet_family_group	hire_stock_groups.js	134;"	function
 submit_receptions_form	cross_hire.js	177;"	function
 submit_receptions_form	purchase_orders_edit.js	172;"	function
 telephone_valid	firedesk.js	67;"	function
+total	form_add_items_to_contract.js	179;"	function
 total_row	cross_hire.js	304;"	function
 type_checker	stock_items.js	1;"	function
 update_counters	cross_hire.js	320;"	function

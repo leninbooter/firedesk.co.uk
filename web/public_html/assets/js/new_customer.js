@@ -13,7 +13,7 @@ function setParentAccount(parent_id, parent_name)
 	parent_selected = true;
 }
 
-function get_customers_selec_list()
+/*function get_customers_selec_list()
 {
 	$.ajax({
 		type: "GET",
@@ -31,7 +31,7 @@ function get_customers_selec_list()
 				$('#dropdown_parents_list').html("");
 			}
 		});
-}
+}*/
 
 $( document ).ready(function() {
 	/*var parent_input = $('#parent_account');

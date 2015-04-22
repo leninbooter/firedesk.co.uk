@@ -50,23 +50,6 @@ class Suppliers extends CI_Controller
 		$this->load->view('footer');
 	}
 
-	/*public function list_selectable_customers()
-	{
-		$this->load->helper(array('form', 'url'));
-		$this->load->library('form_validation');
-		$this->load->model('customers_m');
-		$name = trim($this->input->get('parent_account' ,true));
-		$name = str_replace("_", "%", $name);
-		if( ($results = $this->customers_m->get_names_like($name)) != false )
-		{
-			$data['customers'] = $results;
-			$this->load->view('customers_list_selectable_dropdown', $data);
-		}else
-		{
-			echo "none";
-		}
-	}*/
-
 	public function get_suppliers_json()
 	{
 		$this->load->helper(array('form', 'url'));

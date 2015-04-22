@@ -50,21 +50,21 @@ class Customers extends CI_Controller
 		$this->load->view('footer');		
 	}
 	
-	public function list_selectable_customers()
+	public function get_customers_json()
 	{
 		$this->load->helper(array('form', 'url'));
-		$this->load->library('form_validation');
 		$this->load->model('customers_m');
-		$name = trim($this->input->get('parent_account' ,true));
-		$name = str_replace("_", "%", $name);
-		if( ($results = $this->customers_m->get_names_like($name)) != false )
+				
+		$customers = $this->customers_m->get_customers();
+		
+		$data = array();
+		foreach($customers as $c)
 		{
-			$data['customers'] = $results;
-			$this->load->view('customers_list_selectable_dropdown', $data);
-		}else
-		{
-			echo "none";
+			array_push($data, array("id"=>intval($c->pk_id), "label" => $c->name ));
 		}
+		
+		header('Content-type: application/json');
+		echo json_encode($data);
 	}
 	
 		public function get_customers_addresses_json()

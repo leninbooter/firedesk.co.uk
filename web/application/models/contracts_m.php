@@ -2,7 +2,7 @@
 
 class Contracts_m extends CI_Model
 {
-	$company_db;
+	var $company_db;
 	
 	function __construct()
 	{
@@ -13,13 +13,13 @@ class Contracts_m extends CI_Model
 		$this->company_db = $this->load->database(company_db_string_connection(), true);
 	}
 	
-	function clean_vars(&$value, $key)
+	/*function clean_vars(&$value, $key)
 	{
 		if($value == "")
 		{
 			$value = "NULL";
 		}
-	}
+	}*/
 	
 	function get_accounts_like( $text_search )
 	{			
@@ -216,7 +216,145 @@ class Contracts_m extends CI_Model
 		}else
 			return array();
 	}
+    
+    function insHireItem( $param_arr ) {
+        
+        array_walk($param_arr, "clean_vars");
+        
+        $this->company_db->trans_start();
+        
+        $query = "INSERT INTO contract_items (
+                    item_no, 
+                    qty, 
+                    description, 
+                    rate, 
+                    value, 
+                    fk_contract_id, 
+                    item_type
+                )
+                VALUES(
+                    {$param_arr['hireItemID']},
+                    1,
+                    '{$param_arr['hireItemDescription']}',
+                    {$param_arr['hireItemPrice']},	
+                    {$param_arr['hireItemPrice']}, 			
+                    {$param_arr['contractID']},
+                    2		
+                );";
+                
+        $this->company_db->query($query);
+        $this->company_db->trans_complete();
+        return $this->company_db->trans_status();         
+    }
+    
+    function insHireItemAccesory( $param_array ) {
+        log_message('debug', 'insHireItemAccesory');
+        array_walk($param_array, "clean_vars");
+        
+        $this->company_db->trans_start();
+        
+        $query = "UPDATE contracts SET fk_contract_status_id = 2 WHERE pk_id = {$param_array['contractID']} and fk_contract_status_id = 1;";
+        log_message('debug', $query);
+        $this->company_db->query($query);
+        
+        if ($param_array['itemType'] == 1) {
+            
+            $query = "call update_stock(
+                                        '". $this->company_db->escape_str($param_array["date"])."',
+                                        ". $this->company_db->escape_str($param_array["item_no"]).",
+                                        'Contract sale. Contract no. {$param_array['contractID']}',
+                                        ". $this->company_db->escape_str($param_array["qty"]).",
+                                        0
+									);";
+            log_message('debug', $query);
+            $query = str_replace("'NULL'", "NULL", $query);
+            $query =  $this->company_db->query($query);
+            
+            if ( !empty($query->result()) ) {
+                $result = $query->row();
+                mysqli_next_result(  $this->company_db->conn_id );
+                if ($result->result != "ok") {
+                    return false;
+                }
+            }else {
+                return false;
+            }
+            log_message('debug', '1 insHireItemAccesory');
+        }elseif ($param_array['itemType'] == 2) {
+            $query = "UPDATE hire_items SET allocated_on_contract = {$param_array['contractID']} WHERE pk_id = {$param_array['item_no']}";
+            log_message('debug', $query);
+            $this->company_db->query($query);                    
+        }
+        
+        log_message('debug', '2 insHireItemAccesory');
+        $query = "INSERT INTO contract_items (
+                item_no, 
+                qty, 
+                description, 
+                rate, 
+                value, 
+                fk_contract_id, 
+                item_type,
+                parent_item
+            )
+            VALUES(
+                {$param_array['item_no']},
+                {$param_array['qty']},
+                '{$param_array['description']}',
+                {$param_array['rate']},	
+                {$param_array['value']}, 			
+                {$param_array['contractID']},
+                {$param_array['itemType']},		
+                {$param_array['hireItemID']}		
+            );";               
+        log_message('debug', $query);
+        $this->company_db->query($query);
+        
+        $this->company_db->trans_complete();
+        return $this->company_db->trans_status();
+    }
 	
+    function insMultipartItemComponent( $param_array ) {
+        
+        array_walk($param_array, "clean_vars");
+        
+        $this->company_db->trans_start();
+        
+        $query = "UPDATE contracts SET fk_contract_status_id = 2 WHERE pk_id = {$param_array['contractID']} and fk_contract_status_id = 1;";
+             
+        $this->company_db->query($query);                
+        
+        $query = "INSERT INTO contract_items (
+                    item_no, 
+                    qty, 
+                    description, 
+                    rate, 
+                    value, 
+                    fk_contract_id, 
+                    item_type,
+                    parent_item
+                )
+                VALUES(
+                    {$param_array['item_no']},
+                    {$param_array['qty']},
+                   '{$param_array['description']}',
+                    {$param_array['rate']},	
+                    {$param_array['value']}, 			
+                    {$param_array['contractID']},
+                    {$param_array['itemType']},		
+                    {$param_array['hireItemID']}		
+                );";   
+                
+        $this->company_db->query($query);
+        
+        $query = "UPDATE hire_items SET allocated_on_contract = {$param_array['contractID']} WHERE pk_id = {$param_array['item_no']}";
+        log_message('debug', $query);
+        $this->company_db->query($query);        
+        
+        $this->company_db->trans_complete();
+        return $this->company_db->trans_status();
+    }
+    
 	function save_contract( $vars_array )		
 	{		
 				
@@ -227,7 +365,7 @@ class Contracts_m extends CI_Model
 					$vars_array["saved_addresses"] = $vars_array["new_address"];
 				}
 		}
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		$query = "CALL ins_contract("
 									. $this->company_db->escape_str($vars_array["account_reference_id"]).","
 									. $this->company_db->escape_str($vars_array["contract_type"]).","
@@ -264,7 +402,7 @@ class Contracts_m extends CI_Model
 	function save_contract_item( $vars_array )		
 	{		
 				
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		$query = "CALL ins_contract_item("
 									. $this->company_db->escape_str($vars_array["item_no"]).","
 									. $this->company_db->escape_str($vars_array["qty"]).","				
@@ -296,7 +434,7 @@ class Contracts_m extends CI_Model
 	{
 		
 		log_message('debug', "database loaded");
-		array_walk($vars_array, "self::clean_vars");
+		array_walk($vars_array, "clean_vars");
 		log_message('debug', "vars_array cleaned");
 		$query = "CALL save_item_supplied(
 		". $this->company_db->escape_str($vars_array['contract_id']).",

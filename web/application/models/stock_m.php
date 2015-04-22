@@ -64,51 +64,7 @@ class Stock_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();
 	}
 	
-	function save_item( $vars_array )		
-	{		
-		
-		array_walk($vars_array, "self::clean_vars");
-		
-		$query = "call ins_stock_item(
-									'". $this->company_db->escape_str($vars_array["stock_number"])."',
-									'". $this->company_db->escape_str($vars_array["location"])."',
-									'". $this->company_db->escape_str($vars_array["description"])."',
-									 ". $this->company_db->escape_str($vars_array["quantity_rec_level"]).",
-									 ". $this->company_db->escape_str($vars_array["standard_price"]).",
-									 ". $this->company_db->escape_str($vars_array["special_price"]).",
-									 ". $this->company_db->escape_str($vars_array["units_of_for_special"]).",
-									 ". $this->company_db->escape_str($vars_array["cost_price_a"]).",
-									 ". $this->company_db->escape_str($vars_array["cost_price_b"]).",
-									 ". $this->company_db->escape_str($vars_array["cost_price_c"]).",
-									 ". $this->company_db->escape_str($vars_array["fk_vat_code"]).",
-									 ". $this->company_db->escape_str($vars_array["fk_family_group"]).",
-									 ". $this->company_db->escape_str($vars_array["fk_discount_group"]).",
-									 ". $this->company_db->escape_str($vars_array["fk_supplier_a"]).",
-									 ". $this->company_db->escape_str($vars_array["fk_supplier_b"]).",
-									 ". $this->company_db->escape_str($vars_array["fk_supplier_c"])."
-									);";
-		$query = str_replace("'NULL'", "NULL", $query);
-		$query =  $this->company_db->query($query);
-						
-		$result = $query->result();
-		if( !empty($query->result()) )
-		{
-			$result = $query->row();
-			mysqli_next_result(  $this->company_db->conn_id );
-			if($result->type == "inserted" )
-			{	
-				$return['type'] = $result->type;
-				$return['pk_id'] = $result->pk_id;
-				return $return;
-			}elseif($result->type == "updated")
-			{
-				$return['type'] = $result->type;
-				$return['pk_id'] = $result->pk_id;
-				return $return;
-			}
-		}
-		return false;
-	}
+	
 	
 	function ins_items_receipts( $vars_array )
 	{
@@ -156,10 +112,118 @@ class Stock_m extends CI_Model
 		}
 		return false;
 	}
+    
+    function save_item( $vars_array )		
+	{		
+		
+		array_walk($vars_array, "self::clean_vars");
+		
+		$query = "call ins_stock_item(
+									'". $this->company_db->escape_str($vars_array["stock_number"])."',
+									'". $this->company_db->escape_str($vars_array["location"])."',
+									'". $this->company_db->escape_str($vars_array["description"])."',
+									 ". $this->company_db->escape_str($vars_array["quantity_rec_level"]).",
+									 ". $this->company_db->escape_str($vars_array["standard_price"]).",
+									 ". $this->company_db->escape_str($vars_array["special_price"]).",
+									 ". $this->company_db->escape_str($vars_array["units_of_for_special"]).",
+									 ". $this->company_db->escape_str($vars_array["cost_price_a"]).",
+									 ". $this->company_db->escape_str($vars_array["cost_price_b"]).",
+									 ". $this->company_db->escape_str($vars_array["cost_price_c"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_vat_code"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_family_group"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_discount_group"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_supplier_a"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_supplier_b"]).",
+									 ". $this->company_db->escape_str($vars_array["fk_supplier_c"])."
+									);";
+		$query = str_replace("'NULL'", "NULL", $query);
+		$query =  $this->company_db->query($query);
+						
+		$result = $query->result();
+		if( !empty($query->result()) )
+		{
+			$result = $query->row();
+			mysqli_next_result(  $this->company_db->conn_id );
+			if($result->type == "inserted" )
+			{	
+				$return['type'] = $result->type;
+				$return['pk_id'] = $result->pk_id;
+				return $return;
+			}elseif($result->type == "updated")
+			{
+				$return['type'] = $result->type;
+				$return['pk_id'] = $result->pk_id;
+				return $return;
+			}
+		}
+		return false;
+	}
+    
+    function selItemsNameAndID() {
+        
+        $query = "SELECT pk_id, stock_number, description as label, quantity_balance, quantity_on_order FROM sales_stock";
+        $query = $this->company_db->query($query);
+        return $query->result();
+    }
+    
+    /**
+    *
+    * Retrieve the sale price of an item from the sales stock taking into consideration 
+    * the client and the quantity requested
+    *
+    * @param    $par_array[]    $itemID     Row id of the sales stock item
+    *                           $customerID Row id of the current customerID
+    *                           $qty        Requested qty of the sales stock item
+    *
+    * @return   Int The sales price for the item
+    */
+    function selectItemSalesPrice( $par_array ) {
+        
+        $query = "SELECT MIN(price) AS price
+                    FROM stock_item_prices
+                    WHERE fk_stock_item_id = {$par_array['itemID']} AND fk_customer_id = {$par_array['customerID']} AND price_type = 2 AND ({$par_array['qty']} BETWEEN min_qty AND max_qty OR {$par_array['qty']} > max_qty)";        
+        
+        $query = $this->company_db->query($query);
+        
+        if ( !is_numeric($query->row()->price) ) {
+            
+            $query = "SELECT MIN(price) as price
+                        FROM stock_item_prices as sip
+                            INNER JOIN sales_stock as SS ON SS.pk_id = sip.fk_stock_item_id
+                        WHERE fk_stock_item_id = {$par_array['itemID']} AND fk_customer_id = {$par_array['customerID']} AND ((price_type = 1 AND {$par_array['qty']} >= ss.units_of_for_special) OR (price_type = 0))";
+            
+            $query = $this->company_db->query($query);
+            
+            if ( !is_numeric($query->row()->price) ) {
+            
+                $query = "SELECT if({$par_array['qty']} >= units_of_for_special, special_price, standard_price) as price
+                            FROM sales_stock
+                            WHERE pk_id = {$par_array['itemID']}";                
+                
+                
+                $query = $this->company_db->query($query);
+                
+                if( !is_numeric($query->row()->price) ) {
+                    
+                    return false;
+                }else {
+                    
+                    return $query->row()->price;
+                }
+            }else {
+                
+                return $query->row()->price;
+            }
+        }else {
+            
+            return $query->row()->price;
+        }
+        
+        return false;        
+    }
 	
 	function upd_balances_massive( $vars_array )
-	{
-		
+	{	
 		array_walk($vars_array, "self::clean_vars");
 		log_message('debug', $vars_array["apply_to"]);
 		if($vars_array["apply_to"] == "Family group")

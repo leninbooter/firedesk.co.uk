@@ -16,7 +16,6 @@ if( ! function_exists('company_db_string_connection'))
 	function company_db_string_connection()
 	{
 		$ci = get_instance();
-
 		
 		$local_db['hostname'] = $ci->nativesession->get('user')['db_host'];
 		$local_db['username'] = $ci->nativesession->get('user')['db_user'];

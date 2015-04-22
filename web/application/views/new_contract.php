@@ -7,7 +7,7 @@
 			<div class="col-md-2">
 				<div class="form-group">
 					<label for="account_reference">Account Number</label>
-					<input type="text" class="form-control" id="account_reference" name="account_reference" autocomplete="off"/>
+					<input type="text" class="form-control" id="account_reference" autocomplete="off"/>
 					<input type="hidden" id="account_reference_id" name="account_reference_id" value="<?php echo $this->input->get('customer_id');?>"/>
 				</div>
 			</div>

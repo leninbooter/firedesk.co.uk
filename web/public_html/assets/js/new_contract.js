@@ -66,6 +66,11 @@ function add_item_to_grid(item_type, qty, description, rate, regularity, disc, t
 		"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ description +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly><input id=\"regularity\" name=\"regularity[]\" type=\"text\" class=\"form-control\" value=\""+ regularity +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ disc +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ total_row +"\" readonly></td></tr>");
 }
 
+function contract_details_pdf(contract_id)
+{
+	$('#contract_details_content_iframe').attr("src", 'contract_details_pdf?contract_id=' + contract_id);
+}
+
 function edit( contract_id )
 {
 	window.location.href = "edit?id="+contract_id;
@@ -125,17 +130,7 @@ function load_customers_addresses()
 		});
 }
 
-$( document ).ready(function() {
-	var parent_input = $('#account_reference');
-	var height	= Math.round(parent_input.height() + parseInt(parent_input.css("padding-top").replace("px","")) + parseInt(parent_input.css("padding-bottom").replace("px","")) + 2);
-	var width	= Math.round(parent_input.width()  + parseInt(parent_input.css("padding-left").replace("px","")) + parseInt(parent_input.css("padding-right").replace("px","")) + 2);
-	$('#dropdown_parents_list').css("position", "absolute");
-	$('#dropdown_parents_list').css("top", parent_input.offset().top + height + "px" );
-	$('#dropdown_parents_list').css("left", parent_input.offset().left + "px");
-	$('#dropdown_parents_list').css("min-width", width + "px");
-	//$('#account_reference_id').val("");
-	$('#account_reference').val($('#account_reference_id').val());
-	
+$( document ).ready(function() {	
 	//Contract date
 	var d = new Date();
 	var weekday = new Array(7);
@@ -177,41 +172,6 @@ $( document ).ready(function() {
 	$('#time').val(d.getHours() + ":" + d.getMinutes());
 });
 
-
-$('#account_reference').keyup(function()
-{
-	if( $(this).val().trim().length > 1 && $('#account_reference_id').val()=="")
-	{
-		get_customers_selec_list();
-	}
-})
-.focus(function()
-{
-	if( $(this).val().trim().length > 1 && $('#account_reference_id').val()=="")
-	{
-		get_customers_selec_list();
-	}
-})
-.change(function()
-{
-	if(! parent_selected && $('#account_reference_id').val()=="")
-	{
-		$(this).val("");
-	}
-	
-	if( parent_selected )
-	{
-		$('#account_reference_id').val("");
-		$(this).val("");
-	}
-	
-	if( $(this).val()=="" )
-	{
-		$('#account_reference_id').val("");
-	}
-	
-	
-});
 
 $('#hired_items_form').submit(function(e){
 	e.preventDefault();
@@ -344,7 +304,25 @@ $('#alerts ').on('hide.bs.modal', function (e) {
 	}
 })
 
-function contract_details_pdf(contract_id)
-{
-	$('#contract_details_content_iframe').attr("src", 'contract_details_pdf?contract_id=' + contract_id);
-}
+$.get( base_url + "index.php/customers/get_customers_json", function( data ) {
+	
+	suppliers = data;
+	
+	$( "#account_reference" ).autocomplete({
+		minLength: 0,
+		source: suppliers,
+		focus: function( event, ui ) {
+			$( "#account_reference" ).val( ui.item.label );
+				return false;
+			},
+			select: function( event, ui ) {				
+				$( "#account_reference_id" ).val( ui.item.id );
+				return false;
+			}
+			})
+			.autocomplete( "instance" )._renderItem = function( ul, item ) {
+				return $( "<li>" )
+				.append( "<a>" + item.label + "</a>" )
+				.appendTo( ul );
+	};
+});

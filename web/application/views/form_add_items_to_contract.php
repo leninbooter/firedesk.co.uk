@@ -13,6 +13,7 @@
 <div class="row">
 	<div class="col-md-4">
 		<input type="hidden" name="customer_name" id="customer_name" value="<?php echo $customer_name; ?>">
+		<input type="hidden" name="customerID" id="customerID" value="<?php echo $customerID; ?>">
 		<h3>Client name <?php echo $customer_name; ?></h3>
 		<input type="hidden" id="contract_type" name="contract_type" value="<?php echo $contract_type; ?>">
 		<h4><?php echo $contract_type; ?></h4>
@@ -91,12 +92,12 @@
 				<td style="text-align:right; ">
 					<span style="font-size:120%;">Total </span>
 					<span id="total_amount_span" style="font-size:120%;">
-						<?php echo $contract_details->total_amount;?>
+						<?php //echo $contract_details->total_amount;?>
 					</span>
 				</td>
 			</tr>
 		</table>-->
-		<table class="table table-responsive table-condensed">
+		<!--<table class="table table-responsive table-condensed">
 			<tr class="success">
 				<td><input class="form-control" type="text" id="item_no_in"/></td>
 				<td style="width:10%"><input class="form-control" type="text" id="qty_in"/></td>
@@ -118,7 +119,7 @@
 					<?php endif; ?>
 				</td>
 			</tr>
-		</table>
+		</table>-->
 	</div>
 </div>
 
@@ -129,19 +130,22 @@
 </div>
 
 <div class="row">
-		<div class="col-md-2">					
-		</div>
-		<div class="col-md-1">				
-			<?php if($contract_status < 5): ?>
-				 <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hired_items_modal">Cross Hire</button>
-			<?php endif; ?>
-		</div>
-		<!--<div class="col-md-1">
-			<?php if($contract_status < 5): ?>
-				<button type="button" class="btn btn-info  btn-block">Hire</button>
-			<?php endif; ?>
-		</div>-->
-	<div class="col-md-1">
+    <div class="col-md-1">	
+        <?php if($contract_status < 5): ?>
+            <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#sales_stock_modal">Sale</button>
+        <?php endif; ?>
+    </div>		
+    <div class="col-md-1">
+        <?php if($contract_status < 5): ?>
+            <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hire_fleet_modal">Hire</button>
+        <?php endif; ?>
+    </div>
+    <div class="col-md-2">				
+        <?php if($contract_status < 5): ?>
+             <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hired_items_modal">Cross Hire</button>
+        <?php endif; ?>
+    </div>
+	<div class="col-md-2">
 		<?php if($contract_status < 5): ?>
 			<button type="button" class="btn btn-info  btn-block">Changes</button>
 		<?php endif; ?>
@@ -175,34 +179,37 @@
 			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="activate('<?php echo $contract_id; ?>')">Activate</button>
 		<?php endif; ?>
 	</div>
-	<div class="col-md-1">
+	<div class="col-md-2">
 		<?php if($contract_status == 2): ?>
 			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="abandon('<?php echo $contract_id; ?>')">Abandon</button>
 		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<?php if($contract_status > 2): ?>
-			<button type="button" class="btn btn-info  btn-block">Collect</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<?php if($contract_status == 3): ?>
-			<button type="button" class="btn btn-info  btn-block">Returns</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<div class="form-group">
-			<?php if($contract_status < 3): ?>
-				<button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button>
-			<?php endif; ?>
-		</div>
-	</div>
+	</div>	
+</div>
+<br>
+<div class="row">
+    <?php if($contract_status > 2): ?>
+        <div class="col-md-1">		
+                <button type="button" class="btn btn-info  btn-block">Collect</button>		
+        </div>
+    <?php endif; ?>
+
+    <?php if($contract_status == 3): ?>
+        <div class="col-md-1">		
+                <button type="button" class="btn btn-info  btn-block">Returns</button>		
+        </div>
+    <?php endif; ?>
+
 	<div class="col-md-1">
 		<button type="button" class="btn btn-default  btn-block">Exit</button>
 	</div>
+    
+    <?php if($contract_status < 3): ?>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button>			
+        </div>
+    <?php endif; ?>
 </div>
 </form>
-
 <div class="modal fade" id="contract_details" tabindex="-1" role="dialog" aria-labelledby="contract_details_label" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -265,10 +272,10 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				<button type="button" class="btn btn-info" data-dismiss="modal" onclick="location.reload()">Refresh</button>
-				<?php if( count($outstanding_items) > 0 ): ?>
-				<button type="submit" class="btn btn-primary">Save changes</button>
-				<button type="button" class="btn btn-primary">Save changes & print delivery note</button>
-				<?php endif; ?>
+				<?php // if( count($outstanding_items) > 0 ): ?>
+				<!--<button type="submit" class="btn btn-primary">Save changes</button>
+				<button type="button" class="btn btn-primary">Save changes & print delivery note</button>-->
+				<?php // endif; ?>
 			</div>
 			</form>
 		</div>
@@ -316,8 +323,51 @@
 	</div>
 </div>
 
-<!-- Hired items modal -->
-<?php if( $contract_status == 1): ?>
+<!-- Sale items modal -->
+<?php if( $contract_status < 5): ?>
+<div class="modal fade" id="sales_stock_modal" tabindex="-1" role="dialog" aria-labelledby="sales_stock_modal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">			
+			<div class="modal-header">
+				<h4 class="modal-title">Sales Stock</h4>
+			</div>			
+            <form role="form">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="width:10%">Stock No.</th>
+                            <th style="width:30%">Description</th>                
+                            <th style="width:10%">In Stock</th>
+                            <th style="width:10%">On Order</th>
+                            <th style="width:10%">Request Qty</th>
+                            <th style="width:10%">Price</th>
+                            <th style="width:20%">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="hidden" id="item_id" value=""><p class="form-control-static" id="stock_no"></p></td>
+                            <td><input type="text" id="sale_item_description" name="sale_item_description" class="form-control"></td>
+                            <td><p class="form-control-static" id="sale_item_in_stock"></p></td>
+                            <td><p class="form-control-static" id="sale_item_on_order"></p></td>
+                            <td><input type="text" id="sale_item_qty" name="sale_item_qty" class="form-control" onchange="getPrice(this)"></td>
+                            <td><input type="text" id="price" name="price" class="form-control"></td>
+                            <td><p class="form-control-static" id="sale_item_total"></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-info" >Add items</button>
+			</div>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
+
+<!-- Cross Hired items modal -->
+<?php if( $contract_status < 5): ?>
 <div class="modal fade" id="hired_items_modal" tabindex="-1" role="dialog" aria-labelledby="receipts_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -366,6 +416,65 @@
 				<button type="submit" class="btn btn-info" >Add items</button>
 			</div>
 			</form>
+		</div>
+	</div>
+</div>
+<?php endif; ?>
+
+<!-- Hired items modal -->
+<?php if( $contract_status < 5): ?>
+<div class="modal fade" id="hire_fleet_modal" tabindex="-1" role="dialog" aria-labelledby="hire_fleet_modal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">			
+			<div class="modal-header">
+				<h4 class="modal-title">Hire Fleet</h4>
+			</div>
+			<div class="modal-body">				
+				<form id="hireItemForm" class="form-horizontal">
+                    <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
+                    <div class="form-group">
+                        <label class="col-sm-1">Search:</label>
+                        <div class="col-sm-8">
+                            <input type="text" id="search_hire_item_field" name="search_hire_item_field" class="form-control input-sm">
+                            <input type="hidden" id="hire_item_id" name="hire_item_id">
+                        </div>						
+                        <label class="col-sm-1"><p class="text-right">Price:</p></label>
+                        <div class="col-sm-2">
+                            <input type="text" id="hire_item_price" name="hire_item_price" class="form-control input-sm">
+                        </div>						
+                    </div>
+				</form>
+				<div  class="row">					                   
+                   <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Multipart item components</h4>
+                            </div>
+                            <form id="hireFleetItemComponentsForm" role="form" >
+                                <div id="components_panel">
+                                </div>
+                            </form>
+                        </div>
+                   </div>
+                </div>
+				<div class="row">
+                    <div class="col-md-12">
+                        <div  class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Recommended items</h4>
+                            </div>
+                            <form id="hireFleetItemAccesoriesForm" role="form" >
+                                <div id="recommended_items_panel">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-info" id="addItem_btn" name="addItem_btn" >Add items</button>
+			</div>
 		</div>
 	</div>
 </div>

@@ -1,7 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Contracts extends CI_Controller
+use Respect\Validation\Validator as v;
+
+class Contracts extends MY_Controller
 {
+    function __construct() {
+        
+        parent::__construct();
+    }
+    
 	public function abandon_contract()
 	{
 		$this->load->helper(array('file', 'url'));
@@ -62,6 +69,7 @@ class Contracts extends CI_Controller
 		$data['contract_id'] = trim($this->input->get('id', true));
 		$data['contract_details'] = $this->contracts_m->get_contract_details( $data['contract_id'] );
 		$data['contract_items'] = $this->contracts_m->get_contract_items( $data['contract_id'] );
+		$data['customerID'] = $data['contract_details']->fk_customer_id;
 		$data['customer_name'] = $data['contract_details']->name;
 		$data['contract_type'] = $data['contract_details']->type == 0 ? "Cash" : "Credit";
 		$data['contract_type_sale_hire'] = $data['contract_details']->fk_contract_type_id ;
@@ -74,6 +82,7 @@ class Contracts extends CI_Controller
 		$this->load->view('form_add_items_to_contract', $data);
 		$this->load->view('footer_common');
 		$this->load->view('new_contract_footer');
+		$this->output->append_output("<script src=\"".base_url('assets/js/form_add_items_to_contract.js')."\"></script>");
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 
@@ -118,18 +127,18 @@ class Contracts extends CI_Controller
 		$contract_id = trim($this->input->post('contract_id', true));
 		$this->load->model('contracts_m');
 		$errors = false;
+
 		for($i = 0; $i < count($_POST['now']); $i++)
 		{
-			$item_id = $_POST["item_id"][$i];
+
+            $item_id = $_POST["item_id"][$i];
 			$now = $_POST["now"][$i];
-			log_message('debug', "processing: ".$i." item_id:  ".$item_id. "now: ".$now." contract_id: ".$contract_id."");
+
 			if(is_numeric($now))
 			{
-				log_message('debug', "is numeric");
-				$vars_array = compact("contract_id", "item_id", "now");
-				log_message('debug', "compacted");
+			
+                $vars_array = compact("contract_id", "item_id", "now");
 				$result = $this->contracts_m->save_item_supplied( $vars_array );
-				log_message('debug', $result);
 				if( !$result )
 				{
 					$errors=true;
@@ -242,12 +251,152 @@ class Contracts extends CI_Controller
 			return false;
 		}
 	}
+    
+    public function saveHireItem() {
+        
+        if ( isset($_POST['hire_item_id']) ) {
+            
+            $hireItemID             = trim($this->security->xss_clean($_POST['hire_item_id'])); 
+            $hireItemDescription    = trim($this->security->xss_clean($_POST['search_hire_item_field'])); 
+            $hireItemPrice          = trim($this->security->xss_clean($_POST['hire_item_price'])); 
+            $contractID             = trim($this->security->xss_clean($_POST['contractID']));
+            
+            if ( v::int()->validate($hireItemID)
+                && v::string()->validate($hireItemDescription)
+                && v::numeric()->validate($hireItemPrice) ) {
+                
+                $param_array = compact( "hireItemID",
+                                    "hireItemDescription",
+                                     "hireItemPrice",
+                                     "contractID" );
+                
+                $this->load->model('contracts_m');
+                if ( $this->contracts_m->insHireItem( $param_array) ) {
+                    
+                    echo "ok";
+                }else {
+                    
+                    echo "ko";
+                }                
+            }else {
+                   
+                http_response_code(400);
+                echo "Please, check the format data.";
+            } 
+        }
+    }
+    
+    public function saveHireItemAccesories() {        
+        log_message('debug', 'saveHireItemAccesories');
+        if (isset($_POST['item_id'])) {
+            
+            for ($i=0; $i < count($_POST['item_id']); $i++) {
+               
+               $this->load->model('contracts_m');
+                
+               $hireItemID    = trim($this->security->xss_clean($_POST['hireItemID'])); 
+               $item_no       = trim($this->security->xss_clean($_POST['item_id'][$i]));
+               $qty           = trim($this->security->xss_clean($_POST['requestQty'][$i]));
+               $description   = trim($this->security->xss_clean($_POST['description'][$i]));
+               $rate          = trim($this->security->xss_clean($_POST['price'][$i]));
+               $value         = $rate*$qty;
+               $contractID    = trim($this->security->xss_clean($_POST['contractID']));
+               $itemType      = trim($this->security->xss_clean($_POST['item_type'][$i]));;          
+               $date          = date('Y-m-d H:i:s');
+               
+               if ( v::int()->validate($hireItemID)
+                    && v::int()->validate($item_no)
+                    && v::int()->validate($qty)
+                    && v::numeric()->validate($rate)
+                    && v::int()->validate($contractID)
+                    && v::int()->validate($itemType) ) {
+                   
+                   if ($qty > 0) {
+                       
+                       $parm_arry = compact("hireItemID",
+                                            "item_no",
+                                             "qty",
+                                             "description",
+                                             "rate",
+                                             "value",
+                                             "contractID",
+                                             "itemType",
+                                             "date");
+                        
+                       if ( !$this->contracts_m->insHireItemAccesory($parm_arry) ) {
+                           echo "ko";
+                           return;
+                       }
+                   }else {
+                   
+                        http_response_code(400);
+                        echo "Please, check the format data.";
+                    }                   
+                }
+            }
+            
+            echo "ok";
+        }
+    }
 
-
+    /**
+    *
+    * Save the hire multipart item of contract
+    *
+    */
+    public function saveMultipartItemsComponents() {
+                log_message('debug', 'saveMultipartItemsComponents');
+        if (isset($_POST['item_no'])) {
+        
+           for ($i=0; $i < count($_POST['item_no']); $i++) {
+                                   
+               $this->load->model('contracts_m');
+              
+               $hireItemID    = trim($this->security->xss_clean($_POST['hireItemID'])); 
+               $item_no       = trim($this->security->xss_clean($_POST['item_no'][$i]));
+               $qty           = trim($this->security->xss_clean($_POST['requestQty'][$i]));
+               $description   = trim($this->security->xss_clean($_POST['description'][$i]));
+               $rate          = trim($this->security->xss_clean($_POST['rate'][$i]));
+               $value         = $rate*$qty;
+               $contractID    = trim($this->security->xss_clean($_POST['contractID']));
+               $itemType      = 2;              
+               
+               if ( v::int()->validate($hireItemID)
+                    && v::int()->validate($item_no)
+                    && v::int()->validate($qty)
+                    && v::numeric()->validate($rate)
+                    && v::int()->validate($contractID)
+                    && v::int()->validate($itemType) ) {
+                   
+                   if ($qty > 0) {
+                       $parm_arry = compact("hireItemID",
+                                            "item_no",
+                                             "qty",
+                                             "description",
+                                             "rate",
+                                             "value",
+                                             "contractID",
+                                             "itemType");
+                        
+                       if ( !$this->contracts_m->insMultipartItemComponent($parm_arry) ) {
+                           
+                           echo "ko";
+                           return;                           
+                       }
+                   }
+                }else {
+                   
+                    http_response_code(400);
+                    echo "Please, check the format data.";
+                }
+            }
+            echo "ok";
+        }
+    }
 
 	public function save_contract()
 	{
-		$this->load->helper(array('form', 'url'));
+		/*$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		$this->lang->load('errors', 'english');
 		$this->lang->load('messages', 'english');
@@ -343,7 +492,7 @@ class Contracts extends CI_Controller
 			{
 				echo "failed";
 			}
-		}
+		}*/
 	}
 
 	public function save_contract_item()
@@ -419,8 +568,8 @@ class Contracts extends CI_Controller
 				$data['contract_items'] = $this->contracts_m->get_contract_items( $data['contract_id'] );
 				$this->load->view('header_nav');
 				$this->load->view('form_add_items_to_contract', $data);
-				$this->load->view('footer_common');
-				$this->load->view('new_contract_footer');
+				$this->load->view('footer_common');				
+				$this->load->view('new_contract_footer');				
 				$this->load->view('footer_copyright');
 				$this->load->view('footer');
 	}
