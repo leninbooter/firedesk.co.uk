@@ -17,3 +17,27 @@ else
 // User date & time
 var now = new Date();
 var now_mysqlformat = now.getFullYear()+"-"+("0"+(now.getMonth()+1)).toString().slice(-2)+"-"+("0"+now.getDate()).toString().slice(-2)+" "+("0"+now.getHours()).toString().slice(-2)+":"+("0"+now.getMinutes()).toString().slice(-2)+".000";
+
+$(".percentage, [name^=discount_percentage]").keyup(function(){
+	var str 		= $(this).val();
+	var init_pos 	= this.selectionStart;
+	
+	str = str.replace(/[%]*/g, "");
+	str = str.replace(/[^0-9]*/g, "");
+	str = str + "%";
+	
+	$(this).val(str);
+	
+	console.log(init_pos + " " + str.length);
+	
+	if(this.selectionStart == this.selectionEnd)
+	{
+		this.selectionEnd = this.selectionStart = init_pos;
+	}
+	
+	if(this.selectionStart == str.length)
+		this.selectionStart -= 1;
+	
+	if(this.selectionEnd == str.length)
+		this.selectionEnd -= 1;	
+});

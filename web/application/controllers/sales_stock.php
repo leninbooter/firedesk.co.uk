@@ -204,11 +204,6 @@ class Sales_stock extends MY_Controller
 					'rules'		=> 'trim|xss_clean|decimal'
 			   ),
 			   array(
-					'field'		=> 'special_price',
-					'label'		=> 'Special Price',
-					'rules'		=> 'trim|xss_clean|decimal'
-			   ),
-			   array(
 					'field'		=> 'units_of_for_special',
 					'label'		=> 'Units of',
 					'rules'		=> 'trim|xss_clean|integer'
@@ -265,13 +260,16 @@ class Sales_stock extends MY_Controller
 			   )
 			   
             );
+        
+        $special_price         	= number_format( floatval(trim($this->input->post('special_price', true))), 2 );
 
 		$this->form_validation->set_rules($config);
 		$this->form_validation->set_rules('description', 'Name', 'callback_shorttext_valid');
 
 		$this->form_validation->set_message('required', 'The %s field is mandatory.');
 
-		if ( !$this->form_validation->run() )
+		if ( !$this->form_validation->run() 
+            && v::numeric()->validate($special_price) )
 		{
 			echo validation_errors();
 		}
@@ -286,8 +284,7 @@ class Sales_stock extends MY_Controller
 			$quantity_on_order     	= $this->input->post('quantity_on_order');
 			$quantity_rec_level    	= $this->input->post('quantity_rec_level');
 			$last_moverment        	= $this->input->post('last_moverment');
-			$standard_price        	= $this->input->post('standard_price');
-			$special_price         	= $this->input->post('special_price');
+			$standard_price        	= $this->input->post('standard_price');			
 			$units_of_for_special  	= $this->input->post('units_of_for_special');
 			$cost_price_a          	= $this->input->post('cost_price_a');
 			$cost_price_b          	= $this->input->post('cost_price_b');

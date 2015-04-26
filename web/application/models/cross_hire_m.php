@@ -82,7 +82,7 @@ where po.pk_id = ".$pk_id;
 	function get_hired_items()
 	{
 		
-		$query ="select
+		$query ="SELECT
 					 s.name as 'hired_from',
 					 chois.fk_cross_hire_order_id as 'cross_hire_order_id',
 					 chois.cost as 'cost',
@@ -90,7 +90,7 @@ where po.pk_id = ".$pk_id;
 					 count(chois.fk_cross_hire_order_item_id) as 'max',
 					 choi.description as 'description',
 					 choi.fk_item_id as 'stock_id'
-				from cross_hire_items_stock as chois
+				FROM cross_hire_items_stock as chois
 					 INNER JOIN cross_hire_orders_items as choi on choi.pk_id = chois.fk_cross_hire_order_item_id
 					 INNER JOIN cross_hire_orders as cho on cho.pk_id = chois.fk_cross_hire_order_id
 					 INNER JOIN suppliers as s on s.pk_id = cho.fk_supplier_id

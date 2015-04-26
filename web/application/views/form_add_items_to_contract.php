@@ -51,6 +51,135 @@
 </div>
 
 <div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sale</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-responsive table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Stock No.</th>
+                            <th>Description</th>
+                            <th>Qty</th>
+                            <th>Rate</th>
+                            <th>Discount</th>
+                            <th>Total</th>                            
+                            <th></th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($SoldItems as $i): ?>
+                            <tr>
+                                <td style="display:none"><input type="hidden" id="itemRowID" name="itemRowID[]" value="<?php echo $i->pk_id; ?>"></td>
+                                <td><?php echo $i->stock_number; ?></td>
+                                <td><?php echo $i->description; ?></td>
+                                <td><?php echo $i->qty; ?></td>
+                                <td><?php echo $i->rate; ?></td>
+                                <td><?php echo $i->discount_perc; ?></td>
+                                <td><?php echo $i->value; ?></td>
+                                <td><?php if ($contract_status < 3): ?><button type="button" class="btn btn-default btn-sm" onclick="deleteSaleItem(this)">Delete</button><?php endif; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Hire</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-responsive table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Stock No.</th>
+                            <th>Description</th>
+                            <th>Qty</th>
+                            <th>Rate</th>
+                            <th>Discount</th>
+                            <th></th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $parent = false; ?>
+                        <?php foreach($HiredItems as $i): ?>
+                            <?php   if ( $parent == false || $parent != $i->parent_item) {
+                                        $parent = $i->item_no;
+                                    }
+                            ?>
+                            <tr>
+                                <td style="display:none"><input type="hidden" id="itemRowID" name="itemRowID[]" value="<?php echo $i->pk_id; ?>"></td>
+                                <td><?php echo $i->productID; ?></td>
+                                <td <?php echo $parent == $i->parent_item ? "style=\"padding-left:20px;\"": "";  ?>  ><?php echo $i->description; ?></td>
+                                <td><?php echo $i->qty; ?></td>
+                                <td><?php echo $i->rate; ?></td>
+                                <td><?php echo $i->discount_perc; ?></td>
+                                <td><?php if ($contract_status < 3): ?><button type="button" class="btn btn-default btn-sm" onclick="deleteHireItem(this)">Delete</button><?php endif; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Cross Hire</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-responsive table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Stock No.</th>
+                            <th>Description</th>
+                            <th>Qty</th>
+                            <th>Rate</th>
+                            <th>Discount</th>
+                            <th>Day 1</th>                            
+                            <th>Day 2</th>                            
+                            <th>Day 3</th>                            
+                            <th>Week</th>                            
+                            <th>W/End</th>                            
+                            <th></th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $parent = false; ?>
+                        <?php foreach($CrossedHireItems as $i): ?>
+                            <tr>
+                                <td style="display:none"><input type="hidden" id="itemRowID" name="itemRowID[]" value="<?php echo $i->pk_id; ?>"></td>
+                                <td><?php echo $i->stock_number; ?></td>
+                                <td ><?php echo $i->description; ?></td>
+                                <td><?php echo $i->qty; ?></td>
+                                <td><?php echo $i->rate; ?></td>
+                                <td><?php echo $i->discount; ?></td>
+                                <td><?php echo $i->day1; ?></td>
+                                <td><?php echo $i->day2; ?></td>
+                                <td><?php echo $i->day3; ?></td>
+                                <td><?php echo $i->week; ?></td>
+                                <td><?php echo $i->wend; ?></td>
+                                <td><?php if ($contract_status < 3): ?><button type="button" class="btn btn-default btn-sm" onclick="deleteCrossHiredItem(this)">Delete</button><?php endif; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="row">
 	<div class="col-md-12">
 		<table class="table table-hover table-responsive" id="items">
 			<thead>
@@ -63,13 +192,12 @@
 					<th style="width:20%">Value</th>
 				</tr>
 			</thead>
-			<?php foreach($contract_items as $row): ?>
+			<?php //foreach($contract_items as $row): ?>
 				<tr>					
-					<td><?php echo $row->item_no; ?></td>
-					<td><?php echo $row->qty; ?></td>
-					<td><?php echo $row->description; ?></td>
-					<!--<td>&nbsp;</td>-->
-					<td><?php echo $row->rate;
+					<td><?php //echo $row->item_no; ?></td>
+					<td><?php //echo $row->qty; ?></td>
+					<td><?php //echo $row->description; ?></td>
+					<td><?php /*echo $row->rate;
 							echo " ";
 							switch( $row->regularity )
 							{
@@ -78,16 +206,16 @@
 								case 3: echo "Week"; break;
 								case 4: echo "Day"; break;
 							}
-						?></td>
-					<td><?php echo $row->discount_perc; ?></td>
-					<td><?php echo $row->value; ?></td>
+						*/?></td>
+					<td><?php //echo $row->discount_perc; ?></td>
+					<td><?php //echo $row->value; ?></td>
 				</tr>
-			<?php endforeach; ?>
+			<?php //endforeach; ?>
 				<tr>					
 										
 				</tr>
 		</table>
-		<!--<table class="table table-condensed" style="margin-bottom:0">
+		<table class="table table-condensed" style="margin-bottom:0">
 			<tr>							
 				<td style="text-align:right; ">
 					<span style="font-size:120%;">Total </span>
@@ -96,8 +224,8 @@
 					</span>
 				</td>
 			</tr>
-		</table>-->
-		<!--<table class="table table-responsive table-condensed">
+		</table>
+		<table class="table table-responsive table-condensed">
 			<tr class="success">
 				<td><input class="form-control" type="text" id="item_no_in"/></td>
 				<td style="width:10%"><input class="form-control" type="text" id="qty_in"/></td>
@@ -105,23 +233,23 @@
 				<td style="width:20%"><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td>
 				<td style="width:10%"><input class="form-control" type="text" id="desc_in"/></td>
 				<td style="width:20%">
-					<?php if($contract_status < 5): ?>
+					<?php //if($contract_status < 5): ?>
 						<div class="btn-group" data-toggle="buttons">		
-								 <label class="btn btn-primary <?php echo $contract_type_sale_hire == 2 ? "active":"" ?>">
+								 <label class="btn btn-primary <?php //echo $contract_type_sale_hire == 2 ? "active":"" ?>">
 									<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
 								  </label>
-								<?php if($contract_type_sale_hire == 1): ?>					  
+								<?php //if($contract_type_sale_hire == 1): ?>					  
 									<label class="btn btn-primary">
 										<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
 									</label>
-								<?php endif; ?>
+								<?php //endif; ?>
 						</div>
-					<?php endif; ?>
+					<?php //endif; ?>
 				</td>
 			</tr>
-		</table>-->
+		</table>
 	</div>
-</div>
+</div>-->
 
 <div class="row">
 	<div class="col-md-12">
@@ -131,22 +259,22 @@
 
 <div class="row">
     <div class="col-md-1">	
-        <?php if($contract_status < 5): ?>
+        <?php if($contract_status < 3): ?>
             <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#sales_stock_modal">Sale</button>
         <?php endif; ?>
     </div>		
     <div class="col-md-1">
-        <?php if($contract_status < 5): ?>
+        <?php if($contract_status < 3): ?>
             <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hire_fleet_modal">Hire</button>
         <?php endif; ?>
     </div>
     <div class="col-md-2">				
-        <?php if($contract_status < 5): ?>
+        <?php if($contract_status < 3): ?>
              <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hired_items_modal">Cross Hire</button>
         <?php endif; ?>
     </div>
 	<div class="col-md-2">
-		<?php if($contract_status < 5): ?>
+		<?php if($contract_status < 3): ?>
 			<button type="button" class="btn btn-info  btn-block">Changes</button>
 		<?php endif; ?>
 	</div>
@@ -324,42 +452,45 @@
 </div>
 
 <!-- Sale items modal -->
-<?php if( $contract_status < 5): ?>
+<?php if( $contract_status < 3): ?>
 <div class="modal fade" id="sales_stock_modal" tabindex="-1" role="dialog" aria-labelledby="sales_stock_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">			
 			<div class="modal-header">
 				<h4 class="modal-title">Sales Stock</h4>
-			</div>			
-            <form role="form">
-                <table class="table table-condensed">
-                    <thead>
-                        <tr>
-                            <th style="width:10%">Stock No.</th>
-                            <th style="width:30%">Description</th>                
-                            <th style="width:10%">In Stock</th>
-                            <th style="width:10%">On Order</th>
-                            <th style="width:10%">Request Qty</th>
-                            <th style="width:10%">Price</th>
-                            <th style="width:20%">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="hidden" id="item_id" value=""><p class="form-control-static" id="stock_no"></p></td>
-                            <td><input type="text" id="sale_item_description" name="sale_item_description" class="form-control"></td>
-                            <td><p class="form-control-static" id="sale_item_in_stock"></p></td>
-                            <td><p class="form-control-static" id="sale_item_on_order"></p></td>
-                            <td><input type="text" id="sale_item_qty" name="sale_item_qty" class="form-control" onchange="getPrice(this)"></td>
-                            <td><input type="text" id="price" name="price" class="form-control"></td>
-                            <td><p class="form-control-static" id="sale_item_total"></p></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
+			</div>
+            <div class="modal-body">
+                <form id="sales_items_form" action="">
+                <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Stock No.</th>
+                                <th style="width:30%">Description</th>                
+                                <th style="width:10%">In Stock</th>
+                                <th style="width:10%">On Order</th>
+                                <th style="width:10%">Request Qty</th>
+                                <th style="width:10%">Price</th>
+                                <th style="width:20%">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="hidden" id="item_id" name="item_id" value=""><p class="form-control-static" id="stock_no"></p></td>
+                                <td><input type="text" id="sale_item_description" name="sale_item_description" class="form-control"></td>
+                                <td><p class="form-control-static" id="sale_item_in_stock"></p></td>
+                                <td><p class="form-control-static" id="sale_item_on_order"></p></td>
+                                <td><input type="text" id="sale_item_qty" name="sale_item_qty" class="form-control" onchange="getPrice(this)"></td>
+                                <td><input type="text" id="price" name="price" class="form-control"></td>
+                                <td><p class="form-control-static text-right" id="sale_item_total"></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
             <div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="submit" class="btn btn-info" >Add items</button>
+				<button type="button" class="btn btn-info" id="addSale_btn" name="addSale_btn" onclick="$('#sales_items_form').submit();">Add items</button>
 			</div>
         </div>
     </div>
@@ -367,11 +498,12 @@
 <?php endif; ?>
 
 <!-- Cross Hired items modal -->
-<?php if( $contract_status < 5): ?>
+<?php if( $contract_status < 3): ?>
 <div class="modal fade" id="hired_items_modal" tabindex="-1" role="dialog" aria-labelledby="receipts_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
-			<form id="hired_items_form" action="" role="form" >
+			<form id="cross_hired_form"  role="form" >
+            <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
 			<div class="modal-header">
 				<h4 class="modal-title">Available cross hired equipment</h4>
 			</div>
@@ -379,25 +511,27 @@
 					<table id="hire_items_table" class="table table-hover table-condensed">
 							<thead>
 								<tr>
-									<th style="width:20%">Hired from</th>
-									<th style="width:15%">Order number</th>
-									<th style="width:15%">Cost</th>
+									<th style="width:10%">Hired from</th>
+									<th style="width:10%">Order number</th>
+									<th style="width:10%">Cost</th>
 									<th style="width:10%">Qty</th>
-									<th style="width:40%">Description</th>																	
+									<th style="width:30%">Description</th>																	
+									<th style="width:30%">Charging Band</th>																	
 								</tr>
 							</thead>
 							<tbody>
 								<?php foreach($hired_items as $item): ?>
 									<tr>
 										<td>
-										<input id="chi_stock_id_in" name="chi_stock_id_in[]" type="hidden" value="<?php echo $item->cross_hire_order_id; ?>"/>
+										<input id="chi_stock_id_in" name="chi_stock_id_in[]" type="hidden" value="<?php echo $item->stock_id; ?>"/>
+										<input id="chi_order_item_id" name="chi_order_item_id[]" type="hidden" value="<?php echo $item->fk_cross_hire_order_item_id; ?>"/>
 										<?php echo $item->hired_from; ?></td>
 										<td><?php echo $item->cross_hire_order_id; ?></td>
 										<td>
 										<input id="chi_cost_in" name="chi_cost_in[]" type="hidden" value="<?php echo $item->cost; ?>"/>
 										<?php echo $item->cost; ?></td>
 										<td>
-										<select id="chi_qty_in" name="chi_qty_in" class="form-control">
+										<select id="chi_qty_in" name="chi_qty_in[]" class="form-control" onchange="chiQtyChanged(this);">
 											<?php for($i=0; $i <= $item->max; $i++): ?>
 												<option><?php echo $i; ?></option>
 											<?php endfor; ?>
@@ -405,7 +539,17 @@
 										</td>
 										<td>
 										<input id="chi_description_in" name="chi_description_in[]" type="hidden" value="<?php echo $item->description; ?>"/>
-										<?php echo $item->description; ?></td>										
+										<?php echo $item->description; ?></td>
+                                        <td>
+                                            <table style="display:none">
+                                                <tr><td style="width:40%">Rate</td><td style="width:30%"><input type="text" id="rate" name="rate[]" class="form-control"></td><td style="width:30%"></td></tr>
+                                                <tr><td>1 Day</td><td><input type="text" id="day1"  name="day1[]" class="form-control percentage"></td><td><p class="form-control-static text-right"></p></td></tr>
+                                                <tr><td>2 Day</td><td><input type="text" id="day2"  name="day2[]" class="form-control percentage"></td><td><p class="form-control-static text-right"></p></td></tr>
+                                                <tr><td>3 Day</td><td><input type="text" id="day3"  name="day3[]" class="form-control percentage"></td><td><p class="form-control-static text-right"></p></td></tr>
+                                                <tr><td>Week</td><td><input type="text" id="week"   name="week[]" class="form-control percentage"></td><td><p class="form-control-static text-right"></p></td></tr>
+                                                <tr><td>W/End</td><td><input type="text"id="wend" name="wend[]"  class="form-control percentage"></td><td><p class="form-control-static text-right"></p></td></tr>
+                                            </table>
+                                        </td>
 									</tr>
 								<?php endforeach; ?>
 							</tbody>
@@ -413,7 +557,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="submit" class="btn btn-info" >Add items</button>
+				<button type="button" class="btn btn-info" onclick="$(this).prop('disabled', true); $('#cross_hired_form').submit()" >Add items</button>
 			</div>
 			</form>
 		</div>
@@ -422,7 +566,7 @@
 <?php endif; ?>
 
 <!-- Hired items modal -->
-<?php if( $contract_status < 5): ?>
+<?php if( $contract_status < 3): ?>
 <div class="modal fade" id="hire_fleet_modal" tabindex="-1" role="dialog" aria-labelledby="hire_fleet_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">			
@@ -473,7 +617,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-info" id="addItem_btn" name="addItem_btn" >Add items</button>
+				<button type="button" class="btn btn-info" id="addHire_btn" name="addHire_btn" onclick="$('#hireItemForm').submit();" >Add items</button>
 			</div>
 		</div>
 	</div>

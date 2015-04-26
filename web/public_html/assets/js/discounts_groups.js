@@ -23,25 +23,3 @@ $('[name^=remove_description_btn]').click(function()
 	$('#new_discount_group').submit();
 });
 
-$("[name^=discount_percentage]").keyup(function(){
-	var str 		= $(this).val();
-	var init_pos 	= this.selectionStart;
-	
-	str = str.replace(/[%]*/g, "");
-	str = str + "%";
-	
-	$(this).val(str);
-	
-	console.log(init_pos + " " + str.length);
-	
-	if(this.selectionStart == this.selectionEnd)
-	{
-		this.selectionEnd = this.selectionStart = init_pos;
-	}
-	
-	if(this.selectionStart == str.length)
-		this.selectionStart -= 1;
-	
-	if(this.selectionEnd == str.length)
-		this.selectionEnd -= 1;	
-});

@@ -173,7 +173,7 @@ $( document ).ready(function() {
 });
 
 
-$('#hired_items_form').submit(function(e){
+/*$('#hired_items_form').submit(function(e){
 	e.preventDefault();
 	
 	var fields = $(this).serializeArray();
@@ -202,7 +202,7 @@ $('#hired_items_form').submit(function(e){
 		}
 	});
 	
-});
+})*/;
 
 $('#save_button').click(function()
 {	
