@@ -50,7 +50,7 @@ $.get( base_url + "index.php/hire_stock/get_items_json", function( data ) {
                 componentsDivAnimInterval = setInterval(function(){ 
                                                                 $('#components').parent().parent().toggleClass('magictime loading');
                                                             }, 1000 );
-                $.get(base_url+"index.php/hire_stock/getMultipartItemComponentsContractForm/", { itemID:ui.item.id, contractID: $('#contract_id').val() }, function(html){
+                $.get(base_url+"index.php/hire_stock/getMultipartItemComponentsContractForm/", { itemID:ui.item.id, contractID: $('#contract_id').val(), hireItemType: ui.item.type }, function(html){
                     $('#components_panel').html(html);
                       clearInterval(componentsDivAnimInterval);
                     $('#components_panel').parent().parent().removeClass('magictime loading');
@@ -62,7 +62,7 @@ $.get( base_url + "index.php/hire_stock/get_items_json", function( data ) {
                                                                     $('#recommended_items_panel').parent().parent().toggleClass('magictime loading');
                                                                 }, 
                                                        1000 );
-				$.get(base_url+"index.php/hire_stock/getGroupAccesoriesContractForm/", { groupID: ui.item.family_id, contractID: $('#contract_id').val(), hireItemID:ui.item.id }, function(html) {
+				$.get(base_url+"index.php/hire_stock/getGroupAccesoriesContractForm/", { groupID: ui.item.family_id, contractID: $('#contract_id').val(), hireItemID:ui.item.id, hireItemType: ui.item.type }, function(html) {
                     $('#recommended_items_panel').html(html);                                       
                     clearInterval(accesoriesDivAnimInterval);
                     $('#recommended_items_panel').parent().parent().removeClass('magictime loading');

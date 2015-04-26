@@ -81,7 +81,7 @@ class Hire_stock_m extends CI_Model
 		
 		$query =  $this->company_db->query( "SELECT pk_id, fleet_number as 'number', description as 'label' FROM hire_items WHERE fk_hire_item_parent is null;");
 		return !empty($query->result()) ? $query->result() : array();
-	}	
+	}	    
 	
 	/**
     *
@@ -92,8 +92,30 @@ class Hire_stock_m extends CI_Model
     * @return Object array with every row by accesories
     *
     */
-    function get_accesories_from_group( $group_id, $salePrices = false )
-	{		
+    function get_accesories_from_group( $group_id, $salePrices = false, $bundleID = false )
+	{	
+
+        if ( $bundleID != false) {
+            
+            $query = "SELECT fk_hire_group_id 
+                            FROM hire_items_bundles_groups
+                            WHERE fk_bundle_id = {$bundleID}";
+                            
+            $bundleComponents = $this->company_db->query($query)->result_array();
+            
+            $groupsIDin = "(";        
+            foreach( $bundleComponents as $i  ) {
+                $groupsIDin .= $i['fk_hire_group_id'].",";
+                
+            }                        
+            $groupsIDin[strlen($groupsIDin)-1] = ")";
+            
+            $queryLastPartWhere = " and hag.fk_hire_family_group_id in {$groupsIDin} ";
+        }else {
+            
+            $queryLastPartWhere = " and hag.fk_hire_family_group_id = {$group_id} ";
+        }
+	
         //hag.item_type as 'item_type',
         $queryHireItems = "SELECT 
                                 
@@ -122,12 +144,12 @@ class Hire_stock_m extends CI_Model
                 " FROM hire_accesory_groups AS hag
 					INNER JOIN hire_items AS hi ON hi.pk_id = hag.fk_item_id
                     INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = hag.fk_hire_family_group_id
-				WHERE hag.item_type = 1 AND hag.accesory_parent is null AND hag.fk_hire_family_group_id = ".$group_id."
+				WHERE hag.item_type = 1 AND hag.accesory_parent is null {$queryLastPartWhere}
 				UNION ALL ".
 				$querySalesItems.
 				" FROM hire_accesory_groups as hag
 					inner join sales_stock as ss on ss.pk_id = hag.fk_item_id
-				WHERE hag.item_type = 2 and hag.accesory_parent is null and hag.fk_hire_family_group_id = ".$group_id;
+				WHERE hag.item_type = 2 and hag.accesory_parent is null {$queryLastPartWhere}";
 				
 		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
@@ -468,6 +490,63 @@ class Hire_stock_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();		
 	}
     
+    function selectItemComponentsForContract( $pk_id ) {
+        
+        $querySelect = "SELECT
+                            a.pk_id,
+                            a.fleet_number,
+                            a.description as label,
+                            ifnull(a.qty_required_as_component,0) as qty_required,
+                            ifnull(a.qty,0) as qty_stock";
+        
+        $itemDetails = $this->select_item_details($pk_id);
+        
+        if ($itemDetails->fk_type == 4) {
+                $query = "SELECT fk_hire_group_id 
+                            FROM hire_items_bundles_groups
+                            WHERE fk_bundle_id = {$pk_id}";
+                            
+                $bundleComponents = $this->company_db->query($query)->result_array();
+                
+                $groupsIDin = "(";
+                
+                foreach( $bundleComponents as $i  ) {
+                    $groupsIDin .= $i['fk_hire_group_id'].",";
+                    
+                }                
+                
+                $groupsIDin[strlen($groupsIDin)-1] = ")";
+                
+                $queryFrom =  " FROM hire_items as a
+                             INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = a.fk_family_group
+                          WHERE a.fk_family_group IN {$groupsIDin}
+                            AND fk_type = 1";
+                
+        }else {
+            
+            $queryFrom = " FROM hire_items as a
+                                INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = a.fk_family_group
+                             WHERE fk_hire_item_parent ={$pk_id}";
+        }
+        
+         if($itemDetails->basic_rate > 0) {
+           
+            // If the kit or bundle has a basic_rate > 0
+            // we use that basic rate as the sales price and the components items
+            // must show a price of 0
+            $querySelect .= ", 0 as rate ";
+
+        }else {
+
+            $querySelect .= ", CASE WHEN a.basic_rate is null THEN hifg.basic_rate 
+                                        WHEN a.basic_rate is not null THEN a.basic_rate END as rate ";
+        }
+        
+        log_message('debug', $querySelect.$queryFrom);
+		$query =  $this->company_db->query($querySelect.$queryFrom);
+		return !empty($query->result()) ? $query->result() : array();
+    }
+    
     /**
     *
     * Query the components of a bundle or kit item
@@ -480,51 +559,38 @@ class Hire_stock_m extends CI_Model
     *
     */
     
-	function select_components_from( $pk_id, $salePrices = false) {   
+	function select_components_from( $pk_id ) {   
         
-        $hireItemsQuery = "SELECT
-                            a.pk_id,
-                            a.fleet_number,
-                            a.description as label,
-                            ifnull(a.qty_required_as_component,0) as qty_required,
-                            ifnull(a.qty,0) as qty_stock";
-
-        $hireBundlesQuery = "SELECT 
-                            a.pk_id,
-                            '' as fleet_number,
-                            hifg.name as label,
-                            '' as qty_required,
-                            '' as qty_stock";
-
-        if( $salePrices ) {
-             $kitBundleRate = $this->select_item_details($pk_id);
-             
-             // Check the type of the hire item selected to determine the way of 
-             // fetching the sale prices
-             if( $kitBundleRate->fk_type == 3 || $kitBundleRate->fk_type == 4) {
-                if($kitBundleRate->basic_rate > 0) {
-                    // If the kit or bundle has a basic_rate > 0
-                    // we use that basic rate as the sales price and the components items
-                    // must show a price of 0
-                    $hireItemsQuery .= ", 0 as rate ";
-                    $hireBundlesQuery .= ", 0 as rate ";
-                }else {
-                    $hireItemsQuery .= ", CASE WHEN a.basic_rate is null THEN hifg.basic_rate 
-                                                WHEN a.basic_rate is not null THEN a.basic_rate END as rate ";
-                    $hireBundlesQuery .= ", hifg.basic_rate as rate ";
-                }
-            }
-        }
+        $itemDetails = $this->select_item_details($pk_id);
         
-		$query =    $hireItemsQuery.
-                    "FROM hire_items as a
+        if ( $itemDetails->fk_type == 3) {
+            
+            $query = "SELECT
+                        a.pk_id,
+                        a.fleet_number,
+                        a.description as label,
+                        ifnull(a.qty_required_as_component,0) as qty_required,
+                        ifnull(a.qty,0) as qty_stock
+                    FROM hire_items as a
                         INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = a.fk_family_group
-                     WHERE fk_hire_item_parent = ".$pk_id."                        
-                     UNION ALL ".
-                    $hireBundlesQuery.   
-                    "FROM hire_items_bundles_groups as a
-                        INNER JOIN hire_items_family_groups as hifg on hifg.pk_id = a.fk_hire_group_id
-                    WHERE fk_bundle_id = ".$pk_id;
+                    WHERE fk_hire_item_parent = {$pk_id}";
+                                 
+        }elseif ( $itemDetails->fk_type == 4 ) {
+            
+            $query = "SELECT 
+                        a.pk_id,
+                        '' as fleet_number,
+                        hifg.name as label,
+                        '' as qty_required,
+                        '' as qty_stock
+                    FROM hire_items_bundles_groups as a
+                            INNER JOIN hire_items_family_groups as hifg on hifg.pk_id = a.fk_hire_group_id
+                    WHERE fk_bundle_id ={$pk_id}";
+            
+        }else {
+            
+            return array();
+        }
         log_message('debug', $query);
 		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->result() : array();

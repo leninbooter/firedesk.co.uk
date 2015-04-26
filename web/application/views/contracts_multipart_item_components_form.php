@@ -25,15 +25,7 @@
             <td><?php echo $c->qty_stock; ?></td>	
             <td><p class="form-control-static"><?php echo $c->qty_required; ?></p></td>
             <td>
-                <select id="requestQty" name="requestQty[]" class="form-control input-sm" onchange="getPrice(this)">                   
-                    <?php for($i=0; $i<=intval($c->qty_stock); $i++): ?>
-                        <option><?php echo $i; ?></option>
-                    <?php endfor; ?>
-                    <option disabled></option>
-                    <?php for($i=1; $i<=1000; $i++): ?>
-                        <option><?php echo $i; ?></option>                                    
-                    <?php endfor; ?>
-                </select>
+                <input type="text" id="requestQty" name="requestQty[]" class="form-control input-sm" onchange="getPrice(this)">                
             </td>
             <td><input type="text" id="rate" name="rate[]" class="form-control input-sm" value="<?php echo $c->rate; ?>"></td>
             <td><p class="text-center"><button type="button" class="btn btn-default btn-sm" aria-label="Left Align" onclick="$(this).parent().parent().parent().remove()"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button></p></td>

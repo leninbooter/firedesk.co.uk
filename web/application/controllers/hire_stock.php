@@ -256,8 +256,9 @@ class Hire_stock extends MY_Controller
     */
     public function getMultipartItemComponentsContractForm() {
         
-        $pk_id = $this->queryStrArr['itemID'];
-
+        $pk_id          = $this->queryStrArr['itemID'];
+        $hireItemType   = $this->queryStrArr['hireItemType'];
+        
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
 			$this->load->library('session');
@@ -267,8 +268,14 @@ class Hire_stock extends MY_Controller
 			
             $data['contractID'] = $this->queryStrArr['contractID'];
             $data['hireItemID'] = $pk_id;
-			$data['components'] = $this->hire_stock_m->select_components_from($pk_id, true);
-			
+            
+            if ( $hireItemType == "Kit" || $hireItemType == "Bundle") {
+                
+                $data['components'] = $this->hire_stock_m->selectItemComponentsForContract($pk_id, true);
+            }else {
+                
+                $data['components'] = array();
+            }						
 			$this->load->view('contracts_multipart_item_components_form', $data);
 		}
     }
@@ -362,8 +369,16 @@ class Hire_stock extends MY_Controller
 			            
             $data['contractID']     = $this->queryStrArr['contractID'];
             $data['hireItemID']     = $pk_id;
+            $data['hireItemType']   = $this->queryStrArr['hireItemType'];
             $data['group_id']       = $this->queryStrArr['groupID'];
-            $data['accesories']     = $this->hire_stock_m->get_accesories_from_group($data['group_id'], true);
+            
+            if ( $data['hireItemType'] == "Bundle"){
+                
+                $data['accesories'] = $this->hire_stock_m->get_accesories_from_group($pk_id, true, $pk_id);
+                
+            }else {
+                $data['accesories'] = $this->hire_stock_m->get_accesories_from_group($data['group_id'], true);
+            }            
             
             $this->load->view('contracts_group_accesories_form', $data);
         }
