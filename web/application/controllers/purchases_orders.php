@@ -273,7 +273,17 @@ class Purchases_orders extends CI_Controller
 			$id = 1;
 			foreach($results as $order)
 			{	
-				array_push( $data, array( 'id' => $id, "data" => array(intval($order->pk_id), $order->name,date('d/m/Y - H:i', strtotime( $order->creation_date )),$order->operator, $order->total_amount,$order->description )));
+				array_push( $data, array( 
+                                        'id' => $id, 
+                                        "data" => array(
+                                                        intval($order->pk_id), 
+                                                        $order->name,
+                                                        date('d/m/Y - H:i', strtotime( $order->creation_date )),
+                                        $order->operator, 
+                                        $order->total_amount,
+                                        $order->description )
+                                        )
+                            );
 				$id++;
 			}		
 			
@@ -479,15 +489,16 @@ class Purchases_orders extends CI_Controller
 			$all_items = array();
 			for($i = 0; $i < count($_POST['qty']); $i++)
 			{
-				$item_id = trim($this->security->xss_clean($_POST["item_id"][$i]));			
-				$qty = trim($this->security->xss_clean($_POST["qty"][$i]));
-				$description = trim($this->security->xss_clean($_POST["description"][$i]));
+				$item_id        = trim($this->security->xss_clean($_POST["item_id"][$i]));			
+				$qty            = trim($this->security->xss_clean($_POST["qty"][$i]));
+				$description    = trim($this->security->xss_clean($_POST["description"][$i]));
 				$suppliers_code = trim($this->security->xss_clean($_POST["suppliers_code"][$i]));
-				$cost = trim($this->security->xss_clean($_POST["cost"][$i]));
-				$total = trim($this->security->xss_clean($_POST["total"][$i]));
-				$for = trim($this->security->xss_clean($_POST["for"][$i]));
-				$delete = trim($this->security->xss_clean($_POST["delete"][$i]));					
-				if($delete == "yes")
+				$cost           = trim($this->security->xss_clean($_POST["cost"][$i]));
+				$total          = trim($this->security->xss_clean($_POST["total"][$i]));
+				$for            = trim($this->security->xss_clean($_POST["for"][$i]));
+				$delete         = trim($this->security->xss_clean($_POST["delete"][$i]));					
+				
+                if($delete == "yes")
 					$qty*=-1;
 				
 				if( is_numeric($item_id) &&

@@ -94,7 +94,6 @@ class Hire_stock_m extends CI_Model
     */
     function get_accesories_from_group( $group_id, $salePrices = false, $bundleID = false )
 	{	
-
         if ( $bundleID != false) {
             
             $query = "SELECT fk_hire_group_id 
@@ -103,12 +102,20 @@ class Hire_stock_m extends CI_Model
                             
             $bundleComponents = $this->company_db->query($query)->result_array();
             
-            $groupsIDin = "(";        
-            foreach( $bundleComponents as $i  ) {
-                $groupsIDin .= $i['fk_hire_group_id'].",";
+            if ( !empty($bundleComponents)) {
                 
-            }                        
-            $groupsIDin[strlen($groupsIDin)-1] = ")";
+                $groupsIDin = "(";        
+                foreach( $bundleComponents as $i ) {
+                
+                    $groupsIDin .= $i['fk_hire_group_id'].",";
+                    
+                }
+                
+                $groupsIDin[strlen($groupsIDin)-1] = ")";
+            }else {
+               
+                $groupsIDin = "(-1)";
+            }
             
             $queryLastPartWhere = " and hag.fk_hire_family_group_id in {$groupsIDin} ";
         }else {
@@ -154,13 +161,12 @@ class Hire_stock_m extends CI_Model
 		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}
+    
 	function ins_hire_item( $vars_array )
-	{
-		
-		
+	{	
 		array_walk($vars_array, "clean_vars");
 		
-		 $this->company_db->trans_start();
+        $this->company_db->trans_start();
 		$query = "insert into hire_items (
 					fk_type,
 					fleet_number, 
@@ -369,6 +375,23 @@ class Hire_stock_m extends CI_Model
 		 $this->company_db->trans_complete();
 		return  $this->company_db->trans_status();
 	}
+    
+    function isMultipleTypeEmpty( $itemID ) {
+        
+        $query  = "SELECT pk_id FROM hire_items WHERE fk_hire_item_parent = {$itemID} LIMIT 1
+                   UNION ALL
+                   SELECT pk_id FROM hire_items_bundles_groups WHERE fk_bundle_id = {$itemID} LIMIT 1";
+        $r1      = $this->company_db->query($query);
+        
+        
+        if ( empty($r1->result())  ) {
+            
+            return true;
+        }else {
+            
+            return false;
+        }
+    }
 	
 	function select_elegible_items()
 	{
@@ -508,15 +531,17 @@ class Hire_stock_m extends CI_Model
                             
                 $bundleComponents = $this->company_db->query($query)->result_array();
                 
-                $groupsIDin = "(";
-                
-                foreach( $bundleComponents as $i  ) {
-                    $groupsIDin .= $i['fk_hire_group_id'].",";
+                if ( !empty($bundleComponents) ) {
+                    $groupsIDin = "(";                
+                    foreach( $bundleComponents as $i  ) {
+                        $groupsIDin .= $i['fk_hire_group_id'].",";
+                        
+                    }                                
+                    $groupsIDin[strlen($groupsIDin)-1] = ")";
+                }else {
                     
-                }                
-                
-                $groupsIDin[strlen($groupsIDin)-1] = ")";
-                
+                    $groupsIDin = "(-1)";
+                }
                 $queryFrom =  " FROM hire_items as a
                              INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = a.fk_family_group
                           WHERE a.fk_family_group IN {$groupsIDin}
@@ -526,7 +551,7 @@ class Hire_stock_m extends CI_Model
             
             $queryFrom = " FROM hire_items as a
                                 INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = a.fk_family_group
-                             WHERE fk_hire_item_parent ={$pk_id}";
+                             WHERE fk_hire_item_parent = {$pk_id}";
         }
         
          if($itemDetails->basic_rate > 0) {
@@ -727,7 +752,7 @@ class Hire_stock_m extends CI_Model
 					hire_items as hi
 					inner join hire_items_family_groups as hifg on hifg.pk_id = hi.fk_family_group
 					inner join hire_items_type as hit on hit.pk_id = hi.fk_type
-				 WHERE fk_hire_item_parent is null;";
+				 /*WHERE fk_hire_item_parent is null;*/";
 		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}

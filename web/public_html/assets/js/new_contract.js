@@ -31,34 +31,7 @@ function abandon( contract_id )
 	}
 }
 
-function activate( contract_id )
-{
-	if( confirm('Are you sure you want to activate this contract? No further hire items can be added after activation') )
-	{
-		$.ajax({
-			type: "GET",
-			url: "activate_contract",
-			data: { contract_id: contract_id },
-			dataType: "text"
-			})
-			.done(function( json ) {
-				if( json != 'ko' )
-				{	
-					$('#alerts .modal-content').html( "<div class=\"modal-body\">The contract was activated successfully!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );
-					$('#alerts .modal-content').css('background-color','#D6E9C6');
-					redirect_to = "edit?id="+contract_id;
-				}else
-				{
-					$('#alerts .modal-content').html( "<div class=\"modal-body\">There was a problem activating the contract; please, try again.!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );	
-					$('#alerts .modal-content').css('background-color', '#F2DEDE');
-				}
-			})
-			.fail(function() {
-				$('#alerts .modal-content').html( "<div class=\"modal-body\">There was a problem activating the contract; please, try again.!</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div>" );	
-				$('#alerts .modal-content').css('background-color', '#F2DEDE');
-			});
-	}
-}
+
 
 function add_item_to_grid(item_type, qty, description, rate, regularity, disc, total_row)
 {
@@ -66,10 +39,7 @@ function add_item_to_grid(item_type, qty, description, rate, regularity, disc, t
 		"<tr><td><input type=\"hidden\" id=\"item_type\" name=\"item_type[]\" value=\""+item_type+"\"><input id=\"item_no\" name=\"item_no[]\" type=\"text\" class=\"form-control\" value=\""+ $('#item_no_in').val() +"\" readonly></td><td><input id=\"qty\" name=\"qty[]\" type=\"text\" class=\"form-control\" value=\""+ parseInt(qty) +"\" readonly></td><td><input id=\"description\" name=\"description[]\" type=\"text\" class=\"form-control\" value=\""+ description +"\" readonly></td><td><input id=\"rate_per\" name=\"rate_per[]\" type=\"text\" class=\"form-control\" value=\""+ parseFloat(rate).toFixed(2) +"\" readonly><input id=\"regularity\" name=\"regularity[]\" type=\"text\" class=\"form-control\" value=\""+ regularity +"\" readonly></td><td><input id=\"disc\" name=\"disc[]\" type=\"text\" class=\"form-control\" value=\""+ disc +"\" readonly></td><td><input id=\"value\" name=\"value[]\" type=\"text\" class=\"form-control last-field\" value=\""+ total_row +"\" readonly></td></tr>");
 }
 
-function contract_details_pdf(contract_id)
-{
-	$('#contract_details_content_iframe').attr("src", 'contract_details_pdf?contract_id=' + contract_id);
-}
+
 
 function edit( contract_id )
 {

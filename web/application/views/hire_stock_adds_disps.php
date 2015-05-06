@@ -1,3 +1,4 @@
+<input type="hidden" id="item_id" name="item_id" value="<?php echo $item_id; ?>"/>
 <div class="row">
 	<div class="col-md-6"><h1>Fleet Item - Addition / Disposal</h1></div>
 </div>

@@ -48,14 +48,15 @@ class Contracts_m extends CI_Model
         
         $this->company_db->trans_start();
         
-        $query              = "SELECT item_no, qty, item_type FROM contract_items WHERE pk_id = {$param_arr['saleItemRowID']}";
+        $query              = "SELECT item_no, qty, item_type, non_hire_fleet_trans FROM contract_items WHERE pk_id = {$param_arr['hireItemRowID']}";
         $contractItemRow    = $this->company_db->query($query);
         
         $childrenItems  = $this->company_db->query("SELECT  ci.pk_id, 
                                                             ci.item_no, 
                                                             ci.item_type, 
                                                             ci.qty,
-                                                            hi.fk_type
+                                                            hi.fk_type,
+                                                            ci.non_hire_fleet_trans
                                                     FROM 
                                                         contract_items as ci 
                                                         INNER JOIN hire_items as hi ON hi.pk_id = ci.item_no
@@ -78,8 +79,14 @@ class Contracts_m extends CI_Model
                 
             }elseif ($item->item_type == "2") { // hired item
                 
-                $query = "UPDATE hire_items SET allocated_on_contract = NULL WHERE pk_id = {$item->item_no}";
-                $this->company_db->query($query);    
+                if ($item->non_hire_fleet_trans == null) {
+                    
+                    $query = "UPDATE hire_items SET allocated_on_contract = NULL WHERE pk_id = {$contractItemRow->row()->item_no}";
+                    $this->company_db->query($query);
+                    
+                    $query = "UPDATE hire_items SET qty = qty + {$item->qty} WHERE pk_id =  {$item->item_no} AND fk_type IN (2); ";
+                    $this->company_db->query($query);
+                }                               
                 
             }
             
@@ -87,7 +94,16 @@ class Contracts_m extends CI_Model
             $this->company_db->query($query);
         }
         
-        $query = "DELETE FROM contract_items WHERE pk_id = {$param_arr['saleItemRowID']}";
+        if ($contractItemRow->row()->non_hire_fleet_trans == null) {
+                    
+            $query = "UPDATE hire_items SET allocated_on_contract = NULL WHERE pk_id =  {$contractItemRow->row()->item_no}";
+            $this->company_db->query($query);
+            
+            $query = "UPDATE hire_items SET qty = qty + {$contractItemRow->row()->qty} WHERE pk_id =  {$contractItemRow->row()->item_no} AND fk_type IN (2); ";
+            $this->company_db->query($query);
+        }
+        
+        $query = "DELETE FROM contract_items WHERE pk_id = {$param_arr['hireItemRowID']}";
         $this->company_db->query($query);
             
         $this->company_db->trans_complete();
@@ -133,7 +149,30 @@ class Contracts_m extends CI_Model
 		{
 			return false;
 		}
-	}	
+	}
+
+    /**
+    *
+    * Retrieve the details of the contract where an item from the hire fleet is allocated on
+    *
+    * @param    $itemID Pk ID of the item to be queried.
+    * @return   Array object with the details of the contract that has the item hired. 
+    *           False if it is not hired on any contract
+    *
+    */
+    function isHireFleetItemAllocated( $itemID ) {
+        
+        $possesingContractquery = "SELECT allocated_on_contract FROM hire_items WHERE pk_id = {$itemID}";
+        $possesingContractquery = $this->company_db->query($possesingContractquery)->row_array();
+        
+        if ( $possesingContractquery['allocated_on_contract'] == NULL) {
+            
+            return false;
+        }else {
+            
+            return true;
+        }
+    }
 	
 	function get_contract_list( )
 	{
@@ -252,10 +291,86 @@ class Contracts_m extends CI_Model
 			return false;
 		}
 	}
-	function get_contract_details( $contract_id )
+    
+    /**
+    *
+    * Retrieve information about the hiring contract of a determined hire fleet
+    * item
+    *
+    * @param Int ID of the hire fleet item that is allocated in a contract
+    * @return   Array object of data about the hiring contract of the item ID 
+    *           queried.
+    *
+    */
+    
+    function getHiringContractDetailsOf( $hireFleetItemID ) {
+        
+        $query = "SELECT 
+                    hi.fleet_number,
+                    hi.description,                    
+                    c.delivery_address,                     
+                    c.creation_date,                     
+                    ch.date_time,                    
+                    cus.name, 
+                    cus.address                                          
+                  FROM hire_items as hi
+                    INNER JOIN contracts as c ON c.pk_id = hi.allocated_on_contract
+                    LEFT JOIN contracts_history as ch ON ch.fk_contract_id = c.pk_id AND fk_change_to = 3
+                    INNER JOIN customers AS cus ON cus.pk_id = c.fk_customer_id
+                  WHERE hi.pk_id = {$contractID}";
+                  
+                  
+        $query = $this->company_db->query($query);
+        return !empty($query->result()) ? $query->row_array() : array();
+    }
+    
+	function getContractDetails( $contractID )
 	{
-		
-		$query = "call get_contract_details(".$contract_id.");";
+		$query = "SELECT 
+                    c.pk_id,
+                    c.fk_customer_id, 
+                    c.fk_contract_type_id, 
+                    c.fk_identification_type_id, 
+                    c.identification, 
+                    c.fk_payment_type_id, 
+                    c.payment_amount, 
+                    c.payment_notes, 
+                    c.delivery_address, 
+                    c.delivery_charge, 
+                    c.notes, 
+                    c.creation_date, 
+                    c.time, 
+                    c.date, 
+                    c.dueback, 
+                    c.fk_contract_status_id,
+                    cs.name as status_name,
+                    ch.date_time,
+                    cus.order_number, 
+                    cus.name, 
+                    cus.address, 
+                    cus.telephone, 
+                    cus.fax, 
+                    cus.email, 
+                    cus.contact_name, 
+                    cus.representative, 
+                    cus.vat_exempt, 
+                    cus.creation_date, 
+                    cus.type, 
+                    cus.invoicing, 
+                    cus.account_reference, 
+                    cus.days_week, 
+                    cus.holiday_credit, 
+                    cus.prices, 
+                    cus.status, 
+                    cus.credit_limit, 
+                    cus.statement_address, 
+                    cus.subaccount                       
+                  FROM contracts as c
+                    LEFT JOIN contracts_history as ch ON ch.fk_contract_id = c.pk_id AND fk_change_to = 3
+                    INNER JOIN customers AS cus ON cus.pk_id = c.fk_customer_id
+                    INNER JOIN contract_status as cs ON cs.pk_id = c.fk_contract_status_id
+                  WHERE c.pk_id = {$contractID}";
+                                   
 		$query =  $this->company_db->query($query);
 		$result = $query->result(); 
 		if( !empty($result) )
@@ -369,6 +484,44 @@ class Contracts_m extends CI_Model
         
         $this->company_db->trans_start();
         
+        if ( $param_arr['allocated'] != "yes" ) {
+        
+            if ( $this->isHireFleetItemAllocated($param_arr['hireItemID']) ) {
+            
+                return false;
+            }
+            
+        }else {
+            
+            $q = "SELECT allocated_on_contract FROM hire_items WHERE pk_id = {$param_arr['hireItemID']}";            
+            $possesingContractID = $this->company_db->query($q)->row_array()['allocated_on_contract'];
+            
+            $query = "UPDATE contract_items SET non_hire_fleet_trans = 1
+                        WHERE item_no = {$param_arr['hireItemID']}
+                            AND item_type = 2
+                            AND fk_contract_id = {$possesingContractID}";
+            log_message('debug', $query);
+            $this->company_db->query($query);
+            
+            /*$query = "UPDATE hire_items SET allocated_on_contract = NULL
+                        WHERE pk_id = {$param_arr['hireItemID']}";
+            $this->company_db->query($query);*/
+        }
+        
+        if ($param_arr['hireItemType'] != "Multiple") {
+            
+            $query = "UPDATE hire_items SET allocated_on_contract = {$param_arr['contractID']}
+                        WHERE pk_id = {$param_arr['hireItemID']}";
+            $this->company_db->query($query);
+            
+        }else {
+            
+            $query = "UPDATE hire_items SET qty = qty - {$param_arr['hireItemQty']}
+                        WHERE pk_id = {$param_arr['hireItemID']}";
+            $this->company_db->query($query);
+        }
+        
+        
         $query = "INSERT INTO contract_items (
                     item_no, 
                     qty, 
@@ -380,7 +533,7 @@ class Contracts_m extends CI_Model
                 )
                 VALUES(
                     {$param_arr['hireItemID']},
-                    1,
+                    {$param_arr['hireItemQty']},
                     '{$param_arr['hireItemDescription']}',
                     {$param_arr['hireItemPrice']},	
                     {$param_arr['hireItemPrice']}, 			
@@ -388,9 +541,10 @@ class Contracts_m extends CI_Model
                     2		
                 );";
                 
-        $this->company_db->query($query);
-        $this->company_db->trans_complete();
-        return $this->company_db->trans_status();         
+            $this->company_db->query($query);
+            $this->company_db->trans_complete();
+            
+            return $this->company_db->trans_status();                
     }
     
     function insHireItemAccesory( $param_array ) {
@@ -408,42 +562,32 @@ class Contracts_m extends CI_Model
             $query              = "UPDATE sales_stock SET quantity_balance = quantity_balance - {$param_array["qty"]} WHERE pk_id =  {$param_array["item_no"]}";
             $this->company_db->query($query);
             
-            $query              = "INSERT INTO stock_movements (date, fk_item_id,  description, qty, cost)
+            $query = "INSERT INTO stock_movements (date, fk_item_id,  description, qty, cost)
                                 VALUES ('{$param_array['date']}',
                                          {$param_array["item_no"]}, 
                                         ' Contract no. {$param_array['contractID']} Item added', 
                                         -{$param_array["qty"]}, 
                                         0);";
-            
-           /* $query = "call update_stock(
-                                        '". $this->company_db->escape_str($param_array["date"])."',
-                                        ". $this->company_db->escape_str($param_array["item_no"]).",
-                                        'Contract sale. Contract no. {$param_array['contractID']}',
-                                        ". $this->company_db->escape_str($param_array["qty"]).",
-                                        0
-									);";*/
 
-            $query = str_replace("'NULL'", "NULL", $query);
-            $query =  $this->company_db->query($query);
+            $query = str_replace("'NULL'", "NULL", $query);            
             
-            if ( !empty($query->result()) ) {
-                $result = $query->row();
-                mysqli_next_result(  $this->company_db->conn_id );
-                if ($result->result != "ok") {
-                    return false;
-                }
-            }else {
+            if ( !$this->company_db->query($query) ) {
                 return false;
             }
+            
         }elseif ($param_array['itemType'] == 2) {
-            $query = "UPDATE hire_items SET allocated_on_contract = {$param_array['contractID']} WHERE pk_id = {$param_array['item_no']}";
+            $query = "UPDATE hire_items SET allocated_on_contract = {$param_array['contractID']} WHERE pk_id = {$param_array['item_no']}  AND fk_type IN (1,3,4);";
             $this->company_db->query($query);                    
+            
+            $query = "UPDATE hire_items SET qty = qty - {$param_array['qty']} WHERE pk_id = {$param_array['item_no']}  AND fk_type IN (2);";
+            $this->company_db->query($query); 
         }
         
         $query = "INSERT INTO contract_items (
                 item_no, 
                 qty, 
                 description, 
+                discount_perc,
                 rate, 
                 value, 
                 fk_contract_id, 
@@ -454,13 +598,14 @@ class Contracts_m extends CI_Model
                 {$param_array['item_no']},
                 {$param_array['qty']},
                 '{$param_array['description']}',
+                {$param_array['disc']},
                 {$param_array['rate']},	
                 {$param_array['value']}, 			
                 {$param_array['contractID']},
                 {$param_array['itemType']},		
                 {$param_array['hireItemID']}		
             );";               
-
+log_message('debug', $query);
         $this->company_db->query($query);
         
         $this->company_db->trans_complete();
@@ -483,7 +628,9 @@ class Contracts_m extends CI_Model
         
         $this->company_db->trans_start();
         
-        $query = "UPDATE contracts SET fk_contract_status_id = 2 WHERE pk_id = {$param_array['contractID']} and fk_contract_status_id = 1;";
+        $query = "UPDATE contracts SET fk_contract_status_id = 2
+                    WHERE pk_id = {$param_array['contractID']} 
+                        AND fk_contract_status_id = 1;";
              
         $this->company_db->query($query);                
         
@@ -497,7 +644,7 @@ class Contracts_m extends CI_Model
                     item_type,
                     parent_item
                 )
-                VALUES(
+                VALUES (
                     {$param_array['item_no']},
                     {$param_array['qty']},
                    '{$param_array['description']}',
@@ -510,8 +657,19 @@ class Contracts_m extends CI_Model
                 
         $this->company_db->query($query);
         
-        $query = "UPDATE hire_items SET allocated_on_contract = {$param_array['contractID']} WHERE pk_id = {$param_array['item_no']}";
-        $this->company_db->query($query);        
+        $query = "UPDATE hire_items 
+                    SET 
+                        allocated_on_contract = {$param_array['contractID']}
+                    WHERE pk_id = {$param_array['item_no']}
+                        AND fk_type IN (1,3,4)";
+        $this->company_db->query($query);
+
+        $query = "UPDATE hire_items 
+                    SET 
+                        qty = qty - {$param_array['qty']}
+                WHERE pk_id = {$param_array['item_no']}
+                    AND fk_type IN (2)";
+        $this->company_db->query($query);                        
         
         $this->company_db->trans_complete();
         return $this->company_db->trans_status();
@@ -551,6 +709,7 @@ class Contracts_m extends CI_Model
                 qty, 
                 description, 
                 rate, 
+                discount_perc, 
                 value, 
                 fk_contract_id, 
                 item_type
@@ -560,6 +719,7 @@ class Contracts_m extends CI_Model
                 {$param_arr['qty']},
                 '{$param_arr['description']}',
                 {$param_arr['price']},	
+                {$param_arr['discount']}, 			
                 {$param_arr['total']}, 			
                 {$param_arr['contractID']},
                 1	
@@ -670,9 +830,30 @@ class Contracts_m extends CI_Model
 			return false;
 	}
     
+    function selectChargingBandsUsed( $contractID ) {
+        
+        $query = 'SELECT name, _4hr, _8hr, _1day, _2day, _3day, _4day, _5day,
+                        _6day, week, weekend, subsequent_days, days_per_week,
+                        thereafter, min_days
+                  FROM hire_items_charging_bands
+                  WHERE pk_id in (
+                                    SELECT DISTINCT hicb.pk_id
+									FROM contract_items as ci
+										INNER JOIN hire_items as hi ON ci.item_no = hi.pk_id AND ci.item_type = 2
+										INNER JOIN hire_items_family_groups as hifg ON hifg.pk_id = hi.fk_family_group
+										INNER JOIN hire_items_charging_bands as hicb ON hicb.pk_id = hifg.fk_charging_band    
+									WHERE ci.fk_contract_id = '.$contractID.'
+									AND ( (ci.item_type = 1 AND ci.parent_item is not null )
+											OR (ci.item_type = 2) )
+                                )';
+                                
+        $query = $this->company_db->query($query);
+        return !empty($query->result()) ? $query->result() : array();                        
+    }
+    
     function selectHiredItems( $contractID ) {
         
-         $query = "SELECT 
+         $query = 'SELECT 
                     ci.pk_id,
                     ifnull(ss.stock_number, hi.fleet_number) as productID,
                     ci.parent_item,
@@ -681,15 +862,19 @@ class Contracts_m extends CI_Model
                     ci.description, 
                     ci.rate, 
                     ci.discount_perc, 
-                    value
+                    value,
+                    ci.non_hire_fleet_trans,
+                    hicb.name as charging_band
                 FROM  
                     contract_items as ci
                     LEFT JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND ci.item_type = 1
                     LEFT JOIN hire_items as hi ON hi.pk_id = ci.item_no AND ci.item_type = 2
+                    LEFT JOIN hire_items_family_groups as hifg ON hifg.pk_id = hi.fk_family_group
+                    LEFT JOIN hire_items_charging_bands as hicb ON hicb.pk_id = hifg.fk_charging_band
                 WHERE 
-                    ci.fk_contract_id = {$contractID}
+                    ci.fk_contract_id = '.$contractID.'
                     AND ( (ci.item_type = 1 AND ci.parent_item is not null)
-                    OR (ci.item_type = 2) )";
+                    OR (ci.item_type = 2) )';
         $query = $this->company_db->query($query);
         return !empty($query->result()) ? $query->result() : array();
         
@@ -756,21 +941,18 @@ class Contracts_m extends CI_Model
 		}
 	}
 	
-	function set_contract_active( $contract_id )
+	function set_contract_active( $param_arr )
 	{
 		
-		$query = "call set_contract_active(".$contract_id.")";
-		$query =  $this->company_db->query($query);
-		$result = $query->result();
-		if( !empty($result) )
-		{
-			$result = $query->row();
-			mysqli_next_result(  $this->company_db->conn_id );
-			return $result->result == 'true' ? true : false;
-		}else
-		{
-			return false;
-		}
+		$query = 'update contracts set fk_contract_status_id = 3 where pk_id = '.$param_arr['contractID'];
+        $this->company_db->trans_start();
+        $this->company_db->query($query);
+        
+		$query = 'INSERT INTO contracts_history(fk_contract_id, date_time, fk_change_to)
+                  VALUES('.$param_arr['contractID'].', \''.$param_arr['datetime'].'\' , 3)';
+		$this->company_db->query($query);
+        
+        return $this->company_db->trans_complete();
 	}
 	
 	

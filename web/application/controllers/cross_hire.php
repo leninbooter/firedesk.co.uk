@@ -118,6 +118,19 @@ class Cross_hire extends CI_Controller
 		$this->load->view('footer');
 	}
 	
+    public function items_on_hire() {
+        
+        $this->load->model('cross_hire_m');
+        
+        $data['items'] = $this->cross_hire_m->getItemsOnHire();
+        
+        $this->load->view('header_nav');		
+        $this->load->view('cross_hire_items_on_hire', $data);		
+        $this->load->view('footer_common');
+        $this->load->view('footer_copyright');
+		$this->load->view('footer');
+    }
+    
 	public function new_order()
 	{	
 		// Views

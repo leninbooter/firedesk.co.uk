@@ -1,12 +1,11 @@
 <form role="form" id="add_items_form" method="post" action="<?php echo base_url('index.php/contracts/save_contract_item'); ?>">
 <div class="row">
-	<div class="col-md-5">
-		<h1>Adding items to contract</h1>
-	</div>
-	<div class="col-md-3"></div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<input type="hidden" name="contract_id" id="contract_id" value="<?php echo $contract_id; ?>">
-		<h2>Contract No. <?php echo $contract_id; ?></h2>
+        <h1>Contract No. <?php echo $contract_id; ?></h1>
+        <kbd><?php echo $contract_details->status_name; ?></kbd>
+	</div>
+	<div class="col-md-6">				
 	</div>
 </div>
 
@@ -57,33 +56,7 @@
                 <h3 class="panel-title">Sale</h3>
             </div>
             <div class="panel-body">
-                <table class="table table-responsive table-condensed table-hover">
-                    <thead>
-                        <tr>
-                            <th>Stock No.</th>
-                            <th>Description</th>
-                            <th>Qty</th>
-                            <th>Rate</th>
-                            <th>Discount</th>
-                            <th>Total</th>                            
-                            <th></th>                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($SoldItems as $i): ?>
-                            <tr>
-                                <td style="display:none"><input type="hidden" id="itemRowID" name="itemRowID[]" value="<?php echo $i->pk_id; ?>"></td>
-                                <td><?php echo $i->stock_number; ?></td>
-                                <td><?php echo $i->description; ?></td>
-                                <td><?php echo $i->qty; ?></td>
-                                <td><?php echo $i->rate; ?></td>
-                                <td><?php echo $i->discount_perc; ?></td>
-                                <td><?php echo $i->value; ?></td>
-                                <td><?php if ($contract_status < 3): ?><button type="button" class="btn btn-default btn-sm" onclick="deleteSaleItem(this)">Delete</button><?php endif; ?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                <?php echo $soldItems; ?>
             </div>
         </div>
     </div>
@@ -96,36 +69,7 @@
                 <h3 class="panel-title">Hire</h3>
             </div>
             <div class="panel-body">
-                <table class="table table-responsive table-condensed table-hover">
-                    <thead>
-                        <tr>
-                            <th>Stock No.</th>
-                            <th>Description</th>
-                            <th>Qty</th>
-                            <th>Rate</th>
-                            <th>Discount</th>
-                            <th></th>                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php $parent = false; ?>
-                        <?php foreach($HiredItems as $i): ?>
-                            <?php   if ( $parent == false || $parent != $i->parent_item) {
-                                        $parent = $i->item_no;
-                                    }
-                            ?>
-                            <tr>
-                                <td style="display:none"><input type="hidden" id="itemRowID" name="itemRowID[]" value="<?php echo $i->pk_id; ?>"></td>
-                                <td><?php echo $i->productID; ?></td>
-                                <td <?php echo $parent == $i->parent_item ? "style=\"padding-left:20px;\"": "";  ?>  ><?php echo $i->description; ?></td>
-                                <td><?php echo $i->qty; ?></td>
-                                <td><?php echo $i->rate; ?></td>
-                                <td><?php echo $i->discount_perc; ?></td>
-                                <td><?php if ($contract_status < 3): ?><button type="button" class="btn btn-default btn-sm" onclick="deleteHireItem(this)">Delete</button><?php endif; ?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                <?php echo $hiredItems; ?>
             </div>
         </div>
     </div>
@@ -179,77 +123,19 @@
     </div>
 </div>
 
-<!--<div class="row">
-	<div class="col-md-12">
-		<table class="table table-hover table-responsive" id="items">
-			<thead>
-				<tr>
-					<th>Item No</th>
-					<th style="width:10%">Qty</th>
-					<th style="width:30%" >Rtn Description</th>
-					<th style="width:20%">Rate per</th>
-					<th style="width:10%">Disc. %</th>
-					<th style="width:20%">Value</th>
-				</tr>
-			</thead>
-			<?php //foreach($contract_items as $row): ?>
-				<tr>					
-					<td><?php //echo $row->item_no; ?></td>
-					<td><?php //echo $row->qty; ?></td>
-					<td><?php //echo $row->description; ?></td>
-					<td><?php /*echo $row->rate;
-							echo " ";
-							switch( $row->regularity )
-							{
-								case 1: echo "Year"; break;
-								case 2: echo "Month"; break;
-								case 3: echo "Week"; break;
-								case 4: echo "Day"; break;
-							}
-						*/?></td>
-					<td><?php //echo $row->discount_perc; ?></td>
-					<td><?php //echo $row->value; ?></td>
-				</tr>
-			<?php //endforeach; ?>
-				<tr>					
-										
-				</tr>
-		</table>
-		<table class="table table-condensed" style="margin-bottom:0">
-			<tr>							
-				<td style="text-align:right; ">
-					<span style="font-size:120%;">Total </span>
-					<span id="total_amount_span" style="font-size:120%;">
-						<?php //echo $contract_details->total_amount;?>
-					</span>
-				</td>
-			</tr>
-		</table>
-		<table class="table table-responsive table-condensed">
-			<tr class="success">
-				<td><input class="form-control" type="text" id="item_no_in"/></td>
-				<td style="width:10%"><input class="form-control" type="text" id="qty_in"/></td>
-				<td style="width:30%"><input class="form-control" type="text" id="description_in"/></td>
-				<td style="width:20%"><div class="form-group"><input class="form-control" type="text" id="rate_in"/><select class="form-control" id="regularity_in"><option value="" selected></option><option value="1">year</option><option value="2">month</option><option value="3">week</option><option value="4">day</option></select></div></td>
-				<td style="width:10%"><input class="form-control" type="text" id="desc_in"/></td>
-				<td style="width:20%">
-					<?php //if($contract_status < 5): ?>
-						<div class="btn-group" data-toggle="buttons">		
-								 <label class="btn btn-primary <?php //echo $contract_type_sale_hire == 2 ? "active":"" ?>">
-									<input type="radio" name="options" id="sale" autocomplete="off" value="sale">Sale
-								  </label>
-								<?php //if($contract_type_sale_hire == 1): ?>					  
-									<label class="btn btn-primary">
-										<input type="radio" name="options" id="hire" autocomplete="off" value="hire" >Hire
-									</label>
-								<?php //endif; ?>
-						</div>
-					<?php //endif; ?>
-				</td>
-			</tr>
-		</table>
-	</div>
-</div>-->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Notes</h3>
+            </div>
+            <div class="panel-body">
+                <?php echo $contract_details->notes;  ?>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="row">
 	<div class="col-md-12">
@@ -265,7 +151,7 @@
     </div>		
     <div class="col-md-1">
         <?php if($contract_status < 3): ?>
-            <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hire_fleet_modal">Hire</button>
+            <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hire_fleet_modal" data-backdrop="static" data-keyboard="false" >Hire</button>
         <?php endif; ?>
     </div>
     <div class="col-md-2">				
@@ -280,7 +166,7 @@
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status == 3): ?>
-			<button type="button" class="btn btn-info  btn-block">Exchange</button>
+			<button type="button" class="btn btn-info">Exchange</button>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-1">
@@ -299,17 +185,17 @@
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status > 1): ?>
-			<button id="print_button" type="button" data-toggle="modal" data-target="#contract_details" class="btn btn-info  btn-block" onclick="contract_details_pdf(<?php echo $contract_id; ?>)">Print</button>
+			<button id="print_button" type="button" data-toggle="modal" data-target="#contract_details" class="btn btn-info  btn-block" onclick="contract_details_pdf()">Print</button>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-1">
 		<?php if($contract_status == 2): ?>
-			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="activate('<?php echo $contract_id; ?>')">Activate</button>
+			<button type="button"  class="btn btn-info  btn-block" onclick="activate()">Activate</button>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-2">
 		<?php if($contract_status == 2): ?>
-			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="abandon('<?php echo $contract_id; ?>')">Abandon</button>
+			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="abandon()">Abandon</button>
 		<?php endif; ?>
 	</div>	
 </div>
@@ -466,12 +352,13 @@
                         <thead>
                             <tr>
                                 <th style="width:10%">Stock No.</th>
-                                <th style="width:30%">Description</th>                
+                                <th style="width:25%">Description</th>                
                                 <th style="width:10%">In Stock</th>
                                 <th style="width:10%">On Order</th>
                                 <th style="width:10%">Request Qty</th>
+                                <th style="width:10%">Discount</th>
                                 <th style="width:10%">Price</th>
-                                <th style="width:20%">Total</th>
+                                <th style="width:15%">Total</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -481,6 +368,7 @@
                                 <td><p class="form-control-static" id="sale_item_in_stock"></p></td>
                                 <td><p class="form-control-static" id="sale_item_on_order"></p></td>
                                 <td><input type="text" id="sale_item_qty" name="sale_item_qty" class="form-control" onchange="getPrice(this)"></td>
+                                <td><input type="text" id="disc" name="disc" class="form-control percentage"></td>
                                 <td><input type="text" id="price" name="price" class="form-control"></td>
                                 <td><p class="form-control-static text-right" id="sale_item_total"></p></td>
                             </tr>
@@ -557,7 +445,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-info" onclick="$(this).prop('disabled', true); $('#cross_hired_form').submit()" >Add items</button>
+				<button type="button" class="btn btn-info" onclick="$('#cross_hired_form').submit()" >Add items</button>
 			</div>
 			</form>
 		</div>
@@ -574,21 +462,35 @@
 				<h4 class="modal-title">Hire Fleet</h4>
 			</div>
 			<div class="modal-body">				
-				<form id="hireItemForm" class="form-horizontal">
+				<form id="hireItemForm" class="form-inline">                
                     <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
-                    <div class="form-group">
-                        <label class="col-sm-1">Search:</label>
-                        <div class="col-sm-8">
-                            <input type="text" id="search_hire_item_field" name="search_hire_item_field" class="form-control input-sm">
+                    <input type="hidden" id="hireItemType" name="hireItemType" value=""/>                    
+                    <div class="form-group" style="width:35%">
+                        <label ><p class="text-right">Search:</p></label>
+                            <input type="text" id="search_hire_item_field" name="search_hire_item_field" class="form-control input-sm" STYLE="width:70%">
                             <input type="hidden" id="hire_item_id" name="hire_item_id">
-                        </div>						
-                        <label class="col-sm-1"><p class="text-right">Price:</p></label>
-                        <div class="col-sm-2">
-                            <input type="text" id="hire_item_price" name="hire_item_price" class="form-control input-sm">
-                        </div>						
+                            <input type="hidden" id="allocated" name="allocated">
+                    </div>                       
+                    
+                    <div class="form-group"  style="width:15%">                    
+                        <label   class="" style=""><p class="text-right">Avbl:</p></label>
+                            <input type="text" id="search_hire_item_avbl_qty"  class="form-control input-sm" STYLE="width:70%" disabled>
+                    </div>
+                    
+                    <div class="form-group"  style="width:15%">                    
+                        <label  class="" style=""><p class="text-right">Qty:</p></label>
+                            <input type="text" id="hire_item_qty" name="hire_item_qty" class="form-control input-sm" STYLE="width:60%">
+                    </div>
+                    <div class="form-group" style="width:20%">
+                        <label class=""><p class="text-right">Price:</p></label>
+                            <input type="text" id="hire_item_price" name="hire_item_price" class="form-control input-sm" STYLE="width:70%">
+                    </div>
+                    
+                    <div class="form-group" style="width:10%">
+                        <p class="text-right"><button type="button" class="btn btn-info" id="addHire_btn" name="addHire_btn" onclick="$('#hireItemForm').submit();" >Add items</button></p>
                     </div>
 				</form>
-				<div  class="row">					                   
+				<div id="componentsRow"  class="row">					                   
                    <div class="col-md-12">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
@@ -597,11 +499,11 @@
                             <form id="hireFleetItemComponentsForm" role="form" >
                                 <div id="components_panel">
                                 </div>
-                            </form>
+                            </form>                            
                         </div>
                    </div>
                 </div>
-				<div class="row">
+				<div id="recommendedRow" class="row">
                     <div class="col-md-12">
                         <div  class="panel panel-primary">
                             <div class="panel-heading">
@@ -614,10 +516,120 @@
                         </div>
                     </div>
 				</div>
+                <!--<div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <p class="text-right"><button type="button" class="btn btn-info" id="addHire_btn" name="addHire_btn" onclick="$('#hireItemForm').submit();" >Add items</button></p>
+                    </div>
+                </div>-->
+                
+                <div id="allocatedOnRowForm" class="row" style="display:none">
+                    <div class="col-md-12">
+                        <div  class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Already allocated on hire</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form id="allocatedOnForm" role="form">                                
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <p id="itemLabelP" class="form-control-static"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                               <label>Contract</label>
+                                               <p id="contractIDP" class="form-control-static"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                               <label>Date out</label>
+                                               <p id="itemDateOutP" class="form-control-static"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                               <label>Customer</label>
+                                               <p id="custNameAddressP" class="form-control-static"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                               <label>Site Address</label>
+                                               <p id="siteAddressP" class="form-control-static"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>                                    
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <blockquote>
+                                              <p>Confirmation will make this hire fleet item swap to this contract. Original entry will be prefixed with a "?".</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Abandon</button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-default btn-block">Confirm</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                
+                <!-- <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Non Stock</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form id="nsHIForm" role="form">
+                                <table class="table table-condensed table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Ref. No.</td>
+                                            <th>Description</td>
+                                            <th style="width: 10%">Qty</td>
+                                            <th style="width: 15%">Hire Rate</td>
+                                            <th>Charging Band</td>
+                                            <th></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control" id="nsHIRef" name="nsHIRef" vaue=""></td>
+                                            <td><input type="text" class="form-control" id="nsHIDesc" name="nsHIDesc" vaue=""></td>
+                                            <td><input type="text" class="form-control" id="nsHIQty" name="nsHIQty" vaue=""></td>
+                                            <td><input type="text" class="form-control" id="nsHIRate" name="nsHIRate" vaue=""></td>
+                                            <td><select class="form-control" id="nsHICB" name="nsHICB">
+                                                </select>
+                                            </td>                                            
+                                            <td><button type="button" class="btn btn-info btn-block" onclick="$('#nsHIForm').submit();">Add item</button></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-info" id="addHire_btn" name="addHire_btn" onclick="$('#hireItemForm').submit();" >Add items</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>				
 			</div>
 		</div>
 	</div>

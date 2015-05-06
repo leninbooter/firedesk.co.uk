@@ -111,7 +111,13 @@ $('#new_charging_band_form').submit(function(event){
 		type: "POST",
 		url: 'ins_charging_band',
 		data: $(this).serialize(),
-		dataType: "json"
+		dataType: "json",
+        statusCode: {
+            400: function(r) {
+                
+                alert(r.responseText);
+            }
+        }
 	}).done(function( json ) {
 		if(json.result == "ok")
 		{

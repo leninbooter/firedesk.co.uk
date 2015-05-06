@@ -35,28 +35,55 @@ class Sales_stock extends MY_Controller
     */
     public function getSalesPriceOf() {
         
+        $itemType    = $this->queryStrArr['itemType'];
         $itemID     = $this->queryStrArr['itemID'];
         $customerID = $this->queryStrArr['customerID'];
         $qty        = $this->queryStrArr['qty'];               
         
         if ( v::Int()->validate($itemID) 
             && v::Int()->validate($customerID)
-            && v::Int()->validate($qty)) {
+            && v::Int()->validate($qty)
+            && $itemType == "1" ) {
              
                $this->load->model('stock_m');
                
                $parArray = compact('itemID', 'customerID', 'qty');
                $price = $this->stock_m->selectItemSalesPrice( $parArray );
                
-               header('Content-type: text/html');
+               header('Content-type: application/json');
                if ($price != false) {
                    
-                   echo $price;
+                   if ($price->type == 1) {
+                       
+                       $type = "Customer special";
+                   }elseif ($price->type == 2) {
+                       
+                       $type = "Customer standard";
+                   }elseif ($price->type == 3) {
+                       
+                       $type = "Special global";
+                   }elseif ($price->type == 4) {
+                       
+                       $type = "Standard global";
+                   }
+                   echo json_encode(array("type"=>$type, "price"=>$price->price, "discount"=>$price->discount));
                }else {
                    
                    echo "";
                }
             }        
+    }
+    
+    public function getNewCustomedPriceRow() {
+        
+         $this->load->model('customers_m');
+        
+        $data = array(
+                    'prices'    => array(array('pk_id'=>'', 'fk_customer_id'=>'', 'price_type'=>'', 'min_qty'=>'', 'max_qty'=>'', 'price'=>'')),
+                    'customers' => $this->customers_m->get_customers(),
+                    );
+                    
+        $this->load->view('sales_stock_item_customed_price_row', $data);
     }
     
 	public function items_from_family_from_json()
@@ -135,26 +162,38 @@ class Sales_stock extends MY_Controller
 	
 	public function new_existing()
 	{
-		$pk_id = trim($this->uri->segment(3));
-		if( $pk_id != false && is_numeric($pk_id) )
-		{
-			$this->load->model('stock_m');			
-			$data['item'] = $this->stock_m->get_item_details($pk_id);
-			$data['editing'] = true;
-			$data['prices'] = $this->stock_m->get_item_prices($pk_id);
-		}
-		
 		$this->load->model('customers_m');
 		$this->load->model('family_groups_m');
 		$this->load->model('discount_groups_m');
 		$this->load->model('suppliers_m');
 		$this->load->model('vats_m');
-		
-		$data['customers'] = $this->customers_m->get_customers();
-		$data['vats'] = $this->vats_m->get_all_vats();
-		$data['family_groups'] = $this->family_groups_m->get_groups();
-		$data['family_discounts'] = $this->discount_groups_m->get_groups();
-		$data['suppliers'] = $this->suppliers_m->get_suppliers_addresses();		
+        
+        $itemData = array(
+            'customers'         => $this->customers_m->get_customers(),
+            'vats'              => $this->vats_m->get_all_vats(),
+            'family_groups'     => $this->family_groups_m->get_groups(),
+            'family_discounts'  => $this->discount_groups_m->get_groups(),
+            'suppliers'         => $this->suppliers_m->get_suppliers_addresses()
+        );
+        
+        $pk_id = trim($this->uri->segment(3));
+		if( $pk_id != false && is_numeric($pk_id) )
+		{
+			$this->load->model('stock_m');			
+			$pricesData = array(
+                            'prices' => $this->stock_m->get_item_prices($pk_id),
+                            'customers' => $itemData['customers']
+                            );                            
+
+            $pricesData['prices'][] = array( 'pk_id'=>'', 'fk_customer_id'=>'', 'price_type'=>'', 'min_qty'=>'', 'max_qty'=>'', 'price'=>'');
+
+            $itemData             = array_merge( $itemData, array( 
+                                                                'item'          => $this->stock_m->get_item_details($pk_id),
+                                                                'editing'       => true,
+                                                                'prices_list'   => $this->load->view('sales_stock_item_customed_price_row', $pricesData, true)
+                                                                )
+                                                );                        			
+		}
 		
 		$this->load->view('header_nav');
 		$message = urldecode(trim($this->uri->segment(4)));
@@ -163,7 +202,7 @@ class Sales_stock extends MY_Controller
 			$this->output->append_output("<div class=\"alert alert-danger\" role=\"alert\">".$danger."</div>");
 		}
 		
-		$this->load->view('new_existing_stock_item', $data);		
+		$this->load->view('new_existing_stock_item', $itemData);		
 		$this->load->view('footer_common');
 		$this->output->append_output("<script src=\"".base_url('assets/js/stock_items.js')."\"></script>");
 		$this->load->view('footer_copyright');
@@ -181,6 +220,30 @@ class Sales_stock extends MY_Controller
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}
+    
+    public function removeItemPrice() {
+        
+        $priceID = $this->input->post('price_id', true);
+        
+        if ( v::int()->validate($priceID) ) {
+            
+            $this->load->model('stock_m');
+            
+            if ( $this->stock_m->delPrice($priceID)) {
+                
+                echo "ok";
+                
+            }else {
+                
+                echo "ko";
+            }
+            
+        }else {
+            
+            echo "Bad request format";
+            
+        }
+    }
 	
 	public function save_item()
 	{
@@ -385,11 +448,11 @@ class Sales_stock extends MY_Controller
 		$prices = array();
 		for($i = 0; $i < count($_POST['customers_pk_id']); $i++)
 		{
-			$customer_id = trim($this->security->xss_clean($_POST["customers_pk_id"][$i])) == "0" ? "" : trim($this->security->xss_clean($_POST["customers_pk_id"][$i]));
-			$price_type = trim($this->security->xss_clean($_POST["price_type"][$i]));
-			$min_qty = trim($this->security->xss_clean($_POST["min_qty"][$i]));
-			$max_qty = trim($this->security->xss_clean($_POST["max_qty"][$i]));
-			$price = trim($this->security->xss_clean($_POST["price"][$i]));													
+			$customer_id    = trim($this->security->xss_clean($_POST["customers_pk_id"][$i])) == "0" ? "" : trim($this->security->xss_clean($_POST["customers_pk_id"][$i]));
+			$price_type     = trim($this->security->xss_clean($_POST["price_type"][$i]));
+			$min_qty        = trim($this->security->xss_clean($_POST["min_qty"][$i]));
+			$max_qty        = trim($this->security->xss_clean($_POST["max_qty"][$i]));
+			$price          = trim($this->security->xss_clean($_POST["price"][$i]));													
 			
 			if( (is_numeric($customer_id) || $customer_id == "") &&
 				((is_numeric($min_qty) && $min_qty > 0)  || $min_qty == "" ) && 
@@ -419,7 +482,7 @@ class Sales_stock extends MY_Controller
 				return;
 			}
 		}
-		echo base_url('index.php/sales_stock/new_existing/'.$item_id);
+		echo "ok";
 	}
 	
 	public function shorttext_valid( $valor )

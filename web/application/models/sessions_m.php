@@ -25,7 +25,8 @@ class Sessions_m extends CI_Model
 				co.db,
 				co.db_user,
 				co.db_pwd,
-				co.db_host
+				co.db_host,
+                co.logo
 				from credentials as cr
 				inner join profiles as p on p.pk_id = cr.fk_profile_id
 				left join companies as co on co.pk_id = cr.fk_company_id

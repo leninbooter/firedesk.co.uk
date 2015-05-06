@@ -56,6 +56,7 @@ $( document ).ready(function() {
 				{
 					$('#components_form #parent_item').val(json.new_item_id);
 					$('#multiple_item_qty_modal').modal(options);
+					$('#multiple_item_qty_modal #parent_item').val(json.new_item_id);
 				}else{
 					location.href="../hire_stock/fleet_records";
 				}

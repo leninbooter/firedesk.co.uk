@@ -20,6 +20,12 @@ class Stock_m extends CI_Model
 			$value = "NULL";
 		}
 	}
+    
+    function delPrice( $priceID ) {
+        
+        $query = "DELETE FROM stock_item_prices WHERE pk_id = {$priceID}";        
+		return $this->company_db->query($query);
+    }
 	
 	function get_items_all( )
 	{
@@ -52,9 +58,9 @@ class Stock_m extends CI_Model
 	function get_item_prices( $pk_id )
 	{
 		
-		$query = "SELECT fk_customer_id, price_type, min_qty, max_qty, price FROM stock_item_prices WHERE fk_stock_item_id = ".$pk_id;
+		$query = "SELECT pk_id, fk_customer_id, price_type, min_qty, max_qty, price FROM stock_item_prices WHERE fk_stock_item_id = ".$pk_id;
 		$query =  $this->company_db->query($query);
-		return !empty($query->result()) ? $query->result() : array();
+		return !empty($query->result()) ? $query->result_array() : array();
 	}
 	
 	function get_items_stock_levels( )
@@ -100,12 +106,12 @@ class Stock_m extends CI_Model
 		$query = "call save_price(". $this->company_db->escape_str($item['customer_id']).",". $this->company_db->escape_str($item["stock_item_id"]).",". $this->company_db->escape_str($item["price"]).",". $this->company_db->escape_str($item["price_type"]).",". $this->company_db->escape_str($item["min"]).",". $this->company_db->escape_str($item["max"]).");";		
 		
 		$query = str_replace("'NULL'", "NULL", $query);
-		log_message('debug', $query);
+
 		$query =  $this->company_db->query($query);
 		if( !empty($query->result()) )
 		{
 			$result = $query->row();
-			log_message('debug', $result->result);
+
 			mysqli_next_result(  $this->company_db->conn_id );					
 			if($result->result == "ok" || $result->result == "notUpdated")
 				return true;
@@ -169,7 +175,13 @@ class Stock_m extends CI_Model
     /**
     *
     * Retrieve the sale price of an item from the sales stock taking into consideration 
-    * the client and the quantity requested
+    * the client and the quantity requested.
+    *
+    * Prices type:
+    *   1: Customer special price
+    *   2: Customer standard  price
+    *   3: Special  global  price
+    *   4: Standard global  price
     *
     * @param    $par_array[]    $itemID     Row id of the sales stock item
     *                           $customerID Row id of the current customerID
@@ -177,9 +189,13 @@ class Stock_m extends CI_Model
     *
     * @return   Int The sales price for the item
     */
-    function selectItemSalesPrice( $par_array ) {
+    function selectItemSalesPrice( $par_array ) {               
         
-        $query = "SELECT MIN(price) AS price
+        // Customer special price
+        $query = "SELECT 
+                        1 as type, 
+                        MIN(price) AS price,
+                        '' as discount
                     FROM stock_item_prices
                     WHERE fk_stock_item_id = {$par_array['itemID']} AND fk_customer_id = {$par_array['customerID']} AND price_type = 2 AND ({$par_array['qty']} BETWEEN min_qty AND max_qty OR {$par_array['qty']} > max_qty)";        
         
@@ -187,18 +203,26 @@ class Stock_m extends CI_Model
         
         if ( !is_numeric($query->row()->price) ) {
             
-            $query = "SELECT MIN(price) as price
+            // Customer standard  price
+            $query = "SELECT 
+                            2 as type, 
+                            MIN(price) as price
                         FROM stock_item_prices as sip
-                            INNER JOIN sales_stock as SS ON SS.pk_id = sip.fk_stock_item_id
+                            INNER JOIN sales_stock as ss ON ss.pk_id = sip.fk_stock_item_id
                         WHERE fk_stock_item_id = {$par_array['itemID']} AND fk_customer_id = {$par_array['customerID']} AND ((price_type = 1 AND {$par_array['qty']} >= ss.units_of_for_special) OR (price_type = 0))";
             
             $query = $this->company_db->query($query);
             
             if ( !is_numeric($query->row()->price) ) {
-            
-                $query = "SELECT if({$par_array['qty']} >= units_of_for_special, special_price, standard_price) as price
-                            FROM sales_stock
-                            WHERE pk_id = {$par_array['itemID']}";                
+                
+                // Standard / special global  price
+                $query = "SELECT 
+                                if({$par_array['qty']} >= ss.units_of_for_special, 3, 4) as type,
+                                if({$par_array['qty']} >= ss.units_of_for_special, ss.special_price, ss.standard_price) as price,
+                                c.disc_perc as discount
+                            FROM sales_stock as ss
+                                INNER JOIN customers as c ON c.pk_id = {$par_array['customerID']}
+                            WHERE ss.pk_id = {$par_array['itemID']}";                
                 
                 
                 $query = $this->company_db->query($query);
@@ -208,15 +232,15 @@ class Stock_m extends CI_Model
                     return false;
                 }else {
                     
-                    return $query->row()->price;
+                    return $query->row();
                 }
             }else {
                 
-                return $query->row()->price;
+                return $query->row();
             }
         }else {
             
-            return $query->row()->price;
+            return $query->row();
         }
         
         return false;        

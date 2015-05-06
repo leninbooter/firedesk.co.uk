@@ -9,7 +9,7 @@ $( document ).ready(function() {
 	grid.setColTypes("ron,ron,dyn,ron,ron,ro"); 
 	grid.setColSorting("int,int,int,int,str,str,str");
 	grid.init();
-	grid.load("../acqs_rms_json", attachEvents,"json");
+	grid.load("../acqs_rms_json?itemID="+$('#item_id').val(), attachEvents,"json");
 	grid.setColumnHidden(0,true);
 	grid.setColumnHidden(1,true);
 

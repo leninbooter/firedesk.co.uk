@@ -17,10 +17,7 @@ class Hire_stock extends MY_Controller
     */
     public function acqs_rms_json()
 	{
-		$this->load->library('session');
-		
-		$pk_id = $this->session->flashdata('hire_item_id');
-		$this->session->keep_flashdata('hire_item_id');
+		$pk_id = $this->queryStrArr['itemID'];
 		
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
@@ -47,18 +44,11 @@ class Hire_stock extends MY_Controller
 	
 	public function activity()
 	{
-		log_message('debug', 'AQUI 1');
 		//$this->load->library('session');
-		log_message('debug', 'AQUI 2');
 		$this->load->model('hire_stock_m');
-		log_message('debug', 'AQUI 3');
 		$from = $this->input->get('from',true);
-		$to = $this->input->get('to',true);
-		$item = $this->input->get('item',true);		
-		
-		/*$this->session->set_flashdata("current_hire_item_id", $item);
-		$this->session->set_flashdata("activity_from", $from);
-		$this->session->set_flashdata("activity_to", $to);*/
+		$to   = $this->input->get('to',true);
+		$item = $this->input->get('item',true);				
 		
 		$data['custom_css'] = array("assets/dhtmlx-4.13/codebase/dhtmlxchart.css");
 		$data['from'] = $from;
@@ -84,9 +74,7 @@ class Hire_stock extends MY_Controller
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
 			$this->load->model('hire_stock_m');
-			$this->load->library('session');
-			
-			$this->session->set_flashdata('hire_item_id', $pk_id);
+			$this->load->library('session');			
 			
 			$data['item_id'] = $pk_id;
 			$data['item_details'] = $this->hire_stock_m->select_item_details($pk_id);			
@@ -107,8 +95,8 @@ class Hire_stock extends MY_Controller
 	
 	public function fleet_records()
 	{
-		$data = array();
-		
+		$data['parentItem'] = array();
+		        
 		$this->load->view('header_nav');
 		$this->load->view('hire_stock_fleet_records', $data);		
 		$this->load->view('footer_common');
@@ -140,6 +128,20 @@ class Hire_stock extends MY_Controller
 		header('Content-type: application/json');
 		echo json_encode(array( "rows" => $data));
 	}
+    
+    /**
+    *
+    * Retrieve HTML with all the charging bands wrapped up with <option> tag
+    *
+    * @return String HTML
+    *
+    */
+    public function getChargingBandsOptions() {
+        
+        $this->load->model('hire_stock_m');
+        $data['bands'] = $this->hire_stock_m->get_charging_bands_all();
+        echo $this->load->view('hire_stock_options_charging_bands', $data, true);
+    }
 	
     public function get_components()
 	{
@@ -148,9 +150,7 @@ class Hire_stock extends MY_Controller
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
 			$this->load->library('session');
-			$this->load->model('hire_stock_m');
-			
-			$this->session->set_flashdata('new_item_id', $pk_id);
+			$this->load->model('hire_stock_m');			
 			
 			$data['components'] = $this->hire_stock_m->select_components_from($pk_id);
 			
@@ -257,25 +257,24 @@ class Hire_stock extends MY_Controller
     public function getMultipartItemComponentsContractForm() {
         
         $pk_id          = $this->queryStrArr['itemID'];
-        $hireItemType   = $this->queryStrArr['hireItemType'];
+        $hireItemType   = $this->queryStrArr['hireItemType'];              
         
 		if( $pk_id != false && is_numeric($pk_id) )
 		{
-			$this->load->library('session');
-			$this->load->model('hire_stock_m');
-			
-			$this->session->set_flashdata('new_item_id', $pk_id);
-			
+            $this->load->model('hire_stock_m');
+            
             $data['contractID'] = $this->queryStrArr['contractID'];
             $data['hireItemID'] = $pk_id;
             
             if ( $hireItemType == "Kit" || $hireItemType == "Bundle") {
                 
                 $data['components'] = $this->hire_stock_m->selectItemComponentsForContract($pk_id, true);
+                
             }else {
                 
                 $data['components'] = array();
-            }						
+            }
+            
 			$this->load->view('contracts_multipart_item_components_form', $data);
 		}
     }
@@ -377,8 +376,9 @@ class Hire_stock extends MY_Controller
                 $data['accesories'] = $this->hire_stock_m->get_accesories_from_group($pk_id, true, $pk_id);
                 
             }else {
+                
                 $data['accesories'] = $this->hire_stock_m->get_accesories_from_group($data['group_id'], true);
-            }            
+            }                                   
             
             $this->load->view('contracts_group_accesories_form', $data);
         }
@@ -389,17 +389,17 @@ class Hire_stock extends MY_Controller
 		$this->load->helper(array('form', 'url'));
 		
 		$name 				= $this->input->post('name', true);
-		$_4hr_perc 			= str_replace('%','', $this->input->post('_4hr_perc', true));
-		$_8hr_perc 			= str_replace('%','', $this->input->post('_8hr_perc', true));
-		$_1day_perc 		= str_replace('%','', $this->input->post('_1day_perc', true));
-		$_2day_perc 		= str_replace('%','', $this->input->post('_2day_perc', true));
-		$_3day_perc 		= str_replace('%','', $this->input->post('_3day_perc', true));
-		$_4day_perc 		= str_replace('%','', $this->input->post('_4day_perc', true));
-		$_5day_perc 		= str_replace('%','', $this->input->post('_5day_perc', true));
-		$_6day_perc	 		= str_replace('%','', $this->input->post('_6day_perc', true));
-		$_week_perc 		= str_replace('%','', $this->input->post('_week_perc', true));
-		$_weekend_perc 		= str_replace('%','', $this->input->post('_weekend_perc', true));
-		$_subsequent_perc 	= str_replace('%','', $this->input->post('subsequent_perc', true));
+		$_4hr_perc 			= floatval(preg_replace("/[^0-9\.]*/", "", $this->input->post('_4hr_perc', true)));
+		$_8hr_perc 			= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_8hr_perc', true)));
+		$_1day_perc 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_1day_perc', true)));
+		$_2day_perc 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_2day_perc', true)));
+		$_3day_perc 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_3day_perc', true)));
+		$_4day_perc 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_4day_perc', true)));
+		$_5day_perc 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_5day_perc', true)));
+		$_6day_perc	 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_6day_perc', true)));
+		$_week_perc 		= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('_week_perc', true)));
+		$_weekend_perc 		= floatval(preg_replace("/[^0-9\.]*/", "", $this->input->post('_weekend_perc', true)));
+		$_subsequent_perc 	= floatval(preg_replace("/[^0-9\.]*/", "",  $this->input->post('subsequent_perc', true)));
 		$days_week 			= $this->input->post('days_week', true);
 		$thereafter 		= $this->input->post('thereafter', true);
 		$min_days 			= $this->input->post('min_days', true);
@@ -420,21 +420,27 @@ class Hire_stock extends MY_Controller
 		                      "thereafter", 		
 		                      "min_days");
 		
-		$this->load->model('hire_stock_m');
-		$result = $this->hire_stock_m->insert_charging_band( $vars_array );
-		if( $result != false )
-		{
-			if(is_numeric($result))
-			{
-				$dataArray = array("result"=>"ok", "id" => $result, "name"=>$name);
-			}else{
-				$dataArray = array("result"=>"ko");
-			}
-			
-			header('Content-type: application/json');
-			echo json_encode($dataArray);		
-		}
-			   
+        if ( v::string()->notEmpty()->validate($name) ) {
+		
+            $this->load->model('hire_stock_m');
+            $result = $this->hire_stock_m->insert_charging_band( $vars_array );
+            if( $result != false )
+            {
+                if(is_numeric($result))
+                {
+                    $dataArray = array("result"=>"ok", "id" => $result, "name"=>$name);
+                }else{
+                    $dataArray = array("result"=>"ko");
+                }
+                
+                header('Content-type: application/json');
+                echo json_encode($dataArray);		
+            }
+        }else {
+            
+            http_response_code(400);
+            echo "Please, check the format data.";
+        }
 	}
 	
 	
@@ -651,15 +657,15 @@ class Hire_stock extends MY_Controller
 	
 	public function save_components_members()
 	{
-		$this->load->library('session');
 		$this->load->model('hire_stock_m');
 		
+        $parent_item = $this->input->post('parent_item', true);
+        
 		if(isset($_POST['new_item_id_in']))
 		{
 			for($i = 0; $i<count($_POST['new_item_id_in']); $i++)
 			{				
-				$parent_item = $this->session->flashdata('new_item_id');		
-				$this->session->keep_flashdata('new_item_id');				
+								
 				$item_id	= trim($this->security->xss_clean($_POST['new_item_id_in'][$i]));
 				if( isset($_POST['new_item_qty_in'][$i]))
 					$qty		= trim($this->security->xss_clean($_POST['new_item_qty_in'][$i]));
@@ -803,7 +809,6 @@ class Hire_stock extends MY_Controller
 		$result = $this->hire_stock_m->ins_hire_item( $vars_array );
 		if( $result != false )
 		{
-				$this->session->set_flashdata('new_item_id', $result);
 				$return = array("result"=>"ok", "new_item_id"=>$result, "type"=>$hire_item_type);
 				echo json_encode($return);
 		}
@@ -980,12 +985,13 @@ class Hire_stock extends MY_Controller
 	
 	public function save_new_multiple_item_qty()
 	{
-		$this->load->library('session');
 		$this->load->model('hire_stock_m');
 		
+        $parent_item 	= $this->input->post('parent_item', true);
+        
 		if(isset($_POST['new_item_qty_in']))
 		{
-			$parent_item 	= $this->session->flashdata('new_item_id');
+			
 			$qty			= trim($this->security->xss_clean($_POST['new_item_qty_in']));
 			
 			$vars_array = compact("parent_item", "qty");

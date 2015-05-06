@@ -98,6 +98,23 @@ where po.pk_id = ".$pk_id;
 		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->result() : array();
 	}
+    
+    function getItemsOnHire() {
+        
+        $query = "SELECT 
+                        c.pk_id,
+                        cust.name,
+                        cchi.qty,
+                        choi.description,
+                        ch.date_time
+                    FROM contract_cross_hire_items 			AS cchi
+                        INNER JOIN contracts 				AS c 	ON c.pk_id 				= cchi.fk_contract_id
+                        INNER JOIN customers 				AS cust ON cust.pk_id 			= c.fk_customer_id
+                        INNER JOIN cross_hire_orders_items 	AS choi ON choi.pk_id 			= cchi.fk_cross_hire_order_item_id
+                        LEFT  JOIN contracts_history		AS ch	ON ch.fk_contract_id	= cchi.fk_contract_id
+                                                                        AND ch.fk_change_to = 3";
+        return $this->company_db->query($query)->result();
+    }
 	
 	function get_all_purchase_orders()
 	{

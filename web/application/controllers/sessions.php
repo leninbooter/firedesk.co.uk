@@ -8,7 +8,7 @@ class Sessions extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-//		$this->load->library('Nativesession');
+        // $this->load->library('Nativesession');
 	}
 	
 	public function end()
@@ -55,8 +55,8 @@ class Sessions extends CI_Controller
 			{				
 				$this->benchmark->mark('verify_pwd_start');
 				
-				if(password_verify($password, $userdata->password))
-				{
+				if(password_verify($password, $userdata->password)) {
+                    
 					$this->benchmark->mark('verify_pwd_end');
 					
 					$this->benchmark->mark('nativession_start');
@@ -68,17 +68,18 @@ class Sessions extends CI_Controller
 					$this->benchmark->mark('session_start');								
 				
 					$user = array(
-					   'global_user_id'  => $userdata->pk_id,
-					   'username'  => $userdata->username,
-					   'logged_in' => TRUE,
-					   'company_id' => $userdata->company_id,
-					   'company_name' => $userdata->company_name,
-					   'profile_id' => $userdata->profile_id,
-					   'profile_name' => $userdata->profile_name,
-					   'db' => $userdata->db,
-					   'db_user' => $userdata->db_user,
-					   'db_pwd' => $userdata->db_pwd,
-					   'db_host' => $userdata->db_host					   
+					   'global_user_id' => $userdata->pk_id,
+					   'username'       => $userdata->username,
+					   'logged_in'      => TRUE,
+					   'company_id'     => $userdata->company_id,
+					   'company_name'   => $userdata->company_name,
+					   'companyLogo'   => $userdata->logo,
+					   'profile_id'     => $userdata->profile_id,
+					   'profile_name'   => $userdata->profile_name,
+					   'db'             => $userdata->db,
+					   'db_user'        => $userdata->db_user,
+					   'db_pwd'         => $userdata->db_pwd,
+					   'db_host'        => $userdata->db_host					   
 				   );
 					$this->nativesession->set('user', $user);
 					

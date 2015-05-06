@@ -70,6 +70,7 @@ function go_to(url)
 		var selected_item_type = grid.cells(grid.getSelectedRowId(),5).getValue();
 		if(selected_item_type == "Kit" || selected_item_type == "Bundle")
 		{
+            $('#parent_item').val(grid.cells(grid.getSelectedRowId(),0).getValue());
 			if(selected_item_type == "Kit")
 			{
 				set_searcher(3);

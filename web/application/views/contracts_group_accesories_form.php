@@ -5,11 +5,12 @@
         <thead>
             <tr>
                 <th style="width:10%">Stock No.</th>
-                <th style="width:30%">Description</th>                
+                <th style="width:25%">Description</th>                
                 <th style="width:10%">In Stock</th>
                 <th style="width:10%">Required</th>
                 <th style="width:10%">Request Qty</th>
-                <th style="width:20%">Price</th>
+                <th style="width:10%">Disc</th>
+                <th style="width:15%">Price</th>
                 <th style="width:10%"></th>
             </tr>
         </thead>
@@ -25,8 +26,9 @@
                         <td><p class="form-control-static"><?php echo $acc->balance_qty; ?></p></td>
                         <td><p class="form-control-static"><?php echo $acc->required_qty; ?></p></td>
                         <td>
-                            <input type="text" id="requestQty" name="requestQty[]" class="form-control input-sm" onchange="getPrice(this)">                            
+                            <input type="text" id="requestQty" name="requestQty[]" class="form-control input-sm" onkeyup="getPrice(this)" value="">                            
                         </td>
+                        <td><input type="text" id="disc" name="disc[]" class="form-control input-sm percentage" value=""/></td>
                         <td><input type="text" id="price" name="price[]" class="form-control input-sm" value="<?php echo isset($acc->rate) ? $acc->rate:""; ?>"/></td>
                         <td><p class="text-center"><button type="button" class="btn btn-default" aria-label="Left Align" onclick="$(this).parent().parent().parent().remove();" ><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button></p></td>
                     </tr>
