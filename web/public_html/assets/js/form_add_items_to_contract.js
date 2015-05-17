@@ -248,6 +248,7 @@ $('#cross_hired_form').submit( function(e) {
 });
 
 
+
 $('#sales_items_form').submit( function(e) {
     e.preventDefault();
 
@@ -435,6 +436,160 @@ function deleteSaleItem( caller ) {
     }
 }
 
+function generateInvoice( type ) {
+    
+    if ( type == "All") {
+ 
+        type = "All";
+        
+    }else if ( type == "Off") {
+        
+        type = "Off";
+    }else {
+        
+        return;
+    }
+    
+    $.ajax(base_url + "index.php/invoices/generate", {
+            type: "post",
+            data: { type:  type,
+                    contract_id: $('#contract_id').val()
+                  },
+            dataType: "json",
+            success: function(json) {
+                if ( json.result == "ok" ){
+                   location.href = base_url+'index.php/invoices/view?iid='+json.invoiceID;
+                   
+                }else if ( json.result== "ko") {
+                    alert(json.message);
+                }
+            },
+            fail: function(r) {
+                
+                alert(r);
+            },
+            statusCode: {
+                400: function(r) {
+                     alert('Please, try again the operation.');
+                }
+            }
+    });
+}
+
+function newCollect() {
+
+     $('#multipurposeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show:     true        
+    });
+    
+    $('#multipurposeModal .modal-dialog').addClass('magictime loading');
+    collectModalInterval = setInterval(function(){
+                                                    $('#multipurposeModal .modal-dialog').toggleClass('magictime loading');
+                                                }, 1000 );
+
+    $.post(base_url+'index.php/collects/collect', { contractID: $('#contract_id').val() }, function(html) {
+        $('#multipurposeModal .modal-title').html('Collect');
+        $('#multipurposeModal .modal-body').html(html);
+    }) 
+    .always(function() {
+        clearInterval(collectModalInterval);
+    }); 
+}
+
+
+function newHiredReturns() {
+
+     $('#multipurposeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show:     true        
+    });
+    
+    $('#multipurposeModal .modal-dialog').addClass('magictime loading');
+    collectModalInterval = setInterval(function(){
+                                                    $('#multipurposeModal .modal-dialog').toggleClass('magictime loading');
+                                                }, 1000 );
+
+    $.post(base_url+'index.php/contracts/returnHiredItems', { contractID: $('#contract_id').val() }, function(html) {
+        $('#multipurposeModal .modal-title').html('Return');
+        $('#multipurposeModal .modal-body').html(html);
+        
+    }) 
+    .always(function() {
+        clearInterval(collectModalInterval);
+    });              
+}
+
+function returnSoldItems() {
+
+     $('#multipurposeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show:     true        
+    });
+    
+    $('#multipurposeModal .modal-dialog').addClass('magictime loading');
+    collectModalInterval = setInterval(function(){
+                                                    $('#multipurposeModal .modal-dialog').toggleClass('magictime loading');
+                                                }, 1000 );
+
+    $.post(base_url+'index.php/contracts/returnSoldItems', { contractID: $('#contract_id').val() }, function(html) {
+        $('#multipurposeModal .modal-title').html('Return');
+        $('#multipurposeModal .modal-body').html(html);        
+    })
+    .always(function() {
+        clearInterval(collectModalInterval);
+    });              
+}
+
+function pastCollect() {
+    
+     $('#multipurposeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show:     true        
+    });
+    
+    $('#multipurposeModal .modal-dialog').addClass('magictime loading');
+    
+    collectModalInterval = setInterval(function(){
+                                                    $('#multipurposeModal .modal-dialog').toggleClass('magictime loading');
+                                                }, 1000 );;
+
+   $.get(base_url+'index.php/collects/past', {contractID: $('#contract_id').val() }, function(html) {
+         $('#multipurposeModal .modal-title').html('Collect');
+         $('#multipurposeModal .modal-body').html(html);
+         clearInterval(collectModalInterval);
+    });
+    
+   
+}
+
+function pastInvoices() {
+    
+     $('#multipurposeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show:     true        
+    });
+    
+    $('#multipurposeModal .modal-dialog').addClass('magictime loading');
+    
+    collectModalInterval = setInterval(function(){
+                                                    $('#multipurposeModal .modal-dialog').toggleClass('magictime loading');
+                                                }, 1000 );;
+
+   $.get(base_url+'index.php/invoices/past', {contractID: $('#contract_id').val() }, function(html) {
+         $('#multipurposeModal .modal-title').html('Invoices');
+         $('#multipurposeModal .modal-body').html(html);
+         clearInterval(collectModalInterval);
+    });
+    
+   
+}
+
 function totalRateChargingBand( ele, rate ) {
     var p    = parseFloat($(ele).val());
     if ( !isNaN(rate) && !isNaN(p) ) {
@@ -498,6 +653,64 @@ function resetHireFleetModal() {
     
     $('#search_hire_item_field').focus();
 }
+
+function submitCollect() {
+    
+    $.ajax( base_url+'index.php/collects/collect',
+            {
+                type: 'post',
+                data: $('#collectForm').serialize(),
+                success: function(r) {
+                            if ( r=="ok") {
+                                
+                                location.reload(true);
+                                
+                            }else {
+                                
+                                alert(r);
+                            }
+                            
+                        },
+                fail: function(r) {
+                        alert(r.responseText);
+                    },
+                statusCode: {
+                    400: function(r) {
+                        alert(r.responseText);
+                    }
+                },
+                datatYpe: 'json'
+            });
+};
+
+function submitReturn() {
+    
+    $.ajax( base_url+'index.php/returns/save',
+            {
+                type: 'post',
+                data: $('#returnForm').serialize(),
+                success: function(r) {
+                            if ( r=="ok") {
+                                
+                                location.reload(true);
+                                
+                            }else {
+                                
+                                alert(r);
+                            }
+                            
+                        },
+                fail: function(r) {
+                        alert(r.responseText);
+                    },
+                statusCode: {
+                    400: function(r) {
+                        alert(r.responseText);
+                    }
+                },
+                datatYpe: 'json'
+            });
+};
 
 function total() {
 

@@ -2,10 +2,11 @@
 <div class="row">
 	<div class="col-md-6">
 		<input type="hidden" name="contract_id" id="contract_id" value="<?php echo $contract_id; ?>">
-        <h1>Contract No. <?php echo $contract_id; ?></h1>
+        <h1>Contract No. <?=$contract_id?> <small><?=date('d F Y H:i', strtotime($contract_details->creation_date))?> </small></h1>
         <kbd><?php echo $contract_details->status_name; ?></kbd>
 	</div>
 	<div class="col-md-6">				
+        <!--<h1 class="text-right"><small><?=date('d F Y H:i', strtotime($contract_details->creation_date))?> </small></h1>-->
 	</div>
 </div>
 
@@ -136,94 +137,66 @@
     </div>
 </div>
 
-
-<div class="row">
-	<div class="col-md-12">
-		<hr/>
-	</div>
-</div>
-
-<div class="row">
-    <div class="col-md-1">	
-        <?php if($contract_status < 3): ?>
-            <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#sales_stock_modal">Sale</button>
-        <?php endif; ?>
-    </div>		
-    <div class="col-md-1">
-        <?php if($contract_status < 3): ?>
-            <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hire_fleet_modal" data-backdrop="static" data-keyboard="false" >Hire</button>
-        <?php endif; ?>
-    </div>
-    <div class="col-md-2">				
-        <?php if($contract_status < 3): ?>
-             <button type="button" class="btn btn-info  btn-block" data-toggle="modal" data-target="#hired_items_modal">Cross Hire</button>
-        <?php endif; ?>
-    </div>
-	<div class="col-md-2">
-		<?php if($contract_status < 3): ?>
-			<button type="button" class="btn btn-info  btn-block">Changes</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<?php if($contract_status == 3): ?>
-			<button type="button" class="btn btn-info">Exchange</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<?php if($contract_status == 3 || $contract_status == 4): ?>
-			<div class="btn-group">
-			  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-				Invoices <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu" role="menu">
-				<li><a href="" data-toggle="modal" data-target="#invoice_options">New</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#invoice_preview_date">Preview</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#past_invoices">Past</a></li>				
-			  </ul>
-			</div>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<?php if($contract_status > 1): ?>
-			<button id="print_button" type="button" data-toggle="modal" data-target="#contract_details" class="btn btn-info  btn-block" onclick="contract_details_pdf()">Print</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-1">
-		<?php if($contract_status == 2): ?>
-			<button type="button"  class="btn btn-info  btn-block" onclick="activate()">Activate</button>
-		<?php endif; ?>
-	</div>
-	<div class="col-md-2">
-		<?php if($contract_status == 2): ?>
-			<button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info  btn-block" onclick="abandon()">Abandon</button>
-		<?php endif; ?>
-	</div>	
-</div>
-<br>
-<div class="row">
+<div class="row">               
+        
     <?php if($contract_status > 2): ?>
         <div class="col-md-1">		
-                <button type="button" class="btn btn-info  btn-block">Collect</button>		
+                <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Collect <span class="caret"></span></button>		
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:void(0)" onclick="newCollect()">New</a></li>
+                        <li><a href="javascript:void(0)" onclick="pastCollect()">Past</a></li>				
+                    </ul>
+              </div>                                           
         </div>
     <?php endif; ?>
 
-    <?php if($contract_status == 3): ?>
-        <div class="col-md-1">		
-                <button type="button" class="btn btn-info  btn-block">Returns</button>		
-        </div>
+    <?php if ($contract_status <= 3): ?>        		        
+            <div class="col-md-1"><button type="button" class="btn btn-info " data-toggle="modal" data-target="#sales_stock_modal">Sale</button></div>
+            <div class="col-md-1"><button type="button" class="btn btn-info " data-toggle="modal" data-target="#hire_fleet_modal" data-backdrop="static" data-keyboard="false" >Hire</button></div>
+            <div class="col-md-1"><button type="button" class="btn btn-info " data-toggle="modal" data-target="#hired_items_modal">Cross Hire</button></div>
+            <div class="col-md-1"><button type="button" class="btn btn-info">Changes</button></div>
+            <!--<div class="col-md-1"><button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button></div>			-->
     <?php endif; ?>
-
-	<div class="col-md-1">
-		<button type="button" class="btn btn-default  btn-block">Exit</button>
-	</div>
     
-    <?php if($contract_status < 3): ?>
+    <?php if($contract_status == 2): ?>
+        <div class="col-md-1"><button type="button"  class="btn btn-info  btn-block" onclick="activate()">Activate</button></div>
+        <div class="col-md-1"><button type="button" data-toggle="modal" data-target="#alerts" class="btn btn-info" onclick="abandon()">Abandon</button></div>
+    <?php endif; ?>
+    
+    <?php if ($contract_status == 3): ?>
         <div class="col-md-1">
-            <button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button>			
+        <div class="btn-group">		
+                <button type="button" class="btn btn-info  dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Returns <span class="caret"></span></button>		
+                <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:void(0)" onclick="newHiredReturns()">Hires</a></li>
+                        <li><a href="javascript:void(0)" onclick="returnSoldItems()">Sales</a></li>				
+                    </ul>
+            </div>
+        </div>
+        <div class="col-md-1"><button type="button" class="btn btn-info">Exchange</button></div>        
+    <?php endif; ?>
+    
+    <?php if($contract_status == 3 || $contract_status == 4): ?>
+        <div class="col-md-1">
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            Invoices <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="javascript:void(0)" onclick="generateInvoice('All')" data-toggle="modal" data-target="#processing">Invoice all items</a></li>
+            <li><a href="javascript:void(0)" onclick="generateInvoice('Off')">Invoice off hired & sales</a></li>
+            <!--<li><a href="#" data-toggle="modal" data-target="#invoice_preview_date">Preview</a></li>-->
+            <li><a href="javascript:void(0)" onclick="pastInvoices()">Past</a></li>				
+          </ul>
+        </div>
         </div>
     <?php endif; ?>
-</div>
+    
+    <div class="col-md-1"><button id="print_button" type="button" data-toggle="modal" data-target="#contract_details" class="btn btn-info  btn-block" onclick="contract_details_pdf()">Print</button></div>    
+</div>     
 </form>
+
 <div class="modal fade" id="contract_details" tabindex="-1" role="dialog" aria-labelledby="contract_details_label" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -295,12 +268,11 @@
 		</div>
 	</div>
 </div>
-<div class="modal fade" id="invoice_options" tabindex="-1" role="dialog">
+<div class="modal fade" id="processing" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div class="modal-body">
-				<a href="<?php echo base_url('index.php/invoices/generate?type=2&contract_id='.$contract_id);?>"><button type="button" class="btn btn-info">All items</button></a>
-				<a href="<?php echo base_url('index.php/invoices/generate?type=1&contract_id='.$contract_id);?>"><button type="button" class="btn btn-info">Off hired & sales</button></a>
+				<p class="text-center"><img src="<?=base_url('assets/images/ajax-loader.gif')?>"></p>
 			</div>
 		</div>
 	</div>
@@ -338,7 +310,7 @@
 </div>
 
 <!-- Sale items modal -->
-<?php if( $contract_status < 3): ?>
+<?php if( $contract_status <= 3): ?>
 <div class="modal fade" id="sales_stock_modal" tabindex="-1" role="dialog" aria-labelledby="sales_stock_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">			
@@ -383,10 +355,8 @@
         </div>
     </div>
 </div>
-<?php endif; ?>
 
 <!-- Cross Hired items modal -->
-<?php if( $contract_status < 3): ?>
 <div class="modal fade" id="hired_items_modal" tabindex="-1" role="dialog" aria-labelledby="receipts_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -451,10 +421,8 @@
 		</div>
 	</div>
 </div>
-<?php endif; ?>
 
 <!-- Hired items modal -->
-<?php if( $contract_status < 3): ?>
 <div class="modal fade" id="hire_fleet_modal" tabindex="-1" role="dialog" aria-labelledby="hire_fleet_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">			
@@ -635,3 +603,19 @@
 	</div>
 </div>
 <?php endif; ?>
+
+<div class="modal fade" id="multipurposeModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+                <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                    
+                </div>
+        </div>
+    </div>
+</div>

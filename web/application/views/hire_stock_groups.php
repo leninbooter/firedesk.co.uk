@@ -175,12 +175,12 @@
 				<hr/>
 				<div class="row">
 					<div class="col-md-4"><label>Days / week</label></div>
-					<div class="col-md-4"><input type="text" class="form-control" id="days_week" name="days_week"/></div>
+					<div class="col-md-4"><input type="text" class="form-control" id="days_week" name="days_week" value="7"/></div>
 				</div>
-				<div class="row">
+				<!--<div class="row">
 					<div class="col-md-4"><label>Thereafter</label></div>
 					<div class="col-md-4"><input type="text" class="form-control" id="thereafter" name="thereafter"/></div>
-				</div>
+				</div>-->
 				<div class="row">
 					<div class="col-md-4"><label>Min. days</label></div>
 					<div class="col-md-4"><input type="text" class="form-control" id="min_days" name="min_days"/></div>

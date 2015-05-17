@@ -28,7 +28,7 @@ class Contracts extends MY_Controller
 	{
 		$contract_id = trim($this->input->post('contract_id', true));
         
-        if ( v::int()->min(1)->validate($contract_id) ) {
+        if ( v::int()->min(0)->validate($contract_id) ) {
         
             $param_arr = array (
                                 'contractID' => $contract_id,
@@ -94,7 +94,7 @@ class Contracts extends MY_Controller
 				
 		$data['contract_id'] = trim($this->input->get('id', true));
         
-        if ( v::int()->min(1)->validate($data['contract_id']) ) {
+        if ( v::int()->min(0)->validate($data['contract_id']) ) {
         
             $data['contract_details']           = $this->contracts_m->getContractDetails( $data['contract_id'] );
             $data['customerID']                 = $data['contract_details']->fk_customer_id;
@@ -104,7 +104,7 @@ class Contracts extends MY_Controller
             $data['address']                    = $data['contract_details']->delivery_address;
             $data['delivery_charge']            = $data['contract_details']->delivery_charge;
             $data['contract_status']            = $data['contract_details']->fk_contract_status_id;
-            $mode                               = $data['contract_status'] < 3 ? 'write':'read';
+            $mode                               = $data['contract_status'] <= 3 ? 'write':'read';
             // Available crossed hire items
             $data['hired_items']                = $this->cross_hire_m->get_hired_items();          
             // Items sold in the contract
@@ -300,7 +300,7 @@ class Contracts extends MY_Controller
 				
 		$data['contractID'] = trim($this->input->get('id', true));
         
-        if ( v::int()->min(1)->validate($data['contractID']) ) {
+        if ( v::int()->min(0)->validate($data['contractID']) ) {
         
             $data['contract_details']           = $this->contracts_m->getContractDetails( $data['contractID'] );
             $data['customerID']                 = $data['contract_details']->fk_customer_id;
@@ -436,6 +436,56 @@ class Contracts extends MY_Controller
             echo "Bad request";
         }
     }
+    
+    public function returnHiredItems() {
+        
+        // No form. Echo html of new return form           
+        $contractID = intval($this->input->post('contractID', true));
+    
+        if ( v::int()->min(0)->validate($contractID)) {
+    
+            $this->load->model('contracts_m');
+                
+            $data = array(
+                            'contractID'    => $contractID,
+                            'date'          => date('d/m/Y'),
+                            'time'          => date('H:i'),
+                            'items'         => $this->contracts_m->selectHiredItemsReturnPending($contractID)
+                        );
+            
+            echo $this->load->view('return_new_form.php', $data);
+        
+        }else {
+            
+            http_response_code(400);
+            echo "Bad request";
+        } 
+    }
+    
+    public function returnSoldItems() {
+        
+        // No form. Echo html of new return form           
+        $contractID = intval($this->input->post('contractID', true));
+    
+        if ( v::int()->min(0)->validate($contractID)) {
+    
+            $this->load->model('contracts_m');
+                
+            $data = array(
+                            'contractID'    => $contractID,
+                            'date'          => date('d/m/Y'),
+                            'time'          => date('H:i'),
+                            'items'         => $this->contracts_m->selectSoldItemsReturnPending($contractID)
+                        );
+            
+            echo $this->load->view('return_sold_new_form', $data);
+        
+        }else {
+            
+            http_response_code(400);
+            echo "Bad request";
+        } 
+    }       
     
     public function save_contract()
 	{
@@ -638,7 +688,7 @@ class Contracts extends MY_Controller
                    
                    $hireItemQty            = trim($this->security->xss_clean($_POST['hire_item_qty'])); 
                    
-                   if ( !v::int()->min(1)->validate($hireItemQty)) {                                            
+                   if ( !v::int()->min(0)->validate($hireItemQty)) {                                            
                        
                        echo "For a multiple type item, you must specify a valid quantity";
                        return;

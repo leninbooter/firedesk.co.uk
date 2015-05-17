@@ -513,6 +513,18 @@ class Hire_stock_m extends CI_Model
 		return !empty($query->result()) ? $query->result() : array();		
 	}
     
+    function selChargingBand ($itemID) {
+        
+        $query = 'SELECT
+                        _4hr, _8hr, _1day, _2day, _3day, _4day, _5day, _6day,
+                        week, weekend, subsequent_days, ifnull(days_per_week,7) as days_week, thereafter, 
+                        min_days
+                  FROM hire_items_charging_bands as hicb
+                    INNER JOIN hire_items_family_groups as hifg ON hifg.fk_charging_band = hicb.pk_id
+                    INNER JOIN hire_items as hi ON hi.fk_family_group = hifg.pk_id AND hi.pk_id = '.$itemID;
+        return $this->company_db->query($query)->row_array();
+    }
+    
     function selectItemComponentsForContract( $pk_id ) {
         
         $querySelect = "SELECT

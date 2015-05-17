@@ -48,6 +48,18 @@ class Contracts_m extends CI_Model
         
         $this->company_db->trans_start();
         
+        $q = 'SELECT \'yes\' as invoiced 
+                FROM invoices_items
+                WHERE pk_id = '.$param_arr['saleItemRowID'];
+        
+        $row = $this->company_db->query($q)->row();
+        
+        if ( !empty($row) ) {
+            if ( $row->invoiced == 'yes' ) {
+                return false;
+            }
+        }
+        
         $query              = "SELECT item_no, qty, item_type, non_hire_fleet_trans FROM contract_items WHERE pk_id = {$param_arr['hireItemRowID']}";
         $contractItemRow    = $this->company_db->query($query);
         
@@ -111,6 +123,18 @@ class Contracts_m extends CI_Model
     }
 	
     function deleteSoldItem( $param_arr ) {
+        
+        $q = 'SELECT \'yes\' as invoiced 
+                FROM invoices_items
+                WHERE pk_id = '.$param_arr['saleItemRowID'];
+        
+        $row = $this->company_db->query($q)->row();
+        
+        if ( !empty($row) ) {
+            if ( $row->invoiced == 'yes' ) {
+                return false;
+            }
+        }
         
         $this->company_db->trans_start();
 
@@ -830,6 +854,94 @@ log_message('debug', $query);
 			return false;
 	}
     
+    function selCollectedNotInvoicedItems( $contractID ) {
+        
+        $query = '
+                SELECT
+                    coli.pk_id		                            as collect_item_id,
+                    ci.pk_id    	                            as contract_items_id,
+                    ci.item_no  	                            as stock_item_id,
+                    ci.description	                            as item_description,
+                    ci.rate                                     as item_rate,
+                    ci.discount_perc                            as item_discount,
+                    ci.item_type	                            as item_type,
+                    ifnull(last_invoiced_date, col.datetime)    as collect_datetime,
+                    coli.qty                                    as requested_qty,
+                    ifnull(coli.qty_returned, 0)                as returned_qty,
+                    ifnull(coli.qty_sold_items_invoiced, 0)     as sold_invoiced_qty,
+                    v.percentage                                as vat,
+                    col.pk_id                                   as origDocID
+                FROM contract_items as ci
+                    INNER JOIN collections_items as coli	ON coli.fk_contract_item_id = ci.pk_id AND ci.item_type > 0
+                    LEFT JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND ci.item_type = 1
+                    LEFT JOIN hire_items as hi ON hi.pk_id = ci.item_no AND ci.item_type = 2
+                    LEFT JOIN hire_items_family_groups as hifg ON hifg.pk_id = hi.fk_family_group
+                    LEFT JOIN vats as v ON v.pk_id = hifg.fk_vat_code_id OR v.pk_id = ss.fk_vat_code
+                    INNER JOIN collections		 as col  ON col.pk_id = coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
+                WHERE ci.non_hire_fleet_trans is null
+                HAVING     ( (requested_qty - returned_qty)  > 0 AND ci.item_type = 2) 
+                        OR ( (requested_qty - sold_invoiced_qty)  > 0 AND ci.item_type = 1)
+                    ';
+        return $this->company_db->query($query)->result();
+    }
+    
+    function selReturnedNotInvoicedItems( $contractID ) {
+        
+        $query = '
+                SELECT
+                    ri.fk_collections_item_id					as collect_item_id,
+                    ci.pk_id    	                            as contract_items_id,
+                    ci.item_no  	                            as stock_item_id,
+                    ci.description	                            as item_description,
+                    ri.qty										as requested_qty,
+                    ci.rate                                     as item_rate,
+                    ifnull(ci.discount_perc,0)                  as item_discount,
+                    ci.item_type	                            as item_type,
+                    v.percentage                                as vat,
+                    ifnull(coli.last_invoiced_date, col.datetime) as collect_datetime,
+                    r.datetime                                  as return_datetime,
+                    col.pk_id                                   as collect_id,
+                    r.pk_id                                     as origDocID
+                FROM returns_items as ri
+                    INNER JOIN returns as r ON r.pk_id = ri.fk_return_id AND ri.invoicing_datetime is null
+                    INNER JOIN collections_items as coli	ON coli.pk_id = ri.fk_collections_item_id
+                    INNER JOIN contract_items as ci			ON coli.fk_contract_item_id = ci.pk_id	
+                    LEFT JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND ci.item_type = 1
+                    LEFT JOIN hire_items as hi ON hi.pk_id = ci.item_no AND ci.item_type = 2
+                    LEFT JOIN hire_items_family_groups as hifg ON hifg.pk_id = hi.fk_family_group
+                    LEFT JOIN vats as v ON v.pk_id = hifg.fk_vat_code_id OR v.pk_id = ss.fk_vat_code
+                    INNER JOIN collections		 as col  ON col.pk_id = coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
+                WHERE ci.non_hire_fleet_trans is null
+                    ';
+        return $this->company_db->query($query)->result();
+    }
+
+    /**
+    *
+    * Select from the contract_items table the hired and sold items
+    * with their pending qty to supply to the collect form
+    *
+    *
+    */    
+    function selectHiredSoldItemsWithBalance ( $contractID ) {
+        
+        $query = 'SELECT                     
+                    ci.pk_id,
+                    ci.item_type,
+                    ifnull(ss.stock_number, hi.fleet_number) as number,                     
+                    ci.description, 
+                    ci.qty - ifnull(qty_supplied,0) as balance
+                FROM  
+                    contract_items as ci
+                    LEFT JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND item_type = 1
+                    LEFT JOIN hire_items as hi ON hi.pk_id = ci.item_no AND item_type = 2
+                WHERE 
+                    ci.qty - ifnull(qty_supplied,0) > 0
+                    AND ci.fk_contract_id = '.$contractID;                    
+        
+        return $this->company_db->query($query)->result();
+    }
+ 
     function selectChargingBandsUsed( $contractID ) {
         
         $query = 'SELECT name, _4hr, _8hr, _1day, _2day, _3day, _4day, _5day,
@@ -876,8 +988,48 @@ log_message('debug', $query);
                     AND ( (ci.item_type = 1 AND ci.parent_item is not null)
                     OR (ci.item_type = 2) )';
         $query = $this->company_db->query($query);
-        return !empty($query->result()) ? $query->result() : array();
+        return !empty($query->result()) ? $query->result() : array();        
+    }
+    
+    function selectHiredItemsReturnPending ( $contractID ) {
         
+        $q = 'SELECT      
+                    coli.pk_id as collection_item_id,
+                    hi.fleet_number as number,                     
+                    ci.description, 
+                    coli.qty - ifnull(coli.qty_returned, 0) as on_hire
+                FROM  
+                    contract_items as ci
+                    INNER JOIN collections_items as coli ON coli.fk_contract_item_id = ci.pk_id
+                    INNER JOIN hire_items as hi ON hi.pk_id = ci.item_no AND item_type = 2
+                WHERE 
+                    ci.fk_contract_id = '.$contractID.'
+                HAVING on_hire > 0';                    
+        
+        return $this->company_db->query($q)->result();
+    }
+    
+    function selectSoldItemsReturnPending( $contractID ) {
+        
+        $q = 'SELECT      
+                    coli.pk_id as collection_item_id,
+                    coli.fk_contract_item_id,
+                    ci.item_type,
+                    ss.stock_number as number,                     
+                    ci.description,
+                    coli.qty_sold_items_invoiced as invoiced,
+                    sum(coli.qty) as total,
+                    sum(ifnull(coli.qty_returned, 0)) as returned
+                FROM  
+                    contract_items as ci
+                    INNER JOIN collections_items as coli ON coli.fk_contract_item_id = ci.pk_id
+                    INNER JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND item_type = 1
+                WHERE 
+                    ci.fk_contract_id = '.$contractID.'
+                GROUP BY coli.fk_contract_item_id
+                HAVING returned < total';                    
+            
+        return $this->company_db->query($q)->result();
     }
     
     function selectCrossedHiredItems($contractID) {

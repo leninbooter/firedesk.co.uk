@@ -36,7 +36,7 @@ function pdf_create($html, $htmlHeader = '', $htmlFooter = '', $filename, $strea
     if ($stream) {
         return $mpdf->Output($filename . '.pdf', 'I');
     } else {
-        $mpdf->Output('./uploads/temp/' . $filename . '.pdf', 'F');
-        return './uploads/temp/' . $filename . '.pdf';
+        $mpdf->Output('./invoices/' . $filename . '.pdf', 'F');
+        return './invoices/' . $filename . '.pdf';
     }
 }

@@ -183,7 +183,7 @@
 							</select>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<!-- <div class="col-md-3">
 						<div class="form-group">
 							<label for="invoicing">Invoicing</label>
 							<select tabindex="19" class="form-control" id="invoicing" name="invoicing">
@@ -198,18 +198,17 @@
 								<option value="9">Exclude from invoice runs</option>
 							</select>
 						</div>
-					</div> 
+					</div> -->
 					<div class="col-md-2">
 						<div class="form-group">
 							<label for="holiday_credit">Holiday Credit</label>
 							<select tabindex="20" class="form-control" id="holiday_credit" name="holiday_credit">
 								<option value="1" selected>Standard</option>
 								<option value="2">No Holiday</option>
-								<option value="3">BUILDING</option>
 							</select>
 						</div>
 					</div>
-					<div class="col-md-1">
+					<div class="col-md-2">
 						<div class="form-group">
 							<label for="prices_type">Disc.%</label>
 							<input tabindex="21" type="text" class="form-control" id="discount_perc" name="discount_perc">

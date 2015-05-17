@@ -44,27 +44,38 @@ class Hire_stock extends MY_Controller
 	
 	public function activity()
 	{
-		//$this->load->library('session');
-		$this->load->model('hire_stock_m');
-		$from = $this->input->get('from',true);
+		//$this->load->library('session');		
+		
+        $from = $this->input->get('from',true);
 		$to   = $this->input->get('to',true);
 		$item = $this->input->get('item',true);				
 		
-		$data['custom_css'] = array("assets/dhtmlx-4.13/codebase/dhtmlxchart.css");
-		$data['from'] = $from;
-		$data['to'] = $to;
-		$data['hire_item_id'] = $item;
-		$data['item_name'] = $this->hire_stock_m->select_item_details($item)->description;
+        if ( v::regex('/^[0-9]{1,2}\/[0-9]{4}$/')->validate( $from ) 
+            && v::regex('/^[0-9]{1,2}\/[0-9]{4}$/')->validate( $to ) 
+            && v::int()->validate( $item ) 
+            ) {
+                $this->load->model('hire_stock_m');
+                
+                $data = array(
+                    'custom_css'    =>  array("assets/dhtmlx-4.13/codebase/dhtmlxchart.css"),
+                    'from'          => $from,
+                    'to'            => $to,
+                    'hire_item_id'  => $item,
+                    'item_name'     => $this->hire_stock_m->select_item_details($item)->description
+                    );        	
 		
-		$this->load->view('header_nav', $data);
-		$this->load->view('hire_stock_item_activity', $data);
-		$this->load->view('footer_common');
-		//$this->output->append_output("<script src=\"".base_url('assets/js/global.js')."\"></script>");	
-		//$this->output->append_output("<script src=\"".base_url('assets/js/jquery-1.11.0.min.js')."\"></script>");	
-		$this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxchart.js')."\"></script>");	
-		$this->output->append_output("<script src=\"".base_url('assets/js/hire_item_activity.js')."\"></script>");			
-		$this->load->view('footer_copyright');
-		$this->load->view('footer');		
+                $this->load->view('header_nav', $data);
+                $this->load->view('hire_stock_item_activity', $data);
+                $this->load->view('footer_common');
+                //$this->output->append_output("<script src=\"".base_url('assets/js/global.js')."\"></script>");	
+                //$this->output->append_output("<script src=\"".base_url('assets/js/jquery-1.11.0.min.js')."\"></script>");	
+                $this->output->append_output("<script src=\"".base_url('assets/dhtmlx-4.13/codebase/dhtmlxchart.js')."\"></script>");	
+                $this->output->append_output("<script src=\"".base_url('assets/js/hire_item_activity.js')."\"></script>");			
+                $this->load->view('footer_copyright');
+                $this->load->view('footer');		
+            }
+        
+        
 	}
 
 	public function add_remove()

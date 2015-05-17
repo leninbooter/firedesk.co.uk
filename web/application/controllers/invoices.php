@@ -1,294 +1,399 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Invoices extends CI_Controller 
-{
-	public function generate()
-	{
-		$this->load->helper(array('url'));
-		$this->load->model('invoices_m');
-		$this->load->model('contracts_m');
-		
-		$type = trim($this->input->get('type', true));
-		$contract_id = trim($this->input->get('contract_id', true));
-		
-		$data['contract_id'] = $contract_id;
-		$data['invoice_id'] = $this->invoices_m->generate_invoice($contract_id);
-		$data['contract_details'] = $this->contracts_m->get_contract_details( $contract_id );
-		switch($type)
-		{
-			case 1:
-				$data['invoice_items'] = $this->contracts_m->get_all_items_not_invoiced($contract_id);
-			break;
-			
-			case 2:
-				$data['invoice_items'] = $this->contracts_m->get_all_items_not_invoiced_not_supplied($contract_id);
-			break;
-		}
-		
-		
-		if(empty($data['invoice_items']))
-		{
-			$this->load->view('header_nav');		
-			$this->output->append_output("
-				<div class=\"row\">
-					<div class=\"col-md-12\">&nbsp;</div>
-				</div>
-				<div class=\"row\">
-					<div class=\"col-md-12\"><div class=\"alert alert-warning\" role=\"alert\">The selected contract has no more items uninvoiced.</div></div>
-				</div>");
-			$this->load->view('footer_common');
-			$this->load->view('footer_invoices');
-			$this->load->view('footer_copyright');
-			$this->load->view('footer');
-		}else
-		{		
-			$data['customer_name'] = $data['contract_details']->name;
-			$data['contract_type'] = $data['contract_details']->type == 0 ? "Cash" : "Credit";
-			$data['address'] = $data['contract_details']->address;
-			$data['delivery_charge'] = $data['contract_details']->delivery_charge;
-			$data['contract_status'] = $data['contract_details']->fk_contract_status_id;
-			
-			$this->load->view('header_nav');		
-			$this->load->view('invoice_form', $data);
-			$this->load->view('footer_common');
-			$this->load->view('footer_invoices');
-			$this->load->view('footer_copyright');
-			$this->load->view('footer');
-		}
-	}
+use Respect\Validation\Validator as v;
 
-	function invoice_pdf_to_email( $invoice_id , $email_to )
-	{
-		$this->load->helper(array('dompdf', 'file', 'url'));
-		$this->load->model('contracts_m');
-		$this->load->model('invoices_m');				
-		
-		$data['invoice_id'] = $invoice_id;
-		$data['invoice_details'] = $this->invoices_m->get_invoice_details($invoice_id);
-		$data['invoice_items'] 		= $this->invoices_m->get_all_invoice_items($invoice_id);		
-		$data['contract_details'] 	= $this->contracts_m->get_contract_details( $data['invoice_details']->fk_contract_id );
-		$data['contract_id'] = $data['invoice_details']->fk_contract_id;
-		$data['customer_name'] = $data['contract_details']->name;
-		$data['contract_type'] = $data['contract_details']->type == 0 ? "Cash" : "Credit";
-		$data['address'] = $data['contract_details']->address;
-		$data['delivery_charge'] = $data['contract_details']->delivery_charge;		
-		//$data['contract_status'] = $data['contract_details']->fk_contract_status_id;		
-		$html = $this->load->view('report_invoice_pdf', $data, true);
-		//$this->load->view('report_invoice_pdf', $data);
-		$file_name = "invoices/".$data['customer_name']."_".$data['contract_id']."_".$data['invoice_id'].".pdf";
-		$data = pdf_create($html, '', false);
-		write_file($file_name, $data);
-		return $this->invoices_m->email_invoice($email_to, $file_name);
+class Invoices extends MY_Controller 
+{   
+    // Private
+    function __construct() {
+        
+        parent::__construct();
+        
+        $this->load->model('invoices_m');
+    }    
+    
+    function getChargingRateByDays( $days, $cb ) {
+        
+        if ($days == 0) {
+            
+            return 0;
+        }
+        
+        if ( isset($cb["_{$days}day"]) ) {
+                                  
+            if ( floatval($cb["_{$days}day"]) > 0 ) {
+                
+                return $cb["_{$days}day"];
+            }else {
+                
+                for($i=$days++; $i<=6; $i++) {
+                        
+                   if ( floatval($cb["_{$i}day"]) > 0 ) {
+                        
+                        return $cb["_{$days}day"];
+                    }
+                }                                
+            }
+        
+        }
+        
+        if ( floatval($cb['week']) > 0 ) {
+                    
+            return $cb['week'];
+        
+        }elseif (  floatval($cb['subsequent_days']) > 0 ) {
+            
+            return $cb['subsequent_days'];
+        }
+        
+        return false;                
+    }
+    
+    // Public    
+    public function accept() {
+        
+        $invoiceID = $this->input->post('iid', true);
+        
+        if ( v::int()->min(0)->validate($invoiceID) ){
+            
+             if ( $this->invoices_m->accept($invoiceID) ) {
+                
+                echo json_encode( array(
+                                        'result' => 'ok'
+                                    ));
+                
+            }else {
+                
+                echo json_encode( array(
+                                        'result'    => 'ko',
+                                        'message'  => 'There is a problem with this invoice; please, generate the invoice again from the contract'
+                                    ));
+            }
+            
+        }else {        
+                        
+            echo json_encode( array(
+                                    'result' => 'ko',
+                                    'message'=> 'Bad request'
+                                )); 
+        }
+    }
+    
+    public function discard() {
+        
+        $invoiceID = $this->input->post('iid', true);
+        
+        if ( v::int()->min(0)->validate($invoiceID) ) {
+             
+            if ( $this->invoices_m->discard($invoiceID) ) {
+            
+            echo json_encode( array(
+                                    'result' => 'ok'
+                                ));
+            
+            }else {
+                
+                echo json_encode( array(
+                                        'result' => 'ko'
+                                    ));
+            }
+        }else {
+            
+            echo json_encode( array(
+                                    'result' => 'ko',
+                                    'message'=> 'Bad request'
+                                ));   
+        }           
+    }
+   
+    function email( )
+    {		                        
+        $invoiceID  = isset($this->queryStrArr['iid']) ? $this->queryStrArr['iid']:false;
+        $pdf        = isset($this->queryStrArr['pdf']) ? $this->queryStrArr['pdf']:false;
+        $to         = isset($this->queryStrArr['to']) ? $this->queryStrArr['to']:false;
+        
+        if ( v::file()->validate($pdf) && v::int()->min(0)->validate($invoiceID) ) {
+            
+            if ( v::string()->length(4)->validate($to) ) {
+                
+                $to = explode( ',', $to );
+                array_walk( $to, function( $item, $key ) {
+                    
+                    if ( !v::email()->validate( $item ) ) {
+                        
+                        echo 'Invalid destination on email()';
+                        return;
+                    }
+                });
+            }else {
+                
+                $to = false;
+            }            
+            
+        }else {
+            
+            echo 'Invalid arguments on email()';
+            return;
+        }
+        
+        if ( !$to ) {
+            
+            $to = $this->invoices_m->getInvoiceDetails( $invoiceID )->customerEmailAddress;
+            //$pdf = str_replace('.', base_url(), $pdf);
+        }
+		if ( $this->invoices_m->emailInvoice($pdf, $to) )
+        {
+            echo 'ok';
+        }else {
+            
+            echo 'ko';
+        }
 	}
+    
+	public function generate()
+	{       		
 	
-	public function process()
+		$type       = trim($this->input->post('type', true));
+		$contractID = trim($this->input->post('contract_id', true));
+		
+        if ( v::int()->min(0)->validate($contractID)
+            && v::int()->min(0)->validate($contractID) ) {
+            
+            $this->load->model('contracts_m');
+            $this->load->model('collects_m');
+            $this->load->model('hire_stock_m');
+            
+            if ( $type == "All") {
+            
+                $forInvoice       = $this->contracts_m->selCollectedNotInvoicedItems($contractID);
+                $offHiredDatetime = new DateTime("now");
+                $invoiceOrigin    = "1";
+        
+            }elseif ( $type == "Off") {
+                
+                $forInvoice     = $this->contracts_m->selReturnedNotInvoicedItems($contractID);
+                $invoiceOrigin  = "2";
+            }
+            
+            
+            if ( count($forInvoice) > 0 ) {               
+                
+                $currentDate    = new DateTime("now");
+                
+                $param_arr = array(
+                    'currentDate' => $currentDate->format('Y-m-d H:i:s'),
+                    'contractID'  => $contractID,
+                    'type'        => $invoiceOrigin
+                );
+                
+                $invoiceID = $this->invoices_m->generate($param_arr);
+                
+                $invoiceItems = array();
+                $origDocs     = array();
+                
+                foreach( $forInvoice as $i ) {                       
+                                            
+                    $hireStartDate  = new DateTime($i->collect_datetime);
+                    
+                    if ( $i->item_type == 1  ) { // Sales
+                        
+                        $qty = intval($i->requested_qty-$i->sold_invoiced_qty);
+                        $item = array(
+                            'collectItemID'         => $i->collect_item_id,
+                            'invoiceID'             => $invoiceID ,
+                            'fk_contract_item_id'   => $i->contract_items_id,
+                            'item_no'               => $i->stock_item_id,
+                            'qty'                   => $qty,
+                            'description'           => $i->item_description,
+                            'rate'                  => $i->item_rate,
+                            'per'                   => '',
+                            'discount_perc'         => $i->item_discount,
+                            'value'                 => round(($i->item_rate-(($i->item_rate*$i->item_discount)/100.00))*$qty,2),
+                            'item_type'             => 1,
+                            'hours'                 => '',
+                            'days'                  => '',
+                            'weeks'                 => '',
+                            'hire_date_from'        => '',
+                            'hire_date_to'          => $currentDate->format('Y-m-d H:i:s'),
+                            'vat'                   => $i->vat
+                        );
+                        
+                        array_push($invoiceItems, $item);
+                        
+                    }elseif ( $i->item_type == 2 ) { // Hire
+                        
+                        if ( $type == "All" ) {
+                            
+                            $interval       = $currentDate->diff($hireStartDate, true);
+                            $qty             = intval($i->requested_qty-$i->returned_qty);
+                            
+                        }elseif ( $type == "Off" ) {
+                            
+                            $offHiredDatetime   = DateTime::createFromFormat('Y-m-d H:i:s', $i->return_datetime);
+                            $interval           = $offHiredDatetime->diff($hireStartDate, true);
+                            $qty                = intval($i->requested_qty);
+                        }
+                                
+                        $hours          = $interval->h;                                
+                        $days           = $interval->days % 7;
+                        $weeks          = ($interval->y * 52); // Retrieve weeks of years
+                        $weeks         += ($interval->m * 4); // Retrieve weeks of months
+                        $weeks         += intval($interval->days / 7); // Retrieve weeks of remaing days                                
+                        
+                        if ( floatval($i->item_rate) > 0 ) {
+                                                                                            
+                            $chargingBand   = $this->hire_stock_m->selChargingBand($i->stock_item_id);
+                            $daysWeek       = $chargingBand['days_week'];                                
+                                                            
+                           
+                            $weeklyrate     = $this->getChargingRateByDays($daysWeek, $chargingBand);
+                            $daylyRate      = $this->getChargingRateByDays($days, $chargingBand);
+                            
+                            if ($weeklyrate == false ) {
+                                
+                                http_response_code(500);
+                                echo "Incorrect charging band";
+                                return;
+                            }
+                            
+                            $value  = round((($i->item_rate*$weeklyrate)/100)*$weeks,2);
+                            $value += round((($i->item_rate*$daylyRate)/100),2);
+                            
+                        }else {
+                            
+                           $value = 0.00;                               
+                        }
+                        
+                        
+                        $item = array(
+                            'collectItemID'         => $i->collect_item_id ,
+                            'invoiceID'             => $invoiceID ,
+                            'fk_contract_item_id'   => $i->contract_items_id,
+                            'item_no'               => $i->stock_item_id,
+                            'qty'                   => $qty,
+                            'description'           => $i->item_description,
+                            'rate'                  => $i->item_rate,
+                            'per'                   => 3,
+                            'discount_perc'         => $i->item_discount,
+                            'value'                 => $value,
+                            'item_type'             => 2,
+                            'hours'                 => $hours,
+                            'days'                  => $days,
+                            'weeks'                 => $weeks,
+                            'hire_date_from'        => $hireStartDate->format('Y-m-d H:i:s'),
+                            'hire_date_to'          => $offHiredDatetime->format('Y-m-d H:i:s'),
+                            'vat'                   => $i->vat
+                        );
+                        array_push($invoiceItems, $item);                           
+                    }
+                    
+                    if ( !isset($origDocs[$i->origDocID]) ) {
+                        
+                        $origDocs[$i->origDocID] = $i->origDocID ;
+                    }
+                        
+                }
+                
+                $this->invoices_m->relate($invoiceID, $origDocs, $invoiceOrigin);
+                
+                if ( $this->invoices_m->insInvoiceItem($invoiceItems) ) {
+                            
+                    echo json_encode(array(
+                                        'result'    => 'ok',
+                                        'invoiceID' => $invoiceID
+                                    ));
+                }else {
+                    
+                    echo json_encode(array(
+                                        'result'    => 'ko',
+                                        'message'   => 'There was a problem saving the invoice in the database. Please, try again.'
+                                    ));
+                }
+                return;
+                
+            }else { // No items to invoice
+                                
+                echo json_encode(array(
+                                            'result'    => 'ko',
+                                            'message'   => 'No items for invoicing.'
+                                        ));
+                return;
+            }            
+        
+        }
+        
+            http_response_code(400);
+            echo "Bad request.";
+        
+	}		
+	
+    public function past() {
+        
+         $contractID = $this->input->get('contractID', true);
+        
+        if ( v::int()->min(0)->validate($contractID)) {
+        
+            $invoices = $this->invoices_m->selectPastInvoices( $contractID );
+            $data = array(
+                            'invoices' => $invoices,
+                            'invoicesCount' => count($invoices)
+                        );
+            echo $this->load->view('invoices_past', $data, true);
+        }else {
+                
+                http_response_code(400);
+                echo "Bad request";
+        } 
+    }
+    
+	public function pdf()
 	{
-		$failed = false;
-		
-		$this->load->helper(array('url'));
-		$this->load->model('invoices_m');
-		$this->load->model('contracts_m');
-		
-		$contract_id = trim($this->input->post('contract_id',true));
-		$invoice_id = trim($this->input->post('invoice_id',true));
-		$subtotal = trim($this->input->post('subtotal',true));
-		$vat = trim($this->input->post('vat',true));
-		$total = trim($this->input->post('total',true));
-		
-		for($i = 0; $i < count($_POST['qty']); $i++)
-		{
-			if(isset($_POST["regularity"][$i]))
-			{
-				switch($_POST["regularity"][$i])
-				{
-					case "year":
-						$reg_post = 1;
-					break;
-					case "month":
-						$reg_post = 2;
-					break;
-					case "week":
-						$reg_post = 3;
-					break;
-					case "day":
-						$reg_post = 4;
-					break;
-				}
-			}
-			$pk_id = $_POST["item_id"][$i];
-			$item_no = $_POST["item_no"][$i];
-			$qty = $_POST["qty"][$i];
-			$description = $_POST["description"][$i];			
-			$entries_no = $_POST["entries_no"][$i];
-			$rate_per = $_POST["rate_per"][$i];
-			$item_type = $_POST["item_type"][$i];
-			if( $item_type == "2" )
-				$regularity = $reg_post;
-			else
-				$regularity = "";
-			$discount_perc = $_POST["disc"][$i];
-			$value = $_POST["value"][$i];			
-			
-			$vars_array = compact(
-								"invoice_id",
-								"pk_id",
-								"item_no",
-								"qty",
-								"description",
-								"entries_no",
-								"rate_per",
-								"regularity",
-								"discount_perc",
-								"value",
-								"item_type"
-							);			
-			$result = $this->invoices_m->save_invoice_item( $vars_array );
-			if( !$result )
-			{
-				$failed = true;
-				break;
-			}
-		}
-		if(!$failed)
-		{
-			$subtotal = trim($this->input->post('subtotal',true));
-			$vat = trim($this->input->post('vat',true));
-			$total = trim($this->input->post('total',true));
-			
-			$type = trim($this->input->post('contract_type', true));
-			$cash = number_format(floatval(trim($this->input->post('cash', true))),2);
-			$cheque = number_format(floatval(trim($this->input->post('cheque', true))),2);
-			$card = number_format(floatval(trim($this->input->post('card', true))),2);
-			
-			$total_paid = $cash + $cheque + $card;
-			
-			switch($type)
-			{
-				case 'Cash':
-					$unpaid_cash_invoice = $total_paid == 0.00 ? 1 : 0;
-					
-					if($total_paid > 0)
-					{
-						$unpaid_ammount = $total - $total_paid;
-						
-					}else
-						$unpaid_ammount = $total;
-						
-					
-					$vars_array = compact( "subtotal", "vat", "total", "unpaid_ammount", "unpaid_cash_invoice", "invoice_id");
-					if( $this->invoices_m->save_invoice_data( $vars_array ) )
-					{				
-						$ammounts = compact("cash", "cheque", "card");
-						for($i = 1; $i<4; $i++)
-						{
-							$payment_type = $i;
-							$ammount = $ammounts[$i];
-							$date = trim($this->input->post('payment_date', true));
-							$reference = trim($this->input->post('payment_reference', true));
-							$vars_array = compact("invoice_id", "payment_type", "ammount", "date", "reference");
-							
-							if( $this->invoices_m->save_payment( $vars_array ) )
-							{	
-								$generation = true;
-								
-							}else
-							{
-								$generation = false;
-							}
-						}					
-							
-					}				
-				break;
+		$this->load->helper('mpdf');
 				
-				case 'Credit':
-					$unpaid_cash_invoice = 0;
-					$unpaid_ammount = $total;					
-					
-					$vars_array = compact( "subtotal", "vat", "total", "unpaid_ammount", "unpaid_cash_invoice", "invoice_id");
-					if( $this->invoices_m->save_invoice_data( $vars_array ) )
-					{
-						$generation = true;
-					}else
-					{
-						$generation = false;
-					}
-				break;
-			}
-			if($generation)
-			{
-				$this->load->view('header_nav');		
-				$this->output->append_output("<p class=\"text-center\"><div class=\"alert alert-success\" role=\"alert\">The invoice was succesfully recorded.</div></p>");
-				$email_to = $this->contracts_m->get_contract_details( $contract_id )->email;
-				if( $this->input->post('email_invoice', true) == 1 )
-				{				
-					if( $this->invoice_pdf_to_email($invoice_id, $email_to) )
-					{
-						$this->output->append_output("<p class=\"text-center\"><div class=\"alert alert-success\" role=\"alert\">The invoice was also succesfully sent to ".$email_to.".</div></p>");
-					}else
-					{
-						$this->output->append_output("<p class=\"text-center\"><div class=\"alert alert-danger\" role=\"alert\">The invoice could not be sent to ".$email_to."; please, try again, later.</div></p>");
-					}
-				}
-				$this->output->append_output("<div class=\"row\">
-					<div class=\"col-md-12\">
-						<a href=\"".base_url('index.php/contracts/edit?id='.$contract_id)."\"><button type=\"button\" class=\"btn btn-default\">Go back to the contract</button></a>									
-					</div>
-				</div>");
-				$this->load->view('footer_common');
-				$this->load->view('footer_copyright');
-				$this->load->view('footer');
-			}else
-			{
-				$this->load->view('header_nav');		
-				$this->output->append_output("<p class=\"text-center\"><div class=\"alert alert-danger\" role=\"alert\">There was a problem processing the invoice; please, try again.</div></p>
-				<div class=\"row\">
-					<div class=\"col-md-12\">
-						<a href=\"".base_url('index.php/contracts/edit?id='.$contract_id)."\"><button type=\"button\" class=\"btn btn-default\">Go back to the contract</button></a>									
-					</div>
-				</div>");
-				$this->load->view('footer_common');
-				$this->load->view('footer_copyright');
-				$this->load->view('footer');
-			}
-			
-		}	
-		
-	}
-	
-	public function invoice_pdf()
-	{
-		$this->load->helper(array('dompdf', 'file', 'url'));
-		$this->load->model('contracts_m');
-		$this->load->model('invoices_m');
-		
-		$invoice_id = $this->input->get('id', true);
-		$email_to = $this->input->get('email', true);
-		
-		$data['invoice_id'] = $invoice_id;
-		$data['invoice_details'] = $this->invoices_m->get_invoice_details($invoice_id);
-		$data['invoice_items'] 		= $this->invoices_m->get_all_invoice_items($invoice_id);		
-		$data['contract_details'] 	= $this->contracts_m->get_contract_details( $data['invoice_details']->fk_contract_id );
-		$data['contract_id'] = $data['invoice_details']->fk_contract_id;
-		$data['customer_name'] = $data['contract_details']->name;
-		$data['contract_type'] = $data['contract_details']->type == 0 ? "Cash" : "Credit";
-		$data['address'] = $data['contract_details']->address;
-		$data['delivery_charge'] = $data['contract_details']->delivery_charge;		
-		//$data['contract_status'] = $data['contract_details']->fk_contract_status_id;		
-		$html = $this->load->view('report_invoice_pdf', $data, true);
-		//$this->load->view('report_invoice_pdf', $data);
-		if(empty($email_to))
-		{
-			pdf_create($html, 'Invoice '.$invoice_id);
-		}else
-		{		
-			$file_name = "invoices/".$data['customer_name']."_".$data['contract_id']."_".$data['invoice_id'].".pdf";
-			$data = pdf_create($html, '', false);
-			write_file($file_name, $data);
-			$this->invoices_m->email_invoice($email_to, $file_name);
-		}
+		$invoiceID = isset($this->queryStrArr['iid']) ? $this->queryStrArr['iid']:false;
+        $disk      = isset($this->queryStrArr['disk']) ? true:false;
+        
+        if ( v::int()->min(0)->validate($invoiceID)) {
+            
+            $invoiceDetails  = $this->invoices_m->getInvoiceDetails($invoiceID);            
+            $data            = array(
+                                    'invoiceItems' => $this->invoices_m->selInvoiceItems($invoiceID),
+                                    'mode'         => 'pdf'
+                                    );
+            $invoiceItems   = $this->load->view('invoice_items_table', $data, true) ;            
+            $data           = array(
+                                    'invoiceDetails' => $invoiceDetails,
+                                    'invoiceItems'   => $invoiceItems,
+                                    'logoURL' => $this->config->item('logos_path').$this->nativesession->get('user')['companyLogo'],
+                                    'companyName' => $this->nativesession->get('user')['company_name'] 
+                                    );
+            
+            $htmlHeader = $this->load->view('/reports/pdf_header',
+                                            array(
+                                                    'logoURL' => $this->config->item('logos_path').$this->nativesession->get('user')['companyLogo'],
+                                                    'companyName' => $this->nativesession->get('user')['company_name'] 
+                                                ),
+                                             true);
+            $html = "";
+            $html = $html.$this->load->view('/reports/pdf_html_head',   '',     true);
+            $html = $html.$this->load->view('/reports/invoice',        $data,  true);            
+            $html = $html.$this->load->view('/reports/pdf_html_foot',   '',     true);
+            
+            if ( $disk ) {
+                //pdf_create($html, '', '', 'invoice', false);
+                echo  pdf_create($html, '', '', 'invoice', false);
+            }else {
+                pdf_create($html, '', '', '');
+            }            
+           
+        }else {
+            
+            http_response_code(400);
+            echo "Bad request.";            
+        }
 	}	
 	
-	public function past()
+	/*public function past()
 	{
 		$this->load->model('invoices_m');
 		
@@ -298,7 +403,7 @@ class Invoices extends CI_Controller
 			$data['invoices'] = $this->invoices_m->get_invoices_of($contract_id);			
 			$this->load->view('past_invoices', $data);
 		}
-	}
+	}*/
 	
 	public function preview()
 	{
@@ -354,4 +459,70 @@ class Invoices extends CI_Controller
 			$this->load->view('footer');
 		}
 	}
+
+    public function removeItem() {
+        
+        $rowID      = $this->input->post('rowid', true);
+        
+        if ( v::int()->min(0)->validate($rowID)) {
+            
+            if ( $this->invoices_m->delItem($rowID)  ) {
+                
+                echo "ok";
+            }else {
+                
+                echo "ko";
+            }
+        }else {
+            
+             http_response_code(400);
+            echo "Bad request.";    
+        }
+    }
+    
+    public function view() {
+                
+        $invoiceID      = isset($this->queryStrArr['iid']) ? $this->queryStrArr['iid']:false;
+        
+        if ( v::int()->min(0)->validate($invoiceID)) {
+            
+            $invoiceDetails  = $this->invoices_m->getInvoiceDetails($invoiceID);
+
+            if ( count($invoiceDetails) <= 0) {
+                 header('Location: '.base_url('index.php/desk')); 
+              
+            }
+
+            if ( !v::date('Y-m-d H:i:s')->validate($invoiceDetails->creation_date) ) {
+                
+                header('Location: '.base_url('index.php/desk'));               
+            }             
+            
+            $data            = array(
+                                    'invoiceItems' => $this->invoices_m->selInvoiceItems($invoiceID),
+                                    'mode'         => 'read' //$invoiceDetails->accepted == null ? 'write':'read'
+                                    );
+            $invoiceItems   = $this->load->view('invoice_items_table', $data, true) ;            
+            $data           = array(
+                                    'invoiceDetails' => $invoiceDetails,
+                                    'invoiceItems'   => $invoiceItems
+                                    );
+            
+            header("Cache-Control: no-store, no-cache, must-revalidate");                                
+            header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
+            
+            $this->load->view('header_nav');		
+			$this->load->view('invoice_form', $data);
+			$this->load->view('footer_common');
+			$this->output->append_output("<script src=\"".base_url('assets/js/invoices.js')."\"></script>");	
+			$this->load->view('footer_copyright');
+			$this->load->view('footer');            
+        }else {
+            
+            http_response_code(400);
+            echo "Bad request.";            
+        }       
+        
+    }
+    
 }

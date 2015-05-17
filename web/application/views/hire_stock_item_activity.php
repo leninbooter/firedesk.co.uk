@@ -16,7 +16,7 @@
     padding: 2px 3px 2px 2px;
     border: none;">
 		<?php for($i=1; $i<=12; $i++): ?>
-			<option value="<?php echo $i; ?>" <?php echo $i == $from[0] ? "selected" : ""; ?>><?php echo DateTime::createFromFormat('m',explode("/",$i)[0])->format('M'); ?></option>
+			<option value="<?php echo $i; ?>" <?php  echo $i == substr($from, 0, strrpos($from,'/')) ? "selected" : ""; ?>><?php echo DateTime::createFromFormat('m',explode("/",$i)[0])->format('M'); ?></option>
 		<?php endfor; ?>
 	</select>
 	/
@@ -26,7 +26,7 @@
 		padding: 2px 3px 2px 2px;
 		border: none;">
 		<?php for($i=2014; $i<=2024; $i++): ?>
-			<option value="<?php echo $i; ?>" <?php echo $i == $from[1] ? "selected" : ""; ?>><?php echo $i; ?></option>
+			<option value="<?php echo $i; ?>" <?php  echo $i == substr($from, strrpos($from,'/')+1,strlen($from)-1) ? "selected" : ""; ?>><?php echo $i; ?></option>
 		<?php endfor; ?>	
 		</select>
 	<?php //echo DateTime::createFromFormat('m',explode("/",$from)[0])->format('')."/ ".explode("/",$from)[1]; ?> To: 
@@ -36,7 +36,7 @@
 		padding: 2px 3px 2px 2px;
 		border: none;">
 		<?php for($i=1; $i<=12; $i++): ?>
-			<option value="<?php echo $i; ?>" <?php echo $i == $to[0] ? "selected" : ""; ?>><?php echo DateTime::createFromFormat('m',explode("/",$i)[0])->format('M'); ?></option>
+			<option value="<?php echo $i; ?>" <?php echo $i == substr($to, 0,strrpos($to,'/')) ? "selected" : ""; ?>><?php echo DateTime::createFromFormat('m',explode("/",$i)[0])->format('M'); ?></option>
 		<?php endfor; ?>	
 		</select>
 		/
@@ -46,7 +46,7 @@
 		padding: 2px 3px 2px 2px;
 		border: none;">
 		<?php for($i=2014; $i<=2024; $i++): ?>
-			<option value="<?php echo $i; ?>" <?php echo $i == $to[1] ? "selected" : ""; ?>><?php echo $i; ?></option>
+			<option value="<?php echo $i; ?>" <?php echo $i == substr($to, strrpos($to,'/')+1,strlen($to)-1) ? "selected" : ""; ?>><?php echo $i; ?></option>
 		<?php endfor; ?>	
 		</select>
 	<?php // echo DateTime::createFromFormat('m',explode("/",$to)[0])->format('')."/ ".explode("/",$to)[1]; ?></h3>

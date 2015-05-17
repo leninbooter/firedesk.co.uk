@@ -1,97 +1,41 @@
-<form role="form" id="generate_invoice_form" method="post" action="<?php echo base_url('index.php/invoices/process'); ?>">
-	<div class="row">
-		<div class="col-md-5">
-			<h1>Invoice</h1>
+<input type="hidden" name="contract_id" id="contract_id" value="<?=$invoiceDetails->contractID?>">	
+<input type="hidden" name="invoiceID" id="invoiceID" value="<?=$invoiceDetails->pk_id?>">	
+<input type="hidden" name="accepted" id="accepted" value="<?=$invoiceDetails->accepted?>">	
+    <div class="row">
+		<div class="col-md-6">
+			<h1>Contract No. <?=$invoiceDetails->contractID?></h1>
+            <h2>Invoice No. <?=$invoiceDetails->pk_id?> <small><?=date('d F Y H:i', strtotime($invoiceDetails->creation_date))?></small></h2>
 		</div>
-		<div class="col-md-3"></div>
-		<div class="col-md-4">
-			<input type="hidden" name="contract_id" id="contract_id" value="<?php echo $contract_id; ?>">
-			<h2>Contract No. <?php echo $contract_id; ?></h2>
-		</div>
+        <div class="col-md-6">
+        <h1></h1>
+			<?php if( $invoiceDetails->accepted != 1): ?>
+                <div class="alert alert-warning" role="alert"><b>Pending</b><p>At this moment, 
+                you can save or discard the invoice if there is a problem with it.
+                Unless you save it or print it, you will be alert when trying to leave the page.</p></div>
+           <?php endif; ?>
+		</div>				
 	</div>
 
 	<div class="row">
-		<div class="col-md-4">
-			<input type="hidden" name="customer_name" id="customer_name" value="<?php echo $customer_name; ?>">
-			<h3>Client name <?php echo $customer_name; ?></h3>
-			<input type="hidden" id="contract_type" name="contract_type" value="<?php echo $contract_type; ?>">
-			<h4><?php echo $contract_type; ?></h4>
-			<input type="hidden" id="contract_type" name="contract_type" value="<?php echo $contract_type; ?>">
-			<address>
-				<strong>xxxxxxx xxxxxx</strong><br>
-				xxx xxxxxxxx xxxxxxx xx
-			</address>
-		</div>
-		<div class="col-md-4">
-			<div class="row">
-				<div class="col-md-4">
-					<input type="hidden" id="delivery_charge" name="delivery_charge" value="<?php echo $delivery_charge; ?>">
-					<h4>Delivery</h4>
-					<?php echo $delivery_charge; ?>
-				</div>
-				<div class="col-md-4">
-					<h4>Collect</h4>				
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<h4 class="text-center">Order Number</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<h4 class="text-center">Job Ref./Order By</h4>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<h2>Invoice No. <?php echo $invoice_id; ?></h2>
-			<input type="hidden" name="invoice_id" id="invoice_id" value="<?php echo $invoice_id; ?>">
-		</div>
-	</div>
+        <div class="col-md-4">
+            <h3>Client</h3>		
+            <?= $invoiceDetails->customerName?>
+            <address>
+                <?=$invoiceDetails->customerAddress?>
+            </address>
+        </div>	
+        <div class="col-md-4">
+            <h4>Site Address</h4>		
+            <?=$invoiceDetails->deliveryAddress?>
+        </div>
+        <div class="col-md-4">
+            <h4></h4>				
+        </div>
+    </div>
 
 	<div class="row">
 		<div class="col-md-12">
-			<table class="table table-hover table-responsive" id="items">
-				<thead>
-					<tr>
-						<th>Item No</th><th>Qty</th><th>Rtn Description</th><th>No entries</th><th>Rate per</th><th>Disc. %</th><th>Value</th>
-					</tr>
-				</thead>
-				<?php $subtotal = 0; ?>
-				<?php foreach($invoice_items as $row): ?>
-					<tr>
-						<input type="hidden" id="item_id" name="item_id[]" value="<?php echo $row->pk_id; ?>">
-						<td><?php echo $row->item_no; ?></td>
-						<input type="hidden" id="item_no" name="item_no[]" value="<?php echo $row->item_no; ?>">
-						<td><?php echo $row->qty_supplied; ?></td>
-						<input type="hidden" id="qty" name="qty[]" value="<?php echo $row->qty_supplied; ?>">
-						<td><?php echo $row->description; ?></td>
-						<input type="hidden" id="description" name="description[]" value="<?php echo $row->description; ?>">
-						<td><?php echo $row->entries_no; ?></td>
-						<input type="hidden" id="entries_no" name="entries_no[]" value="<?php echo $row->entries_no; ?>">
-						<td><?php echo $row->rate;
-								echo " ";
-								switch( $row->regularity )
-								{
-									case 1: echo "Year"; break;
-									case 2: echo "Month"; break;
-									case 3: echo "Week"; break;
-									case 4: echo "Day"; break;
-								}
-							?></td>
-						<input type="hidden" id="rate_per" name="rate_per[]" value="<?php echo $row->rate; ?>">	
-						<input type="hidden" id="regularity" name="regularity[]" value="<?php echo $row->regularity; ?>">
-						<td><?php echo $row->discount_perc; ?></td>
-						<input type="hidden" id="discount_perc" name="discount_perc[]" value="<?php echo $row->discount_perc; ?>">
-						<td><?php echo $row->value; ?></td>
-						<input type="hidden" id="value" name="value[]" value="<?php echo $row->value; ?>">
-						<input type="hidden" id="item_type" name="item_type[]" value="<?php echo $row->item_type; ?>">
-						<input type="hidden" id="disc" name="disc[]" value="<?php echo $row->discount_perc; ?>">
-						<?php $subtotal += $row->value; ?>
-					</tr>
-				<?php endforeach; ?>
-			</table>
+			<?=$invoiceItems?>
 		</div>
 	</div>
 
@@ -108,8 +52,7 @@
 			<h4>Sub total</h4>
 		</div>
 		<div class="col-md-1">
-			<p class="text-right"><?php echo number_format($subtotal, 2);?></p>
-			<input type="hidden" id="subtotal" name="subtotal" value="<?php echo $subtotal; ?>">
+			<p class="text-right"><?=($invoiceDetails->subtotal);?></p>
 		</div>
 	</div>
 
@@ -120,8 +63,7 @@
 			<h4>V.A.T</h4>
 		</div>
 		<div class="col-md-1">
-			<p class="text-right"><?php echo number_format($subtotal * 0.15,2);?></p>
-			<input type="hidden" id="vat" name="vat" value="<?php echo $subtotal*0.15; ?>">
+			<p class="text-right"><?=($invoiceDetails->vat);?></p>
 		</div>
 	</div>
 
@@ -132,8 +74,7 @@
 			<h4>Total</h4>
 		</div>
 		<div class="col-md-2">
-			<p class="text-right"><?php echo number_format($subtotal + ($subtotal*0.15),2);?></p>
-			<input type="hidden" id="total" name="total" value="<?php echo $subtotal + ($subtotal*0.15);?>">
+			<p class="text-right"><?=($invoiceDetails->total);?></p>
 		</div>
 	</div>
 	<div class="row">
@@ -143,10 +84,16 @@
 	</div>	
 
 	<div class="row">
-		<div class="col-md-8"></div>
-		<div class="col-md-1"><button type="button" class="btn btn-default  btn-block" id="cancel_button">Cancel</button></div>
-		<div class="col-md-1"><button type="button" class="btn btn-primary  btn-block" id="save_button">Save</button></div>
-		<div class="col-md-2"><button type="button" class="btn btn-primary  btn-block" id="save_send_button">Save & Send via e-mail</button></div>
+		<div class="col-md-7"></div>
+		<?php if( $invoiceDetails->accepted != 1): ?>
+        <div class="col-md-1"><button type="button" class="btn btn-default  btn-block" onclick="discard()"  >Discard</button></div>
+        <div class="col-md-1"><button type="button" class="btn btn-primary  btn-block" onclick="save()"     >Save</button></div>
+        <div class="col-md-2"><button type="button" class="btn btn-primary  btn-block" onclick="save('email')" >Save & Send via e-mail</button></div>
+        <?php endif; ?>
+		<div class="col-md-1"><button type="button" class="btn btn-primary  btn-block" onclick="pdf()"      >Print</button></div>
+		<?php if( $invoiceDetails->accepted == 1): ?>
+        <div class="col-md-2"><button type="button" class="btn btn-primary  btn-block" onclick="email()">Send via e-mail</button></div>
+        <?php endif; ?>		
 	</div>
 	<input type="hidden" id="email_invoice" name="email_invoice" value="0">
 	
@@ -167,7 +114,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-4"><label type="text" class="control-label">Ammount:</label></div>
-						<div class="col-md-4"><?php echo number_format(($subtotal + ($subtotal*0.15)),2);?></div>	
+						<div class="col-md-4"><?=($invoiceDetails->total);?></div>	
 					</div>
 					<div class="row">
 						<div class="col-md-4"><label class="control-label">Cash:</label></div>
@@ -188,28 +135,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-</form>
-
-<div class="modal fade" id="contract_details" tabindex="-1" role="dialog" aria-labelledby="contract_details_label" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-			</div>
-			<iframe style="width:100%; height:600px" id="contract_details_content_iframe" src=""></iframe>
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="alerts" tabindex="-1" role="dialog" aria-labelledby="alerts_label" aria-hidden="true">
-	<div class="modal-dialog modal-sm">
-		<div class="modal-content">			
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="outstanding_items" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">			
-		</div>
-	</div>
-</div>
+	</div>	
