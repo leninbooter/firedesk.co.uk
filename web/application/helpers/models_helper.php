@@ -32,8 +32,6 @@ if( ! function_exists('company_db_string_connection'))
 		$local_db['swap_pre'] = '';
 		$local_db['autoinit'] = TRUE;
 		$local_db['stricton'] = FALSE;
-			foreach($local_db as $key=>$value)
-				log_message('debug', $key."=".$value);
 		
 		return $local_db;
 	}

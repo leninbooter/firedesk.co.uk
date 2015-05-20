@@ -15,6 +15,7 @@ if ( $('#sales_stock_modal').length > 0 ) {
                     $('#stock_no').text(ui.item.stock_number);
                     $('#sale_item_in_stock').text(ui.item.quantity_balance);
                     $('#sale_item_on_order').text(ui.item.quantity_on_order);
+                    $('#sale_item_cost').val(ui.item.cost);
                     $('#sale_item_qty').focus();
                 }
                 })
@@ -152,6 +153,7 @@ if ( $('#hire_fleet_modal').length > 0 ) {
         );
     });
 }
+
 
 $.get( base_url + "index.php/hire_stock/get_items_json", function( data ) {
 
@@ -520,6 +522,29 @@ function newHiredReturns() {
     .always(function() {
         clearInterval(collectModalInterval);
     });              
+}
+
+function pay(event, invoiceID ) {
+    event.stopPropagation();
+    $('#multipurposeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show:     true        
+    });
+    
+    $('#multipurposeModal .modal-dialog').addClass('magictime loading');
+    
+    collectModalInterval = setInterval(function(){
+                                                    $('#multipurposeModal .modal-dialog').toggleClass('magictime loading');
+                                                }, 1000 );;
+
+   $.get(base_url+'index.php/invoices/pay', { invoiceID: invoiceID }, function(html) {
+         $('#multipurposeModal .modal-title').html('Payment');
+         $('#multipurposeModal .modal-body').html(html);
+         clearInterval(collectModalInterval);
+         $.getScript( base_url + 'assets/js/payments.js');
+    });    
+ 
 }
 
 function returnSoldItems() {

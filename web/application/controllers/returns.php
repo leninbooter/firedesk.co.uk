@@ -26,16 +26,20 @@ class Returns extends MY_Controller
                     
                     $items = array();
                     for($i = 0; $i < count( $_POST['collectItemId']) ; $i++) {
-                                            
+                        
+                        $qty = $_POST['returnedQty'][$i] == '' ? 0:$_POST['returnedQty'][$i];
+                        
                         if ( v::int()->min(0)->validate($_POST['collectItemId'][$i]) 
-                            && v::int()->validate($_POST['returnedQty'][$i]) ) {
+                            && v::int()->validate($qty) ) {
                             
-                            if ( $_POST['returnedQty'][$i] > 0 ) {
+                            if ( $qty > 0 ) {
+                                
                                 array_push($items, array(
-                                                        'collectItemId'=> $_POST['collectItemId'][$i],
-                                                        'returnedQty'    => $_POST['returnedQty'][$i]
+                                                        'collectItemId'  => $_POST['collectItemId'][$i],
+                                                        'returnedQty'    => $qty
                                                         ));          
-                            }                                                
+                            }
+                            
                         }else {
                             
                             http_response_code(400);
@@ -57,17 +61,19 @@ class Returns extends MY_Controller
                                     'items'      => $items
                                 );
                 
-                if ( $type == 'hired') {
+                $return =  $this->returns_m->saveHiredReturn($param_arr);
+                /*if ( $type == 'hired') {
                     
                     $return =  $this->returns_m->saveHiredReturn($param_arr);
                 }elseif ($type == 'sold') {
                     
                      $return =  $this->returns_m->saveSoldReturn($param_arr);
-                }
+                }*/
                 
                 if ( $return ) {
                     
                     echo "ok";
+                    
                 }else {
                     
                     echo "Please, reload the page and try again";

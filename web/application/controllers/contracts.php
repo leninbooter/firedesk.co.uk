@@ -875,6 +875,7 @@ class Contracts extends MY_Controller
             $qty             = $this->input->post('sale_item_qty', true);
             $discount        = floatval(preg_replace("/[^0-9\.]*/", "", $this->input->post('disc', true)));
             $price           = $this->input->post('price', true);                                    
+            $cost           = $this->input->post('sale_item_cost', true);                                    
             
             if ( v::int()->validate($saleStockItemID)
                 && v::int()->validate($qty)
@@ -886,14 +887,15 @@ class Contracts extends MY_Controller
                 $date   = date('Y-m-d H:i:s');
                 
                 $param_arr = compact(
-                                    "saleStockItemID",
-                                    "description",    
-                                    "qty",            
-                                    "discount",          
-                                    "price",          
-                                    "total",
-                                    "date",
-                                    "contractID"                                    
+                                    'saleStockItemID',
+                                    'description',    
+                                    'qty',            
+                                    'discount',          
+                                    'price',          
+                                    'total',
+                                    'date',
+                                    'contractID',
+                                    'cost'
                                     );
                 
                 $this->load->model('contracts_m');

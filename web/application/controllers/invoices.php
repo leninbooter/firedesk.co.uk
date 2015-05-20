@@ -163,163 +163,213 @@ class Invoices extends MY_Controller
             $this->load->model('collects_m');
             $this->load->model('hire_stock_m');
             
-            if ( $type == "All") {
-            
-                $forInvoice       = $this->contracts_m->selCollectedNotInvoicedItems($contractID);
-                $offHiredDatetime = new DateTime("now");
-                $invoiceOrigin    = "1";
-        
+            if ( $type == "All") {            
+                
+                // This includes hired and sold items from the contract that has been 
+                // collected but not returned.
+                $forInvoiceAll['notReturned']   =  $this->contracts_m->selCollectedNotInvoicedItems($contractID);
+                        
             }elseif ( $type == "Off") {
                 
-                $forInvoice     = $this->contracts_m->selReturnedNotInvoicedItems($contractID);
-                $invoiceOrigin  = "2";
+                // This includes sold items that have been collected but not invoiced
+                $forInvoiceAll['collectedSoldItems'] = $this->contracts_m->selCollectedSoldItems( $contractID );
+                
+            }
+            
+            // This includes just hired items that has been returned or off hired.
+            $forInvoiceAll['returned']           = $this->contracts_m->selReturnedNotInvoicedItems($contractID);
+            
+            // This includes just sold items that has been returned and are to be
+            // credited to the customer in this invoice
+            $forInvoiceAll['returnedSales']     = $this->contracts_m->selReturnedInvoicedSoldItems($contractID);
+            
+            $currentDate    = new DateTime("now");
+                    
+            $param_arr = array(
+                'currentDate' => $currentDate->format('Y-m-d H:i:s'),
+                'contractID'  => $contractID
+            );
+        
+            $invoiceID = $this->invoices_m->generate($param_arr);
+                      
+            $count = 0;
+            foreach ( $forInvoiceAll as $key => $forInvoice ) {
+               
+                $count += count($forInvoice);
+            
+            }
+            if ( $count == 0 ) {
+                echo json_encode(array(
+                                    'result'    => 'ko',
+                                    'message'   => 'Nothing to invoice.'
+                                ));
+                return;
             }
             
             
-            if ( count($forInvoice) > 0 ) {               
+            foreach ( $forInvoiceAll as $key => $forInvoice ) {
                 
-                $currentDate    = new DateTime("now");
-                
-                $param_arr = array(
-                    'currentDate' => $currentDate->format('Y-m-d H:i:s'),
-                    'contractID'  => $contractID,
-                    'type'        => $invoiceOrigin
-                );
-                
-                $invoiceID = $this->invoices_m->generate($param_arr);
-                
-                $invoiceItems = array();
-                $origDocs     = array();
-                
-                foreach( $forInvoice as $i ) {                       
-                                            
-                    $hireStartDate  = new DateTime($i->collect_datetime);
+                 if ( $key == 'notReturned' || $key == 'collectedSoldItems' ) {
                     
-                    if ( $i->item_type == 1  ) { // Sales
+                    $offHiredDatetime       = new DateTime("now");
+                    $invoiceOrigin          = "1";
+                    
+                }elseif ( $key == 'returned' || $key == 'returnedSales') {
+                    
+                    $invoiceOrigin          = "2";
+                }
+                
+                if ( count($forInvoice) > 0 ) {                                                                                          
+                    
+                    $invoiceItems = array();
+                    $origDocs     = array();
+                
+                    foreach( $forInvoice as $i ) {                       
+                                                                        
                         
-                        $qty = intval($i->requested_qty-$i->sold_invoiced_qty);
-                        $item = array(
-                            'collectItemID'         => $i->collect_item_id,
-                            'invoiceID'             => $invoiceID ,
-                            'fk_contract_item_id'   => $i->contract_items_id,
-                            'item_no'               => $i->stock_item_id,
-                            'qty'                   => $qty,
-                            'description'           => $i->item_description,
-                            'rate'                  => $i->item_rate,
-                            'per'                   => '',
-                            'discount_perc'         => $i->item_discount,
-                            'value'                 => round(($i->item_rate-(($i->item_rate*$i->item_discount)/100.00))*$qty,2),
-                            'item_type'             => 1,
-                            'hours'                 => '',
-                            'days'                  => '',
-                            'weeks'                 => '',
-                            'hire_date_from'        => '',
-                            'hire_date_to'          => $currentDate->format('Y-m-d H:i:s'),
-                            'vat'                   => $i->vat
-                        );
-                        
-                        array_push($invoiceItems, $item);
-                        
-                    }elseif ( $i->item_type == 2 ) { // Hire
-                        
-                        if ( $type == "All" ) {
+                        if ( $i->item_type == 1  ) { // Sales
                             
-                            $interval       = $currentDate->diff($hireStartDate, true);
-                            $qty             = intval($i->requested_qty-$i->returned_qty);
-                            
-                        }elseif ( $type == "Off" ) {
-                            
-                            $offHiredDatetime   = DateTime::createFromFormat('Y-m-d H:i:s', $i->return_datetime);
-                            $interval           = $offHiredDatetime->diff($hireStartDate, true);
-                            $qty                = intval($i->requested_qty);
-                        }
+                            if ( $key == 'returnedSales') {
                                 
-                        $hours          = $interval->h;                                
-                        $days           = $interval->days % 7;
-                        $weeks          = ($interval->y * 52); // Retrieve weeks of years
-                        $weeks         += ($interval->m * 4); // Retrieve weeks of months
-                        $weeks         += intval($interval->days / 7); // Retrieve weeks of remaing days                                
-                        
-                        if ( floatval($i->item_rate) > 0 ) {
-                                                                                            
-                            $chargingBand   = $this->hire_stock_m->selChargingBand($i->stock_item_id);
-                            $daysWeek       = $chargingBand['days_week'];                                
-                                                            
-                           
-                            $weeklyrate     = $this->getChargingRateByDays($daysWeek, $chargingBand);
-                            $daylyRate      = $this->getChargingRateByDays($days, $chargingBand);
-                            
-                            if ($weeklyrate == false ) {
+                                $qty = $i->returned_qty;
                                 
-                                http_response_code(500);
-                                echo "Incorrect charging band";
-                                return;
+                            }else {
+                                
+                                $qty = intval($i->requested_qty-$i->sold_invoiced_qty);
+                            }
+                            $item = array(
+                            
+                                        //'collectItemID'         => $i->collect_item_id,
+                                        'invoiceID'             => $invoiceID ,
+                                        'fk_contract_item_id'   => $i->contract_items_id,
+                                        'item_no'               => $i->stock_item_id,
+                                        'qty'                   => $qty,
+                                        'description'           => $i->item_description,
+                                        'rate'                  => $i->item_rate,
+                                        'unit_cost'              => $i->cost,
+                                        'per'                   => '',
+                                        'discount_perc'         => $i->item_discount,
+                                        'value'                 => round(($i->item_rate-(($i->item_rate*$i->item_discount)/100.00))*$qty,2),
+                                        'item_type'             => 1,
+                                        'hours'                 => '',
+                                        'days'                  => '',
+                                        'weeks'                 => '',
+                                        'hire_date_from'        => '',
+                                        'hire_date_to'          => $currentDate->format('Y-m-d H:i:s'),
+                                        'vat'                   => $i->vat
+                                    );
+                            
+                            array_push($invoiceItems, $item);
+                            
+                        }elseif ( $i->item_type == 2 ) { // Hire
+                            
+                            $hireStartDate  = new DateTime($i->collect_datetime);
+                            
+                            if ( $type == "All" ) {
+                                
+                                $interval       = $currentDate->diff($hireStartDate, true);
+
+                                if ( $key == 'returned' ) {
+                                   
+                                   $qty                 = $i->returned_qty;
+                                   $offHiredDatetime    = DateTime::createFromFormat('Y-m-d H:i:s', $i->return_datetime);
+                                   
+                                }else {
+                                    $qty             = intval($i->requested_qty-$i->returned_qty);
+                                }
+                                
+                            }elseif ( $type == "Off" ) {
+                                
+                                $offHiredDatetime   = DateTime::createFromFormat('Y-m-d H:i:s', $i->return_datetime);
+                                $interval           = $offHiredDatetime->diff($hireStartDate, true);
+                                
+                                if ( $key == 'returned' ) {
+                                    
+                                    $qty             = $i->returned_qty;
+                                }else {
+                                    
+                                    $qty             = intval($i->requested_qty);
+                                }
+                            }
+                                    
+                            $hours          = $interval->h;                                
+                            $days           = $interval->days % 7;
+                            $weeks          = ($interval->y * 52); // Retrieve weeks of years
+                            $weeks         += ($interval->m * 4); // Retrieve weeks of months
+                            $weeks         += intval($interval->d / 7); // Retrieve weeks of remaing days                                
+                            
+                            if ( floatval($i->item_rate) > 0 ) {
+                                                                                                
+                                $chargingBand   = $this->hire_stock_m->selChargingBand($i->stock_item_id);
+                                $daysWeek       = $chargingBand['days_week'];                                
+                                                                
+                               
+                                $weeklyrate     = $this->getChargingRateByDays($daysWeek, $chargingBand);
+                                $daylyRate      = $this->getChargingRateByDays($days, $chargingBand);
+                                
+                                if ($weeklyrate == false ) {
+                                    
+                                    http_response_code(500);
+                                    echo "Incorrect charging band";
+                                    return;
+                                }
+                                
+                                $value  = round((($i->item_rate*$weeklyrate)/100)*$weeks,2);
+                                $value += round((($i->item_rate*$daylyRate)/100),2);
+                                
+                            }else {
+                                
+                               $value = 0.00;                               
                             }
                             
-                            $value  = round((($i->item_rate*$weeklyrate)/100)*$weeks,2);
-                            $value += round((($i->item_rate*$daylyRate)/100),2);
                             
-                        }else {
-                            
-                           $value = 0.00;                               
+                            $item = array(
+                                'collectItemID'         => $i->collect_item_id ,
+                                'invoiceID'             => $invoiceID ,
+                                'fk_contract_item_id'   => $i->contract_items_id,
+                                'item_no'               => $i->stock_item_id,
+                                'qty'                   => $qty,
+                                'description'           => $i->item_description,
+                                'rate'                  => $i->item_rate,
+                                'per'                   => 3,
+                                'discount_perc'         => $i->item_discount,
+                                'value'                 => $value,
+                                'item_type'             => 2,
+                                'hours'                 => $hours,
+                                'days'                  => $days,
+                                'weeks'                 => $weeks,
+                                'hire_date_from'        => $hireStartDate->format('Y-m-d H:i:s'),
+                                'hire_date_to'          => $offHiredDatetime->format('Y-m-d H:i:s'),
+                                'vat'                   => $i->vat
+                            );
+                            array_push($invoiceItems, $item);                           
                         }
                         
-                        
-                        $item = array(
-                            'collectItemID'         => $i->collect_item_id ,
-                            'invoiceID'             => $invoiceID ,
-                            'fk_contract_item_id'   => $i->contract_items_id,
-                            'item_no'               => $i->stock_item_id,
-                            'qty'                   => $qty,
-                            'description'           => $i->item_description,
-                            'rate'                  => $i->item_rate,
-                            'per'                   => 3,
-                            'discount_perc'         => $i->item_discount,
-                            'value'                 => $value,
-                            'item_type'             => 2,
-                            'hours'                 => $hours,
-                            'days'                  => $days,
-                            'weeks'                 => $weeks,
-                            'hire_date_from'        => $hireStartDate->format('Y-m-d H:i:s'),
-                            'hire_date_to'          => $offHiredDatetime->format('Y-m-d H:i:s'),
-                            'vat'                   => $i->vat
-                        );
-                        array_push($invoiceItems, $item);                           
-                    }
-                    
-                    if ( !isset($origDocs[$i->origDocID]) ) {
-                        
-                        $origDocs[$i->origDocID] = $i->origDocID ;
-                    }
-                        
-                }
-                
-                $this->invoices_m->relate($invoiceID, $origDocs, $invoiceOrigin);
-                
-                if ( $this->invoices_m->insInvoiceItem($invoiceItems) ) {
+                        if ( !isset($origDocs[$i->origDocID]) ) {
                             
-                    echo json_encode(array(
-                                        'result'    => 'ok',
-                                        'invoiceID' => $invoiceID
-                                    ));
-                }else {
+                            $origDocs[$i->origDocID] = $i->origDocID ;
+                        }                                                
+
+                    }
                     
-                    echo json_encode(array(
-                                        'result'    => 'ko',
-                                        'message'   => 'There was a problem saving the invoice in the database. Please, try again.'
-                                    ));
-                }
-                return;
-                
-            }else { // No items to invoice
-                                
-                echo json_encode(array(
+                    if ( !$this->invoices_m->insInvoiceItem($invoiceItems) ) {
+                            
+                        echo json_encode(array(
                                             'result'    => 'ko',
-                                            'message'   => 'No items for invoicing.'
+                                            'message'   => 'There was a problem saving the invoice in the database. Please, try again.'
                                         ));
-                return;
-            }            
-        
+                    }
+                        
+                    $this->invoices_m->relate($invoiceID, $origDocs, $invoiceOrigin);                                                     
+                }
+            
+            } //
+
+            echo json_encode(array(
+                                            'result'    => 'ok',
+                                            'invoiceID' => $invoiceID
+                                        ));
+            return;   
         }
         
             http_response_code(400);
@@ -344,6 +394,92 @@ class Invoices extends MY_Controller
                 http_response_code(400);
                 echo "Bad request";
         } 
+    }
+    
+    /**
+     * 
+     * Retrieves html with the form payment
+     * 
+     * @return <String> html form
+     */    
+    public function pay() {
+        
+        if ( isset($_POST['invoiceID']) ) {
+            
+            $cash       = $this->input->post('cash', true);
+            $cash       = $cash == '' ? 0:$cash;
+            $cheque     = $this->input->post('cheque', true);
+            $cheque     = $cheque == '' ? 0:$cheque;
+            $card       = $this->input->post('card', true);
+            $card       = $card == '' ? 0:$card;
+            $ref        = $this->input->post('payment_reference', true);
+            $invoiceID  = $this->input->post('invoiceID', true);
+            $contractID  = $this->input->post('contractID', true);
+            $datetime   = date('Y-m-d H:i:s');
+            
+            if ( v::numeric()->validate($cash)
+                && v::numeric()->validate($cheque)
+                && v::numeric()->validate($card)
+                && v::string()->validate($ref)
+                && v::int()->validate($invoiceID)
+                && v::int()->validate($contractID) ) {
+                
+                $ammount = round($cash + $cheque + $card, 2);
+                
+                if ( $ammount < 1 ) {
+                    
+                    echo json_encode(array(
+                                        'result' => 'ko',
+                                        'message' => 'The total of the payment is zero'
+                                    ));
+                    return;
+                }
+                
+                $param_arr = array(
+                    'ammount'    => $ammount,
+                    'cash'      => $cash,
+                    'cheque'    => $cheque,
+                    'card'      => $card,
+                    'ref'       => $ref,
+                    'datetime'  => $datetime,
+                    'invoiceID' => $invoiceID,
+                    'contractID'=> $contractID                    
+                );
+                 
+                if ( $this->invoices_m->insPayment($param_arr) ) {
+                    
+                    echo json_encode(array(
+                                        'result' => 'ok'
+                                    ));
+                }else {
+                    
+                    echo json_encode(array(
+                                        'result' => 'ko',
+                                        'message' => 'Error saving to the database; please, try again'
+                                    ));
+                }
+                    
+            }else {
+                
+                echo json_encode(array(
+                                        'result' => 'ko',
+                                        'message' => 'Please, verify the format of the data'
+                                    ));
+            } 
+            
+        }else { 
+
+            $invoiceID = $this->input->get('invoiceID', true);
+        
+            if ( v::int()->min(0)->validate($invoiceID)) {
+                
+                $data = array(
+                                'invoice' => $this->invoices_m->getInvoiceDetails($invoiceID)
+                            );
+                            
+                echo $this->load->view('payment_form', $data, true);
+            }
+        }
     }
     
 	public function pdf()
@@ -479,6 +615,7 @@ class Invoices extends MY_Controller
             echo "Bad request.";    
         }
     }
+        
     
     public function view() {
                 
@@ -505,7 +642,8 @@ class Invoices extends MY_Controller
             $invoiceItems   = $this->load->view('invoice_items_table', $data, true) ;            
             $data           = array(
                                     'invoiceDetails' => $invoiceDetails,
-                                    'invoiceItems'   => $invoiceItems
+                                    'invoiceItems'   => $invoiceItems,
+                                    'payments'      => $this->invoices_m->selPayments($invoiceID)
                                     );
             
             header("Cache-Control: no-store, no-cache, must-revalidate");                                

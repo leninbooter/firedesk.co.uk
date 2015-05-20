@@ -47,3 +47,29 @@ function formatInputs() {
     });
 }
 
+function ajaxForm ( url, data, callBackFn ) {
+    
+     $.ajax( url, 
+        {
+            type:       'post',
+            data:       data,
+            dataType:   'json'
+        }
+    )
+    .done( function(r) {
+        
+        if ( r.result == 'ok' ) {
+                    
+            callBackFn();
+            
+        }else if ( r.result == 'ko') {
+            
+            alert(r.message);
+        }
+        
+    })
+    .fail( function( r ) {
+        
+        alert( 'Request failed!' );
+    });
+}

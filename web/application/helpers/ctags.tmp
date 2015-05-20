@@ -12,7 +12,6 @@ company_db_string_connection	models_helper.php	16;"	function
 date_validate	custom_validations_helper.php	7;"	function
 datetime_24_validate	custom_validations_helper.php	12;"	function
 htmlHeader	mpdf_helper.php	19;"	variable
-key	models_helper.php	35;"	variable
 mpdf	mpdf_helper.php	23;"	variable
 name_valid	custom_validations_helper.php	20;"	function
 pdf_create	mpdf_helper.php	19;"	function

@@ -700,7 +700,7 @@ log_message('debug', $query);
     }
     
     function insSaleItem( $param_arr ) {
-        
+        // TODO: Reduce stock cost
         array_walk($param_arr, "clean_vars");
 
         $this->company_db->trans_start();
@@ -722,32 +722,35 @@ log_message('debug', $query);
         
         $query = "UPDATE sales_stock 
                     SET quantity_balance = quantity_balance - {$param_arr['qty']},
-                        last_movement = '{$param_arr['date']}'
+                        last_movement = '{$param_arr['date']}',
+                        movements_count = ifnull(movements_count, 0) - 1
                     WHERE pk_id = {$param_arr['saleStockItemID']};";
         $query = str_replace("'NULL'", "NULL", $query);
         $this->company_db->query($query);
                 
                 
         $query = "INSERT INTO contract_items (
-                item_no, 
-                qty, 
-                description, 
-                rate, 
-                discount_perc, 
-                value, 
-                fk_contract_id, 
-                item_type
-            )
-            VALUES(
-                {$param_arr['saleStockItemID']},
-                {$param_arr['qty']},
-                '{$param_arr['description']}',
-                {$param_arr['price']},	
-                {$param_arr['discount']}, 			
-                {$param_arr['total']}, 			
-                {$param_arr['contractID']},
-                1	
-            );";               
+                    item_no, 
+                    qty, 
+                    description, 
+                    rate, 
+                    discount_perc, 
+                    value, 
+                    fk_contract_id, 
+                    item_type,
+                    cost
+                )
+                VALUES(
+                    {$param_arr['saleStockItemID']},
+                    {$param_arr['qty']},
+                    '{$param_arr['description']}',
+                    {$param_arr['price']},	
+                    {$param_arr['discount']}, 			
+                    {$param_arr['total']}, 			
+                    {$param_arr['contractID']},
+                    {$param_arr['cost']}
+                    1	
+                );";               
         
         $this->company_db->query($query);
         $this->company_db->trans_complete();
@@ -863,6 +866,7 @@ log_message('debug', $query);
                     ci.item_no  	                            as stock_item_id,
                     ci.description	                            as item_description,
                     ci.rate                                     as item_rate,
+                    ci.cost                                     as item_cost,
                     ci.discount_perc                            as item_discount,
                     ci.item_type	                            as item_type,
                     ifnull(last_invoiced_date, col.datetime)    as collect_datetime,
@@ -872,17 +876,46 @@ log_message('debug', $query);
                     v.percentage                                as vat,
                     col.pk_id                                   as origDocID
                 FROM contract_items as ci
-                    INNER JOIN collections_items as coli	ON coli.fk_contract_item_id = ci.pk_id AND ci.item_type > 0
-                    LEFT JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND ci.item_type = 1
-                    LEFT JOIN hire_items as hi ON hi.pk_id = ci.item_no AND ci.item_type = 2
-                    LEFT JOIN hire_items_family_groups as hifg ON hifg.pk_id = hi.fk_family_group
-                    LEFT JOIN vats as v ON v.pk_id = hifg.fk_vat_code_id OR v.pk_id = ss.fk_vat_code
-                    INNER JOIN collections		 as col  ON col.pk_id = coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
+                    INNER JOIN collections_items as coli	    ON coli.fk_contract_item_id = ci.pk_id AND ci.item_type > 0
+                    LEFT JOIN sales_stock as ss                 ON ss.pk_id = ci.item_no AND ci.item_type = 1
+                    LEFT JOIN hire_items as hi                  ON hi.pk_id = ci.item_no AND ci.item_type = 2
+                    LEFT JOIN hire_items_family_groups as hifg  ON hifg.pk_id = hi.fk_family_group
+                    LEFT JOIN vats as v                         ON v.pk_id = hifg.fk_vat_code_id OR v.pk_id = ss.fk_vat_code
+                    INNER JOIN collections		 as col         ON col.pk_id = coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
                 WHERE ci.non_hire_fleet_trans is null
                 HAVING     ( (requested_qty - returned_qty)  > 0 AND ci.item_type = 2) 
                         OR ( (requested_qty - sold_invoiced_qty)  > 0 AND ci.item_type = 1)
                     ';
         return $this->company_db->query($query)->result();
+    }
+    
+    function selCollectedSoldItems( $contractID ) {
+        
+        $q = '
+            SELECT
+                coli.pk_id		                            as collect_item_id,
+                ci.pk_id    	                            as contract_items_id,
+                ci.item_no  	                            as stock_item_id,
+                ci.description	                            as item_description,
+                ci.rate                                     as item_rate,
+                ci.cost                                     as item_cost,
+                ci.discount_perc                            as item_discount,
+                ci.item_type	                            as item_type,
+                ifnull(last_invoiced_date, col.datetime)    as collect_datetime,
+                coli.qty                                    as requested_qty,
+                ifnull(coli.qty_returned, 0)                as returned_qty,
+                ifnull(coli.qty_sold_items_invoiced, 0)     as sold_invoiced_qty,
+                v.percentage                                as vat,
+                col.pk_id                                   as origDocID
+            FROM contract_items as ci
+                INNER JOIN 	collections_items 	as coli	    ON coli.fk_contract_item_id = ci.pk_id 				AND ci.item_type > 0
+                LEFT JOIN 	sales_stock 		as ss       ON ss.pk_id 				= ci.item_no 			AND ci.item_type = 1
+                LEFT JOIN	vats 				as v        ON v.pk_id 					= ss.fk_vat_code
+                INNER JOIN 	collections		 	as col      ON col.pk_id 				= coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
+            WHERE ci.non_hire_fleet_trans is null
+            HAVING ( (requested_qty - sold_invoiced_qty)  > 0 AND ci.item_type = 1)
+            ';
+        return $this->company_db->query($q)->result();
     }
     
     function selReturnedNotInvoicedItems( $contractID ) {
@@ -893,8 +926,9 @@ log_message('debug', $query);
                     ci.pk_id    	                            as contract_items_id,
                     ci.item_no  	                            as stock_item_id,
                     ci.description	                            as item_description,
-                    ri.qty										as requested_qty,
+                    ri.qty										as returned_qty,
                     ci.rate                                     as item_rate,
+                    ci.cost                                     as item_cost,
                     ifnull(ci.discount_perc,0)                  as item_discount,
                     ci.item_type	                            as item_type,
                     v.percentage                                as vat,
@@ -903,17 +937,43 @@ log_message('debug', $query);
                     col.pk_id                                   as collect_id,
                     r.pk_id                                     as origDocID
                 FROM returns_items as ri
-                    INNER JOIN returns as r ON r.pk_id = ri.fk_return_id AND ri.invoicing_datetime is null
-                    INNER JOIN collections_items as coli	ON coli.pk_id = ri.fk_collections_item_id
-                    INNER JOIN contract_items as ci			ON coli.fk_contract_item_id = ci.pk_id	
-                    LEFT JOIN sales_stock as ss ON ss.pk_id = ci.item_no AND ci.item_type = 1
-                    LEFT JOIN hire_items as hi ON hi.pk_id = ci.item_no AND ci.item_type = 2
-                    LEFT JOIN hire_items_family_groups as hifg ON hifg.pk_id = hi.fk_family_group
-                    LEFT JOIN vats as v ON v.pk_id = hifg.fk_vat_code_id OR v.pk_id = ss.fk_vat_code
-                    INNER JOIN collections		 as col  ON col.pk_id = coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
-                WHERE ci.non_hire_fleet_trans is null
+                    INNER JOIN returns as r                     ON r.pk_id                      = ri.fk_return_id
+                    INNER JOIN collections_items as coli	    ON coli.pk_id                   = ri.fk_collections_item_id 
+                    INNER JOIN contract_items as ci			    ON coli.fk_contract_item_id     = ci.pk_id	AND ci.non_hire_fleet_trans is null AND ci.item_type = 2
+                    INNER JOIN collections		 as col         ON col.pk_id                    = coli.fk_collection_id AND col.fk_contract_id = '.$contractID.'
+                    LEFT JOIN hire_items as hi                  ON hi.pk_id                     = ci.item_no AND ci.item_type = 2
+                    LEFT JOIN hire_items_family_groups as hifg  ON hifg.pk_id                   = hi.fk_family_group
+                    LEFT JOIN vats as v                         ON v.pk_id                      = hifg.fk_vat_code_id
+                    LEFT JOIN hiring_invoices_control as hic	ON hic.origin_doc_id            = r.pk_id AND hic.type = 2
+                WHERE hic.pk_id is null
                     ';
+                    
         return $this->company_db->query($query)->result();
+    }
+    
+    function selReturnedInvoicedSoldItems ( $contractID  ) {
+        
+        $q = 'SELECT
+                    ci.pk_id    	                            as contract_items_id,    
+                    ci.item_no  	                            as stock_item_id,
+                    ci.item_type                                as item_type,
+                    ci.description	                            as item_description,
+                    ri.qty										as returned_qty,
+                    -ci.rate                                    as item_rate,
+                    ci.discount_perc                            as item_discount,
+                    coli.pk_id									as collection_item_id,
+                    coli.fk_collection_id						as collect_note_id,
+                    v.percentage                                as vat,
+                    ri.fk_return_id                             as origDocID
+                FROM returns_items as ri
+                    INNER JOIN collections_items 	as coli ON coli.pk_id = ri.fk_collections_item_id
+                    INNER JOIN contract_items 		as ci 	ON ci.pk_id = coli.fk_contract_item_id AND ci.item_type = 1 AND ci.fk_contract_id = '.$contractID.'
+                    LEFT JOIN hiring_invoices_control as hic ON hic.origin_doc_id = ri.fk_return_id  AND hic.type = 2
+                    INNER JOIN sales_stock as ss                 ON ss.pk_id = ci.item_no
+                    LEFT JOIN vats as v                         ON v.pk_id = ss.fk_vat_code
+                WHERE hic.pk_id is null';
+        
+        return $this->company_db->query($q)->result();
     }
 
     /**

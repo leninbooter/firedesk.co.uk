@@ -212,6 +212,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="modal fade" id="outstanding_items" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -335,7 +336,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="hidden" id="item_id" name="item_id" value=""><p class="form-control-static" id="stock_no"></p></td>
+                                <td><input type="hidden" id="item_id" name="item_id" value=""><input type="hidden" id="sale_item_cost" name="sale_item_cost" value=""><p class="form-control-static" id="stock_no"></p></td>
                                 <td><input type="text" id="sale_item_description" name="sale_item_description" class="form-control"></td>
                                 <td><p class="form-control-static" id="sale_item_in_stock"></p></td>
                                 <td><p class="form-control-static" id="sale_item_on_order"></p></td>

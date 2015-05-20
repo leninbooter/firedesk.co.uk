@@ -1,4 +1,4 @@
-$('#save_send_button').click(function(){
+/*$('#save_send_button').click(function(){
 	$('#email_invoice').val("1");
 	if( $('#contract_type').val() == "Cash")
 		$('#payment_invoice').modal();
@@ -17,7 +17,7 @@ $('#ok_button').click(function()
 	{		
 		$('#generate_invoice_form').submit();
 	}
-});
+});*/
 
 window.onbeforeunload = function(){
     

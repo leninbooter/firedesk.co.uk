@@ -69,6 +69,19 @@
 </div>
 </div>
 
+<div class="modal fade" id="multipurposeModalSm" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-sm">	
+    <div class="modal-content">			
+        <div class="modal-header">			
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">			
+            
+        </div>
+    </div>
+</div>
+</div>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 	<script src="<?php echo base_url('assets/js/jquery-1.11.0.min.js'); ?>"></script>

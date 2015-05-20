@@ -39,25 +39,24 @@ class Invoices_m extends CI_Model
         $this->company_db->query($q);
         
         $q = 'SELECT 
-                        item_type, 
-                        item_no,
-                        fk_contract_item,
-                        qty, 
-                        fk_invoice_id, 
-                        hire_date_from, 
-                        hire_date_to,
-                        fk_contract_id,
-                        i.creation_date,
-                        hic.origin_doc_id,
-                        hic.type
-                    FROM invoices_details
-                        inner join invoices as i on i.pk_id = fk_invoice_id
-                        left join hiring_invoices_control as hic ON hic.fk_invoice_id = i.pk_id
-                    WHERE
-                        creation_date is not null
-                        and fk_contract_id is not null
-                        and total is not null
-                        and fk_invoice_id = '.$invoiceID;
+                item_type, 
+                item_no,
+                fk_contract_item,
+                qty,
+                hire_date_from, 
+                hire_date_to,
+                fk_contract_id,
+                i.creation_date,
+                hic.origin_doc_id,
+                hic.type
+            FROM invoices_details as id
+                inner join invoices as i on i.pk_id = id.fk_invoice_id and id.fk_invoice_id = '.$invoiceID.'
+                left join hiring_invoices_control as hic ON hic.fk_invoice_id = i.pk_id
+            WHERE
+                creation_date is not null
+                and fk_contract_id is not null
+                and total is not null';
+                        
         $invoiceItems = $this->company_db->query($q)->result();
         
         if ( empty($invoiceItems) ) {
@@ -93,7 +92,7 @@ class Invoices_m extends CI_Model
                 }
             }
                 
-            if ( $i->item == 1 ) {
+            if ( $i->type == 1 ) {
             
                 // Set items of collections as invoiced             
                 $query = 'UPDATE collections_items ';
@@ -108,7 +107,7 @@ class Invoices_m extends CI_Model
                 }            
                 
                 $query .= ' WHERE fk_collection_id = '.$this->company_db->escape_str($i->origin_doc_id).'
-                                    AND fk_contract_id = '.$i->fk_contract_item;
+                                    AND fk_contract_item_id = '.$i->fk_contract_item;
                 $this->company_db->query($query); 
             
             }
@@ -183,7 +182,41 @@ class Invoices_m extends CI_Model
         return $this->company_db->trans_status();
     }
     
-	function emailInvoice( $pdf, $to )
+	function insPayment( $param_arr ) {
+        
+        $this->company_db->trans_start();
+        $q = 'INSERT INTO payments(
+                fk_contract_id, 
+                fk_invoice_id, 
+                datetime, 
+                reference, 
+                ammount,
+                cash,
+                cheque,
+                card
+                )
+              VALUES(
+                '.$param_arr['contractID'].',
+                '.$param_arr['invoiceID'].',
+                \''.$param_arr['datetime'].'\',
+                \''.$param_arr['ref'].'\',
+                '.$param_arr['ammount'].',
+                '.$param_arr['cash'].',
+                '.$param_arr['cheque'].',
+                '.$param_arr['card'].'
+              )';
+        $this->company_db->query($q);
+        
+        $q = 'UPDATE invoices 
+                SET unpaid_ammount = ifnull(unpaid_ammount, 0) - '.$param_arr['ammount'].' 
+                WHERE pk_id = '.$param_arr['invoiceID'];
+        $this->company_db->query($q);
+        
+        $this->company_db->trans_complete();
+        return $this->company_db->trans_status();
+    }
+    
+    function emailInvoice( $pdf, $to )
 	{	    
 		$this->load->library('email');
 
@@ -207,7 +240,9 @@ class Invoices_m extends CI_Model
                                         invoices 
                                     SET creation_date = \''.$param_arr['currentDate'].'\', 
                                         fk_contract_id = '.$this->company_db->escape_str($param_arr['contractID']).',
-                                        type = '.$param_arr['type'].'
+                                        subtotal = null,
+                                        vat = null,
+                                        total = null
                                     WHERE pk_id = '.$queryFreeEnvoice->pk_id;
             $this->company_db->query($query);
             
@@ -246,7 +281,8 @@ class Invoices_m extends CI_Model
                     cu.address  as customerAddress,
                     cu.email    as customerEmailAddress,
                     c.delivery_address as deliveryAddress,
-                    i.accepted
+                    i.accepted,
+                    ifnull(i.unpaid_ammount,0) as unpdaid_ammount
                 FROM 
                     invoices as i
                         inner join contracts as c   ON c.pk_id  = i.fk_contract_id
@@ -261,7 +297,7 @@ class Invoices_m extends CI_Model
 
         foreach( $docs as $i) {
             $q = 'INSERT INTO hiring_invoices_control (type, fk_invoice_id, origin_doc_id)
-                   VALUE('.$type.', '.$i.', '.$type.')';
+                   VALUE('.$type.', '.$invoiceID.', '.$i.')';
             $this->company_db->query($q);
         }
         
@@ -271,7 +307,7 @@ class Invoices_m extends CI_Model
         
         $q = 'SELECT creation_date, pk_id, total, ifnull(unpaid_ammount, total) as unpaid_ammount 
                 FROM invoices
-                WHERE fk_contract_id = '.$contractID;
+                WHERE accepted = 1 AND fk_contract_id = '.$contractID;
         return $this->company_db->query($q)->result();
     }
     
@@ -344,7 +380,8 @@ class Invoices_m extends CI_Model
                     weeks,
                     hire_date_from,
                     hire_date_to,
-                    vat
+                    vat,
+                    unit_cost
 					)
 					values(
 						'. $this->company_db->escape_str($i['invoiceID']).',
@@ -362,7 +399,8 @@ class Invoices_m extends CI_Model
 						'. $this->company_db->escape_str($i['weeks']).',
 						\''. $this->company_db->escape_str($i['hire_date_from']).'\',
 						\''. $this->company_db->escape_str($i['hire_date_to']).'\',
-						'. $this->company_db->escape_str($i['vat']).'
+						'. $this->company_db->escape_str($i['vat']).',
+						'. $this->company_db->escape_str($i['unit_cost']).'
 					);					
 					';
             $query = str_replace("'NULL'", "NULL", $query);                                
@@ -375,7 +413,12 @@ class Invoices_m extends CI_Model
         $total = $subtotal + $vat;
         log_message('debug', $total);
         
-        $query = 'UPDATE invoices SET subtotal = '.$subtotal.' , vat = '.$vat.', total = '.$total. ' WHERE pk_id = '.$i['invoiceID'];
+        $query = 'UPDATE invoices 
+                    SET subtotal        = ifnull(subtotal,0)        + '.$subtotal.' , 
+                        vat             = ifnull(vat,0)             + '.$vat.', 
+                        total           = ifnull(total,0)           +'.$total. ',
+                        unpaid_ammount  = ifnull(unpdaid_ammount,0) + '.$total. '
+                    WHERE pk_id = '.$i['invoiceID'];
         $this->company_db->query($query);
         
         $this->company_db->trans_complete();
@@ -404,33 +447,12 @@ class Invoices_m extends CI_Model
 			return false;
 	}
 	
-	function save_payment( $vars_array )
-	{
-		
-		array_walk($vars_array, "self::clean_vars");
-		$query = "insert into invoices_payments (fk_invoice_id, fk_payment_type_id, payment_ammount, date, payment_reference)
-				values (
-					". $this->company_db->escape_str($vars_array["invoice_id"]).",
-					". $this->company_db->escape_str($vars_array["payment_type"]).",
-					". $this->company_db->escape_str($vars_array["ammount"]).",
-					\"". $this->company_db->escape_str($vars_array["date"])."\",
-					\"". $this->company_db->escape_str($vars_array["reference"])."\"
-				);";
-		$query =  $this->company_db->query($query);
-		$query = "select row_count() as 'result'";
-		$query =  $this->company_db->query($query);
-		$result = $query->result();
-		if(!empty($result))
-		{
-			$result = $query->row();
-			if( $query->result > 0)
-				return true;
-			else
-				return false;
-		}else
-			return false;
-	}
-
+    function selPayments ($invoiceID) {
+        
+        $q = 'SELECT * FROM payments WHERE fk_invoice_id = '.$invoiceID;
+        return $this->company_db->query($q)->result();
+    }
+    
     /**
      * 
      * Retrieves an array with all the months between two dates with quantity the 

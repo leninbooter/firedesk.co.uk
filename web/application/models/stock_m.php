@@ -77,25 +77,53 @@ class Stock_m extends CI_Model
 				
 		array_walk($vars_array, "self::clean_vars");
 		
-		$query = "CALL ins_items_receipts(
-											". $this->company_db->escape_str($vars_array["order_id"]).",
-											". $this->company_db->escape_str($vars_array["purchase_order_item_id"]).",
-											". $this->company_db->escape_str($vars_array["qty"]).",
-											". $this->company_db->escape_str($vars_array["cost"]).",
-											'". $this->company_db->escape_str($vars_array["date"])."',
-											0
-											);";
-		log_message('debug', $query);
-		$query = str_replace("'NULL'", "NULL", $query);		
-		$query =  $this->company_db->query($query);
-		$result = $query->result();
-		if( !empty($result) )
-		{
-			$result = $query->row();
-			mysqli_next_result(  $this->company_db->conn_id );
-			return $result->result == "ok" ? true : false;
-		}
-		return false;
+        $this->company_db->trans_start();
+        
+        $stock_cost_total = floatval($vars_array["cost"]) * intval($vars_array["qty"]);
+        
+        $q = 'select fk_item_id from purchases_orders_items where pk_id = '.$this->company_db->escape_str($vars_array["purchase_order_item_id"]);
+        $_item_id_pk = $this->company_db->query($q)->row()->fk_item_id;
+
+        $q = 'INSERT INTO receipts(fk_purchase_order_id, fk_purchase_order_item_id, qty, price, date)
+			VALUES('.$this->company_db->escape_str($vars_array["order_id"]).', 
+                    '.$this->company_db->escape_str($vars_array["purchase_order_item_id"]).', 
+                    '. $this->company_db->escape_str($vars_array["qty"]).', 
+                    '. $this->company_db->escape_str($vars_array["cost"]).', 
+                    \''. $this->company_db->escape_str($vars_array["date"]).'\')';
+        $this->company_db->query($q);
+        
+        $q = 'UPDATE purchases_orders_items SET qty_received = qty_received + '. $this->company_db->escape_str($vars_array["qty"]).' WHERE pk_id = '.$this->company_db->escape_str($vars_array["purchase_order_item_id"]);
+        $this->company_db->query($q);
+    
+        $q = 'insert into stock_movements (date, fk_item_id,  description, qty, cost)
+		values (
+                 \''. $this->company_db->escape_str($vars_array["date"]).'\', 
+                '.$_item_id_pk.', 
+                concat(\'Purchase from order no. \','.$this->company_db->escape_str($vars_array["purchase_order_item_id"]).'), 
+                '. $this->company_db->escape_str($vars_array["qty"]).', 
+                '. $this->company_db->escape_str($vars_array["cost"]).')';
+        $this->company_db->query($q);
+        
+        $q = 'update sales_stock set quantity_balance = quantity_balance + '. $this->company_db->escape_str($vars_array["qty"]).' where pk_id = '.$_item_id_pk;
+        $this->company_db->query($q);
+	
+        $q = 'update sales_stock 
+                set 
+                    summed_cost = ifnull(summed_cost, 0) + '. $this->company_db->escape_str($vars_array["cost"]).',
+                    movements_count = ifnull(movements_count, 0) + 1
+                where pk_id = '.$_item_id_pk;
+        $this->company_db->query($q);
+        
+        $q = 'update sales_stock 
+				set stock_cost_average = summed_cost/movements_count, 
+					stock_cost_total = stock_cost_total + '.$stock_cost_total.', 
+					last_movement = \''. $this->company_db->escape_str($vars_array["date"]).'\',
+                    sales_cost = '. $this->company_db->escape_str($vars_array["cost"]).'
+				where pk_id = '.$_item_id_pk;
+        $this->company_db->query($q);
+		
+        $this->company_db->trans_complete();
+        return $this->company_db->trans_status();
 	}
 	
 	function ins_up_item_price($item)
@@ -167,7 +195,10 @@ class Stock_m extends CI_Model
     
     function selItemsNameAndID() {
         
-        $query = "SELECT pk_id, stock_number, description as label, quantity_balance, quantity_on_order FROM sales_stock";
+        $query = "SELECT pk_id, stock_number, description as label, quantity_balance,
+                        quantity_on_order,
+                        ifnull(sales_cost, 0) as cost
+                    FROM sales_stock";
         $query = $this->company_db->query($query);
         return $query->result();
     }

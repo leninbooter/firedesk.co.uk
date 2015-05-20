@@ -1,0 +1,13 @@
+1 branches to process
+3 invoices to process of the current branch
+Invoices by branch totalized 
+Gross profit of invoices by branch calculated 
+Gross profit of every item of the invoices calculated 
+Invoices by branch totalized 
+Gross profit of invoices by branch calculated 
+Gross profit of every item of the invoices calculated 
+Invoices by branch totalized 
+Gross profit of invoices by branch calculated 
+Gross profit of every item of the invoices calculated 
+Sales of branch 1 sent to the warehouse 
+Gross profit calculated of the branch 1 in the warehouse 

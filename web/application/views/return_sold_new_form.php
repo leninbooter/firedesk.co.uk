@@ -26,7 +26,7 @@
                         <div class="col-md-12">                    
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Items on hire</h3>
+                                        <h3 class="panel-title">Items sold</h3>
                                     </div>
                                     <div class="panel-body">
                                         
@@ -42,7 +42,7 @@
                                                 <tbody>
                                                     <?php foreach($items as $i): ?>
                                                         <tr>
-                                                            <td><input type="hidden" id="contractItemID" name="contractItemID[]" value="<?=$i->fk_contract_item_id?>"><?=$i->number?></td>
+                                                            <td><input type="hidden" id="contractItemID" name="contractItemID[]" value="<?=$i->fk_contract_item_id?>"><input type="hidden" id="collectItemId" name="collectItemId[]" value="<?=$i->collection_item_id?>"><?=$i->number?></td>
                                                             <td><?=$i->description?></td>
                                                             <td><?=$i->invoiced?></td>
                                                             <td><?=$i->total?></td>

@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_MOD_BY	Bostjan Mihoric	/ccompletion@gmail.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+DBConn	dbconn.php	3;"	class
+__construct	dbconn.php	7;"	function
+branchDB	sales.php	62;"	variable
+branchDataWH	sales.php	150;"	variable
+conn	dbconn.php	22;"	variable
+connect	dbconn.php	19;"	function
+credentials	dbconn.php	5;"	variable
+credentials	dbconn.php	9;"	variable
+currentDate	sales.php	7;"	variable
+endDate	sales.php	57;"	variable
+firedeskDB	sales.php	13;"	variable
+result	sales.php	137;"	variable
+result	sales.php	21;"	variable
+result	sales.php	69;"	variable
+row	sales.php	158;"	variable
+row	sales.php	83;"	variable
+startDate	sales.php	59;"	variable

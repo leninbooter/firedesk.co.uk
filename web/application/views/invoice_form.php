@@ -83,6 +83,36 @@
 		</div>
 	</div>	
 
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Payment History</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-responsive table-hover table-condensed">
+            <thead>
+                <th>Date</th>
+                <th>Cash</th>
+                <th>Cheque</th>                                                    
+                <th>Card</th>                                                    
+                <th>Total</th>                                                    
+                <th style="width:40%">Reference</th>                                                    
+            </thead>
+            <tbody>
+                <?php foreach($payments as $p): ?>                    
+                    <tr>
+                        <td><?=date('d M Y', strtotime($p->datetime))?></td>
+                        <td><?=$p->cash?></td>
+                        <td><?=$p->cheque?></td>
+                        <td><?=$p->card?></td>
+                        <td><?=$p->ammount?></td>
+                        <td><?=$p->reference?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+      </div>
+    </div>
+    
 	<div class="row">
 		<div class="col-md-7"></div>
 		<?php if( $invoiceDetails->accepted != 1): ?>
@@ -95,44 +125,6 @@
         <div class="col-md-2"><button type="button" class="btn btn-primary  btn-block" onclick="email()">Send via e-mail</button></div>
         <?php endif; ?>		
 	</div>
-	<input type="hidden" id="email_invoice" name="email_invoice" value="0">
 	
-	<div class="modal fade" id="payment_invoice" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Payment</h4>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Date:</label></div>
-						<div class="col-md-6"><input class="form-control" type="text" value="<?php echo date('d/m/Y'); ?>" id="payment_date" name="payment_date" readonly="true"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Reference:</label></div>
-						<div class="col-md-6"><input class="form-control" type="text" id="payment_reference" name="payment_reference"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label type="text" class="control-label">Ammount:</label></div>
-						<div class="col-md-4"><?=($invoiceDetails->total);?></div>	
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Cash:</label></div>
-						<div class="col-md-4"><input type="text" class="form-control" id="cash" name="cash"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Cheque:</label></div>
-						<div class="col-md-4"><input type="text" class="form-control" id="cheque" name="cheque"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-4"><label class="control-label">Card:</label></div>
-						<div class="col-md-4"><input type="text" class="form-control" id="card" name="card"></div>
-					</div>					
-				</div>
-				<div class="modal-footer">
-						<button type="button" class="btn btn-default  btn-block" id="cancel_button" data-dismiss="modal">Cancel</button>
-						<button type="button" class="btn btn-primary  btn-block" id="ok_button">Ok</button>
-				</div>
-			</div>
-		</div>
-	</div>	
+    
+			
