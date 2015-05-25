@@ -68,18 +68,24 @@ class Sessions extends CI_Controller
 					$this->benchmark->mark('session_start');								
 				
 					$user = array(
-					   'global_user_id' => $userdata->pk_id,
-					   'username'       => $userdata->username,
-					   'logged_in'      => TRUE,
-					   'company_id'     => $userdata->company_id,
-					   'company_name'   => $userdata->company_name,
-					   'companyLogo'   => $userdata->logo,
-					   'profile_id'     => $userdata->profile_id,
-					   'profile_name'   => $userdata->profile_name,
-					   'db'             => $userdata->db,
-					   'db_user'        => $userdata->db_user,
-					   'db_pwd'         => $userdata->db_pwd,
-					   'db_host'        => $userdata->db_host					   
+					   'global_user_id'     => $userdata->pk_id,
+					   'username'           => $userdata->username,
+					   'logged_in'          => TRUE,
+					   'company_id'         => $userdata->company_id,
+					   'company_name'       => $userdata->company_name,
+					   'companyLogo'        => $userdata->logo,
+					   'profile_id'         => $userdata->profile_id,
+					   'profile_name'       => $userdata->profile_name,
+					   'db'                 => $userdata->db,
+					   'db_user'            => $userdata->db_user,
+					   'db_pwd'             => $userdata->db_pwd,
+					   'db_host'            => $userdata->db_host,
+					   'db_warehouse_host'  => $userdata->db_warehouse_host,
+					   'db_warehouse_name'  => $userdata->db_warehouse_name,
+					   'db_warehouse_user'  => $userdata->db_warehouse_user,
+					   'branch_id'          => $userdata->pk_id,
+					   'branch_name'        => $userdata->branch_name,
+					   'db_warehouse_pwd'   => $userdata->db_warehouse_pwd
 				   );
 					$this->nativesession->set('user', $user);
 					

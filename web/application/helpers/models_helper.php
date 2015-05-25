@@ -36,3 +36,29 @@ if( ! function_exists('company_db_string_connection'))
 		return $local_db;
 	}
 }
+
+if( ! function_exists('dWH_str_conn'))
+{
+	function dWH_str_conn()
+	{
+		$ci = get_instance();
+		
+		$local_db['hostname'] = $ci->nativesession->get('user')['db_warehouse_host'];
+		$local_db['username'] = $ci->nativesession->get('user')['db_warehouse_user'];
+		$local_db['password'] = $ci->nativesession->get('user')['db_warehouse_pwd'];
+		$local_db['database'] = $ci->nativesession->get('user')['db_warehouse_name'];
+		$local_db['dbdriver'] = 'mysqli';
+		$local_db['dbprefix'] = '';
+		$local_db['pconnect'] = TRUE;
+		$local_db['db_debug'] = TRUE;
+		$local_db['cache_on'] = FALSE;
+		$local_db['cachedir'] = '';
+		$local_db['char_set'] = 'utf8';
+		$local_db['dbcollat'] = 'utf8_general_ci';
+		$local_db['swap_pre'] = '';
+		$local_db['autoinit'] = TRUE;
+		$local_db['stricton'] = FALSE;
+		
+		return $local_db;
+	}
+}

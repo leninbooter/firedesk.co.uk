@@ -25,7 +25,7 @@
 			<h3 class="text-muted">Firedesk <img src="<?php echo base_url('assets/images/shell_logo.jpg');?>" style="width:3%"/></h3>		
 			<div role="navigation">
 			  <ul class="nav nav-justified">
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Notes & Contracts</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Contracts</a>
 				<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/contracts/new_contract'); ?>">New contract</a></li>
 						<li><a href="#">Cash sale</a></li>
@@ -33,26 +33,26 @@
 						<li><a href="<?php echo base_url('index.php/contracts/list_live_contracts'); ?>">List:&nbsp;Live contracts</a></li>
 						<li><a href="#" data-toggle="modal" data-target="#balance_orders_submenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance orders</a></li>
 						<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All</a></li>
-						<li><a href="#">Find item</a></li>
+						<!--<li><a href="#">Find item</a></li>
 						<li><a href="#">Off hire notes</a></li>						
 						<li><a href="#">Turnover</a></li>
 						<li><a href="#">Availability / Price</a></li>
-						<li><a href="#">Cross Hire Menu</a></li>
+						<li><a href="#">Cross Hire Menu</a></li>-->
 					</ul>
 				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Quotations<br/>&nbsp;</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Quotations</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#">New quotation</a></li>
 						<li><a href="#">Existing quotations</a></li>
 					</ul>
 				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Customer Details</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Customer</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/customers/new_existing'); ?>">New/existing customer details</a></li>
 						<li><a href="<?php echo base_url('index.php/customers/list_names_address'); ?>">List customer names/addresses</a></li>
 					</ul>
 				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Hire Fleet<br/>&nbsp;</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Hire Fleet</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/hire_stock/fleet_records'); ?>">Fleet records</a></li>
 						<li><a href="<?php echo base_url('index.php/hire_stock/groups'); ?>">Group changes</a></li>
@@ -65,7 +65,7 @@
 						<li><a href="#">Reports</a></li>
 					</ul>
 				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Cross Hire<br/>&nbsp;</a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Cross Hire</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="<?php echo base_url('index.php/cross_hire/new_order'); ?>">New/existing order</a></li>
 						<li><a href="<?php echo base_url('index.php/cross_hire/existing_orders'); ?>">Display existing orders</a></li>
@@ -85,7 +85,7 @@
 						<li><a href="<?php echo base_url('index.php/sales_stock/report_stock_levels'); ?>">Reports</a></li>
 					</ul>
 				</li>
-				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases & Suppliers</a>
+				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Purchases</a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/new_order'); ?>">New purchase orders</a></li>
 						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/purchases_orders/list_all'); ?>">List existing purchase orders</a></li>						
@@ -95,9 +95,19 @@
 						<li><a href="<?php echo base_url('index.php/suppliers/list_suppliers_addresses'); ?>">List supplier names/addresses</a></li>												
 					</ul>
 				</li>
-				<li><a href="#">Servicing<br/>&nbsp;</a></li>
+				<li><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Ledgers</a>
+                    <ul class="dropdown-menu" role="menu">
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/sales_ledger/salesProfitByInvoice'); ?>">Sales</a></li>												
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/sales_ledger/salesAllBranches'); ?>">Sales (All branches)</a></li>												
+						<li class="divider"></li>						
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Bank transactions</a></li>												
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Bank reconciliation</a></li>
+                        <li class="divider"></li>						
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Account names</a></li>	                        
+					</ul>
+                </li>
 				<!--<li><a href="#">Ledgers & Cashbook</a></li>-->
-				<li><a id="nav_diary_messages_btn" href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Diary Messages</a>
+				<li><a id="nav_diary_messages_btn" href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Diary</a>
 					<ul class="dropdown-menu" role="menu">
 						<!--<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary/general'); ?>">General diary</a></li>-->
 						<li><a id="nav_diary_messages_read_diary_btn" class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Diary</a></li>												
@@ -106,7 +116,7 @@
 						<li><a id="nav_diary_messages_read_msgs_btn" href="#" data-toggle="modal" data-target="#messenger_messages_modal">Read messages</a></li>												
 					</ul>						
 				</li>
-				<li><a href="#">Reports<br/>&nbsp;</a></li>
+				<li><a href="#">Reports</a></li>
 			  </ul>
 			</div>
 		  </div>		

@@ -237,6 +237,7 @@ class Invoices extends MY_Controller
                                 
                                 $qty = intval($i->requested_qty-$i->sold_invoiced_qty);
                             }
+                            $value = round(($i->item_rate-(($i->item_rate*$i->item_discount)/100.00))*$qty,2);
                             $item = array(
                             
                                         //'collectItemID'         => $i->collect_item_id,
@@ -249,14 +250,15 @@ class Invoices extends MY_Controller
                                         'unit_cost'              => $i->cost,
                                         'per'                   => '',
                                         'discount_perc'         => $i->item_discount,
-                                        'value'                 => round(($i->item_rate-(($i->item_rate*$i->item_discount)/100.00))*$qty,2),
+                                        'value'                 => $value,
                                         'item_type'             => 1,
                                         'hours'                 => '',
                                         'days'                  => '',
                                         'weeks'                 => '',
                                         'hire_date_from'        => '',
                                         'hire_date_to'          => $currentDate->format('Y-m-d H:i:s'),
-                                        'vat'                   => $i->vat
+                                        'vat'                   => $i->vat,
+                                        'vat_ammount'           => round( ($value*$i->vat)/100, 2)
                                     );
                             
                             array_push($invoiceItems, $item);
@@ -340,7 +342,8 @@ class Invoices extends MY_Controller
                                 'weeks'                 => $weeks,
                                 'hire_date_from'        => $hireStartDate->format('Y-m-d H:i:s'),
                                 'hire_date_to'          => $offHiredDatetime->format('Y-m-d H:i:s'),
-                                'vat'                   => $i->vat
+                                'vat'                   => $i->vat,
+                                'vat_ammount'           =>  round( ($value*$i->vat)/100, 2)
                             );
                             array_push($invoiceItems, $item);                           
                         }

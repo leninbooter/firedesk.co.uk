@@ -381,7 +381,8 @@ class Invoices_m extends CI_Model
                     hire_date_from,
                     hire_date_to,
                     vat,
-                    unit_cost
+                    unit_cost,
+                    vat_ammount
 					)
 					values(
 						'. $this->company_db->escape_str($i['invoiceID']).',
@@ -400,7 +401,8 @@ class Invoices_m extends CI_Model
 						\''. $this->company_db->escape_str($i['hire_date_from']).'\',
 						\''. $this->company_db->escape_str($i['hire_date_to']).'\',
 						'. $this->company_db->escape_str($i['vat']).',
-						'. $this->company_db->escape_str($i['unit_cost']).'
+						'. $this->company_db->escape_str($i['unit_cost']).',
+						'. $this->company_db->escape_str($i['vat_ammount']).'
 					);					
 					';
             $query = str_replace("'NULL'", "NULL", $query);                                
