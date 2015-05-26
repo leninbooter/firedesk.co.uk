@@ -64,39 +64,42 @@ class Sales_ledger extends MY_Controller
             $this->load->model('branches_m');        
             
             $data = array(
-                        'branches'      => $this->branches_m->retrieveBranches( $this->nativesession->get('user')['branch_id'] ),
+                        'branches'      => $this->branches_m->retrieveBranches( $this->nativesession->get('user')['company_id'] ),
                         'currentBranch' => $this->nativesession->get('user')['branch_name']
                     );
             
         }else {
+            
             $startDate  =  isset($this->queryStrArr['startDate']) ? str_replace(' ', '', $this->queryStrArr['startDate']) : false;
             $endDate    =  isset($this->queryStrArr['endDate']) ? str_replace(' ', '', $this->queryStrArr['endDate']) : false;
             
             if ( !$startDate || !$endDate) {
                 
-                $startDate = $endDate = new DateTime("now");
+                $startDate  = $endDate = new DateTime("now");
                 $startDate->sub(new DateInterval('P1D') );
-                $endDate = clone $endDate;
+                $endDate    = clone $endDate;
                 
-                $startDate =  $startDate->format('d/m/Y');
-                $endDate   = $endDate->format('d/m/Y');
+                $startDate  =  $startDate->format('d/m/Y');
+                $endDate    = $endDate->format('d/m/Y');
             }
             
             if ( v::int()->validate($branchID)
                 && v::date('d/m/Y')->validate($startDate) 
                 && v::date('d/m/Y')->validate($endDate) ) {
                 
-                $branchID = $this->nativesession->get('user')['branch_id'] == $branchID ? true : $branchID;
-
                 $this->load->model('sales_ledger_m');  
+                $this->load->model('branches_m');
 
-                $data = array(
-                            'branch_id' => $branchID == true ? $this->nativesession->get('user')['branch_id'] : $branch,
-                            'branch'    => $this->nativesession->get('user')['branch_name'],
-                            'invoices'  => $this->sales_ledger_m->getSalesProfitOfBranch( DateTime::createFromFormat('d/m/Y', $startDate)->format('Y-m-d 00:00:00'), DateTime::createFromFormat('d/m/Y', $endDate)->format('Y-m-d 23:59:59'), $branchID ),
-                            'startDate' => str_replace('/', ' / ', $startDate),
-                            'endDate'   => str_replace('/', ' / ', $endDate)
-                        );                
+                $branchID       = $this->nativesession->get('user')['branch_id'] == $branchID ? true : $branchID;
+                $branchDetails  = $this->branches_m->retrieveBranchDetails($branchID);                
+                $data           = array(
+                                    'branch_id' => is_bool($branchID) && $branchID ? $this->nativesession->get('user')['branch_id'] : $branchID,
+                                    'branch'    => $branchDetails->branch_name,
+                                    'invoices'  => $this->sales_ledger_m->getSalesProfitOfBranch( DateTime::createFromFormat('d/m/Y', $startDate)->format('Y-m-d 00:00:00'), DateTime::createFromFormat('d/m/Y', $endDate)->format('Y-m-d 23:59:59'), $branchID ),
+                                    'startDate' => str_replace('/', ' / ', $startDate),
+                                    'endDate'   => str_replace('/', ' / ', $endDate)
+                                );
+                                
             }else {
                 
                 echo 'Bad request';
@@ -125,7 +128,7 @@ class Sales_ledger extends MY_Controller
         $this->load->library('nativesession');	        
         
         $branchID     = isset($this->queryStrArr['branchID']) ? $this->queryStrArr['branchID'] : false;
-        $customerID     = isset($this->queryStrArr['customerID']) ? $this->queryStrArr['customerID'] : false;
+        $customerID   = isset($this->queryStrArr['customerID']) ? $this->queryStrArr['customerID'] : false;
         
         if ( !$branchID ) {
             
@@ -154,13 +157,15 @@ class Sales_ledger extends MY_Controller
             if ( v::int()->validate($branchID) 
                  && v::int()->validate($customerID) ) {
                 
+                $this->load->model('sales_ledger_m');
+                $this->load->model('branches_m');
+                
                 $branchID = $this->nativesession->get('user')['branch_id'] == $branchID ? true : $branchID;
-
-                $this->load->model('sales_ledger_m');  
+                $branchDetails  = $this->branches_m->retrieveBranchDetails($branchID);                 
 
                 $data = array(
-                            'branch_id'     => $branchID == true ? $this->nativesession->get('user')['branch_id'] : $branch,
-                            'branch'        => $this->nativesession->get('user')['branch_name'],
+                            'branch_id'     => is_bool($branchID) && $branchID ? $this->nativesession->get('user')['branch_id'] : $branchID,
+                            'branch'        => $branchDetails->branch_name,
                             'customer_id'   => $customerID,
                             'customer_sales'=> $this->sales_ledger_m->getSalesProfitByCustomer( DateTime::createFromFormat('d/m/Y', $startDate)->format('Y-m-d 00:00:00'), DateTime::createFromFormat('d/m/Y', $endDate)->format('Y-m-d 23:59:59'), $customerID, $branchID ),
                             'startDate'     => str_replace('/', ' / ', $startDate),

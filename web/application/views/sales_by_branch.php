@@ -1,9 +1,9 @@
 <input type="hidden" id="branch_id" value="<?= isset($branch_id) ? $branch_id:''?>">
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
         <h2>Sales <?= isset($branch) ? '('.$branch.')':''?>  <?php if (isset($branch) ): ?><small>From <input type="text" class="form-date-camaleon" id="salesFrom" name="salesFrom" value="<?=$startDate?>" > to <input type="text" class="form-date-camaleon" id="salesTo" name="salesTo" value="<?=$endDate?>"></small><?php endif; ?></h2>
     </div>
-    <div class="col-md-5">        
+    <div class="col-md-4">        
     </div>
 </div>
 

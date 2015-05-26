@@ -16,6 +16,7 @@ class Users_m extends CI_Model
 	function sel_user_data($global_user_id)
 	{
 		$query = "select pk_id, name, fk_profile_id, email from users where fk_global_user_id = $global_user_id";
+        log_message('debug', $query);
 		$query =  $this->company_db->query($query);
 		return !empty($query->result()) ? $query->row() : array();
 	}

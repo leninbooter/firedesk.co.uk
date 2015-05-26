@@ -16,6 +16,7 @@ class Branches_m extends CI_Model
     function retrieveBranchDetails ( $branchID ) {
         
         $q = 'SELECT 
+                branch_name,
                 db,
                 db_user,
                 db_pwd,
@@ -34,7 +35,7 @@ class Branches_m extends CI_Model
             FROM branches
             WHERE
                 fk_company_id = '.$companyID;
-                
+
         return $this->fd_db->query($q)->result();
     }
 }

@@ -5,12 +5,19 @@
     include 'dbconn.php';
     
     $currentDate  = new DateTime("now");
+    //$currentDate  = new DateTime("2015-05-19 00:00:00");
+    
+    $currentDate->sub(new DateInterval('P1D'));
+    $endDate      = clone $currentDate;
+    $endDate->setTime(23,59,59);
+    $startDate    = clone $endDate;
+    $startDate->setTime(0,0,0);
     
     // Prod
     $firedeskDB = new mysqli( 'localhost', 'cl52-firedesk', 'Rfkt7Jkm.', 'cl52-firedesk' );
     
     // Dev
-   // $firedeskDB = new mysqli( 'localhost', 'root', '7H3nMvBaWcAHDr8K', 'firedesk' );
+   //$firedeskDB = new mysqli( 'localhost', 'root', '7H3nMvBaWcAHDr8K', 'firedesk' );
     
     // Check connection
     if ($firedeskDB->connect_error) {
@@ -52,13 +59,7 @@
     $result->free();
     $firedeskDB->close();
     
-    foreach ( $branchesDbConnects as $b ) {
-                
-        $currentDate->sub(new DateInterval('P1D'));
-        $endDate      = clone $currentDate;
-        $endDate->setTime(23,59,59);
-        $startDate    = clone $endDate;
-        $startDate->setTime(0,0,0);
+    foreach ( $branchesDbConnects as $b ) {                
         
         $branchDB     = new mysqli( 'localhost', $b['username'], $b['password'], $b['database'] );
         
@@ -94,27 +95,13 @@
                                         '.$row['total_cost'].',
                                         '.$row['total_vat'].')') ) {
                                           
-                die("Saving failed: " . $branchDB->connect_error);
+                die("Saving failed: " . $branchDB->error);
                                             
             }else {
             
-                echo "Invoices by branch totalized \r\n";
+                echo 'Invoice '.$row['fk_invoice_id'].' totalized'.PHP_EOL;
             }
-            
-            // Calculate profit of every invoice
-            if ( !$branchDB->query('UPDATE sales_ledger 
-                                        SET total_gross_profit = total_sales - total_cost,
-                                            gross_margin = ifnull((total_gross_profit/total_sales)*100)
-                                        WHERE 
-                                            datetime BETWEEN \''.$startDate->format('Y-m-d H:i:s').'\' AND \''.$endDate->format('Y-m-d H:i:s').'\'
-                                ') ) {
-                
-                die("Saving failed: " . $branchDB->connect_error); 
-                
-            }else {
-                
-                echo "Gross profit of invoices by branch calculated \r\n";
-            }
+                        
             // Retrieve invoice items  and calculate profit of every one of it
             if ( !$branchDB->query('
                             INSERT INTO sales_ledger_details (item_number,description, qty, sales_price,cost,gross_profit,gross_margin,invoice_id, vat)
@@ -136,6 +123,21 @@
             }else {            
                 echo "Gross profit of every item of the invoices calculated \r\n";
             }
+        }
+        
+        // Calculate profit of every invoice
+        if ( !$branchDB->query('UPDATE sales_ledger 
+                                    SET total_gross_profit = total_sales - total_cost,
+                                        gross_margin = ifnull((total_gross_profit/total_sales)*100, 0)
+                                    WHERE 
+                                        datetime BETWEEN \''.$startDate->format('Y-m-d H:i:s').'\' AND \''.$endDate->format('Y-m-d H:i:s').'\'
+                            ') ) {
+            
+            die("Saving failed: " . $branchDB->error); 
+            
+        }else {
+            
+            echo "Gross profit of invoices by branch calculated \r\n";
         }
         
         $result = $branchDB->query('
@@ -176,10 +178,10 @@
                                   '.$row['total_sales'].',
                                   '.$row['total_cost'].',
                                   '.$row['total_gross_profit'].',
-                                  '.$row['total_total'].'
+                                  '.$row['total_vat'].'
                                 )') ) {
                                     
-                die("Saving failed: " . $branchDB->error);
+                die("> Saving failed: " . $branchDataWH->error);
                 
             }else { 
                 echo "Sales of branch {$row['branchID']} sent to the warehouse \r\n";
@@ -190,7 +192,7 @@
                                                 gross_margin = (total_gross_profit/total_sales)*100
                                             WHERE date_format(datetime, \'%Y-%m-%d\' ) = \''.$row['datetime'].'\'') ) {
                                     
-                die("Saving failed: " . $branchDB->error);
+                die("Saving failed: " . $branchDataWH->error);
                 
             }else { 
                 echo "Gross profit calculated of the branch {$row['branchID']} in the warehouse \r\n";

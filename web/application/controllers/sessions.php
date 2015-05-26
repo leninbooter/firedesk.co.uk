@@ -83,27 +83,31 @@ class Sessions extends CI_Controller
 					   'db_warehouse_host'  => $userdata->db_warehouse_host,
 					   'db_warehouse_name'  => $userdata->db_warehouse_name,
 					   'db_warehouse_user'  => $userdata->db_warehouse_user,
-					   'branch_id'          => $userdata->pk_id,
+					   'branch_id'          => $userdata->branch_id,
 					   'branch_name'        => $userdata->branch_name,
+					   'branch_city'        => $userdata->city,
+					   'branch_country'     => $userdata->country,
 					   'db_warehouse_pwd'   => $userdata->db_warehouse_pwd
 				   );
 					$this->nativesession->set('user', $user);
 					
 					$this->benchmark->mark('private_data_start');								
-					if( $userdata->profile_id == 2 )
-					{
+					if( $userdata->profile_id == 2 ) {
+                        
 						$this->load->model('users_m');
 						
-						$userdata_private = $this->users_m->sel_user_data($userdata->pk_id);
+						$userdata_private       = $this->users_m->sel_user_data($userdata->pk_id);
 						
 						$userdata_private_array = array(
-							'local_user_id' => isset($userdata_private->pk_id) ? $userdata_private->pk_id : NULL,
-							'userfullname' => isset($userdata_private->name) ? $userdata_private->name : NULL,
-						   'email' => isset($userdata_private->email) ? $userdata_private->email : NULL,
-						   'profile'=> isset($userdata_private->fk_profile_id) ? $userdata_private->fk_profile_id : NULL
-						);						
+                                                    'local_user_id' => isset($userdata_private->pk_id) ? $userdata_private->pk_id : NULL,
+                                                    'userfullname'  => isset($userdata_private->name) ? $userdata_private->name : NULL,
+                                                    'email'         => isset($userdata_private->email) ? $userdata_private->email : NULL,
+                                                    'profile'       => isset($userdata_private->fk_profile_id) ? $userdata_private->fk_profile_id : NULL
+                                                );						
+                                                
 						$this->nativesession->set('user', array_merge($user, $userdata_private_array));					
 					}
+                    
 					$this->benchmark->mark('private_data_end');								
 					
 					$return = array("result"=>"ok");

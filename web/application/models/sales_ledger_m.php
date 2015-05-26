@@ -147,6 +147,7 @@ class Sales_ledger_m extends CI_Model
                 INNER JOIN branches as b ON b.pk_id = s.branch_id
             WHERE datetime BETWEEN \''.$startDate.'\' AND \''.$endDate.'\'
             GROUP BY 
+                b.branch_id,
                 DATE_FORMAT(datetime, \'%d %M %Y\')';
         
         return $this->dWH->query($q)->result();

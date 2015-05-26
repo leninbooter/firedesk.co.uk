@@ -22,7 +22,7 @@
 	<body>
 	<div class="container">
 		<div class="masthead">
-			<h3 class="text-muted">Firedesk <img src="<?php echo base_url('assets/images/shell_logo.jpg');?>" style="width:3%"/></h3>		
+			<h3 class="text-muted">Firedesk</h3>		
 			<div role="navigation">
 			  <ul class="nav nav-justified">
 				<li class="dropdown"><a href="#" class="dropdown-toggle" aria-expanded="false" aria-expanded="false" data-toggle="dropdown">Contracts</a>

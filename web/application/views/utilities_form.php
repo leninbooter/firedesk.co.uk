@@ -3,6 +3,7 @@
 	<div class="col-md-8">
 		<ul id="tabs" class="nav nav-tabs">
 			<li role="presentation"  class="active"><a href="#access_rights" data-toggle="tab">Access Rights</a></li>
+			<li role="presentation" ><a href="#coa" data-toggle="tab">Chart of Accounts</a></li>
 			<li role="presentation" ><a href="#holidays_schema" data-toggle="tab">Holidays Schema</a></li>
 			<li role="presentation"><a href="#terminal" data-toggle="tab">Terminal</a></li>  
 		</ul>
