@@ -12,6 +12,7 @@ count	sales_by_branch.php	49;"	variable
 count	sales_by_customers.php	17;"	variable
 currentInvoice	sales_by_branch.php	43;"	variable
 currentInvoice	sales_by_branch.php	53;"	variable
+currentLen	acc_cao_li.php	7;"	variable
 date	list_all_contracts.php	16;"	variable
 date	list_balance_orders.php	13;"	variable
 date	list_live_contracts.php	21;"	variable
@@ -20,6 +21,8 @@ grand_total_gross_margin	sales_by_branch.php	48;"	variable
 grand_total_gross_profit	sales_by_branch.php	46;"	variable
 grand_total_sales	sales_by_branch.php	44;"	variable
 grand_total_vat	sales_by_branch.php	47;"	variable
+i	acc_cao_li.php	2;"	variable
+i	acc_cao_li.php	4;"	variable
 i	diary_events.php	3;"	variable
 i	hire_stock_item_activity.php	19;"	variable
 i	hire_stock_item_activity.php	29;"	variable
@@ -30,6 +33,8 @@ i	sales_by_branch.php	79;"	variable
 key	customers_address_json.php	3;"	variable
 key	customers_list_selectable_dropdown.php	5;"	variable
 key	customers_list_selectable_dropdown_accRef_name.php	5;"	variable
+llength	acc_cao_li.php	34;"	variable
+llength	acc_cao_li.php	5;"	variable
 mode	hired_items_table.php	10;"	variable
 mode	hired_items_table.php	21;"	variable
 mode	hired_items_table.php	30;"	variable
