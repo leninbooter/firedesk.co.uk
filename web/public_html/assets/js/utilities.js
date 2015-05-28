@@ -4,6 +4,12 @@ $( document ).ready(function() {
 	  $(this).tab('show')
 	});
 	
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      e.target // newly activated tab
+      e.relatedTarget // previous active tab
+    })
+    
+    
 	$('#tabs a[href="#holidays_schema"]').tab('show');
 	
 	//Holidays
@@ -175,3 +181,13 @@ $( document ).ready(function() {
 			$('#dec').val(days);
     });
 });
+
+function loadCOA() {
+    
+    $('#coa_DIV').load(base_url+'index.php/accounting/getCOAli');
+}
+
+function deleteAccount( accountCode ) {
+    
+    alert(accountCode);
+}
