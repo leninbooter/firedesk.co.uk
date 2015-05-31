@@ -52,7 +52,7 @@ abandon_order	cross_hire_m.php	16;"	function
 abandon_order	purchases_orders_m.php	16;"	function
 acc_parent	hire_stock_m.php	271;"	variable
 accept	invoices_m.php	24;"	function
-accountHasChildren	accounting_m.php	28;"	function
+accountHasChildren	accounting_m.php	16;"	function
 activate_order	cross_hire_m.php	25;"	function
 activate_order	purchases_orders_m.php	25;"	function
 addresses	customers_m.php	58;"	variable
@@ -65,6 +65,7 @@ branchDetails	sales_ledger_m.php	59;"	variable
 branchID	sales_ledger_m.php	25;"	variable
 bundleComponents	hire_stock_m.php	103;"	variable
 bundleComponents	hire_stock_m.php	544;"	variable
+canBeRelated	accounting_m.php	22;"	function
 childrenItems	contracts_m.php	66;"	variable
 clean_vars	cross_hire_m.php	33;"	function
 clean_vars	customers_m.php	67;"	function
@@ -122,7 +123,7 @@ customers	contracts_m.php	169;"	variable
 customers	customers_m.php	43;"	variable
 dWH	sales_ledger_m.php	134;"	variable
 dWH	sales_ledger_m.php	6;"	variable
-delAccount	accounting_m.php	16;"	function
+delAccount	accounting_m.php	29;"	function
 delItem	invoices_m.php	129;"	function
 delPrice	stock_m.php	24;"	function
 del_event	diary_m.php	16;"	function
@@ -153,8 +154,9 @@ g	diary_m.php	71;"	variable
 generate	invoices_m.php	232;"	function
 generate_order	cross_hire_m.php	155;"	function
 generate_order	purchases_orders_m.php	118;"	function
-getAccounts	accounting_m.php	22;"	function
+getAccounts	accounting_m.php	35;"	function
 getContractDetails	contracts_m.php	351;"	function
+getDefaultAccounts	accounting_m.php	41;"	function
 getHiringContractDetailsOf	contracts_m.php	330;"	function
 getInvoiceDetails	invoices_m.php	266;"	function
 getItemsOnHire	cross_hire_m.php	102;"	function
@@ -213,7 +215,7 @@ groupsIDin	hire_stock_m.php	547;"	variable
 groupsIDin	hire_stock_m.php	555;"	variable
 hireDaysArr	invoices_m.php	72;"	variable
 hiredDays	invoices_m.php	486;"	variable
-insAccount	accounting_m.php	34;"	function
+insAccount	accounting_m.php	48;"	function
 insCrossHireItem	contracts_m.php	466;"	function
 insHireItem	contracts_m.php	505;"	function
 insHireItemAccesory	contracts_m.php	574;"	function
@@ -261,9 +263,11 @@ possesingContractquery	contracts_m.php	189;"	variable
 possesingContractquery	contracts_m.php	190;"	variable
 q	accounting_m.php	18;"	variable
 q	accounting_m.php	24;"	variable
-q	accounting_m.php	30;"	variable
-q	accounting_m.php	36;"	variable
+q	accounting_m.php	31;"	variable
+q	accounting_m.php	37;"	variable
 q	accounting_m.php	43;"	variable
+q	accounting_m.php	50;"	variable
+q	accounting_m.php	57;"	variable
 q	branches_m.php	18;"	variable
 q	branches_m.php	32;"	variable
 q	contracts_m.php	1056;"	variable

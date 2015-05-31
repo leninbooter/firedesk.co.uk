@@ -13,6 +13,19 @@ class Accounting_m extends CI_Model
 		$this->company_db = $this->load->database(company_db_string_connection(), true);        
 	}
     
+    function accountHasChildren( $accountCode ) {
+        
+        $q = 'SELECT count(1) count FROM acc_coa WHERE code like \''.$accountCode.'%\' LIMIT 2';
+        return $this->company_db->query($q)->row()->count > 1 ? true : false;
+    }
+    
+    function canBeRelated( $accountCode ) {
+        
+        $q = 'SELECT 1 as parent FROM acc_coa WHERE code = \''.$accountCode.'\'';
+        return isset($this->company_db->query($q)->row()->parent) &&
+               $this->company_db->query($q)->row()->parent == "1" ? true : false;
+    }
+    
     function delAccount( $accountCode ) {
         
         $q = 'DELETE FROM acc_coa WHERE code = \''.$accountCode.'\'';
@@ -24,12 +37,13 @@ class Accounting_m extends CI_Model
         $q = 'SELECT * FROM acc_coa';
         return $this->company_db->query($q)->result();
     }
-    
-    function accountHasChildren( $accountCode ) {
+
+    function getDefaultAccounts() {
         
-        $q = 'SELECT count(1) count FROM acc_coa WHERE code like \''.$accountCode.'%\'';
-        return $this->company_db->query($q)->row()->count > 1 ? true : false;
+        $q = 'SELECT * FROM acc_default_accounts';
+        return $this->company_db->query($q)->result();
     }
+    
     
     function insAccount( $codeAccount, $accountName ) {
         

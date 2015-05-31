@@ -103,9 +103,10 @@
 						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Bank transactions</a></li>												
 						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Bank reconciliation</a></li>
                         <li class="divider"></li>						
-						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Account names</a></li>	                        
+						<li><a class="dropdown-toggle" href="<?php echo base_url('index.php/diary'); ?>">Account names</a></li>-->	                        
 						<li class="divider"></li>
-                        <li><a class="dropdown-toggle" href="<?php echo base_url('index.php/accounting/defaultAccounts'); ?>">Default Accountss</a></li>-->	                        -->
+                        <li><a class="dropdown-toggle" href="<?php echo base_url('index.php/accounting/defaultAccounts'); ?>">Default Accounts</a></li>
+                        <li><a class="dropdown-toggle" href="<?php echo base_url('index.php/accounting/cashBooks'); ?>">Cash Book</a></li>
 					</ul>
                 </li>
 				<!--<li><a href="#">Ledgers & Cashbook</a></li>-->

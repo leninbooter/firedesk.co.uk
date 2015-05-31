@@ -235,7 +235,7 @@ $('#newAccountForm').submit(function(event) {
         setTimeout( function() {
             $('input:text', $('#'+obj)).val('');
             searchAccount(0,data.inputCode,0 );
-        }, 2000);        
+        }, 1000);        
     };
     
     callBackFnAlways = function() {

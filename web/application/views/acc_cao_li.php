@@ -1,4 +1,4 @@
-<ul class="list-unstyled">
+<ul style="list-style-type: none;">
 <?php for( $i=0; $i<count($accounts); $i++): ?>
     
     <?php if ( $i == 0 ): ?>
@@ -7,7 +7,7 @@
     <?php $currentLen = strlen($accounts[$i]->code); ?>    
     
     <?php if ( $currentLen > $llength  ): ?>
-        <ul style=" list-style-type: none;">
+        <ul style="list-style-type: none;">
     <?php endif; ?>
     
     <li><a name="<?=$accounts[$i]->code?>"></a><span style=""><?=$accounts[$i]->code?></span><span style="display:inline-block; width: 10px"></span><span style=""><?=$accounts[$i]->name?></span> <button type="button" class="close" style="float:none !important" data-dismiss="modal" aria-label="Close" onclick="deleteAccount(<?=$accounts[$i]->code?>)"><span aria-hidden="true">×</span></button>
@@ -25,7 +25,7 @@
                 
                  <?php if (  isset($accounts[$i-$j]) && strlen($accounts[$i-$j]->code) == strlen($accounts[$i+1]->code) ): ?>    
                     <?php if ( $j % 2 != 0): ?>
-                        </ul>
+                        
                     <?php endif; ?>
                     <?php break; ?>
                 <?php endif; ?>

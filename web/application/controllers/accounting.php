@@ -11,17 +11,6 @@ class Accounting extends MY_Controller
         $this->load->model('accounting_m');
     }
     
-    
-    public function getCOAli() {
-        
-        $accounts = $this->accounting_m->getAccounts();                     
-        
-        $data = array(
-                    'accounts' => $accounts
-                    );        
-        $this->load->view('acc_cao_li', $data);
-    }
-    
     public function addAccount() {
         
         $accountCode = $this->input->post('inputCode', true);
@@ -39,27 +28,37 @@ class Accounting extends MY_Controller
                     
                 }else {
                     
-                    $r = $this->accounting_m->insAccount($accountCode, $accountName);
-                    if ( $r  === 1 ) {
+                    
+                    if ( strlen($accountCode) > 1 &&  !$this->accounting_m->canBeRelated( substr($accountCode,0,strlen($accountCode)-1) )  ) {
                         
                         echo json_encode( array( 
-                                    'result' => 'ko',
-                                    'message' => 'Account duplicated'
-                                ));
-                    }elseif ( $r === false ) {
+                                        'result' => 'ko',
+                                        'message' => 'The account has no defined group'
+                                        ));
                         
-                        http_response(500);
-                        echo json_encode( array( 
-                                    'result' => 'ko',
-                                    'message' => 'Internal error'
-                                ));
-                    }elseif ( $r === true ) {
+                    }else {
                         
-                        echo json_encode( array( 
-                                    'result' => 'ok'
-                                ));
-                    }
-                
+                        $r = $this->accounting_m->insAccount($accountCode, $accountName);
+                        if ( $r  === 1 ) {
+                            
+                            echo json_encode( array( 
+                                        'result' => 'ko',
+                                        'message' => 'Account duplicated'
+                                    ));
+                        }elseif ( $r === false ) {
+                            
+                            http_response(500);
+                            echo json_encode( array( 
+                                        'result' => 'ko',
+                                        'message' => 'Internal error'
+                                    ));
+                        }elseif ( $r === true ) {
+                            
+                            echo json_encode( array( 
+                                        'result' => 'ok'
+                                    ));
+                        }                        
+                    }                    
                 }
                 
                 
@@ -70,7 +69,35 @@ class Accounting extends MY_Controller
                                 'message' => 'Bad format'
                             ));
         }
-    }   
+    }
+    
+    public function defaultAccounts() {
+        
+        $data = array(
+                        'accounts' => $this->accounting_m->getDefaultAccounts()
+                    );
+        
+        $this->load->view('header_nav');
+		$this->load->view('acc_default_accounts', $data);
+		$this->load->view('footer_common');
+		$this->output->append_output("<script src=\"".base_url('assets/js/utilities.js')."\"></script>");
+		$this->load->view('footer_copyright');
+		$this->load->view('footer');
+
+        
+    }
+    
+    public function getCOAli() {
+        
+        $accounts = $this->accounting_m->getAccounts();                     
+        
+        $data = array(
+                    'accounts' => $accounts
+                    );        
+        $this->load->view('acc_cao_li', $data);
+    }
+    
+       
 
     public function remAccount() {
         
