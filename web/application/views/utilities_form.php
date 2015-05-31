@@ -1,17 +1,17 @@
 <h1>Utilities</h1>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-9">
 		<ul id="tabs" class="nav nav-tabs" role="tablist">
-			<li role="presentation"  class="active"><a href="#access_rights" data-toggle="tab">Access Rights</a></li>
-			<li role="presentation" ><a href="#coa" data-toggle="tab" onclick="loadCOA()">Chart of Accounts</a></li>
+			<li role="presentation" ><a href="#access_rights"   data-toggle="tab">Access Rights</a></li>
+			<li role="presentation" ><a href="#coa"             data-toggle="tab" onclick="loadCOA()">Chart of Accounts</a></li>
 			<li role="presentation" ><a href="#holidays_schema" data-toggle="tab">Holidays Schema</a></li>
-			<li role="presentation"><a href="#terminal" data-toggle="tab">Terminal</a></li>  
+			<li role="presentation" ><a href="#terminal"        data-toggle="tab">Terminal</a></li>  
 		</ul>
 
 		<!-- Tab panes -->
 		<!-- Access Rights -->
 		<div class="tab-content">
-			<div role="tabpanel" class="tab-pane active" id="access_rights">            
+			<div role="tabpanel" class="tab-pane" id="access_rights">            
 				<form class="form">
 					<div class="row">
 						<div class="col-md-3">
@@ -38,26 +38,26 @@
 			</div>			
 			
             <!-- Charts of Account -->
-			<div role="tabpanel" class="tab-pane active" id="coa">				
-                        <form class="form-horizontal">
-                          <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-1 control-label">Code</label>
-                            <div class="col-sm-2">
-                              <input type="email" class="form-control" id="inputEmail3" >
-                            </div>
-                            <label for="inputEmail3" class="col-sm-2 control-label">Description</label>
-                            <div class="col-sm-5">
-                              <input type="email" class="form-control form-block" id="inputEmail3" >
-                            </div>
-                            <div class="col-sm-2">
-                                <button type="button" class="btn btn-default btn-block">Add</button>
-                            </div>
-                          </div>
-                        </form>                    					
-                    <div class="row">
-						<div id="coa_DIV"  class="col-md-12">	
-						</div>
-					</div>
+			<div role="tabpanel" class="tab-pane" id="coa">				
+                <form id="newAccountForm" role="form" class="form-horizontal">
+                  <div class="form-group">
+                   <a name="searchBox"></a> <label for="inputCode" class="col-sm-1 control-label">Code</label>
+                    <div class="col-sm-2">
+                      <input type="text" class="form-control" id="inputCode" name="inputCode" >
+                    </div>
+                    <label for="inputDescription" class="col-sm-2 control-label">Description</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control form-block" id="inputDescription" name="inputDescription" >
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-default btn-block" onclick="$('#newAccountForm').submit();">Add</button>
+                    </div>
+                  </div>
+                </form>                    					
+                <div class="row">
+                    <div id="coa_DIV"  class="col-md-12">	
+                    </div>
+                </div>
 			</div>
             
             <!-- HOlidays Schema -->
@@ -133,5 +133,5 @@
 		</div>
 	</div>
 	
-	<div class="col-md-4"></div>
+	<div class="col-md-3"></div>
 </div>

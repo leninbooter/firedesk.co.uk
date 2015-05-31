@@ -54,6 +54,9 @@ abandon_contract	contracts.php	12;"	function
 acc_id	hire_stock.php	956;"	variable
 acc_qty	hire_stock.php	957;"	variable
 accept	invoices.php	53;"	function
+accountCode	accounting.php	27;"	variable
+accountCode	accounting.php	77;"	variable
+accountName	accounting.php	28;"	variable
 account_credit	suppliers.php	199;"	variable
 account_credit_setlement	suppliers.php	202;"	variable
 account_department	customers.php	209;"	variable
@@ -69,6 +72,7 @@ acqs_rms_json	hire_stock.php	18;"	function
 acquisition_id	hire_stock.php	750;"	variable
 activate_contract	contracts.php	27;"	function
 activity	hire_stock.php	45;"	function
+addAccount	accounting.php	25;"	function
 add_remove	hire_stock.php	81;"	function
 address	customers.php	185;"	variable
 address1	customers.php	201;"	variable
@@ -138,6 +142,9 @@ config	sales_stock.php	253;"	variable
 config	sales_stock.php	505;"	variable
 config	suppliers.php	100;"	variable
 config	utilities.php	5;"	function
+confirmated	accounting.php	78;"	variable
+confirmated	accounting.php	80;"	variable
+confirmated	accounting.php	90;"	variable
 contact	suppliers.php	190;"	variable
 contact_email	cross_hire.php	182;"	variable
 contact_email	purchases_orders.php	194;"	variable
@@ -759,6 +766,10 @@ qty	sales_stock.php	536;"	variable
 quantity_balance	sales_stock.php	346;"	variable
 quantity_on_order	sales_stock.php	347;"	variable
 quantity_rec_level	sales_stock.php	348;"	variable
+r	accounting.php	42;"	variable
+r	accounting.php	43;"	variable
+r	accounting.php	49;"	variable
+r	accounting.php	56;"	variable
 rate	contracts.php	610;"	variable
 rate	contracts.php	754;"	variable
 rate	contracts.php	769;"	variable
@@ -774,6 +785,7 @@ reg_post	contracts.php	949;"	variable
 reg_post	contracts.php	952;"	variable
 regularity	contracts.php	964;"	variable
 regularity	contracts.php	966;"	variable
+remAccount	accounting.php	75;"	function
 removeCrossHiredItem	contracts.php	365;"	function
 removeHireItem	contracts.php	390;"	function
 removeItem	invoices.php	602;"	function

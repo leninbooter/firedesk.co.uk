@@ -1,3 +1,7 @@
+var searchStart = 1;
+var searchIdx;
+var query;
+
 $( document ).ready(function() {
 	$('#tabs a').click(function (e) {
 	  e.preventDefault()
@@ -10,7 +14,7 @@ $( document ).ready(function() {
     })
     
     
-	$('#tabs a[href="#holidays_schema"]').tab('show');
+	$('#tabs a[href="#access_rights"]').tab('show');
 	
 	//Holidays
     $('#jan_div').datepicker({
@@ -182,12 +186,139 @@ $( document ).ready(function() {
     });
 });
 
+$('#inputCode, #inputDescription').keypress(function( event ) {
+    
+    if ( event.which == 13 ) {
+        
+        query = $(this).val();
+        
+        if ( $(this).attr('id') == 'inputCode' ) {
+            
+            searchIdx = '0';            
+            
+        }else {
+            
+            searchIdx = '2';
+            
+        }                                
+        if ( searchAccount( searchIdx, query, 0) == 0) {
+            
+            options = {
+                trigger:    'manual',
+                placement: 'bottom',
+                title:      'No found!',
+                template:   '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+            };
+            $(this).tooltip(options);
+            $(this).tooltip('show');
+            objThis = $(this).attr('id');
+            setTimeout('$(\'#'+objThis+'\').tooltip(\'destroy\')', 2000);
+        }
+    }
+        
+    
+});
+
+$('#newAccountForm').submit(function(event) {
+    
+    event.preventDefault();
+    
+    obj = $(this).attr('id');
+    url = base_url + 'index.php/accounting/addAccount';
+    data = {
+        inputCode: $('#inputCode').val(),
+        inputDescription: $('#inputDescription').val()
+    };
+    callBackFn = function (){
+        $('#'+obj).addClass('magictime tinDownOut');
+        loadCOA();
+        setTimeout( function() {
+            $('input:text', $('#'+obj)).val('');
+            searchAccount(0,data.inputCode,0 );
+        }, 2000);        
+    };
+    
+    callBackFnAlways = function() {
+        
+        setTimeout("$('#'+obj).removeClass('magictime tinDownOut')", 2000);
+    }
+    ajaxForm(url, data, callBackFn, callBackFnAlways);
+});
+
 function loadCOA() {
     
     $('#coa_DIV').load(base_url+'index.php/accounting/getCOAli');
 }
 
-function deleteAccount( accountCode ) {
+function deleteAccount( accountCode, confirmated = false ) {
     
-    alert(accountCode);
+    url = base_url + 'index.php/accounting/remAccount';
+    data = {
+         accountCode: accountCode,
+         confirmated: confirmated
+    };
+    
+    $.ajax( url, 
+        {
+            type:       'post',
+            data:       data,
+            dataType:   'json'
+        }
+    )
+    .done( function(r) {
+        
+        if ( r.result == 'ok' ) {
+                    
+            loadCOA();
+            
+        }else if ( r.result == 'ko') {
+            
+            alert(r.message);
+        }else if ( r.result == 'confirmation' ) {
+            
+            if( confirm(r.message) ) {
+                    
+                    deleteAccount( accountCode, 'yes');
+                
+            }
+        }
+        
+    })
+    .fail( function( r ) {
+        
+        alert( 'Request failed!' );
+    })
+    .always( function() {
+        
+        //
+    });   
+}
+
+function searchAccount ( searchIdx, query,  start) {
+    
+    var findings = 0;
+    
+    $( "#coa_DIV li" ).each(function( index ) {      
+                    
+        if ( ( searchIdx == '0' && $( "span:eq("+searchIdx+")", this).text().toLowerCase() == query.toLowerCase() )  || ( searchIdx == '2' && $( "span:eq("+searchIdx+")", this).text().toLowerCase().indexOf(query.toLowerCase()) != -1 ) ) {
+            
+            findings++;
+            if ( findings >= start ) {                                
+                $( this ).append("<div><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\" onclick=\"location.hash='#searchBox';$(this).parent().remove();\" style=\"cursor:pointer\"></span><span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\" onclick=\"searchAccount(searchIdx, query, searchStart);$(this).parent().remove();\" style=\"cursor:pointer\"></span></div>");
+                searchStart = findings + 1;    
+                location.hash = '#'+$( "span:eq(0)", this).text();
+
+                $( this ).animate({
+                    backgroundColor: "#ffff00"
+                }, 250 )
+                .animate({
+                    backgroundColor: 'none'
+                },550);
+                
+                return false;
+            }
+        }
+    
+    });
+    return findings;    
 }

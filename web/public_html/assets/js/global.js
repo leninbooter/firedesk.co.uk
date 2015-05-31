@@ -47,7 +47,7 @@ function formatInputs() {
     });
 }
 
-function ajaxForm ( url, data, callBackFn ) {
+function ajaxForm ( url, data, callBackFn, callBackFnAlways = function(){} ) {
     
      $.ajax( url, 
         {
@@ -71,5 +71,9 @@ function ajaxForm ( url, data, callBackFn ) {
     .fail( function( r ) {
         
         alert( 'Request failed!' );
+    })
+    .always( function() {
+        
+        callBackFnAlways();
     });
 }
