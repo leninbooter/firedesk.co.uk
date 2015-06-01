@@ -51,10 +51,11 @@ _weekend_perc	hire_stock.php	412;"	variable
 abandon	cross_hire.php	5;"	function
 abandon	purchases_orders.php	5;"	function
 abandon_contract	contracts.php	12;"	function
+accCode	accounting.php	117;"	variable
 acc_id	hire_stock.php	956;"	variable
 acc_qty	hire_stock.php	957;"	variable
 accept	invoices.php	53;"	function
-accountCode	accounting.php	104;"	variable
+accountCode	accounting.php	146;"	variable
 accountCode	accounting.php	16;"	variable
 accountName	accounting.php	17;"	variable
 account_credit	suppliers.php	199;"	variable
@@ -67,6 +68,7 @@ account_payment_credit_from	suppliers.php	201;"	variable
 account_reference	customers.php	183;"	variable
 account_reference_id	contracts.php	555;"	variable
 account_type	suppliers.php	194;"	variable
+accounts	accounting.php	102;"	variable
 accounts	accounting.php	92;"	variable
 acqs_rms_json	hire_stock.php	18;"	function
 acquisition_id	hire_stock.php	750;"	variable
@@ -142,9 +144,9 @@ config	sales_stock.php	253;"	variable
 config	sales_stock.php	505;"	variable
 config	suppliers.php	100;"	variable
 config	utilities.php	5;"	function
-confirmated	accounting.php	105;"	variable
-confirmated	accounting.php	107;"	variable
-confirmated	accounting.php	117;"	variable
+confirmated	accounting.php	147;"	variable
+confirmated	accounting.php	149;"	variable
+confirmated	accounting.php	159;"	variable
 contact	suppliers.php	190;"	variable
 contact_email	cross_hire.php	182;"	variable
 contact_email	purchases_orders.php	194;"	variable
@@ -222,6 +224,7 @@ customer_id	hire_stock.php	844;"	variable
 customer_id	sales_stock.php	451;"	variable
 customer_id	sales_stock.php	457;"	variable
 customers	customers.php	58;"	variable
+data	accounting.php	104;"	variable
 data	accounting.php	76;"	variable
 data	accounting.php	94;"	variable
 data	collects.php	103;"	variable
@@ -294,6 +297,7 @@ days	invoices.php	298;"	variable
 daysWeek	invoices.php	306;"	variable
 days_week	customers.php	195;"	variable
 days_week	hire_stock.php	414;"	variable
+defAccount	accounting.php	116;"	variable
 defaultAccounts	accounting.php	74;"	function
 delete	cross_hire.php	435;"	variable
 delete	purchases_orders.php	499;"	variable
@@ -384,6 +388,7 @@ fuse	hire_stock.php	786;"	variable
 generate	invoices.php	153;"	function
 generate_order	cross_hire.php	147;"	function
 generate_order	purchases_orders.php	160;"	function
+getCOAjson	accounting.php	100;"	function
 getCOAli	accounting.php	90;"	function
 getChargingBandsOptions	hire_stock.php	150;"	function
 getChargingRateByDays	invoices.php	15;"	function
@@ -787,7 +792,7 @@ reg_post	contracts.php	949;"	variable
 reg_post	contracts.php	952;"	variable
 regularity	contracts.php	964;"	variable
 regularity	contracts.php	966;"	variable
-remAccount	accounting.php	102;"	function
+remAccount	accounting.php	144;"	function
 removeCrossHiredItem	contracts.php	365;"	function
 removeHireItem	contracts.php	390;"	function
 removeItem	invoices.php	602;"	function
@@ -909,6 +914,7 @@ save_supplier	suppliers.php	93;"	function
 saved_addresses	contracts.php	559;"	variable
 send_email_invitation	diary.php	100;"	function
 serial_number	hire_stock.php	783;"	variable
+setDefAccount	accounting.php	114;"	function
 set_balance	hire_stock.php	1106;"	variable
 set_balance	sales_stock.php	570;"	variable
 set_raised_by	hire_stock.php	1164;"	variable

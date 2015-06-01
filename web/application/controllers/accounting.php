@@ -80,7 +80,7 @@ class Accounting extends MY_Controller
         $this->load->view('header_nav');
 		$this->load->view('acc_default_accounts', $data);
 		$this->load->view('footer_common');
-		$this->output->append_output("<script src=\"".base_url('assets/js/utilities.js')."\"></script>");
+		$this->output->append_output("<script src=\"".base_url('assets/js/acc_def_accounts.js')."\"></script>");
 		$this->load->view('footer_copyright');
 		$this->load->view('footer');
 
@@ -97,7 +97,49 @@ class Accounting extends MY_Controller
         $this->load->view('acc_cao_li', $data);
     }
     
-       
+    public function getCOAjson()
+	{		
+		$accounts = $this->accounting_m->getAccounts();
+		
+		$data = array();
+		foreach($accounts as $acc)
+		{
+			array_push($data, array("id"=>intval($acc->code), "label" => $acc->code ." " . $acc->name ));
+		}
+		
+		header('Content-type: application/json');
+		echo json_encode($data);
+	}
+    
+    public function setDefAccount() {
+        
+        $defAccount = $this->input->post('defAcc', true);
+        $accCode    = $this->input->post('accCode', true);
+        
+        if ( v::int()->validate($defAccount)
+            && v::int()->validate($accCode) ) {
+                
+            if ( $this->accounting_m->updDefAccount($defAccount, $accCode) ) {
+                
+                echo json_encode( array( 
+                    'result' => 'ok'
+                ));
+            }else {
+                
+                echo json_encode( array( 
+                    'result' => 'ko',
+                    'message' => 'Wrong selected account. Please try again.'
+                ));
+            }
+               
+        }else {
+            
+            echo json_encode( array( 
+                    'result' => 'ko',
+                    'message' => 'Bad format'
+                ));
+        }
+    }   
 
     public function remAccount() {
         

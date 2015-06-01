@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-md-9">
         <div class="row">
-        <form id="newAccountForm" role="form" class="form-horizontal">
+        <form id="defNominalAccountsForm" role="form" class="form-horizontal">
             <div class="col-md-4">
                 <?php for( $i=0; $i<=10; $i++ ): ?>                    
                       <div class="form-group">
@@ -18,7 +18,7 @@
                       <div class="form-group">
                         <label for="<?=$accounts[$i]->pk_id?>" class="col-md-7 control-label"><?=$accounts[$i]->account_name?></label>
                         <div class="col-md-5">
-                          <input type="text" class="form-control" id="<?=$accounts[$i]->pk_id?>" name="<?=$accounts[$i]->fk_account_id?>" value="<?=$accounts[$i]->fk_account_id?>" >
+                          <input type="text" class="form-control" id="<?=$accounts[$i]->pk_id?>" name="<?=$accounts[$i]->pk_id?>" value="<?=$accounts[$i]->fk_account_id?>" >
                         </div>                       
                       </div>                
                 <?php endfor; ?>

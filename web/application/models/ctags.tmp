@@ -268,6 +268,7 @@ q	accounting_m.php	37;"	variable
 q	accounting_m.php	43;"	variable
 q	accounting_m.php	50;"	variable
 q	accounting_m.php	57;"	variable
+q	accounting_m.php	63;"	variable
 q	branches_m.php	18;"	variable
 q	branches_m.php	32;"	variable
 q	contracts_m.php	1056;"	variable
@@ -800,6 +801,7 @@ stock_cost_total	stock_m.php	82;"	variable
 subtotal	invoices_m.php	362;"	variable
 to	hire_stock_m.php	499;"	variable
 total	invoices_m.php	415;"	variable
+updDefAccount	accounting_m.php	61;"	function
 upd_balances_massive	stock_m.php	280;"	function
 upd_locations_massive	stock_m.php	315;"	function
 upd_message_set_read	messenger_m.php	98;"	function
