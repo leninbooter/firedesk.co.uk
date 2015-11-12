@@ -1,0 +1,9 @@
+delete from returns;
+delete from payments;
+delete from invoices;
+delete from deliveries;
+delete from contract_history;
+delete from contract_items;
+delete from contract_cross_hire_items;
+delete from collections;
+delete from contracts;

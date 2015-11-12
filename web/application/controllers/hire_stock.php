@@ -169,7 +169,17 @@ class Hire_stock extends MY_Controller
 		}
 	}
 	
-   
+    public function getitem() {
+       
+        $this->load->model('hire_stock_m');
+        
+        $ID     = $this->input->get('id', true);
+        
+        $item   = $this->hire_stock_m->selectItem($ID);				
+		
+		header('Content-type: application/json');
+		echo json_encode($item);       
+    }
     
     /**
     *
@@ -254,6 +264,26 @@ class Hire_stock extends MY_Controller
 		
 		header('Content-type: application/json');
 		echo json_encode($arr);		
+	}
+    
+    public function get_items_like_json()
+	{
+        $term = $this->input->post('q', true);
+        
+		$this->load->model('hire_stock_m');
+		
+        $data = array();
+		foreach( $this->hire_stock_m->select_items_like($term) as $k => $v ) {
+            
+            $i = new stdClass();
+            $i->id = $v->pk_id;
+            $i->text = $v->description;
+            
+            $data[] = $i;
+        }
+		
+        header('Content-type: application/json');
+		echo json_encode($data);		
 	}
     
      /**

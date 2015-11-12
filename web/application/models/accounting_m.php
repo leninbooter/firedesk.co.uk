@@ -37,7 +37,56 @@ class Accounting_m extends CI_Model
         $q = 'SELECT * FROM acc_coa';
         return $this->company_db->query($q)->result();
     }
-
+    
+    function getBankAccounts() {
+        
+        $q = 'SELECT code, name 
+                FROM acc_coa
+                INNER JOIN acc_default_accounts as ada ON ada.fk_account_id = code 
+                    AND pk_id BETWEEN 16 AND 24';
+        return $this->company_db->query($q)->result();
+    }
+    
+    function getBankAccountDtls( $accCode ) {
+    
+        $q = 'SELECT
+                pk_id,
+                acb.name,
+                cleared,
+                held,
+                pending,
+                balance,
+                today,
+                ac.name as bankAccountName
+                FROM acc_cash_books as acb
+                    INNER JOIN acc_coa as ac ON ac.code = fk_bank_account
+                WHERE fk_bank_account = \''.$accCode.'\'';
+        $r = $this->company_db->query($q)->row();        
+        
+        if( empty($r) ) {
+            
+            if ( $this->insCashBook($accCode) ) {
+                
+                return $this->company_db->query($q)->row();        
+            }else {
+                
+                return false;
+            }
+        }else {
+            
+            return $r;
+        }
+        
+    }
+    
+    function getAccMvmnts( $cashBook ) {
+        
+        $q = 'SELECT *
+                FROM acc_cash_book_details
+                WHERE fk_cash_book = '.$cashBook;
+        return $this->company_db->query($q)->result();
+    }
+    
     function getDefaultAccounts() {
         
         $q = 'SELECT * FROM acc_default_accounts';
@@ -56,5 +105,18 @@ class Accounting_m extends CI_Model
         
         $q = 'INSERT INTO acc_coa ( code, name) VALUES ( \'' . $codeAccount . '\', \'' . $accountName .'\')';
         return $this->company_db->query($q);
+    }
+    
+    function insCashBook( $accCode ) {
+        
+        $q = 'INSERT INTO acc_cash_books(fk_bank_account, cleared, held, pending, balance, today)
+                VALUES('.$accCode.', 0,0,0,0,0)';
+        return $this->company_db->query($q);
+    }
+    
+    function updDefAccount ( $defAccountID, $accountCode ) {
+        
+        $q = 'UPDATE acc_default_accounts SET fk_account_id = '.$accountCode.'  WHERE pk_id = '.$defAccountID;
+        return $this->company_db->simple_query($q);
     }
 }

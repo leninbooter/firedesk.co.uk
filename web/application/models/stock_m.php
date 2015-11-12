@@ -193,14 +193,30 @@ class Stock_m extends CI_Model
 		return false;
 	}
     
-    function selItemsNameAndID() {
+    function selItemsNameAndID($term) {
         
-        $query = "SELECT pk_id, stock_number, description as label, quantity_balance,
-                        quantity_on_order,
-                        ifnull(sales_cost, 0) as cost
-                    FROM sales_stock";
+        $query = "SELECT 
+                        pk_id, 
+                        description as label
+                    FROM sales_stock
+                    WHERE description like '{$term}%'";
         $query = $this->company_db->query($query);
         return $query->result();
+    }
+    
+    function selItem($ID) {
+        
+        $query = "SELECT 
+                        pk_id,
+                        stock_number, 
+                        description as label, 
+                        quantity_balance,
+                        quantity_on_order,
+                        ifnull(sales_cost, 0) as cost
+                    FROM sales_stock
+                    WHERE pk_id = {$ID} LIMIT 1";
+        $query = $this->company_db->query($query);
+        return $query->row();
     }
     
     /**

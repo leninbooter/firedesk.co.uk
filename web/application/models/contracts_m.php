@@ -49,8 +49,8 @@ class Contracts_m extends CI_Model
         $this->company_db->trans_start();
         
         $q = 'SELECT \'yes\' as invoiced 
-                FROM invoices_items
-                WHERE pk_id = '.$param_arr['saleItemRowID'];
+                FROM invoices_details
+                WHERE pk_id = '.$param_arr['hireItemRowID'];
         
         $row = $this->company_db->query($q)->row();
         
@@ -125,7 +125,7 @@ class Contracts_m extends CI_Model
     function deleteSoldItem( $param_arr ) {
         
         $q = 'SELECT \'yes\' as invoiced 
-                FROM invoices_items
+                FROM invoices_details
                 WHERE pk_id = '.$param_arr['saleItemRowID'];
         
         $row = $this->company_db->query($q)->row();
@@ -378,7 +378,7 @@ class Contracts_m extends CI_Model
                     cus.contact_name, 
                     cus.representative, 
                     cus.vat_exempt, 
-                    cus.creation_date, 
+                    cus.creation_date as cus_creation_date, 
                     cus.type, 
                     cus.invoicing, 
                     cus.account_reference, 
@@ -629,7 +629,7 @@ class Contracts_m extends CI_Model
                 {$param_array['itemType']},		
                 {$param_array['hireItemID']}		
             );";               
-log_message('debug', $query);
+
         $this->company_db->query($query);
         
         $this->company_db->trans_complete();
@@ -747,9 +747,9 @@ log_message('debug', $query);
                     {$param_arr['price']},	
                     {$param_arr['discount']}, 			
                     {$param_arr['total']}, 			
-                    {$param_arr['contractID']},
+                    {$param_arr['contractID']},                   
+                    1,
                     {$param_arr['cost']}
-                    1	
                 );";               
         
         $this->company_db->query($query);

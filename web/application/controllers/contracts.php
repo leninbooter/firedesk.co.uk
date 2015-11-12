@@ -28,28 +28,28 @@ class Contracts extends MY_Controller
 	{
 		$contract_id = trim($this->input->post('contract_id', true));
         
-        if ( v::int()->min(0)->validate($contract_id) ) {
-        
-            $param_arr = array (
-                                'contractID' => $contract_id,
-                                'datetime'  => date('Y-m-d H:i:s')
-                                );
-        
-            $this->load->model('contracts_m');
-            
-            if( ($result = $this->contracts_m->set_contract_active( $param_arr )) == true )
-            {
-                echo "ok";
-            }else
-            {
-                echo "ko";
+            if ( v::int()->min(0)->validate($contract_id) ) {
+
+                $param_arr = array (
+                                    'contractID' => $contract_id,
+                                    'datetime'  => date('Y-m-d H:i:s')
+                                    );
+
+                $this->load->model('contracts_m');
+
+                if( ($result = $this->contracts_m->set_contract_active( $param_arr )) == true )
+                {
+                    echo "ok";
+                }else
+                {
+                    echo "ko";
+                }
+            }else {
+
+                http_response_code(400);
+                echo "Bad request.";
+
             }
-        }else {
-            
-            http_response_code(400);
-            echo "Bad request.";
-            
-        }
 	}
 
     public function getHireContractOf() {
@@ -94,50 +94,53 @@ class Contracts extends MY_Controller
 				
 		$data['contract_id'] = trim($this->input->get('id', true));
         
-        if ( v::int()->min(0)->validate($data['contract_id']) ) {
-        
-            $data['contract_details']           = $this->contracts_m->getContractDetails( $data['contract_id'] );
-            $data['customerID']                 = $data['contract_details']->fk_customer_id;
-            $data['customer_name']              = $data['contract_details']->name;
-            $data['contract_type']              = $data['contract_details']->type == 0 ? "Cash" : "Credit";
-            $data['contract_type_sale_hire']    = $data['contract_details']->fk_contract_type_id ;
-            $data['address']                    = $data['contract_details']->delivery_address;
-            $data['delivery_charge']            = $data['contract_details']->delivery_charge;
-            $data['contract_status']            = $data['contract_details']->fk_contract_status_id;
-            $mode                               = $data['contract_status'] <= 3 ? 'write':'read';
-            // Available crossed hire items
-            $data['hired_items']                = $this->cross_hire_m->get_hired_items();          
-            // Items sold in the contract
-            $data['soldItems']                  = $this->load->view('sold_items_table', 
-                                                                    array(
-                                                                        'mode' =>  $mode, 
-                                                                        'items'=>  $this->contracts_m->selectSalesItems( $data['contract_id'] )
-                                                                        ),
-                                                                    true);
-            // Items hired in the contract           
-            $data['hiredItems']                 = $this->load->view('hired_items_table',
-                                                                    array(
-                                                                          'mode'  => $mode,
-                                                                          'items' => $this->contracts_m->selectHiredItems( $data['contract_id'] )
-                                                                        ),
-                                                                    true);
-            // Items crossed hired in the contract
-            $data['CrossedHireItems']           = $this->contracts_m->selectCrossedHiredItems( $data['contract_id'] );
-            //$data['contract_items']           = $this->contracts_m->get_contract_items( $data['contract_id'] );
-                    
-            $this->load->view('header_nav');
-            $this->load->view('form_add_items_to_contract', $data);
-            $this->load->view('footer_common');
-            $this->load->view('new_contract_footer');
-            $this->output->append_output("<script src=\"".base_url('assets/js/form_add_items_to_contract.js')."\"></script>");
-            $this->load->view('footer_copyright');
-            $this->load->view('footer');
-            
-        }else {
-            
-            http_response_code(400);
-            echo "Bad request.";
-        }        
+            if ( v::int()->min(0)->validate($data['contract_id']) ) {
+
+                $data['contract_details']           = $this->contracts_m->getContractDetails( $data['contract_id'] );
+                $data['customerID']                 = $data['contract_details']->fk_customer_id;
+                $data['customer_name']              = $data['contract_details']->name;
+                $data['contract_type']              = $data['contract_details']->type == 0 ? "Cash" : "Credit";
+                $data['contract_type_sale_hire']    = $data['contract_details']->fk_contract_type_id ;
+                $data['address']                    = $data['contract_details']->delivery_address;
+                $data['delivery_charge']            = $data['contract_details']->delivery_charge;
+                $data['contract_status']            = $data['contract_details']->fk_contract_status_id;
+                $mode                               = $data['contract_status'] <= 3 ? 'write':'read';
+                // Available crossed hire items
+                $data['hired_items']                = $this->cross_hire_m->get_hired_items();          
+                // Items sold in the contract
+                $data['soldItems']                  = $this->load->view('sold_items_table', 
+                                                                        array(
+                                                                            'mode' =>  $mode, 
+                                                                            'items'=>  $this->contracts_m->selectSalesItems( $data['contract_id'] )
+                                                                            ),
+                                                                        true);
+                // Items hired in the contract           
+                $data['hiredItems']                 = $this->load->view('hired_items_table',
+                                                                        array(
+                                                                              'mode'  => $mode,
+                                                                              'items' => $this->contracts_m->selectHiredItems( $data['contract_id'] )
+                                                                            ),
+                                                                        true);
+                // Items crossed hired in the contract
+                $data['CrossedHireItems']           = $this->contracts_m->selectCrossedHiredItems( $data['contract_id'] );
+                //$data['contract_items']           = $this->contracts_m->get_contract_items( $data['contract_id'] );
+                
+                $this->load->view('header_nav', array(
+                    'custom_css' => array( 'assets/select2-4.0.0/dist/css/select2.min.css')
+                ));
+                $this->load->view('form_add_items_to_contract', $data);
+                $this->load->view('footer_common');
+                $this->load->view('new_contract_footer');
+                $this->output->append_output("<script src=\"".base_url('assets/select2-4.0.0/dist/js/select2.min.js')."\"></script>");
+                $this->output->append_output("<script src=\"".base_url('assets/js/form_add_items_to_contract.js')."\"></script>");                
+                $this->load->view('footer_copyright');
+                $this->load->view('footer');
+
+            }else {
+
+                http_response_code(400);
+                echo "Bad request.";
+            }        
 	}
 
 	public function edit_outstanding_items()
@@ -283,12 +286,18 @@ class Contracts extends MY_Controller
 
 	public function new_contract()
 	{
-		$this->load->view('header_nav');
-		$this->load->view('new_contract');
+		$this->load->view('header_nav', array(
+                    'custom_css' => array( 'assets/select2-4.0.0/dist/css/select2.min.css')
+                ));
+		
+        $this->load->view('new_contract');
 		$this->load->view('footer_common');
 		$this->load->view('new_contract_footer');
-		$this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
-		$this->load->view('footer_copyright');
+		
+        $this->output->append_output("<script src=\"".base_url('assets/jquery-ui-1.11.4.custom/jquery-ui.js')."\"></script>");
+		$this->output->append_output("<script src=\"".base_url('assets/select2-4.0.0/dist/js/select2.min.js')."\"></script>");
+		
+        $this->load->view('footer_copyright');
 		$this->load->view('footer');
 	}
     
@@ -494,6 +503,7 @@ class Contracts extends MY_Controller
 		$this->lang->load('errors', 'english');
 		$this->lang->load('messages', 'english');
 		$this->lang->load('commands', 'english');
+        
 		$config = array(
                array(
                      'field'   => 'account_reference_id',
@@ -794,9 +804,9 @@ class Contracts extends MY_Controller
                     }
                }                    
             }
-            
-            echo "ok";
         }
+        
+        echo "ok";
     }
 
     /**
@@ -867,15 +877,16 @@ class Contracts extends MY_Controller
     
     public function saveSaleItem() {
         
-        if (isset($_POST['item_id'])) {
+        if (isset($_POST['sale_item_description'])) {
             
             $contractID      = $this->input->post('contractID', true);
-            $saleStockItemID = $this->input->post('item_id', true);
-            $description     = $this->input->post('sale_item_description', true);
+            //$saleStockItemID    = $this->input->post('item_id', true);
+            $saleStockItemID     = $this->input->post('sale_item_description', true);
+            $description     = $this->input->post('sale_item_desc_text', true);
             $qty             = $this->input->post('sale_item_qty', true);
             $discount        = floatval(preg_replace("/[^0-9\.]*/", "", $this->input->post('disc', true)));
-            $price           = $this->input->post('price', true);                                    
-            $cost           = $this->input->post('sale_item_cost', true);                                    
+            $price           = $this->input->post('price', true);
+            $cost               = $this->input->post('sale_item_cost', true);                                    
             
             if ( v::int()->validate($saleStockItemID)
                 && v::int()->validate($qty)
@@ -883,7 +894,8 @@ class Contracts extends MY_Controller
                 && v::numeric()->validate($price) ) {
                     
                 $price  = $price - (($price*$discount)/100.00);
-                $total  = number_format($qty*$price, 2);
+                $price  = number_format($price, 2,'.', '');
+                $total  = number_format($qty*$price, 2, '.','');
                 $date   = date('Y-m-d H:i:s');
                 
                 $param_arr = compact(

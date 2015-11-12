@@ -29,11 +29,28 @@ $( "#defNominalAccountsForm input:text" ).change( function(e) {
 });
 
 function setDefAccount( caller ) {
-     url  = base_url + 'index.php/accounting/setDefAccount';
-    data = {
-        defAcc:  $(caller).attr('id'),
+    
+    callerID = $(caller).attr('id');
+    url      = base_url + 'index.php/accounting/setDefAccount';
+    data     = {
+        defAcc:  callerID,
         accCode: $(caller).val()
     }; 
     
-    ajaxForm( url, data); 
+    callBackFn = function() {
+        
+        options = {
+                trigger:    'manual',
+                placement: 'right',
+                title:      'Saved!',
+                template:   '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+            };
+            $('#'+callerID).tooltip(options);
+            $('#'+callerID).tooltip('show');            
+            setTimeout( function() {
+                $('#'+callerID).tooltip('destroy');
+            }, 2000);
+    }
+    
+    ajaxForm( url, data, callBackFn); 
 }

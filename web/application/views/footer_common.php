@@ -59,7 +59,7 @@
 <div class="modal-dialog modal-smd">
 	<div class="modal-content">			
 	</div>
-</div>
+ </div>
 </div>
 
 <div class="modal fade" id="multiporpuses_modal" tabindex="-1" role="dialog">

@@ -250,7 +250,11 @@ function loadCOA() {
     $('#coa_DIV').load(base_url+'index.php/accounting/getCOAli');
 }
 
-function deleteAccount( accountCode, confirmated = false ) {
+function deleteAccount( accountCode, confirmated ) {
+    
+    if ( typeof confirmated == 'undefined' ) {
+        confirmated = false;
+    }
     
     url = base_url + 'index.php/accounting/remAccount';
     data = {

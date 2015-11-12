@@ -10,10 +10,10 @@
         <ul style="list-style-type: none;">
     <?php endif; ?>
     
-    <li><a name="<?=$accounts[$i]->code?>"></a><span style=""><?=$accounts[$i]->code?></span><span style="display:inline-block; width: 10px"></span><span style=""><?=$accounts[$i]->name?></span> <button type="button" class="close" style="float:none !important" data-dismiss="modal" aria-label="Close" onclick="deleteAccount(<?=$accounts[$i]->code?>)"><span aria-hidden="true">×</span></button>
+    <li><a name="<?=$accounts[$i]->code?>"></a><span style=""><?=$accounts[$i]->code?></span><span style="display:inline-block; width: 10px"></span><span style=""><?=$accounts[$i]->name?></span> <button type="button" class="close" style="float:none !important" data-dismiss="modal" aria-label="Close" onclick="deleteAccount('<?=$accounts[$i]->code?>')"><span aria-hidden="true">×</span></button>
     
     <?php if ( isset($accounts[$i+1]) && (strlen($accounts[$i+1]->code) <= $currentLen ) ): ?>
-        </li>        
+        </li>  
         <?php if ( $currentLen > 1 && strlen($accounts[$i+1]->code) < $currentLen ): ?>
              
             <?php for($j=1; $j<= ($currentLen - strlen($accounts[$i+1]->code))*2 ; $j++): ?>

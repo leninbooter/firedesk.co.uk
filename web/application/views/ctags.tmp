@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+baseURL	header_nav.php	6;"	variable
 children	hire_accesories_group.php	19;"	variable
 contract_status	form_add_items_to_contract.php	180;"	variable
 count	sales_all_branches.php	16;"	variable

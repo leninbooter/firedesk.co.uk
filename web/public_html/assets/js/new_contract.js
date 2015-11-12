@@ -275,24 +275,9 @@ $('#alerts ').on('hide.bs.modal', function (e) {
 })
 
 $.get( base_url + "index.php/customers/get_customers_json", function( data ) {
-	
-	suppliers = data;
-	
-	$( "#account_reference" ).autocomplete({
-		minLength: 0,
-		source: suppliers,
-		focus: function( event, ui ) {
-			$( "#account_reference" ).val( ui.item.label );
-				return false;
-			},
-			select: function( event, ui ) {				
-				$( "#account_reference_id" ).val( ui.item.id );
-				return false;
-			}
-			})
-			.autocomplete( "instance" )._renderItem = function( ul, item ) {
-				return $( "<li>" )
-				.append( "<a>" + item.label + "</a>" )
-				.appendTo( ul );
-	};
+	customers = data;
+	$("#account_reference_id").select2({
+            data: customers,
+            minimumInputLength: 2
+        });
 });

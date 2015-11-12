@@ -1,37 +1,3 @@
-if ( $('#sales_stock_modal').length > 0 ) {
-    $.get( base_url + "index.php/sales_stock/getItemsNameAndIDJSON", function( data ) {
-
-        items = data;
-
-        $( "#sale_item_description" ).autocomplete({
-            minLength: 0,
-            source: items,
-            focus: function( event, ui ) {
-                $( "#sale_item_description" ).val( ui.item.label );
-                    return false;
-                },
-                select: function( event, ui ) {
-                    $('#item_id').val(ui.item.pk_id);
-                    $('#stock_no').text(ui.item.stock_number);
-                    $('#sale_item_in_stock').text(ui.item.quantity_balance);
-                    $('#sale_item_on_order').text(ui.item.quantity_on_order);
-                    $('#sale_item_cost').val(ui.item.cost);
-                    $('#sale_item_qty').focus();
-                }
-                })
-                .autocomplete( "instance" )._renderItem = function( ul, item ) {
-                    return $( "<li>" )
-                    .append( "<a>" + item.label + "</a>" )
-                    .appendTo( ul );
-        };
-    });
-
-    $("#sale_item_qty, #price, #disc").change(function(e) {
-
-        total();
-    });
-}
-
 if ( $('#hire_fleet_modal').length > 0 ) {
     
     $('#nsHICB').load(base_url+'index.php/hire_stock/getChargingBandsOptions');
@@ -39,18 +5,148 @@ if ( $('#hire_fleet_modal').length > 0 ) {
     $('#hire_fleet_modal').on('shown.bs.modal', function(e) {
     
         resetHireFleetModal();
+        
+        // Set hire fleet searcher
+        $( "#search_hire_item_field" )
+            .select2({
+                    ajax: {
+                            url: base_url + 'index.php/hire_stock/get_items_like_json',
+                            processResults: function (data) {
+                              return {
+                                results: data
+                              };
+                            }
+                          },
+                    minimumInputLength: 2
+                    
+                })
+                .on("select2:select", function (e) { 
+                    
+                    //resetHireFleetModal();                                       
+                    
+                     $.get( base_url + 'index.php/hire_stock/getitem/', { id: e.params.data.id },
+                    function(result) {
+                        
+                        $( "#hire_item_id" ).val( result.pk_id );
+                        $( "#hireItemType" ).val( result.type );
+                        $( "#hire_item_price" ).val( result.rate );
+                        
+                        if (result.type == "Multiple") {
+                        
+                            $('#hireItemForm #search_hire_item_avbl_qty').val(result.qty);
+                            $('#hireItemForm #hire_item_qty').prop('disabled', false).focus();
+                        
+                        }else {
+                            
+                            $('#hireItemForm #hire_item_qty').prop('disabled', true);
+                            $('#hireItemForm #hire_item_qty').val("1");
+                            $( "#hire_item_price" ).focus();
+                        }
+                        
+                        $('#components_panel').parent().parent().addClass('magictime loading');
+                        componentsDivAnimInterval = setInterval(function(){
+                                                                        $('#components').parent().parent().toggleClass('magictime loading');
+                                                                    }, 1000 );
+                        $.get(base_url+"index.php/hire_stock/getMultipartItemComponentsContractForm/", { itemID:result.pk_id, contractID: $('#contract_id').val(), hireItemType: result.type }, function(html){
+                            $('#components_panel').html(html);
+                              clearInterval(componentsDivAnimInterval);
+                            $('#components_panel').parent().parent().removeClass('magictime loading');
+                        });
+
+
+                       $('#recommended_items_panel').parent().parent().addClass('magictime loading');
+                        accesoriesDivAnimInterval = setInterval(function(){
+                                                                            $('#recommended_items_panel').parent().parent().toggleClass('magictime loading');
+                                                                        },
+                                                               1000 );
+                        $.get(base_url+"index.php/hire_stock/getGroupAccesoriesContractForm/", { groupID: result.family_group_id, contractID: $('#contract_id').val(), hireItemID:result.pk_id, hireItemType: result.type }, function(html) {
+                            $('#recommended_items_panel').html(html);
+                            clearInterval(accesoriesDivAnimInterval);
+                            $('#recommended_items_panel').parent().parent().removeClass('magictime loading');
+                        });    
+                        
+                    },
+                    'json');
+
+                }); 
+        
+        /*$.get( base_url + "index.php/hire_stock/get_items_json", function( data ) {
+
+            suppliers = data;
+
+            $( "#search_hire_item_field" ).autocomplete({
+                minLength: 0,
+                source: suppliers,
+                focus: function( event, ui ) {
+                    $( "#search_hire_item_field" ).val( ui.item.label );
+                        return false;
+                    },
+                    select: function( event, ui ) {
+                        
+                        resetHireFleetModal();               
+                        
+                        $( "#hire_item_id" ).val( ui.item.id );
+                        $( "#search_hire_item_field" ).val( ui.item.label );
+                        $( "#hireItemType" ).val( ui.item.type );
+                        $( "#hire_item_price" ).val( ui.item.rate );
+                        
+                        if (ui.item.type == "Multiple") {
+                            
+                            $('#hireItemForm #search_hire_item_avbl_qty').val(ui.item.qty);
+                            $('#hireItemForm #hire_item_qty').prop('disabled', false).focus();
+                        }else {
+                            
+                            $('#hireItemForm #hire_item_qty').prop('disabled', true);
+                            $('#hireItemForm #hire_item_qty').val("1");
+                            $( "#hire_item_price" ).focus();
+                        }
+                        
+                        
+                        
+
+                        $('#components_panel').parent().parent().addClass('magictime loading');
+                        componentsDivAnimInterval = setInterval(function(){
+                                                                        $('#components').parent().parent().toggleClass('magictime loading');
+                                                                    }, 1000 );
+                        $.get(base_url+"index.php/hire_stock/getMultipartItemComponentsContractForm/", { itemID:ui.item.id, contractID: $('#contract_id').val(), hireItemType: ui.item.type }, function(html){
+                            $('#components_panel').html(html);
+                              clearInterval(componentsDivAnimInterval);
+                            $('#components_panel').parent().parent().removeClass('magictime loading');
+                        });
+
+
+                       $('#recommended_items_panel').parent().parent().addClass('magictime loading');
+                        accesoriesDivAnimInterval = setInterval(function(){
+                                                                            $('#recommended_items_panel').parent().parent().toggleClass('magictime loading');
+                                                                        },
+                                                               1000 );
+                        $.get(base_url+"index.php/hire_stock/getGroupAccesoriesContractForm/", { groupID: ui.item.family_id, contractID: $('#contract_id').val(), hireItemID:ui.item.id, hireItemType: ui.item.type }, function(html) {
+                            $('#recommended_items_panel').html(html);
+                            clearInterval(accesoriesDivAnimInterval);
+                            $('#recommended_items_panel').parent().parent().removeClass('magictime loading');
+                        });
+                        return false;
+                    }
+                    })
+                    .autocomplete( "instance" )._renderItem = function( ul, item ) {
+                        return $( "<li>" )
+                        .append( "<a>" + item.label + "</a>" )
+                        .appendTo( ul );
+            };
+        });*/
+        
     });
     
     $('#hireItemForm').submit( function(e) {
 
-    e.preventDefault();
+        e.preventDefault();
+        
+        $(this).parent().parent().addClass('magictime loading');
+        hireItemFormSendingAnimInterfavl = setInterval(function(){
+                                                        $(this).parent().parent().toggleClass('magictime loading');
+                                                    }, 1000 );
     
-    $(this).parent().parent().addClass('magictime loading');
-    hireItemFormSendingAnimInterfavl = setInterval(function(){
-                                                    $(this).parent().parent().toggleClass('magictime loading');
-                                                }, 1000 );
-    
-    $.ajax( base_url+"index.php/contracts/saveHireItem", {
+        $.ajax( base_url+"index.php/contracts/saveHireItem", {
             type: "post",
             data: $(this).serialize(),
             always: function() {
@@ -131,94 +227,29 @@ if ( $('#hire_fleet_modal').length > 0 ) {
         e.preventDefault();
 
          $.ajax( base_url+"index.php/contracts/saveHireItemAccesories", {
-                type: "post",
-                data: $(this).serializeArray(),
-                success: function(response) {
-                             if (response == "ok") {
-                                   
-                                   location.reload();
-                            }else {
+            type: "post",
+            data: $(this).serializeArray(),
+            success: function(response) {
+                         if ( response == "ok" ) {
+                               
+                               location.reload();
+                               
+                        }else {
 
-                                alert(response);
-                            }
-                        },
-                statusCode: {
-                    400: function(response) {
-                        
-                        alert(response.responseText);
-                    }
-                },
-                dataType: "text"}
+                            alert(response);
+                        }
+                    },
+            statusCode: {
+                400: function(response) {
+                    
+                    alert(response.responseText);
+                }
+            },
+            dataType: "text"}
 
         );
     });
 }
-
-
-$.get( base_url + "index.php/hire_stock/get_items_json", function( data ) {
-
-	suppliers = data;
-
-	$( "#search_hire_item_field" ).autocomplete({
-		minLength: 0,
-		source: suppliers,
-		focus: function( event, ui ) {
-			$( "#search_hire_item_field" ).val( ui.item.label );
-				return false;
-			},
-			select: function( event, ui ) {
-                
-                resetHireFleetModal();               
-                
-                $( "#hire_item_id" ).val( ui.item.id );
-				$( "#search_hire_item_field" ).val( ui.item.label );
-				$( "#hireItemType" ).val( ui.item.type );
-                $( "#hire_item_price" ).val( ui.item.rate );
-                
-                if (ui.item.type == "Multiple") {
-                    
-                    $('#hireItemForm #search_hire_item_avbl_qty').val(ui.item.qty);
-                    $('#hireItemForm #hire_item_qty').prop('disabled', false).focus();
-                }else {
-                    
-                    $('#hireItemForm #hire_item_qty').prop('disabled', true);
-                    $('#hireItemForm #hire_item_qty').val("1");
-                    $( "#hire_item_price" ).focus();
-                }
-                
-				
-				
-
-                $('#components_panel').parent().parent().addClass('magictime loading');
-                componentsDivAnimInterval = setInterval(function(){
-                                                                $('#components').parent().parent().toggleClass('magictime loading');
-                                                            }, 1000 );
-                $.get(base_url+"index.php/hire_stock/getMultipartItemComponentsContractForm/", { itemID:ui.item.id, contractID: $('#contract_id').val(), hireItemType: ui.item.type }, function(html){
-                    $('#components_panel').html(html);
-                      clearInterval(componentsDivAnimInterval);
-                    $('#components_panel').parent().parent().removeClass('magictime loading');
-                });
-
-
-               $('#recommended_items_panel').parent().parent().addClass('magictime loading');
-                accesoriesDivAnimInterval = setInterval(function(){
-                                                                    $('#recommended_items_panel').parent().parent().toggleClass('magictime loading');
-                                                                },
-                                                       1000 );
-				$.get(base_url+"index.php/hire_stock/getGroupAccesoriesContractForm/", { groupID: ui.item.family_id, contractID: $('#contract_id').val(), hireItemID:ui.item.id, hireItemType: ui.item.type }, function(html) {
-                    $('#recommended_items_panel').html(html);
-                    clearInterval(accesoriesDivAnimInterval);
-                    $('#recommended_items_panel').parent().parent().removeClass('magictime loading');
-                });
-                return false;
-			}
-			})
-			.autocomplete( "instance" )._renderItem = function( ul, item ) {
-				return $( "<li>" )
-				.append( "<a>" + item.label + "</a>" )
-				.appendTo( ul );
-	};
-});
 
 $('#allocatedOnForm').submit( function(e) {
     
@@ -252,45 +283,76 @@ $('#cross_hired_form').submit( function(e) {
 
 
 $('#sales_items_form').submit( function(e) {
+    
     e.preventDefault();
+    
+    $.post(base_url + 'index.php/contracts/savesaleitem',
+        $(this).serialize(),
+        function(r) {
+            if (r == "ok") {
+                location.reload(true);
+            }else {
 
-    $.ajax( base_url+"index.php/contracts/saveSaleItem", {
-
-        type: "post",
-        data: $(this).serialize(),
-        success: function(r) {
-                    if (r == "ok") {
-                        location.reload(true);
-                    }else {
-
-                        alert(r);
-                    }
-        },
-        statusCode: {
-            400: function(r) {
-                alert(r.responseText);
+                alert(r);
             }
         },
-        dataType: "text"
-        }
-    );
+        'text'
+    )
+    .fail(function() {
+        
+        alert('Technical error!');
+    });
+    
 });
 
 
 $('#sales_stock_modal').on('shown.bs.modal', function(e) {
+    
+    $('#sale_item_description')
+        .select2({
+            ajax: {
+                    url: base_url + 'index.php/sales_stock/getitemsnameandidjson',
+                    processResults: function (data) {
+                      return {
+                        results: data
+                      };
+                    }
+                  },
+            minimumInputLength: 2
+            
+        })
+        .on("select2:select", function (e) { 
+            
+            $.get( base_url + 'index.php/sales_stock/getitem/'+ e.params.data.id, {},
+            function(result) {
+                
+                $('#item_id').val(result.pk_id);
+                $('#stock_no').text( result.stock_number);
+                $('#sale_item_in_stock').text(result.quantity_balance);
+                $('#sale_item_on_order').text(result.quantity_on_order);
+                $('#sale_item_cost').val(result.cost);
+                $('#sale_item_desc_text').val(result.label);
+                $('#sale_item_qty').focus();
+                
+            },
+            'json');
+        
+        }); 
+    
+    $("#sale_item_qty, #price, #disc").change(function(e) {
 
-    $("#item_id").val("");
+        total();
+    });
+    
+    /* $("#item_id").val("");
     $("#stock_no").text("");
-    $("#sale_item_description").val("");
     $("#sale_item_in_stock").text("");
     $("#sale_item_on_order").text("");
     $("#sale_item_qty").val("");
     $("#disc").val("");
     $("#price").val("");
-    $("#sale_item_total").text("");
-    
-    
-    $("#sale_item_description").focus();
+    $("#sale_item_total").text(""); */
+       
 
 });
 
@@ -387,7 +449,8 @@ function deleteHireItem( caller ) {
 
         $.ajax(base_url + "index.php/contracts/removeHireItem", {
         type: "post",
-        data: { itemRowID:  $('#itemRowID',      $(caller).parent().parent()).val(),
+        data: { 
+                itemRowID:  $('#itemRowID',      $(caller).parent().parent()).val(),
                 contractID: $('#contract_id').val()
               },
         dataType: "text",
@@ -625,8 +688,8 @@ function totalRateChargingBand( ele, rate ) {
 
 function getPrice(caller) {
 
-    var itemID = $( '#item_id', $(caller).parent().parent()).val();
-    var itemType = $( '#item_type', $(caller).parent().parent()).val();
+    var itemID =    $( '#sale_item_description', $(caller).parent().parent()).val();
+    var itemType =  1;
     var customerID = $( '#customerID').val();
     var qty = $(caller).val();
 
@@ -676,7 +739,6 @@ function resetHireFleetModal() {
         clearInterval(phInterval);
     }
     
-    $('#search_hire_item_field').focus();
 }
 
 function submitCollect() {
@@ -744,15 +806,16 @@ function total() {
     var qty     = $('#sale_item_qty').val().replace('', '0');    
     
     if ( !isNaN(price) && !isNaN(qty) && !isNaN(discount) ) {
-
+        
         discount = parseFloat(discount);
         price   = parseFloat(price);
         qty     = parseInt(qty);
                    
         price = price - ((price*discount)/100);
-        $('#sale_item_total').text( parseFloat(price*qty).toFixed(2).toLocaleString() ) ;
+        $('#sale_item_total').html( parseFloat(price*qty).toFixed(2).toLocaleString() ) ;
+        
     }else {
         
-        $('#sale_item_total').text( parseFloat(0).toFixed(2).toLocaleString() ) ;
+        $('#sale_item_total').html( parseFloat(0).toFixed(2).toLocaleString() ) ;
     }
 }

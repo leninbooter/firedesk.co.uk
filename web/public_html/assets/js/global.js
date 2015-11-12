@@ -47,7 +47,10 @@ function formatInputs() {
     });
 }
 
-function ajaxForm ( url, data, callBackFn, callBackFnAlways = function(){} ) {
+function ajaxForm ( url, data, callBackFn, callBackFnAlways) {
+    
+    callBackFn       = typeof callBackFn == 'undefined' ? function() {} : callBackFn;
+    callBackFnAlways = typeof callBackFnAlways == 'undefined' ? function() {} : callBackFnAlways;
     
      $.ajax( url, 
         {

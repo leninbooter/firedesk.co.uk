@@ -71,6 +71,36 @@ class Accounting extends MY_Controller
         }
     }
     
+    public function cashBook() {
+        
+        $accCode     = isset($this->queryStrArr['accCode']) ? $this->queryStrArr['accCode'] : false;
+        
+        if ( !$accCode ) {
+            
+            $this->load->model('accounting_m');        
+            
+            $data = array(
+                        'banksAcc'      => $this->accounting_m->getBankAccounts()
+                    );
+            
+        }else {
+            
+            $details = $this->accounting_m->getBankAccountDtls( $accCode );
+            $data = array(
+                        'bankAccDtls'    => $details,
+                        'accMovmnts'    => $this->accounting_m->getAccMvmnts( $details->pk_id )
+                    );
+            
+        }
+        
+        $this->load->view('header_nav');
+		$this->load->view('acc_cash_book', $data);
+		$this->load->view('footer_common');
+		$this->output->append_output("<script src=\"".base_url('assets/js/.js')."\"></script>");
+		$this->load->view('footer_copyright');
+		$this->load->view('footer');
+    }
+    
     public function defaultAccounts() {
         
         $data = array(
@@ -155,8 +185,7 @@ class Accounting extends MY_Controller
             
         }else {
             
-            if ( v::int()->validate($accountCode)
-                 && $confirmated == 'yes') {
+            if ( $confirmated == 'yes') {
                      
                     if ( $this->accounting_m->accountHasChildren( $accountCode ) ) {
                         

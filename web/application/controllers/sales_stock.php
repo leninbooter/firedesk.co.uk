@@ -13,14 +13,30 @@ class Sales_stock extends MY_Controller
      
         $this->load->model('stock_m');
         
-        $data = array();
-        /*foreach( $this->stock_m->selItemsNameAndID() as $item)
-        {
-            $i = array("pk_id"=> $item->pk_id, "label"=>$item->label);
-        }*/
+        $term   = $this->queryStrArr['q'];
+        
+        $data = array();      
+        
+        foreach( $this->stock_m->selItemsNameAndID($term) as $k => $v) {
+            
+            $ele = new stdClass();
+            $ele->id    = $v->pk_id;
+            $ele->text  = $v->label;            
+            
+            $data[] = $ele;            
+        }
         
         header('Content-type: application/json');
-        echo json_encode($this->stock_m->selItemsNameAndID());
+        echo json_encode($data);
+    }
+    
+    public function getitem($ID) {
+        
+        $this->load->model('stock_m');        
+        
+        header('Content-type: application/json');
+        echo json_encode($this->stock_m->selItem($ID));
+        
     }
     
     /**

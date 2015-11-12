@@ -1,0 +1,549 @@
+
+NOMINAL SCHEME Standard                                                                                           Page 1
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Uncatagorised       Unlinked                       1200     LLOYDS A/C                    
+                                                   1210     Royal Bank Finance            
+                                                   99999999 Non posting account           
+                                                   2300R    LOAN RAVENSTHORPE             
+                                                   2310R    HP RAVENSTHORPE               
+                                                   7402R    TRAVEL RAVENSTHORPE           
+================================================================================================
+Capital & Reserves  Share Capital                  3000     SHARE CAPITAL                 
+                                                   3001     PREFERENCE SHARES             
+                    ----------------------------------------------------------------------------
+                    Revaluation Reserve            3100     REVALUATION RESERVE           
+                    ----------------------------------------------------------------------------
+                    Reserves                       3101     UNDISTRIBUTED RESERVES        
+                    ----------------------------------------------------------------------------
+                    P & L Account                  3200     Profit & Loss Account         
+                                                   3200L    P & L LEEDS RD                
+                                                   3200E    P & L ELLAND                  
+                                                   3200H    P & L HONLEY                  
+                                                   3200R    P & L RAVENSTHORPE            
+================================================================================================
+Current Assets      Stock                          1001     Stock                         
+                                                   1001E    STOCK ELLAND                  
+                                                   1001H    STOCK HONLEY                  
+                                                   1001L    STOCK LEEDS RD                
+                                                   1001R    STOCK RAVENSTHORPE            
+                    ----------------------------------------------------------------------------
+                    Trade Debtors                  1099     BAD DEBT PROVISION            
+                                                   1100     Debtors Control Account       
+                                                   1104     CASH DEBTORS                  
+                    ----------------------------------------------------------------------------
+                    Sundry Debtors & Prepayments   1102     RENT DEPOSIT AC               
+                                                   1103     Prepayments                   
+                    ----------------------------------------------------------------------------
+                    Cash In Hand                   1230     Petty Cash                    
+                                                   1240     FLOATS                        
+                    ----------------------------------------------------------------------------
+                    Suspense                       9998     SUSPENSE ACCOUNT              
+                                                   9999     Mispostings Account           
+                    ----------------------------------------------------------------------------
+                    ACT Recoverable                2330     ACT RECOVERABLE               
+                    ----------------------------------------------------------------------------
+                    Rent Deposit                   4904     RENT DEPOSIT                  
+                    ----------------------------------------------------------------------------
+                    RESERVE ACCOUNT                1204     BANK ACCOUNT (RESERVE)        
+NOMINAL SCHEME Standard                                                                                           Page 2
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Current Liabilities Unlinked                       1220     PAYPAL                        
+                                                   2300E    LOAN ELLAND                   
+                                                   2300H    LOAN HONLEY                   
+                                                   2300L    LOAN LEEDS RD                 
+                                                   2310E    HP ELLAND                     
+                                                   2310H    HP HONLEY                     
+                                                   2310L    HP LEEDS RD                   
+                                                   7007E    PENSION ELLAND                
+                                                   7007H    PENSION HONLEY                
+                                                   7007L    PENSION LEEDS RD              
+                                                   7007R    PENSION RAVENSTHORPE          
+                    ----------------------------------------------------------------------------
+                    Trade Creditors                2100     Creditors Control Account     
+                    ----------------------------------------------------------------------------
+                    Sundry Creditors & Accruals    2101     SUNDRY CREDITORS              
+                                                   2102     OTHER CREDITORS               
+                                                   2109     ACCRUALS                      
+                    ----------------------------------------------------------------------------
+                    Bank                           1201     NATWEST A/C                   
+                                                   1236     BANK LOAN INTEREST            
+                    ----------------------------------------------------------------------------
+                    American Express               1235     AMERICAN EXPRESS              
+                    ----------------------------------------------------------------------------
+                    Loan Accounts                  2300     Loans                         
+                    ----------------------------------------------------------------------------
+                    V.A.T.                         2199     VAT on Puchases               
+                                                   2200     Sales VAT Control Account     
+                                                   2201     Purchases VAT Control Acc     
+                                                   2202     VAT Liability                 
+                                                   2203     VAT SUSPENSE                  
+                    ----------------------------------------------------------------------------
+                    PAYE & National Insurance      2210     P.A.Y.E.                      
+                                                   2211     National Insurance            
+                                                   2220     Net Wages                     
+                                                   2210L    PAYE LEEDS RD                 
+                                                   2210E    PAYE ELLAND                   
+                                                   2210H    PAYE HONLEY                   
+                                                   2211L    NATIONAL INSURANCE LEEDS RD   
+                                                   2211E    NATIONAL INSURANCE ELLAND     
+                                                   2211H    NATIONAL INSURANCE HONLEY     
+                                                   2210R    PAYE RAVENSTHORPE             
+                                                   2211R    NATIONAL INS RAVENSTHORPE     
+                    ----------------------------------------------------------------------------
+                    Directors Loan (2)             1205     DIRECTOR LOAN KS              
+NOMINAL SCHEME Standard                                                                                           Page 3
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Current Liabilities Directors Loan (2)             1206     DIRECTORS LOAN AJ             
+                    ----------------------------------------------------------------------------
+                    Hire Purchase                  2310     Hire Purchase                 
+                    ----------------------------------------------------------------------------
+                    Corporation Tax                2320     CORPORATION TAX               
+                                                   2315     DEFERRED TAX                  
+                    ----------------------------------------------------------------------------
+                    PENSION                        7005     PENSION FUND                  
+                                                   7007     Pension Fund Payments         
+================================================================================================
+Direct Expenses     Unlinked                       8207     RAPID TOOLS DIRECT            
+================================================================================================
+Fixed Assets        Freehold Property              0001     FREEHOLD COST                 
+                                                   0010     FREEHOLD PROPERTY             
+                                                   0031     PREMISES - Storage Yard       
+                                                   0032     DEPRECIATION - Storage Yard   
+                    ----------------------------------------------------------------------------
+                    Workshop Equipment             0100     WORKSHOP EQUIPMENT            
+                                                   0101     WORKSHOP EQ DEPRECIATION      
+                                                   0100E    WORKSHOP EQUIP ELLAND         
+                                                   0100L    WORKSHOP EQUIP LEEDS RD       
+                                                   0100H    WORKSHOP EQUIP HONLEY         
+                                                   0100R    WORKSHOP EQUIP RAVENSTHORPE   
+                    ----------------------------------------------------------------------------
+                    Hire Fleet                     0020     Plant & Machinery             
+                                                   0200     HIRE FLEET COST               
+                                                   0201     H/F DEPRECIATION              
+                                                   0200L    HIRE FLEET COST LEEDS RD      
+                                                   0200E    HIRE FLEET COST ELLAND        
+                                                   0200H    HIRE FLEET COST HONLEY        
+                                                   0020L    PLANT LEEDS RD                
+                                                   0020H    PLANT HONLEY                  
+                                                   0020E    PLANT ELLAND                  
+                                                   0020R    PLANT RAVENSTHORPE            
+                                                   0200R    HIRE FLEET COST RAVENSTHORPE  
+                    ----------------------------------------------------------------------------
+                    Fixtures & Fittings            0102     PRINTING MACHINERY            
+                                                   0103     PRINTING DEPRECIATION         
+                                                   0300     F/F COST                      
+                                                   0301     F/F DEPRECIATION              
+                                                   0030     Office Equipment              
+                                                   0040     Furniture & Fixtures          
+                                                   0030L    OFFICE EQUIP LEEDS RD         
+                                                   0030E    OFFICE EQUIP ELLAND           
+NOMINAL SCHEME Standard                                                                                           Page 4
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Fixed Assets        Fixtures & Fittings            0030H    OFFICE EQUIP HONLEY           
+                                                   0040L    FURN & FIX LEEDS RD           
+                                                   0040E    FURN & FIX ELLAND             
+                                                   0040H    FURN & FIX HONLEY             
+                                                   0030R    OFFICE EQUIP RAVENSTHORPE     
+                                                   0040R    FURN & FIX RAVENSTHORPE       
+                    ----------------------------------------------------------------------------
+                    Vehicles                       0050     Motor Vehicles                
+                                                   0402     VEHICLE COST                  
+                                                   0403     VEHICLE DEPRECIATION          
+                                                   0410     SALE OF VEHICLES              
+                                                   0050E    MOTOR VEHICLES ELLAND         
+                                                   0050H    MOTOR VEHICLES HONLEY         
+                                                   0050L    MOTOR VEHICLES LEEDS RD       
+                                                   0050R    MOTOR VEHICLES RAVENSTHORPE   
+                    ----------------------------------------------------------------------------
+                    Computer Equipment             0500     COMPUTER EQUIPMENT            
+                                                   0501     DEPRECATION COMP.EQUIP.       
+                                                   0500E    COMPUTER EQUIP ELLAND         
+                                                   0500H    COMPUTER EQUIP HONLEY         
+                                                   0500L    COMPUTER EQUIP LEEDS RD       
+                                                   0500R    COMPUTER EQUIP RAVENSTHORPE   
+================================================================================================
+Overheads           Salaries & Wages               7002     DIRECTORS REMUNERATION        
+                                                   7003     STAFF SALARIES                
+                                                   7004     Wages - Regular               
+                                                   7006     EMPLOYERS N.I.                
+                                                   7004L    WAGES LEEDS RD                
+                                                   7004E    WAGES ELLAND                  
+                                                   7004H    WAGES HONLEY                  
+                                                   7004R    WAGES RAVENSTHORPE            
+                    ----------------------------------------------------------------------------
+                    Rent & Rates                   7100     Rent                          
+                                                   7103     General Rates                 
+                                                   7100E    RENT ELLAND                   
+                                                   7100H    RENT HONLEY                   
+                                                   7100L    RENT LEEDS RD                 
+                                                   7103E    GENERAL RATES ELLAND          
+                                                   7103H    GENERAL RATES HONLEY          
+                                                   7103L    GENERAL RATES LEEDS RD        
+                                                   7100R    RENT RAVENSTHORPE             
+                    ----------------------------------------------------------------------------
+                    Heat, Light & Power            7102     Water Rates                   
+                                                   7200     Electricity                   
+NOMINAL SCHEME Standard                                                                                           Page 5
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Overheads           Heat, Light & Power            7201     GAS                           
+                                                   7202     Oil                           
+                                                   7102E    WATER RATES ELLAND            
+                                                   7102H    WATER RATES HONLEY            
+                                                   7102L    WATER RATES LEEDS RD          
+                                                   7200E    ELECTRIC ELLAND               
+                                                   7200H    ELECTRIC HONLEY               
+                                                   7200L    ELECTRIC LEEDS R              
+                                                   7102R    WATER RATES RAVENSTHORPE      
+                                                   7103R    GENERAL RATES RAVENSTHORPE    
+                                                   7200R    ELECTRIC RAVENSTHORPE         
+                    ----------------------------------------------------------------------------
+                    Motor Expenses                 7300     Fuel & Oil Motor              
+                                                   7301     Repairs & Service Motor       
+                                                   7302     Licences                      
+                                                   7303     Vehicle Insurance             
+                                                   7304     VAN EXPENSES                  
+                                                   7305     CAR EXPENSES                  
+                                                   7401     CAR HIRE                      
+                                                   7300L    FUEL ETC LEEDS RD             
+                                                   7300H    FUEL ETC HONLEY               
+                                                   7300E    FUEL ETC ELLAND               
+                                                   7301L    MOTOR REPAIRS ETC LEEDS RD    
+                                                   7301H    MOTOR REPAIRS ETC HONLEY      
+                                                   7301E    MOTOR REPAIRS ETC ELLAND      
+                                                   7303L    MOTOR INS & TAX LEEDS RD      
+                                                   7303H    MOTOR INS & TAX HONLEY        
+                                                   7303E    MOTOR INS & TAX ELLAND        
+                                                   7300R    FUEL ETC RAVENSTHORPE         
+                                                   7301R    MOTOR REPAIRS ETC RAVENSTHORPE
+                                                   7303R    MOTOR INS & TAX RAVENSTHORPE  
+                                                   7401E    CAR HIRE ELLAND               
+                                                   7401H    CAR HIRE HONLEY               
+                                                   7401L    CAR HIRE LEEDS RD             
+                                                   7401R    CAR HIRE RAVENSTHORPE         
+                                                   7402E    TRAVEL ELLAND                 
+                                                   7402H    TRAVEL HONLEY                 
+                                                   7402L    TRAVEL LEEDS RD               
+                    ----------------------------------------------------------------------------
+                    Travelling & Entertainment     7402     TRAVELLING (Incl. Hotels)     
+                                                   7403     U.K. Entertainment            
+                                                   7406     SUBSISTENCE                   
+                    ----------------------------------------------------------------------------
+                    Printing & Stationery          7499     STATIONERY                    
+NOMINAL SCHEME Standard                                                                                           Page 6
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Overheads           Printing & Stationery          7500     Printing                      
+                                                   7504     Office Stationery             
+                                                   7500L    PRINTING LEEDS RD             
+                                                   7500E    PRINTING ELLAND               
+                                                   7500H    PRINTING HONLEY               
+                                                   7504L    OFFICE STATIONERY LEEDS RD    
+                                                   7504E    OFFICE STATIONERY ELLAND      
+                                                   7504H    OFFICE STATIONERY HONLEY      
+                                                   7500R    PRINTING RAVENSTHORPE         
+                                                   7504R    OFFIC STATIONERY RAVENSTHORPE 
+                    ----------------------------------------------------------------------------
+                    Telephone                      7502     Telephone                     
+                                                   7503     FACSIMILE                     
+                                                   7502L    PHONES LEEDS RD               
+                                                   7502H    PHONES HONLEY                 
+                                                   7502E    PHONE ELLAND                  
+                                                   7502M    MOBILES TO DISTRIBUTE         
+                                                   7502R    PHONES RAVENSTHORPE           
+                    ----------------------------------------------------------------------------
+                    Home Office Expenses           7407     HOME OFFICE EXPENSES          
+                    ----------------------------------------------------------------------------
+                    Car Mileage Allowance          7306     CAR MILEAGE ALLOWANCE         
+                    ----------------------------------------------------------------------------
+                    Computer Accessories/Maint.    7506     COMPUTER ACCESSORIES          
+                                                   7507     COMPUTER/OFFICE EQ. MTCE.     
+                                                   7701     OFFICE MACHINE MAINT.         
+                                                   7507L    COMP/OFFICE EQUIP MAINT.LDSRD 
+                                                   7507E    COMP/OFFICE EQUIP MAINT ELLAND
+                                                   7507H    COMP/OFFICE EQUIP MAINT HONLEY
+                                                   7507R    COMP/OFF EQP.MAINT.RAVENS     
+                    ----------------------------------------------------------------------------
+                    Legal Fees                     7600     Legal Fees                    
+                                                   7603     Professional Fees             
+                                                   7600L    LEGAL FEES LEEDS RD           
+                                                   7600H    LEGAL FEES HONLEY             
+                                                   7600E    LEGAL FEES ELLAND             
+                                                   7603L    PROF FEES LEEDS RD            
+                                                   7603H    PROF FEES HONLEY              
+                                                   7603E    PROF FEES ELLAND              
+                                                   7600R    LEGAL FEES RAVENSTHORPE       
+                                                   7603R    PROF FEES RAVENSTHORPE        
+                    ----------------------------------------------------------------------------
+                    Advertising & Promotion        6200     Sales Promotions              
+                                                   6201     Advertising                   
+NOMINAL SCHEME Standard                                                                                           Page 7
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Overheads           Advertising & Promotion        6201L    ADVERTISING LEEDS RD          
+                                                   6201H    ADVERTISING HONLEY            
+                                                   6201E    ADVERTISING ELLAND            
+                                                   6201R    ADVERTISING RAVENSTHORPE      
+                    ----------------------------------------------------------------------------
+                    Premises Expenses              7801     Cleaning                      
+                                                   7803     Premises Expenses (misc)      
+                                                   7801E    CLEANING ELLAND               
+                                                   7801H    CLEANING HONLEY               
+                                                   7801L    CLEANING LEEDS RD             
+                                                   7803E    PREMISES EXP ELLAND           
+                                                   7803H    PREMISES EXP HONLEY           
+                                                   7803L    PREMISES EXP LEEDS RD         
+                                                   7801R    CLEANING RAVENSTHORPE         
+                                                   7803R    PREMISES EXP RAVENSTHORPE     
+                    ----------------------------------------------------------------------------
+                    Donations & Subscriptions      8200     DONATIONS                     
+                                                   8201     Subscriptions                 
+                                                   8200E    DONATIONS ELLAND              
+                                                   8200H    DONATIONS HONLEY              
+                                                   8200L    DONATIONS LEEDS RD            
+                                                   8200R    DONATIONS RAVENSTHORPE        
+                                                   8201E    SUBS ELLAND                   
+                                                   8201H    SUBS HONLEY                   
+                                                   8201L    SUBS LEEDS RD                 
+                                                   8201R    SUBS RAVENSTHORPE             
+                    ----------------------------------------------------------------------------
+                    Premises/Fleet Insurance       8204     FLEET INSURANCE               
+                                                   8206     INSURANCE (Additional)        
+                                                   7104     Premises Insurance            
+                                                   7104L    PREMISES INSURANCE LEEDS RD   
+                                                   7104H    PREMISES INSURANCE HONLEY     
+                                                   7104E    PREMISES INSURANCE ELLAND     
+                                                   8206E    INSURANCE (ADD) ELLAND        
+                                                   8206H    INSURANCE (ADD) HONLEY        
+                                                   8206L    INSURANCE (ADD) LEEDS RD      
+                                                   8204E    FLEET INSURANCE ELLAND        
+                                                   8204H    FLEET INSURANCE HONLEY        
+                                                   8204L    FLEET INSURANCE LEEDS RD      
+                                                   7104R    PREMISES INSURANCE RAVENSTHORP
+                                                   8204R    FLEET INS RAVENSTHORPE        
+                                                   8206R    INSURANCE (ADD) RAVENSTHORPE  
+                    ----------------------------------------------------------------------------
+                    Training                       8203     TRAINING COSTS                
+NOMINAL SCHEME Standard                                                                                           Page 8
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Overheads           Training                       8203E    TRAINING ELLAND               
+                                                   8203H    TRAINING HONLEY               
+                                                   8203L    TRAINING LEEDS RD             
+                                                   8203R    TRAINING RAVENSTHORPE         
+                    ----------------------------------------------------------------------------
+                    HP Interest                    7904     H.P. INTEREST                 
+                    ----------------------------------------------------------------------------
+                    Medical Schemes                7009     MEDICAL SCHEME SUBS           
+                    ----------------------------------------------------------------------------
+                    Postage                        7501     Postage And Carriage          
+                                                   7501L    POSTAGE LEEDS RD              
+                                                   7501E    POSTAGE ELLAND                
+                                                   7501H    POSTAGE HONLEY                
+                                                   7501R    POSTAGE RAVENSTHORPE          
+                    ----------------------------------------------------------------------------
+                    Bank Charges                   7900     Bank Interest Paid            
+                                                   7901     Bank Charges                  
+                                                   7902     Royal Bank Finance Chargs     
+                                                   7901L    BANK CHARGES LEEDS RD         
+                                                   7901E    BANK CHARGES ELLAND           
+                                                   7901H    BANK CHARGES HONLEY           
+                                                   7901R    BANK CHARGES RAVENSTHORPE     
+                                                   7900E    BANK INTEREST ELLAND          
+                                                   7900R    BANK INTEREST RAVENSTHORPE    
+                                                   7900H    BANK INTEREST HONLEY          
+                                                   7900L    BANK INTEREST LEEDS RD        
+                    ----------------------------------------------------------------------------
+                    Credit Card Charges            7905     CREDIT CHARGES                
+                                                   7906     AMERICAN EXPRESS DISCOUNT     
+                                                   7905E    CREDIT CHARGE ELLAND          
+                                                   7905H    CREDIT CHARGE HONLEY          
+                                                   7905L    CREDIT CHARGE LEEDS RD        
+                                                   7905R    CREDIT CHARGE RAVENSTHORPE    
+                                                   7906E    AMEX DISC ELLAND              
+                                                   7906H    AMEX DISC HONLEY              
+                                                   7906L    AMEX DISC LEEDS RD            
+                                                   7906R    AMEX DISC RAVENSTHORPE        
+                    ----------------------------------------------------------------------------
+                    Miscellaneous Expenses         6900     Miscellaneous Expenses        
+                                                   6900L    MISC LEEDS ROAD               
+                                                   6900E    MISC ELLAND                   
+                                                   6900H    MISC HONLEY                   
+                                                   6900R    MISC EXPENSES RAVENSTHORPE    
+                                                   8205R    REFRESHMENTS RAVENSTHORPE     
+NOMINAL SCHEME Standard                                                                                           Page 9
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Overheads           Bad Debt Write Off             8100     Bad Debt Write Off            
+                    ----------------------------------------------------------------------------
+                    Depreciation                   8000     COMPUTER DEPRECIATION         
+                                                   8001     HIRE FLEET DEPRECIATION       
+                                                   8002     FURNITURE/FIX/FITTINGS DP     
+                                                   8003     VEHICLE DEPRECIATION          
+                                                   8004     OFFICE EQUIPMENT DEPR.        
+                                                   8005     DEPRECIATION - LEASES         
+                    ----------------------------------------------------------------------------
+                    Audit/Accountancy              7601     Audit & Accountancy Fees      
+                                                   7601L    ACCOUNTANCY FEES LEEDS RD     
+                                                   7601H    ACCOUNTANCY FEES HONLEY       
+                                                   7601E    ACCOUNTANCY FEES ELLAND       
+                                                   7601R    ACCOUNTANCY FEES RAVENSTHORPE 
+                    ----------------------------------------------------------------------------
+                    Refreshments                   8205     Refreshments                  
+                                                   8205L    REFRESHMENTS LEEDS RD         
+                                                   8205E    REFRESHMENTS ELLAND           
+                                                   8205H    REFRESHMENTS HONLEY           
+================================================================================================
+Purchases           Unlinked                       5004     SUNDRY                        
+                                                   5200     OPENING STOCK                 
+                                                   5201     CLOSING STOCK                 
+                                                   5200E    OPENING STOCK ELLAND          
+                                                   5200H    OPENING STOCK HONLEY          
+                                                   5200L    OPENING STOCK LEEDS RD        
+                                                   5200R    OPENING STOCK RAVENSTHORPE    
+                                                   5201E    CLOSING STOCK ELLAND          
+                                                   5201H    CLOSING STOCK HONLEY          
+                                                   5201L    CLOSING STOCK LEEDS RD        
+                                                   5201R    CLOSING STOCK RAVENSTHORPE    
+                    ----------------------------------------------------------------------------
+                    PURCHASES (RESALE)             5000     Materials Purchases           
+                                                   5002     Miscellaneous Purchases       
+                                                   5009     DISCOUNTS TAKEN               
+                                                   5000E    MATERIALS PURCHASE ELLAND     
+                                                   5000H    MATERIALS PURCHASE HONLEY     
+                                                   5000L    MATERIALS PURCHASE LEEDS RD   
+                                                   5000R    MATERIALS PURCHASE RAVENSTHPE 
+                                                   5009E    DISCOUNTS TAKEN ELLAND        
+                                                   5009H    DISCOUNTS TAKEN HONLEY        
+                                                   5009L    DISCOUNTS TAKEN LEEDS RD      
+                                                   5009R    DISCOUNTS TAKEN RAVENSTHORPE  
+                    ----------------------------------------------------------------------------
+                    SCAFFOLD HIRE                  7702     Scaffold Hire                 
+NOMINAL SCHEME Standard                                                                                          Page 10
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Purchases           SCAFFOLD HIRE                  7702E    SCAFFOLD HIRE ELLAND          
+                                                   7702H    SCAFFOLD HIRE HONLEY          
+                                                   7702L    SCAFFOLD HIRE LEEDS RD        
+                                                   7702R    SCAFFOLD HIRE RAVENSTHORPE    
+                    ----------------------------------------------------------------------------
+                    Equipment Hire                 7700     Equipment Hire                
+                                                   7700E    EQUIP HIRE ELLAND             
+                                                   7700H    EQUIP HIRE HONLEY             
+                                                   7700L    EQUIP HIRE LEEDS RD           
+                                                   7700R    EQUIP HIRE RAVENSTHORPE       
+                    ----------------------------------------------------------------------------
+                    Spares/Fleet repairs           5003     CUSTOMER REPAIRS              
+                                                   7800     Repairs And Renewals          
+                                                   7800L    FLEET REPAIRS ETC LEEDS RD    
+                                                   7800H    FLEET REPAIRS ETC HONLEY      
+                                                   7800E    FLEET REPAIRS ETC ELLAND      
+                                                   7800R    FLEET REPAIRS ETC RAVENSTHORPE
+                    ----------------------------------------------------------------------------
+                    CARRIAGE OUT                   5100     CARRIAGE OUT                  
+                                                   5102     TRANSPORT INSURANCE           
+                                                   5100E    CARRIAGE OUT ELLAND           
+                                                   5100H    CARRIAGE OUT HONLEY           
+                                                   5100L    CARRIAGE OUT LEEDS RD         
+                                                   5100R    CARRIAGE OUT RAVENSTHORPE     
+                    ----------------------------------------------------------------------------
+                    MACHINES ON LEASE              5001     MACHINES ON LEASE             
+                                                   5001L    MACHINES ON LEASE LDS RD      
+                                                   5001H    MACHINES ON LEASE HONLEY      
+                                                   5001E    MACHINES ON LEASE ELLAND      
+================================================================================================
+Sales               Sales                          4000     SALES                         
+                                                   4000E    SALES ELLAND                  
+                                                   4000H    SALES HONLEY                  
+                                                   4000L    SALES LEEDS RD                
+                                                   4000R    SALES RAVENSTHORPE            
+                    ----------------------------------------------------------------------------
+                    Hire                           4001     HIRE                          
+                                                   4001E    HIRE ELLAND                   
+                                                   4001H    HIRE HONLEY                   
+                                                   4001L    HIRE LEEDS RD                 
+                                                   4001R    HIRE RAVENSTHORPE             
+                    ----------------------------------------------------------------------------
+                    Rehire                         4002     RE-HIRE                       
+                                                   4002R    RE-HIRE RAVENSTHORPE          
+NOMINAL SCHEME Standard                                                                                          Page 11
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Sales               Rehire                         4002E    RE-HIRE ELLAND                
+                                                   4002H    RE-HIRE HONLEY                
+                                                   4002L    RE-HIRE LEEDS RD              
+                    ----------------------------------------------------------------------------
+                    Transport                      4005     TRANSPORT                     
+                                                   4005E    TRANSPORT ELLAND              
+                                                   4005H    TRANSPORT HONLEY              
+                                                   4005L    TRANSPORT LEEDS RD            
+                                                   4005R    TRANSPORT RAVENSTHORPE        
+                    ----------------------------------------------------------------------------
+                    Damage Waiver                  4006     DAMAGE WAIVER                 
+                                                   4006E    Damage waiver/Insurance       
+                                                   4006H    Damage waiver/Insurance       
+                                                   4006L    Damage waiver/Insurance       
+                                                   4006R    DAMAGE WAIVER/INSURANCE       
+                    ----------------------------------------------------------------------------
+                    Discounts Given                4009     Discounts Allowed             
+                                                   4009E    DISCOUNTS ALLOWED ELLAND      
+                                                   4009H    DISCOUNTS ALLOWED HONLEY      
+                                                   4009L    DISCOUNTS ALLOWED LEEDS RD    
+                                                   4009R    DISCOUNTS ALLOWED RAVENSTHORPE
+                    ----------------------------------------------------------------------------
+                    Insurance Claims               4903     INSURANCE CLAIMS              
+                    ----------------------------------------------------------------------------
+                    Miscellaneous Income           4200     SALES OF ASSETS               
+                                                   4900     MISCELLANEOUS INCOME          
+                                                   4900E    MISC INCOME ELLAND            
+                                                   4900H    MISC INCOME HONLEY            
+                                                   4900L    MISC INCOME LEEDS RD          
+                                                   4900R    MISC INCOME RAVENSTHORPE      
+                                                   4200H    Sale of Assets Honley         
+                                                   4200L    Sale of Assets Leeds Road     
+                                                   4200E    SALE OF ASSETS ELLAND         
+                                                   4200R    SALE OF ASSETS RAVENSTHORPE   
+                    ----------------------------------------------------------------------------
+                    SAFETY TESTS ETC               4003     LABOUR                        
+                                                   4004     SAFETY TESTS                  
+                                                   4003R    LABOUR RAVENSTHORPE           
+                                                   4003E    LABOUR ELLAND                 
+                                                   4003H    LABOUR HONLEY                 
+                                                   4003L    LABOUR LEEDS RD               
+                                                   4004E    Safety Tests Elland           
+                                                   4004H    Safety Tests Honley           
+                                                   4004L    Safety Tests Leeds Rd         
+NOMINAL SCHEME Standard                                                                                          Page 12
+
+
+Type                Group description              Nominal  Account name
+------------------------------------------------------------------------------------------------
+Sales               SAFETY TESTS ETC               4004R    SAFETY TESTS Ravensthorpe     
+------------------------------------------------------------------------------------------------
+                                                          <<< Printed at  2:02pm on 07 August 2015 >>>                                                          

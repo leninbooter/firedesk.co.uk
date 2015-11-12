@@ -1,18 +1,17 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Customers extends CI_Controller 
-{
-	
+{	
 	public function name_valid( $valor )
 	{
-		if( preg_match('/^[A-Za-zñÑ\-\_\.\,\s]{2,200}$/', $valor) == 1 )
-		{
-			return true;
-		}else
-		{
-			$this->form_validation->set_message('name_valid', $this->lang->line('error_bad_name_account'));
-			return false;
-		}
+            if( preg_match('/^[A-Za-zñÑ\-\_\.\,\s]{2,200}$/', $valor) == 1 )
+            {
+                    return true;
+            }else
+            {
+                    $this->form_validation->set_message('name_valid', $this->lang->line('error_bad_name_account'));
+                    return false;
+            }
 	}
 	
 	public function shorttext_valid( $valor )
@@ -60,7 +59,7 @@ class Customers extends CI_Controller
 		$data = array();
 		foreach($customers as $c)
 		{
-			array_push($data, array("id"=>intval($c->pk_id), "label" => $c->name ));
+			array_push($data, array("id"=>intval($c->pk_id), "text" => $c->name ));
 		}
 		
 		header('Content-type: application/json');

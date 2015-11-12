@@ -39,25 +39,25 @@
 			
             <!-- Charts of Account -->
 			<div role="tabpanel" class="tab-pane" id="coa">				
-                <form id="newAccountForm" role="form" class="form-horizontal">
-                  <div class="form-group">
-                   <a name="searchBox"></a> <label for="inputCode" class="col-sm-1 control-label">Code</label>
-                    <div class="col-sm-2">
-                      <input type="text" class="form-control" id="inputCode" name="inputCode" >
-                    </div>
-                    <label for="inputDescription" class="col-sm-2 control-label">Description</label>
-                    <div class="col-sm-5">
-                      <input type="text" class="form-control form-block" id="inputDescription" name="inputDescription" >
-                    </div>
-                    <div class="col-sm-2">
-                        <button type="button" class="btn btn-default btn-block" onclick="$('#newAccountForm').submit();">Add</button>
-                    </div>
-                  </div>
-                </form>                    					
-                <div class="row">
-                    <div id="coa_DIV"  class="col-md-12">	
-                    </div>
-                </div>
+                            <form id="newAccountForm" role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <a name="searchBox"></a> <label for="inputCode" class="col-sm-1 control-label">Code</label>
+                                    <div class="col-sm-2">
+                                      <input type="text" class="form-control" id="inputCode" name="inputCode" >
+                                    </div>
+                                    <label for="inputDescription" class="col-sm-2 control-label">Description</label>
+                                    <div class="col-sm-5">
+                                      <input type="text" class="form-control form-block" id="inputDescription" name="inputDescription" >
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button type="button" class="btn btn-default btn-block" onclick="$('#newAccountForm').submit();">Add</button>
+                                    </div>
+                                </div>
+                            </form>                    					
+                            <div class="row">
+                                <div id="coa_DIV"  class="col-md-12">	
+                                </div>
+                            </div>
 			</div>
             
             <!-- HOlidays Schema -->

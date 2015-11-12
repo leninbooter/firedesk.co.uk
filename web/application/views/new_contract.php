@@ -4,19 +4,15 @@
 	<!-- Form left panel-->
 	<div class="col-md-9">
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-3">
 				<div class="form-group">
 					<label for="account_reference">Account Number</label>
-					<input type="text" class="form-control" id="account_reference" autocomplete="off"/>
-					<input type="hidden" id="account_reference_id" name="account_reference_id" value="<?php echo $this->input->get('customer_id');?>"/>
+					<select class="form-control" id="account_reference_id" name="account_reference_id" style="width:100%">
+                        <option></option>
+                    </select>
 				</div>
 			</div>
-			<div class="col-md-2">				
-				<div class="form-group">
-					<label for="">&nbsp;</label>
-					<a href="<?php echo base_url('index.php/customers/new_existing'); ?>"><button type="button" class="btn btn-primary  btn-block">New customer</button></a>
-				</div>
-			</div>
+			
 			<div class="col-md-3">
 				<div class="form-group">
 					<label for="contract_type">Type</label>
@@ -32,7 +28,8 @@
 					<input type="text" class="form-control" id="date_string" name="date_string" />
 					<input type="hidden" class="form-control" id="date" name="date"/>
 				</div>
-			</div><div class="col-md-2">
+			</div>
+                        <div class="col-md-2">
 				<div class="form-group">
 					<label for="time">Time</label>
 					<input type="text" class="form-control" id="time" name="time" />
@@ -41,12 +38,18 @@
 		</div>
 		
 		<div class="row">
+                    <div class="col-md-2">				                        
+                        <a href="<?php echo base_url('index.php/customers/new_existing'); ?>"><button type="button" class="btn btn-primary  btn-block">New customer</button></a>                        
+                    </div>
+                </div>
+            
+		<div class="row">
 			<div class="col-md-2">		
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" id="cash" name="cash" value="yes">Cash
-					</label>
-				</div>
+                            <div class="checkbox">
+                                <label>
+                                        <input type="checkbox" id="cash" name="cash" value="yes">Cash
+                                </label>
+                            </div>
 			</div>
 			<!--<div class="col-md-4">		
 				<div class="form-group">

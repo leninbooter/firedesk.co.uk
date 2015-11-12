@@ -312,7 +312,7 @@
 
 <!-- Sale items modal -->
 <?php if( $contract_status <= 3): ?>
-<div class="modal fade" id="sales_stock_modal" tabindex="-1" role="dialog" aria-labelledby="sales_stock_modal" aria-hidden="true">
+<div class="modal fade" id="sales_stock_modal" role="dialog" aria-labelledby="sales_stock_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">			
 			<div class="modal-header">
@@ -320,15 +320,16 @@
 			</div>
             <div class="modal-body">
                 <form id="sales_items_form" action="">
+                
                 <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
                     <table class="table table-condensed">
                         <thead>
                             <tr>
-                                <th style="width:10%">Stock No.</th>
+                                <th style="width:15%">Stock No.</th>
                                 <th style="width:25%">Description</th>                
-                                <th style="width:10%">In Stock</th>
+                                <th style="width:10%; text-align:center">In Stock</th>
                                 <th style="width:10%">On Order</th>
-                                <th style="width:10%">Request Qty</th>
+                                <th style="width:5%">Request Qty</th>
                                 <th style="width:10%">Discount</th>
                                 <th style="width:10%">Price</th>
                                 <th style="width:15%">Total</th>
@@ -336,14 +337,24 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="hidden" id="item_id" name="item_id" value=""><input type="hidden" id="sale_item_cost" name="sale_item_cost" value=""><p class="form-control-static" id="stock_no"></p></td>
-                                <td><input type="text" id="sale_item_description" name="sale_item_description" class="form-control"></td>
-                                <td><p class="form-control-static" id="sale_item_in_stock"></p></td>
+                                <td>
+                                    <input type="hidden" id="sale_item_cost" name="sale_item_cost" value="">
+                                    <p class="form-control-static" id="stock_no"></p>
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sale_item_description" name="sale_item_description" >
+                                        <option></option>
+                                    </select>
+                                    <input type="hidden" id="sale_item_desc_text" name="sale_item_desc_text" >
+                                </td>
+                                <td style="text-align:center"><p class="form-control-static" id="sale_item_in_stock"></p></td>
                                 <td><p class="form-control-static" id="sale_item_on_order"></p></td>
-                                <td><input type="text" id="sale_item_qty" name="sale_item_qty" class="form-control" onchange="getPrice(this)"></td>
-                                <td><input type="text" id="disc" name="disc" class="form-control percentage"></td>
-                                <td><input type="text" id="price" name="price" class="form-control"></td>
-                                <td><p class="form-control-static text-right" id="sale_item_total"></p></td>
+                                <td><input type="text" id="sale_item_qty" name="sale_item_qty" class="form-control input-sm" onchange="getPrice(this)"></td>
+                                <td><input type="text" id="disc" name="disc" class="form-control percentage input-sm"></td>
+                                <td><input type="text" id="price" name="price" class="form-control input-sm"></td>
+                                <td><p 
+                                        class="form-control-static text-right" 
+                                        id="sale_item_total"></p></td>
                             </tr>
                         </tbody>
                     </table>
@@ -424,7 +435,7 @@
 </div>
 
 <!-- Hired items modal -->
-<div class="modal fade" id="hire_fleet_modal" tabindex="-1" role="dialog" aria-labelledby="hire_fleet_modal" aria-hidden="true">
+<div class="modal fade" id="hire_fleet_modal"  role="dialog" aria-labelledby="hire_fleet_modal" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">			
 			<div class="modal-header">
@@ -433,10 +444,16 @@
 			<div class="modal-body">				
 				<form id="hireItemForm" class="form-inline">                
                     <input type="hidden" id="contractID" name="contractID" value="<?php echo $contract_id; ?>"/>
-                    <input type="hidden" id="hireItemType" name="hireItemType" value=""/>                    
+                    <input type="hidden" id="hireItemType" name="hireItemType" value=""/>
                     <div class="form-group" style="width:35%">
                         <label ><p class="text-right">Search:</p></label>
-                            <input type="text" id="search_hire_item_field" name="search_hire_item_field" class="form-control input-sm" STYLE="width:70%">
+                            <select 
+                                id="search_hire_item_field" 
+                                name="search_hire_item_field" 
+                                class="form-control input-sm" 
+                                style="width:70%">
+                                <option></option>
+                            </select>
                             <input type="hidden" id="hire_item_id" name="hire_item_id">
                             <input type="hidden" id="allocated" name="allocated">
                     </div>                       

@@ -77,8 +77,7 @@ class Hire_stock_m extends CI_Model
 	}
 		
 	function get_items_all( )
-	{
-		
+	{		
 		$query =  $this->company_db->query( "SELECT pk_id, fleet_number as 'number', description as 'label' FROM hire_items WHERE fk_hire_item_parent is null;");
 		return !empty($query->result()) ? $query->result() : array();
 	}	    
@@ -525,6 +524,29 @@ class Hire_stock_m extends CI_Model
         return $this->company_db->query($query)->row_array();
     }
     
+    function selectItem($ID) {
+    
+        $query = "SELECT 
+                    hi.pk_id,
+                    hi.fleet_number,
+                    hi.description , 
+                    ifnull(hi.qty, 0)   as qty, 
+                    hi.fk_family_group  as 'family_group_id',
+                    hifg.name           as 'family_group',
+                    hit.description     as 'type', 
+                    CASE WHEN hi.basic_rate is null AND hi.fk_type < 3      THEN hifg.basic_rate 
+                         WHEN hi.basic_rate is not null AND hi.fk_type < 3  THEN hi.basic_rate 
+                         WHEN hi.basic_rate is not null AND hi.fk_type >= 3 THEN hi.basic_rate
+                         WHEN hi.basic_rate = 0.00 OR hi.basic_rate is null THEN 0.00  END as rate
+				 FROM
+					hire_items as hi
+					inner join hire_items_family_groups as hifg on hifg.pk_id = hi.fk_family_group
+					inner join hire_items_type as hit on hit.pk_id = hi.fk_type
+				 WHERE hi.pk_id = {$ID} LIMIT 1";
+		$query =  $this->company_db->query($query);
+		return !empty($query->result()) ? $query->row() : array();                       
+    }
+    
     function selectItemComponentsForContract( $pk_id ) {
         
         $querySelect = "SELECT
@@ -744,10 +766,22 @@ class Hire_stock_m extends CI_Model
                                             AND hag.fk_hire_family_group_id = $groupID");
         return !empty($query->result()) ? $query->result() : array();
     }
+    
+    function select_items_like($term) {
+        
+        $query = "SELECT 
+                    hi.pk_id,
+                    hi.description
+                FROM
+					hire_items as hi
+                WHERE
+                    hi.description like '{$term}%'";
+        $query =  $this->company_db->query($query);
+		return !empty($query->result()) ? $query->result() : array();
+    }
 	
 	function select_all_items()
-	{
-		
+	{	
 		$query = "SELECT 
                     hi.pk_id,
                     hi.fleet_number,
